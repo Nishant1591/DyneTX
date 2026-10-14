@@ -1,0 +1,21 @@
+{# CTA band component: WP culture split (image + heading/body/link). #}
+<section class="dyne-cta py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-12 col-md-6">
+        {% if paragraph.field_bg.entity and paragraph.field_bg.entity.uri.value %}
+          <img src="{{ file_url(paragraph.field_bg.entity.uri.value) }}" alt="" class="img-fluid" />
+        {% else %}
+          <img src="{{ directory }}/images/home-culture.webp" alt="" class="img-fluid" />
+        {% endif %}
+      </div>
+      <div class="col-12 col-md-6">
+        {% if paragraph.field_heading.value %}<h2 class="h1">{{ paragraph.field_heading.value }}</h2>{% endif %}
+        {{ paragraph.field_body_text.value|raw }}
+        {% if paragraph.field_link.title %}
+          <div class="dyne-cta__link"><a href="{{ paragraph.field_link.0.url }}">{{ paragraph.field_link.0.title }}</a></div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>

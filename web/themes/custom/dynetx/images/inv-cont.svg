@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="394.8" height="394.8" viewBox="0 0 394.8 394.8">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#daeaf0"/>
+    </linearGradient>
+  </defs>
+  <g id="inv-cont" transform="translate(-520 -2672.6)">
+    <circle id="Ellipse_24" data-name="Ellipse 24" cx="197.4" cy="197.4" r="197.4" transform="translate(520 2672.6)" fill="url(#linear-gradient)"/>
+    <text id="Investor_contact" data-name="Investor contact" transform="translate(574.401 2875.59)" fill="#115da6" font-size="40" font-family="Merriweather-Italic, Merriweather" font-style="italic"><tspan x="0" y="0">Investor contact</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,84 @@
+{
+  "date": "2026-10-13",
+  "source": "https://www.dyne-tx.com/about-us/",
+  "drupal": "http://dyne-tx-master.ddev.site/about-us",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "verified": {
+    "visible_leadership_cards": 15,
+    "collapsed_board_cards": 10,
+    "collapsed_advisory_cards": 6,
+    "all_listing_portraits_loaded": true,
+    "horizontal_overflow_px": 0,
+    "biography_next_and_previous": true,
+    "biography_close_restores_card_focus": true,
+    "board_expand_and_biography": true,
+    "advisory_expand": true,
+    "desktop_biography_and_focus_return_at_1440": true
+  },
+  "mobile_dialog_geometry_source_and_drupal": {
+    "body": [
+      8,
+      23.90625,
+      374,
+      737.1796875
+    ],
+    "portrait": [
+      24,
+      39.90625,
+      342,
+      256.265625
+    ],
+    "biography": [
+      24,
+      371.765625,
+      342,
+      309.3203125
+    ],
+    "biography_font": "14px / 18.2px ralewayregular, Arial, Helvetica, sans-serif",
+    "body_padding": "16px 16px 80px"
+  },
+  "contact_section": {
+    "top_source_and_drupal": 6900.90625,
+    "source_form_height": 1437.5625,
+    "local_disabled_form_height": 42.140625,
+    "source_emails_top": 8409.2421875,
+    "local_emails_top": 7013.8203125,
+    "net_difference_px": 1395.421875,
+    "reason": "The live OneTrust form is enabled; local module remains disabled and displays its configured fallback. The contact section start and layout are identical."
+  },
+  "additional_read_only_audit": {
+    "force_platform": "All3 source sections have identical semantic tag/class trees and normalized text.",
+    "pipeline": "Intro, pipeline-chart-26 and all7 pipeline-description blocks have identical semantic tag/class trees and normalized text."
+  },
+  "content_changes": false,
+  "screenshots": [
+    "output/playwright/about-team-dialog-mobile.png"
+  ],
+  "separate_followup": "Board deep-link hash handling is owned and verified separately by interactions agent.",
+  "settled_dialog_check": {
+    "waited_for": [
+      "modal opacity1",
+      "all descendant animations finished",
+      "document.fonts.ready",
+      "portrait image decode"
+    ],
+    "source_and_drupal_identical": {
+      "modal_opacity": 1,
+      "modal_z_index": 1055,
+      "content_opacity": 1,
+      "content_background": "rgb(255,255,255) linear-gradient(rgb(255,255,255),rgb(218,234,240))",
+      "backdrop_opacity": 0.5,
+      "backdrop_z_index": 1050,
+      "transform": "none",
+      "running_animations": 0
+    },
+    "actual_pixel_inspection": "Both modal content panels are opaque. Initial screenshot captured a transition frame; no CSS defect found.",
+    "screenshots": [
+      "output/playwright/about-team-dialog-mobile-settled.png",
+      "output/playwright/reference-team-dialog-mobile-settled.png"
+    ]
+  }
+}

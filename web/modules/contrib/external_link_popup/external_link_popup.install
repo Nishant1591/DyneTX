@@ -1,0 +1,90 @@
+<?php
+
+/**
+ * @file
+ * Contains external_link_popup installation and upgrade actions.
+ */
+
+/**
+ * Update body text to use text formats.
+ */
+function external_link_popup_update_8101() {
+  $entities = \Drupal::entityTypeManager()
+    ->getStorage('external_link_popup')->loadMultiple();
+  /* @var $entity \Drupal\external_link_popup\Entity\ExternalLinkPopup */
+  foreach ($entities as $entity) {
+    $body = $entity->getBody();
+    if (is_string($body)) {
+      $entity->setBody(['value' => $body])->save();
+    }
+  }
+}
+
+/**
+ * Fill default width setting.
+ */
+function external_link_popup_update_8102() {
+  \Drupal::configFactory()->getEditable('external_link_popup.settings')
+    ->set('width', ['value' => '85', 'units' => '%'])
+    ->save();
+}
+
+/**
+ * Fill default show_admin setting.
+ */
+function external_link_popup_update_8103() {
+  \Drupal::configFactory()->getEditable('external_link_popup.settings')
+    ->set('show_admin', 0)
+    ->save();
+}
+
+/**
+ * Update domains list format.
+ */
+function external_link_popup_update_8105() {
+  $config = \Drupal::configFactory()->getEditable('external_link_popup.settings');
+  if ($whitelist = $config->get('whitelist')) {
+    $chunks = preg_split('/\s*,\s*|\s+/', trim($whitelist));
+    $config->set('whitelist', implode("\n", $chunks))->save();
+  }
+
+  $entities = \Drupal::entityTypeManager()
+    ->getStorage('external_link_popup')->loadMultiple();
+  /* @var $entity \Drupal\external_link_popup\Entity\ExternalLinkPopup */
+  foreach ($entities as $entity) {
+    if ($domains = $entity->getDomains()) {
+      $chunks = preg_split('/\s*,\s*|\s+/', trim($domains));
+      $entity->setDomains(implode("\n", $chunks))->save();
+    }
+  }
+}
+
+/**
+ * Update permissions.
+ */
+function external_link_popup_update_8106() {
+  /** @var \Drupal\user\RoleInterface $role */
+  foreach (\Drupal::entityTypeManager()->getStorage('user_role')->loadMultiple() as $role) {
+    if ($role->hasPermission('administer site configuration')) {
+      $role->grantPermission('administer external link popup');
+    }
+
+    $role->save();
+  }
+}
+
+/**
+ * Update "Show close icon" for popups with empty title.
+ */
+function external_link_popup_update_8110() {
+  $entities = \Drupal::entityTypeManager()
+    ->getStorage('external_link_popup')
+    ->loadMultiple();
+  /* @var $entity \Drupal\external_link_popup\Entity\ExternalLinkPopup */
+  foreach ($entities as $entity) {
+    // Don't use loose comparison to process "0" string.
+    if ($entity->getTitle() === '' || $entity->getTitle() === NULL) {
+      $entity->setClose(FALSE)->save();
+    }
+  }
+}

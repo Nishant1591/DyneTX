@@ -1,0 +1,7 @@
+{# Node: dyne_page renders title + component stack (field_components). #}
+<article{{ attributes.addClass('dyne-page', 'wrapper', dyne_is_home ? 'home' : 'pages').addClass(dyne_page_classes|default([])) }}>
+  {% if dyne_legacy %}
+    {% include '@dynetx/includes/legacy-hero.html.twig' %}
+  {% endif %}
+  {{ content.field_components }}
+</article>

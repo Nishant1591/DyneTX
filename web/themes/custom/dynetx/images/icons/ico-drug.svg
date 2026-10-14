@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 90 90">
+  <g id="ico-drug" transform="translate(-710.961 -1.317)">
+    <rect id="Rectangle_54" data-name="Rectangle 54" width="90" height="90" transform="translate(710.961 1.317)" fill="rgba(255,255,255,0)"/>
+    <path id="Path_160" data-name="Path 160" d="M764.2,68.6H733.4a.43.43,0,0,1-.4-.4V32.3a.43.43,0,0,1,.4-.4h30.8a.43.43,0,0,1,.4.4v8.6a.4.4,0,0,1-.8,0V32.7h-30V67.8h30V66.5a.4.4,0,0,1,.8,0v1.7a.43.43,0,0,1-.4.4" fill="#a4dae4" stroke="#a4dae4" stroke-miterlimit="10" stroke-width="0.942"/>
+    <path id="Path_161" data-name="Path 161" d="M766.6,32.7H731.7a.43.43,0,0,1-.4-.4V26.5a.43.43,0,0,1,.4-.4h9.7a.4.4,0,1,1,0,.8h-9.3V32h34.2V26.9h-6.6a.4.4,0,1,1,0-.8h6.9a.43.43,0,0,1,.4.4v5.8a.43.43,0,0,1-.4.4" fill="#a4dae4" stroke="#a4dae4" stroke-miterlimit="10" stroke-width="0.942"/>
+    <path id="Path_162" data-name="Path 162" d="M761.3,26.9h-1.6a.4.4,0,1,1,0-.8h1.2V21H737.3v5.1h4a.4.4,0,1,1,0,.8H737a.43.43,0,0,1-.4-.4V20.7a.43.43,0,0,1,.4-.4h24.3a.43.43,0,0,1,.4.4v5.8a.43.43,0,0,1-.4.4" fill="#a4dae4" stroke="#a4dae4" stroke-miterlimit="10" stroke-width="0.942"/>
+    <path id="Path_163" data-name="Path 163" d="M733.8,60.6h12.7V39.3H733.8Zm13.1.7H733.5a.43.43,0,0,1-.4-.4v-22a.43.43,0,0,1,.4-.4h13.4a.43.43,0,0,1,.4.4V61c-.1.2-.2.3-.4.3" fill="#a4dae4" stroke="#a4dae4" stroke-miterlimit="10" stroke-width="0.942"/>
+    <line id="Line_30" data-name="Line 30" x1="10" y1="10" transform="translate(773.9 61.7)" fill="none" stroke="#115da6" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.885"/>
+    <path id="Path_165" data-name="Path 165" d="M766.3,64.4a10.208,10.208,0,0,1-7.3-3,10.5,10.5,0,1,1,7.3,3" fill="none" stroke="#dd2626" stroke-miterlimit="10" stroke-width="1.782"/>
+  </g>
+</svg>

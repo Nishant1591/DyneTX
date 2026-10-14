@@ -1,0 +1,49 @@
+{
+  "verified_on": "2026-10-14",
+  "reference": "https://www.dyne-tx.com/about-us/",
+  "local": "http://dyne-tx-master.ddev.site/about-us",
+  "library_version": "2.8",
+  "cause": "Separate dialogs were hidden and reopened for Previous/Next; the source replaces content within one persistent modal.",
+  "groups": {
+    "leadership": 15,
+    "directors": 10,
+    "scientific_advisers": 6
+  },
+  "desktop": {
+    "all_biographies_in_source_order": true,
+    "group_wrap_forward_and_reverse": true,
+    "portraits_match": true,
+    "board_portraits_absent": true,
+    "one_modal": true,
+    "persistent_backdrop_and_arrow_nodes": true,
+    "navigation_show_hide_events": 0,
+    "rapid_next_clicks": 30,
+    "close_escape_backdrop_dismissal": true,
+    "return_focus_to_opening_card": true,
+    "team_javascript_errors": 0
+  },
+  "mobile": {
+    "viewport": [
+      390,
+      844
+    ],
+    "initial_biography": "Doug Kerr, M.D., Ph.D., MBA",
+    "initial_scroll_height": 867,
+    "next_biography": "Erick J. Lucera",
+    "same_modal": true,
+    "same_backdrop": true,
+    "navigation_show_hide_events": [],
+    "scroll_before": 23,
+    "scroll_after": 23,
+    "focused_control": "Next bio",
+    "horizontal_overflow": 0,
+    "keyboard_next_biography": "Oxana Beskrovnaya, Ph.D.",
+    "accessible_dialog_name_verified": true,
+    "escape_leaves_open_modals": 0,
+    "escape_leaves_backdrops": 0,
+    "body_scroll_unlocked": true,
+    "escape_focus": "Read biography of Doug Kerr, M.D., Ph.D., MBA"
+  },
+  "evidence": "output/playwright/modal-team-mobile-2026-10-14.png",
+  "content_or_database_changes": false
+}

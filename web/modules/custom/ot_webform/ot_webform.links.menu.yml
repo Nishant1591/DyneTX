@@ -1,0 +1,5 @@
+ot_webform.settings:
+  title: 'OneTrust WebForm'
+  description: 'Configure contact and community forms and their environment.'
+  parent: system.admin_config_services
+  route_name: ot_webform.settings

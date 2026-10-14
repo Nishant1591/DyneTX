@@ -1,0 +1,20 @@
+{# Materialized once by the team behavior, only when team cards are present. #}
+<template id="dyne-team-dialog-template">
+  <div class="dyne-team">
+    <div class="modal fade" id="modalTeam" tabindex="-1" aria-labelledby="modalTeamTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="row" data-dyne-team-content></div>
+            <button type="button" class="btn close" data-bs-dismiss="modal" aria-label="{{ 'Close biography'|t }}"><i aria-hidden="true"></i></button>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary btn-arrow-left" data-dyne-team-direction="prev" aria-label="{{ 'Previous bio'|t }}"></button>
+            <button type="button" class="btn btn-primary btn-arrow-right" data-dyne-team-direction="next" aria-label="{{ 'Next bio'|t }}"></button>
+          </div>
+          <span class="visually-hidden" role="status" data-dyne-team-announcement></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

@@ -1,0 +1,54 @@
+{% if dyne_legacy %}
+  <div class="wrapper pages">{% include '@dynetx/includes/legacy-hero.html.twig' %}</div>
+{% else %}
+<section class="dyne-job-hero" aria-label="Careers and culture">
+  <picture class="dyne-job-hero__base">
+    <source media="(max-width: 767px)" srcset="{{ path('<front>') }}{{ directory }}/images/hero-careers-bg-base-mobile@2x.webp" />
+    <img src="{{ path('<front>') }}{{ directory }}/images/hero-careers-bg-base-desktop@2x-1-scaled.webp" alt="" fetchpriority="high" />
+  </picture>
+  <img class="dyne-job-hero__overlay" src="{{ path('<front>') }}{{ directory }}/images/hero-careers-bg-overlay-desktop@2x-1-scaled.webp" alt="" />
+  <p class="dyne-job-hero__word dyne-job-hero__word--more" aria-hidden="true">more</p>
+  <p class="dyne-job-hero__word dyne-job-hero__word--passion" aria-hidden="true">passion</p>
+</section>
+{% endif %}
+
+<article{{ attributes.addClass('dyne-job-detail') }}>
+  <h1 class="dyne-job-detail__title">{{ label }}</h1>
+
+  {% if node.field_apply_url.value %}
+    <div class="dyne-job-detail__apply dyne-job-detail__apply--top">
+      <a class="btn btn-primary btn-lg" href="{{ node.field_apply_url.value }}" target="_blank" rel="noopener">{{ 'Apply for this job'|t }}</a>
+    </div>
+  {% endif %}
+
+  <div class="dyne-job-detail__meta">
+    {% if node.field_department_text.value %}
+      <p><strong>{{ 'Department:'|t }}</strong> {{ node.field_department_text.value }}</p>
+    {% endif %}
+    {% if node.field_location_text.value %}
+      <p><strong>{{ 'Location:'|t }}</strong> {{ node.field_location_text.value }}</p>
+    {% endif %}
+  </div>
+
+  <div class="dyne-job-detail__body">
+    {{ content.field_body_text }}
+  </div>
+
+  {% if node.field_apply_url.value %}
+    <div class="dyne-job-detail__apply dyne-job-detail__apply--bottom">
+      <a class="btn btn-primary btn-lg" href="{{ node.field_apply_url.value }}" target="_blank" rel="noopener">{{ 'Apply for this job'|t }}</a>
+    </div>
+  {% endif %}
+
+  {% if node.field_previous_url.value or node.field_next_url.value %}
+    <nav class="dyne-job-detail__pagination" aria-label="{{ 'Job navigation'|t }}">
+      {% if node.field_previous_url.value %}
+        <a href="{{ node.field_previous_url.value }}">{{ 'BACK'|t }}</a>
+      {% endif %}
+      {% if node.field_previous_url.value and node.field_next_url.value %}<span aria-hidden="true">|</span>{% endif %}
+      {% if node.field_next_url.value %}
+        <a href="{{ node.field_next_url.value }}">{{ 'NEXT'|t }}</a>
+      {% endif %}
+    </nav>
+  {% endif %}
+</article>

@@ -1,0 +1,93 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+.community-overlay {
+    display: none;
+    position: fixed;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    opacity: 0.6;
+}
+
+.community-popup {
+    display: none;
+    position: fixed;
+    z-index: 1051;
+    width: 700px;
+    height: 420px;
+    top: 15%;
+    background: #232323;
+    border-radius: 15px;
+    padding: 30px;
+    left: 30%;
+}
+
+.community-popup-close {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+}
+
+.community-popup-close:hover {
+    color: red;
+  }
+
+.popup-open { overflow: hidden;}
+.popup-open .popup-main { width: 100vw; height: 100vh; opacity: 1;}
+
+.popup-main { z-index: 10000; position: fixed; right: 0; top: 0; width: 0; height: 0; opacity: 1; transition: all 0.2s ease-in-out;}
+.p-wrapper { z-index: 99; position: relative; width: 100vw; height: 100vh; display: flex; justify-content: center; align-items: center;}
+.p-close { z-index: 10000; position: absolute; right: calc(10px + 1.01vw); top: calc(10px + 2.03vh); width: calc(32px + 1vw); height: calc(32px + 1vw); cursor: pointer; border-radius: 100%; background: #6cc24a;}
+.p-close:hover { background: #51a12f;}
+.p-close:before, .p-close:after { z-index: 1; content: ""; position: absolute; left: 15%; top: 49%; width: 70%; height: 3px; border-radius: 2px; background: #fff;}
+.p-close:before { transform: rotate(45deg);}
+.p-close:after { transform: rotate(-45deg);}
+
+.p-red { color: #df1894;}
+
+.rarediseaseday { background: #fff;}
+.rarediseaseday:before, .rarediseaseday:after { content: ""; position: absolute;}
+.rarediseaseday:before { left: 0; top:0; width: 23.62vw; height: 17.76vw; background: url("../images/rdd-tl.jpg") left top / contain no-repeat;}
+.rarediseaseday:after { right: 0; bottom: 0; width: 39.87vw; height: 31.65vw; background: url("../images/rdd-br.jpg") right bottom / contain no-repeat;}
+.rarediseaseday .p-inner { display: flex; flex-direction: column; width: 100%; height: 100%; padding: calc(40px + 5vh) calc(20px + 4.17vw) calc(20px + 2.87vh) calc(20px + 6.31vw);}
+.rarediseaseday .line-1 { display: flex; justify-content: flex-end; align-items: flex-start;}
+.rarediseaseday .line-2 { flex-grow: 1; padding: calc(10px + 3.66vh) 0; width: calc(403px + 39.44vw); max-width: 100%; font: 500 calc(18px + 1.76vw) 'Roboto', sans-serif; text-transform: uppercase; text-shadow: 0 0 4px #fff, 0 0 4px #fff,0 0 4px #fff, 0 0 4px #fff, 0 0 4px #fff;}
+.rarediseaseday .line-3 { display: flex; justify-content: flex-start; align-items: flex-start;}
+.rarediseaseday .line-3 img:not(:last-child) { margin-right: calc(10px + 0.52vw);}
+.rarediseaseday .rdd-1 { width: calc(50px + 20.08vw);}
+.rarediseaseday .rdd-2 { width: calc(50px + 17.08vw);}
+.rarediseaseday .rdd-logo { width: calc(50px + 8.18vw);}
+@media only screen and (-o-min-device-pixel-ratio: 3/2) and (max-width: 999px) and (orientation: portrait),
+only screen and (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 999px) and (orientation: portrait),
+only screen and (max-width: 768px) and (orientation: portrait),
+only screen and (min--moz-device-pixel-ratio: 1.5) and (max-width: 999px) and (orientation: portrait),
+only screen and (min-resolution: 1.5dppx) and (max-width: 999px) and (orientation: portrait),
+only screen and (min-resolution: 144dpi) and (max-width: 999px) and (orientation: portrait) {
+  .rarediseaseday:before { width: 58vw; height: 43.61vw;}
+  .rarediseaseday:after { width: 64vw; height: 50.81vw;}
+  .rarediseaseday .rdd-2 { padding-bottom: 28vh;}
+  .rarediseaseday .rdd-1 { width: calc(50px + 24.08vw);}
+  .rarediseaseday .rdd-2 { width: calc(50px + 21.08vw);}
+  .rarediseaseday .rdd-logo { width: calc(35px + 10vw);}
+ .rarediseaseday .p-inner { padding-left: 20px; padding-right: 20px;}
+}
+@media only screen and (-o-min-device-pixel-ratio: 3/2) and (max-width: 999px) and (orientation: landscape),
+only screen and (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 999px) and (orientation: landscape),
+only screen and (max-width: 768px) and (orientation: landscape),
+only screen and (min--moz-device-pixel-ratio: 1.5) and (max-width: 999px) and (orientation: landscape),
+only screen and (min-resolution: 1.5dppx) and (max-width: 999px) and (orientation: landscape),
+only screen and (min-resolution: 144dpi) and (max-width: 999px) and (orientation: landscape) {
+  .rarediseaseday .p-inner { padding: calc(40px + 7vh) calc(10px + 1.17vw) calc(10px + 2.87vh) calc(10px + 2.31vw);}
+  .rarediseaseday .line-2 { width: calc(370px + 22vw); font-size: calc(16px + 1vw);}
+  .rarediseaseday .rdd-1 { width: calc(30px + 17.08vw);}
+  .rarediseaseday .rdd-2 { width: calc(30px + 14.08vw);}
+  .rarediseaseday .rdd-logo { width: calc(30px + 5.18vw);}
+}
+* { box-sizing: border-box;}
+.rarediseaseday img { height: auto!important;}

@@ -1,0 +1,26 @@
+id: dyne_leaders
+label: 'Dyne leaders (Leadership/Board/SAB)'
+migration_group: dyne
+source:
+  plugin: csv
+  path: 'modules/custom/dyne_migrate/data/leaders.csv'
+  header_offset: 0
+  ids:
+    - Name
+  fields:
+    - name: Name
+      label: 'Name'
+    - name: Role
+      label: 'Role'
+    - name: Group
+      label: 'Group'
+process:
+  title: Name
+  field_role: Role
+  field_leader_type: Group
+  type:
+    plugin: default_value
+    default_value: leader
+destination:
+  plugin: 'entity:node'
+migration_dependencies: {}

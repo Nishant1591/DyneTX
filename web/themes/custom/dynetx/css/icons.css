@@ -1,0 +1,33 @@
+/*!
+ * Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ * Copyright 2024 Fonticons, Inc.
+ * Solid font copied from the supplied archive's coming-soon plugin.
+ */
+@font-face {
+  font-family: 'Font Awesome 6 Free';
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url('../fonts/fa-solid-900.woff2') format('woff2');
+}
+
+/* The public archive uses two Sharp solid stars. The bundled free font also
+ * supplies the chevrons referenced by the source MDB carousel stylesheet. */
+.fa, .fas, .fa-solid, .fa-sharp-solid {
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.fa-star::before { content: '\f005'; }
+.carousel-control-prev-icon::after,
+.carousel-control-next-icon::after {
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+}

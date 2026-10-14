@@ -1,0 +1,171 @@
+{
+  "source_sha256": "fe87e453c3cf35774a5ffb7e5d26f5660c4e0042d4713d887df36f7999018d50",
+  "post_types": [
+    {
+      "type": "_pods_field",
+      "published_count": 1,
+      "disposition": "WordPress Pods field configuration, not public page content."
+    },
+    {
+      "type": "_pods_pod",
+      "published_count": 1,
+      "disposition": "WordPress Pods schema configuration, not public page content."
+    },
+    {
+      "type": "acf-field",
+      "published_count": 140,
+      "disposition": "140 WordPress field schema definitions replaced by existing Drupal fields; public stored values used where applicable."
+    },
+    {
+      "type": "acf-field-group",
+      "published_count": 6,
+      "disposition": "Six WordPress field groups; page/hero metadata transferred to the Drupal metadata manifest."
+    },
+    {
+      "type": "comp_announcements",
+      "published_count": 1,
+      "disposition": "Only record ID 1317 is a test: title/slug test, body test testrjrjrktyktyk; not exposed by current source pages."
+    },
+    {
+      "type": "custom_css",
+      "published_count": 1,
+      "disposition": "Empty custom CSS record; full source theme CSS is ported by dynetx theme."
+    },
+    {
+      "type": "documentation",
+      "published_count": 1,
+      "disposition": "Empty Add new center admin documentation record excluded."
+    },
+    {
+      "type": "gc_templates",
+      "published_count": 1,
+      "disposition": "Employee profile example mapping template; no current public content references it."
+    },
+    {
+      "type": "gravityview",
+      "published_count": 1,
+      "disposition": "Upload Form View administrative plugin view, not used by current public page markup."
+    },
+    {
+      "type": "iwp_log",
+      "published_count": 325,
+      "disposition": "325 InfiniteWP operational logs excluded."
+    },
+    {
+      "type": "jobs",
+      "published_count": 49,
+      "disposition": "49 imported as job nodes with full descriptions, department, location and Greenhouse URLs."
+    },
+    {
+      "type": "nav_menu_item",
+      "published_count": 42,
+      "disposition": "35 primary-navigation links reconciled into main; seven separate mobile-navigation links are unused by source header, which renders top_menu for both desktop and mobile."
+    },
+    {
+      "type": "news",
+      "published_count": 183,
+      "disposition": "183 press-release records imported as news; latest two supply the native homepage news Paragraph."
+    },
+    {
+      "type": "page",
+      "published_count": 54,
+      "disposition": "52 imported as dyne_page; two empty source shells /fshd-day and /our-focus recorded as skipped."
+    },
+    {
+      "type": "perspectives",
+      "published_count": 13,
+      "disposition": "13 imported as perspective nodes and included in the perspectives index; external URLs resolved from perspectives_external_link."
+    },
+    {
+      "type": "popupbuilder",
+      "published_count": 1,
+      "disposition": "Homepage Video placeholder, literal body Content goes here; actual hero/video behavior ported in Drupal theme."
+    },
+    {
+      "type": "post",
+      "published_count": 17,
+      "disposition": "16 original press releases imported as news at original root aliases; test post ID 1576, title/slug qwe, excluded."
+    },
+    {
+      "type": "press-releases",
+      "published_count": 1,
+      "disposition": "Only ID 1227 slug test is duplicate Susanna High release; canonical source news record 1431 is imported."
+    },
+    {
+      "type": "qr",
+      "published_count": 1,
+      "disposition": "Homepage QR generator block; no public content/body beyond generator shortcode."
+    },
+    {
+      "type": "redirect_rule",
+      "published_count": 1,
+      "disposition": "Stale /world-fshd-day-2022/ -> /?show_video redirect targets placeholder popup; source page media destination retained as a video page instead."
+    },
+    {
+      "type": "seedprod",
+      "published_count": 1,
+      "disposition": "Coming-soon plugin record with empty body; live theme does not use it."
+    },
+    {
+      "type": "shortcodesultimate",
+      "published_count": 3,
+      "disposition": "Three demo shortcode definitions; none referenced by imported public content."
+    },
+    {
+      "type": "team",
+      "published_count": 31,
+      "disposition": "31 imported as leader nodes and referenced by the three native About team-grid Paragraphs; source has 15 portraits."
+    },
+    {
+      "type": "wb_news_xml2",
+      "published_count": 100,
+      "disposition": "100 unrelated Jazz Pharmaceuticals feed records from a legacy plugin excluded; active Dyne news uses the separate news post type."
+    },
+    {
+      "type": "wb_privacy_policy",
+      "published_count": 2,
+      "disposition": "Both blocks expanded into the Privacy Policy dyne_page, preserving source dates and consumer-health anchor."
+    },
+    {
+      "type": "wb_quotes",
+      "published_count": 4,
+      "disposition": "All four expanded into the original Careers carousel; original hidden section state retained."
+    },
+    {
+      "type": "wp_global_styles",
+      "published_count": 1,
+      "disposition": "Default empty theme JSON object with version/isGlobalStylesUserThemeJSON only; no style rules to port."
+    },
+    {
+      "type": "wpa-stats",
+      "published_count": 136,
+      "disposition": "136 WP Accessibility diagnostic results, not publications or website content; plugin wp-accessibility-stats.php confirms their purpose."
+    }
+  ],
+  "redirect_tables": [
+    {
+      "source": "/news/",
+      "target": "/media/",
+      "status": 301,
+      "disposition": "Legacy redirect points to absent /media page; not imported as a broken Drupal redirect."
+    }
+  ],
+  "excluded_data": [
+    "WordPress users and password hashes",
+    "plugin options and credentials",
+    "private/draft/revision content",
+    "logs and submitted form data"
+  ],
+  "limitations": [
+    {
+      "source_id": 1124,
+      "alias": "/fshd-day",
+      "reason": "Published legacy page has no content or media destination."
+    },
+    {
+      "source_id": 1211,
+      "alias": "/our-focus",
+      "reason": "Published legacy page has no content or media destination."
+    }
+  ]
+}

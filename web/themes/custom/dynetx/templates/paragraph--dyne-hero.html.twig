@@ -1,0 +1,11 @@
+{# Archive pages render this Paragraph's editable title through the node hero. #}
+{% if not dyne_legacy %}
+<section class="dyne-hero hero{{ dyne_is_home ? ' dyne-hero--home' : '' }}">
+  <div class="container">
+    <h1 class="hero-title-1">{{ paragraph.field_title_line1.value }}<br /><span class="red-one">{{ paragraph.field_title_line2.value }}</span></h1>
+  </div>
+  {% if paragraph.field_banner_text.value %}
+    <div class="hero-subtitle">{{ paragraph.field_banner_text.value }}</div>
+  {% endif %}
+</section>
+{% endif %}

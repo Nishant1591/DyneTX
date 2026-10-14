@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 90 90">
+  <g id="ico-muscle-biology" transform="translate(-213.961 -1.317)">
+    <rect id="Rectangle_51" data-name="Rectangle 51" width="90" height="90" transform="translate(213.961 1.317)" fill="rgba(255,255,255,0)"/>
+    <path id="Path_153" data-name="Path 153" d="M231.9,70l.9-.9c2.2-2.2,2.7-5,3.3-8.1v-.2c1.8-10.3,8.5-18.8,13.7-24,5.3-5.3,13.7-11.9,24-13.7h.2c3.2-.5,5.9-1,8.1-3.3l.9-.9" fill="none" stroke="#a4dae4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.602"/>
+    <path id="Path_154" data-name="Path 154" d="M287,22.8l-.9.9c-2.2,2.2-2.7,5-3.3,8.1V32c-1.8,10.3-8.5,18.8-13.7,24-5.3,5.3-13.7,11.9-24,13.7h-.2c-3.2.5-5.9,1-8.1,3.3l-.9.9" fill="none" stroke="#a4dae4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.602"/>
+    <path id="Path_155" data-name="Path 155" d="M240.7,60.7h0c-.3,0-.4-.2-.4-.5.8-5.2,7.2-14.1,12.9-19.8s14.6-12,19.8-12.9c.2,0,.4.1.4.3s-.1.4-.3.4c-4.5.7-13,6.3-19.4,12.7S241.8,55.8,241,60.3c.1.2-.1.4-.3.4" fill="#07b4d1" stroke="#07b4d1" stroke-miterlimit="10" stroke-width="0.578"/>
+    <path id="Path_156" data-name="Path 156" d="M242.4,62.4h-.2a.365.365,0,0,1-.2-.5c1.9-4.1,8.9-12.3,14.6-18s13.9-12.6,18-14.6a.381.381,0,1,1,.3.7c-3.6,1.7-11.4,8-17.8,14.4s-12.7,14.2-14.4,17.8c0,.1-.1.2-.3.2" fill="#07b4d1" stroke="#07b4d1" stroke-miterlimit="10" stroke-width="0.578"/>
+    <path id="Path_157" data-name="Path 157" d="M245.8,65.5c-.2,0-.4-.1-.4-.3s.1-.4.3-.4c4.5-.7,13-6.3,19.4-12.7S277,37.2,277.8,32.7c0-.2.2-.4.4-.3.2,0,.4.2.3.4-.8,5.2-7.2,14.1-12.9,19.8-5.6,5.7-14.5,12.1-19.8,12.9h0" fill="#07b4d1" stroke="#07b4d1" stroke-miterlimit="10" stroke-width="0.578"/>
+    <path id="Path_158" data-name="Path 158" d="M244.1,63.8a.758.758,0,0,1-.4-.2.365.365,0,0,1,.2-.5c3.6-1.7,11.4-8,17.8-14.4s12.7-14.2,14.4-17.8a.381.381,0,0,1,.7.3c-1.9,4.1-8.9,12.3-14.6,18s-13.9,12.6-18,14.6h-.1" fill="#07b4d1" stroke="#07b4d1" stroke-miterlimit="10" stroke-width="0.578"/>
+  </g>
+</svg>

@@ -1,0 +1,31 @@
+/* Source team markup now owns the layout. Undo the earlier generic card/modal
+ * overrides without changing the archived stylesheet or other components. */
+.dyne-team .card-img-top {
+  max-width: none;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: fill;
+}
+.dyne-team .modal .modal-body {
+  padding: var(--mdb-modal-padding, 1rem);
+  padding-bottom: 80px;
+  text-align: left;
+}
+.dyne-team .modal .card .card-body {
+  margin-top: 0;
+  padding: 15px 0 0;
+}
+/* Some source biographies are plain text, while others contain paragraphs.
+ * Both use the original description paragraph typography. */
+.dyne-team .modal .card-description {
+  color: #19375b;
+  font-size: .875rem;
+  line-height: 1.3;
+}
+@media (min-width: 992px) {
+  .dyne-team .modal .card-description { font-size: 1.125rem; }
+}
+.dyne-team button:focus-visible {
+  outline: 3px solid #115da9;
+  outline-offset: 4px;
+}

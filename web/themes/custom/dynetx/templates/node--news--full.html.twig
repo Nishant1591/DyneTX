@@ -1,0 +1,10 @@
+<article{{ attributes.addClass('dyne-news-detail', 'wrapper', 'pages').addClass(dyne_page_classes|default([])) }}>
+  <div class="hero hero-third-level" aria-hidden="true"></div>
+  <div class="container py-5">
+    {{ title_prefix }}<h1>{{ label }}</h1>{{ title_suffix }}
+    {{ content.field_image }}
+    <div class="dyne-legacy-content">{{ content.field_body_text }}</div>
+    {{ content.field_link }}
+    <p class="mt-4"><a href="{{ path('<front>') }}#latest-news">{{ 'Latest news'|t }}</a></p>
+  </div>
+</article>

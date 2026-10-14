@@ -1,0 +1,9 @@
+/* Restore the layout supplied by the source carousel plugin while keeping
+ * Drupal's native scrolling, keyboard support, and manual playback controls. */
+.dyne-legacy-content .multi-carousel { position: relative; }
+.dyne-legacy-content .multi-carousel-inner {
+  position: relative;
+  white-space: nowrap;
+}
+.dyne-legacy-content .multi-carousel-item { white-space: nowrap; }
+.dyne-legacy-content .multi-carousel .quote-container .text { white-space: normal; }

@@ -1,0 +1,7 @@
+name: OneTrust WebForm
+type: module
+description: 'Configurable OneTrust contact and community forms imported from the Dyne source site.'
+package: Dyne
+core_version_requirement: ^10 || ^11
+dependencies:
+  - drupal:block

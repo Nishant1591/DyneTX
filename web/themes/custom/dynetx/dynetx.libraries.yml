@@ -1,0 +1,37 @@
+global:
+  version: 2.8
+  css:
+    theme:
+      # The source stylesheet owns font faces and public-site presentation.
+      # Avoid loading the earlier approximate brand styles alongside it.
+      css/legacy.css: {}
+      css/community-popup.css: {}
+      css/integration.css: {}
+      css/parity.css: {}
+      css/footer.css: {}
+      css/team.css: {}
+      css/navigation.css: {}
+      css/carousel.css: {}
+      css/icons.css: {}
+      css/consent.css: {}
+      css/popups.css: {}
+  js:
+    js/exit-modal.js: {}
+    js/carousel.js: {}
+    js/custom.js: {}
+    js/team.js: {}
+    js/navigation.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/once
+    - bootstrap5/global-styling
+    - bootstrap5/bootstrap5-js-latest
+
+exit-modal:
+  version: 1.x
+  js:
+    js/exit-modal.js: {}
+  dependencies:
+    - core/jquery
+    - core/once

@@ -1,0 +1,13 @@
+enabled: false
+environment: staging
+prod_id: '5c7d29d6-5208-4f7a-b1b5-b9aae9d54670'
+staging_id: '5c7d29d6-5208-4f7a-b1b5-b9aae9d54670-test'
+collection_point_id: 'ot-f1366d23-e54d-40cb-b359-36f96ad4bc9d'
+dm1_prod_id: ''
+dm1_staging_id: ''
+dm1_collection_point_id: ''
+source_platform: 'https://www.dyne-tx.com'
+data_source_prod: ''
+data_source_stage: ''
+gtm_event: ''
+thank_you_text: 'Thank you! Your submission has been received.'

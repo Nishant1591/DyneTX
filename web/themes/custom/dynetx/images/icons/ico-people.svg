@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 90 90">
+  <g id="ico-people" transform="translate(-878.961 -1.317)">
+    <rect id="Rectangle_55" data-name="Rectangle 55" width="90" height="90" transform="translate(878.961 1.317)" fill="rgba(255,255,255,0)"/>
+    <path id="Path_168" data-name="Path 168" d="M930.1,60.9v9.3a.472.472,0,0,0,.5.5h2.9a4.055,4.055,0,0,0,4.1-4.1v-9a7.49,7.49,0,0,0-7.5-7.5h-12a7.49,7.49,0,0,0-7.5,7.5v9a4.055,4.055,0,0,0,4.1,4.1h2.8a.458.458,0,0,0,.4-.5V60.9" fill="none" stroke="#115da6" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.508"/>
+    <path id="Path_169" data-name="Path 169" d="M903.5,29.7a6.7,6.7,0,1,0,6.7,6.7,6.7,6.7,0,0,0-6.7-6.7" fill="none" stroke="#a4dae4" stroke-miterlimit="10" stroke-width="1.508"/>
+    <path id="Path_170" data-name="Path 170" d="M944.6,29.7a6.7,6.7,0,1,0,6.7,6.7,6.7,6.7,0,0,0-6.7-6.7" fill="none" stroke="#a4dae4" stroke-miterlimit="10" stroke-width="1.508"/>
+    <path id="Path_171" data-name="Path 171" d="M924,33.8a6.7,6.7,0,1,0,6.7,6.7,6.7,6.7,0,0,0-6.7-6.7" fill="none" stroke="#115da6" stroke-miterlimit="10" stroke-width="1.508"/>
+    <path id="Path_172" data-name="Path 172" d="M932.8,17.2a6.7,6.7,0,1,0,6.7,6.7,6.832,6.832,0,0,0-6.7-6.7" fill="none" stroke="#a4dae4" stroke-miterlimit="10" stroke-width="1.508"/>
+    <path id="Path_173" data-name="Path 173" d="M915.3,17.2a6.7,6.7,0,1,0,6.7,6.7,6.7,6.7,0,0,0-6.7-6.7" fill="none" stroke="#a4dae4" stroke-miterlimit="10" stroke-width="1.508"/>
+    <path id="Path_175" data-name="Path 175" d="M912.9,46H899.7a9.709,9.709,0,0,0-9.7,9.7v6.8a4.055,4.055,0,0,0,4.1,4.1H897a.472.472,0,0,0,.5-.5V56.8" fill="none" stroke="#a4dae4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.508"/>
+    <path id="Path_176" data-name="Path 176" d="M934.9,46h13.2a9.709,9.709,0,0,1,9.7,9.7v6.8a4.055,4.055,0,0,1-4.1,4.1h-2.9a.472.472,0,0,1-.5-.5V56.8" fill="none" stroke="#a4dae4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.508"/>
+  </g>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 90 90">
+  <g id="ico-receptor" transform="translate(-48.961 -1.317)">
+    <rect id="Rectangle_49" data-name="Rectangle 49" width="90" height="90" transform="translate(48.961 1.317)" fill="rgba(255,255,255,0)"/>
+    <line id="Line_18" data-name="Line 18" y2="8.1" transform="translate(85.8 68.2)" fill="none" stroke="#a4dae4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.602"/>
+    <line id="Line_19" data-name="Line 19" y2="8.1" transform="translate(102 68.2)" fill="none" stroke="#a4dae4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.602"/>
+    <path id="Path_150" data-name="Path 150" d="M85.8,16.4c-4.3,0-7.8,11.8-7.8,26.3S81.5,69,85.8,69s7.8-11.8,7.8-26.3-3.5-26.3-7.8-26.3" fill="#fff" stroke="#115da6" stroke-miterlimit="10" stroke-width="1.885"/>
+    <path id="Path_151" data-name="Path 151" d="M102,16.3c-4.3,0-7.8,11.8-7.8,26.3S97.7,69,102,69s7.8-11.8,7.8-26.3-3.5-26.4-7.8-26.4" fill="#fff" stroke="#115da6" stroke-miterlimit="10" stroke-width="1.885"/>
+  </g>
+</svg>

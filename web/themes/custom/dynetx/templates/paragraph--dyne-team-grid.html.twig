@@ -1,0 +1,61 @@
+{# Preserve the editable Paragraph data and use the original site's team layout.
+   The live source has one visible leadership group and two collapsed boards. #}
+{% set team_id = 'dyne-team-' ~ paragraph.id() %}
+{% set heading = paragraph.field_heading.value|default('') %}
+{% set is_board = heading is not empty %}
+{% set collapse_id = team_id ~ '-members' %}
+{% set source_anchor = heading|lower == 'board of directors' ? 'bod' : (heading|lower == 'scientific advisory board' ? 'scientific' : '') %}
+<div{{ attributes.addClass('dyne-team') }}>
+  <section class="container-fluid section {{ is_board ? 'boards' : 'leadership-team' }}">
+    {% if paragraph.field_anchor.value %}<span id="{{ paragraph.field_anchor.value }}" class="scroll-anchor"></span>{% endif %}
+    <div class="container">
+      {% if is_board %}
+        <div class="row"><div class="col-12">
+          <div class="collapse-hdr">
+            <h2 id="{{ team_id }}-heading">{{ heading }}</h2>
+            <button class="btn btn-primary btn-plus-collapse stretched-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#{{ collapse_id }}"{% if source_anchor %} data-dyne-team-anchor="{{ source_anchor }}"{% endif %} aria-expanded="false" aria-controls="{{ collapse_id }}" aria-label="{{ 'Show or hide'|t }} {{ heading }}"><i aria-hidden="true"></i></button>
+          </div>
+      {% endif %}
+      <div class="row{{ is_board ? ' collapse' : '' }}"{% if is_board %} id="{{ collapse_id }}" aria-labelledby="{{ team_id }}-heading"{% endif %}>
+        {% for m in dyne_items %}
+          {% set modal_id = team_id ~ '-' ~ loop.index %}
+          <div class="col-12 col-sm-6 col-md-4 card">
+            {% if not is_board and m.photo %}<img class="card-img-top" src="{{ m.photo }}" alt="{{ m.name }}" />{% endif %}
+            <div class="card-body">
+              {% if not is_board %}
+                <button type="button" class="btn btn-primary btn-plus stretched-link" data-bs-toggle="modal" data-bs-target="#modalTeam" data-dyne-team-bio="{{ modal_id }}" aria-label="{{ 'Read biography of'|t }} {{ m.name }}"><i aria-hidden="true"></i></button>
+              {% endif %}
+              <h4 class="card-title">{{ m.name }}</h4>
+              <p class="card-text">{{ m.role }}</p>
+            </div>
+            {% if is_board %}
+              <button type="button" class="btn btn-primary btn-plus stretched-link" data-bs-toggle="modal" data-bs-target="#modalTeam" data-dyne-team-bio="{{ modal_id }}" aria-label="{{ 'Read biography of'|t }} {{ m.name }}"><i aria-hidden="true"></i></button>
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+      {% if is_board %}</div></div>{% endif %}
+    </div>
+  </section>
+  {# Keep biography content editable in its existing Paragraph. These inert
+     templates populate the single shared dialog without closing it on arrows. #}
+  {% for m in dyne_items %}
+    {% set bio_id = team_id ~ '-' ~ loop.index %}
+    <template id="{{ bio_id }}" data-dyne-team-noimage="{{ is_board or not m.photo ? 'true' : 'false' }}" data-dyne-team-count="{{ loop.length }}" data-dyne-team-prev="{{ team_id }}-{{ loop.first ? loop.length : loop.index - 1 }}" data-dyne-team-next="{{ team_id }}-{{ loop.last ? 1 : loop.index + 1 }}">
+      {% if not is_board and m.photo %}
+        <div class="col-12 col-sm-4 card image_card">
+          <img class="card-img-top" src="{{ m.photo }}" alt="{{ m.name }}" />
+          <div class="card-body">
+            <h4 class="card-title d-none d-sm-block" aria-hidden="true">{{ m.name }}</h4>
+            <p class="card-text d-none d-sm-block" aria-hidden="true">{{ m.role }}</p>
+          </div>
+        </div>
+      {% endif %}
+      <div class="col-12 col-sm-8 description">
+        <h4 data-dyne-team-title>{{ m.name }}</h4>
+        <h5>{{ m.role }}</h5>
+        <div class="card-description">{{ m.bio|raw }}</div>
+      </div>
+    </template>
+  {% endfor %}
+</div>

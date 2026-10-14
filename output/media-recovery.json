@@ -1,0 +1,171 @@
+{
+  "generated_at": "2026-10-13T17:01:42.355340+00:00",
+  "source": "Public original Dyne uploads referenced by imported legacy content",
+  "concurrency": 2,
+  "records": [
+    {
+      "source_url": "https://www.dyne-tx.com/wp-content/uploads/Dyne-APR9-ASOs.mp4",
+      "download_url": "https://www.dyne-tx.com/wp-content/uploads/Dyne-APR9-ASOs.mp4",
+      "aliases": [
+        "/force-video"
+      ],
+      "local_path": "web/sites/default/files/legacy/Dyne-APR9-ASOs.mp4",
+      "public_path": "/sites/default/files/legacy/Dyne-APR9-ASOs.mp4",
+      "http_status": 200,
+      "content_type": "video/mp4",
+      "elapsed_seconds": 5.9,
+      "bytes": 19220931,
+      "sha256": "713335da319be706f3c5ab89dc74e771db887462e131523ebbcf18b068b38433",
+      "status": "recovered",
+      "mp4_signature_verified": true
+    },
+    {
+      "source_url": "https://www.dyne-tx.com/wp-content/uploads/RARE-DISEASE-DAY_2022_AR.mp4",
+      "download_url": "https://www.dyne-tx.com/wp-content/uploads/RARE-DISEASE-DAY_2022_AR.mp4",
+      "aliases": [
+        "/rare-disease-day-video-presentation"
+      ],
+      "local_path": "web/sites/default/files/legacy/RARE-DISEASE-DAY_2022_AR.mp4",
+      "public_path": "/sites/default/files/legacy/RARE-DISEASE-DAY_2022_AR.mp4",
+      "http_status": 200,
+      "content_type": "video/mp4",
+      "elapsed_seconds": 11.19,
+      "bytes": 47598405,
+      "sha256": "c8bba3d410c0b184e27cab218bb526b6a14e0cb9ddf901f6797ecf9d9d6f8e9d",
+      "status": "recovered",
+      "mp4_signature_verified": true
+    },
+    {
+      "source_url": "https://www.dyne-tx.com/wp-content/uploads/RARE-DISEASE-DAY_2022.mp4",
+      "download_url": "https://www.dyne-tx.com/wp-content/uploads/RARE-DISEASE-DAY_2022.mp4",
+      "aliases": [
+        "/rdd2022"
+      ],
+      "local_path": "web/sites/default/files/legacy/RARE-DISEASE-DAY_2022.mp4",
+      "public_path": "/sites/default/files/legacy/RARE-DISEASE-DAY_2022.mp4",
+      "http_status": 200,
+      "content_type": "video/mp4",
+      "elapsed_seconds": 29.66,
+      "bytes": 252899400,
+      "sha256": "7b5b09b10a21f2da3b11042e1930e4283a0a6e2097ec5b7c6bfa4f443c7f44a8",
+      "status": "recovered",
+      "mp4_signature_verified": true
+    },
+    {
+      "source_url": "https://www.dyne-tx.com/wp-content/uploads/FSHD_Chelsea_Moeller_Story_R1_V1.mp4",
+      "download_url": "https://www.dyne-tx.com/wp-content/uploads/FSHD_Chelsea_Moeller_Story_R1_V1.mp4",
+      "aliases": [
+        "/world-fshd-day-2022"
+      ],
+      "local_path": "web/sites/default/files/legacy/FSHD_Chelsea_Moeller_Story_R1_V1.mp4",
+      "public_path": "/sites/default/files/legacy/FSHD_Chelsea_Moeller_Story_R1_V1.mp4",
+      "http_status": 200,
+      "content_type": "video/mp4",
+      "elapsed_seconds": 21.54,
+      "bytes": 192013929,
+      "sha256": "34b7298957adb238f3e105c70525bb0501ba6e23a8e704fecb56426f381a1625",
+      "status": "recovered",
+      "mp4_signature_verified": true
+    },
+    {
+      "source_url": "https://www.dyne-tx.com/wp-content/uploads/Duchenne_Diana_Johnson_Story_R2.mp4",
+      "download_url": "https://www.dyne-tx.com/wp-content/uploads/Duchenne_Diana_Johnson_Story_R2.mp4",
+      "aliases": [
+        "/diana-and-jordan-2022"
+      ],
+      "local_path": "web/sites/default/files/legacy/Duchenne_Diana_Johnson_Story_R2.mp4",
+      "public_path": "/sites/default/files/legacy/Duchenne_Diana_Johnson_Story_R2.mp4",
+      "http_status": 200,
+      "content_type": "video/mp4",
+      "elapsed_seconds": 21.15,
+      "bytes": 166674132,
+      "sha256": "6940924785386b0241cf62fbbcdec7b4cd8714e26545621642f38a25f5ab5c4e",
+      "status": "recovered",
+      "mp4_signature_verified": true
+    },
+    {
+      "source_url": "https://www.dyne-tx.com/wp-content/uploads/COMMITMENT_TO_PATIENTS_ALT_V2.mp4?autoplay=1",
+      "download_url": "https://www.dyne-tx.com/wp-content/uploads/COMMITMENT_TO_PATIENTS_ALT_V2.mp4?autoplay=1",
+      "aliases": [
+        "/our-commitment-video"
+      ],
+      "local_path": "web/sites/default/files/legacy/COMMITMENT_TO_PATIENTS_ALT_V2.mp4",
+      "public_path": "/sites/default/files/legacy/COMMITMENT_TO_PATIENTS_ALT_V2.mp4",
+      "http_status": 200,
+      "content_type": "video/mp4",
+      "elapsed_seconds": 16.05,
+      "bytes": 137675995,
+      "sha256": "749ea553089caa17824f5650cf0cf35844612c70b29485da499cc879c48d0b0c",
+      "status": "recovered",
+      "mp4_signature_verified": true
+    },
+    {
+      "source_url": "https://www.dyne-tx.com/wp-content/uploads/DM1_Joachim_Tim_Story_R3.mp4",
+      "download_url": "https://www.dyne-tx.com/wp-content/uploads/DM1_Joachim_Tim_Story_R3.mp4",
+      "aliases": [
+        "/joachim-and-tim"
+      ],
+      "local_path": "web/sites/default/files/legacy/DM1_Joachim_Tim_Story_R3.mp4",
+      "public_path": "/sites/default/files/legacy/DM1_Joachim_Tim_Story_R3.mp4",
+      "http_status": 200,
+      "content_type": "video/mp4",
+      "elapsed_seconds": 29.29,
+      "bytes": 256055959,
+      "sha256": "bd31e3a3f013f54084f041b11a0641a582cb6f48befb16f616ce3471e7061743",
+      "status": "recovered",
+      "mp4_signature_verified": true
+    },
+    {
+      "source_url": "https://www.dyne-tx.com/wp-content/uploads/Dyne Service Day 2022_V6.mp4",
+      "download_url": "https://www.dyne-tx.com/wp-content/uploads/Dyne%20Service%20Day%202022_V6.mp4",
+      "aliases": [
+        "/force-for-good-service-day-2022"
+      ],
+      "local_path": "web/sites/default/files/legacy/Dyne Service Day 2022_V6.mp4",
+      "public_path": "/sites/default/files/legacy/Dyne%20Service%20Day%202022_V6.mp4",
+      "http_status": 200,
+      "content_type": "video/mp4",
+      "elapsed_seconds": 27.07,
+      "bytes": 231217518,
+      "sha256": "41da63f83c70659dad8c2402b5c45461e3b2ac9dfc84a7cefe23226ff28f4a91",
+      "status": "recovered",
+      "mp4_signature_verified": true
+    },
+    {
+      "source_url": "https://www.dyne-tx.com/wp-content/uploads/rare_disease_day_2023.mp4",
+      "download_url": "https://www.dyne-tx.com/wp-content/uploads/rare_disease_day_2023.mp4",
+      "aliases": [
+        "/rare-disease-day-2023"
+      ],
+      "local_path": "web/sites/default/files/legacy/rare_disease_day_2023.mp4",
+      "public_path": "/sites/default/files/legacy/rare_disease_day_2023.mp4",
+      "http_status": 200,
+      "content_type": "video/mp4",
+      "elapsed_seconds": 32.02,
+      "bytes": 282106066,
+      "sha256": "b1ea447309be473c552fd8080c34ceaaf92db57b01463206aee56d897d773c1a",
+      "status": "recovered",
+      "mp4_signature_verified": true
+    },
+    {
+      "source_url": "https://www.dyne-tx.com/wp-content/uploads/Dyne_Culture_Video.mp4",
+      "download_url": "https://www.dyne-tx.com/wp-content/uploads/Dyne_Culture_Video.mp4",
+      "aliases": [
+        "/dyne-culture-video"
+      ],
+      "local_path": "web/sites/default/files/legacy/Dyne_Culture_Video.mp4",
+      "public_path": "/sites/default/files/legacy/Dyne_Culture_Video.mp4",
+      "http_status": 200,
+      "content_type": "video/mp4",
+      "elapsed_seconds": 18.06,
+      "bytes": 215281028,
+      "sha256": "240859c8dfca862f7fa2ae30c2b856fbc5b5606073dae9ef75e65a72ccb5d074",
+      "status": "recovered",
+      "mp4_signature_verified": true
+    }
+  ],
+  "recovered_count": 10,
+  "failed_count": 0,
+  "total_bytes": 1800743363,
+  "completed_at": "2026-10-13T17:03:37.428957+00:00"
+}

@@ -1,0 +1,2 @@
+web/sites/default/files/legacy/*.mp4 filter=lfs diff=lfs merge=lfs -text
+web/themes/custom/dynetx/**/*.mp4 filter=lfs diff=lfs merge=lfs -text

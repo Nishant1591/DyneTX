@@ -1,0 +1,96 @@
+{# Drupal regions retain control of menus/content; presentation follows the archived Dyne theme. #}
+
+{% if page.alert_banner %}
+  <div class="duchenne-alert-bar">{{ page.alert_banner }}</div>
+{% endif %}
+
+<header class="dyne-header header version-a fixed-top" role="banner">
+  <a href="{{ path('<front>') }}" class="logo ms-lg-3 mx-xl-0" aria-label="{{ 'Dyne home'|t }}">
+    <img src="{{ path('<front>') ~ directory }}/images/logo-shape.svg" width="176" height="50" class="img-fluid" alt="{{ 'Dyne Therapeutics'|t }}" />
+  </a>
+  <nav class="dyne-nav navbar navbar-expand-lg d-none d-lg-flex" aria-label="{{ 'Primary navigation'|t }}">
+    {{ page.primary_menu }}
+  </nav>
+  <button class="navbar-toggler dyne-drawer-toggle button-collapse d-lg-none ms-auto me-lg-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#dyneMobileDrawer" aria-controls="dyneMobileDrawer" aria-label="{{ 'Open navigation'|t }}">
+    <i aria-hidden="true"></i>
+  </button>
+  {{ page.header }}
+</header>
+<div class="offcanvas offcanvas-end dyne-mobile-drawer" id="dyneMobileDrawer" tabindex="-1" aria-labelledby="dyneMobileDrawerLabel" data-bs-backdrop="false">
+  <div class="offcanvas-header">
+    <a class="dyne-drawer-logo" href="{{ path('<front>') }}"><img src="{{ path('<front>') ~ directory }}/images/logo-shape.svg" width="176" height="50" alt="{{ 'Dyne Therapeutics home'|t }}" /></a>
+    <h2 id="dyneMobileDrawerLabel" class="visually-hidden">{{ 'Main menu'|t }}</h2>
+    <button type="button" class="dyne-drawer-close" data-bs-dismiss="offcanvas" aria-label="{{ 'Close navigation'|t }}"></button>
+  </div>
+  <div class="offcanvas-body">
+    {{ page.mobile_drawer }}
+    <nav class="dyne-mobile-nav" aria-label="{{ 'Mobile primary navigation'|t }}">{{ page.primary_menu }}</nav>
+    <div class="dyne-mobile-contact">
+      <h3>{{ 'Stay in Touch'|t }}</h3>
+      <a href="mailto:info@dyne-tx.com">info@dyne-tx.com</a>
+      <a href="tel:7817868230">781.786.8230</a>
+      <div class="dyne-drawer-socials">
+        <a href="https://www.linkedin.com/company/dynetx" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="ico-in ico-xs" aria-hidden="true"></i></a>
+        <a href="https://twitter.com/dyne_tx" target="_blank" rel="noopener noreferrer" aria-label="X"><i class="ico-tw ico-xs" aria-hidden="true"></i></a>
+        <a href="https://www.facebook.com/DyneTherapeutic/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="ico-fb ico-xs" aria-hidden="true"></i></a>
+        <a href="https://www.youtube.com/@dynetherapeutics" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="ico-youtube ico-xs" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{ page.breadcrumb }}
+{{ page.highlighted }}
+<main id="main-content" class="dyne-main" tabindex="-1">
+  {{ page.content }}
+</main>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-blend"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-10 footer-main">
+        <div class="row footer-info">
+          <div class="col-12 col-lg-3 footer-info-item"><p class="footer-moto">{{ 'Stay in touch'|t }}</p></div>
+          <div class="col-12 col-lg-3 footer-info-item"><a class="footer-contact" href="mailto:info@dyne-tx.com">info@dyne-tx.com</a></div>
+          <div class="col-12 col-lg-auto footer-info-item"><a class="footer-contact" href="tel:7817868230">781.786.8230</a></div>
+          <div class="col-12 col-lg-auto ms-lg-auto footer-info-item footer-socials-col">
+            <div class="footer-socials">
+              <a href="https://www.linkedin.com/company/dynetx" target="_blank" rel="noopener noreferrer" title="{{ 'LinkedIn (opens in a new tab)'|t }}"><img src="{{ path('<front>') ~ directory }}/images/footer/social-linkedin.svg" width="32" height="32" alt="LinkedIn" /></a>
+              <a href="https://twitter.com/dyne_tx" target="_blank" rel="noopener noreferrer" title="{{ 'X (opens in a new tab)'|t }}"><img src="{{ path('<front>') ~ directory }}/images/footer/social-x.svg" width="32" height="32" alt="X" /></a>
+              <a href="https://www.facebook.com/DyneTherapeutic/" target="_blank" rel="noopener noreferrer" title="{{ 'Facebook (opens in a new tab)'|t }}"><img src="{{ path('<front>') ~ directory }}/images/footer/social-facebook.svg" width="32" height="32" alt="Facebook" /></a>
+              <a href="https://www.youtube.com/@dynetherapeutics" target="_blank" rel="noopener noreferrer" title="{{ 'YouTube (opens in a new tab)'|t }}"><img src="{{ path('<front>') ~ directory }}/images/footer/social-youtube.svg" width="32" height="32" alt="YouTube" /></a>
+            </div>
+          </div>
+        </div>
+        {{ page.stay_in_touch }}
+        <div class="row footer-legal">
+          <div class="col-12 offset-lg-3 col-lg-auto footer-legal-item footer-legal-links">{{ page.footer }}</div>
+          <div class="col-12 col-lg-auto ms-lg-auto footer-legal-item footer-copyright-col"><span>&copy; {{ 'now'|date('Y') }} Dyne Therapeutics, Inc.</span></div>
+        </div>
+      </div>
+      <div class="col-lg-2 footer-mark-col"><img src="{{ path('<front>') ~ directory }}/images/footer/dyne-mark.svg" alt="" class="footer-mark" /></div>
+    </div>
+  </div>
+</footer>
+
+<div class="modal fade" id="dyneExitModal" tabindex="-1" aria-labelledby="dyneExitModalTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-body py-5">
+        <button type="button" class="btn close" data-bs-dismiss="modal" aria-label="{{ 'Close'|t }}"><i aria-hidden="true"></i></button>
+        <div class="row justify-content-center mt-5 mb-4">
+          <div class="col-lg-8">
+            <h2 class="h4 text-center" id="dyneExitModalTitle">{{ 'You are now leaving'|t }}<br />{{ 'the Dyne Therapeutics corporate website'|t }}</h2>
+            <div class="btn-line d-flex justify-content-center mt-5">
+              <a href="#" id="dyneExitContinue" class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">{{ 'Continue'|t }}</a>
+              <button type="button" class="btn btn-secondary btn-lg" data-bs-dismiss="modal">{{ 'Stay on page'|t }}</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{{ page.modals }}
+{% include '@dynetx/includes/team-modal.html.twig' %}

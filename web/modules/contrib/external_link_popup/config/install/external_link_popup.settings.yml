@@ -1,0 +1,5 @@
+whitelist: ''
+show_admin: false
+width:
+  value: 85
+  units: '%'

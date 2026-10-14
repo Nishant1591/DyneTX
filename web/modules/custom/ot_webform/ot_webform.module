@@ -1,0 +1,31 @@
+<?php
+
+/**
+ * @file
+ * OneTrust form integration for migrated editorial content and Drupal blocks.
+ */
+
+use Drupal\Core\Cache\CacheableMetadata;
+
+/**
+ * Implements hook_theme().
+ */
+function ot_webform_theme(): array {
+  return [
+    'ot_webform_embed' => [
+      'variables' => ['profile' => 'contact'],
+    ],
+  ];
+}
+
+/**
+ * Implements hook_page_attachments().
+ */
+function ot_webform_page_attachments(array &$attachments): void {
+  // Only the small local behavior is attached globally. It loads no provider
+  // resources unless the page contains a marker and the integration is enabled.
+  $config = \Drupal::config('ot_webform.settings');
+  $attachments['#attached']['library'][] = 'ot_webform/embed';
+  $attachments['#attached']['drupalSettings']['otWebform'] = $config->getRawData();
+  CacheableMetadata::createFromObject($config)->applyTo($attachments);
+}

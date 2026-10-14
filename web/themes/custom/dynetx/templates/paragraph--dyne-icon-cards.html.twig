@@ -1,0 +1,19 @@
+{# Icon card grid component: WP home 4-col cards (icon/title/text/Learn more). #}
+{# Items JSON: [{icon, title, text, link, style}] #}
+<section class="dyne-icon-cards container py-5">
+  {% if paragraph.field_heading.value %}<h2 class="h1">{{ paragraph.field_heading.value }}</h2>{% endif %}
+  <div class="row">
+    {% for item in dyne_items %}
+      <div class="col-12 col-md-6 col-lg-3 mb-4">
+        <div class="card h-100 text-center p-3">
+          {% if item.icon %}<img class="card-img-top mx-auto" src="{{ item.icon }}" alt="" />{% endif %}
+          <div class="card-body">
+            <h3 class="h4 {{ item.style }}">{{ item.title }}</h3>
+            <p>{{ item.text }}</p>
+            {% if item.link %}<a href="{{ item.link }}" class="btn btn-primary stretched-link">Learn more</a>{% endif %}
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>
