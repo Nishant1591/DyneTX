@@ -1,0 +1,57 @@
+.grid {
+	display: -ms-grid;
+	display:     grid;
+	-ms-grid-columns: 1fr[12];
+	grid-template-columns: repeat(12, 1fr);
+
+	&[columns] {
+		-ms-grid-columns: 1fr[12];
+		grid-template-columns: repeat(12, 1fr);
+	}
+
+	&.gap,
+	&[gap] {
+		grid-gap: 10px;
+	}
+}
+
+@mixin grid-columns($columns: 12 11 10 9 8 7 6 5 4 3 2 1){
+	@if $columns {
+		@each $column in $columns {
+			$span: 12 / $column;
+
+			.grid.columns-#{$column},
+			.grid[columns="#{$column}"] {
+				-ms-grid-columns: 1fr[12];
+				grid-template-columns: repeat($column, 1fr);
+				& > * {
+					grid-column: auto / span 1;
+					-ms-grid-column-span: 1;
+				}
+
+				/*& > * {
+					grid-column: auto / span $span;
+				}*/
+			}
+		}
+	}
+}
+
+@mixin grid-columns-override($span: 1 2 3 4 5 6 7 8 9 10 11 12){
+	@if $span {
+		@each $i in $span {
+			.grid > #{"*.span-" + $i} {
+				grid-column: auto / span $i;
+				-ms-grid-column-span: $i;
+			}
+		}
+	}
+}
+
+@include grid-columns();
+@include grid-columns-override();
+
+.grid > .span-all {
+	grid-column-start: 1;
+	grid-column-end: -1;
+}

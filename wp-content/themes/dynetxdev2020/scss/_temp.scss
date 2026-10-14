@@ -1,0 +1,90 @@
+
+.brdr { border: 1px solid red }
+.brdg { border: 1px solid green }
+.brdb { border: 1px solid blue }
+.brdy { border: 1px solid yellow }
+
+
+
+  
+
+
+
+.quote-wrap {
+    font-size: calc(0.005 * 100vw + 11.4114px);
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    margin-bottom: 1em;
+}
+
+.stock-quote {
+	time {
+    font-size: 0.95em;
+	}
+	
+	.left-stock {
+    width: 100%;
+    float: none;
+    margin-right: 0;
+		
+		@media (min-width: #{$breakpoint-lg}) {
+			width: 24.05063%;
+			float: left;
+			margin-right: 1.26582%;
+		}
+
+		.exchange {
+			font-weight: bold;
+		}
+
+		.quote-price {
+			font-size: 3rem;
+			color: #da353b;
+		}
+	}
+	
+	.center-stock {
+    width: 100%;
+    float: none;
+    margin-right: 0;
+		
+		@media (min-width: #{$breakpoint-lg}) {
+			width: 36.70886%;
+			float: left;
+			margin-right: 1.26582%;
+		}
+	}	
+	
+	.right-stock {
+    width: 100%;
+    float: none;
+    margin-right: 0;
+		
+		@media (min-width: #{$breakpoint-lg}) {
+			width: 36.70886%;
+			float: right;
+			margin-right: 0;
+		}
+	}	
+	
+	dd {
+    width: 60%;
+	}
+	
+	dt {
+			width: 40%;
+	}	
+	
+	dd, dt {
+    margin: 0;
+    display: inline-block;
+    border-bottom: 1px solid #dee2e6;
+    line-height: 2;
+	}
+	
+	.price-down {
+    color: #da353b;
+		font-weight: 700;
+	}	
+} 

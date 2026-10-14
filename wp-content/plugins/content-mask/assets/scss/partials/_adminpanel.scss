@@ -1,0 +1,643 @@
+// Reset Container Box Size
+body.toplevel_page_content-mask #wpcontent {
+	padding: 0;
+}
+
+body.toplevel_page_content-mask .wrap {
+	margin: 0;
+}
+
+#content-mask,
+body.toplevel_page_content-mask {
+	background: #f7f7fa;
+}
+
+// Limit to just internal styles (remove custom class)
+body.content-mask-admin {
+	._content-mask-affect {
+		// Header Styles
+		h1.headline {
+			padding: 12px;
+			background: $enabled;
+			color: #fff;
+			text-transform: uppercase;
+		}
+
+		h1 svg {
+			width: 24px;
+			margin-bottom: -6px;
+			fill: #fff;
+		}
+
+		h1 span {
+			font-weight: 600;
+		}
+
+		h1 span.version-number {
+			font-size: 12px;
+			line-height: 0;
+			text-transform: none;
+			font-weight: 100;
+			opacity: .65;
+			font-family: monospace;
+		}
+
+		h1 strong {
+			font-weight: 900;
+		}
+
+		h1 .button {
+			background: transparent;
+			border: none;
+			box-shadow: none;
+			color: #fff;
+			border-radius: 0;
+			margin-left: 5px;
+			opacity: .8;
+		}
+
+		h1 [href*="paypal"] {
+			opacity: 1;
+			background: darken( $enabled, 10% );
+		}
+
+		h1 .button:hover {
+			filter: brightness(110%);
+			opacity: 1;
+			background: $enabled;
+			color: #fff;
+		}
+
+		// Mobile Nav
+		#mobile-nav-toggle {
+			display: none;
+			line-height: 0;
+			height: 24px;
+			width: 25px;
+			padding: 5px;
+		}
+
+		#mobile-nav-toggle:hover {
+			cursor: pointer;
+			background: #22b7ff;
+		}
+
+		// Wrapper Styles
+		.inner {
+			padding: 35px 70px;
+		}
+
+		a:focus {
+			outline: none;
+			box-shadow: none;
+		}
+
+		//Submenu Styles
+		nav {
+			list-style-type: none;
+			border-bottom: 1px solid #e8e9ed;
+			margin-bottom: 35px;
+		}
+
+		nav li {
+			display: inline;
+		}
+
+		nav li a {
+			text-decoration: none;
+			min-width: 85px;
+			display: inline-block;
+			font-weight: 500;
+			color: #aaa;
+			font-size: 14px;
+			letter-spacing: .3px;
+			padding: 10px 0;
+			position: relative;
+		}
+
+		nav li a.active {
+			color: #000;
+			cursor: default;
+			pointer-events: none;
+		}
+
+		nav li a:not(.active):hover {
+			color: $enabled;
+		}
+
+		nav li a.active span {
+			display: inline-block;
+			position: relative;
+			padding-bottom: 12px;
+			margin-bottom: -10px;
+		}
+
+		nav li a.active span:after {
+			content: "";
+			display: block;
+			height: 3px;
+			position: absolute;
+			width: 100%;
+			background: $enabled;
+			bottom: -2px;
+		}
+
+		.content-mask-panel {
+			height: 0;
+			opacity: 0;
+			overflow: hidden;
+		}
+
+		.content-mask-panel.active {
+			opacity: 1;
+			height: auto;
+			overflow: visible;
+		}
+
+		// Table Data
+		.content-mask-panel table {
+			border-collapse: collapse;
+			margin-bottom: 16px;
+		}
+
+		.content-mask-panel #load-more-masks {
+			border: none;
+			padding: 10px 20px;
+			margin: 12px 8px 0;
+			border-radius: 4px;
+			background: #eee;
+			font-size: 16px;
+			font-weight: 500;
+		}
+
+		.content-mask-panel #load-more-masks:hover {
+			background: #0095ee;
+			box-shadow: 0 3px 9px -5px #000;
+			cursor: pointer;
+			color: #fff;
+		}
+
+		.content-mask-panel #load-more-masks:focus {
+			box-shadow: none;
+		}
+
+		.content-mask-panel tr:hover {
+			background: #fff;
+			border-radius: 4px;
+			box-shadow: 0 6px 50px -21px;
+		}
+
+		.content-mask-panel tr.new-mask {
+			background: #0095ee;
+			color: #fff;
+
+			.method-like {
+				div {
+					background: #fff;
+					color: #0095ee;
+
+					&:hover {
+						cursor: pointer;
+						transform: scale(1.1);
+						box-shadow: 0 5px 25px -12px #000;
+					}
+				}
+			}
+
+			[readonly] {
+				color: #fff;
+				display: block;
+				min-height: 15px;
+				background: transparent;
+				border: 0px solid transparent;
+			}
+
+			input[type="text"] {
+				background: rgba(0,0,0,.25);
+				border: none;
+				width: 100%;
+				color: #fff;
+				font-weight: 600;
+				box-shadow: inset 2px 2px 10px -9px #000;
+
+				&::placeholder {
+					color: rgba(200,240,255, .65);
+				}
+			}
+
+			select {
+				border: none;
+				line-height: 2;
+			}
+		}
+
+		.content-mask-panel tr.deleting {
+			opacity: .5;
+			transition: .25s all ease-out;
+			transform: scale(.95);
+		}
+
+		.content-mask-panel td {
+			padding: 15px;
+		}
+
+		.content-mask-panel td:first-child {
+			border-top-left-radius: 5px;
+			border-bottom-left-radius: 5px;
+		}
+
+		.content-mask-panel td:last-child {
+			border-top-right-radius: 5px;
+			border-bottom-right-radius: 5px;
+		}
+
+		.content-mask-panel .method div,
+		.content-mask-panel .method-like div {
+			padding: 16px;
+			border-radius: 50px;
+			height: 24px;
+			width: 24px;
+		}
+
+		.content-mask-panel .disabled .method div,
+		.content-mask-panel .disabled .method-like div {
+			background: #eaeaea;
+			color: #999;
+		}
+
+		.content-mask-panel .enabled .method div,
+		.content-mask-panel .enabled .method-like div {
+			background: $enabled;
+			color: #fff;
+		}
+
+		.content-mask-panel .enabled .method div:hover,
+		.content-mask-panel .enabled .method-like div:hover {
+			background: #eee;
+			color: #999;
+			cursor: pointer;
+			box-shadow: 0 3px 15px -5px #000;
+		}
+
+		.content-mask-panel .disabled .method div:hover,
+		.content-mask-panel .disabled .method-like div:hover {
+			background: lighten( $enabled, 15% );
+			opacity: .35;
+			color: #fff;
+			cursor: pointer;
+			box-shadow: 0 3px 15px -5px #000;
+		}
+
+		.content-mask-panel strong {
+			font-size: 16px;
+			margin-bottom: 3px;
+			display: inline-block;
+		}
+
+		.content-mask-panel .info a {
+			color: #000;
+			text-decoration: none;
+		}
+
+		.content-mask-panel .info a:hover {
+			color: $enabled;
+		}
+
+		.content-mask-panel .status .label {
+			padding: 1px 8px;
+			display: inline-block;
+			border: 1px solid $enabled;
+			color: $enabled;
+			border-radius: 20px;
+			font-size: 11px;
+		}
+
+		.content-mask-panel .views,
+		.content-mask-panel .non-user,
+		.content-mask-panel .unique {
+			display: none;
+		}
+
+		.content-mask-panel.visitor-tracking .views,
+		.content-mask-panel.visitor-tracking .non-user,
+		.content-mask-panel.visitor-tracking .unique {
+			display: table-cell;
+		}
+
+		.content-mask-panel .more div {
+			width: 100%;
+			color: #888;
+			text-align: center;
+
+			svg {
+				width: 18px;
+			}
+		}
+
+		.content-mask-panel .more div:hover {
+			cursor: pointer;
+		}
+
+		.content-mask-panel .meta,
+		.content-mask-panel .meta a {
+			font-size: 11px;
+			color: #999;
+		}
+
+		.content-mask-panel .status .meta:before {
+			content: "Expires in ";
+		}
+
+		.content-mask-panel .status .meta.expired:before {
+			content: "";
+		}
+
+
+		// Reloading
+		.content-mask-reloading {
+			animation: 1s content_mask_reload linear infinite;
+			background-color: $enabled !important;
+		}
+
+		.new-mask .content-mask-reloading {
+			background-color: #fff !important;
+		}
+
+		.content-mask-reloading svg {
+			display: none;
+		}
+
+		.content-mask-reloading:after {
+			content: "";
+			display: block;
+			width: 10px;
+			height: 10px;
+			border-radius: 10px;
+			position: absolute;
+			top: 50%;
+			left: 25%;
+			transform: translate(-50%,-50%);
+			background: #fff;
+		}
+
+		.new-mask .content-mask-reloading:after {
+			background: #0095ee;
+		}
+
+		// Additional Options
+		.more-container {
+			position: relative;
+		}
+
+		.more-container:hover .more-nav {
+			display: block;
+		}
+
+		.more-nav {
+			display: none;
+			position: absolute;
+			width: 150px;
+			background: #fff;
+			padding: 6px;
+			z-index: 100;
+			box-shadow: 0 2px 10px -2px rgba(0,0,0,.35);
+			border-radius: 5px;
+			margin: 0;
+			top: 15px;
+			right: 0;
+		}
+
+		.more-nav svg {
+			width: 16px;
+			margin-right: 6px;
+		}
+
+		.more-nav li:last-child {
+			margin-bottom: 0;
+		}
+
+		.more-nav a {
+			text-decoration: none;
+			color: #666;
+			padding: 6px 12px;
+			display: flex;
+			position: relative;
+			line-height: 0;
+			border-radius: 4px;
+			flex-direction: row;
+			align-items: center;
+		}
+
+		.more-nav a.remove-mask {
+			color: #fb8a7b;
+		}
+
+		.more-nav a:hover {
+			background: #f5f5fa;
+		}
+
+		.more-nav a span {
+			
+		}
+
+		.code-edit-wrapper {
+			position: relative;
+		}
+
+		.code-edit-wrapper:before {
+			content: "";
+			display: block;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			z-index: 100;
+			font-size: 24px;
+			transform: translate(-50%,-50%);
+			color: #fff;
+			opacity: 0;
+			height: 0;
+			width: 0;
+			font-size: 0;
+			box-shadow: 0 10px 25px -8px rgba(0,0,0,.5);
+			transition: 1s opacity ease-out;
+		}
+
+		.code-edit-wrapper.error:before,
+		.code-edit-wrapper.info:before {
+			width: auto;
+			height: auto;
+			opacity: 1;
+			padding: 10px 20px 12px;
+			font-size: 24px;
+		}
+
+		.code-edit-wrapper.error:before {
+			content: "Error Saving.";
+			background: #ee3d96;
+		}
+
+		.code-edit-wrapper.info:before {
+			content: "Code Saved!";
+			background: $enabled;
+		}
+
+		.code-edit-wrapper:after {
+			content: "";
+			display: block;
+			height: 6px;
+			background: $enabled;
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			z-index: 10;
+			transform: scaleX(0);
+		}
+
+		.code-edit-wrapper.loading:after {
+			animation: content_mask_bar_reload 2.5s linear infinite;
+		}
+
+		.code-edit-wrapper button {
+			position: absolute;
+			right: 6px;
+			bottom: 6px;
+			z-index: 1000;
+		}
+
+		.CodeMirror-wrap {
+			border: 1px solid #ddd;
+			margin-bottom: 10px;
+		}
+
+		.content-mask-hover-help {
+			padding: 0 5px;
+			background: #fff;
+			color: $enabled;
+			border: 1px dashed;
+			border-radius: 10px;
+			margin-left: 6px;
+			opacity: 1;
+			position: relative;
+		}
+
+		.content-mask-hover-help:before {
+			transition: .2s opacity ease-out, .35s transform cubic-bezier(0.67, 0.62, 0.26, 1.54);
+			transform: translate(-50%,-50%) scale(.5);
+			transform-origin: center center;
+			content: attr(data-help);
+			font-size: 0;
+			opacity: 0;
+			position: absolute;
+			width: 200px;
+			display: block;
+			word-wrap: normal;
+			white-space: normal;
+			line-height: 1.62;
+			color: #000;
+			top: 50%;
+			left: 50%;
+			background: #fff;
+			padding: 10px;
+			border-radius: 8px;
+			box-shadow: 0 10px 25px -10px rgba(0,0,0,.75);
+			z-index: 999999;
+		}
+
+		.content-mask-hover-help:hover:before {
+			font-size: 12px;
+			transform: translate(-50%,-50%) scale(1);
+			opacity: 1;
+		}
+
+		#content-mask-options .content-mask-option.content-mask-reloading .content-mask-checkbox input + .content-mask-check {
+			animation: 1s option_reload linear infinite;
+			background-color: $enabled !important;
+		}
+
+		#content-mask-options .content-mask-option.content-mask-reloading.reverse .content-mask-checkbox input + .content-mask-check {
+			background-color: $disabled !important;
+		}
+
+		#content-mask-advanced .grid {
+			margin-bottom: 30px;
+		}
+
+		div.content-mask-reloading svg {
+			display: none;
+		}
+
+		div.content-mask-reloading:after {
+			content: "";
+			display: block;
+			width: 8px;
+			height: 8px;
+			border-radius: 10px;
+			position: absolute;
+			top: 50%;
+			left: 25%;
+			transform: translate(-50%,-50%);
+			background: #fff;
+		}
+	}
+
+	&.edit-php {
+		.column-content-mask {
+			position: relative;
+
+			.content-mask-method div:not(:empty) {
+				cursor: pointer;
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				width: 40px;
+				height: 40px;
+				background: #fff;
+				border-radius: 20px;
+				overflow: hidden;
+			}
+
+			.content-mask-method svg {
+				display: inline-block;
+				width: 20px;
+				height: 20px;
+				padding: 10px;
+				stroke: #000;
+			}
+
+			.content-mask-method svg.content-mask-reloading {
+				stroke: #fff !important;
+			}
+
+			.content-mask-method.enabled > div {
+				background: $enabled;
+			}
+
+			.content-mask-method.enabled div:not(:empty) {
+				box-shadow: 0 0 0 1px $enabled;
+			}
+
+			.content-mask-method.disabled div:not(:empty) {
+				box-shadow: 0 0 0 1px rgba(0,0,0,.175);
+			}
+
+			.content-mask-method.enabled svg {
+				stroke: #fff;
+			}
+
+			.content-mask-method div:hover {
+				cursor: pointer;
+				background: lighten( $enabled, 20% ) !important;
+				opacity: 1;
+			}
+
+			.content-mask-method div:hover svg {
+				stroke: #fff;
+			}
+
+			.content-mask-method div.content-mask-reloading {
+				animation: 1s content_mask_reload linear infinite;
+				background-color: $enabled !important;
+			}
+		}
+	}
+}

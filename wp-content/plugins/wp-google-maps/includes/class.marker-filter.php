@@ -1,0 +1,280 @@
+<?php
+
+// See https://docs.google.com/document/d/16NdGw4C4cd5Q20OwQDGpMB_GiYnojz0Mrug-QRS5zoE/edit#
+
+namespace WPGMZA;
+
+if(!defined('ABSPATH'))
+	return;
+
+class MarkerFilter extends Factory
+{
+	protected $_center;
+	protected $_radius;
+	
+	protected $_offset;
+	protected $_limit;
+	
+	public function __construct($options=null)
+	{
+		if($options)
+			foreach($options as $key => $value)
+				$this->{$key} = $value;
+	}
+	
+	public function __get($name)
+	{
+		if(property_exists($this, "_$name"))
+			return $this->{"_$name"};
+		
+		return $this->{$name};
+	}
+	
+	public function __set($name, $value)
+	{
+		if(isset($name[0]) && $name[0] === '_')
+			return;
+
+		if(property_exists($this, "_$name"))
+		{
+			switch($name)
+			{
+				case 'center':
+					
+					if(!is_array($value) && !is_object($value))
+						throw new \Exception('Value must be an object or array with lat and lng');
+					
+					$arr = (array)$value;
+					
+					if(!isset($arr['lat']) || !isset($arr['lng']))
+						throw new \Exception('Value must have lat and lng');
+					
+					$this->_center = $arr;
+					
+					break;
+					
+				case 'limit':
+				case 'offset':
+				
+					if(!is_numeric($value))
+						throw new \Exception('Value must be numeric');
+					
+					$this->{"_$name"} = $value;
+				
+					break;
+					
+				default:
+				
+					$this->{"_$name"} = $value;
+					
+					break;
+			}
+			
+			return;
+		}
+		
+		$this->{$name} = $value;
+	}
+	
+	protected function loadMap()
+	{
+		global $wpdb;
+		
+		$id = $wpdb->get_var("SELECT id FROM {$wpdb->prefix}wpgmza_maps LIMIT 1");
+		
+		if(!$id)
+			return;
+		
+		$this->map = new Map($id);
+	}
+	
+	protected function applyRadiusClause($query, $context=Query::WHERE)
+	{
+		global $wpgmza;
+		
+		if(!$this->center || !$this->radius)
+			return;
+		
+		if(empty($this->map))
+			$this->loadMap();
+		
+		$lat = $this->_center['lat'] / 180 * 3.1415926;
+		$lng = $this->_center['lng'] / 180 * 3.1415926;
+		$radius = $this->radius;
+		
+		if($this->map && $this->map->storeLocatorDistanceUnits == Distance::UNITS_MI)
+			$radius *= Distance::KILOMETERS_PER_MILE;
+		
+		$query->{$context}['radius'] = "
+			(
+				6371 *
+			
+				2 *
+			
+				ATAN2(
+					SQRT(
+						POW( SIN( ( ({$wpgmza->spatialFunctionPrefix}X(latlng) / 180 * 3.1415926) - %f ) / 2 ), 2 ) +
+						COS( {$wpgmza->spatialFunctionPrefix}X(latlng) / 180 * 3.1415926 ) * COS( %f ) *
+						POW( SIN( ( ({$wpgmza->spatialFunctionPrefix}Y(latlng) / 180 * 3.1415926) - %f ) / 2 ), 2 )
+					),
+					
+					SQRT(1 - 
+						(
+							POW( SIN( ( ({$wpgmza->spatialFunctionPrefix}X(latlng) / 180 * 3.1415926) - %f ) / 2 ), 2 ) +
+							COS( {$wpgmza->spatialFunctionPrefix}X(latlng) / 180 * 3.1415926 ) * COS( %f ) *
+							POW( SIN( ( ({$wpgmza->spatialFunctionPrefix}Y(latlng) / 180 * 3.1415926) - %f ) / 2 ), 2 )
+						)
+					)
+				)
+			)
+			
+			< %f
+		";
+		
+		$query->params[] = $lat;
+		$query->params[] = $lat;
+		$query->params[] = $lng;
+		
+		$query->params[] = $lat;
+		$query->params[] = $lat;
+		$query->params[] = $lng;
+		
+		$query->params[] = $radius;
+	}
+	
+	protected function applyIDsClause($set)
+	{
+		if(empty($this->ids))
+			return;
+		
+		$query->in('id', $set);
+	}
+	
+	protected function applyLimit($query)
+	{
+		if(empty($this->_limit))
+			return;
+		
+		$limit = "";
+		
+		if(!empty($this->_offset) || $this->_offset === 0 || $this->_offset === "0")
+			$limit = $this->_offset . ",";
+		
+		$limit .= $this->_limit;
+		
+		$query->limit = $limit;
+	}
+		
+	public function getQuery()
+	{
+		global $WPGMZA_TABLE_NAME_MARKERS;
+
+		$query = new Query();
+
+		$query->type	= 'SELECT';
+		$query->table	= $WPGMZA_TABLE_NAME_MARKERS;
+
+		$this->applyRadiusClause($query);
+		$this->applyIDsClause($query);
+		$this->applyLimit($query);
+		$this->applyApprovedClause($query);
+		$this->applyActiveMapClause($query);
+
+		return $query;
+	}
+
+	/* Restrict results to approved markers unless the request
+	   originates from the plugin's own admin UI and the user has
+	   edit capability. Capability check is the real gate; the
+	   HTTP_REFERER check just narrows the bypass to in-plugin admin
+	   pages so admins browsing the frontend still see the
+	   approved-only view non-admin visitors see. Mirrors
+	   MarkerDataTable::getWhereClause(). Pro overrides this in
+	   ProMarkerFilter to honor the permission-gated
+	   `includeUnapproved` option instead. */
+	protected function applyApprovedClause($query)
+	{
+		global $wpgmza;
+
+		if(isset($_SERVER['HTTP_REFERER'])
+			&& preg_match('/page=wp-google-maps-menu/', sanitize_text_field(wp_unslash($_SERVER['HTTP_REFERER'])))
+			&& $wpgmza->isUserAllowedToEdit())
+			return;
+
+		$query->where['approved'] = 'approved = 1';
+	}
+
+	protected function applyActiveMapClause($query)
+	{
+		global $wpgmza;
+		global $WPGMZA_TABLE_NAME_MAPS;
+
+		if(isset($_SERVER['HTTP_REFERER'])
+			&& preg_match('/page=wp-google-maps-menu/', sanitize_text_field(wp_unslash($_SERVER['HTTP_REFERER'])))
+			&& $wpgmza->isUserAllowedToEdit())
+			return;
+
+		$query->where['active_map'] = "map_id IN (SELECT id FROM $WPGMZA_TABLE_NAME_MAPS WHERE active = 0)";
+	}
+	
+	public function getColumns($fields=null)
+	{
+		if(empty($fields))
+			return array('*');
+		
+		$result = array();
+		
+		foreach($fields as $field)
+			$result[] = $field;
+			
+		return $result;
+	}
+	
+	public function getFilteredMarkers($fields=null)
+	{
+		global $wpdb;
+		global $wpgmza;
+		
+		$query = $this->getQuery($fields);
+		$query->fields = $this->getColumns($fields);
+		
+		$sql = $query->build();
+		$results = $wpdb->get_results($sql);
+
+		// NB: Optimize by only fetching ID here, for filtering. Only fetch the rest if fetch ID not set.
+		if(count($query->fields) == 1 && $query->fields[0] == 'id')
+			return $results;
+		
+		$markers = array();
+
+		$wpgmza->__activeMarkerFilter = $this;
+		foreach($results as $data){
+			$markers[] = Marker::createInstance($data, Crud::BULK_READ, true);
+		}
+		$wpgmza->__activeMarkerFilter = false;
+		
+		/* Developer Hook (Filter) - Alter marker filter results, passes markers and marker filter instance, must return markers */
+		return apply_filters('wpgmza_fetch_integrated_markers', $markers, $this);
+	}
+	
+	public function getFilteredIDs()
+	{
+		global $wpdb;
+		
+		$query = $this->getQuery();
+		
+		$query->fields[] = 'id';
+		
+		$sql = $query->build();
+		$ids = $wpdb->get_col($sql);
+		
+		/* Developer Hook (Filter) - Add or alter integrated markers output, unused and not safe to use */
+		$integrated = apply_filters('wpgmza_fetch_integrated_markers', $markers, $this);
+		foreach($integrated as $key => $value)
+			$ids[] = $value->id;
+		
+		return $ids;
+	}
+	
+	
+}

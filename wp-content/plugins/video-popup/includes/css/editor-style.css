@@ -1,0 +1,35 @@
+.vp-yt-type{
+    background:#b81c14 !important;
+    color:#fff !important;
+    padding: 3px !important;
+    border-radius:5px !important;
+}
+
+.vp-vim-type{
+    background:#146fb8 !important;
+    color:#fff !important;
+    padding: 3px !important;
+    border-radius:5px !important;
+}
+
+.vp-mp4-type{
+    background:#767676 !important;
+    color:#fff !important;
+    padding: 3px !important;
+    border-radius:5px !important;
+}
+
+.vp-webm-type{
+    background:#ab14b8 !important;
+    color:#fff !important;
+    padding: 3px !important;
+    border-radius:5px !important;
+}
+
+.vp-a.vp-has-img,
+.vp-s.vp-has-img,
+a.vp-has-img{
+    background: none !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+}

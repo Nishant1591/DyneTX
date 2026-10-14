@@ -1,0 +1,466 @@
+<?php
+/**
+ * Plugin Name: Workbox Perspectives
+ * Version:     1.0
+ */
+
+/* Exit if accessed directly */
+if ( ! defined( 'ABSPATH' ) ) exit;
+
+class WorkboxPerspectives {
+	public function __construct() {
+		register_activation_hook(__FILE__, array($this, 'activate'));
+		register_deactivation_hook(__FILE__, array($this, 'deactivate'));
+
+		add_action('init', array($this, 'registerPostType'));
+		add_filter('save_post_perspectives', array($this, 'savePerspectives'));
+		add_action('admin_enqueue_scripts', array($this, 'enqueue_date_picker' ));
+
+		add_filter( 'manage_perspectives_posts_columns', array($this, 'managePostColumns') );
+		add_filter( 'manage_perspectives_posts_custom_column', array($this, 'showCustomPostColumns'), 10, 2 );
+
+    //add_action ('show_homepage_news', array($this, 'doHomepageNewsAction'));
+
+    //add_action ( 'admin_menu', array ($this,'setOptionsMenu') );
+    //add_action ( 'admin_init', array ($this,'saveOptions'), 10, 0 );
+    
+    add_shortcode('perspectives', array($this, 'doPerspectives'));
+
+		add_action( 'pre_get_posts', array($this, 'doRebuildQueryParams'));
+
+    //add_filter('the_content', array($this, 'rebuildContent'));
+		
+
+		add_action('init',array($this,'addCustomUrlRule'));
+
+		add_filter('header_post_id', array($this, 'getPerspectivesPagePostID'));
+
+	}
+
+	private function getShortcodePage() {
+		global $wpdb;
+		$sql = 'SELECT ID FROM ' . $wpdb->posts . ' WHERE post_type = "page" AND post_status="publish" AND post_content LIKE "%[news]%"';
+		$id = $wpdb->get_var($sql);
+		$page = get_post($id);
+		return $page;
+    }
+
+    public function getNewsPagePostID($post_id) {
+        global $post;
+        if (isset($post->post_type) && $post->post_type == 'news') {
+            $p = $this->getShortcodePage();
+            if (isset($p->ID))
+                return $p->ID;
+        }
+
+        return $post_id;
+    }
+
+	public function addCustomUrlRule() {
+	    $page = $this->getShortcodePage();
+	    if ($page) {
+            add_rewrite_rule('^(' . preg_quote($page->post_name) . ')/(newsyear)/([^/]*)/?', 'index.php?pagename=$matches[1]&wb_news_year=$matches[3]');
+
+            add_filter('query_vars', function ($vars) {
+                $vars[] = 'wb_news_year';
+                return $vars;
+            });
+        }
+	}
+
+	public function doPerspectives($atts = '') {    
+		global $wp;		
+		
+			$list = new WP_Query(
+				array(
+					'post_type'      => 'perspectives',
+					'post_status'    => 'publish',
+					'order'          => 'DESC',
+					'orderby'        => 'meta_value_num',
+					'meta_key'       => 'perspectives_date'/*,
+					'posts_per_page' => 10*/
+				)
+			);
+
+		if ($list->have_posts()) {
+      $i = 0;
+			foreach ($list->posts as $p) {
+				$url = get_permalink($p);
+        $image = get_field('image', $p->ID);
+        $author = get_field('author', $p->ID);
+        $source = get_post_meta($p->ID, 'perspectives_url', true);
+        $subtitle = get_post_meta($p->ID, 'perspectives_subtitle', true);
+        
+        $date = date('n', get_post_meta($p->ID, 'perspectives_date', true));
+        if ($date == 4) $date = date('F j, Y', get_post_meta($p->ID, 'perspectives_date', true));
+        else $date = date('M j, Y', get_post_meta($p->ID, 'perspectives_date', true));
+        
+        $slug = '/perspectives/'.$p->post_name;
+        $link = get_post_meta($p->ID, 'perspectives_external_link', true);
+        $blank = '';
+        if ($link) {
+          $slug = $link;
+          $blank = ' target="_blank" title="opens in a new window"';
+        }
+        
+        $type = get_post_meta($p->ID, 'perspectives_content_type', true);
+        if ($type == 0) $type = 'Read more';
+        elseif ($type == 1) $type = 'Watch';
+        elseif ($type == 2) $type = 'Listen';
+        
+        //var_dump(get_post_meta($p->ID, 'perspectives_date', true), $image, $p);
+        
+        if ($i == 0) {
+          $html .= '
+            <div class="container-fluid section bg-light-blue perspective-top-article">
+              <div class="bg"></div>
+              <div class="container">
+                <div class="row">
+
+                  <div class="col-12 col-sm-5 pub-info">
+                    <div class="pub-date">'.$date.'</div>
+                    <div class="pub-announce">'.$p->post_title.'</div>
+                    <!--img src="'.$image.'" alt="" class="img-fluid d-sm-none"-->
+                    <img src="/wp-content/uploads/Dyne_Perspectives_Kate-main_400px.png" alt="" class="img-fluid d-sm-none">
+                    <div class="pub-autor">'.$author.'</div>
+                    <a '.$blank.' href="'.$slug.'" class="btn btn-primary">'.$type.'</a>
+
+                  </div>
+
+                  <div class="col-12 col-sm-7">
+                    <!--img src="'.$image.'" alt="" class="img-fluid d-none d-sm-block"-->
+                    <img src="/wp-content/uploads/Dyne_Perspectives_Kate-main_400px.png" alt="" class="img-fluid d-none d-sm-block">
+                </div>
+
+                </div>
+              </div>
+            </div>';
+        }
+
+// Start perspective-articles
+        if ($i == 0) {
+          $html .= '
+            <div class="container-fluid section perspective-articles">
+              <div class="container">
+                <div class="row">
+          ';
+        }
+        if ($i > 0 && $i <= 6) {
+          $html .= '
+						<div class="col-12 col-sm-6 col-md-4 card-wrapper">
+							<div class="pub-date">'.$date.' | '.$source.'</div>
+							<div class="card">
+								<div class="card-img-top" style="background-image: url('.$image.')"></div>
+								<div class="card-body">
+									<h4 class="card-title">'.$p->post_title.'<div class="card-text">'.$subtitle.'</div></h4>                  
+									<div>
+										<p class="card-text">'.$author.'</p>
+										<a '.$blank.' href="'.$slug.'" class="btn btn-primary stretched-link">'.$type.'</a>
+									</div>
+								</div>
+							</div>
+						</div>
+          ';
+        }
+        if ($i == 6) $html .= '
+        </div>       
+        
+        <div class="row collapse" id="collapseLeadership">';
+        
+        if ($i > 6) $html .= '
+					<div class="col-12 col-sm-6 col-md-4 card-wrapper">
+						<div class="pub-date">'.$date.' | '.$source.'</div>
+						<div class="card">
+							<div class="card-img-top" style="background-image: url('.$image.')"></div>
+							<div class="card-body">
+								<h4 class="card-title">'.$p->post_title.'</h4>
+								<div>
+									<p class="card-text">'.$author.'</p>
+									<a '.$blank.' href="'.$slug.'" class="btn btn-primary stretched-link">'.$type.'</a>
+								</div>
+							</div>
+						</div>
+					</div>
+        
+        ';
+      $i++;
+			}
+// End perspective-articles
+      $html .= '
+            </div>
+            
+            <div class="collapse-hdr">
+              <div class="red-label">Additional content</div>	
+              <button class="btn btn-primary btn-plus-collapse stretched-link collapsed" type="button" data-toggle="collapse" data-target="#collapseLeadership" aria-expanded="false" aria-controls="collapseLeadership"><i></i><span class="sr-only">More/Less content</span></button>
+            </div>
+            
+          </div>
+        </div>';
+		}
+
+		return $html;
+	}
+
+	public function activate() {}
+
+	public function deactivate() {}
+
+	public function registerPostType() {
+		$labels = array(
+				'name' => 'Perspectives',
+				'singular_name' => 'Perspectives Item',
+				'menu_name' => 'Perspectives',
+				'name_admin_bar' => 'Perspectives',
+				'add_new' => 'Add New Perspective',
+				'add_new_item' => 'Add New Perspective',
+				'new_item' => 'New Perspective',
+				'edit_item' => 'Edit Perspective',
+				'view_item' => 'View Perspective',
+				'all_items' => 'All Perspectives',
+				'search_items' => 'Search Perspectives',
+				'parent_item_colon' => 'Parent Perspectives:',
+				'not_found' => 'No Perspectives found.',
+				'not_found_in_trash' => 'No Perspectives found in Trash.',
+		);
+
+		$args = array(
+				'labels' => $labels,
+				'public' => true,
+				'publicly_queryable' => true,
+				'show_ui' => true,
+				'show_in_menu' => true,
+				'capability_type' => 'post',
+				'has_archive' => false,
+				'hierarchical' => false,
+				'menu_position' => null,
+				'menu_icon' => 'dashicons-screenoptions',
+				'supports' => array('title', 'editor', 'custom-fields', 'post-thumbnails'),
+				'register_meta_box_cb'=> array($this, 'metaboxFieldsAddPerspectives')
+		);
+
+		register_post_type('perspectives', $args);
+	}
+
+	public function metaboxFieldsAddPerspectives() {
+		add_meta_box ( 'perspectives_meta_left', 'Additional Parameters', array (
+				$this,
+				'showMetaBoxPerspectivesLeft'
+		), 'perspectives', 'side' );
+	}
+
+	public function showMetaBoxPerspectivesLeft($post, $metabox) {
+		global $post;
+
+		$date = get_post_meta($post->ID, 'perspectives_date', true);
+		if ($date == false)
+			$date = time();
+
+		$content_type = get_post_meta($post->ID, 'perspectives_content_type', true);
+		$url = get_post_meta($post->ID, 'perspectives_url', true);
+		$file = get_post_meta($post->ID, 'perspectives_file', true);
+    $link = get_post_meta($post->ID, 'perspectives_external_link', true);
+    $subtitle = get_post_meta($post->ID, 'perspectives_subtitle', true);
+
+		echo '<label>Date: <input type="text" class="datepicker" value="'.esc_attr(date('F j, Y',$date)).'" name="perspectives_date"></label>
+			<script>
+				jQuery(document).ready(function(){
+					jQuery(".datepicker").datepicker();	
+				});
+			</script>
+				';
+		echo '<br><br><b>Content type:</b><br>
+				<label><input type="radio" name="perspectives_content_type" value="0" '.($content_type == 0?'checked':'').'> Read more</label><br>
+				<label><input type="radio" name="perspectives_content_type" value="1" '.($content_type == 1?'checked':'').'> Watch</label><br>
+				<label><input type="radio" name="perspectives_content_type" value="2" '.($content_type == 2?'checked':'').'> Listen</label><br><br>
+		';
+		echo '<b>Source</b><br><input type="text" name="perspectives_url" value="'.esc_attr($url).'" style="width: 100%;"><br><br>';
+    echo '<b>External link</b><br><input type="text" name="perspectives_external_link" value="'.esc_attr($link).'" style="width: 100%;"><br><br>';
+    echo '<b>Subtitle</b><br><input type="text" name="perspectives_subtitle" value="'.esc_attr($subtitle).'" style="width: 100%;"><br><br>';
+		//echo '<b>File</b><br>'.$this->showUploadControl('perspectives_file', $file);
+	}
+
+	public function enqueue_date_picker(){
+		wp_enqueue_script(
+				'field-date-js',
+				'/Field_Date.js',
+				array('jquery', 'jquery-ui-core', 'jquery-ui-datepicker'),
+				time(),
+				true
+				);
+
+		wp_enqueue_style( 'jquery-ui-datepicker' );
+
+		$wp_scripts = $GLOBALS['wp_scripts'];
+		wp_enqueue_style('plugin_name-admin-ui-css',
+				'http://ajax.googleapis.com/ajax/libs/jqueryui/' . $wp_scripts->registered['jquery-ui-core']->ver . '/themes/smoothness/jquery-ui.css',
+				false,
+				false,
+				false);
+	}
+
+	public function savePerspectives($post_ID, $post = false, $update = false) {
+		if (isset($_POST['action']) && $_POST['action'] == 'editpost') {
+
+      $date = $_POST['perspectives_date'];
+			if ($date != '')
+				$ts = strtotime($date);
+			else
+				$ts = time();
+      
+			update_post_meta($post_ID, 'perspectives_date', $ts);
+			update_post_meta($post_ID, 'perspectives_content_type', $_POST['perspectives_content_type']);
+			update_post_meta($post_ID, 'perspectives_url', $_POST['perspectives_url']);
+			update_post_meta($post_ID, 'perspectives_file', $_POST['perspectives_file']);
+      update_post_meta($post_ID, 'perspectives_external_link', $_POST['perspectives_external_link']);
+      update_post_meta($post_ID, 'perspectives_subtitle', $_POST['perspectives_subtitle']);      
+		}
+	}
+
+	public function managePostColumns( $defaults ) {
+		unset($defaults['date']);
+		$defaults['perspectivesdate'] = 'Perspectives Date';
+		return $defaults;
+	}
+
+	public function showCustomPostColumns( $column, $post_id ) {
+		switch ($column) {
+			case 'perspectivesdate' :
+				echo date('F j, Y', get_post_meta($post_id, 'perspectives_date', true));
+				break;
+			default:
+		}
+	}
+
+	public function doRebuildQueryParams($query) {
+		if (isset($query->query['post_type']) && $query->query['post_type'] == 'perspectives' && $query->is_main_query()) {
+			$query->set('order', 'DESC');
+			$query->set('orderby', 'meta_value_num');
+			$query->set('meta_key', 'perspectives_date');
+		}
+
+		return $query;
+	}
+
+	public function rebuildContent($content) {
+		global $post, $wp_query;
+
+		if (isset($post->post_type) && $post->post_type == 'perspectives' && is_single()) {
+
+			$html = '
+            <h1 class="text-center">'.get_the_title().'</h1><br>
+            <b>'.date('F d, Y', get_post_meta($post->ID, 'perspectives_date', true)).'</b><br><br>
+            '.wpautop(get_the_content()).'
+            <br><br><a href="'.get_permalink($this->getShortcodePage()).'newsyear/'.date('Y', get_post_meta($post->ID, 'perspectives_date', true)).'/">« back to perspectives page</a>';
+			$content = $html;
+		}
+
+		return $content;
+	}
+/*
+	public function showYearsList() {
+		global $post, $wpdb;
+		$html = '';
+        $dates = $wpdb->get_results("
+                SELECT $wpdb->postmeta.meta_value
+                FROM $wpdb->postmeta
+                WHERE $wpdb->postmeta.meta_key = 'perspectives_date'",
+                ARRAY_A);
+
+        $aYears = array();
+
+        foreach ($dates as $date) {
+            $year = date('Y', $date['meta_value']);
+            if (!in_array($year, $aYears))
+                $aYears[] = $year;
+        }
+
+        rsort($aYears);
+
+        $selected_year = defined('WB_NEWS_YEAR')?WB_NEWS_YEAR:date('Y');
+
+        $page = $this->getShortcodePage();
+
+        $html.='
+        <div id="news_archive">Archive: ';
+        $aTmp = array();
+        foreach ($aYears as $year) {
+            $aTmp[] = '<a href="'.get_permalink($page).'newsyear/'.$year.'" class="'.($selected_year == $year?'selected':'').'">'.$year.'</a>';
+        }
+        $html.= implode(' | ', $aTmp);
+
+        $html.= '</div>';
+
+
+		return $html;
+	}
+*/
+	private function showUploadControl($field, $value = '', $width = 200) {
+		$html = '
+		<input type="text" id="custom_control_' . $field . '" name="' . $field . '" value="' . esc_attr ( $value ) . '" readonly style="width: 100%;">
+		
+		<input type="button" class="button" value="Select/Upload File" id="custom_control_' . $field . '_button">
+		<input type="button" class="button" value="Clear" onclick="$(\'#custom_control_' . $field . '\').val(\'\'); ">
+		<script>
+			var $ = jQuery.noConflict();
+	
+			jQuery(document).ready(function($){
+				var _custom_media_' . $field . ' = true,
+				_orig_send_attachment_' . $field . ' = wp.media.editor.send.attachment;
+	
+				$("#custom_control_' . $field . '_button").click(function(e) {
+					var send_attachment_bkp = wp.media.editor.send.attachment;
+					var button = $(this);
+					var id = button.attr("id").replace("_button", "");
+					_custom_media_' . $field . ' = true;
+					wp.media.editor.send.attachment = function(props, attachment){
+						if ( _custom_media_' . $field . ' ) {
+							sReplacement = "' . get_bloginfo ( 'url' ) . '";
+							sImageURL = attachment.url.toString().replace(sReplacement, "");
+							$("#" + id).val(sImageURL);
+						} else {
+							return _orig_send_attachment_' . $field . '.apply( this, [props, attachment] );
+						};
+					}
+	
+					wp.media.editor.open(button);
+					return false;
+				});
+	
+				$(".add_media").on("click", function(){
+					_custom_media_' . $field . ' = false;
+				});
+			});
+	
+			function parseURL' . $field . '(url) {
+				var a = document.createElement("a");
+				a.href = url;
+				return {
+					source : url,
+					protocol : a.protocol.replace(":", ""),
+					host : a.hostname,
+					port : a.port,
+					query : a.search,
+					params : (function() {
+						var ret = {}, seg = a.search.replace(/^\?/, "").split("&"), len = seg.length, i = 0, s;
+						for (; i < len; i++) {
+							if (!seg[i]) {
+								continue;
+							}
+							s = seg[i].split("=");
+							ret[s[0]] = s[1];
+						}
+						return ret;
+					})(),
+					file : (a.pathname.match(/\/([^\/?#]+)$/i) || [ , "" ])[1],
+					hash : a.hash.replace("#", ""),
+					path : a.pathname.replace(/^([^\/])/, "/$1"),
+					relative : (a.href.match(/tps?:\/\/[^\/]+(.+)/) || [ , "" ])[1],
+					segments : a.pathname.replace(/^\//, "").split("/")
+				};
+			}
+		</script>';
+		return $html;
+	}
+}
+
+new WorkboxPerspectives();

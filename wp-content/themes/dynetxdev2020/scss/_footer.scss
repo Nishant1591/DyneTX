@@ -1,0 +1,131 @@
+/* FOOTER */
+
+.footer {
+	background-color: $color-2;
+	color: $wht;
+	min-height: 158px;
+	display: flex;
+	//align-items: center;
+	
+	@media (min-width: #{$breakpoint-md}) {
+		min-height: 190px;
+	}
+	
+	@media (min-width: #{$breakpoint-lg}) {
+		min-height: 230px;
+	}
+	
+	.container {
+		display: flex;
+		align-items: center;
+		position: relative;
+
+		@media (min-width: #{$breakpoint-lg}) {
+			&:before {
+				position: absolute;
+				display: block;
+				width: 300px;
+				height: 100%;
+				content: '';
+				background-image:url("../images/bg-footer.svg");
+				background-size: auto 100%;
+				background-repeat: no-repeat;
+				background-position: left center;
+				transform: translateX(-7%);
+			}
+		}
+
+		@media (min-width: #{$breakpoint-xxl}) {
+			&:before {
+				transform: translateX(-60%);
+				background-position: center;
+			}
+		}
+		
+		> .row {
+			width: 100%;
+		}
+	}
+	
+	a {
+		color: $wht;
+	}
+	
+	.moto {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: fluidSize(16, 38, 320, 1920);
+		font-family: 'ralewaysemibold';
+		margin-bottom: 10px;
+		
+		@media (min-width: #{$breakpoint-lg}) {
+			margin-bottom: 0;
+			padding-right: $pad-sm*4;
+			justify-content: flex-end;
+		}
+		
+	}
+	
+	.nav {
+		justify-content: space-between;
+		
+		.nav-link {
+			padding: 3px 0;
+			
+			&.disabled {
+				color: $wht !important;
+			}
+		}
+	}
+	
+	.foot-nav {
+		position: relative;
+		border-bottom: 2px solid transparentize($wht,.6);
+		
+		&:after {
+			content: '';
+			display: block;
+			width: 7px;
+			height: 7px;
+			border-radius: 50%;
+			background-color: $color-1;
+			position: absolute;
+			left: -7px;
+			bottom: -5px;
+
+			@media (min-width: #{$breakpoint-lg}) {
+				width: 14px;
+				height: 14px;
+				left: -10px;
+				bottom: -8px;
+			}
+		}
+		
+		.nav-link {
+			font-size: fluidSize(12, 23, 320, 1920);
+			font-family: 'ralewaysemibold';
+		}
+	}
+	
+	.copy {
+		font-size: fluidSize(10, 14, 375, 1920);
+	}
+/*
+	
+	@media (min-width: #{$breakpoint-lg}) {
+		background-image:url("../images/bg-footer.svg");
+		background-size: auto 100%;
+		background-repeat: no-repeat;
+		background-position: left 2vw top 0;
+	}
+	
+	@media (min-width: #{$breakpoint-xl}) {
+		background-position: left 5vw top 0;
+	}
+	
+	@media (min-width: #{$breakpoint-xxl}) {
+		background-position: left 10vw top 0;
+	}
+*/
+}

@@ -1,0 +1,105 @@
+{
+    "packages": [
+        {
+            "name": "neitanod\/forceutf8",
+            "version": "v2.0.4",
+            "version_normalized": "2.0.4.0",
+            "source": {
+                "type": "git",
+                "url": "https:\/\/github.com\/neitanod\/forceutf8.git",
+                "reference": "c1fbe70bfb5ad41b8ec5785056b0e308b40d4831"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https:\/\/api.github.com\/repos\/neitanod\/forceutf8\/zipball\/c1fbe70bfb5ad41b8ec5785056b0e308b40d4831",
+                "reference": "c1fbe70bfb5ad41b8ec5785056b0e308b40d4831",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "time": "2019-12-10T14:09:14+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Smashballoon\\TwitterFeed\\Vendor\\ForceUTF8\\": "src\/ForceUTF8\/"
+                }
+            },
+            "notification-url": "https:\/\/packagist.org\/downloads\/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebasti\u00e1n Grignoli",
+                    "email": "grignoli@gmail.com"
+                }
+            ],
+            "description": "PHP Class Encoding featuring popular Encoding::toUTF8() function --formerly known as forceUTF8()-- that fixes mixed encoded strings.",
+            "homepage": "https:\/\/github.com\/neitanod\/forceutf8",
+            "support": {
+                "issues": "https:\/\/github.com\/neitanod\/forceutf8\/issues",
+                "source": "https:\/\/github.com\/neitanod\/forceutf8\/tree\/master"
+            },
+            "install-path": "..\/neitanod\/forceutf8"
+        },
+        {
+            "name": "smashballoon\/framework",
+            "version": "dev-master",
+            "version_normalized": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:awesomemotive\/sb-common.git",
+                "reference": "548c56f82c6ab6cc95a67c550b9e9de1f74d1916"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https:\/\/api.github.com\/repos\/awesomemotive\/sb-common\/zipball\/548c56f82c6ab6cc95a67c550b9e9de1f74d1916",
+                "reference": "548c56f82c6ab6cc95a67c550b9e9de1f74d1916",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "phpcompatibility\/php-compatibility": "^9.3",
+                "squizlabs\/php_codesniffer": "^3.7"
+            },
+            "time": "2023-09-26T08:07:17+00:00",
+            "default-branch": true,
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Smashballoon\\TwitterFeed\\Vendor\\Smashballoon\\Framework\\": ""
+                },
+                "files": [
+                    "Utilities\/functions.php"
+                ],
+                "exclude-from-classmap": [
+                    "Packages\/Blocks\/blocks\/*"
+                ]
+            },
+            "scripts": {
+                "post-package-install": [
+                    "phpcs --config-set installed_paths vendor\/phpcompatibility\/php-compatibility"
+                ]
+            },
+            "authors": [
+                {
+                    "name": "Smashballoon",
+                    "email": "support@smashballoon.com"
+                }
+            ],
+            "description": "WordPress plugin framework. Developed by SmashBalloon Team.",
+            "support": {
+                "source": "https:\/\/github.com\/awesomemotive\/sb-common\/tree\/master",
+                "issues": "https:\/\/github.com\/awesomemotive\/sb-common\/issues"
+            },
+            "install-path": "..\/smashballoon\/framework"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": []
+}

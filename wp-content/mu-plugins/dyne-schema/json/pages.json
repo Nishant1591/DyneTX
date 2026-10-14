@@ -1,0 +1,2437 @@
+{
+  "_comment": "Dyne Therapeutics — page-level JSON-LD, keyed by URL path. dyne-schema.php looks up the current request path here. 'page' is merged into the Yoast WebPage node for that URL (extra @type values are appended, they do not replace WebPage). 'nodes' are appended to the graph as separate nodes. Job postings are deliberately out of scope. Last updated 2026-08-24.",
+  "/": {
+    "page": {
+      "about": {
+        "@id": "https://www.dyne-tx.com/#organization"
+      },
+      "mainEntity": {
+        "@id": "https://www.dyne-tx.com/#organization"
+      },
+      "significantLink": [
+        "https://www.dyne-tx.com/our-forcetm-platform/",
+        "https://www.dyne-tx.com/pipeline/",
+        "https://www.dyne-tx.com/clinical-trials/",
+        "https://www.dyne-tx.com/our-commitment/",
+        "https://www.dyne-tx.com/careers-culture/"
+      ]
+    }
+  },
+  "/about-us/": {
+    "page": {
+      "@type": "AboutPage",
+      "description": "Dyne Therapeutics' mission, leadership team, board of directors, scientific advisory board and contact information.",
+      "about": {
+        "@id": "https://www.dyne-tx.com/#organization"
+      },
+      "mainEntity": {
+        "@id": "https://www.dyne-tx.com/#organization"
+      }
+    },
+    "org": {
+      "employee": [
+        {
+          "@id": "https://www.dyne-tx.com/about-us/#person-john-cox"
+        },
+        {
+          "@id": "https://www.dyne-tx.com/about-us/#person-doug-kerr"
+        },
+        {
+          "@id": "https://www.dyne-tx.com/about-us/#person-erick-lucera"
+        },
+        {
+          "@id": "https://www.dyne-tx.com/about-us/#person-oxana-beskrovnaya"
+        },
+        {
+          "@id": "https://www.dyne-tx.com/about-us/#person-ranjan-batra"
+        },
+        {
+          "@id": "https://www.dyne-tx.com/about-us/#person-johanna-friedl-naderer"
+        },
+        {
+          "@id": "https://www.dyne-tx.com/about-us/#person-monica-fay"
+        },
+        {
+          "@id": "https://www.dyne-tx.com/about-us/#person-debra-feldman"
+        },
+        {
+          "@id": "https://www.dyne-tx.com/about-us/#person-vikram-ranade"
+        },
+        {
+          "@id": "https://www.dyne-tx.com/about-us/#person-raj-manchanda"
+        },
+        {
+          "@id": "https://www.dyne-tx.com/about-us/#person-james-bilotta"
+        },
+        {
+          "@id": "https://www.dyne-tx.com/about-us/#person-lucia-celona"
+        },
+        {
+          "@id": "https://www.dyne-tx.com/about-us/#person-alessandro-martuscelli"
+        },
+        {
+          "@id": "https://www.dyne-tx.com/about-us/#person-jose-juves"
+        },
+        {
+          "@id": "https://www.dyne-tx.com/about-us/#person-axel-wiest"
+        }
+      ]
+    },
+    "nodes": [
+      {
+        "@type": "Person",
+        "@id": "https://www.dyne-tx.com/about-us/#person-john-cox",
+        "name": "John Cox",
+        "honorificSuffix": "MBA",
+        "jobTitle": "President and Chief Executive Officer",
+        "worksFor": {
+          "@id": "https://www.dyne-tx.com/#organization"
+        },
+        "sameAs": "https://www.linkedin.com/in/john-cox-g"
+      },
+      {
+        "@type": "Person",
+        "@id": "https://www.dyne-tx.com/about-us/#person-doug-kerr",
+        "name": "Doug Kerr",
+        "honorificSuffix": "M.D., Ph.D., MBA",
+        "jobTitle": "Chief Medical Officer",
+        "worksFor": {
+          "@id": "https://www.dyne-tx.com/#organization"
+        },
+        "sameAs": "https://www.linkedin.com/in/doug-kerr-md-phd-mba-5088421a"
+      },
+      {
+        "@type": "Person",
+        "@id": "https://www.dyne-tx.com/about-us/#person-erick-lucera",
+        "name": "Erick J. Lucera",
+        "jobTitle": "Chief Financial Officer",
+        "worksFor": {
+          "@id": "https://www.dyne-tx.com/#organization"
+        },
+        "sameAs": "https://www.linkedin.com/in/erick-j-lucera-98436a5"
+      },
+      {
+        "@type": "Person",
+        "@id": "https://www.dyne-tx.com/about-us/#person-oxana-beskrovnaya",
+        "name": "Oxana Beskrovnaya",
+        "honorificSuffix": "Ph.D.",
+        "jobTitle": "Chief Innovation Officer",
+        "worksFor": {
+          "@id": "https://www.dyne-tx.com/#organization"
+        },
+        "sameAs": "https://www.linkedin.com/in/oxana-beskrovnaya-440994169"
+      },
+      {
+        "@type": "Person",
+        "@id": "https://www.dyne-tx.com/about-us/#person-ranjan-batra",
+        "name": "Ranjan Batra",
+        "alternateName": "Ron Batra",
+        "honorificSuffix": "Ph.D.",
+        "jobTitle": "Chief Scientific Officer",
+        "worksFor": {
+          "@id": "https://www.dyne-tx.com/#organization"
+        },
+        "sameAs": "https://www.linkedin.com/in/batraron"
+      },
+      {
+        "@type": "Person",
+        "@id": "https://www.dyne-tx.com/about-us/#person-johanna-friedl-naderer",
+        "name": "Johanna Friedl-Naderer",
+        "jobTitle": "Chief Commercial Officer",
+        "worksFor": {
+          "@id": "https://www.dyne-tx.com/#organization"
+        },
+        "sameAs": "https://www.linkedin.com/in/johanna-friedl-naderer-6b0a7711"
+      },
+      {
+        "@type": "Person",
+        "@id": "https://www.dyne-tx.com/about-us/#person-monica-fay",
+        "name": "Monica Fay",
+        "jobTitle": "Chief Medical Affairs Officer",
+        "worksFor": {
+          "@id": "https://www.dyne-tx.com/#organization"
+        },
+        "sameAs": "https://www.linkedin.com/in/monica-fay-a73a3113"
+      },
+      {
+        "@type": "Person",
+        "@id": "https://www.dyne-tx.com/about-us/#person-debra-feldman",
+        "name": "Debra Feldman",
+        "jobTitle": "Chief Regulatory Affairs Officer",
+        "worksFor": {
+          "@id": "https://www.dyne-tx.com/#organization"
+        },
+        "sameAs": "https://www.linkedin.com/in/debra-b-feldman-21260b9"
+      },
+      {
+        "@type": "Person",
+        "@id": "https://www.dyne-tx.com/about-us/#person-vikram-ranade",
+        "name": "Vikram Ranade",
+        "alternateName": "Vik Ranade",
+        "jobTitle": "Chief Business Officer",
+        "worksFor": {
+          "@id": "https://www.dyne-tx.com/#organization"
+        },
+        "sameAs": "https://www.linkedin.com/in/vikram-ranade-100b9b37"
+      },
+      {
+        "@type": "Person",
+        "@id": "https://www.dyne-tx.com/about-us/#person-raj-manchanda",
+        "name": "Raj Manchanda",
+        "jobTitle": "Chief Technical Officer",
+        "worksFor": {
+          "@id": "https://www.dyne-tx.com/#organization"
+        },
+        "sameAs": "https://www.linkedin.com/in/rajmanchandaphd"
+      },
+      {
+        "@type": "Person",
+        "@id": "https://www.dyne-tx.com/about-us/#person-james-bilotta",
+        "name": "James P. Bilotta",
+        "honorificSuffix": "MBA",
+        "jobTitle": "Chief Digital Information Officer",
+        "worksFor": {
+          "@id": "https://www.dyne-tx.com/#organization"
+        },
+        "sameAs": "https://www.linkedin.com/in/james-bilotta-7a06607"
+      },
+      {
+        "@type": "Person",
+        "@id": "https://www.dyne-tx.com/about-us/#person-lucia-celona",
+        "name": "Lucia Celona",
+        "jobTitle": "Chief Human Resources Officer",
+        "worksFor": {
+          "@id": "https://www.dyne-tx.com/#organization"
+        },
+        "sameAs": "https://www.linkedin.com/in/lucia-celona-she-her-2605171"
+      },
+      {
+        "@type": "Person",
+        "@id": "https://www.dyne-tx.com/about-us/#person-alessandro-martuscelli",
+        "name": "Alessandro Martuscelli",
+        "jobTitle": "Chief Legal Officer",
+        "worksFor": {
+          "@id": "https://www.dyne-tx.com/#organization"
+        },
+        "sameAs": "https://www.linkedin.com/in/alessandro-martuscelli-b638b93b"
+      },
+      {
+        "@type": "Person",
+        "@id": "https://www.dyne-tx.com/about-us/#person-jose-juves",
+        "name": "José Juves",
+        "jobTitle": "Chief Corporate & Patient Affairs Officer",
+        "worksFor": {
+          "@id": "https://www.dyne-tx.com/#organization"
+        },
+        "sameAs": "https://www.linkedin.com/in/josejuves"
+      },
+      {
+        "@type": "Person",
+        "@id": "https://www.dyne-tx.com/about-us/#person-axel-wiest",
+        "name": "Axel Wiest",
+        "jobTitle": "Senior Vice President, Head of Portfolio Strategy & Operations",
+        "worksFor": {
+          "@id": "https://www.dyne-tx.com/#organization"
+        },
+        "sameAs": "https://www.linkedin.com/in/axel-wiest-11069a1"
+      }
+    ]
+  },
+  "/our-forcetm-platform/": {
+    "page": {
+      "about": {
+        "@id": "https://www.dyne-tx.com/our-forcetm-platform/#force-platform"
+      },
+      "mainEntity": {
+        "@id": "https://www.dyne-tx.com/our-forcetm-platform/#force-platform"
+      },
+      "video": [
+        {
+          "@id": "https://www.dyne-tx.com/our-forcetm-platform/#video-force-platform"
+        }
+      ]
+    },
+    "nodes": [
+      {
+        "@type": "Product",
+        "@id": "https://www.dyne-tx.com/our-forcetm-platform/#force-platform",
+        "name": "FORCE platform",
+        "alternateName": "FORCE™",
+        "category": "Targeted therapeutic delivery platform",
+        "description": "Dyne's proprietary platform for developing therapeutics that address the root cause of disease. The platform consists of an antigen-binding fragment (Fab), a linker and a payload rationally designed to target the genetic basis of the disease being treated. The Fab binds transferrin receptor 1 (TfR1) to enable delivery to muscle and the central nervous system. Dyne states that a Fab offers advantages over a full antibody, including enhanced tissue penetration, increased tolerability and reduced risk of immune system activation. The linker is chosen based on payload chemistry, and payloads include antisense oligonucleotides, phosphorodiamidate morpholino oligomers, small interfering RNA and biologics. Stated potential advantages include delivery to muscle and CNS, extended time between doses and the ability to re-dose.",
+        "brand": {
+          "@id": "https://www.dyne-tx.com/#organization"
+        },
+        "manufacturer": {
+          "@id": "https://www.dyne-tx.com/#organization"
+        },
+        "isRelatedTo": [
+          {
+            "@id": "https://www.dyne-tx.com/pipeline/#z-rostudirsen"
+          },
+          {
+            "@id": "https://www.dyne-tx.com/pipeline/#z-basivarsen"
+          },
+          {
+            "@id": "https://www.dyne-tx.com/pipeline/#dyne-302"
+          },
+          {
+            "@id": "https://www.dyne-tx.com/pipeline/#dyne-401"
+          }
+        ]
+      },
+      {
+        "@type": "VideoObject",
+        "@id": "https://www.dyne-tx.com/our-forcetm-platform/#video-force-platform",
+        "name": "The FORCE™ Platform | Dyne Therapeutics",
+        "description": "Overview of how Dyne's FORCE platform delivers therapeutic payloads to muscle and the central nervous system via transferrin receptor 1.",
+        "embedUrl": "https://www.youtube.com/embed/yRcW0eOl5ms",
+        "contentUrl": "https://www.youtube.com/watch?v=yRcW0eOl5ms",
+        "thumbnailUrl": "https://i.ytimg.com/vi/yRcW0eOl5ms/hqdefault.jpg",
+        "uploadDate": "2025-09-22",
+        "publisher": {
+          "@id": "https://www.dyne-tx.com/#organization"
+        },
+        "isPartOf": {
+          "@id": "https://www.dyne-tx.com/our-forcetm-platform/"
+        }
+      }
+    ]
+  },
+  "/pipeline/": {
+    "page": {
+      "@type": "CollectionPage",
+      "description": "Dyne Therapeutics' portfolio of investigational therapeutics for genetically driven neuromuscular diseases, spanning Duchenne muscular dystrophy, myotonic dystrophy type 1, facioscapulohumeral muscular dystrophy and Pompe disease.",
+      "about": {
+        "@id": "https://www.dyne-tx.com/#organization"
+      },
+      "mentions": [
+        {
+          "@id": "https://www.dyne-tx.com/pipeline/#dmd"
+        },
+        {
+          "@id": "https://www.dyne-tx.com/pipeline/#dm1"
+        },
+        {
+          "@id": "https://www.dyne-tx.com/pipeline/#fshd"
+        },
+        {
+          "@id": "https://www.dyne-tx.com/pipeline/#pompe"
+        },
+        {
+          "@id": "https://www.dyne-tx.com/our-forcetm-platform/#force-platform"
+        }
+      ],
+      "mainEntity": {
+        "@id": "https://www.dyne-tx.com/pipeline/#pipeline-list"
+      }
+    },
+    "nodes": [
+      {
+        "@type": "ItemList",
+        "@id": "https://www.dyne-tx.com/pipeline/#pipeline-list",
+        "name": "Dyne Therapeutics development pipeline",
+        "numberOfItems": 8,
+        "itemListOrder": "https://schema.org/ItemListUnordered",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "https://www.dyne-tx.com/pipeline/#z-rostudirsen"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@id": "https://www.dyne-tx.com/pipeline/#z-basivarsen"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@id": "https://www.dyne-tx.com/pipeline/#dyne-302"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "item": {
+              "@id": "https://www.dyne-tx.com/pipeline/#dyne-253"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "item": {
+              "@id": "https://www.dyne-tx.com/pipeline/#dyne-245"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "item": {
+              "@id": "https://www.dyne-tx.com/pipeline/#dyne-244"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 7,
+            "item": {
+              "@id": "https://www.dyne-tx.com/pipeline/#dyne-255"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 8,
+            "item": {
+              "@id": "https://www.dyne-tx.com/pipeline/#dyne-401"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "Product",
+        "@id": "https://www.dyne-tx.com/pipeline/#z-rostudirsen",
+        "name": "Zeleciment rostudirsen",
+        "alternateName": [
+          "z-rostudirsen",
+          "DYNE-251"
+        ],
+        "url": "https://www.dyne-tx.com/pipeline/#DMD",
+        "category": "Investigational therapeutic",
+        "description": "An investigational therapeutic for individuals with Duchenne muscular dystrophy who have mutations in the DMD gene amenable to exon 51 skipping. It is not approved for commercial use in any jurisdiction. It consists of a phosphorodiamidate morpholino oligomer conjugated to an antigen-binding fragment that binds transferrin receptor 1, designed to enable production of near-full-length dystrophin in muscle and the central nervous system, and is administered intravenously every four weeks as proposed in the submitted Biologics License Application. A Biologics License Application for potential U.S. Accelerated Approval has been accepted by the FDA and granted Priority Review.",
+        "manufacturer": {
+          "@id": "https://www.dyne-tx.com/#organization"
+        },
+        "brand": {
+          "@id": "https://www.dyne-tx.com/#organization"
+        },
+        "additionalProperty": [
+          {
+            "@type": "PropertyValue",
+            "name": "Development stage",
+            "value": "Investigational; Biologics License Application accepted by the FDA and granted Priority Review"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Approval status",
+            "value": "Not approved for commercial use in any jurisdiction"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Modality",
+            "value": "Antibody-oligonucleotide conjugate (phosphorodiamidate morpholino oligomer)"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Molecular target",
+            "value": "DMD gene, exon 51 skipping"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Mechanism of action",
+            "value": "Exon 51 skipping. A phosphorodiamidate morpholino oligomer (PMO) payload is delivered to muscle and the central nervous system via an antigen-binding fragment (Fab) that binds transferrin receptor 1 (TfR1), enabling production of near-full-length dystrophin."
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Regulatory designations",
+            "value": "Breakthrough Therapy, Fast Track and Rare Pediatric Disease designations from the U.S. Food and Drug Administration; Orphan Drug designation from the FDA, the European Medicines Agency and Japan's Ministry of Health, Labour and Welfare"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Therapeutic area",
+            "value": "Neurology; genetically driven neuromuscular disease"
+          }
+        ]
+      },
+      {
+        "@type": "Product",
+        "@id": "https://www.dyne-tx.com/pipeline/#z-basivarsen",
+        "name": "Zeleciment basivarsen",
+        "alternateName": [
+          "z-basivarsen",
+          "DYNE-101"
+        ],
+        "url": "https://www.dyne-tx.com/pipeline/#DM1",
+        "category": "Investigational therapeutic",
+        "description": "An investigational therapeutic for people living with myotonic dystrophy type 1. It is not approved for commercial use in any jurisdiction. It consists of an antisense oligonucleotide conjugated to an antigen-binding fragment that binds transferrin receptor 1, designed to reduce toxic nuclear DMPK RNA, release splicing proteins and allow normal mRNA processing.",
+        "manufacturer": {
+          "@id": "https://www.dyne-tx.com/#organization"
+        },
+        "brand": {
+          "@id": "https://www.dyne-tx.com/#organization"
+        },
+        "additionalProperty": [
+          {
+            "@type": "PropertyValue",
+            "name": "Development stage",
+            "value": "Investigational; evaluated in the Phase 1/2 ACHIEVE and Phase 3 HARMONIA clinical trials"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Approval status",
+            "value": "Not approved for commercial use in any jurisdiction"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Modality",
+            "value": "Antibody-oligonucleotide conjugate (antisense oligonucleotide)"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Molecular target",
+            "value": "DMPK RNA"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Mechanism of action",
+            "value": "Reduction of toxic nuclear DMPK RNA. An antisense oligonucleotide (ASO) payload is delivered to muscle and the central nervous system via an antigen-binding fragment (Fab) that binds transferrin receptor 1 (TfR1), releasing sequestered splicing proteins and allowing normal mRNA processing."
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Regulatory designations",
+            "value": "Breakthrough Therapy, Fast Track and Orphan Drug designations from the U.S. Food and Drug Administration; Orphan Drug designation from the European Medicines Agency and Japan's Ministry of Health, Labour and Welfare"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Therapeutic area",
+            "value": "Neurology; genetically driven neuromuscular disease"
+          }
+        ]
+      },
+      {
+        "@type": "Product",
+        "@id": "https://www.dyne-tx.com/pipeline/#dyne-302",
+        "name": "DYNE-302",
+        "url": "https://www.dyne-tx.com/pipeline/#FSHD",
+        "category": "Investigational therapeutic",
+        "description": "An investigational therapeutic in clinical development for people living with facioscapulohumeral muscular dystrophy. It is not approved for commercial use in any jurisdiction. It consists of an antigen-binding fragment that binds transferrin receptor 1 conjugated to an siRNA designed to reduce DUX4 expression. The FDA cleared the Investigational New Drug application on July 28, 2026, allowing a Phase 1 trial to begin; DYNE-302 is Dyne's third program to enter clinical development.",
+        "manufacturer": {
+          "@id": "https://www.dyne-tx.com/#organization"
+        },
+        "brand": {
+          "@id": "https://www.dyne-tx.com/#organization"
+        },
+        "additionalProperty": [
+          {
+            "@type": "PropertyValue",
+            "name": "Development stage",
+            "value": "Investigational; Investigational New Drug application cleared by the FDA on July 28, 2026"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Approval status",
+            "value": "Not approved for commercial use in any jurisdiction"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Modality",
+            "value": "Antibody-oligonucleotide conjugate (small interfering RNA)"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Molecular target",
+            "value": "DUX4"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Mechanism of action",
+            "value": "Suppression of DUX4 expression via an siRNA payload delivered to muscle by an antigen-binding fragment (Fab) that binds transferrin receptor 1 (TfR1)."
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Therapeutic area",
+            "value": "Neurology; genetically driven neuromuscular disease"
+          }
+        ]
+      },
+      {
+        "@type": "Product",
+        "@id": "https://www.dyne-tx.com/pipeline/#dyne-253",
+        "name": "DYNE-253",
+        "category": "Preclinical product candidate",
+        "description": "A preclinical product candidate targeting exon 53 for Duchenne muscular dystrophy. It is not approved for commercial use in any jurisdiction.",
+        "manufacturer": {
+          "@id": "https://www.dyne-tx.com/#organization"
+        },
+        "brand": {
+          "@id": "https://www.dyne-tx.com/#organization"
+        },
+        "additionalProperty": [
+          {
+            "@type": "PropertyValue",
+            "name": "Development stage",
+            "value": "Preclinical"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Approval status",
+            "value": "Not approved for commercial use in any jurisdiction"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Modality",
+            "value": "Antibody-oligonucleotide conjugate (phosphorodiamidate morpholino oligomer)"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Molecular target",
+            "value": "DMD gene, exon 53 skipping"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Mechanism of action",
+            "value": "Exon 53 skipping via a phosphorodiamidate morpholino oligomer payload delivered by an antigen-binding fragment (Fab) that binds transferrin receptor 1 (TfR1)."
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Therapeutic area",
+            "value": "Neurology; genetically driven neuromuscular disease"
+          }
+        ]
+      },
+      {
+        "@type": "Product",
+        "@id": "https://www.dyne-tx.com/pipeline/#dyne-245",
+        "name": "DYNE-245",
+        "category": "Preclinical product candidate",
+        "description": "A preclinical product candidate targeting exon 45 for Duchenne muscular dystrophy. It is not approved for commercial use in any jurisdiction.",
+        "manufacturer": {
+          "@id": "https://www.dyne-tx.com/#organization"
+        },
+        "brand": {
+          "@id": "https://www.dyne-tx.com/#organization"
+        },
+        "additionalProperty": [
+          {
+            "@type": "PropertyValue",
+            "name": "Development stage",
+            "value": "Preclinical"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Approval status",
+            "value": "Not approved for commercial use in any jurisdiction"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Modality",
+            "value": "Antibody-oligonucleotide conjugate (phosphorodiamidate morpholino oligomer)"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Molecular target",
+            "value": "DMD gene, exon 45 skipping"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Mechanism of action",
+            "value": "Exon 45 skipping via a phosphorodiamidate morpholino oligomer payload delivered by an antigen-binding fragment (Fab) that binds transferrin receptor 1 (TfR1)."
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Therapeutic area",
+            "value": "Neurology; genetically driven neuromuscular disease"
+          }
+        ]
+      },
+      {
+        "@type": "Product",
+        "@id": "https://www.dyne-tx.com/pipeline/#dyne-244",
+        "name": "DYNE-244",
+        "category": "Preclinical product candidate",
+        "description": "A preclinical product candidate targeting exon 44 for Duchenne muscular dystrophy. It is not approved for commercial use in any jurisdiction.",
+        "manufacturer": {
+          "@id": "https://www.dyne-tx.com/#organization"
+        },
+        "brand": {
+          "@id": "https://www.dyne-tx.com/#organization"
+        },
+        "additionalProperty": [
+          {
+            "@type": "PropertyValue",
+            "name": "Development stage",
+            "value": "Preclinical"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Approval status",
+            "value": "Not approved for commercial use in any jurisdiction"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Modality",
+            "value": "Antibody-oligonucleotide conjugate (phosphorodiamidate morpholino oligomer)"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Molecular target",
+            "value": "DMD gene, exon 44 skipping"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Mechanism of action",
+            "value": "Exon 44 skipping via a phosphorodiamidate morpholino oligomer payload delivered by an antigen-binding fragment (Fab) that binds transferrin receptor 1 (TfR1)."
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Therapeutic area",
+            "value": "Neurology; genetically driven neuromuscular disease"
+          }
+        ]
+      },
+      {
+        "@type": "Product",
+        "@id": "https://www.dyne-tx.com/pipeline/#dyne-255",
+        "name": "DYNE-255",
+        "category": "Preclinical product candidate",
+        "description": "A preclinical product candidate targeting exon 55 for Duchenne muscular dystrophy. It is not approved for commercial use in any jurisdiction.",
+        "manufacturer": {
+          "@id": "https://www.dyne-tx.com/#organization"
+        },
+        "brand": {
+          "@id": "https://www.dyne-tx.com/#organization"
+        },
+        "additionalProperty": [
+          {
+            "@type": "PropertyValue",
+            "name": "Development stage",
+            "value": "Preclinical"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Approval status",
+            "value": "Not approved for commercial use in any jurisdiction"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Modality",
+            "value": "Antibody-oligonucleotide conjugate (phosphorodiamidate morpholino oligomer)"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Molecular target",
+            "value": "DMD gene, exon 55 skipping"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Mechanism of action",
+            "value": "Exon 55 skipping via a phosphorodiamidate morpholino oligomer payload delivered by an antigen-binding fragment (Fab) that binds transferrin receptor 1 (TfR1)."
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Therapeutic area",
+            "value": "Neurology; genetically driven neuromuscular disease"
+          }
+        ]
+      },
+      {
+        "@type": "Product",
+        "@id": "https://www.dyne-tx.com/pipeline/#dyne-401",
+        "name": "DYNE-401",
+        "category": "Preclinical product candidate",
+        "description": "A preclinical product candidate targeting GAA for Pompe disease. It is not approved for commercial use in any jurisdiction.",
+        "manufacturer": {
+          "@id": "https://www.dyne-tx.com/#organization"
+        },
+        "brand": {
+          "@id": "https://www.dyne-tx.com/#organization"
+        },
+        "additionalProperty": [
+          {
+            "@type": "PropertyValue",
+            "name": "Development stage",
+            "value": "Preclinical"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Approval status",
+            "value": "Not approved for commercial use in any jurisdiction"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Molecular target",
+            "value": "GAA"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Mechanism of action",
+            "value": "Targets GAA via a payload delivered by an antigen-binding fragment (Fab) that binds transferrin receptor 1 (TfR1)."
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Therapeutic area",
+            "value": "Metabolic muscle disease"
+          }
+        ]
+      },
+      {
+        "@type": "MedicalCondition",
+        "@id": "https://www.dyne-tx.com/pipeline/#dmd",
+        "name": "Duchenne muscular dystrophy",
+        "alternateName": "DMD",
+        "description": "A rare, X-linked and progressive neuromuscular disorder and the most common childhood-onset form of muscular dystrophy. Loss of strength and function typically first appears between 3 and 5 years of age.",
+        "epidemiology": "Affects approximately 12,000 people in the United States and approximately 16,000 people in the European Union.",
+        "cause": {
+          "@type": "MedicalCause",
+          "name": "Mutations in the DMD gene",
+          "description": "Mutations in the DMD gene lead to total absence or nearly undetectable levels of dystrophin protein, which is essential for muscle structure, function and preservation."
+        },
+        "signOrSymptom": [
+          {
+            "@type": "MedicalSignOrSymptom",
+            "name": "Progressive muscle weakness, typically beginning in the hips, pelvis and upper legs before progressing to the shoulders, arms, trunk, neck and other muscle groups"
+          },
+          {
+            "@type": "MedicalSignOrSymptom",
+            "name": "Cognitive function impairment and neuropsychiatric disorders, including intellectual disability, learning disability and behavioral difficulties"
+          },
+          {
+            "@type": "MedicalSignOrSymptom",
+            "name": "Enlarged calf muscles"
+          },
+          {
+            "@type": "MedicalSignOrSymptom",
+            "name": "Delays in developing motor skills such as sitting, standing or walking"
+          },
+          {
+            "@type": "MedicalSignOrSymptom",
+            "name": "Toe walking or waddling gait"
+          },
+          {
+            "@type": "MedicalSignOrSymptom",
+            "name": "Breathing problems"
+          },
+          {
+            "@type": "MedicalSignOrSymptom",
+            "name": "Cardiomyopathy"
+          }
+        ],
+        "associatedAnatomy": [
+          {
+            "@type": "AnatomicalSystem",
+            "name": "Musculoskeletal system"
+          },
+          {
+            "@type": "AnatomicalSystem",
+            "name": "Cardiovascular system"
+          },
+          {
+            "@type": "AnatomicalSystem",
+            "name": "Respiratory system"
+          }
+        ],
+        "study": [
+          {
+            "@id": "https://www.dyne-tx.com/clinical-trials/#deliver"
+          },
+          {
+            "@id": "https://www.dyne-tx.com/clinical-trials/#forzetto"
+          }
+        ],
+        "relevantSpecialty": {
+          "@type": "MedicalSpecialty",
+          "name": "Neurology"
+        },
+        "sameAs": [
+          "https://rarediseases.info.nih.gov/diseases/6291/duchenne-muscular-dystrophy"
+        ]
+      },
+      {
+        "@type": "MedicalCondition",
+        "@id": "https://www.dyne-tx.com/pipeline/#dm1",
+        "name": "Myotonic dystrophy type 1",
+        "alternateName": "DM1",
+        "description": "A rare, progressive, genetic neuromuscular disease with high morbidity and early mortality. Symptoms can begin at any point in life depending on subtype; adult-onset symptoms typically appear between 20 and 40 years of age. Severity and rate of progression vary.",
+        "epidemiology": "Affects approximately 40,000 people in the United States and approximately 55,000 people in the European Union.",
+        "cause": {
+          "@type": "MedicalCause",
+          "name": "Mutations in the DMPK gene",
+          "description": "Mutations in the DMPK gene lead to widespread disruption of RNA splicing, known as spliceopathy, which drives the multi-system manifestations of the disease."
+        },
+        "signOrSymptom": [
+          {
+            "@type": "MedicalSignOrSymptom",
+            "name": "Muscle weakness throughout the body"
+          },
+          {
+            "@type": "MedicalSignOrSymptom",
+            "name": "Myotonia, or difficulty relaxing muscles"
+          },
+          {
+            "@type": "MedicalSignOrSymptom",
+            "name": "Cognitive impairments, excessive daytime sleepiness, fatigue and dysregulated sleep"
+          },
+          {
+            "@type": "MedicalSignOrSymptom",
+            "name": "Cardiac arrhythmias"
+          },
+          {
+            "@type": "MedicalSignOrSymptom",
+            "name": "Respiratory issues"
+          },
+          {
+            "@type": "MedicalSignOrSymptom",
+            "name": "Gastrointestinal dysfunction"
+          }
+        ],
+        "associatedAnatomy": [
+          {
+            "@type": "AnatomicalSystem",
+            "name": "Musculoskeletal system"
+          },
+          {
+            "@type": "AnatomicalSystem",
+            "name": "Cardiovascular system"
+          },
+          {
+            "@type": "AnatomicalSystem",
+            "name": "Respiratory system"
+          },
+          {
+            "@type": "AnatomicalSystem",
+            "name": "Nervous system"
+          },
+          {
+            "@type": "AnatomicalSystem",
+            "name": "Gastrointestinal system"
+          }
+        ],
+        "study": [
+          {
+            "@id": "https://www.dyne-tx.com/clinical-trials/#achieve"
+          },
+          {
+            "@id": "https://www.dyne-tx.com/clinical-trials/#harmonia"
+          }
+        ],
+        "relevantSpecialty": {
+          "@type": "MedicalSpecialty",
+          "name": "Neurology"
+        },
+        "sameAs": [
+          "https://rarediseases.info.nih.gov/diseases/10419/myotonic-dystrophy",
+          "https://www.orpha.net/en/disease/detail/273"
+        ]
+      },
+      {
+        "@type": "MedicalCondition",
+        "@id": "https://www.dyne-tx.com/pipeline/#fshd",
+        "name": "Facioscapulohumeral muscular dystrophy",
+        "alternateName": "FSHD",
+        "description": "A rare, progressive, genetic disease caused by aberrant DUX4 expression in muscle, with consequent damage and loss of function. Age of onset varies widely; symptoms typically begin to appear in the teen years or early adulthood.",
+        "epidemiology": "Affects approximately 15,000 to 40,000 people in the United States and approximately 20,000 to 50,000 people in the European Union.",
+        "cause": {
+          "@type": "MedicalCause",
+          "name": "Aberrant DUX4 expression",
+          "description": "Individuals with FSHD carry a genetic mutation that allows the DUX4 gene to be sporadically activated in muscle cells, causing their gradual destruction throughout the body."
+        },
+        "signOrSymptom": [
+          {
+            "@type": "MedicalSignOrSymptom",
+            "name": "Loss of facial muscle strength, making it difficult to smile or use a straw"
+          },
+          {
+            "@type": "MedicalSignOrSymptom",
+            "name": "Progressive weakness in the arms, torso, legs and abdomen"
+          },
+          {
+            "@type": "MedicalSignOrSymptom",
+            "name": "Limited mobility"
+          }
+        ],
+        "associatedAnatomy": [
+          {
+            "@type": "AnatomicalSystem",
+            "name": "Musculoskeletal system"
+          }
+        ],
+        "study": [
+          {
+            "@id": "https://www.dyne-tx.com/early-stage-fshd-clinical-trial/#dyne-302-phase-1"
+          }
+        ],
+        "relevantSpecialty": {
+          "@type": "MedicalSpecialty",
+          "name": "Neurology"
+        }
+      },
+      {
+        "@type": "MedicalCondition",
+        "@id": "https://www.dyne-tx.com/pipeline/#pompe",
+        "name": "Pompe disease",
+        "description": "A rare metabolic muscle disease associated with the GAA gene.",
+        "epidemiology": "Affects approximately 4,500 people in the United States and approximately 5,500 people in the European Union.",
+        "relevantSpecialty": {
+          "@type": "MedicalSpecialty",
+          "name": "Neurology"
+        }
+      }
+    ]
+  },
+  "/clinical-trials/": {
+    "page": {
+      "@type": "MedicalWebPage",
+      "description": "Active Dyne Therapeutics clinical trials in Duchenne muscular dystrophy and myotonic dystrophy type 1, with trial designs, endpoints and Dyne's patient access policy.",
+      "about": {
+        "@id": "https://www.dyne-tx.com/clinical-trials/#trial-list"
+      },
+      "mainEntity": {
+        "@id": "https://www.dyne-tx.com/clinical-trials/#trial-list"
+      },
+      "medicalAudience": [
+        {
+          "@type": "MedicalAudience",
+          "audienceType": "Patient"
+        },
+        {
+          "@type": "MedicalAudience",
+          "audienceType": "Caregiver"
+        },
+        {
+          "@type": "MedicalAudience",
+          "audienceType": "Clinician"
+        }
+      ]
+    },
+    "nodes": [
+      {
+        "@type": "ItemList",
+        "@id": "https://www.dyne-tx.com/clinical-trials/#trial-list",
+        "name": "Dyne Therapeutics clinical trials",
+        "numberOfItems": 4,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "https://www.dyne-tx.com/clinical-trials/#harmonia"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@id": "https://www.dyne-tx.com/clinical-trials/#achieve"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@id": "https://www.dyne-tx.com/clinical-trials/#forzetto"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "item": {
+              "@id": "https://www.dyne-tx.com/clinical-trials/#deliver"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MedicalTrial",
+        "@id": "https://www.dyne-tx.com/clinical-trials/#harmonia",
+        "name": "HARMONIA",
+        "alternateName": "NCT07486934",
+        "description": "A global, randomized, placebo-controlled, double-blind, confirmatory Phase 3 clinical trial evaluating the efficacy, safety and tolerability of zeleciment basivarsen in people living with myotonic dystrophy type 1. The trial will enroll approximately 150 participants age 16 and older, randomized 1:1, who will receive 6.8 mg/kg of z-basivarsen or placebo once every eight weeks for 48 weeks. Participants who complete the placebo-controlled period may enter a long-term extension and receive 6.8 mg/kg every eight weeks for up to 24 additional weeks. The primary endpoint is change from baseline in the five times sit to stand (5xSTS) test at week 49. Secondary endpoints include video hand opening time, quantitative muscle testing, the 10-meter walk/run test, the Myotonic Dystrophy Health Index, and additional patient- and clinician-reported outcomes.",
+        "phase": "Phase 3",
+        "trialDesign": [
+          "https://schema.org/RandomizedTrial",
+          "https://schema.org/DoubleBlindedTrial",
+          "https://schema.org/PlaceboControlledTrial",
+          "https://schema.org/InternationalTrial",
+          "https://schema.org/MultiCenterTrial"
+        ],
+        "sponsor": {
+          "@id": "https://www.dyne-tx.com/#organization"
+        },
+        "healthCondition": {
+          "@id": "https://www.dyne-tx.com/pipeline/#dm1"
+        },
+        "studySubject": {
+          "@id": "https://www.dyne-tx.com/pipeline/#z-basivarsen"
+        },
+        "sameAs": "https://clinicaltrials.gov/study/NCT07486934",
+        "relevantSpecialty": {
+          "@type": "MedicalSpecialty",
+          "name": "Neurology"
+        }
+      },
+      {
+        "@type": "MedicalTrial",
+        "@id": "https://www.dyne-tx.com/clinical-trials/#achieve",
+        "name": "ACHIEVE",
+        "alternateName": [
+          "NCT05481879",
+          "EUCT 2023-510353-42-00"
+        ],
+        "description": "A global, randomized, placebo-controlled, double-blind Phase 1/2 clinical trial evaluating the safety, tolerability and efficacy of zeleciment basivarsen in patients with myotonic dystrophy type 1. The multiple ascending dose portion resulted in selection of a registrational dose and regimen of 6.8 mg/kg administered every eight weeks. A registrational expansion cohort to support potential regulatory submissions, including Accelerated Approval in the U.S., is fully enrolled. The primary endpoint for that cohort is change from baseline in middle finger myotonia as measured by video hand opening time (vHOT) at 6 months, compared to placebo.",
+        "phase": "Phase 1/Phase 2",
+        "trialDesign": [
+          "https://schema.org/RandomizedTrial",
+          "https://schema.org/DoubleBlindedTrial",
+          "https://schema.org/PlaceboControlledTrial",
+          "https://schema.org/InternationalTrial",
+          "https://schema.org/MultiCenterTrial"
+        ],
+        "sponsor": {
+          "@id": "https://www.dyne-tx.com/#organization"
+        },
+        "healthCondition": {
+          "@id": "https://www.dyne-tx.com/pipeline/#dm1"
+        },
+        "studySubject": {
+          "@id": "https://www.dyne-tx.com/pipeline/#z-basivarsen"
+        },
+        "sameAs": [
+          "https://clinicaltrials.gov/study/NCT05481879",
+          "https://euclinicaltrials.eu/search-for-clinical-trials/?lang=en&EUCT=2023-510353-42-00"
+        ],
+        "relevantSpecialty": {
+          "@type": "MedicalSpecialty",
+          "name": "Neurology"
+        }
+      },
+      {
+        "@type": "MedicalTrial",
+        "@id": "https://www.dyne-tx.com/clinical-trials/#forzetto",
+        "name": "FORZETTO",
+        "alternateName": [
+          "NCT07608432",
+          "EUCT 2025-524096-23-00"
+        ],
+        "description": "A global, randomized, placebo-controlled, double-blind, confirmatory Phase 3 clinical trial evaluating the efficacy, safety and tolerability of zeleciment rostudirsen in ambulatory male participants with Duchenne muscular dystrophy amenable to exon 51 skipping. The trial will enroll approximately 90 participants 4 to 18 years of age, randomized 1:1, who will receive 20 mg/kg of z-rostudirsen or placebo once every four weeks for 72 weeks. Participants who complete the placebo-controlled period may enter a long-term extension and receive 20 mg/kg once every four weeks for up to an additional 96 weeks. The primary endpoint is change from baseline in rise from floor (RFF) velocity at week 73. Secondary endpoints include stride velocity 95th centile, North Star Ambulatory Assessment total score, 10-meter walk/run velocity, four-stair climb velocity and forced vital capacity percent predicted, as well as additional functional and patient-reported outcome measures.",
+        "phase": "Phase 3",
+        "trialDesign": [
+          "https://schema.org/RandomizedTrial",
+          "https://schema.org/DoubleBlindedTrial",
+          "https://schema.org/PlaceboControlledTrial",
+          "https://schema.org/InternationalTrial",
+          "https://schema.org/MultiCenterTrial"
+        ],
+        "sponsor": {
+          "@id": "https://www.dyne-tx.com/#organization"
+        },
+        "healthCondition": {
+          "@id": "https://www.dyne-tx.com/pipeline/#dmd"
+        },
+        "studySubject": {
+          "@id": "https://www.dyne-tx.com/pipeline/#z-rostudirsen"
+        },
+        "sameAs": [
+          "https://clinicaltrials.gov/study/NCT07608432",
+          "https://euclinicaltrials.eu/search-for-clinical-trials/?lang=en&EUCT=2025-524096-23-00"
+        ],
+        "relevantSpecialty": {
+          "@type": "MedicalSpecialty",
+          "name": "Neurology"
+        }
+      },
+      {
+        "@type": "MedicalTrial",
+        "@id": "https://www.dyne-tx.com/clinical-trials/#deliver",
+        "name": "DELIVER",
+        "alternateName": [
+          "NCT05524883",
+          "EUCT 2023-510351-31-00"
+        ],
+        "description": "A global, randomized, placebo-controlled, double-blind Phase 1/2 clinical trial that evaluated the safety, tolerability and efficacy of zeleciment rostudirsen in individuals with Duchenne muscular dystrophy who have mutations in the DMD gene amenable to exon 51 skipping. The multiple ascending dose portion resulted in selection of a registrational dose and regimen of 20 mg/kg administered every four weeks. The placebo-controlled portion of the registrational expansion cohort has been completed; its primary endpoint was change from baseline in dystrophin protein levels as measured by Western blot at 6 months. Participants from the multiple ascending dose and registrational expansion cohort portions had the option to enroll in the open-label extension and long-term extension portions of the study.",
+        "phase": "Phase 1/Phase 2",
+        "trialDesign": [
+          "https://schema.org/RandomizedTrial",
+          "https://schema.org/DoubleBlindedTrial",
+          "https://schema.org/PlaceboControlledTrial",
+          "https://schema.org/InternationalTrial",
+          "https://schema.org/MultiCenterTrial"
+        ],
+        "sponsor": {
+          "@id": "https://www.dyne-tx.com/#organization"
+        },
+        "healthCondition": {
+          "@id": "https://www.dyne-tx.com/pipeline/#dmd"
+        },
+        "studySubject": {
+          "@id": "https://www.dyne-tx.com/pipeline/#z-rostudirsen"
+        },
+        "sameAs": [
+          "https://clinicaltrials.gov/study/NCT05524883",
+          "https://euclinicaltrials.eu/search-for-clinical-trials/?lang=en&EUCT=2023-510351-31-00"
+        ],
+        "relevantSpecialty": {
+          "@type": "MedicalSpecialty",
+          "name": "Neurology"
+        }
+      }
+    ]
+  },
+  "/early-stage-fshd-clinical-trial/": {
+    "page": {
+      "about": {
+        "@id": "https://www.dyne-tx.com/early-stage-fshd-clinical-trial/#dyne-302-phase-1"
+      },
+      "mainEntity": {
+        "@id": "https://www.dyne-tx.com/early-stage-fshd-clinical-trial/#article"
+      }
+    },
+    "nodes": [
+      {
+        "@type": "Article",
+        "@id": "https://www.dyne-tx.com/early-stage-fshd-clinical-trial/#article",
+        "headline": "Dyne Receives FDA Clearance to Start Early-Stage FSHD Clinical Trial",
+        "description": "A letter to the FSHD community announcing that the FDA has cleared the Investigational New Drug application for DYNE-302, allowing a Phase 1 clinical trial to begin.",
+        "datePublished": "2026-07-28",
+        "dateModified": "2026-07-28",
+        "author": {
+          "@id": "https://www.dyne-tx.com/#organization"
+        },
+        "publisher": {
+          "@id": "https://www.dyne-tx.com/#organization"
+        },
+        "isPartOf": {
+          "@id": "https://www.dyne-tx.com/#website"
+        },
+        "mainEntityOfPage": {
+          "@id": "https://www.dyne-tx.com/early-stage-fshd-clinical-trial/"
+        },
+        "about": [
+          {
+            "@id": "https://www.dyne-tx.com/pipeline/#dyne-302"
+          },
+          {
+            "@id": "https://www.dyne-tx.com/pipeline/#fshd"
+          },
+          {
+            "@id": "https://www.dyne-tx.com/early-stage-fshd-clinical-trial/#dyne-302-phase-1"
+          }
+        ],
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Facioscapulohumeral muscular dystrophy community, patients, caregivers and patient advocacy organizations"
+        },
+        "inLanguage": "en-US"
+      },
+      {
+        "@type": "MedicalTrial",
+        "@id": "https://www.dyne-tx.com/early-stage-fshd-clinical-trial/#dyne-302-phase-1",
+        "name": "DYNE-302 Phase 1 trial in facioscapulohumeral muscular dystrophy",
+        "description": "A randomized, placebo-controlled, double-blind, multiple ascending dose Phase 1 clinical trial of DYNE-302 in ambulatory adults ages 18 to 65 living with facioscapulohumeral muscular dystrophy. The FDA cleared the Investigational New Drug application on July 28, 2026. The first group will enroll 9 participants who will receive three intravenous doses administered every four weeks, randomized 2:1 to DYNE-302 1.5 mg/kg or placebo; higher doses and less frequent administration are to be evaluated afterwards. Participants who complete the placebo-controlled period may enter an open-label long-term extension in which all participants receive DYNE-302 for up to an additional 96 weeks. The primary objective is safety and tolerability; additional objectives cover pharmacokinetics, pharmacodynamics and DUX4-related biomarkers in muscle and blood, including muscle DUX4 transcriptome changes and plasma levels of the protein KHDC1L.",
+        "phase": "Phase 1",
+        "trialDesign": [
+          "https://schema.org/RandomizedTrial",
+          "https://schema.org/DoubleBlindedTrial",
+          "https://schema.org/PlaceboControlledTrial"
+        ],
+        "sponsor": {
+          "@id": "https://www.dyne-tx.com/#organization"
+        },
+        "healthCondition": {
+          "@id": "https://www.dyne-tx.com/pipeline/#fshd"
+        },
+        "studySubject": {
+          "@id": "https://www.dyne-tx.com/pipeline/#dyne-302"
+        },
+        "relevantSpecialty": {
+          "@type": "MedicalSpecialty",
+          "name": "Neurology"
+        }
+      }
+    ]
+  },
+  "/fda-accepts-bla-for-z-rostudirsen/": {
+    "page": {
+      "mainEntity": {
+        "@id": "https://www.dyne-tx.com/fda-accepts-bla-for-z-rostudirsen/#article"
+      }
+    },
+    "nodes": [
+      {
+        "@type": "Article",
+        "@id": "https://www.dyne-tx.com/fda-accepts-bla-for-z-rostudirsen/#article",
+        "headline": "Together in Progress: FDA Accepts BLA for Z-Rostudirsen and Grants Priority Review",
+        "description": "A letter to the Duchenne community announcing that the U.S. Food and Drug Administration has accepted for review the Biologics License Application for zeleciment rostudirsen and granted Priority Review.",
+        "datePublished": "2026-07-20",
+        "dateModified": "2026-07-20",
+        "author": {
+          "@id": "https://www.dyne-tx.com/#organization"
+        },
+        "publisher": {
+          "@id": "https://www.dyne-tx.com/#organization"
+        },
+        "isPartOf": {
+          "@id": "https://www.dyne-tx.com/#website"
+        },
+        "mainEntityOfPage": {
+          "@id": "https://www.dyne-tx.com/fda-accepts-bla-for-z-rostudirsen/"
+        },
+        "about": [
+          {
+            "@id": "https://www.dyne-tx.com/pipeline/#z-rostudirsen"
+          },
+          {
+            "@id": "https://www.dyne-tx.com/pipeline/#dmd"
+          }
+        ],
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Duchenne muscular dystrophy community, patients, caregivers and patient advocacy organizations"
+        },
+        "inLanguage": "en-US"
+      }
+    ]
+  },
+  "/forzetto-trial-initiated/": {
+    "page": {
+      "mainEntity": {
+        "@id": "https://www.dyne-tx.com/forzetto-trial-initiated/#article"
+      }
+    },
+    "nodes": [
+      {
+        "@type": "Article",
+        "@id": "https://www.dyne-tx.com/forzetto-trial-initiated/#article",
+        "headline": "Z-Rostudirsen Submitted for U.S. Accelerated Approval; Phase 3 FORZETTO Trial Initiated",
+        "description": "A letter to the Duchenne community announcing submission of the Biologics License Application for zeleciment rostudirsen and initiation of the Phase 3 confirmatory FORZETTO trial.",
+        "datePublished": "2026-05-26",
+        "dateModified": "2026-05-26",
+        "author": {
+          "@id": "https://www.dyne-tx.com/#organization"
+        },
+        "publisher": {
+          "@id": "https://www.dyne-tx.com/#organization"
+        },
+        "isPartOf": {
+          "@id": "https://www.dyne-tx.com/#website"
+        },
+        "mainEntityOfPage": {
+          "@id": "https://www.dyne-tx.com/forzetto-trial-initiated/"
+        },
+        "about": [
+          {
+            "@id": "https://www.dyne-tx.com/pipeline/#z-rostudirsen"
+          },
+          {
+            "@id": "https://www.dyne-tx.com/pipeline/#dmd"
+          },
+          {
+            "@id": "https://www.dyne-tx.com/clinical-trials/#forzetto"
+          }
+        ],
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Duchenne muscular dystrophy community, patients, caregivers and patient advocacy organizations"
+        },
+        "inLanguage": "en-US"
+      }
+    ]
+  },
+  "/new-clinical-trial-opportunity-in-dm1/": {
+    "page": {
+      "mainEntity": {
+        "@id": "https://www.dyne-tx.com/new-clinical-trial-opportunity-in-dm1/#article"
+      }
+    },
+    "nodes": [
+      {
+        "@type": "Article",
+        "@id": "https://www.dyne-tx.com/new-clinical-trial-opportunity-in-dm1/#article",
+        "headline": "New Clinical Trial Opportunity in DM1: HARMONIA Phase 3 Study Evaluating Zeleciment Basivarsen",
+        "description": "A letter to the myotonic dystrophy community describing opportunities to take part in trials of zeleciment basivarsen, including the design of the Phase 3 HARMONIA study.",
+        "datePublished": "2026-04-16",
+        "dateModified": "2026-04-16",
+        "author": {
+          "@id": "https://www.dyne-tx.com/#organization"
+        },
+        "publisher": {
+          "@id": "https://www.dyne-tx.com/#organization"
+        },
+        "isPartOf": {
+          "@id": "https://www.dyne-tx.com/#website"
+        },
+        "mainEntityOfPage": {
+          "@id": "https://www.dyne-tx.com/new-clinical-trial-opportunity-in-dm1/"
+        },
+        "about": [
+          {
+            "@id": "https://www.dyne-tx.com/pipeline/#z-basivarsen"
+          },
+          {
+            "@id": "https://www.dyne-tx.com/pipeline/#dm1"
+          },
+          {
+            "@id": "https://www.dyne-tx.com/clinical-trials/#harmonia"
+          }
+        ],
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Myotonic dystrophy type 1 community, patients, caregivers and patient advocacy organizations"
+        },
+        "inLanguage": "en-US"
+      }
+    ]
+  },
+  "/community-letter-duchenne-added-to-newborn-screening/": {
+    "page": {
+      "mainEntity": {
+        "@id": "https://www.dyne-tx.com/community-letter-duchenne-added-to-newborn-screening/#article"
+      }
+    },
+    "nodes": [
+      {
+        "@type": "Article",
+        "@id": "https://www.dyne-tx.com/community-letter-duchenne-added-to-newborn-screening/#article",
+        "headline": "A Historic Step Forward: Duchenne Added to Newborn Screening",
+        "description": "A letter to the Duchenne community on the addition of Duchenne muscular dystrophy to the U.S. Recommended Uniform Screening Panel.",
+        "datePublished": "2025-12-16",
+        "dateModified": "2025-12-16",
+        "author": {
+          "@id": "https://www.dyne-tx.com/#organization"
+        },
+        "publisher": {
+          "@id": "https://www.dyne-tx.com/#organization"
+        },
+        "isPartOf": {
+          "@id": "https://www.dyne-tx.com/#website"
+        },
+        "mainEntityOfPage": {
+          "@id": "https://www.dyne-tx.com/community-letter-duchenne-added-to-newborn-screening/"
+        },
+        "about": [
+          {
+            "@id": "https://www.dyne-tx.com/pipeline/#dmd"
+          }
+        ],
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Duchenne muscular dystrophy community, patients, caregivers and patient advocacy organizations"
+        },
+        "inLanguage": "en-US"
+      }
+    ]
+  },
+  "/community-letter-deliver-clinical-trial/": {
+    "page": {
+      "mainEntity": {
+        "@id": "https://www.dyne-tx.com/community-letter-deliver-clinical-trial/#article"
+      }
+    },
+    "nodes": [
+      {
+        "@type": "Article",
+        "@id": "https://www.dyne-tx.com/community-letter-deliver-clinical-trial/#article",
+        "headline": "Positive Topline Results from the Phase 1/2 DELIVER Trial of Z-Rostudirsen in DMD",
+        "description": "A letter to the Duchenne community reporting topline results from the DELIVER trial, including 24-month durability data and long-term safety.",
+        "datePublished": "2025-12-08",
+        "dateModified": "2025-12-08",
+        "author": {
+          "@id": "https://www.dyne-tx.com/#organization"
+        },
+        "publisher": {
+          "@id": "https://www.dyne-tx.com/#organization"
+        },
+        "isPartOf": {
+          "@id": "https://www.dyne-tx.com/#website"
+        },
+        "mainEntityOfPage": {
+          "@id": "https://www.dyne-tx.com/community-letter-deliver-clinical-trial/"
+        },
+        "about": [
+          {
+            "@id": "https://www.dyne-tx.com/pipeline/#z-rostudirsen"
+          },
+          {
+            "@id": "https://www.dyne-tx.com/pipeline/#dmd"
+          },
+          {
+            "@id": "https://www.dyne-tx.com/clinical-trials/#deliver"
+          }
+        ],
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Duchenne muscular dystrophy community, patients, caregivers and patient advocacy organizations"
+        },
+        "inLanguage": "en-US"
+      }
+    ]
+  },
+  "/community-letter-duchenne-muscular-dystrophy-community/": {
+    "page": {
+      "mainEntity": {
+        "@id": "https://www.dyne-tx.com/community-letter-duchenne-muscular-dystrophy-community/#article"
+      }
+    },
+    "nodes": [
+      {
+        "@type": "Article",
+        "@id": "https://www.dyne-tx.com/community-letter-duchenne-muscular-dystrophy-community/#article",
+        "headline": "To the Duchenne Muscular Dystrophy Community",
+        "alternativeHeadline": "Dyne receives FDA Breakthrough Therapy Designation for DYNE-251",
+        "description": "A letter to the Duchenne community announcing that the FDA has granted Breakthrough Therapy Designation to DYNE-251 for patients with DMD amenable to exon 51 skipping.",
+        "datePublished": "2025-08-04",
+        "dateModified": "2025-08-04",
+        "author": {
+          "@id": "https://www.dyne-tx.com/#organization"
+        },
+        "publisher": {
+          "@id": "https://www.dyne-tx.com/#organization"
+        },
+        "isPartOf": {
+          "@id": "https://www.dyne-tx.com/#website"
+        },
+        "mainEntityOfPage": {
+          "@id": "https://www.dyne-tx.com/community-letter-duchenne-muscular-dystrophy-community/"
+        },
+        "about": [
+          {
+            "@id": "https://www.dyne-tx.com/pipeline/#z-rostudirsen"
+          },
+          {
+            "@id": "https://www.dyne-tx.com/pipeline/#dmd"
+          }
+        ],
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Duchenne muscular dystrophy community, patients, caregivers and patient advocacy organizations"
+        },
+        "inLanguage": "en-US"
+      }
+    ]
+  },
+  "/our-commitment/": {
+    "page": {
+      "description": "Dyne Therapeutics' engagement with the Duchenne muscular dystrophy, myotonic dystrophy type 1 and facioscapulohumeral muscular dystrophy communities, including letters to patient advocacy organizations and awareness day activities.",
+      "about": {
+        "@id": "https://www.dyne-tx.com/#organization"
+      },
+      "mentions": [
+        {
+          "@id": "https://www.dyne-tx.com/pipeline/#dmd"
+        },
+        {
+          "@id": "https://www.dyne-tx.com/pipeline/#dm1"
+        },
+        {
+          "@id": "https://www.dyne-tx.com/pipeline/#fshd"
+        }
+      ],
+      "mainEntity": {
+        "@id": "https://www.dyne-tx.com/our-commitment/#letters-list"
+      }
+    },
+    "nodes": [
+      {
+        "@type": "ItemList",
+        "@id": "https://www.dyne-tx.com/our-commitment/#letters-list",
+        "name": "Letters to our communities",
+        "itemListOrder": "https://schema.org/ItemListOrderDescending",
+        "numberOfItems": 7,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "url": "https://www.dyne-tx.com/early-stage-fshd-clinical-trial/",
+            "name": "Dyne Receives FDA Clearance to Start Early-Stage FSHD Clinical Trial"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "url": "https://www.dyne-tx.com/fda-accepts-bla-for-z-rostudirsen/",
+            "name": "Together in Progress: FDA Accepts BLA for Z-Rostudirsen and Grants Priority Review"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "url": "https://www.dyne-tx.com/forzetto-trial-initiated/",
+            "name": "Zeleciment Rostudirsen Application Submitted for U.S. Accelerated Approval; Phase 3 Confirmatory FORZETTO Trial Initiated"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "url": "https://www.dyne-tx.com/new-clinical-trial-opportunity-in-dm1/",
+            "name": "New Clinical Trial Opportunity in DM1: HARMONIA Phase 3 Study Evaluating Zeleciment Basivarsen"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "url": "https://www.dyne-tx.com/community-letter-duchenne-added-to-newborn-screening/",
+            "name": "A Historic Step Forward: Duchenne Added to Newborn Screening"
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "url": "https://www.dyne-tx.com/community-letter-deliver-clinical-trial/",
+            "name": "Positive Topline Results from the Phase 1/2 DELIVER Trial of Z-Rostudirsen in DMD"
+          },
+          {
+            "@type": "ListItem",
+            "position": 7,
+            "url": "https://www.dyne-tx.com/community-letter-duchenne-muscular-dystrophy-community/",
+            "name": "To the Duchenne Muscular Dystrophy Community"
+          }
+        ]
+      }
+    ]
+  },
+  "/dm1/": {
+    "page": {
+      "@type": "CollectionPage",
+      "description": "First-person accounts from people and families living with myotonic dystrophy type 1, shared with Dyne Therapeutics.",
+      "about": {
+        "@id": "https://www.dyne-tx.com/pipeline/#dm1"
+      },
+      "mainEntity": {
+        "@id": "https://www.dyne-tx.com/dm1/#story-list"
+      },
+      "video": [
+        {
+          "@id": "https://www.dyne-tx.com/dm1/#video-sarah"
+        },
+        {
+          "@id": "https://www.dyne-tx.com/dm1/#video-joachim-tim"
+        }
+      ]
+    },
+    "nodes": [
+      {
+        "@type": "ItemList",
+        "@id": "https://www.dyne-tx.com/dm1/#story-list",
+        "name": "DM1 patient stories",
+        "numberOfItems": 3,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "url": "https://www.dyne-tx.com/dm1-story-billydean/",
+            "name": "Meet BillyDean and Suzette"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "url": "https://www.dyne-tx.com/dm1-story-joachim/",
+            "name": "Meet Joachim"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "url": "https://www.dyne-tx.com/dm1-story-loraine/",
+            "name": "Meet Loraine"
+          }
+        ]
+      },
+      {
+        "@type": "VideoObject",
+        "@id": "https://www.dyne-tx.com/dm1/#video-sarah",
+        "name": "Diagnosed the Day My Daughter Was Born: Living with Myotonic Dystrophy | Dyne Therapeutics",
+        "description": "Sarah's account of living with myotonic dystrophy type 1, published on Dyne's DM1 stories page as \"Meet Sarah\".",
+        "embedUrl": "https://www.youtube.com/embed/5ednXRKHnIc",
+        "contentUrl": "https://www.youtube.com/watch?v=5ednXRKHnIc",
+        "thumbnailUrl": "https://i.ytimg.com/vi/5ednXRKHnIc/hqdefault.jpg",
+        "uploadDate": "2025-09-15",
+        "publisher": {
+          "@id": "https://www.dyne-tx.com/#organization"
+        },
+        "isPartOf": {
+          "@id": "https://www.dyne-tx.com/dm1/"
+        },
+        "about": {
+          "@id": "https://www.dyne-tx.com/pipeline/#dm1"
+        }
+      },
+      {
+        "@type": "VideoObject",
+        "@id": "https://www.dyne-tx.com/dm1/#video-joachim-tim",
+        "name": "Joachim's and Tim's Storiy",
+        "description": "Joachim and Tim's account of living with myotonic dystrophy type 1, published on Dyne's DM1 stories page as \"Meet Joachim and Tim\".",
+        "embedUrl": "https://www.youtube.com/embed/Oov_breRaxs",
+        "contentUrl": "https://www.youtube.com/watch?v=Oov_breRaxs",
+        "thumbnailUrl": "https://i.ytimg.com/vi/Oov_breRaxs/hqdefault.jpg",
+        "uploadDate": "2022-09-15",
+        "publisher": {
+          "@id": "https://www.dyne-tx.com/#organization"
+        },
+        "isPartOf": {
+          "@id": "https://www.dyne-tx.com/dm1/"
+        },
+        "about": {
+          "@id": "https://www.dyne-tx.com/pipeline/#dm1"
+        }
+      }
+    ]
+  },
+  "/dmd/": {
+    "page": {
+      "@type": "CollectionPage",
+      "description": "First-person accounts from people and families living with Duchenne muscular dystrophy, shared with Dyne Therapeutics.",
+      "about": {
+        "@id": "https://www.dyne-tx.com/pipeline/#dmd"
+      },
+      "mainEntity": {
+        "@id": "https://www.dyne-tx.com/dmd/#story-list"
+      },
+      "video": [
+        {
+          "@id": "https://www.dyne-tx.com/dmd/#video-catherine-alan"
+        },
+        {
+          "@id": "https://www.dyne-tx.com/dmd/#video-diana"
+        }
+      ]
+    },
+    "nodes": [
+      {
+        "@type": "ItemList",
+        "@id": "https://www.dyne-tx.com/dmd/#story-list",
+        "name": "DMD patient stories",
+        "numberOfItems": 1,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "url": "https://www.dyne-tx.com/dmd-story-ravi/",
+            "name": "Meet Ravi"
+          }
+        ]
+      },
+      {
+        "@type": "VideoObject",
+        "@id": "https://www.dyne-tx.com/dmd/#video-catherine-alan",
+        "name": "Catherine and Alan's Story: Living with Duchenne Muscular Dystrophy (DMD) | Dyne Therapeutics",
+        "description": "Catherine and Alan's account of living with Duchenne muscular dystrophy, published on Dyne's DMD stories page as \"Meet Catherine and Alan\".",
+        "embedUrl": "https://www.youtube.com/embed/1jIRAJkiXrY",
+        "contentUrl": "https://www.youtube.com/watch?v=1jIRAJkiXrY",
+        "thumbnailUrl": "https://i.ytimg.com/vi/1jIRAJkiXrY/hqdefault.jpg",
+        "uploadDate": "2023-09-07",
+        "publisher": {
+          "@id": "https://www.dyne-tx.com/#organization"
+        },
+        "isPartOf": {
+          "@id": "https://www.dyne-tx.com/dmd/"
+        },
+        "about": {
+          "@id": "https://www.dyne-tx.com/pipeline/#dmd"
+        }
+      },
+      {
+        "@type": "VideoObject",
+        "@id": "https://www.dyne-tx.com/dmd/#video-diana",
+        "name": "Diana's Story: A Family Living with Duchenne Muscular Dystrophy (DMD) | Dyne Therapeutics",
+        "description": "Diana and Jordan's account of a family living with Duchenne muscular dystrophy, published on Dyne's DMD stories page as \"Meet Diana and Jordan\".",
+        "embedUrl": "https://www.youtube.com/embed/apwkz3L7DVg",
+        "contentUrl": "https://www.youtube.com/watch?v=apwkz3L7DVg",
+        "thumbnailUrl": "https://i.ytimg.com/vi/apwkz3L7DVg/hqdefault.jpg",
+        "uploadDate": "2022-09-07",
+        "publisher": {
+          "@id": "https://www.dyne-tx.com/#organization"
+        },
+        "isPartOf": {
+          "@id": "https://www.dyne-tx.com/dmd/"
+        },
+        "about": {
+          "@id": "https://www.dyne-tx.com/pipeline/#dmd"
+        }
+      }
+    ]
+  },
+  "/fshd/": {
+    "page": {
+      "@type": "CollectionPage",
+      "description": "First-person accounts from people and families living with facioscapulohumeral muscular dystrophy, shared with Dyne Therapeutics.",
+      "about": {
+        "@id": "https://www.dyne-tx.com/pipeline/#fshd"
+      },
+      "mainEntity": {
+        "@id": "https://www.dyne-tx.com/fshd/#story-list"
+      },
+      "video": [
+        {
+          "@id": "https://www.dyne-tx.com/fshd/#video-chelsea"
+        },
+        {
+          "@id": "https://www.dyne-tx.com/fshd/#video-rachel"
+        },
+        {
+          "@id": "https://www.dyne-tx.com/fshd/#video-ian"
+        },
+        {
+          "@id": "https://www.dyne-tx.com/fshd/#video-sam"
+        }
+      ]
+    },
+    "nodes": [
+      {
+        "@type": "ItemList",
+        "@id": "https://www.dyne-tx.com/fshd/#story-list",
+        "name": "FSHD patient stories",
+        "numberOfItems": 1,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "url": "https://www.dyne-tx.com/fshd-story-chelsea/",
+            "name": "Meet Laura and Chelsea"
+          }
+        ]
+      },
+      {
+        "@type": "VideoObject",
+        "@id": "https://www.dyne-tx.com/fshd/#video-chelsea",
+        "name": "Chelsea's Story: Living with Facioscapulohumeral Muscular Dystrophy (FSHD) | Dyne Therapeutics",
+        "description": "Laura and Chelsea's account of living with facioscapulohumeral muscular dystrophy, published on Dyne's FSHD stories page as \"Meet Laura and Chelsea\".",
+        "embedUrl": "https://www.youtube.com/embed/3ipgGAeYmMg",
+        "contentUrl": "https://www.youtube.com/watch?v=3ipgGAeYmMg",
+        "thumbnailUrl": "https://i.ytimg.com/vi/3ipgGAeYmMg/hqdefault.jpg",
+        "uploadDate": "2022-06-15",
+        "publisher": {
+          "@id": "https://www.dyne-tx.com/#organization"
+        },
+        "isPartOf": {
+          "@id": "https://www.dyne-tx.com/fshd/"
+        },
+        "about": {
+          "@id": "https://www.dyne-tx.com/pipeline/#fshd"
+        }
+      },
+      {
+        "@type": "VideoObject",
+        "@id": "https://www.dyne-tx.com/fshd/#video-rachel",
+        "name": "Rachel: Living with Facioscapulohumeral Muscular Dystrophy (FSHD) | Dyne Therapeutics",
+        "description": "Rachel's account of living with facioscapulohumeral muscular dystrophy, published on Dyne's FSHD stories page as \"Meet Rachel\".",
+        "embedUrl": "https://www.youtube.com/embed/ETAkHmDghXs",
+        "contentUrl": "https://www.youtube.com/watch?v=ETAkHmDghXs",
+        "thumbnailUrl": "https://i.ytimg.com/vi/ETAkHmDghXs/hqdefault.jpg",
+        "uploadDate": "2021-02-17",
+        "publisher": {
+          "@id": "https://www.dyne-tx.com/#organization"
+        },
+        "isPartOf": {
+          "@id": "https://www.dyne-tx.com/fshd/"
+        },
+        "about": {
+          "@id": "https://www.dyne-tx.com/pipeline/#fshd"
+        }
+      },
+      {
+        "@type": "VideoObject",
+        "@id": "https://www.dyne-tx.com/fshd/#video-ian",
+        "name": "Ian: Living with Facioscapulohumeral Muscular Dystrophy (FSHD) | Dyne Therapeutics",
+        "description": "Ian's account of living with facioscapulohumeral muscular dystrophy, published on Dyne's FSHD stories page as \"Meet Ian\".",
+        "embedUrl": "https://www.youtube.com/embed/KgDQLs-2Oas",
+        "contentUrl": "https://www.youtube.com/watch?v=KgDQLs-2Oas",
+        "thumbnailUrl": "https://i.ytimg.com/vi/KgDQLs-2Oas/hqdefault.jpg",
+        "uploadDate": "2021-02-17",
+        "publisher": {
+          "@id": "https://www.dyne-tx.com/#organization"
+        },
+        "isPartOf": {
+          "@id": "https://www.dyne-tx.com/fshd/"
+        },
+        "about": {
+          "@id": "https://www.dyne-tx.com/pipeline/#fshd"
+        }
+      },
+      {
+        "@type": "VideoObject",
+        "@id": "https://www.dyne-tx.com/fshd/#video-sam",
+        "name": "Sam: Living with Facioscapulohumeral Muscular Dystrophy (FSHD) | Dyne Therapeutics",
+        "description": "Sam's account of living with facioscapulohumeral muscular dystrophy, published on Dyne's FSHD stories page as \"Meet Sam\".",
+        "embedUrl": "https://www.youtube.com/embed/k6fS0ZqSr_4",
+        "contentUrl": "https://www.youtube.com/watch?v=k6fS0ZqSr_4",
+        "thumbnailUrl": "https://i.ytimg.com/vi/k6fS0ZqSr_4/hqdefault.jpg",
+        "uploadDate": "2021-02-17",
+        "publisher": {
+          "@id": "https://www.dyne-tx.com/#organization"
+        },
+        "isPartOf": {
+          "@id": "https://www.dyne-tx.com/fshd/"
+        },
+        "about": {
+          "@id": "https://www.dyne-tx.com/pipeline/#fshd"
+        }
+      }
+    ]
+  },
+  "/dm1-story-billydean/": {
+    "page": {
+      "mainEntity": {
+        "@id": "https://www.dyne-tx.com/dm1-story-billydean/#article"
+      }
+    },
+    "nodes": [
+      {
+        "@type": "Article",
+        "@id": "https://www.dyne-tx.com/dm1-story-billydean/#article",
+        "headline": "Meet BillyDean and Suzette",
+        "description": "BillyDean and Suzette battled the effects of myotonic dystrophy type 1 before they even knew its name. Through their resilience and Suzette's advocacy for her son, they succeeded in getting a DM1 diagnosis and have been learning how to live and thrive ever since.",
+        "author": {
+          "@id": "https://www.dyne-tx.com/#organization"
+        },
+        "publisher": {
+          "@id": "https://www.dyne-tx.com/#organization"
+        },
+        "isPartOf": {
+          "@id": "https://www.dyne-tx.com/#website"
+        },
+        "mainEntityOfPage": {
+          "@id": "https://www.dyne-tx.com/dm1-story-billydean/"
+        },
+        "about": {
+          "@id": "https://www.dyne-tx.com/pipeline/#dm1"
+        },
+        "genre": "Patient story",
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Patients, families and caregivers affected by myotonic dystrophy type 1"
+        },
+        "inLanguage": "en-US"
+      }
+    ]
+  },
+  "/dm1-story-joachim/": {
+    "page": {
+      "mainEntity": {
+        "@id": "https://www.dyne-tx.com/dm1-story-joachim/#article"
+      }
+    },
+    "nodes": [
+      {
+        "@type": "Article",
+        "@id": "https://www.dyne-tx.com/dm1-story-joachim/#article",
+        "headline": "Meet Joachim",
+        "description": "\"I'm not alone in this\": one person's journey with myotonic dystrophy type 1. Growing up, Joachim says, myotonic dystrophy \"was always in my background and in the back of my head.\"",
+        "author": {
+          "@id": "https://www.dyne-tx.com/#organization"
+        },
+        "publisher": {
+          "@id": "https://www.dyne-tx.com/#organization"
+        },
+        "isPartOf": {
+          "@id": "https://www.dyne-tx.com/#website"
+        },
+        "mainEntityOfPage": {
+          "@id": "https://www.dyne-tx.com/dm1-story-joachim/"
+        },
+        "about": {
+          "@id": "https://www.dyne-tx.com/pipeline/#dm1"
+        },
+        "genre": "Patient story",
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Patients, families and caregivers affected by myotonic dystrophy type 1"
+        },
+        "inLanguage": "en-US"
+      }
+    ]
+  },
+  "/dm1-story-loraine/": {
+    "page": {
+      "mainEntity": {
+        "@id": "https://www.dyne-tx.com/dm1-story-loraine/#article"
+      }
+    },
+    "nodes": [
+      {
+        "@type": "Article",
+        "@id": "https://www.dyne-tx.com/dm1-story-loraine/#article",
+        "headline": "Meet Loraine",
+        "description": "A courageous family battle and devotion in the face of generational adversity with myotonic dystrophy type 1.",
+        "author": {
+          "@id": "https://www.dyne-tx.com/#organization"
+        },
+        "publisher": {
+          "@id": "https://www.dyne-tx.com/#organization"
+        },
+        "isPartOf": {
+          "@id": "https://www.dyne-tx.com/#website"
+        },
+        "mainEntityOfPage": {
+          "@id": "https://www.dyne-tx.com/dm1-story-loraine/"
+        },
+        "about": {
+          "@id": "https://www.dyne-tx.com/pipeline/#dm1"
+        },
+        "genre": "Patient story",
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Patients, families and caregivers affected by myotonic dystrophy type 1"
+        },
+        "inLanguage": "en-US"
+      }
+    ]
+  },
+  "/dmd-story-ravi/": {
+    "page": {
+      "mainEntity": {
+        "@id": "https://www.dyne-tx.com/dmd-story-ravi/#article"
+      }
+    },
+    "nodes": [
+      {
+        "@type": "Article",
+        "@id": "https://www.dyne-tx.com/dmd-story-ravi/#article",
+        "headline": "Meet Ravi",
+        "description": "\"I want to be someone\": Ravi's journey with Duchenne muscular dystrophy. A law school student whose symptoms were first noticed at age seven, Ravi works on environmental and disability advocacy and joined the Parent Project Muscular Dystrophy Adult Advisory Committee.",
+        "author": {
+          "@id": "https://www.dyne-tx.com/#organization"
+        },
+        "publisher": {
+          "@id": "https://www.dyne-tx.com/#organization"
+        },
+        "isPartOf": {
+          "@id": "https://www.dyne-tx.com/#website"
+        },
+        "mainEntityOfPage": {
+          "@id": "https://www.dyne-tx.com/dmd-story-ravi/"
+        },
+        "about": {
+          "@id": "https://www.dyne-tx.com/pipeline/#dmd"
+        },
+        "genre": "Patient story",
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Patients, families and caregivers affected by Duchenne muscular dystrophy"
+        },
+        "inLanguage": "en-US"
+      }
+    ]
+  },
+  "/fshd-story-chelsea/": {
+    "page": {
+      "mainEntity": {
+        "@id": "https://www.dyne-tx.com/fshd-story-chelsea/#article"
+      }
+    },
+    "nodes": [
+      {
+        "@type": "Article",
+        "@id": "https://www.dyne-tx.com/fshd-story-chelsea/#article",
+        "headline": "Meet Laura and Chelsea",
+        "description": "A mother and daughter's joint perspective on their journey with facioscapulohumeral muscular dystrophy.",
+        "author": {
+          "@id": "https://www.dyne-tx.com/#organization"
+        },
+        "publisher": {
+          "@id": "https://www.dyne-tx.com/#organization"
+        },
+        "isPartOf": {
+          "@id": "https://www.dyne-tx.com/#website"
+        },
+        "mainEntityOfPage": {
+          "@id": "https://www.dyne-tx.com/fshd-story-chelsea/"
+        },
+        "about": {
+          "@id": "https://www.dyne-tx.com/pipeline/#fshd"
+        },
+        "genre": "Patient story",
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Patients, families and caregivers affected by facioscapulohumeral muscular dystrophy"
+        },
+        "inLanguage": "en-US"
+      }
+    ]
+  },
+  "/our-forcetm-publications/": {
+    "page": {
+      "@type": "CollectionPage",
+      "description": "Peer-reviewed publications, congress abstracts, posters and oral presentations covering Dyne Therapeutics' FORCE platform and its clinical and preclinical programs.",
+      "about": {
+        "@id": "https://www.dyne-tx.com/our-forcetm-platform/#force-platform"
+      },
+      "mentions": [
+        {
+          "@id": "https://www.dyne-tx.com/pipeline/#z-rostudirsen"
+        },
+        {
+          "@id": "https://www.dyne-tx.com/pipeline/#z-basivarsen"
+        },
+        {
+          "@id": "https://www.dyne-tx.com/pipeline/#dyne-302"
+        },
+        {
+          "@id": "https://www.dyne-tx.com/pipeline/#dyne-401"
+        }
+      ]
+    }
+  },
+  "/careers-culture/": {
+    "page": {
+      "description": "Dyne Therapeutics' core values, employee perspectives, benefits and open positions.",
+      "about": {
+        "@id": "https://www.dyne-tx.com/#organization"
+      },
+      "significantLink": "https://job-boards.greenhouse.io/dynetherapeutics",
+      "video": [
+        {
+          "@id": "https://www.dyne-tx.com/careers-culture/#video-passionate-driven-team"
+        },
+        {
+          "@id": "https://www.dyne-tx.com/careers-culture/#video-commitment-to-innovation"
+        },
+        {
+          "@id": "https://www.dyne-tx.com/careers-culture/#video-collaboration"
+        }
+      ]
+    },
+    "nodes": [
+      {
+        "@type": "VideoObject",
+        "@id": "https://www.dyne-tx.com/careers-culture/#video-passionate-driven-team",
+        "name": "Passionate and Driven Team | Dyne Therapeutics",
+        "description": "Dyne employees on working in a passionate and driven team.",
+        "embedUrl": "https://www.youtube.com/embed/zXXpIrq_lNw",
+        "contentUrl": "https://www.youtube.com/watch?v=zXXpIrq_lNw",
+        "thumbnailUrl": "https://i.ytimg.com/vi/zXXpIrq_lNw/hqdefault.jpg",
+        "uploadDate": "2024-05-14",
+        "publisher": {
+          "@id": "https://www.dyne-tx.com/#organization"
+        },
+        "isPartOf": {
+          "@id": "https://www.dyne-tx.com/careers-culture/"
+        }
+      },
+      {
+        "@type": "VideoObject",
+        "@id": "https://www.dyne-tx.com/careers-culture/#video-commitment-to-innovation",
+        "name": "Commitment to Innovation | Dyne Therapeutics",
+        "description": "Dyne employees on the company's commitment to innovation.",
+        "embedUrl": "https://www.youtube.com/embed/zIkOhomIZVw",
+        "contentUrl": "https://www.youtube.com/watch?v=zIkOhomIZVw",
+        "thumbnailUrl": "https://i.ytimg.com/vi/zIkOhomIZVw/hqdefault.jpg",
+        "uploadDate": "2024-05-14",
+        "publisher": {
+          "@id": "https://www.dyne-tx.com/#organization"
+        },
+        "isPartOf": {
+          "@id": "https://www.dyne-tx.com/careers-culture/"
+        }
+      },
+      {
+        "@type": "VideoObject",
+        "@id": "https://www.dyne-tx.com/careers-culture/#video-collaboration",
+        "name": "Collaboration at Dyne | Dyne Therapeutics",
+        "description": "Dyne employees on the company's collaborative culture.",
+        "embedUrl": "https://www.youtube.com/embed/nHf7MC_1Wk8",
+        "contentUrl": "https://www.youtube.com/watch?v=nHf7MC_1Wk8",
+        "thumbnailUrl": "https://i.ytimg.com/vi/nHf7MC_1Wk8/hqdefault.jpg",
+        "uploadDate": "2024-05-04",
+        "publisher": {
+          "@id": "https://www.dyne-tx.com/#organization"
+        },
+        "isPartOf": {
+          "@id": "https://www.dyne-tx.com/careers-culture/"
+        }
+      }
+    ]
+  },
+  "/corporate-responsibility/": {
+    "page": {
+      "description": "Dyne Therapeutics' corporate responsibility initiatives across workforce and culture, patient and community commitments, environmental practices, and corporate governance and business integrity.",
+      "about": {
+        "@id": "https://www.dyne-tx.com/#organization"
+      },
+      "mainEntity": {
+        "@id": "https://www.dyne-tx.com/#organization"
+      }
+    }
+  },
+  "/resources/": {
+    "page": {
+      "@type": "CollectionPage",
+      "description": "Patient advocacy organizations and information sources for myotonic dystrophy type 1, Duchenne muscular dystrophy and facioscapulohumeral muscular dystrophy, in the United States and internationally.",
+      "mentions": [
+        {
+          "@id": "https://www.dyne-tx.com/pipeline/#dm1"
+        },
+        {
+          "@id": "https://www.dyne-tx.com/pipeline/#dmd"
+        },
+        {
+          "@id": "https://www.dyne-tx.com/pipeline/#fshd"
+        }
+      ],
+      "mainEntity": {
+        "@id": "https://www.dyne-tx.com/resources/#resource-list"
+      }
+    },
+    "nodes": [
+      {
+        "@type": "ItemList",
+        "@id": "https://www.dyne-tx.com/resources/#resource-list",
+        "name": "Patient advocacy organizations and information sources",
+        "numberOfItems": 27,
+        "itemListOrder": "https://schema.org/ItemListUnordered",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "Organization",
+              "name": "Myotonic Dystrophy Foundation",
+              "url": "https://www.myotonic.org/"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "Organization",
+              "name": "Muscular Dystrophy Association",
+              "url": "https://www.mda.org/"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@type": "Organization",
+              "name": "National Organization for Rare Disorders",
+              "url": "https://rarediseases.org/"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "item": {
+              "@type": "WebPage",
+              "name": "National Institutes of Health — Myotonic Dystrophy",
+              "url": "https://rarediseases.info.nih.gov/diseases/10419/myotonic-dystrophy"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "item": {
+              "@type": "Organization",
+              "name": "Cure Myotonic Dystrophy UK",
+              "url": "https://congenitalmyotonicdystrophy.org/"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "item": {
+              "@type": "Organization",
+              "name": "Myotonic Dystrophy Support Group",
+              "url": "https://www.myotonicdystrophysupportgroup.org/"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 7,
+            "item": {
+              "@type": "Organization",
+              "name": "Treat-NMD",
+              "url": "https://treat-nmd.org/"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 8,
+            "item": {
+              "@type": "Organization",
+              "name": "Euro-Dyma",
+              "url": "https://euro-dyma.eu/"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 9,
+            "item": {
+              "@type": "Organization",
+              "name": "Muscular Dystrophy UK",
+              "url": "https://www.musculardystrophyuk.org/"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 10,
+            "item": {
+              "@type": "Organization",
+              "name": "Myotonic Dystrophy Patients' Group of Japan",
+              "url": "https://dm-family.net/"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 11,
+            "item": {
+              "@type": "Organization",
+              "name": "Charley's Fund",
+              "url": "https://charleysfund.org/"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 12,
+            "item": {
+              "@type": "Organization",
+              "name": "CureDuchenne",
+              "url": "https://www.cureduchenne.org/"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 13,
+            "item": {
+              "@type": "Organization",
+              "name": "Jett Foundation",
+              "url": "https://www.jettfoundation.org/"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 14,
+            "item": {
+              "@type": "Organization",
+              "name": "Parent Project Muscular Dystrophy",
+              "url": "https://www.parentprojectmd.org/"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 15,
+            "item": {
+              "@type": "WebPage",
+              "name": "National Institutes of Health — Duchenne Muscular Dystrophy",
+              "url": "https://rarediseases.info.nih.gov/diseases/6291/duchenne-muscular-dystrophy"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 16,
+            "item": {
+              "@type": "Organization",
+              "name": "Defeat Duchenne Canada",
+              "url": "https://defeatduchenne.ca/"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 17,
+            "item": {
+              "@type": "Organization",
+              "name": "Action Duchenne",
+              "url": "https://www.actionduchenne.org/"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 18,
+            "item": {
+              "@type": "Organization",
+              "name": "French Muscular Dystrophy Association (AFM)",
+              "url": "https://www.afm-telethon.com/"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 19,
+            "item": {
+              "@type": "Organization",
+              "name": "Duchenne UK",
+              "url": "https://www.duchenneuk.org/"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 20,
+            "item": {
+              "@type": "Organization",
+              "name": "Parent Project Italy",
+              "url": "https://parentproject.it/"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 21,
+            "item": {
+              "@type": "Organization",
+              "name": "Progena Swiss Duchenne Foundation",
+              "url": "https://progena.ch/"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 22,
+            "item": {
+              "@type": "Organization",
+              "name": "FSHD Society",
+              "url": "https://www.fshdsociety.org/"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 23,
+            "item": {
+              "@type": "Organization",
+              "name": "Friends of FSH Research",
+              "url": "https://www.fshfriends.org/"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 24,
+            "item": {
+              "@type": "Organization",
+              "name": "Chris Carrino Foundation for FSHD",
+              "url": "https://chriscarrinofoundation.org/"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 25,
+            "item": {
+              "@type": "Organization",
+              "name": "Amis FSH",
+              "url": "https://www.amisfsh.fr/"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 26,
+            "item": {
+              "@type": "Organization",
+              "name": "FSHD Europe",
+              "url": "https://fshd-europe.info/"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 27,
+            "item": {
+              "@type": "Organization",
+              "name": "FSHD Canada Foundation",
+              "url": "https://fshd.ca/"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "/privacy-policy/": {
+    "page": {
+      "description": "How Dyne Therapeutics handles information collected through its website.",
+      "about": {
+        "@id": "https://www.dyne-tx.com/#organization"
+      }
+    }
+  },
+  "/community-guidelines/": {
+    "page": {
+      "description": "Dyne Therapeutics' guidelines for engagement on its corporate social media channels, and its stated route for reporting a possible side effect of an investigational therapeutic.",
+      "about": {
+        "@id": "https://www.dyne-tx.com/#organization"
+      },
+      "mentions": [
+        {
+          "@id": "https://www.dyne-tx.com/#contact-safety"
+        }
+      ]
+    }
+  }
+}

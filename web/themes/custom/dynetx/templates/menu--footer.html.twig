@@ -1,8 +1,0 @@
-{# The footer remains editable through Drupal's Footer menu. #}
-{% if items %}
-  <ul class="dyne-footer-menu">
-    {% for item in items %}
-      <li><a href="{{ item.url }}">{{ item.title }}</a></li>
-    {% endfor %}
-  </ul>
-{% endif %}

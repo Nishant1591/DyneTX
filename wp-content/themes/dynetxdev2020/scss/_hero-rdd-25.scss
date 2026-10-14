@@ -1,0 +1,211 @@
+/* HERO RDD 25*/ 
+.hero {
+	display: none;
+}
+
+.pages {
+	.hero-rdd-25 {
+		display: none;
+	}
+	.hero {
+		display: flex;
+	}
+}
+
+.wrapper {
+	&:not(.pages) {
+		.row:has(.hero-rdd-25)  {
+//			min-height: 100vh;
+			background-image: url("../images/rdd-25/hero-bg-rdd-25.webp");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: right top;
+			background-color: $color-2;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+
+			.container {
+				max-width: 1520px;
+//				max-width: 80%;
+				margin-top: calc(65vw/3.75);
+
+				@media (min-width: #{$breakpoint-sm}) and (orientation : landscape) {
+					width: 80%;
+					margin-top: calc(190vw/19.2);
+				}
+
+				@media (min-width: #{$breakpoint-lg}) {
+					margin-top: 140px;
+					margin-bottom: 70px;
+				}
+
+				@media (min-width: #{$breakpoint-xl}) {
+					margin-top: calc(140vw/19.2);
+					margin-bottom: calc(170vw/19.2);
+				}
+
+				@media (min-width: #{$breakpoint-full}) {
+					width: 90%;
+					margin-top: 190px;
+					margin-bottom:130px;
+				}
+			}
+
+
+			@media only screen and (orientation : portrait) {
+				background-image: url("../images/rdd-25/hero-bg-rdd-25.webp");
+				min-height: 96vw;
+				justify-content: flex-start; 
+
+				@media (min-width: #{$breakpoint-lg}) {
+					min-height: 55vw;
+				} 
+			}
+
+			.mob & {
+				@media (min-width: #{$breakpoint-md}) and (orientation : landscape) {
+					min-height: 55vw;
+				}
+			}
+
+			@media (min-width: #{$breakpoint-md}) {
+				background-image: url("../images/rdd-25/hero-bg-rdd-25.webp");
+			}
+
+
+			.btn-primary {
+				background-color: $color-12-1 !important;
+				border:2px solid $wht;
+				color: $wht;
+				box-shadow: 0 0 10px transparentize(#300430, .5);
+				margin-top: calc(15vw/3.75);
+
+				&:hover {
+					background-color: $color-5 !important;
+					color: $wht !important;
+				}
+
+				@media (min-width: #{$breakpoint-sm}) and (orientation : landscape) {
+					transform: translateY(-30%);
+					margin-top: 0;
+				}
+
+				@media (min-width: #{$breakpoint-lg}) {
+					height: 55px !important;
+					border-radius: 55px !important;
+					font-size: 30px !important;
+					padding: 0 20px !important;
+				}
+
+				.ico-arr-right {
+					min-width: 20px;
+					width: 20px;
+					height: 20px;
+
+					@media (min-width: #{$breakpoint-lg}) {
+						min-width: 28px;
+						width: 28px;
+						height: 28px;
+					}
+				}
+			}
+
+
+			.logo-rdd {
+				display: flex;
+				align-items: center;
+				padding-right: 0;
+				
+				img {
+					width: 100%;
+				}
+
+				@media (min-width: #{$breakpoint-sm}){
+					padding-right: 15px;
+				}
+
+				@media (min-width: #{$breakpoint-sm}) and (orientation : landscape) {
+					padding-left: calc(45vw/19.2);
+					padding-right: calc(45vw/19.2);
+				}
+
+				@media (min-width: #{$breakpoint-full}) {
+					padding-left: 45px ;
+					padding-right: 45px ;
+				}
+			}
+
+			[class*="hero-title-"] {
+				font-family: 'bebas_neuebold';
+				color: $wht;
+				text-transform: uppercase;
+				line-height: 1;
+				letter-spacing: 2px;
+
+				@media (min-width: #{$breakpoint-sm}) and (orientation : landscape) {
+					padding-left: calc(45vw/19.2);
+					padding-right: calc(15vw/19.2);
+				}
+
+				@media (min-width: #{$breakpoint-full}) {
+					padding: 0 150px 0 45px;
+				}
+
+			}
+
+			.hero-title-1 {
+				display: flex;
+				align-items: center;
+				text-shadow: 0 0 20px transparentize(#300430, .5);
+				font-size: calc(18vw/3.75);
+
+				@media (min-width: #{$breakpoint-sm}) and (orientation : landscape) {
+					font-size: fluidSize(40, 63, 991, 1920);
+				}
+
+				@media (min-width: #{$breakpoint-full}) {
+					font-size: 63px;
+				}
+			}
+
+			.hero-title-2 {
+				font-size: calc(15vw/3.75);
+
+				@media (min-width: #{$breakpoint-sm}) and (orientation : landscape) {
+					font-size: calc(53vw/19.2);
+				}
+
+				@media (min-width: #{$breakpoint-full}) {
+					font-size: 53px;
+				}
+
+				span {
+					color: $color-5-3;
+				}
+			}
+
+			.hero-collage {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				margin-top: calc(20vw/3.75);
+
+				@media (min-width: #{$breakpoint-sm}) and (orientation : landscape) {
+					margin-top: calc(65vw/19.2);
+				}
+
+				@media (min-width: #{$breakpoint-full}) {
+					margin-top: 65px;
+				}
+			}
+		}
+
+	}
+}
+
+
+
+
+
+

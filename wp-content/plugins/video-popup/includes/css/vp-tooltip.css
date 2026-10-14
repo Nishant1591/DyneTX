@@ -1,0 +1,68 @@
+.vp-tooltip {
+   display: inline-block;
+   width: 14px;
+   height: 14px;
+   background-color: #2271b1;
+   color: white;
+   border-radius: 50%;
+   text-align: center;
+   line-height: 13px;
+   font-size: 10px;
+   font-weight: bold;
+   cursor: pointer;
+   margin-left: 5px;
+   position: relative;
+   transition: background-color 0.3s ease;
+   overflow: hidden;
+}
+
+.vp-tooltip:hover {
+   background-color: #2a8edf;
+   overflow: visible;
+}
+
+.vp-tooltip::after {
+  content: attr(data-vp-tooltip);
+  position: absolute;
+  bottom: 135%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.85);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: normal;
+  white-space: normal;
+  max-width: 300px;
+  width: max-content;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+  z-index: 1000;
+  pointer-events: none;
+  line-height: 1.4;
+}
+
+.vp-tooltip::before {
+   content: '';
+   position: absolute;
+   bottom: 105%;
+   left: 50%;
+   transform: translateX(-50%);
+   width: 0;
+   height: 0;
+   border-left: 5px solid transparent;
+   border-right: 5px solid transparent;
+   border-top: 5px solid rgba(0, 0, 0, 0.85);
+   opacity: 0;
+   visibility: hidden;
+   transition: opacity 0.3s ease;
+   z-index: 1000;
+}
+
+.vp-tooltip:hover::after,
+.vp-tooltip:hover::before {
+   opacity: 1;
+   visibility: visible;
+}

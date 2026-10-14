@@ -1,0 +1,93 @@
+/* IE FIXES */
+
+.ie {
+	.card {
+		display: block;
+	}
+	
+	.press-release-short .card-body {
+		display: block;
+	}
+	
+	.btn-cta {
+		&:before {
+			top: -20%;
+			left: -265%;			
+		}
+		
+		a {
+			display: block;
+			
+			&:after {
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+	}
+	[class*='btn-plus'].btn {
+		position: relative;
+	}
+	
+	[class*='btn-plus'].btn::before, 
+	[class*='btn-plus'].btn i	{
+		left: 0;
+		right: 0;
+		top: 42%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.boards, 
+	.contact, 
+	.carousel {
+		.card {
+			display: flex;
+		}
+	}
+
+	.card-text {
+		display: block; 
+	}
+	
+	.accordion .card-header {
+		height: 1px;
+	}
+	
+	.careers-values {
+		.card-body {
+			display: block;
+		}
+		
+		.card-img-top {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	
+	.carousel {
+		.img-container {
+			&:before {
+				top: -10%;
+				left: -220%;			
+			}
+		}
+	}
+	
+	.footer{
+		height: 1px;
+	}
+	
+	.section {
+		&.intro-video {
+			.h2 {
+				display: table;
+			}
+
+			.btn {
+				align-self: flex-start;
+			}
+		}	
+	}
+	
+}

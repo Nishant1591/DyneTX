@@ -1,0 +1,7 @@
+ot_webform.settings:
+  path: '/admin/config/services/ot-webform'
+  defaults:
+    _form: '\Drupal\ot_webform\Form\OtWebformConfigForm'
+    _title: 'OneTrust WebForm Settings'
+  requirements:
+    _permission: 'administer site configuration'

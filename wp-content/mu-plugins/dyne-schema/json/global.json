@@ -1,0 +1,165 @@
+{
+  "_comment": "Dyne Therapeutics — common JSON-LD nodes used sitewide. Edit company facts here and nowhere else. Last updated 2026-08-24.",
+  "nodes": [
+    {
+      "@type": "Corporation",
+      "@id": "https://www.dyne-tx.com/#organization",
+      "name": "Dyne Therapeutics",
+      "legalName": "Dyne Therapeutics, Inc.",
+      "alternateName": "Dyne",
+      "foundingDate": "2017",
+      "url": "https://www.dyne-tx.com/",
+      "logo": {
+        "@id": "https://www.dyne-tx.com/#logo"
+      },
+      "image": {
+        "@id": "https://www.dyne-tx.com/#logo"
+      },
+      "description": "Dyne Therapeutics is a clinical-stage biotechnology company developing targeted therapeutics for genetically driven neuromuscular diseases. Its FORCE platform conjugates an antigen-binding fragment that binds transferrin receptor 1 to a therapeutic payload to enable delivery to muscle and the central nervous system and address the root cause of disease.",
+      "slogan": "The muscle to keep life moving",
+      "tickerSymbol": "DYN",
+      "email": "info@dyne-tx.com",
+      "telephone": "+1-781-786-8230",
+      "faxNumber": "+1-781-786-8866",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1560 Trapelo Road",
+        "addressLocality": "Waltham",
+        "addressRegion": "MA",
+        "postalCode": "02451",
+        "addressCountry": "US"
+      },
+      "location": {
+        "@id": "https://www.dyne-tx.com/#headquarters"
+      },
+      "numberOfEmployees": {
+        "@type": "QuantitativeValue",
+        "value": 289
+      },
+      "knowsAbout": [
+        "Neuromuscular diseases",
+        "Duchenne muscular dystrophy",
+        "Myotonic dystrophy type 1",
+        "Facioscapulohumeral muscular dystrophy",
+        "Pompe disease",
+        "Antisense oligonucleotides",
+        "Phosphorodiamidate morpholino oligomers",
+        "Small interfering RNA",
+        "Transferrin receptor 1 mediated delivery",
+        "Antibody oligonucleotide conjugates"
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/company/dynetx",
+        "https://x.com/dyne_tx",
+        "https://www.facebook.com/DyneTherapeutic/",
+        "https://www.youtube.com/@dynetherapeutics"
+      ],
+      "subjectOf": [
+        {
+          "@type": "WebSite",
+          "@id": "https://investors.dyne-tx.com/#website",
+          "url": "https://investors.dyne-tx.com/",
+          "name": "Dyne Therapeutics Investors & Media"
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://dynemedicalcentral.com/#website",
+          "url": "https://dynemedicalcentral.com/",
+          "name": "Dyne Medical Central",
+          "description": "Dyne's resource for U.S. healthcare professionals."
+        }
+      ],
+      "contactPoint": [
+        {
+          "@id": "https://www.dyne-tx.com/#contact-general"
+        },
+        {
+          "@id": "https://www.dyne-tx.com/#contact-partnerships"
+        },
+        {
+          "@id": "https://www.dyne-tx.com/#contact-patient-advocacy"
+        },
+        {
+          "@id": "https://www.dyne-tx.com/#contact-investors"
+        },
+        {
+          "@id": "https://www.dyne-tx.com/#contact-clinical-trials"
+        },
+        {
+          "@id": "https://www.dyne-tx.com/#contact-safety"
+        }
+      ]
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://www.dyne-tx.com/#logo",
+      "url": "https://www.dyne-tx.com/wp-content/themes/dynetxdev2020/images/logo-r.svg",
+      "contentUrl": "https://www.dyne-tx.com/wp-content/themes/dynetxdev2020/images/logo-r.svg",
+      "encodingFormat": "image/svg+xml",
+      "caption": "Dyne Therapeutics"
+    },
+    {
+      "@type": "Place",
+      "@id": "https://www.dyne-tx.com/#headquarters",
+      "name": "Dyne Therapeutics headquarters",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1560 Trapelo Road",
+        "addressLocality": "Waltham",
+        "addressRegion": "MA",
+        "postalCode": "02451",
+        "addressCountry": "US"
+      },
+      "telephone": "+1-781-786-8230",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 42.41484,
+        "longitude": -71.26019
+      }
+    },
+    {
+      "@type": "ContactPoint",
+      "@id": "https://www.dyne-tx.com/#contact-general",
+      "contactType": "general inquiries",
+      "email": "info@dyne-tx.com",
+      "telephone": "+1-781-786-8230",
+      "availableLanguage": "English"
+    },
+    {
+      "@type": "ContactPoint",
+      "@id": "https://www.dyne-tx.com/#contact-partnerships",
+      "contactType": "business development",
+      "email": "partnerships@dyne-tx.com",
+      "availableLanguage": "English"
+    },
+    {
+      "@type": "ContactPoint",
+      "@id": "https://www.dyne-tx.com/#contact-patient-advocacy",
+      "contactType": "patient advocacy",
+      "email": "patientadvocacy@dyne-tx.com",
+      "availableLanguage": "English"
+    },
+    {
+      "@type": "ContactPoint",
+      "@id": "https://www.dyne-tx.com/#contact-investors",
+      "contactType": "investor relations",
+      "email": "ir@dyne-tx.com",
+      "availableLanguage": "English"
+    },
+    {
+      "@type": "ContactPoint",
+      "@id": "https://www.dyne-tx.com/#contact-clinical-trials",
+      "contactType": "clinical trial inquiries",
+      "email": "clinicaltrials@dyne-tx.com",
+      "availableLanguage": "English"
+    },
+    {
+      "@type": "ContactPoint",
+      "@id": "https://www.dyne-tx.com/#contact-safety",
+      "contactType": "adverse event reporting",
+      "email": "MedSafety@dyne-tx.com",
+      "availableLanguage": "English",
+      "description": "Reporting a possible side effect of a Dyne investigational therapeutic. Anyone experiencing a possible side effect should contact their healthcare provider immediately; reports may also be made to the FDA at www.fda.gov/medwatch or 1-800-FDA-1088."
+    }
+  ]
+}

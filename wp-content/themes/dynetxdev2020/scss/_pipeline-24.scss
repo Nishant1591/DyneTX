@@ -1,0 +1,610 @@
+// Scss Document
+
+.pipeline-chart-24 {
+	padding-top: calc(60vw/19.2);
+	padding-bottom: calc(60vw/19.2) !important;
+	margin-bottom: 6.25rem
+}
+@media (max-width: 991.001px) {
+	.pipeline-chart-24 ~ .pipeline-description {
+		display: none
+	}
+}
+.pipeline-chart-24 .container {
+	padding: 0 15px
+}
+.pipeline-chart-24 .chart-headline {
+	font-family: 'ralewayregular';
+	background-color: #58595B;
+	color: #fff;
+	height: 42px;
+	max-height: 42px;
+	padding: 0;
+	font-size: 15px;
+	text-transform: uppercase
+}
+@media (min-width: 992px) {
+	.pipeline-chart-24 .chart-headline {
+		font-family: 'ralewaybold';
+		font-size: calc(.0025 * 100vw + 9.2092px)
+	}
+}
+@media (min-width: 1920px) {
+	.pipeline-chart-24 .chart-headline {
+		font-size: 14px
+	}
+}
+.pipeline-chart-24 .chart-headline [class*='col']:not(.stages) {
+	display: flex;
+	align-items: center
+}
+@media (min-width: 992px) {
+	.pipeline-chart-24 .chart-headline [class*='col']:first-child {
+		padding-left: 10px
+	}
+}
+.pipeline-chart-24 .chart-headline [class*='col']:first-child:not(:last-child) {
+	border-right: 2px solid #fff
+}
+.pipeline-chart-24 .chart-headline [class*='col']:not(:first-child) {
+	justify-content: center
+}
+@media (max-width: 991.001px) {
+	.pipeline-chart-24 .chart-headline [class*='col']:not(:first-child) {
+		display: none
+	}
+}
+.pipeline-chart-24 .chart-headline .stages {
+	width: 55%;
+	max-width: 55%;
+	flex: 0 0 55%;
+	white-space: nowrap
+}
+.pipeline-chart-24 .chart-headline .stages .row, .pipeline-chart-24 .chart-headline .stages .row > div {
+	height: 100%;
+	border: none
+}
+.pipeline-chart-24 .chart-headline [class*="stage-"] {
+	position: relative;
+	white-space: nowrap;
+	display: inline-flex;
+	padding-left: calc(.003125 * 100vw + 19.019px)
+}
+.pipeline-chart-24 .chart-headline [class*="stage-"]:before {
+	content: "";
+	display: inline-block;
+	width: 21px;
+	min-width: 21px;
+	height: 41px;
+	position: absolute;
+	left: -6px;
+	top: 0;
+	z-index: 0
+}
+.pipeline-chart-24 .chart-headline [class*="stage-"] span {
+	padding: 0 20px;
+	z-index: 1
+}
+@media (min-width: 992px) {
+	.pipeline-chart-24 .chart-headline [class*="stage-"] span {
+		padding: 0 calc(20vw/19.2)
+	}
+}
+.pipeline-chart-24 .chart-headline [class*="stage-"].stage-1 {
+	background-color: #91B4D6
+}
+.pipeline-chart-24 .chart-headline [class*="stage-"].stage-1:before {
+	background-image: url("../images/corner-1.svg")
+}
+.pipeline-chart-24 .chart-headline [class*="stage-"].stage-2 {
+	background-color: #6E9CC8
+}
+.pipeline-chart-24 .chart-headline [class*="stage-"].stage-2:before {
+	background-image: url("../images/corner-2.svg")
+}
+.pipeline-chart-24 .chart-headline [class*="stage-"].stage-3 {
+	min-width: 50%;
+	width: 50%;
+	background-color: #3D7BB6
+}
+.pipeline-chart-24 .chart-headline [class*="stage-"].stage-3:before {
+	background-image: url("../images/corner-3.svg")
+}
+.pipeline-chart-24 .chart-headline [class*="stage-"].stage-6 {
+	background-color: #58595B;
+	padding-left: 20px;
+	padding-right: 10px
+}
+.pipeline-chart-24 .chart-headline [class*="stage-"].stage-6:before {
+	background-image: url("../images/corner-4.svg")
+}
+.pipeline-chart-24 .chart-body > div {
+	border: 1px solid #fff;
+	font-family: 'ralewaysemibold' !important;
+	font-size: calc(.0006472492 * 100vw + 15.773038835px);
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	padding-top: 10px;
+	padding-bottom: 10px
+}
+.pipeline-chart-24 .chart-body > div:first-child {
+	font-size: calc(.0032327586 * 100vw + 10.8038965517px);
+	border-left: none;
+	font-family: 'ralewaybold' !important;
+	position: relative;
+	text-align: left
+}
+@media (max-width: 991.999px) {
+	.pipeline-chart-24 .chart-body > div:first-child {
+		font-size: 17px;
+		margin-top: 10px
+	}
+}
+@media (min-width: 992px) {
+	.pipeline-chart-24 .chart-body > div:first-child {
+		padding-left: 10px
+	}
+}
+@media (min-width: 1920px) {
+	.pipeline-chart-24 .chart-body > div:first-child {
+		font-size: 17px
+	}
+}
+.pipeline-chart-24 .chart-body > div:last-child {
+	border-right: none;
+	text-align: left;
+	padding-left: 15px;
+	padding-right: 0
+}
+@media (min-width: 1920px) {
+	.pipeline-chart-24 .chart-body > div {
+		font-size: 17px
+	}
+}
+@media (max-width: 991.999px) {
+	.pipeline-chart-24 .chart-body > div {
+		border: none;
+		padding-left: 40px !important
+	}
+}
+.pipeline-chart-24 .chart-body > div .btn-plus {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translate(0, -50%)
+}
+@media (min-width: 992px) {
+	.pipeline-chart-24 .chart-body > div .btn-plus {
+		transform: translate(-100%, -50%)
+	}
+}
+@media (min-width: 1200px) {
+	.pipeline-chart-24 .chart-body > div .btn-plus {
+		transform: translate(calc(-100% - 10vw/19.2), -50%)
+	}
+}
+.pipeline-chart-24 .chart-body > div span, .pipeline-chart-24 .chart-body > div small {
+	font-family: 'ralewayregular'
+}
+@media (min-width: 992px) {
+	.pipeline-chart-24 .chart-body > div.chart-wrapper {
+		width: 55%;
+		max-width: 55%;
+		flex: 0 0 55%;
+		white-space: nowrap
+	}
+}
+@media (max-width: 991.999px) {
+	.pipeline-chart-24 .chart-body > div.chart-wrapper {
+		border-top-width: 0;
+		padding-top: 5px;
+		padding-bottom: 5px
+	}
+}
+.pipeline-chart-24 .chart-body > div.target {
+	font-size: calc(.0006472492 * 100vw + 15.773038835px);
+	flex-direction: column;
+	align-content: flex-start
+}
+@media (min-width: 992px) {
+	.pipeline-chart-24 .chart-body > div.target {
+		align-content: center;
+		padding-left: calc(10vw/19.2);
+		padding-right: calc(10vw/19.2)
+	}
+}
+@media (min-width: 1920px) {
+	.pipeline-chart-24 .chart-body > div.target {
+		padding-left: 10px;
+		padding-right: 10px
+	}
+}
+@media (max-width: 991.999px) {
+	.pipeline-chart-24 .chart-body > div.target {
+		font-family: 'ralewayregular' !important;
+		border-bottom-width: 0;
+		padding-top: 0;
+		padding-bottom: 0
+	}
+}
+@media (min-width: 992px) {
+	.pipeline-chart-24 .chart-body > div.target > div {
+		height: 36px;
+		display: flex !important;
+		align-items: center;
+		justify-content: center;
+		white-space: nowrap
+	}
+}
+.pipeline-chart-24 .chart-body > div.target > div:not(:first-child) {
+	display: none;
+	margin-top: 15px
+}
+.pipeline-chart-24 .chart-body:last-child > div {
+	border-bottom: none !important
+}
+.pipeline-chart-24 .chart-body[class*="program-"] .chart-wrapper {
+	padding-left: 0;
+	padding-right: 0
+}
+.pipeline-chart-24 .chart-body[class*="program-"] .chart-wrapper .inner {
+	width: 100%
+}
+.pipeline-chart-24 .chart-body[class*="program-"] .chart-wrapper .inner .d-lg-none {
+	font-family: 'ralewayregular';
+	margin-top: 5px;
+	margin-bottom: 3px
+}
+@media (min-width: 992px) {
+	.pipeline-chart-24 .chart-body[class*="program-"] .chart-wrapper .inner:not(:first-child) {
+		margin-top: 15px
+	}
+}
+.pipeline-chart-24 .chart-body[class*="program-"] .chart-wrapper span {
+	margin-left: auto;
+	font-size: calc(.010178117 * 100vw + 6.189389313px);
+	padding-right: 15px;
+	font-style: italic;
+	line-height: 1.1
+}
+@media (min-width: 992px) {
+	.pipeline-chart-24 .chart-body[class*="program-"] .chart-wrapper span {
+		display: none
+	}
+}
+.pipeline-chart-24 .chart-body[class*="program-"] .chart-wrapper .chart {
+	height: 36px;
+	display: flex;
+	position: relative
+}
+.pipeline-chart-24 .chart-body[class*="program-"] .chart-wrapper .chart:before, .pipeline-chart-24 .chart-body[class*="program-"] .chart-wrapper .chart:after {
+	content: '';
+	display: inline-block;
+	height: 100%
+}
+.pipeline-chart-24 .chart-body[class*="program-"] .chart-wrapper .chart:before {
+	width: 100%
+}
+.pipeline-chart-24 .chart-body[class*="program-"] .chart-wrapper .chart:after {
+	width: 14px;
+	background-repeat: no-repeat
+}
+.pipeline-chart-24 .chart-body[class*="program-"] .chart-wrapper .chart > div {
+	position: absolute;
+	color: #fff;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	padding-left: 5px
+}
+@media (max-width: 991.001px) {
+	.pipeline-chart-24 .chart-body[class*="program-"] .chart-wrapper .chart > div {
+		font-size: calc(.0127226463 * 100vw + 6.2352366412px)
+	}
+}
+@media (min-width: 992px) {
+	.pipeline-chart-24 .chart-body[class*="program-"] .chart-wrapper .chart > div {
+		padding-left: calc(20vw/19.2)
+	}
+}
+@media (min-width: 1920px) {
+	.pipeline-chart-24 .chart-body[class*="program-"] .chart-wrapper .chart > div {
+		padding-left: 20px
+	}
+}
+.pipeline-chart-24 .chart-body.program-1 > div {
+	color: #024C82
+}
+.pipeline-chart-24 .chart-body.program-1 > div .chart:before {
+	background-image: linear-gradient(to right, #19375B, #00428B)
+}
+.pipeline-chart-24 .chart-body.program-1 > div .chart:after {
+	background-image: url("../images/stage-corner-1.svg")
+}
+.pipeline-chart-24 .chart-body.program-2 > div {
+	color: #3D7BB6
+}
+.pipeline-chart-24 .chart-body.program-2 > div .chart:before {
+	background-image: linear-gradient(to right, #00428B, #115DA6)
+}
+.pipeline-chart-24 .chart-body.program-2 > div .chart:after {
+	background-image: url("../images/stage-corner-2.svg")
+}
+.pipeline-chart-24 .chart-body.program-3 > div {
+	color: #0CB6D4 !important
+}
+.pipeline-chart-24 .chart-body.program-3 > div .chart:before {
+	background-image: linear-gradient(to right, #008DBF, #0CB6D4)
+}
+.pipeline-chart-24 .chart-body.program-3 > div .chart:after {
+	background-image: url("../images/stage-corner-3.svg")
+}
+.pipeline-chart-24 .chart-body.program-4 > div {
+	color: #26534a !important
+}
+.pipeline-chart-24 .chart-body.program-4 > div .chart:before {
+	background-image: linear-gradient(to right, #26534a, #387d70)
+}
+.pipeline-chart-24 .chart-body.program-4 > div .chart:after {
+	background-image: url("../images/stage-corner-4.svg")
+}
+.pipeline-chart-24 .pipeline-description {
+	background-color: #fff;
+	position: relative;
+	margin-right: -30px
+}
+.pipeline-chart-24 .pipeline-description:before {
+	width: 100vw;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, 0);
+	background-color: #fff
+}
+.pipeline-chart {
+	padding-top: calc(60vw/19.2);
+	padding-bottom: calc(60vw/19.2) !important;
+	margin-bottom: 6.25rem
+}
+.pipeline-chart .col-12 {
+	overflow-x: auto;
+	padding-left: 50px;
+	padding-right: 50px
+}
+@media (min-width: 1200px) {
+	.pipeline-chart .col-12 {
+		overflow-x: visible;
+		padding-left: 0px;
+		padding-right: 0px
+	}
+}
+.pipeline-chart .table th {
+	border-top: none !important;
+	width: auto;
+	background-color: #58595B;
+	color: #fff;
+	height: 42px;
+	max-height: 42px;
+	padding: 0;
+	font-size: calc(.0025 * 100vw + 9.2092px);
+	text-transform: uppercase
+}
+@media (min-width: 1920px) {
+	.pipeline-chart .table th {
+		font-size: 14px
+	}
+}
+.pipeline-chart .table th.stages {
+	width: 55%;
+	white-space: nowrap
+}
+.pipeline-chart .table th [class*="stage-"] {
+	min-width: 25%;
+	width: 25%;
+	height: 100%;
+	position: relative;
+	white-space: nowrap;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding-left: calc(.003125 * 100vw + 19.019px)
+}
+.pipeline-chart .table th [class*="stage-"]:before {
+	content: "";
+	display: inline-block;
+	width: 21px;
+	min-width: 21px;
+	height: 41px;
+	position: absolute;
+	left: -6px;
+	top: 0;
+	z-index: 0
+}
+.pipeline-chart .table th [class*="stage-"] span {
+	padding: 0 20px;
+	z-index: 1
+}
+.pipeline-chart .table th [class*="stage-"].stage-1 {
+	background-color: #91B4D6
+}
+.pipeline-chart .table th [class*="stage-"].stage-1:before {
+	background-image: url("../images/corner-1.svg")
+}
+.pipeline-chart .table th [class*="stage-"].stage-2 {
+	background-color: #6E9CC8
+}
+.pipeline-chart .table th [class*="stage-"].stage-2:before {
+	background-image: url("../images/corner-2.svg")
+}
+.pipeline-chart .table th [class*="stage-"].stage-3 {
+	min-width: 50%;
+	width: 50%;
+	background-color: #3D7BB6
+}
+.pipeline-chart .table th [class*="stage-"].stage-3:before {
+	background-image: url("../images/corner-3.svg")
+}
+.pipeline-chart .table th [class*="stage-"].stage-4 {
+	background-color: #024C82
+}
+.pipeline-chart .table th [class*="stage-"].stage-4:before {
+	background-image: url("../images/corner-4.svg")
+}
+.pipeline-chart .table th [class*="stage-"].stage-5 {
+	background-color: #023962
+}
+.pipeline-chart .table th [class*="stage-"].stage-5:before {
+	background-image: url("../images/corner-5.svg")
+}
+.pipeline-chart .table th [class*="stage-"].stage-6 {
+	background-color: #58595B;
+	width: 100%;
+	padding-left: 20px;
+	padding-right: 10px
+}
+.pipeline-chart .table th [class*="stage-"].stage-6:before {
+	background-image: url("../images/corner-4.svg")
+}
+.pipeline-chart .table.table-bordered td, .pipeline-chart .table.table-bordered th {
+	border: 2px solid #fff;
+	border-bottom: none
+}
+.pipeline-chart .table.table-bordered td:first-child, .pipeline-chart .table.table-bordered th:first-child {
+	border-left: none
+}
+.pipeline-chart .table.table-bordered td:last-child, .pipeline-chart .table.table-bordered th:last-child {
+	border-right: none
+}
+.pipeline-chart .table.table-bordered {
+	border: none
+}
+.pipeline-chart .table td {
+	font-family: 'ralewaysemibold' !important;
+	font-size: calc(.0044642857 * 100vw + 9.438px);
+	width: 10%
+}
+@media (min-width: 1920px) {
+	.pipeline-chart .table td {
+		font-size: 18px
+	}
+}
+.pipeline-chart .table td:first-child {
+	font-family: 'ralewaybold' !important;
+	position: relative;
+	text-align: left
+}
+.pipeline-chart .table td:last-child {
+	text-align: left;
+	padding-left: 15px
+}
+.pipeline-chart .table td .btn-plus {
+	position: absolute;
+	left: -40px;
+	top: 0;
+	bottom: 0;
+	margin: auto
+}
+.pipeline-chart .table td span, .pipeline-chart .table td small {
+	font-family: 'ralewayregular'
+}
+.pipeline-chart .table [class*="program-"] .target > div {
+	height: 36px;
+	display: flex;
+	align-items: center;
+	justify-content: center
+}
+.pipeline-chart .table [class*="program-"] .chart-wrapper {
+	padding-left: 0;
+	padding-right: 0
+}
+.pipeline-chart .table [class*="program-"] .chart-wrapper .inner {
+	display: flex;
+	align-items: center;
+	justify-content: space-between
+}
+.pipeline-chart .table [class*="program-"] .chart-wrapper span {
+	font-size: 10px;
+	display: block;
+	padding-left: 5px;
+	padding-right: 5px;
+	text-align: center;
+	color: #06243A;
+	font-style: italic;
+	line-height: 1.1
+}
+@media (min-width: 992px) {
+	.pipeline-chart .table [class*="program-"] .chart-wrapper span {
+		font-size: calc(.0043103448 * 100vw + 7.731862069px)
+	}
+}
+@media (min-width: 1920px) {
+	.pipeline-chart .table [class*="program-"] .chart-wrapper span {
+		font-size: 16px
+	}
+}
+.pipeline-chart .table [class*="program-"] .chart-wrapper + td {
+	white-space: nowrap;
+	padding-right: 0;
+	padding-left: 10px
+}
+.pipeline-chart .table [class*="program-"] .chart {
+	height: 36px;
+	display: flex;
+	position: relative
+}
+.pipeline-chart .table [class*="program-"] .chart:before, .pipeline-chart .table [class*="program-"] .chart:after {
+	content: '';
+	display: inline-block;
+	height: 100%
+}
+.pipeline-chart .table [class*="program-"] .chart:before {
+	width: 100%
+}
+.pipeline-chart .table [class*="program-"] .chart:after {
+	width: 14px;
+	background-repeat: no-repeat
+}
+.pipeline-chart .table [class*="program-"] .chart > div {
+	position: absolute;
+	color: #fff;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	margin-left: calc(80vw/19.2)
+}
+@media (min-width: 1920px) {
+	.pipeline-chart .table [class*="program-"] .chart > div {
+		margin-left: 80px
+	}
+}
+.pipeline-chart .table .program-1 td {
+	color: #024C82
+}
+.pipeline-chart .table .program-1 td .chart:before {
+	background-image: linear-gradient(to right, #19375B, #00428B)
+}
+.pipeline-chart .table .program-1 td .chart:after {
+	background-image: url("../images/stage-corner-1.svg")
+}
+.pipeline-chart .table .program-2 td {
+	color: #3D7BB6
+}
+.pipeline-chart .table .program-2 td .chart:before {
+	background-image: linear-gradient(to right, #00428B, #115DA6)
+}
+.pipeline-chart .table .program-2 td .chart:after {
+	background-image: url("../images/stage-corner-2.svg")
+}
+.pipeline-chart .table .program-3 td {
+	color: #0CB6D4
+}
+.pipeline-chart .table .program-3 td .chart:before {
+	background-image: linear-gradient(to right, #008DBF, #0CB6D4)
+}
+.pipeline-chart .table .program-3 td .chart:after {
+	background-image: url("../images/stage-corner-3.svg")
+}

@@ -1,0 +1,320 @@
+// FORMS
+
+[class*='ot-webform'] * {
+		box-sizing: border-box !important;
+}
+
+.ot-open-webform {
+	display: none;
+}
+
+.ot-consent-inline {
+	background: none !important;
+	border: none !important;
+	margin: 0 !important; 
+	padding: 0 0 $pad-xxl 0 !important;
+	width: 100% !important;
+	
+	&.ot-n {
+//		display: block !important;
+	}
+	
+	.ot-form {
+		padding: 0 !important;
+	}
+	
+	.ot-form-content {
+		font-family: 'ralewayregular', Arial, Helvetica, sans-serif;
+		display: flex;
+		flex-wrap: wrap;
+		margin-top: calc(-1*var(--mdb-gutter-y));
+		margin-right: calc(-0.25*var(--mdb-gutter-x));
+		margin-left: calc(-0.25*var(--mdb-gutter-x));
+		
+		.ot-el {
+			flex: 0 0 auto;
+    	width: 100%;
+			padding-right: calc(var(--mdb-gutter-x)*.25 + 2px);
+			padding-left: calc(var(--mdb-gutter-x)*.25 + 2px);
+			margin-top: var(--mdb-gutter-y);
+			
+			@media (min-width: #{$breakpoint-md}) {
+				width: 50%;
+			} 
+			
+			@media (min-width: #{$breakpoint-lg}) {
+				width: 33.33333333%;
+			} 
+			
+			.ot-label:not(legend) {
+				font-family: 'ralewaymedium';
+				color: $color-6;
+				padding-left: $pad-md;
+				white-space: nowrap;
+				font-size: fluidSize(14, 20, 320, 1920);
+				font-size: 16px;
+
+				@media (min-width: #{$breakpoint-full}) {
+//					font-size: 20px;
+				}
+			}
+			
+			input:not([type="radio"]):not([type="checkbox"]), select {
+				width: 100%;
+				border-radius: 50px;
+				height: 50px;
+				border-color: $color-4-5;
+				padding-right: 40px;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				
+				&:focus-visible {
+					outline: 2px solid $color-4-5 !important;
+				}
+			}
+
+			input[type="checkbox"] {
+				+ label {
+					.ot-label {
+						padding-left: 0;
+					}
+				} 
+				
+				~ label::before {
+					border-color:  $color-4-5;
+				}
+				
+				&:checked ~ label::before {
+					background-color: $color-4-5;
+					border-color:  $color-4-5;
+				}
+			}
+			
+			select {
+				appearance: none; 
+				-webkit-appearance: none;
+				-moz-appearance: none;
+				background-image: none;
+				cursor: pointer;
+			}
+			
+			.country_code_field {
+				width: 140px;
+			}
+			
+			.phone_field {
+				padding-left: $pad-xs;
+				width: calc(98% - 140px);
+			}
+			
+			&.ot-contentblock {
+				width: 100%;
+				
+				p {
+					font-size: fluidSize(10, 14, 375, 1920) !important;
+				}
+			}
+		}
+		
+
+		div:has(>select) {
+			position: relative;
+
+			&::after {
+				content: '';
+				position: absolute;
+				bottom: 18px;
+				right: 25px;
+				width: 0;
+				height: 0;
+				pointer-events: none;
+				border-left: 6px solid transparent;
+				border-right: 6px solid transparent;
+				border-top: 6px solid $color-4-5;
+				transform: translateY(-50%);
+			}
+			
+			&.country_code_field {
+				&::after {
+					right: 15px;
+				}
+			}
+		}
+
+		
+		.ot-chkboxgrp {
+			flex: 0 0 auto;
+    	width: 100%;
+			
+			@media (min-width: #{$breakpoint-md}) {
+				width: 50%;
+			} 
+			
+			legend {
+				font-family: 'ralewaymedium';
+				color: $color-6;
+				font-size: fluidSize(18, 26, 320, 1920);
+
+				@media (min-width: #{$breakpoint-full}) {
+					font-size: rem(26);
+				}
+			}
+		}
+
+    .otwf-chkbox {
+      width: 100%;
+      margin-top: $pad-xs;
+    }
+	}
+}
+
+		
+.ot-submit {
+	font-family: 'ralewaybold' !important;
+	font-weight: 500 !important;
+	transition: all .2s ease-in-out;			
+	@include button-reset;
+	white-space: nowrap;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border: none !important;
+	box-shadow: none;
+	padding: 0px $pad-sm 1px $pad-sm !important;
+	text-decoration: none;
+	text-transform: none;
+	background-image: none;
+	margin: 0;		
+	height: 40px !important;
+	border-radius: 20px !important;
+	font-size: rem(16) !important;
+	width: max-content !important;
+	background-color: $color-1 !important;
+	color: $wht;
+
+	@media (min-width: #{$breakpoint-md}) {
+		font-size: rem(18) !important;
+		border-radius: 23px !important;
+		height: 42px !important;
+		padding: 0 $pad-sm*2 !important;
+	}
+
+	@media (min-width: #{$breakpoint-lg}) {
+		font-size: rem(20) !important;
+		border-radius: 25px !important;
+		height: 44px !important;
+	}
+	
+	&:disabled {
+		background-color: transparentize($blk, .9) !important;
+	}
+
+	&:hover {
+		background-color: $color-5 !important;
+		color: $wht !important;
+	}
+
+	
+}
+
+.form-confirmation {
+	.modal-header {
+		border: none;
+	}
+		
+	.close {
+		opacity: 1;
+		width: 35px;
+		height: 35px;
+		top: 15px;
+		right: 15px;
+		cursor: pointer;
+		border: none;
+		z-index: 1;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-color: transparent;
+		
+		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='52.475' height='52.475' viewBox='0 0 52.475 52.475'%3E%3Cg id='Group_8879' data-name='Group 8879' transform='translate(-1822.698 -48.24)'%3E%3Ccircle id='Ellipse_167' data-name='Ellipse 167' cx='26.237' cy='26.237' r='26.237' transform='translate(1822.698 48.24)' fill='%23CA3B33'/%3E%3Cline id='Line_71' data-name='Line 71' y1='21.203' x2='21.203' transform='translate(1838.491 64.594)' fill='none' stroke='%23fff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2.688'/%3E%3Cline id='Line_72' data-name='Line 72' x2='21.203' y2='21.203' transform='translate(1837.868 64.146)' fill='none' stroke='%23fff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2.688'/%3E%3C/g%3E%3C/svg%3E%0A");
+		
+		@media (min-width: #{$breakpoint-lg}) {
+			width: 52px; 
+			height: 52px; 
+		}
+		
+		&:hover {
+			opacity: .5;
+		}
+	}
+	
+	h3 {
+		text-align:center;
+		margin: 150px auto;
+		padding: 0 40px;
+	}
+
+}
+
+
+.positions_filter {
+  padding-top: 0;
+  
+  .row {
+    padding-bottom: $pad-xxl;
+  }
+  
+  select {
+    appearance: none; 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: none;
+    cursor: pointer;
+    
+    width: 100%;
+    border-radius: 50px;
+    height: 50px;
+    border-color: $color-4-5;
+    background-color: $wht;
+    padding-right: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-left: $pad-sm;
+    border-width: 1px;
+
+    &:focus-visible {
+      outline: 2px solid $color-4-5 !important;
+    }
+    
+  }
+  
+ div:has(>select) {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 18px;
+      right: 35px;
+      width: 0;
+      height: 0;
+      pointer-events: none;
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      border-top: 6px solid $color-4-5;
+      transform: translateY(-50%);
+    }
+   
+
+    label {
+      font-family: 'ralewaymedium';
+      color: $color-6;
+      padding-left: $pad-md;
+      white-space: nowrap;
+      font-size: fluidSize(14, 20, 320, 1920);
+      font-size: 16px;
+    }
+
+  }
+  
+}
+

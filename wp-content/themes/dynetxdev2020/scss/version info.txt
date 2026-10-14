@@ -1,0 +1,50 @@
+Last time edited:
+
+25.08.2026 by Time
+_blocks.scss
+
+19.08.2026 by Time
+_blocks.scss
+
+18.08.2026 by Time
+_common.scss
+_variables.scss
+
+28.07.2026 by Time
+_pipeline-26.scss
+
+19.05.2026 by Time
+_blocks.scss
+
+16.05.2026 by Time
+_forms.scss 
+
+12.05.2026 by Time
+_blocks.scss
+_forms.scss 
+_variables.scss
+_common.scss
+
+21.04.2026 by Time
+_blocks.scss
+_forms.scss 
+
+6.03.2026 by Time
+_blocks.scss 
+
+5.03.2026 by Time
+_hero.scss etc.   the styles are merged
+
+5.03.2026 by Ol ALbireo
+CLOSED. The stylesheet is now edited directly in styles.css
+
+8.09.2025 by Time
+_hero.scss
+
+3.09.2025 by Time
+_common.scss
+
+29.08.2025 by Time
+_blocks.scss, _hero.scss, _common.scss, _pipeline-25.scss
+
+19.06.2025 by Time

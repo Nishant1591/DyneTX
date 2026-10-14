@@ -1,9 +1,0 @@
-{# Video lightbox component: WP prettyPhoto YouTube embeds -> colorbox hook. #}
-<section class="dyne-video container py-5 text-center">
-  {% if paragraph.field_heading.value %}<h2 class="h1">{{ paragraph.field_heading.value }}</h2>{% endif %}
-  {% if paragraph.field_poster.entity %}
-    <a href="{{ paragraph.field_video_url.value }}" class="video-lightbox"><img src="{{ file_url(paragraph.field_poster.entity.uri.value) }}" alt="" class="img-fluid" /></a>
-  {% elseif paragraph.field_video_url.value %}
-    <p><a href="{{ paragraph.field_video_url.value }}" class="video-lightbox btn btn-primary">Watch video</a></p>
-  {% endif %}
-</section>

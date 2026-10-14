@@ -1,0 +1,6 @@
+ot_webform.settings:
+  title: 'OneTrust WebForm'
+  description: 'Configure the OneTrust collection point embed — IDs, hidden fields, GTM event.'
+  route_name: ot_webform.settings
+  parent: system.admin_config_services
+  weight: 10

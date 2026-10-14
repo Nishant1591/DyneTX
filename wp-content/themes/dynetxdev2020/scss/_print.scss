@@ -1,0 +1,18 @@
+// PRINT
+
+@media print {
+	
+	.popup-main, .header-wrapper, .hero, .footer { 
+		display: none !important; 
+	}
+	
+	li {
+		display: list-item !important;
+		list-style: initial !important;
+		padding-left: 0 !important;
+		
+		&:before {
+			display: none !important;
+		}
+	}
+}

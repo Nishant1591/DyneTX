@@ -1,0 +1,3399 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Popup Builder\n"
+"Report-Msgid-Bugs-To: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Domain: popup-builder\n"
+"X-Generator: _pb_i18n.php\n"
+
+#. Plugin Name of the plugin
+#: popup-builder.php
+msgid "Popup Builder - Create highly converting, mobile friendly marketing popups."
+msgstr ""
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+#: popup-builder.php
+msgid "https://popup-builder.com"
+msgstr ""
+
+#. Description of the plugin
+#: popup-builder.php
+msgid "The most complete popup plugin. Html, image, iframe, shortcode, video and many other popup types. Manage popup dimensions, effects, themes and more."
+msgstr ""
+
+#. Author of the plugin
+#: popup-builder.php
+msgid "Looking Forward Software Incorporated."
+msgstr ""
+
+#. translators: license Section Url.
+#: com/classes/Actions.php:238
+#: com/classes/Filters.php:346
+msgid "Follow the link"
+msgstr "点击链接"
+
+#. translators: license Section Url.
+#: com/classes/Actions.php:238
+#: com/classes/Filters.php:346
+msgid "to finalize the activation."
+msgstr "以完成激活。"
+
+#: com/classes/Actions.php:253
+#: com/classes/Filters.php:347
+msgid "Thank you for choosing our plugin!"
+msgstr "感谢您选择我们的插件！"
+
+#: com/classes/Actions.php:256
+#: com/classes/Filters.php:350
+msgid "You have activated Popup Builder extension(s). Please, don't forget to activate the license key(s) as well."
+msgstr "您已激活 Popup Builder 扩展。请不要忘记同时激活许可证密钥。"
+
+#: com/classes/Actions.php:259
+msgid "Dismiss this notice."
+msgstr "忽略此通知。"
+
+#: com/classes/Actions.php:260
+msgid "Don't show again."
+msgstr "不再显示。"
+
+#: com/classes/Actions.php:320
+msgid "There was an error while trying to send your request. Please try again"
+msgstr "发送您的请求时出错，请重试"
+
+#: com/classes/Actions.php:321
+#: public/views/jsVariableView.php:34
+#: public/views/jsVariableView.php:52
+msgid "This field is required"
+msgstr "此字段为必填项"
+
+#: com/classes/Actions.php:322
+#: com/config/dataConfig.php:960
+msgid "Please enter a valid email address"
+msgstr "请输入有效的电子邮件地址"
+
+#: com/classes/Actions.php:492
+msgid "Popup Builder Importer Tool: Import popups from other website."
+msgstr "Popup Builder 导入工具：从其他网站导入弹窗。"
+
+#: com/classes/Actions.php:744
+msgid "Once Every Minute"
+msgstr "每分钟一次"
+
+#: com/classes/Actions.php:749
+msgid "Once Every Week"
+msgstr "每周一次"
+
+#: com/classes/Actions.php:781
+#: com/helpers/AdminHelper.php:1145
+#: com/helpers/AdminHelper.php:2351
+#: public/views/newsletter.php:109
+msgid "Unsubscribe"
+msgstr "退订"
+
+#. translators: subscription Form Title, success Total ,total Subscribers, failed Total .
+#: com/classes/Actions.php:832
+#, php-format
+msgid ""
+"Your mail list %1$s delivered successfully!\r\n"
+"\t\t\t\t\t\t%2$d of the %3$d emails succeeded, %4$d failed.\r\n"
+"\t\t\t\t\t\tFor more details, please download log file inside the plugin.\r\n"
+"\t\t\t\t\t\tThis email was generated via Popup Builder plugin."
+msgstr "您的邮件列表 %1$s 已成功送达！\n\t\t\t\t\t\t%3$d 封邮件中成功 %2$d 封，失败 %4$d 封。\n\t\t\t\t\t\t更多详情，请在插件内下载日志文件。\n\t\t\t\t\t\t此邮件由 Popup Builder 插件生成。"
+
+#. translators: %s: subscription list/form title.
+#: com/classes/Actions.php:839
+#, php-format
+msgid "%s list has been successfully delivered!"
+msgstr "%s 列表已成功送达！"
+
+#. translators: Link to edit Popup item, location.
+#: com/classes/Actions.php:1012
+#, php-format
+msgid "Popup Builder plugin has been successfully updated. Please %1$s to go to the new Dashboard of the plugin."
+msgstr "Popup Builder 插件已成功更新。请 %1$s 进入插件的新仪表板。"
+
+#: com/classes/Actions.php:1017
+msgid "popupbuilder"
+msgstr "popupbuilder"
+
+#: com/classes/Actions.php:1290
+msgid "reset"
+msgstr "重置"
+
+#: com/classes/Actions.php:1312
+msgid "Edit"
+msgstr "编辑"
+
+#: com/classes/Actions.php:1315
+#: com/classes/Filters.php:846
+msgid "Clone"
+msgstr "克隆"
+
+#: com/classes/Actions.php:1318
+#: public/views/closeSettingsView.php:178
+msgid "Remove"
+msgstr "移除"
+
+#: com/classes/Actions.php:1359
+#: com/classes/Actions.php:1368
+#: com/classes/Ajax.php:219
+#: com/classes/Ajax.php:243
+#: com/classes/Ajax.php:292
+#: com/classes/Ajax.php:336
+#: com/classes/Ajax.php:357
+#: com/classes/Ajax.php:378
+#: com/classes/Ajax.php:399
+#: com/classes/Ajax.php:420
+#: com/classes/Ajax.php:475
+#: com/classes/Ajax.php:511
+#: com/classes/Ajax.php:588
+#: com/classes/Ajax.php:619
+#: com/classes/Ajax.php:647
+#: com/classes/Ajax.php:771
+#: com/classes/Ajax.php:815
+#: com/classes/Ajax.php:966
+#: com/classes/Ajax.php:1041
+#: com/classes/Ajax.php:1107
+#: com/classes/Ajax.php:1142
+#: com/classes/Ajax.php:1177
+#: com/libs/SGPBImporter.php:372
+msgid "You do not have permission to clone the popup!"
+msgstr "您没有克隆弹窗的权限！"
+
+#: com/classes/Actions.php:1372
+msgid "No post to duplicate has been supplied!"
+msgstr "未提供要复制的文章！"
+
+#. translators: ID of original.
+#: com/classes/Actions.php:1416
+#, php-format
+msgid "Copy creation failed, could not find original: %d"
+msgstr "复制创建失败，找不到原始项：%d"
+
+#: com/classes/Actions.php:1431
+msgid "(no title) (clone)"
+msgstr "（无标题）（克隆）"
+
+#: com/classes/Actions.php:1434
+msgid "(clone)"
+msgstr "（克隆）"
+
+#: com/classes/Actions.php:1605
+msgid "Popup updated."
+msgstr "弹窗已更新。"
+
+#: com/classes/Actions.php:1609
+msgid "Popup published."
+msgstr "弹窗已发布。"
+
+#: com/classes/Ajax.php:110
+#: com/classes/Ajax.php:137
+#: com/classes/Ajax.php:164
+msgid "You do not have permission to do this action!"
+msgstr "您没有执行此操作的权限！"
+
+#. translators: %d is the number of subscribers deleted.
+#: com/classes/Ajax.php:489
+#, php-format
+msgid "You have deleted %d subscribers successfully!"
+msgstr "您已成功删除 %d 位订阅者！"
+
+#. translators: %s is the title of Popup.
+#: com/classes/Ajax.php:562
+#, php-format
+msgid "You have imported new subscriber to the %s successfully!"
+msgstr "您已成功将新订阅者导入到 %s！"
+
+#. translators: %s is the title of Popup.
+#: com/classes/Ajax.php:565
+#, php-format
+msgid "You have imported new subscriber to the %s popup(s) successfully!"
+msgstr "您已成功将新订阅者导入到 %s 弹窗！"
+
+#. translators: %d the number of imported subscribers, %s is the title of Popup.
+#: com/classes/Ajax.php:725
+#, php-format
+msgid "You have imported %1$d subscribers to the `%2$s` successfully!"
+msgstr "您已成功将 %1$d 位订阅者导入到 `%2$s`！"
+
+#. translators: %d the number of imported subscribers, %s is the title of Popup.
+#: com/classes/Ajax.php:731
+#, php-format
+msgid "You have imported %1$d subscribers to the `%2$s`  popup successfully!"
+msgstr "您已成功将 %1$d 位订阅者导入到 `%2$s` 弹窗！"
+
+#. translators: %d the number of imported subscribers.
+#: com/classes/Ajax.php:735
+#, php-format
+msgid " There are %d existing subscribers."
+msgstr " 已有 %d 位现有订阅者。"
+
+#: com/classes/Ajax.php:1021
+msgid "Congrats! You have already 1 subscriber!"
+msgstr "恭喜！您已经有 1 位订阅者！"
+
+#: com/classes/components/Menu.php:206
+msgid "Select a Popup"
+msgstr "选择一个弹窗"
+
+#: com/classes/components/Menu.php:216
+msgid "Open a popup once this item is clicked."
+msgstr "点击此项后打开弹窗。"
+
+#: com/classes/ConditionCreator.php:77
+msgid "OR"
+msgstr "或"
+
+#: com/classes/ConditionCreator.php:522
+msgid "No Data"
+msgstr "无数据"
+
+#: com/classes/ConditionCreator.php:551
+#: public/views/htmlCustomButtonElement.php:192
+#: public/views/jsVariableView.php:61
+#: public/views/mediaButton.php:51
+msgid "Cancel"
+msgstr "取消"
+
+#: com/classes/ConditionCreator.php:552
+#: public/views/importConfigView.php:96
+msgid "Save"
+msgstr "保存"
+
+#: com/classes/dataTable/Subscribers.php:37
+#: com/config/dataConfig.php:937
+#: public/views/options/subscription.php:95
+#: public/views/subscribers.php:115
+msgid "First name"
+msgstr "名字"
+
+#: com/classes/dataTable/Subscribers.php:38
+#: com/config/dataConfig.php:940
+#: public/views/options/subscription.php:121
+#: public/views/subscribers.php:118
+msgid "Last name"
+msgstr "姓氏"
+
+#: com/classes/dataTable/Subscribers.php:39
+#: com/helpers/AdminHelper.php:1184
+#: public/views/subscribers.php:111
+msgid "Email"
+msgstr "电子邮件"
+
+#: com/classes/dataTable/Subscribers.php:40
+#: com/classes/dataTable/Subscribers.php:165
+msgid "Date"
+msgstr "日期"
+
+#: com/classes/dataTable/Subscribers.php:41
+msgid "Popup"
+msgstr "弹窗"
+
+#: com/classes/dataTable/Subscribers.php:110
+msgid "All"
+msgstr "全部"
+
+#: com/classes/dataTable/Subscribers.php:153
+#: com/libs/ListTable.php:568
+msgid "All dates"
+msgstr "所有日期"
+
+#: com/classes/dataTable/Subscribers.php:190
+#: com/libs/Table.php:225
+msgid "Filter by popup"
+msgstr "按弹窗筛选"
+
+#: com/classes/dataTable/Subscribers.php:192
+#: com/libs/ListTable.php:566
+#: com/libs/Table.php:228
+msgid "Filter by date"
+msgstr "按日期筛选"
+
+#: com/classes/dataTable/Subscribers.php:194
+#: com/libs/Table.php:231
+msgid "Filter"
+msgstr "筛选"
+
+#: com/classes/dataTable/Subscribers.php:201
+msgid "Delete subscriber(s)"
+msgstr "删除订阅者"
+
+#: com/classes/extension/SgpbPopupExtension.php:76
+#: com/classes/Feedback.php:109
+#: com/classes/Installer.php:316
+#: com/helpers/AdminHelper.php:1404
+msgid "Popup Builder"
+msgstr "Popup Builder"
+
+#: com/classes/extension/SgpbPopupExtension.php:77
+msgid "This block will help you to add Popup Builder’s shortcode inside the page content"
+msgstr "此区块可帮助您在页面内容中添加 Popup Builder 的短代码"
+
+#: com/classes/extension/SgpbPopupExtension.php:79
+msgid "WPForms"
+msgstr "WPForms"
+
+#: com/classes/extension/SgpbPopupExtension.php:80
+msgid "Select and display one of your forms."
+msgstr "选择并显示您的某个表单。"
+
+#: com/classes/extension/SgpbPopupExtension.php:81
+msgid "form"
+msgstr "表单"
+
+#: com/classes/extension/SgpbPopupExtension.php:82
+msgid "Select Popup"
+msgstr "选择弹窗"
+
+#: com/classes/extension/SgpbPopupExtension.php:83
+msgid "Form Settings"
+msgstr "表单设置"
+
+#: com/classes/extension/SgpbPopupExtension.php:84
+msgid "Form"
+msgstr "表单"
+
+#: com/classes/extension/SgpbPopupExtension.php:85
+msgid "Show Title"
+msgstr "显示标题"
+
+#: com/classes/extension/SgpbPopupExtension.php:86
+msgid "Show Description"
+msgstr "显示描述"
+
+#: com/classes/extension/SgpbPopupExtension.php:90
+msgid "Click me"
+msgstr "点击我"
+
+#: com/classes/Feedback.php:69
+msgid "I no longer need the plugin"
+msgstr "我不再需要此插件"
+
+#: com/classes/Feedback.php:73
+msgid "I found a better plugin"
+msgstr "我找到了更好的插件"
+
+#: com/classes/Feedback.php:74
+msgid "Please share which plugin"
+msgstr "请告诉我们是哪个插件"
+
+#: com/classes/Feedback.php:77
+msgid "I couldn't get the plugin to work"
+msgstr "我无法让插件正常工作"
+
+#: com/classes/Feedback.php:79
+msgid "Having troubles? You can always count on us. Please try to contact us via <a href=\"https://popup-builder.com/\">Live chat</a> or send a message to <a href=\"mailto:support@popup-builder.com\">support@popup-builder.com</a>"
+msgstr "遇到问题了吗？您随时可以依靠我们。请通过 <a href=\"https://popup-builder.com/\">在线聊天</a> 联系我们，或发送消息至 <a href=\"mailto:support@popup-builder.com\">support@popup-builder.com</a>"
+
+#: com/classes/Feedback.php:82
+msgid "It's a temporary deactivation"
+msgstr "这只是暂时停用"
+
+#: com/classes/Feedback.php:86
+msgid "Other"
+msgstr "其他"
+
+#: com/classes/Feedback.php:87
+msgid "Please share the reason"
+msgstr "请告诉我们原因"
+
+#: com/classes/Feedback.php:98
+msgid "Quick Feedback"
+msgstr "快速反馈"
+
+#: com/classes/Feedback.php:109
+msgid "If you have a moment, please share why you are deactivating "
+msgstr "如果您有时间，请告诉我们您停用的原因 "
+
+#: com/classes/Feedback.php:111
+msgid "Please, select an option."
+msgstr "请选择一个选项。"
+
+#: com/classes/Feedback.php:135
+msgid "Submit & Deactivate"
+msgstr "提交并停用"
+
+#: com/classes/Feedback.php:138
+msgid "Skip & Deactivate"
+msgstr "跳过并停用"
+
+#: com/classes/Filters.php:188
+msgid "Rate us"
+msgstr "给我们评分"
+
+#: com/classes/Filters.php:189
+#: com/classes/RegisterPostType.php:350
+#: com/classes/RegisterPostType.php:351
+msgid "Support"
+msgstr "支持"
+
+#: com/classes/Filters.php:213
+#: com/classes/RegisterPostType.php:332
+#: com/classes/RegisterPostType.php:333
+msgid "Settings"
+msgstr "设置"
+
+#: com/classes/Filters.php:214
+msgid "Docs"
+msgstr "文档"
+
+#: com/classes/Filters.php:221
+msgid "Upgrade"
+msgstr "升级"
+
+#: com/classes/Filters.php:431
+msgid "UNLOCK OPTION"
+msgstr "解锁选项"
+
+#: com/classes/Filters.php:435
+msgid "Main Options"
+msgstr "主要选项"
+
+#: com/classes/Filters.php:436
+msgid "main options"
+msgstr "主要选项"
+
+#: com/classes/Filters.php:443
+msgid "Display Rules"
+msgstr "显示规则"
+
+#: com/classes/Filters.php:444
+msgid "Select where on the website to trigger the popup"
+msgstr "选择在网站的哪个位置触发弹窗"
+
+#: com/classes/Filters.php:451
+msgid "Events"
+msgstr "事件"
+
+#: com/classes/Filters.php:452
+msgid "Select the specific actions that will trigger the popup, default event is on load"
+msgstr "选择将触发弹窗的特定操作，默认事件为加载时"
+
+#: com/classes/Filters.php:459
+msgid "Conditions"
+msgstr "条件"
+
+#: com/classes/Filters.php:460
+msgid "Select advanced conditions for more professional targeting"
+msgstr "选择高级条件以实现更专业的定向"
+
+#: com/classes/Filters.php:467
+msgid "Behavior After Special Events"
+msgstr "特殊事件后的行为"
+
+#: com/classes/Filters.php:468
+msgid "Select special events that will trigger the popup"
+msgstr "选择将触发弹窗的特殊事件"
+
+#: com/classes/Filters.php:475
+msgid "Design"
+msgstr "设计"
+
+#: com/classes/Filters.php:476
+msgid "Customize design, background and overlay of the popup"
+msgstr "自定义弹窗的设计、背景和遮罩层"
+
+#: com/classes/Filters.php:483
+msgid "Closing"
+msgstr "关闭"
+
+#: com/classes/Filters.php:484
+msgid "Select the desired popup closing method, customize close button"
+msgstr "选择所需的弹窗关闭方式，自定义关闭按钮"
+
+#: com/classes/Filters.php:491
+msgid "Dimensions"
+msgstr "尺寸"
+
+#: com/classes/Filters.php:492
+msgid "Make your popup mobile friendly and responsive for all devices"
+msgstr "让您的弹窗适配移动设备并在所有设备上响应式显示"
+
+#: com/classes/Filters.php:499
+#: com/classes/RegisterPostType.php:402
+msgid "Advanced"
+msgstr "高级"
+
+#: com/classes/Filters.php:500
+msgid "Use advanced features for popup animations, opening and closing actions"
+msgstr "使用高级功能实现弹窗动画、打开和关闭操作"
+
+#: com/classes/Filters.php:507
+#: com/config/dataConfig.php:678
+msgid "Scheduling"
+msgstr "排期"
+
+#: com/classes/Filters.php:508
+msgid "Schedule your popup for a particular day or for a selected timeframe"
+msgstr "为您的弹窗安排特定日期或选定的时间段"
+
+#: com/classes/Filters.php:515
+msgid "Floating Button"
+msgstr "悬浮按钮"
+
+#: com/classes/Filters.php:516
+msgid "Set the popup to appear on a scrollable call to action button"
+msgstr "设置弹窗在可滚动的行动号召按钮上显示"
+
+#: com/classes/Filters.php:524
+msgid "Statistics"
+msgstr "统计"
+
+#: com/classes/Filters.php:525
+msgid "Enable or disable the counts of the popup"
+msgstr "启用或禁用弹窗的计数"
+
+#: com/classes/Filters.php:533
+msgid "Custom JS or CSS"
+msgstr "自定义 JS 或 CSS"
+
+#: com/classes/Filters.php:534
+msgid "Add custom JS and/or CSS code for extra control"
+msgstr "添加自定义 JS 和/或 CSS 代码以实现额外控制"
+
+#: com/classes/Filters.php:812
+#: public/views/optionsView.php:196
+#: public/views/optionsView.php:227
+msgid "Type"
+msgstr "类型"
+
+#: com/classes/Filters.php:813
+#: public/views/popupOpeningCounter.php:23
+msgid "Views"
+msgstr "浏览量"
+
+#: com/classes/Filters.php:814
+msgid "Status"
+msgstr "状态"
+
+#: com/classes/Filters.php:821
+msgid "Shortcode"
+msgstr "短代码"
+
+#: com/classes/Filters.php:822
+msgid "Class"
+msgstr "类名"
+
+#: com/classes/Filters.php:823
+msgid "Actions"
+msgstr "操作"
+
+#: com/classes/Filters.php:845
+msgid "Clone this item"
+msgstr "克隆此项"
+
+#: com/classes/Installer.php:318
+msgid "Popup Builder License"
+msgstr "Popup Builder 许可证"
+
+#: com/classes/MediaButton.php:68
+msgid "Insert custom JS variable"
+msgstr "插入自定义 JS 变量"
+
+#: com/classes/MediaButton.php:119
+msgid "Insert popup"
+msgstr "插入弹窗"
+
+#: com/classes/NotificationCenter.php:101
+msgid "Twice Daily"
+msgstr "每日两次"
+
+#: com/classes/popups/FblikePopup.php:16
+msgid "Facebook Settings"
+msgstr "Facebook 设置"
+
+#: com/classes/popups/FblikePopup.php:17
+msgid "Select your Facebook page URL for liking and sharing it"
+msgstr "选择您的 Facebook 页面网址以进行点赞和分享"
+
+#: com/classes/popups/ImagePopup.php:35
+msgid "Image Settings"
+msgstr "图片设置"
+
+#: com/classes/popups/ImagePopup.php:36
+msgid "Upload your feature image for the popup"
+msgstr "上传弹窗的特色图片"
+
+#: com/classes/popups/SGPopup.php:1558
+#: com/classes/RegisterPostType.php:212
+msgid "Popup class does not exist"
+msgstr "弹窗类不存在"
+
+#: com/classes/popups/SubscriptionPopup.php:495
+msgid "Subscription Settings"
+msgstr "订阅设置"
+
+#: com/classes/popups/SubscriptionPopup.php:496
+msgid "Create subscription form, customize the fields and styles"
+msgstr "创建订阅表单，自定义字段和样式"
+
+#: com/classes/popups/SubscriptionPopup.php:668
+msgid "no title"
+msgstr "无标题"
+
+#: com/classes/RegisterPostType.php:65
+msgid "Description."
+msgstr "描述。"
+
+#: com/classes/RegisterPostType.php:94
+msgctxt "post type general name"
+msgid "Popup Builder"
+msgstr "Popup Builder"
+
+#: com/classes/RegisterPostType.php:95
+msgctxt "post type singular name"
+msgid "Popup"
+msgstr "弹窗"
+
+#: com/classes/RegisterPostType.php:96
+msgctxt "admin menu"
+msgid "Popup Builder"
+msgstr "Popup Builder"
+
+#: com/classes/RegisterPostType.php:97
+msgctxt "add new on admin bar"
+msgid "Popup"
+msgstr "弹窗"
+
+#: com/classes/RegisterPostType.php:98
+msgctxt "Popup"
+msgid "Add New"
+msgstr "添加新项"
+
+#: com/classes/RegisterPostType.php:99
+#: public/views/popupTypes.php:15
+msgid "Add New Popup"
+msgstr "添加新弹窗"
+
+#: com/classes/RegisterPostType.php:100
+msgid "New Popup"
+msgstr "新弹窗"
+
+#: com/classes/RegisterPostType.php:101
+msgid "Edit Popup"
+msgstr "编辑弹窗"
+
+#: com/classes/RegisterPostType.php:102
+msgid "View Popup"
+msgstr "查看弹窗"
+
+#: com/classes/RegisterPostType.php:103
+msgid "All Popups"
+msgstr "所有弹窗"
+
+#: com/classes/RegisterPostType.php:104
+msgid "Search"
+msgstr "搜索"
+
+#: com/classes/RegisterPostType.php:105
+msgid "Parent Popups:"
+msgstr "父级弹窗："
+
+#: com/classes/RegisterPostType.php:106
+msgid "No popups found."
+msgstr "未找到弹窗。"
+
+#: com/classes/RegisterPostType.php:107
+msgid "No popups found in Trash."
+msgstr "回收站中未找到弹窗。"
+
+#: com/classes/RegisterPostType.php:248
+msgid "News"
+msgstr "新闻"
+
+#: com/classes/RegisterPostType.php:341
+#: com/classes/RegisterPostType.php:342
+msgid "Extend"
+msgstr "扩展"
+
+#: com/classes/RegisterPostType.php:362
+#: com/classes/RegisterPostType.php:363
+#: public/views/mainActionButtons.php:13
+msgid "Add New"
+msgstr "添加新项"
+
+#: com/classes/RegisterPostType.php:371
+#: com/classes/RegisterPostType.php:372
+msgid "All Subscribers"
+msgstr "所有订阅者"
+
+#: com/classes/RegisterPostType.php:380
+#: com/classes/RegisterPostType.php:381
+#: public/views/newsletter.php:29
+msgid "Newsletter"
+msgstr "邮件通讯"
+
+#: com/classes/ScriptsLoader.php:148
+msgid "Play sound"
+msgstr "播放声音"
+
+#. translators: 1: SG POPUP MINIMUM PHP VERSION 2: PHP VERSION
+#: com/classes/SGPBRequirementsChecker.php:13
+#, php-format
+msgid "Popup Builder plugin requires PHP version >= %1$s version required. You server using PHP version = %2$s"
+msgstr "Popup Builder 插件要求 PHP 版本 >= %1$s。您的服务器使用的 PHP 版本 = %2$s"
+
+#: com/classes/Updates.php:44
+msgid "License"
+msgstr "许可证"
+
+#: com/classes/Updates.php:97
+#: com/classes/Updates.php:131
+#: com/classes/Updates.php:168
+msgid "You do not have permission to access this page!"
+msgstr "您没有访问此页面的权限！"
+
+#: com/classes/Updates.php:154
+#: com/classes/Updates.php:175
+msgid "An error occurred, please try again."
+msgstr "发生错误，请重试。"
+
+#: com/config/config.php:169
+#: public/views/popupDesignView.php:195
+msgid "Image"
+msgstr "图片"
+
+#: com/config/config.php:170
+msgid "HTML"
+msgstr "HTML"
+
+#: com/config/config.php:171
+msgid "Facebook"
+msgstr "Facebook"
+
+#: com/config/config.php:172
+msgid "Subscription"
+msgstr "订阅"
+
+#: com/config/dataConfig.php:38
+msgid "Select rule"
+msgstr "选择规则"
+
+#: com/config/dataConfig.php:39
+msgid "Everywhere"
+msgstr "所有位置"
+
+#: com/config/dataConfig.php:41
+msgid "All posts"
+msgstr "所有文章"
+
+#: com/config/dataConfig.php:42
+msgid "Selected posts"
+msgstr "选定的文章"
+
+#: com/config/dataConfig.php:43
+msgid "Post type"
+msgstr "文章类型"
+
+#: com/config/dataConfig.php:44
+msgid "Post category"
+msgstr "文章分类"
+
+#: com/config/dataConfig.php:47
+msgid "All pages"
+msgstr "所有页面"
+
+#: com/config/dataConfig.php:48
+msgid "Selected pages"
+msgstr "选定的页面"
+
+#: com/config/dataConfig.php:49
+msgid "Page type"
+msgstr "页面类型"
+
+#: com/config/dataConfig.php:52
+msgid "Post/Page template"
+msgstr "文章/页面模板"
+
+#: com/config/dataConfig.php:55
+msgid "All tags"
+msgstr "所有标签"
+
+#: com/config/dataConfig.php:56
+msgid "Selected tags"
+msgstr "选定的标签"
+
+#: com/config/dataConfig.php:61
+#: com/config/dataConfig.php:430
+msgid "Add"
+msgstr "添加"
+
+#: com/config/dataConfig.php:62
+#: com/config/dataConfig.php:431
+msgid "Delete"
+msgstr "删除"
+
+#: com/config/dataConfig.php:66
+#: com/config/dataConfig.php:435
+msgid "Is"
+msgstr "是"
+
+#: com/config/dataConfig.php:67
+#: com/config/dataConfig.php:436
+msgid "Is not"
+msgstr "不是"
+
+#: com/config/dataConfig.php:97
+msgid "Display rule"
+msgstr "显示规则"
+
+#: com/config/dataConfig.php:98
+msgid "Specify where the popup should be shown on your site."
+msgstr "指定弹窗应在您网站的哪个位置显示。"
+
+#: com/config/dataConfig.php:109
+msgid "Is or is not"
+msgstr "是或不是"
+
+#: com/config/dataConfig.php:110
+msgid "Allow or Disallow popup showing for the selected rule."
+msgstr "允许或禁止为选定规则显示弹窗。"
+
+#: com/config/dataConfig.php:122
+msgid "Select Your Posts"
+msgstr "选择您的文章"
+
+#: com/config/dataConfig.php:123
+msgid "Select your specific posts where the popup should be shown."
+msgstr "选择应显示弹窗的特定文章。"
+
+#: com/config/dataConfig.php:135
+msgid "Select Your Pages"
+msgstr "选择您的页面"
+
+#: com/config/dataConfig.php:136
+msgid "Select the pages on your site where the specific popup will be shown."
+msgstr "选择您网站上要显示该特定弹窗的页面。"
+
+#: com/config/dataConfig.php:149
+msgid "Select Your post types"
+msgstr "选择您的文章类型"
+
+#: com/config/dataConfig.php:150
+msgid "Specify the post types on your site to show the popup."
+msgstr "指定您网站上要显示弹窗的文章类型。"
+
+#: com/config/dataConfig.php:164
+msgid "Select post categories"
+msgstr "选择文章分类"
+
+#: com/config/dataConfig.php:165
+msgid "Select the post categories on which the popup should be shown."
+msgstr "选择应显示弹窗的文章分类。"
+
+#: com/config/dataConfig.php:178
+msgid "Select specific page types"
+msgstr "选择特定页面类型"
+
+#: com/config/dataConfig.php:179
+msgid "Specify the page types where the popup will be shown."
+msgstr "指定要显示弹窗的页面类型。"
+
+#: com/config/dataConfig.php:192
+msgid "Select Post/page template"
+msgstr "选择文章/页面模板"
+
+#: com/config/dataConfig.php:193
+msgid "Select the page or post templates on which the popup will be shown."
+msgstr "选择要显示弹窗的页面或文章模板。"
+
+#: com/config/dataConfig.php:207
+msgid "Select tags"
+msgstr "选择标签"
+
+#: com/config/dataConfig.php:208
+msgid "Select the tags on your site for popup showing"
+msgstr "选择您网站上用于显示弹窗的标签"
+
+#: com/config/dataConfig.php:247
+#: com/helpers/AdminHelper.php:1554
+#: com/helpers/ConfigDataHelper.php:798
+#: com/helpers/ConfigDataHelper.php:2100
+msgid "On load"
+msgstr "加载时"
+
+#: com/config/dataConfig.php:248
+msgid "Set by CSS class"
+msgstr "通过 CSS 类设置"
+
+#: com/config/dataConfig.php:249
+msgid "On Click"
+msgstr "点击时"
+
+#: com/config/dataConfig.php:250
+msgid "On Hover"
+msgstr "悬停时"
+
+#: com/config/dataConfig.php:251
+#: com/config/dataConfig.php:606
+msgid "Inactivity"
+msgstr "无操作时"
+
+#: com/config/dataConfig.php:252
+msgid "On Scroll"
+msgstr "滚动时"
+
+#: com/config/dataConfig.php:257
+msgid "Repetitive popup"
+msgstr "重复弹窗"
+
+#: com/config/dataConfig.php:295
+#: com/config/dataConfig.php:785
+msgid "Event"
+msgstr "事件"
+
+#: com/config/dataConfig.php:296
+msgid "Select when the popup should appear on the page."
+msgstr "选择弹窗应何时出现在页面上。"
+
+#: com/config/dataConfig.php:306
+msgid "Options"
+msgstr "选项"
+
+#: com/config/dataConfig.php:307
+msgid "Select the condition for the current event."
+msgstr "选择当前事件的条件。"
+
+#: com/config/dataConfig.php:311
+msgid "default custom delay will be used"
+msgstr "将使用默认的自定义延迟"
+
+#: com/config/dataConfig.php:313
+#: com/config/dataConfig.php:832
+msgid "Delay"
+msgstr "延迟"
+
+#: com/config/dataConfig.php:314
+msgid "Specify how long the popup appearance should be delayed after loading the page (in sec)."
+msgstr "指定加载页面后弹窗出现应延迟多长时间（以秒为单位）。"
+
+#: com/config/dataConfig.php:324
+msgid "Click Event"
+msgstr "点击事件"
+
+#: com/config/dataConfig.php:325
+#: com/config/dataConfig.php:336
+msgid "Specify the part of the page, in percentages, where the popup should appear after scrolling."
+msgstr "以百分比指定弹窗在滚动后应出现在页面的哪个部分。"
+
+#: com/config/dataConfig.php:335
+msgid "Hover Event"
+msgstr "悬停事件"
+
+#: com/config/dataConfig.php:342
+#: com/config/dataConfig.php:349
+msgid "Custom Class"
+msgstr "自定义类"
+
+#: com/config/dataConfig.php:343
+#: com/config/dataConfig.php:350
+msgid "Add the CSS class name of your HTML element which will trigger this popup after click."
+msgstr "添加 HTML 元素的 CSS 类名，点击后将触发此弹窗。"
+
+#: com/config/dataConfig.php:359
+#: com/config/dataConfig.php:372
+msgid "Please save popup to generate class name."
+msgstr "请保存弹窗以生成类名。"
+
+#: com/config/dataConfig.php:362
+#: com/config/dataConfig.php:375
+msgid "Default Class"
+msgstr "默认类"
+
+#: com/config/dataConfig.php:363
+#: com/config/dataConfig.php:376
+msgid "Add the following CSS class into your HTML element."
+msgstr "将以下 CSS 类添加到您的 HTML 元素中。"
+
+#: com/config/dataConfig.php:386
+msgid "Repetitive open popup"
+msgstr "重复打开弹窗"
+
+#: com/config/dataConfig.php:387
+msgid "If this option is enabled the same popup will open up after every X seconds you have defined (after closing it)."
+msgstr "如果启用此选项，每隔您设定的 X 秒后（关闭弹窗后）相同的弹窗将再次打开。"
+
+#: com/config/dataConfig.php:397
+msgid "period"
+msgstr "周期"
+
+#: com/config/dataConfig.php:398
+msgid "This is info"
+msgstr "这是信息"
+
+#: com/config/dataConfig.php:426
+msgid "Select Conditions"
+msgstr "选择条件"
+
+#: com/config/dataConfig.php:457
+msgid "Condition"
+msgstr "条件"
+
+#: com/config/dataConfig.php:458
+msgid "Target visitors to show the popup by different conditions."
+msgstr "通过不同条件定向访客以显示弹窗。"
+
+#: com/config/dataConfig.php:468
+msgid "Rule"
+msgstr "规则"
+
+#: com/config/dataConfig.php:469
+msgid "Allow or Disallow popup showing for the selected conditions."
+msgstr "允许或禁止为选定条件显示弹窗。"
+
+#: com/config/dataConfig.php:502
+#: com/config/dataConfig.php:1002
+msgid "AdBlock"
+msgstr "AdBlock"
+
+#: com/config/dataConfig.php:510
+msgid "Advanced Closing"
+msgstr "高级关闭"
+
+#: com/config/dataConfig.php:518
+#: public/views/conditionsView.php:44
+msgid "Advanced Targeting"
+msgstr "高级定向"
+
+#: com/config/dataConfig.php:526
+msgid "Age Restriction"
+msgstr "年龄限制"
+
+#: com/config/dataConfig.php:534
+#: com/config/dataConfig.php:1006
+msgid "Analytics"
+msgstr "分析"
+
+#: com/config/dataConfig.php:542
+#: com/config/dataConfig.php:1018
+msgid "AWeber"
+msgstr "AWeber"
+
+#: com/config/dataConfig.php:550
+msgid "Contact Form"
+msgstr "联系表单"
+
+#: com/config/dataConfig.php:558
+msgid "Countdown"
+msgstr "倒计时"
+
+#: com/config/dataConfig.php:566
+msgid "EDD"
+msgstr "EDD"
+
+#: com/config/dataConfig.php:574
+msgid "Exit Intent"
+msgstr "退出意图"
+
+#: com/config/dataConfig.php:582
+msgid "Gamification"
+msgstr "游戏化"
+
+#: com/config/dataConfig.php:590
+#: public/views/conditionsView.php:17
+msgid "Geo Targeting"
+msgstr "地理定向"
+
+#: com/config/dataConfig.php:598
+msgid "Iframe"
+msgstr "Iframe"
+
+#: com/config/dataConfig.php:614
+msgid "Log In"
+msgstr "登录"
+
+#: com/config/dataConfig.php:622
+#: com/config/dataConfig.php:1014
+msgid "Mailchimp"
+msgstr "Mailchimp"
+
+#: com/config/dataConfig.php:630
+msgid "PDF"
+msgstr "PDF"
+
+#: com/config/dataConfig.php:638
+msgid "Push Notification"
+msgstr "推送通知"
+
+#: com/config/dataConfig.php:646
+msgid "Random"
+msgstr "随机"
+
+#: com/config/dataConfig.php:654
+msgid "Recent Sales"
+msgstr "近期销售"
+
+#: com/config/dataConfig.php:662
+msgid "Registration"
+msgstr "注册"
+
+#: com/config/dataConfig.php:670
+msgid "Restriction"
+msgstr "限制"
+
+#: com/config/dataConfig.php:686
+msgid "Scroll"
+msgstr "滚动"
+
+#: com/config/dataConfig.php:694
+msgid "Social"
+msgstr "社交"
+
+#: com/config/dataConfig.php:702
+msgid "Subscription Plus"
+msgstr "Subscription Plus"
+
+#: com/config/dataConfig.php:710
+msgid "Video"
+msgstr "视频"
+
+#: com/config/dataConfig.php:718
+msgid "WooCommerce"
+msgstr "WooCommerce"
+
+#: com/config/dataConfig.php:750
+#: public/views/mediaButton.php:39
+msgid "Select event"
+msgstr "选择事件"
+
+#: com/config/dataConfig.php:751
+msgid "Special events"
+msgstr "特殊事件"
+
+#: com/config/dataConfig.php:752
+msgid "Contact Form 7 submission"
+msgstr "Contact Form 7 提交"
+
+#: com/config/dataConfig.php:756
+msgid "Select behavior"
+msgstr "选择行为"
+
+#: com/config/dataConfig.php:757
+msgid "Behaviors"
+msgstr "行为"
+
+#: com/config/dataConfig.php:758
+#: com/helpers/ConfigDataHelper.php:455
+#: com/helpers/ConfigDataHelper.php:839
+#: com/helpers/ConfigDataHelper.php:1757
+#: com/helpers/ConfigDataHelper.php:2141
+msgid "Redirect to URL"
+msgstr "重定向到网址"
+
+#: com/config/dataConfig.php:759
+msgid "Open another popup"
+msgstr "打开另一个弹窗"
+
+#: com/config/dataConfig.php:760
+msgid "Close current popup"
+msgstr "关闭当前弹窗"
+
+#: com/config/dataConfig.php:786
+msgid "Select the special event you want to catch."
+msgstr "选择您要捕获的特殊事件。"
+
+#: com/config/dataConfig.php:796
+msgid "Behavior"
+msgstr "行为"
+
+#: com/config/dataConfig.php:797
+msgid "Select what should happen after the special event."
+msgstr "选择特殊事件后应发生的操作。"
+
+#: com/config/dataConfig.php:807
+#: public/views/options/facebook.php:13
+#: public/views/optionsView.php:49
+msgid "URL"
+msgstr "网址"
+
+#: com/config/dataConfig.php:808
+msgid "Enter the URL of the page should be redirected to."
+msgstr "输入应重定向到的页面网址。"
+
+#: com/config/dataConfig.php:820
+#: public/views/htmlCustomButtonElement.php:177
+#: public/views/mediaButton.php:30
+#: public/views/options/subscription.php:309
+msgid "Select popup"
+msgstr "选择弹窗"
+
+#: com/config/dataConfig.php:821
+msgid "Select the popup that should be opened."
+msgstr "选择应打开的弹窗。"
+
+#: com/config/dataConfig.php:833
+msgid "After how many seconds the popup should close."
+msgstr "弹窗应在多少秒后关闭。"
+
+#: com/config/dataConfig.php:881
+msgid "Copied to Clipboard!"
+msgstr "已复制到剪贴板！"
+
+#: com/config/dataConfig.php:935
+msgid "Email *"
+msgstr "电子邮件 *"
+
+#: com/config/dataConfig.php:942
+msgid "This field is required."
+msgstr "此字段为必填项。"
+
+#: com/config/dataConfig.php:955
+msgid "Subscribe"
+msgstr "订阅"
+
+#: com/config/dataConfig.php:956
+msgid "Please wait..."
+msgstr "请稍候……"
+
+#: com/config/dataConfig.php:962
+msgid "You have successfully subscribed to the newsletter"
+msgstr "您已成功订阅邮件通讯"
+
+#: com/config/dataConfig.php:967
+msgid "Accept Terms"
+msgstr "接受条款"
+
+#. translators: Website Blog info
+#: com/config/dataConfig.php:969
+#, php-format
+msgid "%s will use the information you provide on this form to be in touch with you and to provide updates and marketing."
+msgstr "%s 将使用您在此表单中提供的信息与您联系，并提供更新和营销信息。"
+
+#: com/config/dataConfig.php:992
+msgid "Click it!"
+msgstr "点击它！"
+
+#: com/config/dataConfig.php:1010
+msgid "Exit intent"
+msgstr "退出意图"
+
+#: com/helpers/AdminHelper.php:714
+msgid "Popup Builder plugin has been successfully updated"
+msgstr "Popup Builder 插件已成功更新"
+
+#: com/helpers/AdminHelper.php:715
+msgid "The following extensions need to be updated manually"
+msgstr "以下扩展需要手动更新"
+
+#: com/helpers/AdminHelper.php:723
+#: com/helpers/AdminHelper.php:806
+msgid "Don't show again"
+msgstr "不再显示"
+
+#: com/helpers/AdminHelper.php:799
+msgid "Popup Builder plugin has been updated to the new version 3."
+msgstr "Popup Builder 插件已更新到新版本 3。"
+
+#: com/helpers/AdminHelper.php:800
+msgid "A lot of changes and improvements have been made."
+msgstr "已进行大量更改和改进。"
+
+#. translators: Ticket URL
+#: com/helpers/AdminHelper.php:803
+#, php-format
+msgid "In case of any issues, please contact us <a href=\"%s\" target=\"_blank\">here</a>."
+msgstr "如有任何问题，请在 <a href=\"%s\" target=\"_blank\">此处</a> 联系我们。"
+
+#: com/helpers/AdminHelper.php:995
+msgid "You have successfully unsubscribed."
+msgstr "您已成功退订。"
+
+#: com/helpers/AdminHelper.php:997
+msgid " to go to the home page."
+msgstr " 返回首页。"
+
+#: com/helpers/AdminHelper.php:1011
+msgid "Unsubscription"
+msgstr "退订"
+
+#. translators: user Email, subscription Form Title
+#: com/helpers/AdminHelper.php:1015
+#, php-format
+msgid "User with %1$s email has unsubscribed from %2$s mail list"
+msgstr "邮箱为 %1$s 的用户已从 %2$s 邮件列表退订"
+
+#: com/helpers/AdminHelper.php:1090
+msgid "This unsubscribe link is no longer valid. Please contact the site administrator to unsubscribe from the mailing list."
+msgstr "此退订链接已失效。请联系网站管理员以从邮件列表中退订。"
+
+#. translators: %s: Blog name
+#: com/helpers/AdminHelper.php:1139
+#, php-format
+msgid "[%s] New Unsubscribe Link"
+msgstr "[%s] 新的退订链接"
+
+#. translators: %s: Subcriber first name
+#: com/helpers/AdminHelper.php:1143
+#, php-format
+msgid "Hello %s,"
+msgstr "您好 %s，"
+
+#: com/helpers/AdminHelper.php:1144
+msgid "You requested a new unsubscribe link. Click the link below to unsubscribe from our mailing list:"
+msgstr "您请求了一个新的退订链接。点击下面的链接以从我们的邮件列表中退订："
+
+#: com/helpers/AdminHelper.php:1146
+msgid "Or copy and paste this link into your browser:"
+msgstr "或将此链接复制并粘贴到您的浏览器中："
+
+#: com/helpers/AdminHelper.php:1148
+msgid "If you did not request this link, please ignore this email."
+msgstr "如果您并未请求此链接，请忽略此邮件。"
+
+#: com/helpers/AdminHelper.php:1178
+msgid "Need some help?"
+msgstr "需要帮助吗？"
+
+#: com/helpers/AdminHelper.php:1179
+msgid "Let us know what you think."
+msgstr "告诉我们您的想法。"
+
+#: com/helpers/AdminHelper.php:1180
+msgid "Rate Us"
+msgstr "给我们评分"
+
+#: com/helpers/AdminHelper.php:1181
+msgid "Support Portal"
+msgstr "支持门户"
+
+#: com/helpers/AdminHelper.php:1182
+msgid "Support Forum"
+msgstr "支持论坛"
+
+#: com/helpers/AdminHelper.php:1183
+msgid "LIVE chat"
+msgstr "在线聊天"
+
+#: com/helpers/AdminHelper.php:1185
+msgid "Bored of this?"
+msgstr "厌烦这个了吗？"
+
+#: com/helpers/AdminHelper.php:1185
+msgid " Press here "
+msgstr " 点击此处 "
+
+#: com/helpers/AdminHelper.php:1185
+msgid "and we will not show it again!"
+msgstr "我们将不再显示它！"
+
+#: com/helpers/AdminHelper.php:1195
+msgid "This is great!"
+msgstr "太棒了！"
+
+#: com/helpers/AdminHelper.php:1196
+msgid "We have noticed that you are using Popup Builder plugin on your site for"
+msgstr "我们注意到您在网站上使用 Popup Builder 插件已经"
+
+#: com/helpers/AdminHelper.php:1198
+msgid "days, we are thankful for that."
+msgstr "天了，我们对此深表感谢。"
+
+#: com/helpers/AdminHelper.php:1274
+msgid "This is really great for your website score."
+msgstr "这对您的网站评分非常有利。"
+
+#: com/helpers/AdminHelper.php:1276
+msgid "Have your input in the development of our plugin, and we’ll provide better conversions for your site!"
+msgstr "参与我们插件的开发，我们将为您的网站带来更好的转化效果！"
+
+#: com/helpers/AdminHelper.php:1278
+msgid "Leave your 5-star positive review and help us go further to perfection!"
+msgstr "留下您的 5 星好评，帮助我们走向更完美！"
+
+#: com/helpers/AdminHelper.php:1282
+msgid "I already did"
+msgstr "我已经评过了"
+
+#: com/helpers/AdminHelper.php:1283
+msgid "You worth it!"
+msgstr "您值得拥有！"
+
+#: com/helpers/AdminHelper.php:1284
+msgid "Maybe later"
+msgstr "稍后再说"
+
+#: com/helpers/AdminHelper.php:1403
+msgid "Awesome news!"
+msgstr "好消息！"
+
+#: com/helpers/AdminHelper.php:1405
+msgid "plugin helped you to share your message via"
+msgstr "插件帮助您通过"
+
+#: com/helpers/AdminHelper.php:1407
+msgid "popup with your visitors for"
+msgstr "弹窗向访客传达您的信息，已经"
+
+#: com/helpers/AdminHelper.php:1409
+msgid "times!"
+msgstr "次！"
+
+#: com/helpers/AdminHelper.php:1552
+msgid "Select Event"
+msgstr "选择事件"
+
+#: com/helpers/AdminHelper.php:1553
+#: com/helpers/ConfigDataHelper.php:661
+#: com/helpers/ConfigDataHelper.php:797
+#: com/helpers/ConfigDataHelper.php:1963
+#: com/helpers/ConfigDataHelper.php:2099
+msgid "Inherit"
+msgstr "继承"
+
+#: com/helpers/AdminHelper.php:1555
+#: com/helpers/ConfigDataHelper.php:799
+#: com/helpers/ConfigDataHelper.php:2101
+msgid "On click"
+msgstr "点击时"
+
+#: com/helpers/AdminHelper.php:1556
+#: com/helpers/ConfigDataHelper.php:800
+#: com/helpers/ConfigDataHelper.php:2102
+msgid "On hover"
+msgstr "悬停时"
+
+#: com/helpers/AdminHelper.php:1971
+msgid "No license"
+msgstr "无许可证"
+
+#: com/helpers/ConfigDataHelper.php:160
+#: com/helpers/ConfigDataHelper.php:163
+#: com/helpers/ConfigDataHelper.php:1463
+#: com/helpers/ConfigDataHelper.php:1466
+msgid "Select "
+msgstr "选择 "
+
+#: com/helpers/ConfigDataHelper.php:232
+#: com/helpers/ConfigDataHelper.php:1535
+msgid "Home Page"
+msgstr "首页"
+
+#: com/helpers/ConfigDataHelper.php:233
+#: com/helpers/ConfigDataHelper.php:1536
+msgid "Posts Page"
+msgstr "文章页"
+
+#: com/helpers/ConfigDataHelper.php:234
+#: com/helpers/ConfigDataHelper.php:1537
+msgid "Search Pages"
+msgstr "搜索页"
+
+#: com/helpers/ConfigDataHelper.php:235
+#: com/helpers/ConfigDataHelper.php:1538
+msgid "404 Pages"
+msgstr "404 页面"
+
+#: com/helpers/ConfigDataHelper.php:237
+#: com/helpers/ConfigDataHelper.php:1540
+msgid "Shop Page"
+msgstr "商店页"
+
+#: com/helpers/ConfigDataHelper.php:240
+#: com/helpers/ConfigDataHelper.php:1543
+msgid "Archive Page"
+msgstr "归档页"
+
+#: com/helpers/ConfigDataHelper.php:249
+#: com/helpers/ConfigDataHelper.php:1552
+msgid "Default Template"
+msgstr "默认模板"
+
+#: com/helpers/ConfigDataHelper.php:345
+#: com/helpers/ConfigDataHelper.php:1647
+msgid "Close Popup"
+msgstr "关闭弹窗"
+
+#: com/helpers/ConfigDataHelper.php:356
+#: com/helpers/ConfigDataHelper.php:1658
+msgid "Redirect"
+msgstr "重定向"
+
+#: com/helpers/ConfigDataHelper.php:367
+#: com/helpers/ConfigDataHelper.php:443
+#: com/helpers/ConfigDataHelper.php:1669
+#: com/helpers/ConfigDataHelper.php:1745
+msgid "Copy to clipboard"
+msgstr "复制到剪贴板"
+
+#: com/helpers/ConfigDataHelper.php:385
+#: com/helpers/ConfigDataHelper.php:412
+#: com/helpers/ConfigDataHelper.php:1687
+#: com/helpers/ConfigDataHelper.php:1714
+msgid "If you need the popup id number in the custom code, you may use the following variable to get the ID:"
+msgstr "如果您需要在自定义代码中使用弹窗 ID 编号，可以使用以下变量来获取 ID："
+
+#: com/helpers/ConfigDataHelper.php:467
+#: com/helpers/ConfigDataHelper.php:851
+#: com/helpers/ConfigDataHelper.php:1769
+#: com/helpers/ConfigDataHelper.php:2153
+msgid "Open popup"
+msgstr "打开弹窗"
+
+#: com/helpers/ConfigDataHelper.php:478
+#: com/helpers/ConfigDataHelper.php:862
+#: com/helpers/ConfigDataHelper.php:1780
+#: com/helpers/ConfigDataHelper.php:2164
+msgid "Hide popup"
+msgstr "隐藏弹窗"
+
+#: com/helpers/ConfigDataHelper.php:508
+#: com/helpers/ConfigDataHelper.php:1810
+msgid "Responsive mode"
+msgstr "响应式模式"
+
+#: com/helpers/ConfigDataHelper.php:509
+#: com/helpers/ConfigDataHelper.php:1811
+msgid "The sizes of the popup will be counted automatically, according to the content size of the popup. You can select the size in percentages, with this mode, to specify the size on the screen"
+msgstr "弹窗的尺寸将根据弹窗的内容大小自动计算。在此模式下，您可以以百分比选择尺寸，以指定其在屏幕上的大小"
+
+#: com/helpers/ConfigDataHelper.php:521
+#: com/helpers/ConfigDataHelper.php:1823
+msgid "Custom mode"
+msgstr "自定义模式"
+
+#: com/helpers/ConfigDataHelper.php:522
+#: com/helpers/ConfigDataHelper.php:1824
+msgid "Add your own custom dimensions for the popup to get the exact sizing for your popup"
+msgstr "为弹窗添加您自己的自定义尺寸，以获得精确的弹窗大小"
+
+#: com/helpers/ConfigDataHelper.php:574
+#: com/helpers/ConfigDataHelper.php:1876
+msgid "Auto"
+msgstr "自动"
+
+#: com/helpers/ConfigDataHelper.php:585
+#: com/helpers/ConfigDataHelper.php:1887
+msgid "Full screen"
+msgstr "全屏"
+
+#: com/helpers/ConfigDataHelper.php:589
+#: com/helpers/ConfigDataHelper.php:1891
+msgid "Devices"
+msgstr "设备"
+
+#: com/helpers/ConfigDataHelper.php:590
+#: com/helpers/ConfigDataHelper.php:1892
+msgid "User Status"
+msgstr "用户状态"
+
+#: com/helpers/ConfigDataHelper.php:591
+#: com/helpers/ConfigDataHelper.php:1893
+msgid "After x pages visit"
+msgstr "访问 x 个页面后"
+
+#: com/helpers/ConfigDataHelper.php:592
+#: com/helpers/ConfigDataHelper.php:1894
+msgid "User Role"
+msgstr "用户角色"
+
+#: com/helpers/ConfigDataHelper.php:593
+#: com/helpers/ConfigDataHelper.php:1895
+msgid "Referral URL detection"
+msgstr "来源网址检测"
+
+#: com/helpers/ConfigDataHelper.php:594
+#: com/helpers/ConfigDataHelper.php:1896
+msgid "Cookie Detection"
+msgstr "Cookie 检测"
+
+#: com/helpers/ConfigDataHelper.php:595
+#: com/helpers/ConfigDataHelper.php:1897
+msgid "Operating System"
+msgstr "操作系统"
+
+#: com/helpers/ConfigDataHelper.php:596
+#: com/helpers/ConfigDataHelper.php:1898
+msgid "Web Browser"
+msgstr "网页浏览器"
+
+#: com/helpers/ConfigDataHelper.php:597
+#: com/helpers/ConfigDataHelper.php:1899
+msgid "URL Query String"
+msgstr "网址查询字符串"
+
+#: com/helpers/ConfigDataHelper.php:601
+#: com/helpers/ConfigDataHelper.php:1903
+msgid "Countries"
+msgstr "国家/地区"
+
+#: com/helpers/ConfigDataHelper.php:602
+#: com/helpers/ConfigDataHelper.php:1904
+msgid "Cities"
+msgstr "城市"
+
+#: com/helpers/ConfigDataHelper.php:603
+#: com/helpers/ConfigDataHelper.php:1905
+msgid "States"
+msgstr "州/省"
+
+#: com/helpers/ConfigDataHelper.php:604
+#: com/helpers/ConfigDataHelper.php:1906
+msgid "Visitor IP"
+msgstr "访客 IP"
+
+#: com/helpers/ConfigDataHelper.php:608
+#: com/helpers/ConfigDataHelper.php:1910
+msgid "top-left"
+msgstr "左上"
+
+#: com/helpers/ConfigDataHelper.php:609
+#: com/helpers/ConfigDataHelper.php:1911
+msgid "top-right"
+msgstr "右上"
+
+#: com/helpers/ConfigDataHelper.php:610
+#: com/helpers/ConfigDataHelper.php:615
+#: com/helpers/ConfigDataHelper.php:1912
+#: com/helpers/ConfigDataHelper.php:1917
+msgid "bottom-left"
+msgstr "左下"
+
+#: com/helpers/ConfigDataHelper.php:611
+#: com/helpers/ConfigDataHelper.php:616
+#: com/helpers/ConfigDataHelper.php:1913
+#: com/helpers/ConfigDataHelper.php:1918
+msgid "bottom-right"
+msgstr "右下"
+
+#: com/helpers/ConfigDataHelper.php:647
+#: com/helpers/ConfigDataHelper.php:1949
+msgid "Monday"
+msgstr "星期一"
+
+#: com/helpers/ConfigDataHelper.php:648
+#: com/helpers/ConfigDataHelper.php:1950
+msgid "Tuesday"
+msgstr "星期二"
+
+#: com/helpers/ConfigDataHelper.php:649
+#: com/helpers/ConfigDataHelper.php:1951
+msgid "Wednesday"
+msgstr "星期三"
+
+#: com/helpers/ConfigDataHelper.php:650
+#: com/helpers/ConfigDataHelper.php:1952
+msgid "Thursday"
+msgstr "星期四"
+
+#: com/helpers/ConfigDataHelper.php:651
+#: com/helpers/ConfigDataHelper.php:1953
+msgid "Friday"
+msgstr "星期五"
+
+#: com/helpers/ConfigDataHelper.php:652
+#: com/helpers/ConfigDataHelper.php:1954
+msgid "Saturday"
+msgstr "星期六"
+
+#: com/helpers/ConfigDataHelper.php:653
+#: com/helpers/ConfigDataHelper.php:1955
+msgid "Sunday"
+msgstr "星期日"
+
+#: com/helpers/ConfigDataHelper.php:657
+#: com/helpers/ConfigDataHelper.php:1959
+msgid "Both"
+msgstr "两者"
+
+#: com/helpers/ConfigDataHelper.php:658
+#: com/helpers/ConfigDataHelper.php:1960
+msgid "Horizontal"
+msgstr "水平"
+
+#: com/helpers/ConfigDataHelper.php:659
+#: com/helpers/ConfigDataHelper.php:1961
+msgid "Vertical"
+msgstr "垂直"
+
+#: com/helpers/ConfigDataHelper.php:660
+#: com/helpers/ConfigDataHelper.php:876
+#: com/helpers/ConfigDataHelper.php:883
+#: com/helpers/ConfigDataHelper.php:902
+#: com/helpers/ConfigDataHelper.php:1962
+#: com/helpers/ConfigDataHelper.php:2178
+#: com/helpers/ConfigDataHelper.php:2185
+#: com/helpers/ConfigDataHelper.php:2204
+msgid "None"
+msgstr "无"
+
+#: com/helpers/ConfigDataHelper.php:688
+#: com/helpers/ConfigDataHelper.php:1990
+msgid "Use active URL"
+msgstr "使用当前网址"
+
+#: com/helpers/ConfigDataHelper.php:700
+#: com/helpers/ConfigDataHelper.php:2002
+msgid "Share URL"
+msgstr "分享网址"
+
+#: com/helpers/ConfigDataHelper.php:730
+#: com/helpers/ConfigDataHelper.php:2032
+msgid "Due Date"
+msgstr "截止日期"
+
+#: com/helpers/ConfigDataHelper.php:742
+#: com/helpers/ConfigDataHelper.php:2044
+msgid "Timer"
+msgstr "计时器"
+
+#: com/helpers/ConfigDataHelper.php:791
+#: com/helpers/ConfigDataHelper.php:2093
+msgid "True"
+msgstr "真"
+
+#: com/helpers/ConfigDataHelper.php:792
+#: com/helpers/ConfigDataHelper.php:2094
+msgid "False"
+msgstr "假"
+
+#: com/helpers/ConfigDataHelper.php:793
+#: com/helpers/ConfigDataHelper.php:2095
+msgid "Inside"
+msgstr "内部"
+
+#: com/helpers/ConfigDataHelper.php:827
+#: com/helpers/ConfigDataHelper.php:2129
+#: public/views/options/subscription.php:287
+msgid "Success message"
+msgstr "成功消息"
+
+#: com/helpers/ConfigDataHelper.php:869
+#: com/helpers/ConfigDataHelper.php:2171
+msgid "Standard"
+msgstr "标准"
+
+#: com/helpers/ConfigDataHelper.php:870
+#: com/helpers/ConfigDataHelper.php:2172
+msgid "Box with count"
+msgstr "带计数的方框"
+
+#: com/helpers/ConfigDataHelper.php:871
+#: com/helpers/ConfigDataHelper.php:2173
+msgid "Button with count"
+msgstr "带计数的按钮"
+
+#: com/helpers/ConfigDataHelper.php:872
+#: com/helpers/ConfigDataHelper.php:2174
+#: public/views/htmlCustomButtonElement.php:17
+msgid "Button"
+msgstr "按钮"
+
+#: com/helpers/ConfigDataHelper.php:877
+#: com/helpers/ConfigDataHelper.php:2179
+msgid "Cover"
+msgstr "覆盖"
+
+#: com/helpers/ConfigDataHelper.php:878
+#: com/helpers/ConfigDataHelper.php:2180
+msgid "Contain"
+msgstr "包含"
+
+#: com/helpers/ConfigDataHelper.php:879
+#: com/helpers/ConfigDataHelper.php:2181
+msgid "Repeat"
+msgstr "重复"
+
+#: com/helpers/ConfigDataHelper.php:884
+#: com/helpers/ConfigDataHelper.php:903
+#: com/helpers/ConfigDataHelper.php:2186
+#: com/helpers/ConfigDataHelper.php:2205
+msgid "Flip"
+msgstr "翻转"
+
+#: com/helpers/ConfigDataHelper.php:885
+#: com/helpers/ConfigDataHelper.php:904
+#: com/helpers/ConfigDataHelper.php:2187
+#: com/helpers/ConfigDataHelper.php:2206
+msgid "Shake"
+msgstr "摇晃"
+
+#: com/helpers/ConfigDataHelper.php:886
+#: com/helpers/ConfigDataHelper.php:905
+#: com/helpers/ConfigDataHelper.php:2188
+#: com/helpers/ConfigDataHelper.php:2207
+msgid "Wobble"
+msgstr "摆动"
+
+#: com/helpers/ConfigDataHelper.php:887
+#: com/helpers/ConfigDataHelper.php:906
+#: com/helpers/ConfigDataHelper.php:2189
+#: com/helpers/ConfigDataHelper.php:2208
+msgid "Swing"
+msgstr "晃动"
+
+#: com/helpers/ConfigDataHelper.php:888
+#: com/helpers/ConfigDataHelper.php:907
+#: com/helpers/ConfigDataHelper.php:2190
+#: com/helpers/ConfigDataHelper.php:2209
+msgid "Flash"
+msgstr "摇摆"
+
+#: com/helpers/ConfigDataHelper.php:889
+#: com/helpers/ConfigDataHelper.php:908
+#: com/helpers/ConfigDataHelper.php:2191
+#: com/helpers/ConfigDataHelper.php:2210
+msgid "Bounce"
+msgstr "闪烁"
+
+#: com/helpers/ConfigDataHelper.php:890
+#: com/helpers/ConfigDataHelper.php:2192
+msgid "BounceInRight"
+msgstr "弹跳"
+
+#: com/helpers/ConfigDataHelper.php:891
+#: com/helpers/ConfigDataHelper.php:2193
+msgid "BounceIn"
+msgstr "BounceInRight"
+
+#: com/helpers/ConfigDataHelper.php:892
+#: com/helpers/ConfigDataHelper.php:911
+#: com/helpers/ConfigDataHelper.php:2194
+#: com/helpers/ConfigDataHelper.php:2213
+msgid "Pulse"
+msgstr "BounceIn"
+
+#: com/helpers/ConfigDataHelper.php:893
+#: com/helpers/ConfigDataHelper.php:912
+#: com/helpers/ConfigDataHelper.php:2195
+#: com/helpers/ConfigDataHelper.php:2214
+msgid "RubberBand"
+msgstr "脉冲"
+
+#: com/helpers/ConfigDataHelper.php:894
+#: com/helpers/ConfigDataHelper.php:913
+#: com/helpers/ConfigDataHelper.php:2196
+#: com/helpers/ConfigDataHelper.php:2215
+msgid "Tada"
+msgstr "RubberBand"
+
+#: com/helpers/ConfigDataHelper.php:895
+#: com/helpers/ConfigDataHelper.php:2197
+msgid "SlideInUp"
+msgstr "Tada"
+
+#: com/helpers/ConfigDataHelper.php:896
+#: com/helpers/ConfigDataHelper.php:915
+#: com/helpers/ConfigDataHelper.php:2198
+#: com/helpers/ConfigDataHelper.php:2217
+msgid "Jello"
+msgstr "SlideInUp"
+
+#: com/helpers/ConfigDataHelper.php:897
+#: com/helpers/ConfigDataHelper.php:2199
+msgid "RotateIn"
+msgstr "Jello"
+
+#: com/helpers/ConfigDataHelper.php:898
+#: com/helpers/ConfigDataHelper.php:2200
+msgid "FadeIn"
+msgstr "RotateIn"
+
+#: com/helpers/ConfigDataHelper.php:909
+#: com/helpers/ConfigDataHelper.php:2211
+msgid "BounceOutLeft"
+msgstr "FadeIn"
+
+#: com/helpers/ConfigDataHelper.php:910
+#: com/helpers/ConfigDataHelper.php:2212
+msgid "BounceOut"
+msgstr "BounceOutLeft"
+
+#: com/helpers/ConfigDataHelper.php:914
+#: com/helpers/ConfigDataHelper.php:2216
+msgid "SlideOutUp"
+msgstr "BounceOut"
+
+#: com/helpers/ConfigDataHelper.php:916
+#: com/helpers/ConfigDataHelper.php:2218
+msgid "RotateOut"
+msgstr "SlideOutUp"
+
+#: com/helpers/ConfigDataHelper.php:917
+#: com/helpers/ConfigDataHelper.php:2219
+msgid "FadeOut"
+msgstr "RotateOut"
+
+#: com/helpers/ConfigDataHelper.php:921
+#: com/helpers/ConfigDataHelper.php:928
+#: com/helpers/ConfigDataHelper.php:2223
+#: com/helpers/ConfigDataHelper.php:2230
+msgid "Top left"
+msgstr "FadeOut"
+
+#: com/helpers/ConfigDataHelper.php:922
+#: com/helpers/ConfigDataHelper.php:929
+#: com/helpers/ConfigDataHelper.php:2224
+#: com/helpers/ConfigDataHelper.php:2231
+msgid "Top right"
+msgstr "右上"
+
+#: com/helpers/ConfigDataHelper.php:923
+#: com/helpers/ConfigDataHelper.php:930
+#: com/helpers/ConfigDataHelper.php:2225
+#: com/helpers/ConfigDataHelper.php:2232
+msgid "Bottom left"
+msgstr "左下"
+
+#: com/helpers/ConfigDataHelper.php:924
+#: com/helpers/ConfigDataHelper.php:931
+#: com/helpers/ConfigDataHelper.php:2226
+#: com/helpers/ConfigDataHelper.php:2233
+msgid "Bottom right"
+msgstr "右下"
+
+#: com/helpers/ConfigDataHelper.php:932
+#: com/helpers/ConfigDataHelper.php:2234
+msgid "Top center"
+msgstr "顶部居中"
+
+#: com/helpers/ConfigDataHelper.php:933
+#: com/helpers/ConfigDataHelper.php:2235
+msgid "Bottom center"
+msgstr "底部居中"
+
+#: com/helpers/ConfigDataHelper.php:934
+#: com/helpers/ConfigDataHelper.php:2236
+msgid "Right center"
+msgstr "右侧居中"
+
+#: com/helpers/ConfigDataHelper.php:935
+#: com/helpers/ConfigDataHelper.php:2237
+#: public/views/floatingButton.php:42
+msgid "Left center"
+msgstr "左侧居中"
+
+#: com/helpers/ConfigDataHelper.php:939
+#: com/helpers/ConfigDataHelper.php:2241
+#: public/views/floatingButton.php:28
+msgid "Corner"
+msgstr "角落"
+
+#: com/helpers/ConfigDataHelper.php:940
+#: com/helpers/ConfigDataHelper.php:2242
+#: public/views/floatingButton.php:29
+msgid "Basic"
+msgstr "基础"
+
+#: com/helpers/ConfigDataHelper.php:969
+#: com/helpers/ConfigDataHelper.php:979
+#: com/helpers/ConfigDataHelper.php:2271
+#: com/helpers/ConfigDataHelper.php:2281
+msgid "Default"
+msgstr "默认"
+
+#: com/helpers/ConfigDataHelper.php:970
+#: com/helpers/ConfigDataHelper.php:980
+#: com/helpers/ConfigDataHelper.php:2272
+#: com/helpers/ConfigDataHelper.php:2282
+msgid "Custom class"
+msgstr "自定义类"
+
+#: com/helpers/ConfigDataHelper.php:1274
+#: com/helpers/ConfigDataHelper.php:2576
+msgid "Only image files supported"
+msgstr "仅支持图片文件"
+
+#: com/helpers/ConfigDataHelper.php:1275
+#: com/helpers/ConfigDataHelper.php:2577
+msgid "Only pdf files supported"
+msgstr "仅支持 PDF 文件"
+
+#: com/helpers/ConfigDataHelper.php:1276
+#: com/helpers/ConfigDataHelper.php:2578
+msgid "Are you sure?"
+msgstr "您确定吗？"
+
+#: com/helpers/ConfigDataHelper.php:1277
+#: com/helpers/ConfigDataHelper.php:2579
+msgid "L"
+msgstr "L"
+
+#: com/helpers/ConfigDataHelper.php:1278
+#: com/helpers/ConfigDataHelper.php:2580
+msgid "Only audio files supported (e.g.: mp3, wav, m4a, ogg)"
+msgstr "仅支持音频文件（例如：mp3、wav、m4a、ogg）"
+
+#: com/helpers/ConfigDataHelper.php:1279
+#: com/helpers/ConfigDataHelper.php:2581
+msgid "Please, publish the popup before starting to use Elementor with it!"
+msgstr "请先发布弹窗，然后再使用 Elementor 进行编辑！"
+
+#: com/helpers/ConfigDataHelper.php:1280
+#: com/helpers/ConfigDataHelper.php:2582
+msgid "Please, publish the popup before starting to use Divi Builder with it!"
+msgstr "请先发布弹窗，然后再使用 Divi Builder 进行编辑！"
+
+#: com/helpers/ConfigDataHelper.php:1281
+#: com/helpers/ConfigDataHelper.php:2583
+#: public/views/closeSettingsView.php:232
+msgid "Close"
+msgstr "关闭"
+
+#: com/libs/ListTable.php:149
+msgid "List View"
+msgstr "列表视图"
+
+#: com/libs/ListTable.php:150
+msgid "Excerpt View"
+msgstr "摘要视图"
+
+#: com/libs/ListTable.php:324
+#: com/libs/Table.php:297
+msgid "No items found."
+msgstr "未找到项目。"
+
+#: com/libs/ListTable.php:449
+msgid "Select bulk action"
+msgstr "选择批量操作"
+
+#: com/libs/ListTable.php:451
+msgid "Bulk Actions"
+msgstr "批量操作"
+
+#: com/libs/ListTable.php:461
+msgid "Apply"
+msgstr "应用"
+
+#: com/libs/ListTable.php:511
+#: com/libs/ListTable.php:1280
+msgid "Show more details"
+msgstr "显示更多详情"
+
+#. translators: 1: month name, 2: 4-digit year
+#: com/libs/ListTable.php:581
+#, php-format
+msgid "%1$s %2$d"
+msgstr "%1$s %2$d"
+
+#. translators: numner comments, numner approved comments
+#: com/libs/ListTable.php:633
+#, php-format
+msgid "%s comment"
+msgid_plural "%s comments"
+msgstr[0] "%s 条评论"
+
+#. translators: numner comments, numner approved comments
+#: com/libs/ListTable.php:635
+#, php-format
+msgid "%s approved comment"
+msgid_plural "%s approved comments"
+msgstr[0] "%s 条已批准评论"
+
+#. translators: numner comments, numner pending comments
+#: com/libs/ListTable.php:637
+#, php-format
+msgid "%s pending comment"
+msgid_plural "%s pending comments"
+msgstr[0] "%s 条待审核评论"
+
+#: com/libs/ListTable.php:642
+#: com/libs/ListTable.php:654
+msgid "No comments"
+msgstr "无评论"
+
+#: com/libs/ListTable.php:654
+msgid "No approved comments"
+msgstr "无已批准的评论"
+
+#. translators: total items
+#. translators: total item, total items
+#: com/libs/ListTable.php:735
+#: com/libs/ListTable.php:1306
+#, php-format
+msgid "%s item"
+msgid_plural "%s items"
+msgstr[0] "%s 个项目"
+
+#: com/libs/ListTable.php:772
+msgid "First page"
+msgstr "第一页"
+
+#: com/libs/ListTable.php:782
+msgid "Previous page"
+msgstr "上一页"
+
+#: com/libs/ListTable.php:789
+#: com/libs/ListTable.php:792
+msgid "Current Page"
+msgstr "当前页"
+
+#. translators: current page,  total pages
+#: com/libs/ListTable.php:799
+#, php-format
+msgctxt "paging"
+msgid "%1$s of %2$s"
+msgstr "第 %1$s 页，共 %2$s 页"
+
+#: com/libs/ListTable.php:806
+msgid "Next page"
+msgstr "下一页"
+
+#: com/libs/ListTable.php:816
+msgid "Last page"
+msgstr "最后一页"
+
+#: com/libs/ListTable.php:1029
+msgid "Select All"
+msgstr "全选"
+
+#: com/libs/parsers.php:46
+#: com/libs/parsers.php:86
+#: com/libs/parsers.php:94
+msgid "There was an error when reading this WXR file"
+msgstr "读取此 WXR 文件时出错"
+
+#: com/libs/parsers.php:47
+msgid "Details are shown above. The importer will now try again with a different parser..."
+msgstr "详情显示在上方。导入工具现在将尝试使用其他解析器重试……"
+
+#: com/libs/parsers.php:98
+#: com/libs/parsers.php:103
+#: com/libs/parsers.php:333
+#: com/libs/parsers.php:538
+msgid "This does not appear to be a WXR file, missing/invalid WXR version number"
+msgstr "这似乎不是 WXR 文件，缺少/无效的 WXR 版本号"
+
+#: com/libs/SGPBImporter.php:121
+#: com/libs/SGPBImporter.php:136
+#: com/libs/SGPBImporter.php:195
+#: com/libs/SGPBImporter.php:200
+#: com/libs/SGPBImporter.php:211
+msgid "Sorry, there has been an error."
+msgstr "抱歉，发生了错误。"
+
+#: com/libs/SGPBImporter.php:122
+msgid "The file does not exist, please try again."
+msgstr "文件不存在，请重试。"
+
+#: com/libs/SGPBImporter.php:129
+msgid "Invalid file type."
+msgstr "无效的文件类型。"
+
+#: com/libs/SGPBImporter.php:172
+msgid "All done."
+msgstr "全部完成。"
+
+#: com/libs/SGPBImporter.php:172
+msgid "Have fun!"
+msgstr "祝您使用愉快！"
+
+#: com/libs/SGPBImporter.php:174
+msgid "Remember to update the passwords and roles of imported users."
+msgstr "请记得更新导入用户的密码和角色。"
+
+#. translators: export file path
+#: com/libs/SGPBImporter.php:202
+#, php-format
+msgid "The export file could not be found at <code>%s</code>. It is likely that this was caused by a permissions problem."
+msgstr "无法在 <code>%s</code> 找到导出文件。这很可能是由权限问题导致的。"
+
+#. translators: import data version
+#: com/libs/SGPBImporter.php:220
+#, php-format
+msgid "This WXR file (version %s) may not be supported by this version of the importer. Please consider updating."
+msgstr "此 WXR 文件（版本 %s）可能不受此版本导入工具的支持。请考虑更新。"
+
+#. translators: post author
+#: com/libs/SGPBImporter.php:248
+#, php-format
+msgid "Failed to import author %s. Their posts will be attributed to the current user."
+msgstr "导入作者 %s 失败。其文章将归属于当前用户。"
+
+#: com/libs/SGPBImporter.php:277
+msgid "Assign Authors"
+msgstr "分配作者"
+
+#: com/libs/SGPBImporter.php:278
+msgid "To make it easier for you to edit and save the imported content, you may want to reassign the author of the imported item to an existing user of this site. For example, you may want to import all the entries as <code>admin</code>s entries."
+msgstr "为了便于您编辑和保存导入的内容，您可能希望将导入项的作者重新分配给本站的现有用户。例如，您可能希望将所有条目作为 <code>admin</code> 的条目导入。"
+
+#. translators: default role
+#: com/libs/SGPBImporter.php:282
+#, php-format
+msgid "If a new user is created by WordPress, a new password will be randomly generated and the new user&#8217;s role will be set as %s. Manually changing the new user&#8217;s details will be necessary."
+msgstr "如果 WordPress 创建了新用户，将随机生成一个新密码，并且新用户的角色将设置为 %s。需要手动更改新用户的详细信息。"
+
+#: com/libs/SGPBImporter.php:291
+msgid "Submit"
+msgstr "提交"
+
+#: com/libs/SGPBImporter.php:306
+msgid "Import author:"
+msgstr "导入作者："
+
+#: com/libs/SGPBImporter.php:318
+msgid "or create new user with login name:"
+msgstr "或创建登录名为以下的新用户："
+
+#: com/libs/SGPBImporter.php:321
+msgid "as a new user:"
+msgstr "作为新用户："
+
+#: com/libs/SGPBImporter.php:330
+msgid "assign posts to an existing user:"
+msgstr "将文章分配给现有用户："
+
+#: com/libs/SGPBImporter.php:332
+msgid "or assign posts to an existing user:"
+msgstr "或将文章分配给现有用户："
+
+#: com/libs/SGPBImporter.php:340
+msgid "- Select -"
+msgstr "- 选择 -"
+
+#. translators: author display name
+#: com/libs/SGPBImporter.php:424
+#, php-format
+msgid "Failed to create new user for %s. Their posts will be attributed to the current user."
+msgstr "为 %s 创建新用户失败。其文章将归属于当前用户。"
+
+#. translators: category nicename
+#: com/libs/SGPBImporter.php:477
+#, php-format
+msgid "Failed to import category %s"
+msgstr "导入分类 %s 失败"
+
+#. translators: tag name
+#: com/libs/SGPBImporter.php:522
+#, php-format
+msgid "Failed to import post tag %s"
+msgstr "导入文章标签 %s 失败"
+
+#. translators: term taxonomy, term name
+#. translators: taxonomy type , taxonomy name
+#: com/libs/SGPBImporter.php:573
+#: com/libs/SGPBImporter.php:806
+#, php-format
+msgid "Failed to import %1$s %2$s"
+msgstr "导入 %1$s %2$s 失败"
+
+#. translators: post title, post type
+#: com/libs/SGPBImporter.php:665
+#, php-format
+msgid "Failed to import &#8220;%1$s&#8221;: Invalid post type %2$s"
+msgstr "导入 &#8220;%1$s&#8221; 失败：无效的文章类型 %2$s"
+
+#. translators: singular name ,post title
+#: com/libs/SGPBImporter.php:705
+#, php-format
+msgid "%1$s &#8220;%2$s&#8221; already exists."
+msgstr "%1$s &#8220;%2$s&#8221; 已存在。"
+
+#. translators: singular name ,post title
+#: com/libs/SGPBImporter.php:770
+#, php-format
+msgid "Failed to import %1$s &#8220;%2$s&#8221;"
+msgstr "导入 %1$s &#8220;%2$s&#8221; 失败"
+
+#: com/libs/SGPBImporter.php:939
+msgid "Menu item skipped due to missing menu slug"
+msgstr "由于缺少菜单别名，菜单项被跳过"
+
+#. translators: menu slug
+#: com/libs/SGPBImporter.php:947
+#, php-format
+msgid "Menu item skipped due to invalid menu slug: %s"
+msgstr "由于无效的菜单别名，菜单项被跳过：%s"
+
+#: com/libs/SGPBImporter.php:1017
+msgid "Fetching attachments is not enabled"
+msgstr "未启用获取附件功能"
+
+#: com/libs/SGPBImporter.php:1033
+msgid "Invalid file type"
+msgstr "无效的文件类型"
+
+#: com/libs/SGPBImporter.php:1078
+msgid "Could not create temporary file."
+msgstr "无法创建临时文件。"
+
+#. translators: 1: The WordPress error message. 2: The WordPress error code.
+#: com/libs/SGPBImporter.php:1100
+#, php-format
+msgid "Request failed due to an error: %1$s (%2$s)"
+msgstr "请求因错误而失败：%1$s (%2$s)"
+
+#. translators: 1: The HTTP error message. 2: The HTTP error code.
+#: com/libs/SGPBImporter.php:1116
+#, php-format
+msgid "Remote server returned the following unexpected result: %1$s (%2$s)"
+msgstr "远程服务器返回了以下意外结果：%1$s (%2$s)"
+
+#: com/libs/SGPBImporter.php:1128
+msgid "Remote server did not respond"
+msgstr "远程服务器未响应"
+
+#: com/libs/SGPBImporter.php:1135
+msgid "Zero size file downloaded"
+msgstr "下载的文件大小为零"
+
+#: com/libs/SGPBImporter.php:1140
+msgid "Downloaded file has incorrect size"
+msgstr "下载的文件大小不正确"
+
+#. translators: %s is the maximum file size allowed.
+#: com/libs/SGPBImporter.php:1150
+#, php-format
+msgid "Remote file is too large, limit is %s"
+msgstr "远程文件过大，限制为 %s"
+
+#: com/libs/SGPBImporter.php:1185
+msgid "Sorry, this file type is not permitted for security reasons."
+msgstr "抱歉，出于安全原因，不允许使用此文件类型。"
+
+#: com/libs/SGPBImporter.php:1200
+msgid "The uploaded file could not be moved"
+msgstr "无法移动上传的文件"
+
+#: com/libs/SGPBImporter.php:1332
+msgid "Import Popups"
+msgstr "导入弹窗"
+
+#. translators: new version
+#: com/libs/SGPBImporter.php:1340
+#, php-format
+msgid "A new version of this importer is available. Please update to version %s to ensure compatibility with newer export files."
+msgstr "此导入工具有新版本可用。请更新到版本 %s，以确保与较新的导出文件兼容。"
+
+#: com/libs/SGPBImporter.php:1357
+msgid "Howdy!Upload your WordPress eXtended RSS (WXR) file and we&#8217;ll import the posts, pages, comments, custom fields, categories, and tags into this site."
+msgstr "您好！上传您的 WordPress eXtended RSS (WXR) 文件，我们将把文章、页面、评论、自定义字段、分类和标签导入到本站。"
+
+#: com/libs/SGPBImporter.php:1358
+msgid "Choose a WXR (.xml) file to upload, then click Upload file and import."
+msgstr "选择要上传的 WXR (.xml) 文件，然后点击上传文件并导入。"
+
+#: com/libs/WOOSL_CodeAutoUpdate.php:180
+msgid "An error occour when try to identify the plugin."
+msgstr "尝试识别插件时发生错误。"
+
+#: com/libs/WOOSL_CodeAutoUpdate.php:180
+#: com/libs/WOOSL_CodeAutoUpdate.php:192
+msgid "Try again"
+msgstr "重试"
+
+#: com/libs/WOOSL_CodeAutoUpdate.php:192
+msgid "An Unexpected HTTP Error occurred during the API request."
+msgstr "API 请求期间发生了意外的 HTTP 错误。"
+
+#: popup-builder.php:20
+msgid "Please, deactivate the FREE version of Popup Builder plugin before upgrading to PRO."
+msgstr "升级到 PRO 之前，请先停用 Popup Builder 插件的免费版本。"
+
+#. translators: %s: Edit Popup Link for administrator
+#: popup-builder.php:41
+#, php-format
+msgid "One or more popups with the Subscription Plus Type were deactivated because you deactivated the Popup Builder Subscription Plus add-on. Click <a href=\"%s\">here</a> to view your Popups."
+msgstr "由于您停用了 Popup Builder Subscription Plus 附加组件，一个或多个 Subscription Plus 类型的弹窗已被停用。点击 <a href=\"%s\">此处</a> 查看您的弹窗。"
+
+#: public/views/closeSettingsView.php:60
+msgid "Dismiss on \"esc\" key"
+msgstr "按 “esc” 键关闭"
+
+#: public/views/closeSettingsView.php:72
+msgid "The popup will close if the \"Esc\" key of your keyboard is clicked."
+msgstr "如果按下键盘上的 “Esc” 键，弹窗将关闭。"
+
+#: public/views/closeSettingsView.php:80
+msgid "Show \"close\" button"
+msgstr "显示 “关闭” 按钮"
+
+#: public/views/closeSettingsView.php:92
+msgid "Uncheck this option if you don't want to show a \"close\" button on your popup."
+msgstr "如果您不想在弹窗上显示 “关闭” 按钮，请取消勾选此选项。"
+
+#: public/views/closeSettingsView.php:100
+msgid "Button delay"
+msgstr "按钮延迟"
+
+#: public/views/closeSettingsView.php:108
+msgid "Specify the time (in seconds) after which the close button will appear. The close button will be shown by default without any delay if no time is specified."
+msgstr "指定关闭按钮出现的时间（以秒为单位）。如果未指定时间，关闭按钮将默认无延迟显示。"
+
+#: public/views/closeSettingsView.php:115
+msgid "Button position"
+msgstr "按钮位置"
+
+#: public/views/closeSettingsView.php:123
+msgid "Top"
+msgstr "上"
+
+#: public/views/closeSettingsView.php:132
+msgid "Right"
+msgstr "右"
+
+#: public/views/closeSettingsView.php:141
+msgid "Bottom"
+msgstr "下"
+
+#: public/views/closeSettingsView.php:150
+msgid "Left"
+msgstr "左"
+
+#: public/views/closeSettingsView.php:162
+msgid "Button image"
+msgstr "按钮图片"
+
+#: public/views/closeSettingsView.php:173
+#: public/views/popupDesignView.php:215
+msgid "Change image"
+msgstr "更换图片"
+
+#: public/views/closeSettingsView.php:190
+msgid "Width&nbsp;"
+msgstr "宽度&nbsp;"
+
+#: public/views/closeSettingsView.php:200
+#: public/views/dimensionsView.php:32
+#: public/views/htmlCustomButtonElement.php:55
+#: public/views/options/subscription.php:161
+#: public/views/options/subscription.php:207
+msgid "Height"
+msgstr "高度"
+
+#: public/views/closeSettingsView.php:214
+msgid "Popup border color"
+msgstr "弹窗边框颜色"
+
+#: public/views/closeSettingsView.php:221
+msgid "Popup border radius"
+msgstr "弹窗边框圆角"
+
+#: public/views/closeSettingsView.php:230
+msgid "Button text"
+msgstr "按钮文本"
+
+#: public/views/closeSettingsView.php:240
+msgid "Dismiss on overlay click"
+msgstr "点击遮罩层时关闭"
+
+#: public/views/closeSettingsView.php:252
+msgid "The popup will close when clicked on the overlay of the popup."
+msgstr "点击弹窗的遮罩层时弹窗将关闭。"
+
+#: public/views/closeSettingsView.php:261
+#: public/views/closeSettingsView.php:278
+msgid "Disable popup closing"
+msgstr "禁止关闭弹窗"
+
+#: public/views/closeSettingsView.php:272
+#: public/views/closeSettingsView.php:289
+msgid "The users will not be able to close the popup, if this option is checked."
+msgstr "如果勾选此选项，用户将无法关闭弹窗。"
+
+#: public/views/closeSettingsView.php:294
+#: public/views/closeSettingsView.php:325
+#: public/views/closeSettingsView.php:360
+#: public/views/otherConditionsView.php:44
+#: public/views/popupDesignView.php:94
+msgid "Time icon"
+msgstr "时间图标"
+
+#: public/views/closeSettingsView.php:296
+#: public/views/closeSettingsView.php:327
+#: public/views/closeSettingsView.php:362
+#: public/views/otherConditionsView.php:46
+#: public/views/popupDesignView.php:96
+msgid "Unlock Option"
+msgstr "解锁选项"
+
+#: public/views/closeSettingsView.php:304
+#: public/views/closeSettingsView.php:315
+msgid "Auto close popup"
+msgstr "自动关闭弹窗"
+
+#: public/views/closeSettingsView.php:339
+#: public/views/closeSettingsView.php:350
+msgid "Close popup after the page scroll"
+msgstr "页面滚动后关闭弹窗"
+
+#: public/views/conditionsView.php:20
+msgid "If you want to unlock Geo Targeting you need to activate this extension"
+msgstr "如果您想解锁地理定向，需要激活此扩展"
+
+#: public/views/conditionsView.php:23
+#: public/views/conditionsView.php:50
+msgid "Buy Now"
+msgstr "立即购买"
+
+#: public/views/conditionsView.php:27
+#: public/views/conditionsView.php:54
+msgid "More Details"
+msgstr "更多详情"
+
+#: public/views/conditionsView.php:37
+#: public/views/conditionsView.php:64
+msgid "See Less"
+msgstr "收起"
+
+#: public/views/conditionsView.php:47
+msgid "If you want to unlock Advanced Targeting you need to activate this extension"
+msgstr "如果您想解锁高级定向，需要激活此扩展"
+
+#: public/views/customEditor.php:19
+msgid "This section is for adding custom codes (CSS or JS) for the popup, it requires some coding knowledge"
+msgstr "此部分用于为弹窗添加自定义代码（CSS 或 JS），需要一定的编程知识"
+
+#: public/views/customEditor.php:20
+msgid "You may use your custom codes for extra actions connected to the popup opening (before, after, etc.) in the fields below"
+msgstr "您可以在下面的字段中使用自定义代码，以执行与弹窗打开相关的额外操作（之前、之后等）"
+
+#: public/views/dimensionsView.php:22
+msgid "Size"
+msgstr "尺寸"
+
+#: public/views/dimensionsView.php:28
+#: public/views/htmlCustomButtonElement.php:47
+#: public/views/options/subscription.php:157
+#: public/views/options/subscription.php:203
+msgid "Width"
+msgstr "宽度"
+
+#: public/views/dimensionsView.php:29
+#: public/views/dimensionsView.php:33
+#: public/views/dimensionsView.php:39
+#: public/views/dimensionsView.php:43
+#: public/views/dimensionsView.php:49
+#: public/views/dimensionsView.php:53
+msgid "Ex: 100, 100px or 100%"
+msgstr "例如：100、100px 或 100%"
+
+#: public/views/dimensionsView.php:29
+#: public/views/dimensionsView.php:33
+#: public/views/dimensionsView.php:39
+#: public/views/dimensionsView.php:43
+#: public/views/dimensionsView.php:49
+#: public/views/dimensionsView.php:53
+msgid "It must be number  + px or %"
+msgstr "必须为数字 + px 或 %"
+
+#: public/views/dimensionsView.php:38
+msgid "Max width"
+msgstr "最大宽度"
+
+#: public/views/dimensionsView.php:42
+msgid "Max height"
+msgstr "最大高度"
+
+#: public/views/dimensionsView.php:48
+msgid "Min width"
+msgstr "最小宽度"
+
+#: public/views/dimensionsView.php:52
+msgid "Min height"
+msgstr "最小高度"
+
+#: public/views/floatingButton.php:15
+msgid "Enable"
+msgstr "启用"
+
+#: public/views/floatingButton.php:26
+msgid "Style"
+msgstr "样式"
+
+#: public/views/floatingButton.php:35
+msgid "Position"
+msgstr "位置"
+
+#: public/views/floatingButton.php:37
+msgid "Top Left"
+msgstr "左上"
+
+#: public/views/floatingButton.php:38
+msgid "Top Center"
+msgstr "顶部居中"
+
+#: public/views/floatingButton.php:39
+msgid "Top Right"
+msgstr "右上"
+
+#: public/views/floatingButton.php:44
+msgid "Right Center"
+msgstr "右侧居中"
+
+#: public/views/floatingButton.php:47
+msgid "Bottom Left"
+msgstr "左下"
+
+#: public/views/floatingButton.php:48
+msgid "Bottom Center"
+msgstr "底部居中"
+
+#: public/views/floatingButton.php:49
+msgid "Bottom Right"
+msgstr "右下"
+
+#: public/views/floatingButton.php:54
+msgid "Font size"
+msgstr "字体大小"
+
+#: public/views/floatingButton.php:60
+msgid "Position top"
+msgstr "顶部位置"
+
+#: public/views/floatingButton.php:65
+msgid "Position right"
+msgstr "右侧位置"
+
+#: public/views/floatingButton.php:70
+msgid "Border size"
+msgstr "边框大小"
+
+#: public/views/floatingButton.php:75
+#: public/views/htmlCustomButtonElement.php:71
+#: public/views/options/subscription.php:216
+msgid "Border radius"
+msgstr "边框圆角"
+
+#: public/views/floatingButton.php:80
+#: public/views/htmlCustomButtonElement.php:79
+#: public/views/options/subscription.php:176
+#: public/views/options/subscription.php:220
+msgid "Border color"
+msgstr "边框颜色"
+
+#: public/views/floatingButton.php:87
+#: public/views/htmlCustomButtonElement.php:89
+#: public/views/options/subscription.php:170
+#: public/views/options/subscription.php:234
+msgid "Background color"
+msgstr "背景颜色"
+
+#: public/views/floatingButton.php:93
+#: public/views/htmlCustomButtonElement.php:109
+#: public/views/options/subscription.php:182
+#: public/views/options/subscription.php:240
+msgid "Text color"
+msgstr "文本颜色"
+
+#: public/views/floatingButton.php:99
+#: public/views/htmlCustomButtonElement.php:131
+#: public/views/optionsView.php:66
+msgid "Text"
+msgstr "文本"
+
+#: public/views/htmlCustomButtonElement.php:32
+#: public/views/options/subscription.php:226
+msgid "Title"
+msgstr "标题"
+
+#: public/views/htmlCustomButtonElement.php:42
+msgid "Custom Button Styles"
+msgstr "自定义按钮样式"
+
+#: public/views/htmlCustomButtonElement.php:63
+#: public/views/options/subscription.php:166
+#: public/views/options/subscription.php:212
+msgid "Border width"
+msgstr "边框宽度"
+
+#: public/views/htmlCustomButtonElement.php:99
+msgid "Hover background color"
+msgstr "悬停背景颜色"
+
+#: public/views/htmlCustomButtonElement.php:121
+msgid "Button events"
+msgstr "按钮事件"
+
+#: public/views/htmlCustomButtonElement.php:137
+#: public/views/optionsView.php:70
+msgid "Close popup"
+msgstr "关闭弹窗"
+
+#: public/views/htmlCustomButtonElement.php:143
+#: public/views/optionsView.php:80
+msgid "Show alert"
+msgstr "显示提示"
+
+#: public/views/htmlCustomButtonElement.php:152
+#: public/views/optionsView.php:91
+msgid "Message"
+msgstr "消息"
+
+#: public/views/htmlCustomButtonElement.php:155
+msgid "Copied to clipboard!"
+msgstr "已复制到剪贴板！"
+
+#: public/views/htmlCustomButtonElement.php:163
+#: public/views/options/subscription.php:293
+msgid "Redirect URL"
+msgstr "重定向网址"
+
+#: public/views/htmlCustomButtonElement.php:169
+#: public/views/options/subscription.php:297
+#: public/views/optionsView.php:53
+msgid "Redirect to new tab"
+msgstr "重定向到新标签页"
+
+#: public/views/htmlCustomButtonElement.php:189
+#: public/views/jsVariableView.php:58
+#: public/views/mediaButton.php:48
+msgid "Insert"
+msgstr "插入"
+
+#: public/views/importConfigView.php:12
+msgid "File URL is missing."
+msgstr "缺少文件网址。"
+
+#: public/views/importConfigView.php:25
+msgid "Failed to retrieve valid file content from the URL."
+msgstr "无法从该网址获取有效的文件内容。"
+
+#: public/views/importConfigView.php:43
+msgid "HERE"
+msgstr "此处"
+
+#. translators: %s: link (with the text "HERE") to the plugin settings page.
+#: public/views/importConfigView.php:45
+#, php-format
+msgid "Failed to parse CSV file content. Please make sure that you put exactly the same token for both old and new sites at %s."
+msgstr "无法解析 CSV 文件内容。请确保您在新旧站点的 %s 处填写了完全相同的令牌。"
+
+#: public/views/importConfigView.php:52
+msgid "Failed to parse CSV file content."
+msgstr "无法解析 CSV 文件内容。"
+
+#: public/views/importConfigView.php:60
+msgid "Select Field"
+msgstr "选择字段"
+
+#: public/views/importConfigView.php:64
+msgid "Match Your Fields"
+msgstr "匹配您的字段"
+
+#: public/views/importConfigView.php:68
+msgid "Available fields"
+msgstr "可用字段"
+
+#: public/views/importConfigView.php:71
+msgid "Our list fields"
+msgstr "我们的列表字段"
+
+#: public/views/importPopupsView.php:19
+msgid "Import popups"
+msgstr "导入弹窗"
+
+#: public/views/jsVariableView.php:13
+msgid "Insert JS variable inside the popup"
+msgstr "在弹窗内插入 JS 变量"
+
+#: public/views/jsVariableView.php:22
+msgid "Selector"
+msgstr "选择器"
+
+#: public/views/jsVariableView.php:28
+msgid "Ex. #myselector or .myselector"
+msgstr "例如 #myselector 或 .myselector"
+
+#: public/views/jsVariableView.php:40
+msgid "Attribute"
+msgstr "属性"
+
+#: public/views/jsVariableView.php:46
+msgid "Ex. value or data-name"
+msgstr "例如 value 或 data-name"
+
+#: public/views/license.php:32
+msgid "License Key"
+msgstr "许可证密钥"
+
+#: public/views/license.php:41
+msgid "Deactivate"
+msgstr "停用"
+
+#: public/views/license.php:46
+msgid "Activate"
+msgstr "激活"
+
+#: public/views/main/image.php:9
+msgid "Please choose your picture"
+msgstr "请选择您的图片"
+
+#: public/views/mainActionButtons.php:9
+msgid "Popups"
+msgstr "弹窗"
+
+#: public/views/mainActionButtons.php:16
+#: public/views/subscribers.php:70
+msgid "Export"
+msgstr "导出"
+
+#: public/views/mainActionButtons.php:21
+#: public/views/subscribers.php:75
+#: public/views/subscribers.php:151
+msgid "Import"
+msgstr "导入"
+
+#: public/views/mainActionButtons.php:26
+msgid "Search Popup"
+msgstr "搜索弹窗"
+
+#: public/views/mainActionButtons.php:27
+msgid "GO"
+msgstr "前往"
+
+#: public/views/mediaButton.php:21
+msgid "Insert the [shortcode]"
+msgstr "插入 [shortcode]"
+
+#: public/views/newsletter.php:33
+msgid "You will receive an email notification after all emails are sent"
+msgstr "所有邮件发送完毕后，您将收到一封电子邮件通知"
+
+#: public/views/newsletter.php:34
+msgid "Test email was successfully sent"
+msgstr "测试邮件已成功发送"
+
+#: public/views/newsletter.php:37
+msgid "Newsletter settings"
+msgstr "邮件通讯设置"
+
+#: public/views/newsletter.php:42
+msgid "Choose the popup"
+msgstr "选择弹窗"
+
+#: public/views/newsletter.php:47
+msgid "Emails to send in one flow per 1 minute"
+msgstr "每 1 分钟一次流程中发送的邮件数"
+
+#: public/views/newsletter.php:51
+msgid "From email"
+msgstr "发件人邮箱"
+
+#: public/views/newsletter.php:55
+msgid "Email's subject"
+msgstr "邮件主题"
+
+#: public/views/newsletter.php:56
+msgid "Your subject here"
+msgstr "在此输入您的主题"
+
+#: public/views/newsletter.php:61
+msgid "Edit newsletter email template below"
+msgstr "在下方编辑邮件通讯模板"
+
+#: public/views/newsletter.php:89
+msgid "Send a Test"
+msgstr "发送测试"
+
+#: public/views/newsletter.php:93
+msgid "Send newsletter"
+msgstr "发送邮件通讯"
+
+#: public/views/newsletter.php:101
+msgid "Newsletter Shortcodes"
+msgstr "邮件通讯短代码"
+
+#: public/views/newsletter.php:103
+msgid "Default shortcodes"
+msgstr "默认短代码"
+
+#: public/views/newsletter.php:105
+msgid "Subscriber First name"
+msgstr "订阅者名字"
+
+#: public/views/newsletter.php:106
+msgid "Subscriber Last name"
+msgstr "订阅者姓氏"
+
+#: public/views/newsletter.php:107
+msgid "Your blog name"
+msgstr "您的博客名称"
+
+#: public/views/newsletter.php:108
+msgid "Your user name"
+msgstr "您的用户名"
+
+#: public/views/newsletter.php:113
+msgid "Custom fields' shortcodes"
+msgstr "自定义字段短代码"
+
+#: public/views/options/facebook.php:17
+msgid "Layout"
+msgstr "布局"
+
+#: public/views/options/facebook.php:21
+msgid "Don't show share button"
+msgstr "不显示分享按钮"
+
+#: public/views/options/subscription.php:40
+msgid "Form background options"
+msgstr "表单背景选项"
+
+#: public/views/options/subscription.php:44
+msgid "Form background color"
+msgstr "表单背景颜色"
+
+#: public/views/options/subscription.php:52
+msgid "Form background opacity"
+msgstr "表单背景不透明度"
+
+#: public/views/options/subscription.php:64
+msgid "Form padding"
+msgstr "表单内边距"
+
+#: public/views/options/subscription.php:71
+msgid "Email placeholder"
+msgstr "电子邮件占位符"
+
+#: public/views/options/subscription.php:75
+msgid "Enable GDPR"
+msgstr "启用 GDPR"
+
+#: public/views/options/subscription.php:86
+msgid "Label"
+msgstr "标签"
+
+#: public/views/options/subscription.php:90
+msgid "Confirmation text"
+msgstr "确认文本"
+
+#: public/views/options/subscription.php:106
+#: public/views/options/subscription.php:132
+msgid "Placeholder"
+msgstr "占位符"
+
+#: public/views/options/subscription.php:110
+#: public/views/options/subscription.php:136
+msgid "Required field"
+msgstr "必填字段"
+
+#: public/views/options/subscription.php:147
+msgid "Required field message"
+msgstr "必填字段消息"
+
+#: public/views/options/subscription.php:152
+msgid "Inputs' style"
+msgstr "输入框样式"
+
+#: public/views/options/subscription.php:188
+msgid "Placeholder color"
+msgstr "占位符颜色"
+
+#: public/views/options/subscription.php:198
+msgid "Submit button styles"
+msgstr "提交按钮样式"
+
+#: public/views/options/subscription.php:230
+msgid "Title (in progress)"
+msgstr "标题（进行中）"
+
+#: public/views/options/subscription.php:248
+msgid "Error message"
+msgstr "错误消息"
+
+#: public/views/options/subscription.php:252
+msgid "Invalid email message"
+msgstr "无效电子邮件消息"
+
+#: public/views/options/subscription.php:256
+msgid "Show form on the Top"
+msgstr "在顶部显示表单"
+
+#: public/views/options/subscription.php:266
+msgid "Hide for already subscribed users"
+msgstr "对已订阅用户隐藏"
+
+#: public/views/options/subscription.php:276
+msgid "After successful subscription"
+msgstr "成功订阅后"
+
+#: public/views/options/subscription.php:317
+msgid "Eye icon"
+msgstr "眼睛图标"
+
+#: public/views/options/subscription.php:318
+msgid "Live Preview"
+msgstr "实时预览"
+
+#. translators: POPUP SUBSCRIPTION URL
+#: public/views/options/subscription.php:332
+#, php-format
+msgid "Get the <a href=\"%s\">Subscription Plus</a> extension to add or customize the form fields."
+msgstr "获取 <a href=\"%s\">Subscription Plus</a> 扩展以添加或自定义表单字段。"
+
+#: public/views/optionsView.php:33
+msgid "Action on popup content click"
+msgstr "点击弹窗内容时的操作"
+
+#: public/views/optionsView.php:100
+msgid "Popup showing limitation"
+msgstr "弹窗显示限制"
+
+#: public/views/optionsView.php:111
+msgid "Estimate the popup showing frequency to the same user."
+msgstr "估算向同一用户显示弹窗的频率。"
+
+#: public/views/optionsView.php:118
+msgid "Popup showing count"
+msgstr "弹窗显示次数"
+
+#: public/views/optionsView.php:123
+msgid "Select how many times the popup will be shown for the same user."
+msgstr "选择向同一用户显示弹窗的次数。"
+
+#: public/views/optionsView.php:128
+msgid "Popup showing expiry"
+msgstr "弹窗显示有效期"
+
+#: public/views/optionsView.php:133
+msgid "Select the count of the days after which the popup will be shown to the same user, or set the value \"0\" if you want to save cookies by session."
+msgstr "选择多少天后弹窗将再次向同一用户显示，或设置值为 “0” 以按会话保存 Cookie。"
+
+#: public/views/optionsView.php:138
+msgid "Apply option on each page"
+msgstr "在每个页面上应用此选项"
+
+#: public/views/optionsView.php:146
+msgid "If this option is checked the popup showing limitation will be saved for the current page. Otherwise, the limitation will refer site wide, and the popup will be shown for specific times on each page selected.The previously specified count of days will be reset every time you check/uncheck this option."
+msgstr "如果勾选此选项，弹窗显示限制将针对当前页面保存。否则，限制将适用于整个站点，弹窗将在每个选定页面上按特定次数显示。每次勾选/取消勾选此选项时，之前指定的天数将被重置。"
+
+#: public/views/optionsView.php:155
+msgid "Popup opening sound"
+msgstr "弹窗打开声音"
+
+#: public/views/optionsView.php:167
+msgid "If this option is enabled the popup will appear with a sound. The sound option is not available on mobile devices, as there are restrictions on sound auto-play options for mobile devices."
+msgstr "如果启用此选项，弹窗将伴随声音出现。由于移动设备对声音自动播放选项有限制，因此声音选项在移动设备上不可用。"
+
+#: public/views/optionsView.php:184
+msgid "Popup opening animation"
+msgstr "弹窗打开动画"
+
+#: public/views/optionsView.php:202
+#: public/views/optionsView.php:233
+msgid "Speed"
+msgstr "速度"
+
+#: public/views/optionsView.php:208
+#: public/views/optionsView.php:239
+msgid "Second(s)"
+msgstr "秒"
+
+#: public/views/optionsView.php:215
+msgid "Popup closing animation"
+msgstr "弹窗关闭动画"
+
+#: public/views/optionsView.php:245
+msgid "Popup location"
+msgstr "弹窗位置"
+
+#: public/views/optionsView.php:272
+msgid "Disable page scrolling"
+msgstr "禁止页面滚动"
+
+#: public/views/optionsView.php:283
+msgid "If this option is checked, the page won't scroll until the popup is open."
+msgstr "如果勾选此选项，在弹窗打开之前页面将不会滚动。"
+
+#: public/views/optionsView.php:290
+msgid "Enable content scrolling"
+msgstr "启用内容滚动"
+
+#: public/views/optionsView.php:301
+msgid "If the content is larger than the specified dimensions, then the content will be scrollable."
+msgstr "如果内容大于指定尺寸，则内容将可滚动。"
+
+#: public/views/optionsView.php:309
+msgid "Reopen after form submission"
+msgstr "表单提交后重新打开"
+
+#: public/views/optionsView.php:320
+msgid "If this option is enabled, the popup will reopen after the form submission."
+msgstr "如果启用此选项，弹窗将在表单提交后重新打开。"
+
+#: public/views/optionsView.php:327
+msgid "Popup order"
+msgstr "弹窗顺序"
+
+#: public/views/optionsView.php:332
+msgid "Select the priority number for your popup to appear on the page, along with other popups. The popup with a higher-order number will be behind the others with a lower-order number."
+msgstr "选择您的弹窗与其他弹窗一起出现在页面上的优先级编号。顺序编号较高的弹窗将位于顺序编号较低的弹窗之后。"
+
+#: public/views/optionsView.php:339
+msgid "Custom event delay"
+msgstr "自定义事件延迟"
+
+#: public/views/optionsView.php:344
+msgid ""
+"You can add an opening delay for the popup, in seconds. This will refer to custom events, like:\r\n"
+"\t\t\t\t\t\t\t\t\t\tShortcodes, custom CSS classes, HTML attributes, or JS called custom events."
+msgstr "您可以为弹窗添加打开延迟（以秒为单位）。这将适用于自定义事件，例如：\n\t\t\t\t\t\t\t\t\t\t短代码、自定义 CSS 类、HTML 属性或 JS 调用的自定义事件。"
+
+#: public/views/otherConditionsView.php:20
+msgid "Schedule"
+msgstr "排期"
+
+#: public/views/otherConditionsView.php:31
+msgid "Show popup in date range"
+msgstr "在日期范围内显示弹窗"
+
+#: public/views/popupDesignView.php:23
+msgid "Force RTL"
+msgstr "强制 RTL"
+
+#: public/views/popupDesignView.php:36
+msgid "Padding"
+msgstr "内边距"
+
+#: public/views/popupDesignView.php:42
+msgid "Add some space, in pixels, around your popup content."
+msgstr "在弹窗内容周围添加一些空间（以像素为单位）。"
+
+#: public/views/popupDesignView.php:49
+msgid "Popup z-index"
+msgstr "弹窗 z-index"
+
+#: public/views/popupDesignView.php:54
+msgid "Increase or dicrease the value to set the priority of displaying the popup content in comparison of other elements on the page. The highest value of z-index is 2147483647."
+msgstr "增大或减小该值以设置弹窗内容相对于页面上其他元素的显示优先级。z-index 的最大值为 2147483647。"
+
+#: public/views/popupDesignView.php:61
+msgid "Themes"
+msgstr "主题"
+
+#: public/views/popupDesignView.php:65
+msgid "Disable popup border"
+msgstr "禁用弹窗边框"
+
+#: public/views/popupDesignView.php:78
+#: public/views/popupDesignView.php:101
+msgid "Enable popup overlay"
+msgstr "启用弹窗遮罩层"
+
+#: public/views/popupDesignView.php:89
+#: public/views/popupDesignView.php:112
+msgid "If this option is checked, the popup will appear with an overlay."
+msgstr "如果勾选此选项，弹窗将伴随遮罩层出现。"
+
+#: public/views/popupDesignView.php:120
+msgid "Overlay custom css class"
+msgstr "遮罩层自定义 css 类"
+
+#: public/views/popupDesignView.php:125
+msgid "Add a custom class to the overlay for additional customization."
+msgstr "为遮罩层添加自定义类以实现额外定制。"
+
+#: public/views/popupDesignView.php:130
+msgid "Change color"
+msgstr "更改颜色"
+
+#: public/views/popupDesignView.php:137
+#: public/views/popupDesignView.php:183
+msgid "Opacity"
+msgstr "不透明度"
+
+#: public/views/popupDesignView.php:153
+msgid "Content custom css class"
+msgstr "内容自定义 css 类"
+
+#: public/views/popupDesignView.php:158
+msgid "Add a custom class to the content for additional customization"
+msgstr "为内容添加自定义类以实现额外定制"
+
+#: public/views/popupDesignView.php:164
+msgid "Background settings"
+msgstr "背景设置"
+
+#: public/views/popupDesignView.php:177
+msgid "Color"
+msgstr "颜色"
+
+#: public/views/popupDesignView.php:205
+msgid "Cloud icon"
+msgstr "云图标"
+
+#: public/views/popupDesignView.php:208
+msgid "Recycle Bin"
+msgstr "回收站"
+
+#: public/views/popupDesignView.php:217
+msgid "No Image"
+msgstr "无图片"
+
+#: public/views/popupDesignView.php:225
+msgid "Mode"
+msgstr "模式"
+
+#: public/views/popupDesignView.php:230
+msgid "Choose how the background image will be displayed with your content"
+msgstr "选择背景图片与您的内容的显示方式"
+
+#: public/views/popupOpeningCounter.php:13
+msgid "Disable popup counting"
+msgstr "禁用弹窗计数"
+
+#: public/views/popupOpeningCounter.php:27
+msgid "Reset"
+msgstr "重置"
+
+#: public/views/popupTypes.php:23
+msgid "Get More Extensions"
+msgstr "获取更多扩展"
+
+#: public/views/popupTypes.php:47
+msgid "More Ideas?"
+msgstr "更多想法？"
+
+#: public/views/popupTypes.php:53
+msgid "Pro Extensions"
+msgstr "Pro 扩展"
+
+#: public/views/settings.php:59
+msgid "General Settings"
+msgstr "常规设置"
+
+#: public/views/settings.php:63
+msgid "Enable DEBUG MODE"
+msgstr "启用调试模式"
+
+#: public/views/settings.php:73
+msgid "Disable CUSTOM JS feature"
+msgstr "禁用自定义 JS 功能"
+
+#: public/views/settings.php:83
+msgid "Delete popup data"
+msgstr "删除弹窗数据"
+
+#: public/views/settings.php:94
+msgid "All the popup data will be deleted after removing the plugin if this option is checked."
+msgstr "如果勾选此选项，移除插件后所有弹窗数据将被删除。"
+
+#: public/views/settings.php:100
+msgid "Disable popup analytics"
+msgstr "禁用弹窗分析"
+
+#: public/views/settings.php:110
+msgid "User role to access the plugin"
+msgstr "可访问插件的用户角色"
+
+#: public/views/settings.php:115
+msgid "In spite of user roles the administrator always has access to the plugin."
+msgstr "无论用户角色如何，管理员始终拥有插件的访问权限。"
+
+#: public/views/settings.php:120
+msgid "Disable The Enctyption Data For Import/Export of Subscribers"
+msgstr "禁用订阅者导入/导出的加密数据"
+
+#: public/views/settings.php:130
+msgid "Token to Import/Export"
+msgstr "导入/导出令牌"
+
+#: public/views/settings.php:137
+msgid "Use this token in both your old and new site to move your data."
+msgstr "在您的新旧站点中使用此令牌来迁移您的数据。"
+
+#: public/views/settings.php:142
+msgid "Save Changes"
+msgstr "保存更改"
+
+#: public/views/settings.php:146
+msgid "Debug tools"
+msgstr "调试工具"
+
+#: public/views/settings.php:148
+msgid "System information"
+msgstr "系统信息"
+
+#: public/views/settings.php:153
+msgid "Download"
+msgstr "下载"
+
+#: public/views/subscribers.php:21
+#: public/views/subscribers.php:131
+msgid "Select subscription(s):"
+msgstr "选择订阅："
+
+#: public/views/subscribers.php:47
+msgid "Subscribers"
+msgstr "订阅者"
+
+#: public/views/subscribers.php:66
+msgid "Add new"
+msgstr "添加新项"
+
+#: public/views/subscribers.php:82
+msgid "Search Subscriber"
+msgstr "搜索订阅者"
+
+#: public/views/subscribers.php:83
+msgid "GO!"
+msgstr "前往！"
+
+#: public/views/subscribers.php:95
+msgid "Add New Subscribers"
+msgstr "添加新订阅者"
+
+#: public/views/subscribers.php:99
+msgid "Error occurred: could not add subscriber."
+msgstr "发生错误：无法添加订阅者。"
+
+#: public/views/subscribers.php:109
+msgid "Subscription is not selected"
+msgstr "未选择订阅"
+
+#: public/views/subscribers.php:113
+msgid "Invalid email address"
+msgstr "无效的电子邮件地址"
+
+#: public/views/subscribers.php:122
+msgid "Add to list"
+msgstr "添加到列表"
+
+#: public/views/subscribers.php:127
+msgid "Import Subscribers"
+msgstr "导入订阅者"
+
+#: public/views/subscribers.php:137
+msgid "Import Subscribers from csv file:"
+msgstr "从 csv 文件导入订阅者："
+
+#: public/views/subscribers.php:145
+msgid "Select file"
+msgstr "选择文件"
+
+#: public/views/unsubscribeLinkRequestForm.php:22
+msgid "Request New Unsubscribe Link"
+msgstr "请求新的退订链接"
+
+#: public/views/unsubscribeLinkRequestForm.php:105
+msgid "Your link has expired"
+msgstr "您的链接已过期"
+
+#: public/views/unsubscribeLinkRequestForm.php:106
+msgid "Enter your email to receive a new unsubscribe link."
+msgstr "输入您的电子邮件以接收新的退订链接。"
+
+#: public/views/unsubscribeLinkRequestForm.php:111
+msgid "A new unsubscribe link has been sent to your email address."
+msgstr "新的退订链接已发送到您的电子邮件地址。"
+
+#: public/views/unsubscribeLinkRequestForm.php:115
+msgid "An error occurred. Please try again or contact the administrator."
+msgstr "发生错误。请重试或联系管理员。"
+
+#: public/views/unsubscribeLinkRequestForm.php:119
+msgid "Email address not found in our subscription list."
+msgstr "在我们的订阅列表中未找到该电子邮件地址。"
+
+#: public/views/unsubscribeLinkRequestForm.php:130
+msgid "Email Address"
+msgstr "电子邮件地址"
+
+#: public/views/unsubscribeLinkRequestForm.php:131
+msgid "your@email.com"
+msgstr "your@email.com"
+
+#: public/views/unsubscribeLinkRequestForm.php:133
+msgid "Send New Unsubscribe Link"
+msgstr "发送新的退订链接"
+
+#: public/views/unsubscribeLinkRequestForm.php:138
+msgid "Return to homepage"
+msgstr "返回首页"
+

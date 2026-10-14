@@ -1,0 +1,1050 @@
+<?php
+/*
+ Plugin Name: Workbox Careers Plugin (Greenhouse Integration)
+ Author: Artemy Kudryavtsev (Workbox Inc.)
+ Version: 1.0
+ Description: Careers Manager.
+*/
+
+
+class WorkboxJobsGreenhouse {
+	private $options;
+
+	public function __construct()    {
+		register_activation_hook(__FILE__, array($this, 'activate'));
+		register_deactivation_hook(__FILE__, array($this, 'deactivate'));
+
+		add_action('init', array($this, 'registerNewPostsTypes'));
+		add_filter('save_post_jobs', array($this, 'saveJob'));
+
+        add_shortcode('workbox_jobs', array($this, 'doShortCodeGreenHouse'));
+		//add_shortcode('workbox_jobs', array($this, 'doShortCode'));
+		//add_shortcode('workbox_jobs_widget', array($this, 'doShortCodeWidget'));
+
+		add_filter( 'manage_jobs_posts_columns', array($this, 'managePostColumns') );
+		add_filter( 'manage_jobs_posts_custom_column', array($this, 'showCustomPostColumns'), 10, 2 );
+
+		add_action( 'pre_get_posts', array($this, 'doRebuildQueryParams'));
+
+		add_filter('getJobsCategories', array($this, 'getCategories'));
+		add_filter('getJobsPageID', array($this, 'getJobsPageID'));
+		add_filter('getJobsCategoryURL', array($this, 'getJobsCategoryURL'));
+
+
+		add_action( 'admin_menu', array( $this, 'add_plugin_page' ) );
+		add_action( 'admin_init', array( $this, 'page_init' ) );
+
+		$this->options = get_option( 'wb_harvest_board_token' );
+
+		add_action('init', array($this, 'importData'));
+
+		//add_filter('get_careers_bg', array($this, 'updateBG'));
+		add_filter('get_careers_back_link', array($this, 'getBackLink'));
+		add_filter('get_careers_next_link', array($this, 'getNextLink'));
+
+		add_action('show_harvest_form', array($this, 'doHarvestForm'));
+		add_action('wp', array($this, 'doCheckApplicationSend'));
+
+		add_filter('get_parent_post_id', array($this, 'getCareersPagePostID'));
+	}
+
+	private function getShortcodePage() {
+		global $wpdb;
+		$sql = 'SELECT ID FROM ' . $wpdb->posts . ' WHERE post_type = "page" AND post_status="publish" AND post_content LIKE "%[workbox_jobs]%"';
+		$id = $wpdb->get_var($sql);
+		$page = get_post($id);
+		return $page;
+	}
+
+	public function getCareersPagePostID($post_id) {
+		global $post;
+		if (isset($post->post_type) && $post->post_type == 'jobs') {
+			$p = $this->getShortcodePage();
+			if (isset($p->ID))
+				return $p->ID;
+		}
+
+		return $post_id;
+	}
+
+	public function doCheckApplicationSend() {
+	    $nonce = isset($_POST['_wpnonce'])?$_POST['_wpnonce']:'';
+	    $job_id = isset($_POST['id'])?$_POST['id']:'';
+        $verify_id = isset($_POST['verify_id'])?$_POST['verify_id']:'';
+
+	    if (wp_verify_nonce($nonce, 'application_submit') && $job_id && md5('details'.$job_id) == $verify_id) {
+            $data = array();
+            $exclude_fields = array(
+                '_wpnonce', 'id', 'verify_id', '_wp_http_referer'
+            );
+
+            foreach ($_POST as $k=>$item) {
+                if (!in_array($k, $exclude_fields)) {
+                    $new_key = $k;
+                    $data[$new_key] = $item;
+                }
+            }
+
+            if (isset($_FILES['resume']) && $_FILES['resume']['error'] == 0) {
+                $filedata = file_get_contents($_FILES['resume']['tmp_name']);
+                $file_name = $_FILES['resume']['name'];
+
+                $data['resume_content'] = base64_encode($filedata);
+                $data['resume_content_filename'] = $file_name;
+            }
+
+            if (isset($_FILES['cover_letter']) && $_FILES['cover_letter']['error'] == 0) {
+                $filedata = file_get_contents($_FILES['cover_letter']['tmp_name']);
+                $file_name = $_FILES['cover_letter']['name'];
+
+                $data['cover_letter_content'] = base64_encode($filedata);
+                $data['cover_letter_content_filename'] = $file_name;
+            }
+
+            // get auth headers
+            $url = 'https://harvest.greenhouse.io/v1/';
+
+            $ch = curl_init();
+            curl_setopt( $ch, CURLOPT_URL, $url );
+            curl_setopt( $ch, CURLOPT_HTTPAUTH, CURLAUTH_BASIC );
+            curl_setopt( $ch, CURLOPT_USERPWD, "146535141599bb2c1b328ef84805d7d8-4" );
+            curl_setopt( $ch, CURLOPT_RETURNTRANSFER, true );
+            curl_setopt( $ch, CURLOPT_HEADER, true);
+            curl_setopt( $ch, CURLINFO_HEADER_OUT, true );
+
+            $x = curl_exec( $ch );
+
+            $outHeaders = explode("\n", curl_getinfo($ch, CURLINFO_HEADER_OUT));
+            $outHeaders = array_filter($outHeaders, function($value) { return $value !== '' && $value !== ' ' && strlen($value) != 1; });
+
+            $auth_headers = array('Content-Type: application/json');
+            foreach ( $outHeaders as $out_header ) {
+                if (preg_match('/Authorization: Basic .*?/ims', $out_header))
+                    $auth_headers[] = $out_header;
+            }
+
+            // send data
+            $request_url = 'https://boards-api.greenhouse.io/v1/boards/'.$this->options['wb_harvest_board_token'].'/jobs/'.$job_id ;
+
+            $appData = json_encode($data);
+            /*var_dump($request_url );
+            die();
+            $to      = 'vladimir@workbox.com';
+            $subject = 'the subject';
+            $message = 'hello';
+            $headers = 'From: webmaster@example.com' . "\r\n" .
+                'Reply-To: webmaster@example.com' . "\r\n" .
+                'X-Mailer: PHP/' . phpversion();
+
+            mail($to, $subject, $appData, $headers);*/
+            $ch = curl_init();
+            curl_setopt( $ch, CURLOPT_URL, $request_url);
+            curl_setopt( $ch, CURLOPT_RETURNTRANSFER, true );
+            curl_setopt( $ch, CURLINFO_HEADER_OUT, true );
+
+            curl_setopt($ch, CURLOPT_HTTPHEADER, $auth_headers);
+            curl_setopt($ch, CURLOPT_POST, true);
+            curl_setopt($ch, CURLOPT_POSTFIELDS, $appData);
+            curl_setopt($ch, CURLOPT_TIMEOUT, 10);
+            curl_setopt($ch, CURLOPT_VERBOSE, true);
+
+            $x = curl_exec( $ch );
+            $info = curl_getinfo( $ch );
+
+            $list = json_decode($x);
+
+            if (isset($info['http_code']) && $info['http_code'] == 200) {
+                $url = isset($_POST['_wp_http_referer'])?$_POST['_wp_http_referer']:'';
+                $url = preg_replace('/\?candidate_saved=yes/ims', '', $url);
+                $url = preg_replace('/#app/ims', '', $url);
+                wp_redirect($url.'?candidate_saved=yes#app');
+                die();
+            } else {
+                if (isset($list->status) && isset($list->error)) {
+                    $GLOBALS['greenhouse_error'] = $list->error;
+                }
+            }
+        }
+    }
+
+
+	public function doHarvestForm() {
+	    global $post;
+
+	    $details = get_post_meta($post->ID, '_job_full_details', true);
+	    //__d($details);
+	    if ($details) {
+            ?>
+            <a name="app"></a>
+            <?php
+                if (isset($GLOBALS['greenhouse_error'])) {
+                    $GLOBALS['greenhouse_error'] = preg_replace('/first_name/', 'First Name', $GLOBALS['greenhouse_error']);
+                    $GLOBALS['greenhouse_error'] = preg_replace('/last_name/', 'Last Name', $GLOBALS['greenhouse_error']);
+                    $GLOBALS['greenhouse_error'] = preg_replace('/,/', ', ', $GLOBALS['greenhouse_error']);
+                    ?>
+                    <br><br>
+                    <h1>Error: <?php echo $GLOBALS['greenhouse_error']; ?></h1>
+                    <?php
+                }
+
+                if (isset($_GET['candidate_saved'])) {
+                    ?>
+                    <br><br>
+                    <h1>Application Saved Successfully</h1>
+                    <?php
+
+                    return;
+                }
+            ?>
+            <style>
+                .errorClass {
+                    border-color: red;
+                }
+            </style>
+            <script>
+
+                function doCheckApplicationForm() {
+                    var aControls = false;
+                    var aErrors = new Array();
+                    var oEl = false;
+
+                    var last_paired_checked = '';
+
+                    aControls = jQuery("#application_form .required_field");
+                    if (aControls.length > 0) {
+                        for (var i = 0; i<aControls.length; i++) {
+                            oEl = aControls[i];
+                            is_paired = jQuery(oEl).hasClass('paired');
+
+                            if (is_paired) {
+                                paired_id = jQuery(oEl).attr('data-paired');
+
+                                aPaired = jQuery(".paired_" + paired_id);
+                                var filled_flag = false;
+                                for (var j = 0; j<aPaired.length; j++) {
+                                    if (jQuery(aPaired[j]).val() != '')
+                                        filled_flag = true;
+                                }
+
+                                if (!filled_flag && paired_id != last_paired_checked) {
+                                    jQuery(oEl).addClass('errorClass');
+                                    aErrors[aErrors.length] = ' - ' + jQuery(oEl).attr('data-title');
+                                } else {
+                                    jQuery(oEl).removeClass('errorClass');
+                                }
+
+                                last_paired_checked = paired_id;
+                            } else {
+                                if (jQuery(oEl).val() == '') {
+                                    jQuery(oEl).addClass('errorClass');
+                                    aErrors[aErrors.length] = ' - ' + jQuery(oEl).attr('data-title');
+                                } else {
+                                    jQuery(oEl).removeClass('errorClass');
+                                }
+                            }
+                        }
+
+                        if (aErrors.length) {
+                            alert('Please fill the folowing fields:\n' + aErrors.join ( ', \n' ));
+                            return false;
+                        }
+                    }
+                    return true;
+                }
+            </script>
+            <h2>Apply for this Job</h2>
+            <p><span style="color: red">*</span> - required fields</p>
+            <form name="application_form" method="post" id="application_form" enctype="multipart/form-data" onsubmit="return doCheckApplicationForm(this);">
+                <input type="hidden" name="id" value="<?php echo $details->id; ?>" />
+                <input type="hidden" name="verify_id" value="<?php echo md5('details'.$details->id); ?>" />
+            <?php
+                wp_nonce_field('application_submit');
+            foreach ($details->questions as $question) {
+                $this->_showQuestion($question);
+            }
+
+            if (isset($details->demographic_questions) && is_array($details->demographic_questions) && sizeof($details->demographic_questions) > 0) {
+                echo '<hr>';
+                foreach ($details->demographic_questions as $question) {
+                    $this->_showQuestion($question);
+                }
+            }
+
+            if (isset($details->location_questions) && is_array($details->location_questions) && sizeof($details->location_questions) > 0) {
+                echo '<hr>';
+                foreach ($details->location_questions as $question) {
+                    $this->_showQuestion($question);
+                }
+            }
+
+            if (isset($details->compliance) && is_array($details->compliance)) {
+                echo '<hr>';
+                foreach ($details->compliance as $comp) {
+                    echo html_entity_decode($comp->description);
+                    foreach ($comp->questions as $question) {
+                        $this->_showQuestion($question);
+                    }
+                }
+            }
+
+            ?>
+                <input type="submit" value="Submit Application" class="btn btn-primary btn-lg waves-effect waves-light">
+            </form>
+            <br><br>
+            <?php
+        }
+    }
+
+    private function _showQuestion($question) {
+	    switch ($question->label) {
+            case 'Resume/CV':
+            case 'Cover Letter':
+                echo '<div id="'.md5($question->label).'">';
+                echo '<label><b>'.$question->label.'</b> '.($question->required?'<span style="color: red">*</span>':'').'</label>';
+                if (isset($question->description) && $question->description) {
+                    echo '<p>'.$question->description.'</p>';
+                }
+                echo '<div>
+                    <script>
+                        function switch'.md5($question->label).'(key) {
+                            jQuery(".'.md5($question->label).'_switch").hide();
+                            jQuery("#'.md5($question->label).'_" + key).show();
+                            return false;
+                        }
+                    </script>
+                    <a href="" onclick="return switch'.md5($question->label).'(0)" class="button">Attach File</a> or 
+                    <a href="" onclick="return switch'.md5($question->label).'(1)" class="button">Paste</a>';
+                    foreach ($question->fields as $k=>$field) {
+                        echo '<div style="display: none; padding-top: 10px;" id="'.md5($question->label).'_'.$k.'" class="switcher '.md5($question->label).'_switch">';
+                        $this->_doShowField($field, $question, md5($question->label));
+                        echo '</div>';
+                    }
+                echo '</div>
+                    <br>
+                </div>';
+                break;
+
+            default:
+                echo '<div id="'.md5($question->label).'">';
+                echo '<label><b>'.$question->label.'</b> '.($question->required?'<span style="color: red">*</span>':'').'</label>';
+                if (isset($question->description) && $question->description) {
+                    echo '<p>'.$question->description.'</p>';
+                }
+                echo '<div>';
+                foreach ($question->fields as $field) {
+                    echo $this->_doShowField($field, $question);
+                }
+                echo '</div>
+                    <br>
+                </div>';
+                break;
+        }
+    }
+
+    private function _doShowField($item, $question, $paired_class = '') {
+        $is_required = $question->required;
+
+        $aClasses = array();
+        if ($is_required)
+            $aClasses[] = 'required_field';
+        if ($paired_class != '') {
+            $aClasses[] = 'paired';
+            $aClasses[] = 'paired_'.$paired_class;
+        }
+
+        switch ($item->type) {
+            case "input_hidden":
+                echo '<input type="hidden" value="'.(isset($item->values[0])?$item->values[0]:'').'"name="'.$item->name.'" data-title="'.esc_attr($question->label).'">';
+                break;
+            case "input_text":
+                echo '<input type="text" value="" name="'.$item->name.'" data-paired="'.$paired_class.'"  class="'.implode(' ', $aClasses).'" data-title="'.esc_attr($question->label).'">';
+                break;
+            case "input_file":
+                echo '<input type="file" value="" name="'.$item->name.'" data-paired="'.$paired_class.'"  class="'.implode(' ', $aClasses).'" data-title="'.esc_attr($question->label).'">';
+                break;
+            case "textarea":
+                echo '<textarea name="'.$item->name.'" data-paired="'.$paired_class.'"  class="'.implode(' ', $aClasses).'" data-title="'.esc_attr($question->label).'"></textarea>';
+                break;
+            case "multi_value_single_select":
+                echo '<select name="'.$item->name.'" data-paired="'.$paired_class.'"  class="'.implode(' ', $aClasses).'" data-title="'.esc_attr($question->label).'">';
+                if ($is_required)
+                    echo '<option value="">Please select</option>';
+                else
+                    echo '<option value="">--</option>';
+
+                foreach ($item->values as $value) {
+                    echo '<option value="'.esc_attr($value->value).'">'.$value->label.'</option>';
+                }
+
+                echo '</select>';
+                break;
+            case "multi_value_multi_select":
+                foreach ($item->values as $value) {
+                    echo '<label><input type="checkbox" name="'.$item->name.'[]" value="'.esc_attr($value->value).'"> '.$value->label.'</label>';
+                }
+
+                echo '</select>';
+                break;
+            default:
+                echo 'Unknown field type: '.$item->type;
+                break;
+        }
+    }
+
+	public function getBackLink($link) {
+        $jobs_page = $this->getJobsPageID();
+        if ($jobs_page) {
+            $link = get_permalink($jobs_page);
+        }
+
+        return $link;
+    }
+
+    public function getNextLink($link) {
+	    global $post;
+
+        $list = new WP_Query( array(
+            'post_type'   => 'jobs',
+            'post_status' => 'publish',
+            'meta_key'=>'_department',
+            'nopaging'    => true,
+            'orderby' => array( 'meta_value' => 'ASC', 'title' => 'ASC' ),
+        ) );
+
+        if ($list->have_posts()) {
+            foreach ($list->posts as $k=>$item) {
+                if ($item->ID == $post->ID) {
+                    if (isset($list->posts[$k+1]))
+                        $link = get_permalink($list->posts[$k+1]->ID);
+                    else
+                        $link = get_permalink($list->posts[0]->ID);
+                }
+            }
+        }
+
+
+        return $link;
+    }
+
+	public function updateBG($bg) {
+	    $jobs_page = $this->getJobsPageID();
+	    if ($jobs_page) {
+	        $bg = wp_get_attachment_url( get_post_thumbnail_id($jobs_page) );
+        }
+	    return $bg;
+    }
+
+	public function importData() {
+	    global $wpdb;
+	    $last_ts = get_option('wb_harvest_api_last_update');
+	    if (!$last_ts)
+	        $last_ts = 0;
+
+	    $is_in_update = get_transient('wb_harvest_refresh_process');
+		//$is_in_update = false;
+
+	    if (($this->options['wb_harvest_timeout'] * 60 + $last_ts) < time() && !$is_in_update) {
+            set_transient('wb_harvest_refresh_process', 1, 120);
+	        // time to renew data
+		    $ch = curl_init();
+		    curl_setopt( $ch, CURLOPT_URL, 'https://boards-api.greenhouse.io/v1/boards/'.$this->options['wb_harvest_board_token'].'/jobs?content=true' );
+
+		    curl_setopt( $ch, CURLOPT_RETURNTRANSFER, true );
+		    curl_setopt( $ch, CURLINFO_HEADER_OUT, true );
+
+		    $x = @curl_exec( $ch );
+		    $list = @json_decode($x);
+
+
+		    if (isset($_GET['artem_debug_jobs'])) {
+		        __d('https://boards-api.greenhouse.io/v1/boards/'.$this->options['wb_harvest_board_token'].'/jobs?content=true');
+		        __d($list);
+            }
+
+		    if (isset($list->jobs) && is_array($list->jobs)) {
+		        $uid = md5(time());
+		        // add jobs
+		        foreach ($list->jobs as $job) {
+                    // check if exists
+                    $job_id = $job->internal_job_id;
+                    $orig_job_id = $job->id;
+
+			        $aPostData = array(
+				        'post_content'=>isset($job->content)?html_entity_decode($job->content):'',
+				        'post_title'=>$job->title,
+				        'post_status'=>'publish',
+				        'post_type'=>'jobs',
+			        );
+
+			        $check_result = $wpdb->get_row( "select post_id from ".$wpdb->postmeta." where meta_key = '_job_id_new' and meta_value='".$job_id."'" );
+
+                    if (isset($_GET['artem_debug_jobs'])) {
+                        echo '<h1>JOB-----------------------------------------------------------------</h1>';
+                        echo 'Check result<br>';
+                        __d($check_result);
+                    }
+
+			        if ($check_result) {
+				        $aPostData['ID'] = $check_result->post_id;
+				        $post_id = wp_update_post($aPostData);
+			        } else {
+				        $post_id = wp_insert_post($aPostData);
+			        }
+
+			        $aMetas = array(
+				        '_job_refresh_uid'=>$uid,
+				        '_job_id_new'=>$job_id,
+				        '_orig_job_id'=>$orig_job_id,
+				        '_department'=>(isset($job->departments[0]))?$job->departments[0]->name:'department unknown',
+				        '_location'=>(isset($job->location->name))?$job->location->name:'location unknown',
+                        '_apply_url'=>$job->absolute_url
+			        );
+
+                    if (isset($_GET['artem_debug_jobs'])) {
+                        echo 'POST ID<br>';
+                        __d($post_id);
+                        echo 'METAS<br>';
+                        __d($aMetas);
+                    }
+
+			        if (!is_wp_error($post_id)) {
+				        foreach ($aMetas as $key=>$value) {
+					        update_post_meta($post_id, $key, $value);
+				        }
+
+
+                        $url = 'https://boards-api.greenhouse.io/v1/boards/'.$this->options['wb_harvest_board_token'].'/jobs/'.$orig_job_id.'?questions=true';
+
+                        $ch = curl_init();
+                        curl_setopt( $ch, CURLOPT_URL, $url );
+                        curl_setopt( $ch, CURLOPT_RETURNTRANSFER, true );
+                        curl_setopt( $ch, CURLINFO_HEADER_OUT, true );
+
+                        $x = @curl_exec( $ch );
+                        $list = @json_decode($x);
+
+                        if (isset($list->id)) {
+                            update_post_meta($post_id, '_job_full_details', $list);
+                        }
+			        }
+                }
+
+                // remove old jobs
+			    $records = new WP_Query(
+				    array(
+					    'post_type'=>'jobs',
+					    'nopaging'=>true,
+					    'meta_query'=>array(
+						    array(
+							    'key'=>'_job_refresh_uid',
+							    'value'=>$uid,
+							    'compare'=>'!='
+						    )
+					    )
+				    )
+			    );
+
+                if (isset($_GET['artem_debug_jobs'])) {
+                    __d($records);
+                }
+
+			    if ($records->post_count > 0) {
+				    foreach ($records->posts as $item)
+					    wp_delete_post($item->ID, true);
+			    }
+
+
+
+            }
+
+		    delete_transient('wb_harvest_refresh_process');
+            update_option('wb_harvest_api_last_update', time());
+        }
+    }
+
+	/**
+	 * Add options page
+	 */
+	public function add_plugin_page()
+	{
+		// This page will be under "Settings"
+		add_options_page(
+			'Harvest API',
+			'Harvest API',
+			'manage_options',
+			'workbox_harvest_api',
+			array( $this, 'create_admin_page' )
+		);
+	}
+
+	/**
+	 * Options page callback
+	 */
+	public function create_admin_page()
+	{
+		// Set class property
+		?>
+        <div class="wrap">
+            <h1>Careers Plugin Settings</h1>
+            <form method="post" action="options.php">
+				<?php
+				// This prints out all hidden setting fields
+				settings_fields( 'wb_harvest_api_option_group' );
+				do_settings_sections( 'workbox_harvest_api' );
+				submit_button();
+				?>
+            </form>
+        </div>
+		<?php
+	}
+
+	/**
+	 * Register and add settings
+	 */
+	public function page_init()
+	{
+		register_setting(
+			'wb_harvest_api_option_group', // Option group
+			'wb_harvest_board_token', // Option name
+			array( $this, 'sanitize' ) // Sanitize
+		);
+
+		add_settings_section(
+			'wb_harvest_api_setting_section_id', // ID
+			'Harvest API Settings', // Title
+			array( $this, 'print_section_info' ), // Callback
+			'workbox_harvest_api' // Page
+		);
+
+		add_settings_field(
+			'wb_harvest_board_token',
+			'Board Token',
+			array( $this, 'board_token_callback' ),
+			'workbox_harvest_api',
+			'wb_harvest_api_setting_section_id'
+		);
+
+		add_settings_field(
+			'wb_harvest_timeout',
+			'Refresh Interval (minutes)',
+			array( $this, 'refresh_interval_callback' ),
+			'workbox_harvest_api',
+			'wb_harvest_api_setting_section_id'
+		);
+	}
+
+	/**
+	 * Sanitize each setting field as needed
+	 *
+	 * @param array $input Contains all settings fields as array keys
+	 */
+	public function sanitize( $input )
+	{
+		$new_input = array();
+
+		if( isset( $input['wb_harvest_board_token'] ) )
+			$new_input['wb_harvest_board_token'] = sanitize_text_field( $input['wb_harvest_board_token'] );
+
+		if( isset( $input['wb_harvest_timeout'] ) )
+			$new_input['wb_harvest_timeout'] = intval( $input['wb_harvest_timeout'] );
+
+		return $new_input;
+	}
+
+	/**
+	 * Print the Section text
+	 */
+	public function print_section_info()
+	{
+		print 'Enter your settings below:';
+	}
+
+	/**
+	 * Get the settings option array and print one of its values
+	 */
+	public function board_token_callback()
+	{
+		printf(
+			'<input type="text" id="wb_harvest_board_token" name="wb_harvest_board_token[wb_harvest_board_token]" value="%s" style="width: 100%%;" />',
+			isset( $this->options['wb_harvest_board_token'] ) ? esc_attr( $this->options['wb_harvest_board_token']) : ''
+		);
+	}
+
+    public function refresh_interval_callback()
+	{
+		printf(
+			'<input type="text" id="wb_harvest_timeout" name="wb_harvest_board_token[wb_harvest_timeout]" value="%s"  />',
+			isset( $this->options['wb_harvest_timeout'] ) ? intval( $this->options['wb_harvest_timeout']) : ''
+		);
+	}
+
+
+	public function activate() {
+	}
+
+	public function deactivate() {
+
+	}
+
+	public function registerNewPostsTypes() {
+		$labels = array(
+			'name' => 'Jobs',
+			'singular_name' => 'Job',
+			'menu_name' => 'Jobs',
+			'name_admin_bar' => 'Jobs',
+			'add_new' => 'Add New Job',
+			'add_new_item' => 'Add New Job',
+			'new_item' => 'New Job',
+			'edit_item' => 'Edit Job',
+			'view_item' => 'View Job',
+			'all_items' => 'All Jobs',
+			'search_items' => 'Search Jobs',
+			'parent_item_colon' => 'Parent Jobs:',
+			'not_found' => 'No Jobs found.',
+			'not_found_in_trash' => 'No Jobs found in Trash.',
+		);
+
+		$args = array(
+			'labels' => $labels,
+			'public' => true,
+			'publicly_queryable' => true,
+			'show_ui' => true,
+			'show_in_menu' => true,
+			'capability_type' => 'post',
+			'has_archive' => false,
+			'hierarchical' => false,
+			'menu_position' => null,
+			'menu_icon' => 'dashicons-screenoptions',
+			'supports' => array('title', 'editor', 'custom-fields'),
+			'register_meta_box_cb'=> array($this, 'metaboxFieldsAddJob'),
+		);
+
+		register_post_type('jobs', $args);
+
+
+		/*register_taxonomy('jobs_category', array('jobs'), array(
+			'label'                 => '',
+			'labels'                => array(
+				'name'              => 'Jobs Categories',
+				'singular_name'     => 'Job Category',
+				'search_items'      => 'Search Categories',
+				'all_items'         => 'All Categories',
+				'view_item '        => 'View Category',
+				'parent_item'       => 'Parent Category',
+				'parent_item_colon' => 'Parent Category:',
+				'edit_item'         => 'Edit Category',
+				'update_item'       => 'Update Category',
+				'add_new_item'      => 'Add New Category',
+				'new_item_name'     => 'New Category Name',
+				'menu_name'         => 'Jobs Categories',
+			),
+			'description'           => '',
+			'public'                => false,
+			'publicly_queryable'    => null,
+			'show_in_nav_menus'     => true,
+			'show_ui'               => true,
+			'show_in_menu'          => true,
+			'show_tagcloud'         => true,
+			'show_in_rest'          => null,
+			'rest_base'             => null,
+			'hierarchical'          => true,
+			'rewrite'               => true,
+			'capabilities'          => array(),
+			'meta_box_cb'           => null,
+			'show_admin_column'     => true,
+			'show_in_quick_edit'    => false, // по умолчанию значение show_ui
+		) );*/
+	}
+
+	public function metaboxFieldsAddJob() {
+		add_meta_box ( 'jobs_meta_bottom', 'Additional Parameters', array (
+			$this,
+			'showMetaBoxJobsBottom'
+		), 'jobs', 'normal' );
+	}
+
+	public function showMetaBoxJobsBottom($post, $metabox) {
+		$department = get_post_meta($post->ID, '_department', true);
+		$location = get_post_meta($post->ID, '_location', true);
+
+		?>
+		<b>Department:</b><br>
+		<input type="text"  value="<?php echo esc_attr($department); ?>" name="_department" style="width: 100%;">
+		<br><br>
+
+		<b>Location:</b><br>
+		<input type="text" name="_location" value="<?php echo esc_attr($location); ?>" style="width:100%"><br><br>
+		<?php
+	}
+
+	public function saveJob($post_ID, $post = false, $update = false) {
+		if (isset($_POST['action']) && $_POST['action'] == 'editpost') {
+			update_post_meta($post_ID, '_department', isset($_POST['_department'])?stripslashes($_POST['_department']):'');
+			update_post_meta($post_ID, '_location', isset($_POST['_location'])?stripslashes($_POST['_location']):'');
+		}
+	}
+
+	public function getCategories() {
+		/*$terms = get_terms($args = array(
+			'taxonomy' => 'jobs_category',
+		));*/
+		$cats = array();
+		$jobs = new WP_Query(array('post_type'=>'jobs', 'post_status'=>'publish', 'nopaging'=>true));
+		if ($jobs->have_posts()) {
+			foreach ( $jobs->posts as $post ) {
+                $cats[] = get_post_meta($post->ID, '_department', true);
+		    }
+        }
+
+        $cats = array_unique($cats);
+		sort($cats);
+		return $cats;
+	}
+  
+  public function doShortCodeGreenHouse($atts = '') {
+		$html = '';
+		$category = isset($_GET['jobs_category'])?($_GET['jobs_category']):'';
+        if ($category) {
+	        $list = new WP_Query( array(
+		        'post_type'   => 'jobs',
+		        'post_status' => 'publish',
+		        'nopaging'    => true,
+		        'meta_query'   => array(
+			        array(
+				        'key' => '_department',
+				        'value'    => $category,
+			        ),
+		        ),
+                'order'=>'ASC',
+                'orderby'=>'post_title'
+	        ) );
+
+	        if (!$list->have_posts()) {
+		        $list = new WP_Query( array(
+			        'post_type'   => 'jobs',
+			        'post_status' => 'publish',
+			        'nopaging'    => true,
+			        'order'=>'ASC',
+			        'orderby'=>'post_title'
+		        ) );
+            }
+        } else {
+	        $list = new WP_Query( array(
+			        'post_type'   => 'jobs',
+			        'post_status' => 'publish',
+			        'meta_key'=>'_department',
+			        'nopaging'    => true,
+                    'orderby' => array( 'meta_value' => 'ASC', 'title' => 'ASC' ),
+		        ) );
+        }
+
+        $department = '';
+
+        $html.= '<div class="container-fluid section positions">
+			<div class="container">
+				<div class="row">					
+					<div class="col-12">
+						<!--Accordion wrapper-->
+						<div class="accordion md-accordion" id="accordionPos" role="tablist" aria-multiselectable="true"><!-- Accordion card -->';
+        foreach ( $list->posts as $i=>$post ) {
+            $html .= '
+                            <div class="card">                
+								<!-- Card header -->
+								<div class="card-header" role="tab" id="headingOne'.$i.'">
+									<a class="collapsed" href="'.get_permalink($post).'" >
+										<h5 class="mb-0">'.$post->post_title.'</h5>
+										<!--<div class="btn btn-primary btn-plus waves-effect waves-light"><i></i></div>-->
+									</a>
+								</div>';/*
+
+								<!-- Card body -->
+								<div id="collapseOne'.$i.'" class="collapse /show" role="tabpanel" aria-labelledby="headingOne'.$i.'" data-parent="#accordionPos">
+									<div class="card-body">
+                            '.$post->post_content.'
+                          </div></div>*/
+            $html.= '
+							</div>';
+              /*
+            $_d = get_post_meta($post->ID,'_department', true);
+            if ($_d != $department) {
+
+                $html.= '
+                    <tr>
+                        <th class="tal">'.$_d.'</th>
+                        <th class="tal">Title</th>
+                        <th class="tal">Location</th>
+                    </tr>';
+
+                $department = $_d;
+            }
+
+            $html.= '
+                <tr>
+                    <td>&nbsp;</td>
+                    <td ><a class="has-over" href = "'.get_permalink($post->ID).'" > '.$post->post_title.'</a ></td >
+                    <td>'.get_post_meta($post->ID,'_location', true).'</td >
+                </tr >';
+                */
+          $i++;
+        }
+
+        $html.= '<!-- Accordion card --></div>
+						<!-- Accordion wrapper -->					
+					</div>
+				</div>
+			</div>
+		</div>';
+
+		return $html;
+  }
+
+	public function doShortCodeWidget($atts = '') {
+	    $html = '';
+
+		$list = new WP_Query( array(
+			'post_type'   => 'jobs',
+			'post_status' => 'publish',
+			'posts_per_page'    => 3,
+			'order'=>'DESC',
+			'orderby'=>'ID'
+
+		) );
+
+	    $html.= '<div class="section-head">Most Recent Job Opportunities</div>';
+		foreach ( $list->posts as $post ) {
+            $html.= '<div class="item">
+                    <div class="title"><a href="'.get_permalink($post->ID).'">'.$post->post_title.'</a></div>
+                    <div class="department"><a href="'.get_permalink($post->ID).'">'.get_post_meta($post->ID, '_department', true).'</a></div>
+                </div>';
+	    }
+
+	    return $html;
+    }
+
+	public function doShortCode($atts = '') {
+		$html = '';
+		$category = isset($_GET['jobs_category'])?($_GET['jobs_category']):'';
+        if ($category) {
+	        $list = new WP_Query( array(
+		        'post_type'   => 'jobs',
+		        'post_status' => 'publish',
+		        'nopaging'    => true,
+		        'meta_query'   => array(
+			        array(
+				        'key' => '_department',
+				        'value'    => $category,
+			        ),
+		        ),
+                'order'=>'ASC',
+                'orderby'=>'post_title'
+	        ) );
+
+	        if (!$list->have_posts()) {
+		        $list = new WP_Query( array(
+			        'post_type'   => 'jobs',
+			        'post_status' => 'publish',
+			        'nopaging'    => true,
+			        'order'=>'ASC',
+			        'orderby'=>'post_title'
+		        ) );
+            }
+        } else {
+	        $list = new WP_Query( array(
+			        'post_type'   => 'jobs',
+			        'post_status' => 'publish',
+			        'meta_key'=>'_department',
+			        'nopaging'    => true,
+                    'orderby' => array( 'meta_value' => 'ASC', 'title' => 'ASC' ),
+		        ) );
+        }
+
+        $department = '';
+
+        $html.= '<div class="table"><div class="wrap"><table class="department">';
+
+        foreach ( $list->posts as $post ) {
+            $_d = get_post_meta($post->ID,'_department', true);
+            if ($_d != $department) {
+
+                $html.= '
+                    <tr>
+                        <th class="tal">'.$_d.'</th>
+                        <th class="tal">Title</th>
+                        <th class="tal">Location</th>
+                    </tr>';
+
+                $department = $_d;
+            }
+
+            $html.= '
+                <tr>
+                    <td>&nbsp;</td>
+                    <td ><a class="has-over" href = "'.get_permalink($post->ID).'" > '.$post->post_title.'</a ></td >
+                    <td>'.get_post_meta($post->ID,'_location', true).'</td >
+                </tr >';
+        }
+
+        $html.= '</table></div></div>';
+
+		return $html;
+	}
+
+
+	public function managePostColumns( $defaults ) {
+		unset($defaults['date']);
+		$defaults['department'] = 'Department';
+		$defaults['location'] = 'Location';
+
+		return $defaults;
+	}
+
+	public function showCustomPostColumns( $column, $post_id ) {
+	    switch ($column) {
+            case 'department':
+                echo get_post_meta($post_id, '_department', true);
+                break;
+            case 'location':
+                echo get_post_meta($post_id, '_location', true);
+                break;
+        }
+	}
+
+	public function doRebuildQueryParams($query) {
+		/*if (isset($query->query['post_type']) && $query->query['post_type'] == 'jobs') {
+			$query->set('order', 'ASC');
+			$query->set('orderby', 'post_title');
+		}*/
+
+		return $query;
+	}
+
+	public function getJobsPageID() {
+		global $wpdb;
+		$sql = 'SELECT ID FROM ' . $wpdb->posts . ' WHERE post_type = "page" AND post_status="publish" AND post_content LIKE "%[workbox_jobs]%"';
+		$id = $wpdb->get_var($sql);
+		return $id;
+	}
+
+	public function getJobsCategoryURL() {
+        global $post;
+		$page_url = '';
+        if (isset($post->post_type) && $post->post_type == 'jobs') {
+            $page_url = get_page_link($this->getJobsPageID());
+
+            // get post taxonomy
+	        $cur_terms = get_the_terms($post->ID, 'jobs_category');
+	        if( is_array( $cur_terms ) ){
+	            $page_url.='?jobs_category='.$this->encodeURIComponent(html_entity_decode($cur_terms[0]->name));
+	        }
+        }
+
+        return $page_url;
+    }
+
+	private function encodeURIComponent($str) {
+		$revert = array('%21'=>'!', '%2A'=>'*', '%27'=>"'", '%28'=>'(', '%29'=>')');
+		return strtr(rawurlencode($str), $revert);
+	}
+}
+
+new WorkboxJobsGreenhouse();

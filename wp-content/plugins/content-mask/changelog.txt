@@ -1,0 +1,161 @@
+= 1.7.2 =
+* Fixed a bug where hash/anchor links were being replaced on Masked Pages
+
+= 1.7.1 =
+* Introduced the ability to use custom Header Scripts & Styles instead of just the universal ones
+* Introduced the ability to use custom Footer Scripts instead of just the universal ones
+
+= 1.7.0.11 =
+* Added transparency fields to masked forms
+
+= 1.7.0.10 =
+* Fixed a bug with the Relative URL find/replace in the Download method for URLs with paths
+
+= 1.7.0.9 =
+* Fixed a bug with the Refresh Transients feature not working in some cases
+* Added an option to remove the default page title on iframe pages
+* Fixed some missing SVG Icons in the admin
+* Increased transparency due to some users embedding unlicensed content
+* Fixed an issue with relative URLs in Form Actions
+
+= 1.7.0.8 =
+* Fixed a bug with transient versions on the front end *
+
+= 1.7.0.6 =
+* Fixed a bug with SVG functions
+
+= 1.7.0.5 = 
+* Fixed a bug causing `tel` and `mailto` to sometimes get caught in the relative URL replacement functions.
+
+= 1.7.0.4 =
+* Fixed issues with WordPress Versions < 4.9.0 in the Admin Panel
+* Minor Additions to Admin Panel
+
+= 1.7.0.3 =
+* Fixed over/underwritten admin class filter.
+
+= 1.7.0.2 =
+* Fixed class-miss preventing admin CSS from applying on the admin panel in some cases.
+
+= 1.7.0.1 =
+* Updated HTTP Header Version Checker
+* Added Viewing options to Admin Table Navigation
+
+= 1.7 =
+* Completely Overhauled the Content Mask Admin Panel
+* Admin Panel now has a brand new, more user friendly design
+* Admin Panel is now mobile friendly
+
+= 1.6.0.3 =
+* Moving plugin from SVN to GitHub for primary development
+= 1.6.0.2 =
+* Added Action Hooks `content_mask_iframe_header` and `content_mask_iframe_footer` to allow more dynamic control of the iframe method
+
+= 1.6.0.1 =
+* Under-The-Hood improvements for Admin Panel Options
+
+= 1.6 =
+* Removed test code from the Iframe Method accidentally introduced in 1.5.2.1
+* Reorganized the Admin Panel
+* Added ability to add custom JavaScript and CSS to Iframe and Download methods.
+* Updated algorithm to replace relative URLs with the download method
+* Included `wp_code_editor` in admin for scripts and styles fields.
+
+= 1.5.2.1 =
+* Cleaned Up a few functions in the admin
+* Added some backwards compatibility for PHP 5.4
+
+= 1.5.1 =
+* Modified Admin Styles to use my preferred blue instead of green for highlighted/actionable items
+* Added a new Advanced Option to send a User Agent HTTP Header when using the Download Method to assist with some stubborn authorization issues
+* Added Feature Request link in the Admin Panel
+
+= 1.5 =
+* Started SCSS Conversion for admin.css file, broken into partials (still needs optimization)
+* Modified Content Mask Admin Panel to load only 20 Content Masks, and subsequently load 20 more when scrolled to the bottom.
+* Included Admin Help links above Content Mask Admin Panel
+* Introduced an Admin Notice when a page is being overwritten with a Content Mask
+* Introduced a "hacky" Admin Notice when a Gutenberg page is being overwritten with a Content Mask since Admin Notices are just hidden.
+* Modified plugin structure with an includes file.
+* Went back and better commented functions in core files to more closely follow best practices in documentation.
+
+= 1.4.4.1 =
+* Included the Site Title in the title tag when using the iframe method.
+
+= 1.4.4 =
+* Added an optional page tracking feature that tracks the number of visitors to each Content Masked page.
+* Fixed a bug where the <title> tag wasn't showing up when using the iframe method.
+
+= 1.4.3.1 =
+* Removed the Cache Refresh option in the Content Mask Admin page for Masks set to Iframe and Redirect (since those methods aren't cacheable)
+* Reverted the change made in 1.4.2 and moved the Page Processing function back to the template Redirect Hook. It was causing issues with homepage redirection.
+* Password protection and removal have extraneous scripts has been added to this version of the Page Processing function as well.
+
+= 1.4.3 =
+* Content Masked pages now respect the Password Protected visibility status.
+* When a Content Masked page is Password Protected, it shows the default page with the standard password form. Once the password is successfully submitted, the Content Mask will perform as usual.
+* Removed superfluous and/or commented out code that's no longer used.
+
+= 1.4.2 =
+* To speed up Content Mask time, the page processing function has been moved to an earlier hook.
+* Redundant URL Validity checks have been removed.
+* Title has been linked in the Content Mask admin list for ease-of-use.
+* Scripts and Styles that are hooked in an unorthodox manner are now killed before rendering a Content Masked page, this will speed up the page, prevent unwanted styles and scripts from being loaded, prevents JS errors from unrelated plugins being thrown in the console.
+
+= 1.4.1 =
+* Modified the Content Mask admin page table layout
+* The Mask URL column is now linked and clickable.
+* Cache Expiration column has been added.
+* Cache may be refreshed by clicking on Refresh in the Cache Expiration column (shows on row hover).
+* Edit and View columns have been removed.
+* Edit and View links have been added to to the Title column (shows on row hover)
+
+= 1.4 =
+* Cache (WP Transient) Duration for the Download Method can now be controlled with common values from 1 hour to 4 weeks.
+
+= 1.3 =
+* Underthe hood improves with custom field variable extraction.
+* Improved SVG icon clarity.
+* Added Content Mask column to Page and Post edit lists which allows an at-a-glance preview of whether Content Mask is enabled, and which type; as well as allowing an Ajax button-press to enable or disable the Content Mask (like on the Content Mask overview admin page).
+
+= 1.2.2 =
+* Minor changes to prevent undefined variable and similar E_NOTICE level errors from appearing when debug mode was enabled.
+* Removed dependency from external CSS in the admin, namely FontAwesome and Line Icons.
+* Prevented irrelevant meta field checks when not strictly necessary.
+
+= 1.2.1 =
+* Behind the scenes improvement with the plugin name and label
+* Addressed CSS issues with plugins that used the @keyframes name "check"
+* Prevented the `process_page_request` function from firing in non singular instances. Post lists and archive pages were firing the first content mask they ran across.
+* Replaced the $cm instance variable with a private variable to eliminate namespace conflicts
+
+= 1.2 =
+* Added Content Mask admin page that shows a list of all current Content Masks that the logged in user is allowed to edit. Each row displays all the pertinent info for each Content Mask, and allows a one-click interface to disable or enable it.
+* Using the Download method will now replace all relative URLs from the Content Mask URL with an absolute URL. This includes all `src`, `href` and `action` attributes. Protocol relative and existing absolute URLs are unaffected, but this should allow for significant improvements to consistency, especially with local form actions and local image & script libraries.
+* Some fluff code has been removed from the front end of the Iframe method.
+
+= 1.1.4.2 =
+* Forgot to remove class methods that were no longer in use, which triggered E_NOTICE errors in some sites.
+
+= 1.1.4.1 =
+* Content Mask URL's without a protocol have `http://` added to them, since not all sites are secure yet. However, if your site is secure, it won't display `http://` iframes. Iframe method now checks if your site is secured with ssl, and if so force updates the Content Mask URL's protocol to `https://`. If the content still is blank, it's because the iframe'd site is insecure and wouldn't show up either way. 
+
+= 1.1.4 =
+* If other (namely really large) metaboxes were hooked in, Content Mask Settings were hard to see. Moved inline CSS and JS to separate files and improved the design of the metabox to make it stand out much more when buried deeply in the admin.
+
+= 1.1.3 =
+* Elegant Theme's "Bloom" was interfering and still being hooked. It's now been forcefully unhooked on Content Mask pages (regardless of content displayed)
+
+= 1.1.2 =
+* Made Content Mask Method an array to allow for easier updating/additions in the future
+
+= 1.1.1 =
+* Provided better URL validation on the front end
+
+= 1.1.0 =
+* Replaced `get_page_content` functions cURL methods with integrated WP HTTP API methods instead
+* Added custom sanitization functions for text (URL) inputs, select boxes, and checkboxes.
+* Escaped post meta field values when returned in the admin and front-end.
+
+= 1.0.1 =
+* Initial Public Repository Release

@@ -1,0 +1,64 @@
+<?php
+/**
+ * @file
+ * OneTrust WebForm Embed — Drupal Module (v1.1.0)
+ *
+ * Folder: web/modules/custom/ot_webform/
+ *
+ * Files in this module:
+ *   ot_webform.info.yml
+ *   ot_webform.routing.yml
+ *   ot_webform.links.menu.yml
+ *   ot_webform.libraries.yml
+ *   ot_webform.module          ← this file
+ *   js/ot-webform.js           ← copy shared JS here
+ *   src/Form/OtWebformConfigForm.php
+ *
+ * Setup:
+ *   drush en ot_webform -y && drush cr
+ *   Configure at: /admin/config/services/ot-webform
+ *   Embed via Twig: {{ ot_webform_embed() }}  OR add the OT WebForm block via Block Layout
+ */
+
+/**
+ * Attach the OT script library + drupalSettings config on pages
+ * that contain the ot_webform block or have the library explicitly requested.
+ */
+function ot_webform_page_attachments(array &$attachments) {
+  $config = \Drupal::config('ot_webform.settings');
+
+  // Don't attach if not yet configured
+  if (!$config->get('prod_id')) {
+    return;
+  }
+
+  $attachments['#attached']['library'][] = 'ot_webform/ot_webform';
+
+  // Pass config → window.drupalSettings.otWebform (read by ot-webform.js applyCMSConfig)
+  $attachments['#attached']['drupalSettings']['otWebform'] = [
+    'prod_id'           => $config->get('prod_id') ?? '',
+    'staging_id'        => $config->get('staging_id') ?? '',
+    'staging_keywords'  => $config->get('staging_keywords') ?? 'dev,stage,staging,test,demo,uat,localhost',
+    'source_platform'   => $config->get('source_platform') ?? \Drupal::request()->getSchemeAndHttpHost(),
+    'data_source_prod'  => $config->get('data_source_prod') ?? '',
+    'data_source_stage' => $config->get('data_source_stage') ?? '',
+    'gtm_event'         => $config->get('gtm_event') ?? 'onetrust_form_submitted',
+    'thank_you_id'      => $config->get('thank_you_id') ?? 'thank-you-message',
+    'debug'             => (bool) $config->get('debug') ? 'true' : 'false',
+  ];
+}
+
+/**
+ * Implements hook_theme() — exposes ot_webform_embed Twig template.
+ */
+function ot_webform_theme() {
+  return [
+    'ot_webform_embed' => [
+      'variables' => [
+        'container_id'   => 'ot-form-container',
+        'thank_you_text' => 'Thank you! Your submission has been received.',
+        'thank_you_id'   => 'thank-you-message',
+      ],
+    ],
+  ];
+}

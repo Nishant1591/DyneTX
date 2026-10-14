@@ -1,0 +1,3399 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Popup Builder\n"
+"Report-Msgid-Bugs-To: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: id_ID\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Domain: popup-builder\n"
+"X-Generator: _pb_i18n.php\n"
+
+#. Plugin Name of the plugin
+#: popup-builder.php
+msgid "Popup Builder - Create highly converting, mobile friendly marketing popups."
+msgstr ""
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+#: popup-builder.php
+msgid "https://popup-builder.com"
+msgstr ""
+
+#. Description of the plugin
+#: popup-builder.php
+msgid "The most complete popup plugin. Html, image, iframe, shortcode, video and many other popup types. Manage popup dimensions, effects, themes and more."
+msgstr ""
+
+#. Author of the plugin
+#: popup-builder.php
+msgid "Looking Forward Software Incorporated."
+msgstr ""
+
+#. translators: license Section Url.
+#: com/classes/Actions.php:238
+#: com/classes/Filters.php:346
+msgid "Follow the link"
+msgstr "Ikuti tautan"
+
+#. translators: license Section Url.
+#: com/classes/Actions.php:238
+#: com/classes/Filters.php:346
+msgid "to finalize the activation."
+msgstr "untuk menyelesaikan aktivasi."
+
+#: com/classes/Actions.php:253
+#: com/classes/Filters.php:347
+msgid "Thank you for choosing our plugin!"
+msgstr "Terima kasih telah memilih plugin kami!"
+
+#: com/classes/Actions.php:256
+#: com/classes/Filters.php:350
+msgid "You have activated Popup Builder extension(s). Please, don't forget to activate the license key(s) as well."
+msgstr "Anda telah mengaktifkan ekstensi Popup Builder. Jangan lupa untuk mengaktifkan kunci lisensi juga."
+
+#: com/classes/Actions.php:259
+msgid "Dismiss this notice."
+msgstr "Tutup pemberitahuan ini."
+
+#: com/classes/Actions.php:260
+msgid "Don't show again."
+msgstr "Jangan tampilkan lagi."
+
+#: com/classes/Actions.php:320
+msgid "There was an error while trying to send your request. Please try again"
+msgstr "Terjadi kesalahan saat mencoba mengirim permintaan Anda. Silakan coba lagi"
+
+#: com/classes/Actions.php:321
+#: public/views/jsVariableView.php:34
+#: public/views/jsVariableView.php:52
+msgid "This field is required"
+msgstr "Bidang ini wajib diisi"
+
+#: com/classes/Actions.php:322
+#: com/config/dataConfig.php:960
+msgid "Please enter a valid email address"
+msgstr "Silakan masukkan alamat email yang valid"
+
+#: com/classes/Actions.php:492
+msgid "Popup Builder Importer Tool: Import popups from other website."
+msgstr "Alat Importir Popup Builder: Impor popup dari situs web lain."
+
+#: com/classes/Actions.php:744
+msgid "Once Every Minute"
+msgstr "Sekali Setiap Menit"
+
+#: com/classes/Actions.php:749
+msgid "Once Every Week"
+msgstr "Sekali Setiap Minggu"
+
+#: com/classes/Actions.php:781
+#: com/helpers/AdminHelper.php:1145
+#: com/helpers/AdminHelper.php:2351
+#: public/views/newsletter.php:109
+msgid "Unsubscribe"
+msgstr "Berhenti Berlangganan"
+
+#. translators: subscription Form Title, success Total ,total Subscribers, failed Total .
+#: com/classes/Actions.php:832
+#, php-format
+msgid ""
+"Your mail list %1$s delivered successfully!\r\n"
+"\t\t\t\t\t\t%2$d of the %3$d emails succeeded, %4$d failed.\r\n"
+"\t\t\t\t\t\tFor more details, please download log file inside the plugin.\r\n"
+"\t\t\t\t\t\tThis email was generated via Popup Builder plugin."
+msgstr "Daftar email Anda %1$s berhasil dikirim!\n\t\t\t\t\t\t%2$d dari %3$d email berhasil, %4$d gagal.\n\t\t\t\t\t\tUntuk detail lebih lanjut, silakan unduh file log di dalam plugin.\n\t\t\t\t\t\tEmail ini dibuat melalui plugin Popup Builder."
+
+#. translators: %s: subscription list/form title.
+#: com/classes/Actions.php:839
+#, php-format
+msgid "%s list has been successfully delivered!"
+msgstr "Daftar %s telah berhasil dikirim!"
+
+#. translators: Link to edit Popup item, location.
+#: com/classes/Actions.php:1012
+#, php-format
+msgid "Popup Builder plugin has been successfully updated. Please %1$s to go to the new Dashboard of the plugin."
+msgstr "Plugin Popup Builder telah berhasil diperbarui. Silakan %1$s untuk membuka Dasbor baru plugin."
+
+#: com/classes/Actions.php:1017
+msgid "popupbuilder"
+msgstr "popupbuilder"
+
+#: com/classes/Actions.php:1290
+msgid "reset"
+msgstr "atur ulang"
+
+#: com/classes/Actions.php:1312
+msgid "Edit"
+msgstr "Edit"
+
+#: com/classes/Actions.php:1315
+#: com/classes/Filters.php:846
+msgid "Clone"
+msgstr "Kloning"
+
+#: com/classes/Actions.php:1318
+#: public/views/closeSettingsView.php:178
+msgid "Remove"
+msgstr "Hapus"
+
+#: com/classes/Actions.php:1359
+#: com/classes/Actions.php:1368
+#: com/classes/Ajax.php:219
+#: com/classes/Ajax.php:243
+#: com/classes/Ajax.php:292
+#: com/classes/Ajax.php:336
+#: com/classes/Ajax.php:357
+#: com/classes/Ajax.php:378
+#: com/classes/Ajax.php:399
+#: com/classes/Ajax.php:420
+#: com/classes/Ajax.php:475
+#: com/classes/Ajax.php:511
+#: com/classes/Ajax.php:588
+#: com/classes/Ajax.php:619
+#: com/classes/Ajax.php:647
+#: com/classes/Ajax.php:771
+#: com/classes/Ajax.php:815
+#: com/classes/Ajax.php:966
+#: com/classes/Ajax.php:1041
+#: com/classes/Ajax.php:1107
+#: com/classes/Ajax.php:1142
+#: com/classes/Ajax.php:1177
+#: com/libs/SGPBImporter.php:372
+msgid "You do not have permission to clone the popup!"
+msgstr "Anda tidak memiliki izin untuk mengkloning popup!"
+
+#: com/classes/Actions.php:1372
+msgid "No post to duplicate has been supplied!"
+msgstr "Tidak ada postingan untuk diduplikasi yang disediakan!"
+
+#. translators: ID of original.
+#: com/classes/Actions.php:1416
+#, php-format
+msgid "Copy creation failed, could not find original: %d"
+msgstr "Pembuatan salinan gagal, tidak dapat menemukan aslinya: %d"
+
+#: com/classes/Actions.php:1431
+msgid "(no title) (clone)"
+msgstr "(tanpa judul) (klon)"
+
+#: com/classes/Actions.php:1434
+msgid "(clone)"
+msgstr "(klon)"
+
+#: com/classes/Actions.php:1605
+msgid "Popup updated."
+msgstr "Popup diperbarui."
+
+#: com/classes/Actions.php:1609
+msgid "Popup published."
+msgstr "Popup dipublikasikan."
+
+#: com/classes/Ajax.php:110
+#: com/classes/Ajax.php:137
+#: com/classes/Ajax.php:164
+msgid "You do not have permission to do this action!"
+msgstr "Anda tidak memiliki izin untuk melakukan tindakan ini!"
+
+#. translators: %d is the number of subscribers deleted.
+#: com/classes/Ajax.php:489
+#, php-format
+msgid "You have deleted %d subscribers successfully!"
+msgstr "Anda telah berhasil menghapus %d pelanggan!"
+
+#. translators: %s is the title of Popup.
+#: com/classes/Ajax.php:562
+#, php-format
+msgid "You have imported new subscriber to the %s successfully!"
+msgstr "Anda telah berhasil mengimpor pelanggan baru ke %s!"
+
+#. translators: %s is the title of Popup.
+#: com/classes/Ajax.php:565
+#, php-format
+msgid "You have imported new subscriber to the %s popup(s) successfully!"
+msgstr "Anda telah berhasil mengimpor pelanggan baru ke popup %s!"
+
+#. translators: %d the number of imported subscribers, %s is the title of Popup.
+#: com/classes/Ajax.php:725
+#, php-format
+msgid "You have imported %1$d subscribers to the `%2$s` successfully!"
+msgstr "Anda telah berhasil mengimpor %1$d pelanggan ke `%2$s`!"
+
+#. translators: %d the number of imported subscribers, %s is the title of Popup.
+#: com/classes/Ajax.php:731
+#, php-format
+msgid "You have imported %1$d subscribers to the `%2$s`  popup successfully!"
+msgstr "Anda telah berhasil mengimpor %1$d pelanggan ke popup `%2$s`!"
+
+#. translators: %d the number of imported subscribers.
+#: com/classes/Ajax.php:735
+#, php-format
+msgid " There are %d existing subscribers."
+msgstr " Ada %d pelanggan yang sudah ada."
+
+#: com/classes/Ajax.php:1021
+msgid "Congrats! You have already 1 subscriber!"
+msgstr "Selamat! Anda sudah memiliki 1 pelanggan!"
+
+#: com/classes/components/Menu.php:206
+msgid "Select a Popup"
+msgstr "Pilih Popup"
+
+#: com/classes/components/Menu.php:216
+msgid "Open a popup once this item is clicked."
+msgstr "Buka popup setelah item ini diklik."
+
+#: com/classes/ConditionCreator.php:77
+msgid "OR"
+msgstr "ATAU"
+
+#: com/classes/ConditionCreator.php:522
+msgid "No Data"
+msgstr "Tidak Ada Data"
+
+#: com/classes/ConditionCreator.php:551
+#: public/views/htmlCustomButtonElement.php:192
+#: public/views/jsVariableView.php:61
+#: public/views/mediaButton.php:51
+msgid "Cancel"
+msgstr "Batal"
+
+#: com/classes/ConditionCreator.php:552
+#: public/views/importConfigView.php:96
+msgid "Save"
+msgstr "Simpan"
+
+#: com/classes/dataTable/Subscribers.php:37
+#: com/config/dataConfig.php:937
+#: public/views/options/subscription.php:95
+#: public/views/subscribers.php:115
+msgid "First name"
+msgstr "Nama depan"
+
+#: com/classes/dataTable/Subscribers.php:38
+#: com/config/dataConfig.php:940
+#: public/views/options/subscription.php:121
+#: public/views/subscribers.php:118
+msgid "Last name"
+msgstr "Nama belakang"
+
+#: com/classes/dataTable/Subscribers.php:39
+#: com/helpers/AdminHelper.php:1184
+#: public/views/subscribers.php:111
+msgid "Email"
+msgstr "Email"
+
+#: com/classes/dataTable/Subscribers.php:40
+#: com/classes/dataTable/Subscribers.php:165
+msgid "Date"
+msgstr "Tanggal"
+
+#: com/classes/dataTable/Subscribers.php:41
+msgid "Popup"
+msgstr "Popup"
+
+#: com/classes/dataTable/Subscribers.php:110
+msgid "All"
+msgstr "Semua"
+
+#: com/classes/dataTable/Subscribers.php:153
+#: com/libs/ListTable.php:568
+msgid "All dates"
+msgstr "Semua tanggal"
+
+#: com/classes/dataTable/Subscribers.php:190
+#: com/libs/Table.php:225
+msgid "Filter by popup"
+msgstr "Filter berdasarkan popup"
+
+#: com/classes/dataTable/Subscribers.php:192
+#: com/libs/ListTable.php:566
+#: com/libs/Table.php:228
+msgid "Filter by date"
+msgstr "Filter berdasarkan tanggal"
+
+#: com/classes/dataTable/Subscribers.php:194
+#: com/libs/Table.php:231
+msgid "Filter"
+msgstr "Filter"
+
+#: com/classes/dataTable/Subscribers.php:201
+msgid "Delete subscriber(s)"
+msgstr "Hapus pelanggan"
+
+#: com/classes/extension/SgpbPopupExtension.php:76
+#: com/classes/Feedback.php:109
+#: com/classes/Installer.php:316
+#: com/helpers/AdminHelper.php:1404
+msgid "Popup Builder"
+msgstr "Popup Builder"
+
+#: com/classes/extension/SgpbPopupExtension.php:77
+msgid "This block will help you to add Popup Builder’s shortcode inside the page content"
+msgstr "Blok ini akan membantu Anda menambahkan shortcode Popup Builder di dalam konten halaman"
+
+#: com/classes/extension/SgpbPopupExtension.php:79
+msgid "WPForms"
+msgstr "WPForms"
+
+#: com/classes/extension/SgpbPopupExtension.php:80
+msgid "Select and display one of your forms."
+msgstr "Pilih dan tampilkan salah satu formulir Anda."
+
+#: com/classes/extension/SgpbPopupExtension.php:81
+msgid "form"
+msgstr "formulir"
+
+#: com/classes/extension/SgpbPopupExtension.php:82
+msgid "Select Popup"
+msgstr "Pilih Popup"
+
+#: com/classes/extension/SgpbPopupExtension.php:83
+msgid "Form Settings"
+msgstr "Pengaturan Formulir"
+
+#: com/classes/extension/SgpbPopupExtension.php:84
+msgid "Form"
+msgstr "Formulir"
+
+#: com/classes/extension/SgpbPopupExtension.php:85
+msgid "Show Title"
+msgstr "Tampilkan Judul"
+
+#: com/classes/extension/SgpbPopupExtension.php:86
+msgid "Show Description"
+msgstr "Tampilkan Deskripsi"
+
+#: com/classes/extension/SgpbPopupExtension.php:90
+msgid "Click me"
+msgstr "Klik saya"
+
+#: com/classes/Feedback.php:69
+msgid "I no longer need the plugin"
+msgstr "Saya tidak lagi membutuhkan plugin ini"
+
+#: com/classes/Feedback.php:73
+msgid "I found a better plugin"
+msgstr "Saya menemukan plugin yang lebih baik"
+
+#: com/classes/Feedback.php:74
+msgid "Please share which plugin"
+msgstr "Silakan beri tahu plugin mana"
+
+#: com/classes/Feedback.php:77
+msgid "I couldn't get the plugin to work"
+msgstr "Saya tidak bisa membuat plugin ini berfungsi"
+
+#: com/classes/Feedback.php:79
+msgid "Having troubles? You can always count on us. Please try to contact us via <a href=\"https://popup-builder.com/\">Live chat</a> or send a message to <a href=\"mailto:support@popup-builder.com\">support@popup-builder.com</a>"
+msgstr "Mengalami masalah? Anda selalu dapat mengandalkan kami. Silakan hubungi kami melalui <a href=\"https://popup-builder.com/\">Live chat</a> atau kirim pesan ke <a href=\"mailto:support@popup-builder.com\">support@popup-builder.com</a>"
+
+#: com/classes/Feedback.php:82
+msgid "It's a temporary deactivation"
+msgstr "Ini hanya penonaktifan sementara"
+
+#: com/classes/Feedback.php:86
+msgid "Other"
+msgstr "Lainnya"
+
+#: com/classes/Feedback.php:87
+msgid "Please share the reason"
+msgstr "Silakan beri tahu alasannya"
+
+#: com/classes/Feedback.php:98
+msgid "Quick Feedback"
+msgstr "Umpan Balik Cepat"
+
+#: com/classes/Feedback.php:109
+msgid "If you have a moment, please share why you are deactivating "
+msgstr "Jika Anda punya waktu, silakan beri tahu mengapa Anda menonaktifkan "
+
+#: com/classes/Feedback.php:111
+msgid "Please, select an option."
+msgstr "Silakan pilih salah satu opsi."
+
+#: com/classes/Feedback.php:135
+msgid "Submit & Deactivate"
+msgstr "Kirim & Nonaktifkan"
+
+#: com/classes/Feedback.php:138
+msgid "Skip & Deactivate"
+msgstr "Lewati & Nonaktifkan"
+
+#: com/classes/Filters.php:188
+msgid "Rate us"
+msgstr "Beri nilai"
+
+#: com/classes/Filters.php:189
+#: com/classes/RegisterPostType.php:350
+#: com/classes/RegisterPostType.php:351
+msgid "Support"
+msgstr "Dukungan"
+
+#: com/classes/Filters.php:213
+#: com/classes/RegisterPostType.php:332
+#: com/classes/RegisterPostType.php:333
+msgid "Settings"
+msgstr "Pengaturan"
+
+#: com/classes/Filters.php:214
+msgid "Docs"
+msgstr "Dokumentasi"
+
+#: com/classes/Filters.php:221
+msgid "Upgrade"
+msgstr "Tingkatkan"
+
+#: com/classes/Filters.php:431
+msgid "UNLOCK OPTION"
+msgstr "BUKA OPSI"
+
+#: com/classes/Filters.php:435
+msgid "Main Options"
+msgstr "Opsi Utama"
+
+#: com/classes/Filters.php:436
+msgid "main options"
+msgstr "opsi utama"
+
+#: com/classes/Filters.php:443
+msgid "Display Rules"
+msgstr "Aturan Tampilan"
+
+#: com/classes/Filters.php:444
+msgid "Select where on the website to trigger the popup"
+msgstr "Pilih di mana pada situs web untuk memicu popup"
+
+#: com/classes/Filters.php:451
+msgid "Events"
+msgstr "Peristiwa"
+
+#: com/classes/Filters.php:452
+msgid "Select the specific actions that will trigger the popup, default event is on load"
+msgstr "Pilih tindakan spesifik yang akan memicu popup, peristiwa default adalah saat dimuat"
+
+#: com/classes/Filters.php:459
+msgid "Conditions"
+msgstr "Kondisi"
+
+#: com/classes/Filters.php:460
+msgid "Select advanced conditions for more professional targeting"
+msgstr "Pilih kondisi lanjutan untuk penargetan yang lebih profesional"
+
+#: com/classes/Filters.php:467
+msgid "Behavior After Special Events"
+msgstr "Perilaku Setelah Peristiwa Khusus"
+
+#: com/classes/Filters.php:468
+msgid "Select special events that will trigger the popup"
+msgstr "Pilih peristiwa khusus yang akan memicu popup"
+
+#: com/classes/Filters.php:475
+msgid "Design"
+msgstr "Desain"
+
+#: com/classes/Filters.php:476
+msgid "Customize design, background and overlay of the popup"
+msgstr "Sesuaikan desain, latar belakang, dan overlay popup"
+
+#: com/classes/Filters.php:483
+msgid "Closing"
+msgstr "Penutupan"
+
+#: com/classes/Filters.php:484
+msgid "Select the desired popup closing method, customize close button"
+msgstr "Pilih metode penutupan popup yang diinginkan, sesuaikan tombol tutup"
+
+#: com/classes/Filters.php:491
+msgid "Dimensions"
+msgstr "Dimensi"
+
+#: com/classes/Filters.php:492
+msgid "Make your popup mobile friendly and responsive for all devices"
+msgstr "Buat popup Anda ramah seluler dan responsif untuk semua perangkat"
+
+#: com/classes/Filters.php:499
+#: com/classes/RegisterPostType.php:402
+msgid "Advanced"
+msgstr "Lanjutan"
+
+#: com/classes/Filters.php:500
+msgid "Use advanced features for popup animations, opening and closing actions"
+msgstr "Gunakan fitur lanjutan untuk animasi popup, tindakan pembukaan dan penutupan"
+
+#: com/classes/Filters.php:507
+#: com/config/dataConfig.php:678
+msgid "Scheduling"
+msgstr "Penjadwalan"
+
+#: com/classes/Filters.php:508
+msgid "Schedule your popup for a particular day or for a selected timeframe"
+msgstr "Jadwalkan popup Anda untuk hari tertentu atau untuk rentang waktu yang dipilih"
+
+#: com/classes/Filters.php:515
+msgid "Floating Button"
+msgstr "Tombol Mengambang"
+
+#: com/classes/Filters.php:516
+msgid "Set the popup to appear on a scrollable call to action button"
+msgstr "Atur popup agar muncul pada tombol ajakan bertindak yang dapat digulir"
+
+#: com/classes/Filters.php:524
+msgid "Statistics"
+msgstr "Statistik"
+
+#: com/classes/Filters.php:525
+msgid "Enable or disable the counts of the popup"
+msgstr "Aktifkan atau nonaktifkan penghitungan popup"
+
+#: com/classes/Filters.php:533
+msgid "Custom JS or CSS"
+msgstr "JS atau CSS Kustom"
+
+#: com/classes/Filters.php:534
+msgid "Add custom JS and/or CSS code for extra control"
+msgstr "Tambahkan kode JS dan/atau CSS kustom untuk kontrol ekstra"
+
+#: com/classes/Filters.php:812
+#: public/views/optionsView.php:196
+#: public/views/optionsView.php:227
+msgid "Type"
+msgstr "Tipe"
+
+#: com/classes/Filters.php:813
+#: public/views/popupOpeningCounter.php:23
+msgid "Views"
+msgstr "Tampilan"
+
+#: com/classes/Filters.php:814
+msgid "Status"
+msgstr "Status"
+
+#: com/classes/Filters.php:821
+msgid "Shortcode"
+msgstr "Shortcode"
+
+#: com/classes/Filters.php:822
+msgid "Class"
+msgstr "Kelas"
+
+#: com/classes/Filters.php:823
+msgid "Actions"
+msgstr "Tindakan"
+
+#: com/classes/Filters.php:845
+msgid "Clone this item"
+msgstr "Kloning item ini"
+
+#: com/classes/Installer.php:318
+msgid "Popup Builder License"
+msgstr "Lisensi Popup Builder"
+
+#: com/classes/MediaButton.php:68
+msgid "Insert custom JS variable"
+msgstr "Sisipkan variabel JS kustom"
+
+#: com/classes/MediaButton.php:119
+msgid "Insert popup"
+msgstr "Sisipkan popup"
+
+#: com/classes/NotificationCenter.php:101
+msgid "Twice Daily"
+msgstr "Dua Kali Sehari"
+
+#: com/classes/popups/FblikePopup.php:16
+msgid "Facebook Settings"
+msgstr "Pengaturan Facebook"
+
+#: com/classes/popups/FblikePopup.php:17
+msgid "Select your Facebook page URL for liking and sharing it"
+msgstr "Pilih URL halaman Facebook Anda untuk menyukai dan membagikannya"
+
+#: com/classes/popups/ImagePopup.php:35
+msgid "Image Settings"
+msgstr "Pengaturan Gambar"
+
+#: com/classes/popups/ImagePopup.php:36
+msgid "Upload your feature image for the popup"
+msgstr "Unggah gambar fitur Anda untuk popup"
+
+#: com/classes/popups/SGPopup.php:1558
+#: com/classes/RegisterPostType.php:212
+msgid "Popup class does not exist"
+msgstr "Kelas popup tidak ada"
+
+#: com/classes/popups/SubscriptionPopup.php:495
+msgid "Subscription Settings"
+msgstr "Pengaturan Langganan"
+
+#: com/classes/popups/SubscriptionPopup.php:496
+msgid "Create subscription form, customize the fields and styles"
+msgstr "Buat formulir langganan, sesuaikan bidang dan gayanya"
+
+#: com/classes/popups/SubscriptionPopup.php:668
+msgid "no title"
+msgstr "tanpa judul"
+
+#: com/classes/RegisterPostType.php:65
+msgid "Description."
+msgstr "Deskripsi."
+
+#: com/classes/RegisterPostType.php:94
+msgctxt "post type general name"
+msgid "Popup Builder"
+msgstr "Popup Builder"
+
+#: com/classes/RegisterPostType.php:95
+msgctxt "post type singular name"
+msgid "Popup"
+msgstr "Popup"
+
+#: com/classes/RegisterPostType.php:96
+msgctxt "admin menu"
+msgid "Popup Builder"
+msgstr "Popup Builder"
+
+#: com/classes/RegisterPostType.php:97
+msgctxt "add new on admin bar"
+msgid "Popup"
+msgstr "Popup"
+
+#: com/classes/RegisterPostType.php:98
+msgctxt "Popup"
+msgid "Add New"
+msgstr "Tambah Baru"
+
+#: com/classes/RegisterPostType.php:99
+#: public/views/popupTypes.php:15
+msgid "Add New Popup"
+msgstr "Tambah Popup Baru"
+
+#: com/classes/RegisterPostType.php:100
+msgid "New Popup"
+msgstr "Popup Baru"
+
+#: com/classes/RegisterPostType.php:101
+msgid "Edit Popup"
+msgstr "Edit Popup"
+
+#: com/classes/RegisterPostType.php:102
+msgid "View Popup"
+msgstr "Lihat Popup"
+
+#: com/classes/RegisterPostType.php:103
+msgid "All Popups"
+msgstr "Semua Popup"
+
+#: com/classes/RegisterPostType.php:104
+msgid "Search"
+msgstr "Cari"
+
+#: com/classes/RegisterPostType.php:105
+msgid "Parent Popups:"
+msgstr "Popup Induk:"
+
+#: com/classes/RegisterPostType.php:106
+msgid "No popups found."
+msgstr "Tidak ada popup ditemukan."
+
+#: com/classes/RegisterPostType.php:107
+msgid "No popups found in Trash."
+msgstr "Tidak ada popup ditemukan di Sampah."
+
+#: com/classes/RegisterPostType.php:248
+msgid "News"
+msgstr "Berita"
+
+#: com/classes/RegisterPostType.php:341
+#: com/classes/RegisterPostType.php:342
+msgid "Extend"
+msgstr "Perluas"
+
+#: com/classes/RegisterPostType.php:362
+#: com/classes/RegisterPostType.php:363
+#: public/views/mainActionButtons.php:13
+msgid "Add New"
+msgstr "Tambah Baru"
+
+#: com/classes/RegisterPostType.php:371
+#: com/classes/RegisterPostType.php:372
+msgid "All Subscribers"
+msgstr "Semua Pelanggan"
+
+#: com/classes/RegisterPostType.php:380
+#: com/classes/RegisterPostType.php:381
+#: public/views/newsletter.php:29
+msgid "Newsletter"
+msgstr "Buletin"
+
+#: com/classes/ScriptsLoader.php:148
+msgid "Play sound"
+msgstr "Putar suara"
+
+#. translators: 1: SG POPUP MINIMUM PHP VERSION 2: PHP VERSION
+#: com/classes/SGPBRequirementsChecker.php:13
+#, php-format
+msgid "Popup Builder plugin requires PHP version >= %1$s version required. You server using PHP version = %2$s"
+msgstr "Plugin Popup Builder memerlukan PHP versi >= %1$s. Server Anda menggunakan PHP versi = %2$s"
+
+#: com/classes/Updates.php:44
+msgid "License"
+msgstr "Lisensi"
+
+#: com/classes/Updates.php:97
+#: com/classes/Updates.php:131
+#: com/classes/Updates.php:168
+msgid "You do not have permission to access this page!"
+msgstr "Anda tidak memiliki izin untuk mengakses halaman ini!"
+
+#: com/classes/Updates.php:154
+#: com/classes/Updates.php:175
+msgid "An error occurred, please try again."
+msgstr "Terjadi kesalahan, silakan coba lagi."
+
+#: com/config/config.php:169
+#: public/views/popupDesignView.php:195
+msgid "Image"
+msgstr "Gambar"
+
+#: com/config/config.php:170
+msgid "HTML"
+msgstr "HTML"
+
+#: com/config/config.php:171
+msgid "Facebook"
+msgstr "Facebook"
+
+#: com/config/config.php:172
+msgid "Subscription"
+msgstr "Langganan"
+
+#: com/config/dataConfig.php:38
+msgid "Select rule"
+msgstr "Pilih aturan"
+
+#: com/config/dataConfig.php:39
+msgid "Everywhere"
+msgstr "Di mana saja"
+
+#: com/config/dataConfig.php:41
+msgid "All posts"
+msgstr "Semua postingan"
+
+#: com/config/dataConfig.php:42
+msgid "Selected posts"
+msgstr "Postingan terpilih"
+
+#: com/config/dataConfig.php:43
+msgid "Post type"
+msgstr "Tipe postingan"
+
+#: com/config/dataConfig.php:44
+msgid "Post category"
+msgstr "Kategori postingan"
+
+#: com/config/dataConfig.php:47
+msgid "All pages"
+msgstr "Semua halaman"
+
+#: com/config/dataConfig.php:48
+msgid "Selected pages"
+msgstr "Halaman terpilih"
+
+#: com/config/dataConfig.php:49
+msgid "Page type"
+msgstr "Tipe halaman"
+
+#: com/config/dataConfig.php:52
+msgid "Post/Page template"
+msgstr "Templat Postingan/Halaman"
+
+#: com/config/dataConfig.php:55
+msgid "All tags"
+msgstr "Semua tag"
+
+#: com/config/dataConfig.php:56
+msgid "Selected tags"
+msgstr "Tag terpilih"
+
+#: com/config/dataConfig.php:61
+#: com/config/dataConfig.php:430
+msgid "Add"
+msgstr "Tambah"
+
+#: com/config/dataConfig.php:62
+#: com/config/dataConfig.php:431
+msgid "Delete"
+msgstr "Hapus"
+
+#: com/config/dataConfig.php:66
+#: com/config/dataConfig.php:435
+msgid "Is"
+msgstr "Adalah"
+
+#: com/config/dataConfig.php:67
+#: com/config/dataConfig.php:436
+msgid "Is not"
+msgstr "Bukan"
+
+#: com/config/dataConfig.php:97
+msgid "Display rule"
+msgstr "Aturan tampilan"
+
+#: com/config/dataConfig.php:98
+msgid "Specify where the popup should be shown on your site."
+msgstr "Tentukan di mana popup harus ditampilkan di situs Anda."
+
+#: com/config/dataConfig.php:109
+msgid "Is or is not"
+msgstr "Adalah atau bukan"
+
+#: com/config/dataConfig.php:110
+msgid "Allow or Disallow popup showing for the selected rule."
+msgstr "Izinkan atau Larang tampilan popup untuk aturan yang dipilih."
+
+#: com/config/dataConfig.php:122
+msgid "Select Your Posts"
+msgstr "Pilih Postingan Anda"
+
+#: com/config/dataConfig.php:123
+msgid "Select your specific posts where the popup should be shown."
+msgstr "Pilih postingan spesifik Anda di mana popup harus ditampilkan."
+
+#: com/config/dataConfig.php:135
+msgid "Select Your Pages"
+msgstr "Pilih Halaman Anda"
+
+#: com/config/dataConfig.php:136
+msgid "Select the pages on your site where the specific popup will be shown."
+msgstr "Pilih halaman di situs Anda di mana popup spesifik akan ditampilkan."
+
+#: com/config/dataConfig.php:149
+msgid "Select Your post types"
+msgstr "Pilih tipe postingan Anda"
+
+#: com/config/dataConfig.php:150
+msgid "Specify the post types on your site to show the popup."
+msgstr "Tentukan tipe postingan di situs Anda untuk menampilkan popup."
+
+#: com/config/dataConfig.php:164
+msgid "Select post categories"
+msgstr "Pilih kategori postingan"
+
+#: com/config/dataConfig.php:165
+msgid "Select the post categories on which the popup should be shown."
+msgstr "Pilih kategori postingan di mana popup harus ditampilkan."
+
+#: com/config/dataConfig.php:178
+msgid "Select specific page types"
+msgstr "Pilih tipe halaman spesifik"
+
+#: com/config/dataConfig.php:179
+msgid "Specify the page types where the popup will be shown."
+msgstr "Tentukan tipe halaman di mana popup akan ditampilkan."
+
+#: com/config/dataConfig.php:192
+msgid "Select Post/page template"
+msgstr "Pilih templat Postingan/halaman"
+
+#: com/config/dataConfig.php:193
+msgid "Select the page or post templates on which the popup will be shown."
+msgstr "Pilih templat halaman atau postingan di mana popup akan ditampilkan."
+
+#: com/config/dataConfig.php:207
+msgid "Select tags"
+msgstr "Pilih tag"
+
+#: com/config/dataConfig.php:208
+msgid "Select the tags on your site for popup showing"
+msgstr "Pilih tag di situs Anda untuk menampilkan popup"
+
+#: com/config/dataConfig.php:247
+#: com/helpers/AdminHelper.php:1554
+#: com/helpers/ConfigDataHelper.php:798
+#: com/helpers/ConfigDataHelper.php:2100
+msgid "On load"
+msgstr "Saat dimuat"
+
+#: com/config/dataConfig.php:248
+msgid "Set by CSS class"
+msgstr "Diatur oleh kelas CSS"
+
+#: com/config/dataConfig.php:249
+msgid "On Click"
+msgstr "Saat Diklik"
+
+#: com/config/dataConfig.php:250
+msgid "On Hover"
+msgstr "Saat Diarahkan"
+
+#: com/config/dataConfig.php:251
+#: com/config/dataConfig.php:606
+msgid "Inactivity"
+msgstr "Tidak Aktif"
+
+#: com/config/dataConfig.php:252
+msgid "On Scroll"
+msgstr "Saat Menggulir"
+
+#: com/config/dataConfig.php:257
+msgid "Repetitive popup"
+msgstr "Popup berulang"
+
+#: com/config/dataConfig.php:295
+#: com/config/dataConfig.php:785
+msgid "Event"
+msgstr "Peristiwa"
+
+#: com/config/dataConfig.php:296
+msgid "Select when the popup should appear on the page."
+msgstr "Pilih kapan popup harus muncul di halaman."
+
+#: com/config/dataConfig.php:306
+msgid "Options"
+msgstr "Opsi"
+
+#: com/config/dataConfig.php:307
+msgid "Select the condition for the current event."
+msgstr "Pilih kondisi untuk peristiwa saat ini."
+
+#: com/config/dataConfig.php:311
+msgid "default custom delay will be used"
+msgstr "penundaan kustom default akan digunakan"
+
+#: com/config/dataConfig.php:313
+#: com/config/dataConfig.php:832
+msgid "Delay"
+msgstr "Penundaan"
+
+#: com/config/dataConfig.php:314
+msgid "Specify how long the popup appearance should be delayed after loading the page (in sec)."
+msgstr "Tentukan berapa lama penampilan popup harus ditunda setelah memuat halaman (dalam detik)."
+
+#: com/config/dataConfig.php:324
+msgid "Click Event"
+msgstr "Peristiwa Klik"
+
+#: com/config/dataConfig.php:325
+#: com/config/dataConfig.php:336
+msgid "Specify the part of the page, in percentages, where the popup should appear after scrolling."
+msgstr "Tentukan bagian halaman, dalam persentase, di mana popup harus muncul setelah menggulir."
+
+#: com/config/dataConfig.php:335
+msgid "Hover Event"
+msgstr "Peristiwa Arahkan"
+
+#: com/config/dataConfig.php:342
+#: com/config/dataConfig.php:349
+msgid "Custom Class"
+msgstr "Kelas Kustom"
+
+#: com/config/dataConfig.php:343
+#: com/config/dataConfig.php:350
+msgid "Add the CSS class name of your HTML element which will trigger this popup after click."
+msgstr "Tambahkan nama kelas CSS dari elemen HTML Anda yang akan memicu popup ini setelah diklik."
+
+#: com/config/dataConfig.php:359
+#: com/config/dataConfig.php:372
+msgid "Please save popup to generate class name."
+msgstr "Silakan simpan popup untuk menghasilkan nama kelas."
+
+#: com/config/dataConfig.php:362
+#: com/config/dataConfig.php:375
+msgid "Default Class"
+msgstr "Kelas Default"
+
+#: com/config/dataConfig.php:363
+#: com/config/dataConfig.php:376
+msgid "Add the following CSS class into your HTML element."
+msgstr "Tambahkan kelas CSS berikut ke dalam elemen HTML Anda."
+
+#: com/config/dataConfig.php:386
+msgid "Repetitive open popup"
+msgstr "Buka popup berulang"
+
+#: com/config/dataConfig.php:387
+msgid "If this option is enabled the same popup will open up after every X seconds you have defined (after closing it)."
+msgstr "Jika opsi ini diaktifkan, popup yang sama akan terbuka setiap X detik yang telah Anda tentukan (setelah menutupnya)."
+
+#: com/config/dataConfig.php:397
+msgid "period"
+msgstr "periode"
+
+#: com/config/dataConfig.php:398
+msgid "This is info"
+msgstr "Ini adalah info"
+
+#: com/config/dataConfig.php:426
+msgid "Select Conditions"
+msgstr "Pilih Kondisi"
+
+#: com/config/dataConfig.php:457
+msgid "Condition"
+msgstr "Kondisi"
+
+#: com/config/dataConfig.php:458
+msgid "Target visitors to show the popup by different conditions."
+msgstr "Targetkan pengunjung untuk menampilkan popup berdasarkan kondisi yang berbeda."
+
+#: com/config/dataConfig.php:468
+msgid "Rule"
+msgstr "Aturan"
+
+#: com/config/dataConfig.php:469
+msgid "Allow or Disallow popup showing for the selected conditions."
+msgstr "Izinkan atau Larang tampilan popup untuk kondisi yang dipilih."
+
+#: com/config/dataConfig.php:502
+#: com/config/dataConfig.php:1002
+msgid "AdBlock"
+msgstr "AdBlock"
+
+#: com/config/dataConfig.php:510
+msgid "Advanced Closing"
+msgstr "Penutupan Lanjutan"
+
+#: com/config/dataConfig.php:518
+#: public/views/conditionsView.php:44
+msgid "Advanced Targeting"
+msgstr "Penargetan Lanjutan"
+
+#: com/config/dataConfig.php:526
+msgid "Age Restriction"
+msgstr "Pembatasan Usia"
+
+#: com/config/dataConfig.php:534
+#: com/config/dataConfig.php:1006
+msgid "Analytics"
+msgstr "Analitik"
+
+#: com/config/dataConfig.php:542
+#: com/config/dataConfig.php:1018
+msgid "AWeber"
+msgstr "AWeber"
+
+#: com/config/dataConfig.php:550
+msgid "Contact Form"
+msgstr "Formulir Kontak"
+
+#: com/config/dataConfig.php:558
+msgid "Countdown"
+msgstr "Hitung Mundur"
+
+#: com/config/dataConfig.php:566
+msgid "EDD"
+msgstr "EDD"
+
+#: com/config/dataConfig.php:574
+msgid "Exit Intent"
+msgstr "Niat Keluar"
+
+#: com/config/dataConfig.php:582
+msgid "Gamification"
+msgstr "Gamifikasi"
+
+#: com/config/dataConfig.php:590
+#: public/views/conditionsView.php:17
+msgid "Geo Targeting"
+msgstr "Penargetan Geo"
+
+#: com/config/dataConfig.php:598
+msgid "Iframe"
+msgstr "Iframe"
+
+#: com/config/dataConfig.php:614
+msgid "Log In"
+msgstr "Masuk"
+
+#: com/config/dataConfig.php:622
+#: com/config/dataConfig.php:1014
+msgid "Mailchimp"
+msgstr "Mailchimp"
+
+#: com/config/dataConfig.php:630
+msgid "PDF"
+msgstr "PDF"
+
+#: com/config/dataConfig.php:638
+msgid "Push Notification"
+msgstr "Notifikasi Push"
+
+#: com/config/dataConfig.php:646
+msgid "Random"
+msgstr "Acak"
+
+#: com/config/dataConfig.php:654
+msgid "Recent Sales"
+msgstr "Penjualan Terbaru"
+
+#: com/config/dataConfig.php:662
+msgid "Registration"
+msgstr "Pendaftaran"
+
+#: com/config/dataConfig.php:670
+msgid "Restriction"
+msgstr "Pembatasan"
+
+#: com/config/dataConfig.php:686
+msgid "Scroll"
+msgstr "Gulir"
+
+#: com/config/dataConfig.php:694
+msgid "Social"
+msgstr "Sosial"
+
+#: com/config/dataConfig.php:702
+msgid "Subscription Plus"
+msgstr "Subscription Plus"
+
+#: com/config/dataConfig.php:710
+msgid "Video"
+msgstr "Video"
+
+#: com/config/dataConfig.php:718
+msgid "WooCommerce"
+msgstr "WooCommerce"
+
+#: com/config/dataConfig.php:750
+#: public/views/mediaButton.php:39
+msgid "Select event"
+msgstr "Pilih peristiwa"
+
+#: com/config/dataConfig.php:751
+msgid "Special events"
+msgstr "Peristiwa khusus"
+
+#: com/config/dataConfig.php:752
+msgid "Contact Form 7 submission"
+msgstr "Pengiriman Contact Form 7"
+
+#: com/config/dataConfig.php:756
+msgid "Select behavior"
+msgstr "Pilih perilaku"
+
+#: com/config/dataConfig.php:757
+msgid "Behaviors"
+msgstr "Perilaku"
+
+#: com/config/dataConfig.php:758
+#: com/helpers/ConfigDataHelper.php:455
+#: com/helpers/ConfigDataHelper.php:839
+#: com/helpers/ConfigDataHelper.php:1757
+#: com/helpers/ConfigDataHelper.php:2141
+msgid "Redirect to URL"
+msgstr "Alihkan ke URL"
+
+#: com/config/dataConfig.php:759
+msgid "Open another popup"
+msgstr "Buka popup lain"
+
+#: com/config/dataConfig.php:760
+msgid "Close current popup"
+msgstr "Tutup popup saat ini"
+
+#: com/config/dataConfig.php:786
+msgid "Select the special event you want to catch."
+msgstr "Pilih peristiwa khusus yang ingin Anda tangkap."
+
+#: com/config/dataConfig.php:796
+msgid "Behavior"
+msgstr "Perilaku"
+
+#: com/config/dataConfig.php:797
+msgid "Select what should happen after the special event."
+msgstr "Pilih apa yang harus terjadi setelah peristiwa khusus."
+
+#: com/config/dataConfig.php:807
+#: public/views/options/facebook.php:13
+#: public/views/optionsView.php:49
+msgid "URL"
+msgstr "URL"
+
+#: com/config/dataConfig.php:808
+msgid "Enter the URL of the page should be redirected to."
+msgstr "Masukkan URL halaman yang akan dialihkan."
+
+#: com/config/dataConfig.php:820
+#: public/views/htmlCustomButtonElement.php:177
+#: public/views/mediaButton.php:30
+#: public/views/options/subscription.php:309
+msgid "Select popup"
+msgstr "Pilih popup"
+
+#: com/config/dataConfig.php:821
+msgid "Select the popup that should be opened."
+msgstr "Pilih popup yang harus dibuka."
+
+#: com/config/dataConfig.php:833
+msgid "After how many seconds the popup should close."
+msgstr "Setelah berapa detik popup harus ditutup."
+
+#: com/config/dataConfig.php:881
+msgid "Copied to Clipboard!"
+msgstr "Disalin ke Clipboard!"
+
+#: com/config/dataConfig.php:935
+msgid "Email *"
+msgstr "Email *"
+
+#: com/config/dataConfig.php:942
+msgid "This field is required."
+msgstr "Bidang ini wajib diisi."
+
+#: com/config/dataConfig.php:955
+msgid "Subscribe"
+msgstr "Berlangganan"
+
+#: com/config/dataConfig.php:956
+msgid "Please wait..."
+msgstr "Mohon tunggu..."
+
+#: com/config/dataConfig.php:962
+msgid "You have successfully subscribed to the newsletter"
+msgstr "Anda telah berhasil berlangganan buletin"
+
+#: com/config/dataConfig.php:967
+msgid "Accept Terms"
+msgstr "Setujui Ketentuan"
+
+#. translators: Website Blog info
+#: com/config/dataConfig.php:969
+#, php-format
+msgid "%s will use the information you provide on this form to be in touch with you and to provide updates and marketing."
+msgstr "%s akan menggunakan informasi yang Anda berikan pada formulir ini untuk berhubungan dengan Anda dan untuk memberikan pembaruan serta pemasaran."
+
+#: com/config/dataConfig.php:992
+msgid "Click it!"
+msgstr "Klik!"
+
+#: com/config/dataConfig.php:1010
+msgid "Exit intent"
+msgstr "Niat keluar"
+
+#: com/helpers/AdminHelper.php:714
+msgid "Popup Builder plugin has been successfully updated"
+msgstr "Plugin Popup Builder telah berhasil diperbarui"
+
+#: com/helpers/AdminHelper.php:715
+msgid "The following extensions need to be updated manually"
+msgstr "Ekstensi berikut perlu diperbarui secara manual"
+
+#: com/helpers/AdminHelper.php:723
+#: com/helpers/AdminHelper.php:806
+msgid "Don't show again"
+msgstr "Jangan tampilkan lagi"
+
+#: com/helpers/AdminHelper.php:799
+msgid "Popup Builder plugin has been updated to the new version 3."
+msgstr "Plugin Popup Builder telah diperbarui ke versi baru 3."
+
+#: com/helpers/AdminHelper.php:800
+msgid "A lot of changes and improvements have been made."
+msgstr "Banyak perubahan dan peningkatan telah dilakukan."
+
+#. translators: Ticket URL
+#: com/helpers/AdminHelper.php:803
+#, php-format
+msgid "In case of any issues, please contact us <a href=\"%s\" target=\"_blank\">here</a>."
+msgstr "Jika ada masalah, silakan hubungi kami <a href=\"%s\" target=\"_blank\">di sini</a>."
+
+#: com/helpers/AdminHelper.php:995
+msgid "You have successfully unsubscribed."
+msgstr "Anda telah berhasil berhenti berlangganan."
+
+#: com/helpers/AdminHelper.php:997
+msgid " to go to the home page."
+msgstr " untuk membuka halaman beranda."
+
+#: com/helpers/AdminHelper.php:1011
+msgid "Unsubscription"
+msgstr "Berhenti Berlangganan"
+
+#. translators: user Email, subscription Form Title
+#: com/helpers/AdminHelper.php:1015
+#, php-format
+msgid "User with %1$s email has unsubscribed from %2$s mail list"
+msgstr "Pengguna dengan email %1$s telah berhenti berlangganan dari daftar email %2$s"
+
+#: com/helpers/AdminHelper.php:1090
+msgid "This unsubscribe link is no longer valid. Please contact the site administrator to unsubscribe from the mailing list."
+msgstr "Tautan berhenti berlangganan ini tidak lagi valid. Silakan hubungi administrator situs untuk berhenti berlangganan dari daftar email."
+
+#. translators: %s: Blog name
+#: com/helpers/AdminHelper.php:1139
+#, php-format
+msgid "[%s] New Unsubscribe Link"
+msgstr "[%s] Tautan Berhenti Berlangganan Baru"
+
+#. translators: %s: Subcriber first name
+#: com/helpers/AdminHelper.php:1143
+#, php-format
+msgid "Hello %s,"
+msgstr "Halo %s,"
+
+#: com/helpers/AdminHelper.php:1144
+msgid "You requested a new unsubscribe link. Click the link below to unsubscribe from our mailing list:"
+msgstr "Anda meminta tautan berhenti berlangganan baru. Klik tautan di bawah untuk berhenti berlangganan dari daftar email kami:"
+
+#: com/helpers/AdminHelper.php:1146
+msgid "Or copy and paste this link into your browser:"
+msgstr "Atau salin dan tempel tautan ini ke browser Anda:"
+
+#: com/helpers/AdminHelper.php:1148
+msgid "If you did not request this link, please ignore this email."
+msgstr "Jika Anda tidak meminta tautan ini, silakan abaikan email ini."
+
+#: com/helpers/AdminHelper.php:1178
+msgid "Need some help?"
+msgstr "Butuh bantuan?"
+
+#: com/helpers/AdminHelper.php:1179
+msgid "Let us know what you think."
+msgstr "Beri tahu kami pendapat Anda."
+
+#: com/helpers/AdminHelper.php:1180
+msgid "Rate Us"
+msgstr "Beri Nilai"
+
+#: com/helpers/AdminHelper.php:1181
+msgid "Support Portal"
+msgstr "Portal Dukungan"
+
+#: com/helpers/AdminHelper.php:1182
+msgid "Support Forum"
+msgstr "Forum Dukungan"
+
+#: com/helpers/AdminHelper.php:1183
+msgid "LIVE chat"
+msgstr "Live chat"
+
+#: com/helpers/AdminHelper.php:1185
+msgid "Bored of this?"
+msgstr "Bosan dengan ini?"
+
+#: com/helpers/AdminHelper.php:1185
+msgid " Press here "
+msgstr " Tekan di sini "
+
+#: com/helpers/AdminHelper.php:1185
+msgid "and we will not show it again!"
+msgstr "dan kami tidak akan menampilkannya lagi!"
+
+#: com/helpers/AdminHelper.php:1195
+msgid "This is great!"
+msgstr "Ini bagus sekali!"
+
+#: com/helpers/AdminHelper.php:1196
+msgid "We have noticed that you are using Popup Builder plugin on your site for"
+msgstr "Kami melihat bahwa Anda menggunakan plugin Popup Builder di situs Anda selama"
+
+#: com/helpers/AdminHelper.php:1198
+msgid "days, we are thankful for that."
+msgstr "hari, kami berterima kasih untuk itu."
+
+#: com/helpers/AdminHelper.php:1274
+msgid "This is really great for your website score."
+msgstr "Ini sangat bagus untuk skor situs web Anda."
+
+#: com/helpers/AdminHelper.php:1276
+msgid "Have your input in the development of our plugin, and we’ll provide better conversions for your site!"
+msgstr "Berikan masukan Anda dalam pengembangan plugin kami, dan kami akan memberikan konversi yang lebih baik untuk situs Anda!"
+
+#: com/helpers/AdminHelper.php:1278
+msgid "Leave your 5-star positive review and help us go further to perfection!"
+msgstr "Tinggalkan ulasan positif bintang 5 Anda dan bantu kami melangkah lebih jauh menuju kesempurnaan!"
+
+#: com/helpers/AdminHelper.php:1282
+msgid "I already did"
+msgstr "Saya sudah melakukannya"
+
+#: com/helpers/AdminHelper.php:1283
+msgid "You worth it!"
+msgstr "Anda layak mendapatkannya!"
+
+#: com/helpers/AdminHelper.php:1284
+msgid "Maybe later"
+msgstr "Mungkin nanti"
+
+#: com/helpers/AdminHelper.php:1403
+msgid "Awesome news!"
+msgstr "Berita luar biasa!"
+
+#: com/helpers/AdminHelper.php:1405
+msgid "plugin helped you to share your message via"
+msgstr "plugin membantu Anda menyampaikan pesan melalui"
+
+#: com/helpers/AdminHelper.php:1407
+msgid "popup with your visitors for"
+msgstr "popup kepada pengunjung Anda selama"
+
+#: com/helpers/AdminHelper.php:1409
+msgid "times!"
+msgstr "kali!"
+
+#: com/helpers/AdminHelper.php:1552
+msgid "Select Event"
+msgstr "Pilih Peristiwa"
+
+#: com/helpers/AdminHelper.php:1553
+#: com/helpers/ConfigDataHelper.php:661
+#: com/helpers/ConfigDataHelper.php:797
+#: com/helpers/ConfigDataHelper.php:1963
+#: com/helpers/ConfigDataHelper.php:2099
+msgid "Inherit"
+msgstr "Warisi"
+
+#: com/helpers/AdminHelper.php:1555
+#: com/helpers/ConfigDataHelper.php:799
+#: com/helpers/ConfigDataHelper.php:2101
+msgid "On click"
+msgstr "Saat diklik"
+
+#: com/helpers/AdminHelper.php:1556
+#: com/helpers/ConfigDataHelper.php:800
+#: com/helpers/ConfigDataHelper.php:2102
+msgid "On hover"
+msgstr "Saat diarahkan"
+
+#: com/helpers/AdminHelper.php:1971
+msgid "No license"
+msgstr "Tidak ada lisensi"
+
+#: com/helpers/ConfigDataHelper.php:160
+#: com/helpers/ConfigDataHelper.php:163
+#: com/helpers/ConfigDataHelper.php:1463
+#: com/helpers/ConfigDataHelper.php:1466
+msgid "Select "
+msgstr "Pilih "
+
+#: com/helpers/ConfigDataHelper.php:232
+#: com/helpers/ConfigDataHelper.php:1535
+msgid "Home Page"
+msgstr "Halaman Beranda"
+
+#: com/helpers/ConfigDataHelper.php:233
+#: com/helpers/ConfigDataHelper.php:1536
+msgid "Posts Page"
+msgstr "Halaman Postingan"
+
+#: com/helpers/ConfigDataHelper.php:234
+#: com/helpers/ConfigDataHelper.php:1537
+msgid "Search Pages"
+msgstr "Halaman Pencarian"
+
+#: com/helpers/ConfigDataHelper.php:235
+#: com/helpers/ConfigDataHelper.php:1538
+msgid "404 Pages"
+msgstr "Halaman 404"
+
+#: com/helpers/ConfigDataHelper.php:237
+#: com/helpers/ConfigDataHelper.php:1540
+msgid "Shop Page"
+msgstr "Halaman Toko"
+
+#: com/helpers/ConfigDataHelper.php:240
+#: com/helpers/ConfigDataHelper.php:1543
+msgid "Archive Page"
+msgstr "Halaman Arsip"
+
+#: com/helpers/ConfigDataHelper.php:249
+#: com/helpers/ConfigDataHelper.php:1552
+msgid "Default Template"
+msgstr "Templat Default"
+
+#: com/helpers/ConfigDataHelper.php:345
+#: com/helpers/ConfigDataHelper.php:1647
+msgid "Close Popup"
+msgstr "Tutup Popup"
+
+#: com/helpers/ConfigDataHelper.php:356
+#: com/helpers/ConfigDataHelper.php:1658
+msgid "Redirect"
+msgstr "Alihkan"
+
+#: com/helpers/ConfigDataHelper.php:367
+#: com/helpers/ConfigDataHelper.php:443
+#: com/helpers/ConfigDataHelper.php:1669
+#: com/helpers/ConfigDataHelper.php:1745
+msgid "Copy to clipboard"
+msgstr "Salin ke clipboard"
+
+#: com/helpers/ConfigDataHelper.php:385
+#: com/helpers/ConfigDataHelper.php:412
+#: com/helpers/ConfigDataHelper.php:1687
+#: com/helpers/ConfigDataHelper.php:1714
+msgid "If you need the popup id number in the custom code, you may use the following variable to get the ID:"
+msgstr "Jika Anda memerlukan nomor id popup dalam kode kustom, Anda dapat menggunakan variabel berikut untuk mendapatkan ID:"
+
+#: com/helpers/ConfigDataHelper.php:467
+#: com/helpers/ConfigDataHelper.php:851
+#: com/helpers/ConfigDataHelper.php:1769
+#: com/helpers/ConfigDataHelper.php:2153
+msgid "Open popup"
+msgstr "Buka popup"
+
+#: com/helpers/ConfigDataHelper.php:478
+#: com/helpers/ConfigDataHelper.php:862
+#: com/helpers/ConfigDataHelper.php:1780
+#: com/helpers/ConfigDataHelper.php:2164
+msgid "Hide popup"
+msgstr "Sembunyikan popup"
+
+#: com/helpers/ConfigDataHelper.php:508
+#: com/helpers/ConfigDataHelper.php:1810
+msgid "Responsive mode"
+msgstr "Mode responsif"
+
+#: com/helpers/ConfigDataHelper.php:509
+#: com/helpers/ConfigDataHelper.php:1811
+msgid "The sizes of the popup will be counted automatically, according to the content size of the popup. You can select the size in percentages, with this mode, to specify the size on the screen"
+msgstr "Ukuran popup akan dihitung secara otomatis, sesuai dengan ukuran konten popup. Anda dapat memilih ukuran dalam persentase, dengan mode ini, untuk menentukan ukuran di layar"
+
+#: com/helpers/ConfigDataHelper.php:521
+#: com/helpers/ConfigDataHelper.php:1823
+msgid "Custom mode"
+msgstr "Mode kustom"
+
+#: com/helpers/ConfigDataHelper.php:522
+#: com/helpers/ConfigDataHelper.php:1824
+msgid "Add your own custom dimensions for the popup to get the exact sizing for your popup"
+msgstr "Tambahkan dimensi kustom Anda sendiri untuk popup agar mendapatkan ukuran yang tepat untuk popup Anda"
+
+#: com/helpers/ConfigDataHelper.php:574
+#: com/helpers/ConfigDataHelper.php:1876
+msgid "Auto"
+msgstr "Otomatis"
+
+#: com/helpers/ConfigDataHelper.php:585
+#: com/helpers/ConfigDataHelper.php:1887
+msgid "Full screen"
+msgstr "Layar penuh"
+
+#: com/helpers/ConfigDataHelper.php:589
+#: com/helpers/ConfigDataHelper.php:1891
+msgid "Devices"
+msgstr "Perangkat"
+
+#: com/helpers/ConfigDataHelper.php:590
+#: com/helpers/ConfigDataHelper.php:1892
+msgid "User Status"
+msgstr "Status Pengguna"
+
+#: com/helpers/ConfigDataHelper.php:591
+#: com/helpers/ConfigDataHelper.php:1893
+msgid "After x pages visit"
+msgstr "Setelah x kunjungan halaman"
+
+#: com/helpers/ConfigDataHelper.php:592
+#: com/helpers/ConfigDataHelper.php:1894
+msgid "User Role"
+msgstr "Peran Pengguna"
+
+#: com/helpers/ConfigDataHelper.php:593
+#: com/helpers/ConfigDataHelper.php:1895
+msgid "Referral URL detection"
+msgstr "Deteksi URL Rujukan"
+
+#: com/helpers/ConfigDataHelper.php:594
+#: com/helpers/ConfigDataHelper.php:1896
+msgid "Cookie Detection"
+msgstr "Deteksi Cookie"
+
+#: com/helpers/ConfigDataHelper.php:595
+#: com/helpers/ConfigDataHelper.php:1897
+msgid "Operating System"
+msgstr "Sistem Operasi"
+
+#: com/helpers/ConfigDataHelper.php:596
+#: com/helpers/ConfigDataHelper.php:1898
+msgid "Web Browser"
+msgstr "Browser Web"
+
+#: com/helpers/ConfigDataHelper.php:597
+#: com/helpers/ConfigDataHelper.php:1899
+msgid "URL Query String"
+msgstr "String Kueri URL"
+
+#: com/helpers/ConfigDataHelper.php:601
+#: com/helpers/ConfigDataHelper.php:1903
+msgid "Countries"
+msgstr "Negara"
+
+#: com/helpers/ConfigDataHelper.php:602
+#: com/helpers/ConfigDataHelper.php:1904
+msgid "Cities"
+msgstr "Kota"
+
+#: com/helpers/ConfigDataHelper.php:603
+#: com/helpers/ConfigDataHelper.php:1905
+msgid "States"
+msgstr "Provinsi"
+
+#: com/helpers/ConfigDataHelper.php:604
+#: com/helpers/ConfigDataHelper.php:1906
+msgid "Visitor IP"
+msgstr "IP Pengunjung"
+
+#: com/helpers/ConfigDataHelper.php:608
+#: com/helpers/ConfigDataHelper.php:1910
+msgid "top-left"
+msgstr "kiri-atas"
+
+#: com/helpers/ConfigDataHelper.php:609
+#: com/helpers/ConfigDataHelper.php:1911
+msgid "top-right"
+msgstr "kanan-atas"
+
+#: com/helpers/ConfigDataHelper.php:610
+#: com/helpers/ConfigDataHelper.php:615
+#: com/helpers/ConfigDataHelper.php:1912
+#: com/helpers/ConfigDataHelper.php:1917
+msgid "bottom-left"
+msgstr "kiri-bawah"
+
+#: com/helpers/ConfigDataHelper.php:611
+#: com/helpers/ConfigDataHelper.php:616
+#: com/helpers/ConfigDataHelper.php:1913
+#: com/helpers/ConfigDataHelper.php:1918
+msgid "bottom-right"
+msgstr "kanan-bawah"
+
+#: com/helpers/ConfigDataHelper.php:647
+#: com/helpers/ConfigDataHelper.php:1949
+msgid "Monday"
+msgstr "Senin"
+
+#: com/helpers/ConfigDataHelper.php:648
+#: com/helpers/ConfigDataHelper.php:1950
+msgid "Tuesday"
+msgstr "Selasa"
+
+#: com/helpers/ConfigDataHelper.php:649
+#: com/helpers/ConfigDataHelper.php:1951
+msgid "Wednesday"
+msgstr "Rabu"
+
+#: com/helpers/ConfigDataHelper.php:650
+#: com/helpers/ConfigDataHelper.php:1952
+msgid "Thursday"
+msgstr "Kamis"
+
+#: com/helpers/ConfigDataHelper.php:651
+#: com/helpers/ConfigDataHelper.php:1953
+msgid "Friday"
+msgstr "Jumat"
+
+#: com/helpers/ConfigDataHelper.php:652
+#: com/helpers/ConfigDataHelper.php:1954
+msgid "Saturday"
+msgstr "Sabtu"
+
+#: com/helpers/ConfigDataHelper.php:653
+#: com/helpers/ConfigDataHelper.php:1955
+msgid "Sunday"
+msgstr "Minggu"
+
+#: com/helpers/ConfigDataHelper.php:657
+#: com/helpers/ConfigDataHelper.php:1959
+msgid "Both"
+msgstr "Keduanya"
+
+#: com/helpers/ConfigDataHelper.php:658
+#: com/helpers/ConfigDataHelper.php:1960
+msgid "Horizontal"
+msgstr "Horizontal"
+
+#: com/helpers/ConfigDataHelper.php:659
+#: com/helpers/ConfigDataHelper.php:1961
+msgid "Vertical"
+msgstr "Vertikal"
+
+#: com/helpers/ConfigDataHelper.php:660
+#: com/helpers/ConfigDataHelper.php:876
+#: com/helpers/ConfigDataHelper.php:883
+#: com/helpers/ConfigDataHelper.php:902
+#: com/helpers/ConfigDataHelper.php:1962
+#: com/helpers/ConfigDataHelper.php:2178
+#: com/helpers/ConfigDataHelper.php:2185
+#: com/helpers/ConfigDataHelper.php:2204
+msgid "None"
+msgstr "Tidak Ada"
+
+#: com/helpers/ConfigDataHelper.php:688
+#: com/helpers/ConfigDataHelper.php:1990
+msgid "Use active URL"
+msgstr "Gunakan URL aktif"
+
+#: com/helpers/ConfigDataHelper.php:700
+#: com/helpers/ConfigDataHelper.php:2002
+msgid "Share URL"
+msgstr "Bagikan URL"
+
+#: com/helpers/ConfigDataHelper.php:730
+#: com/helpers/ConfigDataHelper.php:2032
+msgid "Due Date"
+msgstr "Tanggal Jatuh Tempo"
+
+#: com/helpers/ConfigDataHelper.php:742
+#: com/helpers/ConfigDataHelper.php:2044
+msgid "Timer"
+msgstr "Pengatur Waktu"
+
+#: com/helpers/ConfigDataHelper.php:791
+#: com/helpers/ConfigDataHelper.php:2093
+msgid "True"
+msgstr "Benar"
+
+#: com/helpers/ConfigDataHelper.php:792
+#: com/helpers/ConfigDataHelper.php:2094
+msgid "False"
+msgstr "Salah"
+
+#: com/helpers/ConfigDataHelper.php:793
+#: com/helpers/ConfigDataHelper.php:2095
+msgid "Inside"
+msgstr "Di dalam"
+
+#: com/helpers/ConfigDataHelper.php:827
+#: com/helpers/ConfigDataHelper.php:2129
+#: public/views/options/subscription.php:287
+msgid "Success message"
+msgstr "Pesan sukses"
+
+#: com/helpers/ConfigDataHelper.php:869
+#: com/helpers/ConfigDataHelper.php:2171
+msgid "Standard"
+msgstr "Standar"
+
+#: com/helpers/ConfigDataHelper.php:870
+#: com/helpers/ConfigDataHelper.php:2172
+msgid "Box with count"
+msgstr "Kotak dengan hitungan"
+
+#: com/helpers/ConfigDataHelper.php:871
+#: com/helpers/ConfigDataHelper.php:2173
+msgid "Button with count"
+msgstr "Tombol dengan hitungan"
+
+#: com/helpers/ConfigDataHelper.php:872
+#: com/helpers/ConfigDataHelper.php:2174
+#: public/views/htmlCustomButtonElement.php:17
+msgid "Button"
+msgstr "Tombol"
+
+#: com/helpers/ConfigDataHelper.php:877
+#: com/helpers/ConfigDataHelper.php:2179
+msgid "Cover"
+msgstr "Cover"
+
+#: com/helpers/ConfigDataHelper.php:878
+#: com/helpers/ConfigDataHelper.php:2180
+msgid "Contain"
+msgstr "Contain"
+
+#: com/helpers/ConfigDataHelper.php:879
+#: com/helpers/ConfigDataHelper.php:2181
+msgid "Repeat"
+msgstr "Repeat"
+
+#: com/helpers/ConfigDataHelper.php:884
+#: com/helpers/ConfigDataHelper.php:903
+#: com/helpers/ConfigDataHelper.php:2186
+#: com/helpers/ConfigDataHelper.php:2205
+msgid "Flip"
+msgstr "Flip"
+
+#: com/helpers/ConfigDataHelper.php:885
+#: com/helpers/ConfigDataHelper.php:904
+#: com/helpers/ConfigDataHelper.php:2187
+#: com/helpers/ConfigDataHelper.php:2206
+msgid "Shake"
+msgstr "Shake"
+
+#: com/helpers/ConfigDataHelper.php:886
+#: com/helpers/ConfigDataHelper.php:905
+#: com/helpers/ConfigDataHelper.php:2188
+#: com/helpers/ConfigDataHelper.php:2207
+msgid "Wobble"
+msgstr "Wobble"
+
+#: com/helpers/ConfigDataHelper.php:887
+#: com/helpers/ConfigDataHelper.php:906
+#: com/helpers/ConfigDataHelper.php:2189
+#: com/helpers/ConfigDataHelper.php:2208
+msgid "Swing"
+msgstr "Swing"
+
+#: com/helpers/ConfigDataHelper.php:888
+#: com/helpers/ConfigDataHelper.php:907
+#: com/helpers/ConfigDataHelper.php:2190
+#: com/helpers/ConfigDataHelper.php:2209
+msgid "Flash"
+msgstr "Flash"
+
+#: com/helpers/ConfigDataHelper.php:889
+#: com/helpers/ConfigDataHelper.php:908
+#: com/helpers/ConfigDataHelper.php:2191
+#: com/helpers/ConfigDataHelper.php:2210
+msgid "Bounce"
+msgstr "Bounce"
+
+#: com/helpers/ConfigDataHelper.php:890
+#: com/helpers/ConfigDataHelper.php:2192
+msgid "BounceInRight"
+msgstr "BounceInRight"
+
+#: com/helpers/ConfigDataHelper.php:891
+#: com/helpers/ConfigDataHelper.php:2193
+msgid "BounceIn"
+msgstr "BounceIn"
+
+#: com/helpers/ConfigDataHelper.php:892
+#: com/helpers/ConfigDataHelper.php:911
+#: com/helpers/ConfigDataHelper.php:2194
+#: com/helpers/ConfigDataHelper.php:2213
+msgid "Pulse"
+msgstr "Pulse"
+
+#: com/helpers/ConfigDataHelper.php:893
+#: com/helpers/ConfigDataHelper.php:912
+#: com/helpers/ConfigDataHelper.php:2195
+#: com/helpers/ConfigDataHelper.php:2214
+msgid "RubberBand"
+msgstr "RubberBand"
+
+#: com/helpers/ConfigDataHelper.php:894
+#: com/helpers/ConfigDataHelper.php:913
+#: com/helpers/ConfigDataHelper.php:2196
+#: com/helpers/ConfigDataHelper.php:2215
+msgid "Tada"
+msgstr "Tada"
+
+#: com/helpers/ConfigDataHelper.php:895
+#: com/helpers/ConfigDataHelper.php:2197
+msgid "SlideInUp"
+msgstr "SlideInUp"
+
+#: com/helpers/ConfigDataHelper.php:896
+#: com/helpers/ConfigDataHelper.php:915
+#: com/helpers/ConfigDataHelper.php:2198
+#: com/helpers/ConfigDataHelper.php:2217
+msgid "Jello"
+msgstr "Jello"
+
+#: com/helpers/ConfigDataHelper.php:897
+#: com/helpers/ConfigDataHelper.php:2199
+msgid "RotateIn"
+msgstr "RotateIn"
+
+#: com/helpers/ConfigDataHelper.php:898
+#: com/helpers/ConfigDataHelper.php:2200
+msgid "FadeIn"
+msgstr "FadeIn"
+
+#: com/helpers/ConfigDataHelper.php:909
+#: com/helpers/ConfigDataHelper.php:2211
+msgid "BounceOutLeft"
+msgstr "BounceOutLeft"
+
+#: com/helpers/ConfigDataHelper.php:910
+#: com/helpers/ConfigDataHelper.php:2212
+msgid "BounceOut"
+msgstr "BounceOut"
+
+#: com/helpers/ConfigDataHelper.php:914
+#: com/helpers/ConfigDataHelper.php:2216
+msgid "SlideOutUp"
+msgstr "SlideOutUp"
+
+#: com/helpers/ConfigDataHelper.php:916
+#: com/helpers/ConfigDataHelper.php:2218
+msgid "RotateOut"
+msgstr "RotateOut"
+
+#: com/helpers/ConfigDataHelper.php:917
+#: com/helpers/ConfigDataHelper.php:2219
+msgid "FadeOut"
+msgstr "FadeOut"
+
+#: com/helpers/ConfigDataHelper.php:921
+#: com/helpers/ConfigDataHelper.php:928
+#: com/helpers/ConfigDataHelper.php:2223
+#: com/helpers/ConfigDataHelper.php:2230
+msgid "Top left"
+msgstr "Kiri atas"
+
+#: com/helpers/ConfigDataHelper.php:922
+#: com/helpers/ConfigDataHelper.php:929
+#: com/helpers/ConfigDataHelper.php:2224
+#: com/helpers/ConfigDataHelper.php:2231
+msgid "Top right"
+msgstr "Kanan atas"
+
+#: com/helpers/ConfigDataHelper.php:923
+#: com/helpers/ConfigDataHelper.php:930
+#: com/helpers/ConfigDataHelper.php:2225
+#: com/helpers/ConfigDataHelper.php:2232
+msgid "Bottom left"
+msgstr "Kiri bawah"
+
+#: com/helpers/ConfigDataHelper.php:924
+#: com/helpers/ConfigDataHelper.php:931
+#: com/helpers/ConfigDataHelper.php:2226
+#: com/helpers/ConfigDataHelper.php:2233
+msgid "Bottom right"
+msgstr "Kanan bawah"
+
+#: com/helpers/ConfigDataHelper.php:932
+#: com/helpers/ConfigDataHelper.php:2234
+msgid "Top center"
+msgstr "Tengah atas"
+
+#: com/helpers/ConfigDataHelper.php:933
+#: com/helpers/ConfigDataHelper.php:2235
+msgid "Bottom center"
+msgstr "Tengah bawah"
+
+#: com/helpers/ConfigDataHelper.php:934
+#: com/helpers/ConfigDataHelper.php:2236
+msgid "Right center"
+msgstr "Tengah kanan"
+
+#: com/helpers/ConfigDataHelper.php:935
+#: com/helpers/ConfigDataHelper.php:2237
+#: public/views/floatingButton.php:42
+msgid "Left center"
+msgstr "Tengah kiri"
+
+#: com/helpers/ConfigDataHelper.php:939
+#: com/helpers/ConfigDataHelper.php:2241
+#: public/views/floatingButton.php:28
+msgid "Corner"
+msgstr "Sudut"
+
+#: com/helpers/ConfigDataHelper.php:940
+#: com/helpers/ConfigDataHelper.php:2242
+#: public/views/floatingButton.php:29
+msgid "Basic"
+msgstr "Dasar"
+
+#: com/helpers/ConfigDataHelper.php:969
+#: com/helpers/ConfigDataHelper.php:979
+#: com/helpers/ConfigDataHelper.php:2271
+#: com/helpers/ConfigDataHelper.php:2281
+msgid "Default"
+msgstr "Default"
+
+#: com/helpers/ConfigDataHelper.php:970
+#: com/helpers/ConfigDataHelper.php:980
+#: com/helpers/ConfigDataHelper.php:2272
+#: com/helpers/ConfigDataHelper.php:2282
+msgid "Custom class"
+msgstr "Kelas kustom"
+
+#: com/helpers/ConfigDataHelper.php:1274
+#: com/helpers/ConfigDataHelper.php:2576
+msgid "Only image files supported"
+msgstr "Hanya file gambar yang didukung"
+
+#: com/helpers/ConfigDataHelper.php:1275
+#: com/helpers/ConfigDataHelper.php:2577
+msgid "Only pdf files supported"
+msgstr "Hanya file pdf yang didukung"
+
+#: com/helpers/ConfigDataHelper.php:1276
+#: com/helpers/ConfigDataHelper.php:2578
+msgid "Are you sure?"
+msgstr "Apakah Anda yakin?"
+
+#: com/helpers/ConfigDataHelper.php:1277
+#: com/helpers/ConfigDataHelper.php:2579
+msgid "L"
+msgstr "L"
+
+#: com/helpers/ConfigDataHelper.php:1278
+#: com/helpers/ConfigDataHelper.php:2580
+msgid "Only audio files supported (e.g.: mp3, wav, m4a, ogg)"
+msgstr "Hanya file audio yang didukung (mis.: mp3, wav, m4a, ogg)"
+
+#: com/helpers/ConfigDataHelper.php:1279
+#: com/helpers/ConfigDataHelper.php:2581
+msgid "Please, publish the popup before starting to use Elementor with it!"
+msgstr "Silakan publikasikan popup sebelum mulai menggunakan Elementor dengannya!"
+
+#: com/helpers/ConfigDataHelper.php:1280
+#: com/helpers/ConfigDataHelper.php:2582
+msgid "Please, publish the popup before starting to use Divi Builder with it!"
+msgstr "Silakan publikasikan popup sebelum mulai menggunakan Divi Builder dengannya!"
+
+#: com/helpers/ConfigDataHelper.php:1281
+#: com/helpers/ConfigDataHelper.php:2583
+#: public/views/closeSettingsView.php:232
+msgid "Close"
+msgstr "Tutup"
+
+#: com/libs/ListTable.php:149
+msgid "List View"
+msgstr "Tampilan Daftar"
+
+#: com/libs/ListTable.php:150
+msgid "Excerpt View"
+msgstr "Tampilan Ringkasan"
+
+#: com/libs/ListTable.php:324
+#: com/libs/Table.php:297
+msgid "No items found."
+msgstr "Tidak ada item ditemukan."
+
+#: com/libs/ListTable.php:449
+msgid "Select bulk action"
+msgstr "Pilih tindakan massal"
+
+#: com/libs/ListTable.php:451
+msgid "Bulk Actions"
+msgstr "Tindakan Massal"
+
+#: com/libs/ListTable.php:461
+msgid "Apply"
+msgstr "Terapkan"
+
+#: com/libs/ListTable.php:511
+#: com/libs/ListTable.php:1280
+msgid "Show more details"
+msgstr "Tampilkan detail lebih lanjut"
+
+#. translators: 1: month name, 2: 4-digit year
+#: com/libs/ListTable.php:581
+#, php-format
+msgid "%1$s %2$d"
+msgstr "%1$s %2$d"
+
+#. translators: numner comments, numner approved comments
+#: com/libs/ListTable.php:633
+#, php-format
+msgid "%s comment"
+msgid_plural "%s comments"
+msgstr[0] "%s komentar"
+
+#. translators: numner comments, numner approved comments
+#: com/libs/ListTable.php:635
+#, php-format
+msgid "%s approved comment"
+msgid_plural "%s approved comments"
+msgstr[0] "%s komentar yang disetujui"
+
+#. translators: numner comments, numner pending comments
+#: com/libs/ListTable.php:637
+#, php-format
+msgid "%s pending comment"
+msgid_plural "%s pending comments"
+msgstr[0] "%s komentar yang tertunda"
+
+#: com/libs/ListTable.php:642
+#: com/libs/ListTable.php:654
+msgid "No comments"
+msgstr "Tidak ada komentar"
+
+#: com/libs/ListTable.php:654
+msgid "No approved comments"
+msgstr "Tidak ada komentar yang disetujui"
+
+#. translators: total items
+#. translators: total item, total items
+#: com/libs/ListTable.php:735
+#: com/libs/ListTable.php:1306
+#, php-format
+msgid "%s item"
+msgid_plural "%s items"
+msgstr[0] "%s item"
+
+#: com/libs/ListTable.php:772
+msgid "First page"
+msgstr "Halaman pertama"
+
+#: com/libs/ListTable.php:782
+msgid "Previous page"
+msgstr "Halaman sebelumnya"
+
+#: com/libs/ListTable.php:789
+#: com/libs/ListTable.php:792
+msgid "Current Page"
+msgstr "Halaman Saat Ini"
+
+#. translators: current page,  total pages
+#: com/libs/ListTable.php:799
+#, php-format
+msgctxt "paging"
+msgid "%1$s of %2$s"
+msgstr "%1$s dari %2$s"
+
+#: com/libs/ListTable.php:806
+msgid "Next page"
+msgstr "Halaman berikutnya"
+
+#: com/libs/ListTable.php:816
+msgid "Last page"
+msgstr "Halaman terakhir"
+
+#: com/libs/ListTable.php:1029
+msgid "Select All"
+msgstr "Pilih Semua"
+
+#: com/libs/parsers.php:46
+#: com/libs/parsers.php:86
+#: com/libs/parsers.php:94
+msgid "There was an error when reading this WXR file"
+msgstr "Terjadi kesalahan saat membaca file WXR ini"
+
+#: com/libs/parsers.php:47
+msgid "Details are shown above. The importer will now try again with a different parser..."
+msgstr "Detail ditampilkan di atas. Importir akan mencoba lagi dengan parser yang berbeda..."
+
+#: com/libs/parsers.php:98
+#: com/libs/parsers.php:103
+#: com/libs/parsers.php:333
+#: com/libs/parsers.php:538
+msgid "This does not appear to be a WXR file, missing/invalid WXR version number"
+msgstr "Ini sepertinya bukan file WXR, nomor versi WXR hilang/tidak valid"
+
+#: com/libs/SGPBImporter.php:121
+#: com/libs/SGPBImporter.php:136
+#: com/libs/SGPBImporter.php:195
+#: com/libs/SGPBImporter.php:200
+#: com/libs/SGPBImporter.php:211
+msgid "Sorry, there has been an error."
+msgstr "Maaf, terjadi kesalahan."
+
+#: com/libs/SGPBImporter.php:122
+msgid "The file does not exist, please try again."
+msgstr "File tidak ada, silakan coba lagi."
+
+#: com/libs/SGPBImporter.php:129
+msgid "Invalid file type."
+msgstr "Tipe file tidak valid."
+
+#: com/libs/SGPBImporter.php:172
+msgid "All done."
+msgstr "Selesai."
+
+#: com/libs/SGPBImporter.php:172
+msgid "Have fun!"
+msgstr "Selamat bersenang-senang!"
+
+#: com/libs/SGPBImporter.php:174
+msgid "Remember to update the passwords and roles of imported users."
+msgstr "Ingat untuk memperbarui kata sandi dan peran pengguna yang diimpor."
+
+#. translators: export file path
+#: com/libs/SGPBImporter.php:202
+#, php-format
+msgid "The export file could not be found at <code>%s</code>. It is likely that this was caused by a permissions problem."
+msgstr "File ekspor tidak dapat ditemukan di <code>%s</code>. Kemungkinan ini disebabkan oleh masalah izin."
+
+#. translators: import data version
+#: com/libs/SGPBImporter.php:220
+#, php-format
+msgid "This WXR file (version %s) may not be supported by this version of the importer. Please consider updating."
+msgstr "File WXR ini (versi %s) mungkin tidak didukung oleh versi importir ini. Pertimbangkan untuk memperbarui."
+
+#. translators: post author
+#: com/libs/SGPBImporter.php:248
+#, php-format
+msgid "Failed to import author %s. Their posts will be attributed to the current user."
+msgstr "Gagal mengimpor penulis %s. Postingan mereka akan diatribusikan kepada pengguna saat ini."
+
+#: com/libs/SGPBImporter.php:277
+msgid "Assign Authors"
+msgstr "Tetapkan Penulis"
+
+#: com/libs/SGPBImporter.php:278
+msgid "To make it easier for you to edit and save the imported content, you may want to reassign the author of the imported item to an existing user of this site. For example, you may want to import all the entries as <code>admin</code>s entries."
+msgstr "Untuk memudahkan Anda mengedit dan menyimpan konten yang diimpor, Anda mungkin ingin menetapkan ulang penulis item yang diimpor ke pengguna yang sudah ada di situs ini. Misalnya, Anda mungkin ingin mengimpor semua entri sebagai entri <code>admin</code>."
+
+#. translators: default role
+#: com/libs/SGPBImporter.php:282
+#, php-format
+msgid "If a new user is created by WordPress, a new password will be randomly generated and the new user&#8217;s role will be set as %s. Manually changing the new user&#8217;s details will be necessary."
+msgstr "Jika pengguna baru dibuat oleh WordPress, kata sandi baru akan dibuat secara acak dan peran pengguna baru akan diatur sebagai %s. Mengubah detail pengguna baru secara manual akan diperlukan."
+
+#: com/libs/SGPBImporter.php:291
+msgid "Submit"
+msgstr "Kirim"
+
+#: com/libs/SGPBImporter.php:306
+msgid "Import author:"
+msgstr "Impor penulis:"
+
+#: com/libs/SGPBImporter.php:318
+msgid "or create new user with login name:"
+msgstr "atau buat pengguna baru dengan nama login:"
+
+#: com/libs/SGPBImporter.php:321
+msgid "as a new user:"
+msgstr "sebagai pengguna baru:"
+
+#: com/libs/SGPBImporter.php:330
+msgid "assign posts to an existing user:"
+msgstr "tetapkan postingan ke pengguna yang sudah ada:"
+
+#: com/libs/SGPBImporter.php:332
+msgid "or assign posts to an existing user:"
+msgstr "atau tetapkan postingan ke pengguna yang sudah ada:"
+
+#: com/libs/SGPBImporter.php:340
+msgid "- Select -"
+msgstr "- Pilih -"
+
+#. translators: author display name
+#: com/libs/SGPBImporter.php:424
+#, php-format
+msgid "Failed to create new user for %s. Their posts will be attributed to the current user."
+msgstr "Gagal membuat pengguna baru untuk %s. Postingan mereka akan diatribusikan kepada pengguna saat ini."
+
+#. translators: category nicename
+#: com/libs/SGPBImporter.php:477
+#, php-format
+msgid "Failed to import category %s"
+msgstr "Gagal mengimpor kategori %s"
+
+#. translators: tag name
+#: com/libs/SGPBImporter.php:522
+#, php-format
+msgid "Failed to import post tag %s"
+msgstr "Gagal mengimpor tag postingan %s"
+
+#. translators: term taxonomy, term name
+#. translators: taxonomy type , taxonomy name
+#: com/libs/SGPBImporter.php:573
+#: com/libs/SGPBImporter.php:806
+#, php-format
+msgid "Failed to import %1$s %2$s"
+msgstr "Gagal mengimpor %1$s %2$s"
+
+#. translators: post title, post type
+#: com/libs/SGPBImporter.php:665
+#, php-format
+msgid "Failed to import &#8220;%1$s&#8221;: Invalid post type %2$s"
+msgstr "Gagal mengimpor &#8220;%1$s&#8221;: Tipe postingan tidak valid %2$s"
+
+#. translators: singular name ,post title
+#: com/libs/SGPBImporter.php:705
+#, php-format
+msgid "%1$s &#8220;%2$s&#8221; already exists."
+msgstr "%1$s &#8220;%2$s&#8221; sudah ada."
+
+#. translators: singular name ,post title
+#: com/libs/SGPBImporter.php:770
+#, php-format
+msgid "Failed to import %1$s &#8220;%2$s&#8221;"
+msgstr "Gagal mengimpor %1$s &#8220;%2$s&#8221;"
+
+#: com/libs/SGPBImporter.php:939
+msgid "Menu item skipped due to missing menu slug"
+msgstr "Item menu dilewati karena slug menu hilang"
+
+#. translators: menu slug
+#: com/libs/SGPBImporter.php:947
+#, php-format
+msgid "Menu item skipped due to invalid menu slug: %s"
+msgstr "Item menu dilewati karena slug menu tidak valid: %s"
+
+#: com/libs/SGPBImporter.php:1017
+msgid "Fetching attachments is not enabled"
+msgstr "Pengambilan lampiran tidak diaktifkan"
+
+#: com/libs/SGPBImporter.php:1033
+msgid "Invalid file type"
+msgstr "Tipe file tidak valid"
+
+#: com/libs/SGPBImporter.php:1078
+msgid "Could not create temporary file."
+msgstr "Tidak dapat membuat file sementara."
+
+#. translators: 1: The WordPress error message. 2: The WordPress error code.
+#: com/libs/SGPBImporter.php:1100
+#, php-format
+msgid "Request failed due to an error: %1$s (%2$s)"
+msgstr "Permintaan gagal karena kesalahan: %1$s (%2$s)"
+
+#. translators: 1: The HTTP error message. 2: The HTTP error code.
+#: com/libs/SGPBImporter.php:1116
+#, php-format
+msgid "Remote server returned the following unexpected result: %1$s (%2$s)"
+msgstr "Server jarak jauh mengembalikan hasil tak terduga berikut: %1$s (%2$s)"
+
+#: com/libs/SGPBImporter.php:1128
+msgid "Remote server did not respond"
+msgstr "Server jarak jauh tidak merespons"
+
+#: com/libs/SGPBImporter.php:1135
+msgid "Zero size file downloaded"
+msgstr "File berukuran nol diunduh"
+
+#: com/libs/SGPBImporter.php:1140
+msgid "Downloaded file has incorrect size"
+msgstr "File yang diunduh memiliki ukuran yang salah"
+
+#. translators: %s is the maximum file size allowed.
+#: com/libs/SGPBImporter.php:1150
+#, php-format
+msgid "Remote file is too large, limit is %s"
+msgstr "File jarak jauh terlalu besar, batasnya adalah %s"
+
+#: com/libs/SGPBImporter.php:1185
+msgid "Sorry, this file type is not permitted for security reasons."
+msgstr "Maaf, tipe file ini tidak diizinkan karena alasan keamanan."
+
+#: com/libs/SGPBImporter.php:1200
+msgid "The uploaded file could not be moved"
+msgstr "File yang diunggah tidak dapat dipindahkan"
+
+#: com/libs/SGPBImporter.php:1332
+msgid "Import Popups"
+msgstr "Impor Popup"
+
+#. translators: new version
+#: com/libs/SGPBImporter.php:1340
+#, php-format
+msgid "A new version of this importer is available. Please update to version %s to ensure compatibility with newer export files."
+msgstr "Versi baru importir ini tersedia. Silakan perbarui ke versi %s untuk memastikan kompatibilitas dengan file ekspor yang lebih baru."
+
+#: com/libs/SGPBImporter.php:1357
+msgid "Howdy!Upload your WordPress eXtended RSS (WXR) file and we&#8217;ll import the posts, pages, comments, custom fields, categories, and tags into this site."
+msgstr "Halo!Unggah file WordPress eXtended RSS (WXR) Anda dan kami akan mengimpor postingan, halaman, komentar, bidang kustom, kategori, dan tag ke situs ini."
+
+#: com/libs/SGPBImporter.php:1358
+msgid "Choose a WXR (.xml) file to upload, then click Upload file and import."
+msgstr "Pilih file WXR (.xml) untuk diunggah, lalu klik Unggah file dan impor."
+
+#: com/libs/WOOSL_CodeAutoUpdate.php:180
+msgid "An error occour when try to identify the plugin."
+msgstr "Terjadi kesalahan saat mencoba mengidentifikasi plugin."
+
+#: com/libs/WOOSL_CodeAutoUpdate.php:180
+#: com/libs/WOOSL_CodeAutoUpdate.php:192
+msgid "Try again"
+msgstr "Coba lagi"
+
+#: com/libs/WOOSL_CodeAutoUpdate.php:192
+msgid "An Unexpected HTTP Error occurred during the API request."
+msgstr "Terjadi Kesalahan HTTP Tak Terduga selama permintaan API."
+
+#: popup-builder.php:20
+msgid "Please, deactivate the FREE version of Popup Builder plugin before upgrading to PRO."
+msgstr "Silakan nonaktifkan versi GRATIS plugin Popup Builder sebelum meningkatkan ke PRO."
+
+#. translators: %s: Edit Popup Link for administrator
+#: popup-builder.php:41
+#, php-format
+msgid "One or more popups with the Subscription Plus Type were deactivated because you deactivated the Popup Builder Subscription Plus add-on. Click <a href=\"%s\">here</a> to view your Popups."
+msgstr "Satu atau lebih popup dengan Tipe Subscription Plus dinonaktifkan karena Anda menonaktifkan add-on Popup Builder Subscription Plus. Klik <a href=\"%s\">di sini</a> untuk melihat Popup Anda."
+
+#: public/views/closeSettingsView.php:60
+msgid "Dismiss on \"esc\" key"
+msgstr "Tutup dengan tombol \"esc\""
+
+#: public/views/closeSettingsView.php:72
+msgid "The popup will close if the \"Esc\" key of your keyboard is clicked."
+msgstr "Popup akan tertutup jika tombol \"Esc\" pada keyboard Anda ditekan."
+
+#: public/views/closeSettingsView.php:80
+msgid "Show \"close\" button"
+msgstr "Tampilkan tombol \"tutup\""
+
+#: public/views/closeSettingsView.php:92
+msgid "Uncheck this option if you don't want to show a \"close\" button on your popup."
+msgstr "Hapus centang opsi ini jika Anda tidak ingin menampilkan tombol \"tutup\" pada popup Anda."
+
+#: public/views/closeSettingsView.php:100
+msgid "Button delay"
+msgstr "Penundaan tombol"
+
+#: public/views/closeSettingsView.php:108
+msgid "Specify the time (in seconds) after which the close button will appear. The close button will be shown by default without any delay if no time is specified."
+msgstr "Tentukan waktu (dalam detik) setelah itu tombol tutup akan muncul. Tombol tutup akan ditampilkan secara default tanpa penundaan jika tidak ada waktu yang ditentukan."
+
+#: public/views/closeSettingsView.php:115
+msgid "Button position"
+msgstr "Posisi tombol"
+
+#: public/views/closeSettingsView.php:123
+msgid "Top"
+msgstr "Atas"
+
+#: public/views/closeSettingsView.php:132
+msgid "Right"
+msgstr "Kanan"
+
+#: public/views/closeSettingsView.php:141
+msgid "Bottom"
+msgstr "Bawah"
+
+#: public/views/closeSettingsView.php:150
+msgid "Left"
+msgstr "Kiri"
+
+#: public/views/closeSettingsView.php:162
+msgid "Button image"
+msgstr "Gambar tombol"
+
+#: public/views/closeSettingsView.php:173
+#: public/views/popupDesignView.php:215
+msgid "Change image"
+msgstr "Ubah gambar"
+
+#: public/views/closeSettingsView.php:190
+msgid "Width&nbsp;"
+msgstr "Lebar&nbsp;"
+
+#: public/views/closeSettingsView.php:200
+#: public/views/dimensionsView.php:32
+#: public/views/htmlCustomButtonElement.php:55
+#: public/views/options/subscription.php:161
+#: public/views/options/subscription.php:207
+msgid "Height"
+msgstr "Tinggi"
+
+#: public/views/closeSettingsView.php:214
+msgid "Popup border color"
+msgstr "Warna batas popup"
+
+#: public/views/closeSettingsView.php:221
+msgid "Popup border radius"
+msgstr "Radius batas popup"
+
+#: public/views/closeSettingsView.php:230
+msgid "Button text"
+msgstr "Teks tombol"
+
+#: public/views/closeSettingsView.php:240
+msgid "Dismiss on overlay click"
+msgstr "Tutup saat overlay diklik"
+
+#: public/views/closeSettingsView.php:252
+msgid "The popup will close when clicked on the overlay of the popup."
+msgstr "Popup akan tertutup saat diklik pada overlay popup."
+
+#: public/views/closeSettingsView.php:261
+#: public/views/closeSettingsView.php:278
+msgid "Disable popup closing"
+msgstr "Nonaktifkan penutupan popup"
+
+#: public/views/closeSettingsView.php:272
+#: public/views/closeSettingsView.php:289
+msgid "The users will not be able to close the popup, if this option is checked."
+msgstr "Pengguna tidak akan dapat menutup popup, jika opsi ini dicentang."
+
+#: public/views/closeSettingsView.php:294
+#: public/views/closeSettingsView.php:325
+#: public/views/closeSettingsView.php:360
+#: public/views/otherConditionsView.php:44
+#: public/views/popupDesignView.php:94
+msgid "Time icon"
+msgstr "Ikon waktu"
+
+#: public/views/closeSettingsView.php:296
+#: public/views/closeSettingsView.php:327
+#: public/views/closeSettingsView.php:362
+#: public/views/otherConditionsView.php:46
+#: public/views/popupDesignView.php:96
+msgid "Unlock Option"
+msgstr "Buka Opsi"
+
+#: public/views/closeSettingsView.php:304
+#: public/views/closeSettingsView.php:315
+msgid "Auto close popup"
+msgstr "Tutup popup otomatis"
+
+#: public/views/closeSettingsView.php:339
+#: public/views/closeSettingsView.php:350
+msgid "Close popup after the page scroll"
+msgstr "Tutup popup setelah halaman digulir"
+
+#: public/views/conditionsView.php:20
+msgid "If you want to unlock Geo Targeting you need to activate this extension"
+msgstr "Jika Anda ingin membuka Penargetan Geo, Anda perlu mengaktifkan ekstensi ini"
+
+#: public/views/conditionsView.php:23
+#: public/views/conditionsView.php:50
+msgid "Buy Now"
+msgstr "Beli Sekarang"
+
+#: public/views/conditionsView.php:27
+#: public/views/conditionsView.php:54
+msgid "More Details"
+msgstr "Detail Lebih Lanjut"
+
+#: public/views/conditionsView.php:37
+#: public/views/conditionsView.php:64
+msgid "See Less"
+msgstr "Lihat Lebih Sedikit"
+
+#: public/views/conditionsView.php:47
+msgid "If you want to unlock Advanced Targeting you need to activate this extension"
+msgstr "Jika Anda ingin membuka Penargetan Lanjutan, Anda perlu mengaktifkan ekstensi ini"
+
+#: public/views/customEditor.php:19
+msgid "This section is for adding custom codes (CSS or JS) for the popup, it requires some coding knowledge"
+msgstr "Bagian ini untuk menambahkan kode kustom (CSS atau JS) untuk popup, ini memerlukan beberapa pengetahuan pengkodean"
+
+#: public/views/customEditor.php:20
+msgid "You may use your custom codes for extra actions connected to the popup opening (before, after, etc.) in the fields below"
+msgstr "Anda dapat menggunakan kode kustom Anda untuk tindakan ekstra yang terhubung dengan pembukaan popup (sebelum, sesudah, dll.) di bidang di bawah"
+
+#: public/views/dimensionsView.php:22
+msgid "Size"
+msgstr "Ukuran"
+
+#: public/views/dimensionsView.php:28
+#: public/views/htmlCustomButtonElement.php:47
+#: public/views/options/subscription.php:157
+#: public/views/options/subscription.php:203
+msgid "Width"
+msgstr "Lebar"
+
+#: public/views/dimensionsView.php:29
+#: public/views/dimensionsView.php:33
+#: public/views/dimensionsView.php:39
+#: public/views/dimensionsView.php:43
+#: public/views/dimensionsView.php:49
+#: public/views/dimensionsView.php:53
+msgid "Ex: 100, 100px or 100%"
+msgstr "Mis: 100, 100px atau 100%"
+
+#: public/views/dimensionsView.php:29
+#: public/views/dimensionsView.php:33
+#: public/views/dimensionsView.php:39
+#: public/views/dimensionsView.php:43
+#: public/views/dimensionsView.php:49
+#: public/views/dimensionsView.php:53
+msgid "It must be number  + px or %"
+msgstr "Harus berupa angka + px atau %"
+
+#: public/views/dimensionsView.php:38
+msgid "Max width"
+msgstr "Lebar maks"
+
+#: public/views/dimensionsView.php:42
+msgid "Max height"
+msgstr "Tinggi maks"
+
+#: public/views/dimensionsView.php:48
+msgid "Min width"
+msgstr "Lebar min"
+
+#: public/views/dimensionsView.php:52
+msgid "Min height"
+msgstr "Tinggi min"
+
+#: public/views/floatingButton.php:15
+msgid "Enable"
+msgstr "Aktifkan"
+
+#: public/views/floatingButton.php:26
+msgid "Style"
+msgstr "Gaya"
+
+#: public/views/floatingButton.php:35
+msgid "Position"
+msgstr "Posisi"
+
+#: public/views/floatingButton.php:37
+msgid "Top Left"
+msgstr "Kiri Atas"
+
+#: public/views/floatingButton.php:38
+msgid "Top Center"
+msgstr "Tengah Atas"
+
+#: public/views/floatingButton.php:39
+msgid "Top Right"
+msgstr "Kanan Atas"
+
+#: public/views/floatingButton.php:44
+msgid "Right Center"
+msgstr "Tengah Kanan"
+
+#: public/views/floatingButton.php:47
+msgid "Bottom Left"
+msgstr "Kiri Bawah"
+
+#: public/views/floatingButton.php:48
+msgid "Bottom Center"
+msgstr "Tengah Bawah"
+
+#: public/views/floatingButton.php:49
+msgid "Bottom Right"
+msgstr "Kanan Bawah"
+
+#: public/views/floatingButton.php:54
+msgid "Font size"
+msgstr "Ukuran font"
+
+#: public/views/floatingButton.php:60
+msgid "Position top"
+msgstr "Posisi atas"
+
+#: public/views/floatingButton.php:65
+msgid "Position right"
+msgstr "Posisi kanan"
+
+#: public/views/floatingButton.php:70
+msgid "Border size"
+msgstr "Ukuran batas"
+
+#: public/views/floatingButton.php:75
+#: public/views/htmlCustomButtonElement.php:71
+#: public/views/options/subscription.php:216
+msgid "Border radius"
+msgstr "Radius batas"
+
+#: public/views/floatingButton.php:80
+#: public/views/htmlCustomButtonElement.php:79
+#: public/views/options/subscription.php:176
+#: public/views/options/subscription.php:220
+msgid "Border color"
+msgstr "Warna batas"
+
+#: public/views/floatingButton.php:87
+#: public/views/htmlCustomButtonElement.php:89
+#: public/views/options/subscription.php:170
+#: public/views/options/subscription.php:234
+msgid "Background color"
+msgstr "Warna latar belakang"
+
+#: public/views/floatingButton.php:93
+#: public/views/htmlCustomButtonElement.php:109
+#: public/views/options/subscription.php:182
+#: public/views/options/subscription.php:240
+msgid "Text color"
+msgstr "Warna teks"
+
+#: public/views/floatingButton.php:99
+#: public/views/htmlCustomButtonElement.php:131
+#: public/views/optionsView.php:66
+msgid "Text"
+msgstr "Teks"
+
+#: public/views/htmlCustomButtonElement.php:32
+#: public/views/options/subscription.php:226
+msgid "Title"
+msgstr "Judul"
+
+#: public/views/htmlCustomButtonElement.php:42
+msgid "Custom Button Styles"
+msgstr "Gaya Tombol Kustom"
+
+#: public/views/htmlCustomButtonElement.php:63
+#: public/views/options/subscription.php:166
+#: public/views/options/subscription.php:212
+msgid "Border width"
+msgstr "Lebar batas"
+
+#: public/views/htmlCustomButtonElement.php:99
+msgid "Hover background color"
+msgstr "Warna latar belakang saat diarahkan"
+
+#: public/views/htmlCustomButtonElement.php:121
+msgid "Button events"
+msgstr "Peristiwa tombol"
+
+#: public/views/htmlCustomButtonElement.php:137
+#: public/views/optionsView.php:70
+msgid "Close popup"
+msgstr "Tutup popup"
+
+#: public/views/htmlCustomButtonElement.php:143
+#: public/views/optionsView.php:80
+msgid "Show alert"
+msgstr "Tampilkan peringatan"
+
+#: public/views/htmlCustomButtonElement.php:152
+#: public/views/optionsView.php:91
+msgid "Message"
+msgstr "Pesan"
+
+#: public/views/htmlCustomButtonElement.php:155
+msgid "Copied to clipboard!"
+msgstr "Disalin ke clipboard!"
+
+#: public/views/htmlCustomButtonElement.php:163
+#: public/views/options/subscription.php:293
+msgid "Redirect URL"
+msgstr "URL Pengalihan"
+
+#: public/views/htmlCustomButtonElement.php:169
+#: public/views/options/subscription.php:297
+#: public/views/optionsView.php:53
+msgid "Redirect to new tab"
+msgstr "Alihkan ke tab baru"
+
+#: public/views/htmlCustomButtonElement.php:189
+#: public/views/jsVariableView.php:58
+#: public/views/mediaButton.php:48
+msgid "Insert"
+msgstr "Sisipkan"
+
+#: public/views/importConfigView.php:12
+msgid "File URL is missing."
+msgstr "URL file hilang."
+
+#: public/views/importConfigView.php:25
+msgid "Failed to retrieve valid file content from the URL."
+msgstr "Gagal mengambil konten file yang valid dari URL."
+
+#: public/views/importConfigView.php:43
+msgid "HERE"
+msgstr "DI SINI"
+
+#. translators: %s: link (with the text "HERE") to the plugin settings page.
+#: public/views/importConfigView.php:45
+#, php-format
+msgid "Failed to parse CSV file content. Please make sure that you put exactly the same token for both old and new sites at %s."
+msgstr "Gagal mengurai konten file CSV. Pastikan Anda memasukkan token yang persis sama untuk situs lama dan baru di %s."
+
+#: public/views/importConfigView.php:52
+msgid "Failed to parse CSV file content."
+msgstr "Gagal mengurai konten file CSV."
+
+#: public/views/importConfigView.php:60
+msgid "Select Field"
+msgstr "Pilih Bidang"
+
+#: public/views/importConfigView.php:64
+msgid "Match Your Fields"
+msgstr "Cocokkan Bidang Anda"
+
+#: public/views/importConfigView.php:68
+msgid "Available fields"
+msgstr "Bidang yang tersedia"
+
+#: public/views/importConfigView.php:71
+msgid "Our list fields"
+msgstr "Bidang daftar kami"
+
+#: public/views/importPopupsView.php:19
+msgid "Import popups"
+msgstr "Impor popup"
+
+#: public/views/jsVariableView.php:13
+msgid "Insert JS variable inside the popup"
+msgstr "Sisipkan variabel JS di dalam popup"
+
+#: public/views/jsVariableView.php:22
+msgid "Selector"
+msgstr "Pemilih"
+
+#: public/views/jsVariableView.php:28
+msgid "Ex. #myselector or .myselector"
+msgstr "Mis. #myselector atau .myselector"
+
+#: public/views/jsVariableView.php:40
+msgid "Attribute"
+msgstr "Atribut"
+
+#: public/views/jsVariableView.php:46
+msgid "Ex. value or data-name"
+msgstr "Mis. value atau data-name"
+
+#: public/views/license.php:32
+msgid "License Key"
+msgstr "Kunci Lisensi"
+
+#: public/views/license.php:41
+msgid "Deactivate"
+msgstr "Nonaktifkan"
+
+#: public/views/license.php:46
+msgid "Activate"
+msgstr "Aktifkan"
+
+#: public/views/main/image.php:9
+msgid "Please choose your picture"
+msgstr "Silakan pilih gambar Anda"
+
+#: public/views/mainActionButtons.php:9
+msgid "Popups"
+msgstr "Popup"
+
+#: public/views/mainActionButtons.php:16
+#: public/views/subscribers.php:70
+msgid "Export"
+msgstr "Ekspor"
+
+#: public/views/mainActionButtons.php:21
+#: public/views/subscribers.php:75
+#: public/views/subscribers.php:151
+msgid "Import"
+msgstr "Impor"
+
+#: public/views/mainActionButtons.php:26
+msgid "Search Popup"
+msgstr "Cari Popup"
+
+#: public/views/mainActionButtons.php:27
+msgid "GO"
+msgstr "MULAI"
+
+#: public/views/mediaButton.php:21
+msgid "Insert the [shortcode]"
+msgstr "Sisipkan [shortcode]"
+
+#: public/views/newsletter.php:33
+msgid "You will receive an email notification after all emails are sent"
+msgstr "Anda akan menerima notifikasi email setelah semua email dikirim"
+
+#: public/views/newsletter.php:34
+msgid "Test email was successfully sent"
+msgstr "Email uji berhasil dikirim"
+
+#: public/views/newsletter.php:37
+msgid "Newsletter settings"
+msgstr "Pengaturan buletin"
+
+#: public/views/newsletter.php:42
+msgid "Choose the popup"
+msgstr "Pilih popup"
+
+#: public/views/newsletter.php:47
+msgid "Emails to send in one flow per 1 minute"
+msgstr "Email yang dikirim dalam satu alur per 1 menit"
+
+#: public/views/newsletter.php:51
+msgid "From email"
+msgstr "Dari email"
+
+#: public/views/newsletter.php:55
+msgid "Email's subject"
+msgstr "Subjek email"
+
+#: public/views/newsletter.php:56
+msgid "Your subject here"
+msgstr "Subjek Anda di sini"
+
+#: public/views/newsletter.php:61
+msgid "Edit newsletter email template below"
+msgstr "Edit templat email buletin di bawah"
+
+#: public/views/newsletter.php:89
+msgid "Send a Test"
+msgstr "Kirim Uji"
+
+#: public/views/newsletter.php:93
+msgid "Send newsletter"
+msgstr "Kirim buletin"
+
+#: public/views/newsletter.php:101
+msgid "Newsletter Shortcodes"
+msgstr "Shortcode Buletin"
+
+#: public/views/newsletter.php:103
+msgid "Default shortcodes"
+msgstr "Shortcode default"
+
+#: public/views/newsletter.php:105
+msgid "Subscriber First name"
+msgstr "Nama depan pelanggan"
+
+#: public/views/newsletter.php:106
+msgid "Subscriber Last name"
+msgstr "Nama belakang pelanggan"
+
+#: public/views/newsletter.php:107
+msgid "Your blog name"
+msgstr "Nama blog Anda"
+
+#: public/views/newsletter.php:108
+msgid "Your user name"
+msgstr "Nama pengguna Anda"
+
+#: public/views/newsletter.php:113
+msgid "Custom fields' shortcodes"
+msgstr "Shortcode bidang kustom"
+
+#: public/views/options/facebook.php:17
+msgid "Layout"
+msgstr "Tata Letak"
+
+#: public/views/options/facebook.php:21
+msgid "Don't show share button"
+msgstr "Jangan tampilkan tombol bagikan"
+
+#: public/views/options/subscription.php:40
+msgid "Form background options"
+msgstr "Opsi latar belakang formulir"
+
+#: public/views/options/subscription.php:44
+msgid "Form background color"
+msgstr "Warna latar belakang formulir"
+
+#: public/views/options/subscription.php:52
+msgid "Form background opacity"
+msgstr "Opasitas latar belakang formulir"
+
+#: public/views/options/subscription.php:64
+msgid "Form padding"
+msgstr "Padding formulir"
+
+#: public/views/options/subscription.php:71
+msgid "Email placeholder"
+msgstr "Placeholder email"
+
+#: public/views/options/subscription.php:75
+msgid "Enable GDPR"
+msgstr "Aktifkan GDPR"
+
+#: public/views/options/subscription.php:86
+msgid "Label"
+msgstr "Label"
+
+#: public/views/options/subscription.php:90
+msgid "Confirmation text"
+msgstr "Teks konfirmasi"
+
+#: public/views/options/subscription.php:106
+#: public/views/options/subscription.php:132
+msgid "Placeholder"
+msgstr "Placeholder"
+
+#: public/views/options/subscription.php:110
+#: public/views/options/subscription.php:136
+msgid "Required field"
+msgstr "Bidang wajib"
+
+#: public/views/options/subscription.php:147
+msgid "Required field message"
+msgstr "Pesan bidang wajib"
+
+#: public/views/options/subscription.php:152
+msgid "Inputs' style"
+msgstr "Gaya input"
+
+#: public/views/options/subscription.php:188
+msgid "Placeholder color"
+msgstr "Warna placeholder"
+
+#: public/views/options/subscription.php:198
+msgid "Submit button styles"
+msgstr "Gaya tombol kirim"
+
+#: public/views/options/subscription.php:230
+msgid "Title (in progress)"
+msgstr "Judul (sedang dikerjakan)"
+
+#: public/views/options/subscription.php:248
+msgid "Error message"
+msgstr "Pesan kesalahan"
+
+#: public/views/options/subscription.php:252
+msgid "Invalid email message"
+msgstr "Pesan email tidak valid"
+
+#: public/views/options/subscription.php:256
+msgid "Show form on the Top"
+msgstr "Tampilkan formulir di Atas"
+
+#: public/views/options/subscription.php:266
+msgid "Hide for already subscribed users"
+msgstr "Sembunyikan untuk pengguna yang sudah berlangganan"
+
+#: public/views/options/subscription.php:276
+msgid "After successful subscription"
+msgstr "Setelah berlangganan berhasil"
+
+#: public/views/options/subscription.php:317
+msgid "Eye icon"
+msgstr "Ikon mata"
+
+#: public/views/options/subscription.php:318
+msgid "Live Preview"
+msgstr "Pratinjau Langsung"
+
+#. translators: POPUP SUBSCRIPTION URL
+#: public/views/options/subscription.php:332
+#, php-format
+msgid "Get the <a href=\"%s\">Subscription Plus</a> extension to add or customize the form fields."
+msgstr "Dapatkan ekstensi <a href=\"%s\">Subscription Plus</a> untuk menambah atau menyesuaikan bidang formulir."
+
+#: public/views/optionsView.php:33
+msgid "Action on popup content click"
+msgstr "Tindakan saat konten popup diklik"
+
+#: public/views/optionsView.php:100
+msgid "Popup showing limitation"
+msgstr "Pembatasan tampilan popup"
+
+#: public/views/optionsView.php:111
+msgid "Estimate the popup showing frequency to the same user."
+msgstr "Perkirakan frekuensi tampilan popup kepada pengguna yang sama."
+
+#: public/views/optionsView.php:118
+msgid "Popup showing count"
+msgstr "Hitungan tampilan popup"
+
+#: public/views/optionsView.php:123
+msgid "Select how many times the popup will be shown for the same user."
+msgstr "Pilih berapa kali popup akan ditampilkan untuk pengguna yang sama."
+
+#: public/views/optionsView.php:128
+msgid "Popup showing expiry"
+msgstr "Masa berlaku tampilan popup"
+
+#: public/views/optionsView.php:133
+msgid "Select the count of the days after which the popup will be shown to the same user, or set the value \"0\" if you want to save cookies by session."
+msgstr "Pilih jumlah hari setelah itu popup akan ditampilkan kepada pengguna yang sama, atau atur nilai \"0\" jika Anda ingin menyimpan cookie berdasarkan sesi."
+
+#: public/views/optionsView.php:138
+msgid "Apply option on each page"
+msgstr "Terapkan opsi pada setiap halaman"
+
+#: public/views/optionsView.php:146
+msgid "If this option is checked the popup showing limitation will be saved for the current page. Otherwise, the limitation will refer site wide, and the popup will be shown for specific times on each page selected.The previously specified count of days will be reset every time you check/uncheck this option."
+msgstr "Jika opsi ini dicentang, pembatasan tampilan popup akan disimpan untuk halaman saat ini. Jika tidak, pembatasan akan berlaku di seluruh situs, dan popup akan ditampilkan untuk waktu tertentu pada setiap halaman yang dipilih. Jumlah hari yang ditentukan sebelumnya akan diatur ulang setiap kali Anda mencentang/menghapus centang opsi ini."
+
+#: public/views/optionsView.php:155
+msgid "Popup opening sound"
+msgstr "Suara pembukaan popup"
+
+#: public/views/optionsView.php:167
+msgid "If this option is enabled the popup will appear with a sound. The sound option is not available on mobile devices, as there are restrictions on sound auto-play options for mobile devices."
+msgstr "Jika opsi ini diaktifkan, popup akan muncul dengan suara. Opsi suara tidak tersedia pada perangkat seluler, karena ada pembatasan pada opsi pemutaran suara otomatis untuk perangkat seluler."
+
+#: public/views/optionsView.php:184
+msgid "Popup opening animation"
+msgstr "Animasi pembukaan popup"
+
+#: public/views/optionsView.php:202
+#: public/views/optionsView.php:233
+msgid "Speed"
+msgstr "Kecepatan"
+
+#: public/views/optionsView.php:208
+#: public/views/optionsView.php:239
+msgid "Second(s)"
+msgstr "Detik"
+
+#: public/views/optionsView.php:215
+msgid "Popup closing animation"
+msgstr "Animasi penutupan popup"
+
+#: public/views/optionsView.php:245
+msgid "Popup location"
+msgstr "Lokasi popup"
+
+#: public/views/optionsView.php:272
+msgid "Disable page scrolling"
+msgstr "Nonaktifkan pengguliran halaman"
+
+#: public/views/optionsView.php:283
+msgid "If this option is checked, the page won't scroll until the popup is open."
+msgstr "Jika opsi ini dicentang, halaman tidak akan bergulir sampai popup terbuka."
+
+#: public/views/optionsView.php:290
+msgid "Enable content scrolling"
+msgstr "Aktifkan pengguliran konten"
+
+#: public/views/optionsView.php:301
+msgid "If the content is larger than the specified dimensions, then the content will be scrollable."
+msgstr "Jika konten lebih besar dari dimensi yang ditentukan, maka konten akan dapat digulir."
+
+#: public/views/optionsView.php:309
+msgid "Reopen after form submission"
+msgstr "Buka kembali setelah pengiriman formulir"
+
+#: public/views/optionsView.php:320
+msgid "If this option is enabled, the popup will reopen after the form submission."
+msgstr "Jika opsi ini diaktifkan, popup akan terbuka kembali setelah pengiriman formulir."
+
+#: public/views/optionsView.php:327
+msgid "Popup order"
+msgstr "Urutan popup"
+
+#: public/views/optionsView.php:332
+msgid "Select the priority number for your popup to appear on the page, along with other popups. The popup with a higher-order number will be behind the others with a lower-order number."
+msgstr "Pilih nomor prioritas untuk popup Anda agar muncul di halaman, bersama dengan popup lainnya. Popup dengan nomor urutan lebih tinggi akan berada di belakang yang lain dengan nomor urutan lebih rendah."
+
+#: public/views/optionsView.php:339
+msgid "Custom event delay"
+msgstr "Penundaan peristiwa kustom"
+
+#: public/views/optionsView.php:344
+msgid ""
+"You can add an opening delay for the popup, in seconds. This will refer to custom events, like:\r\n"
+"\t\t\t\t\t\t\t\t\t\tShortcodes, custom CSS classes, HTML attributes, or JS called custom events."
+msgstr "Anda dapat menambahkan penundaan pembukaan untuk popup, dalam detik. Ini akan mengacu pada peristiwa kustom, seperti:\n\t\t\t\t\t\t\t\t\t\tShortcode, kelas CSS kustom, atribut HTML, atau peristiwa kustom yang dipanggil JS."
+
+#: public/views/otherConditionsView.php:20
+msgid "Schedule"
+msgstr "Jadwal"
+
+#: public/views/otherConditionsView.php:31
+msgid "Show popup in date range"
+msgstr "Tampilkan popup dalam rentang tanggal"
+
+#: public/views/popupDesignView.php:23
+msgid "Force RTL"
+msgstr "Paksa RTL"
+
+#: public/views/popupDesignView.php:36
+msgid "Padding"
+msgstr "Padding"
+
+#: public/views/popupDesignView.php:42
+msgid "Add some space, in pixels, around your popup content."
+msgstr "Tambahkan beberapa ruang, dalam piksel, di sekitar konten popup Anda."
+
+#: public/views/popupDesignView.php:49
+msgid "Popup z-index"
+msgstr "z-index popup"
+
+#: public/views/popupDesignView.php:54
+msgid "Increase or dicrease the value to set the priority of displaying the popup content in comparison of other elements on the page. The highest value of z-index is 2147483647."
+msgstr "Tingkatkan atau turunkan nilai untuk mengatur prioritas tampilan konten popup dibandingkan dengan elemen lain pada halaman. Nilai tertinggi z-index adalah 2147483647."
+
+#: public/views/popupDesignView.php:61
+msgid "Themes"
+msgstr "Tema"
+
+#: public/views/popupDesignView.php:65
+msgid "Disable popup border"
+msgstr "Nonaktifkan batas popup"
+
+#: public/views/popupDesignView.php:78
+#: public/views/popupDesignView.php:101
+msgid "Enable popup overlay"
+msgstr "Aktifkan overlay popup"
+
+#: public/views/popupDesignView.php:89
+#: public/views/popupDesignView.php:112
+msgid "If this option is checked, the popup will appear with an overlay."
+msgstr "Jika opsi ini dicentang, popup akan muncul dengan overlay."
+
+#: public/views/popupDesignView.php:120
+msgid "Overlay custom css class"
+msgstr "Kelas css kustom overlay"
+
+#: public/views/popupDesignView.php:125
+msgid "Add a custom class to the overlay for additional customization."
+msgstr "Tambahkan kelas kustom ke overlay untuk penyesuaian tambahan."
+
+#: public/views/popupDesignView.php:130
+msgid "Change color"
+msgstr "Ubah warna"
+
+#: public/views/popupDesignView.php:137
+#: public/views/popupDesignView.php:183
+msgid "Opacity"
+msgstr "Opasitas"
+
+#: public/views/popupDesignView.php:153
+msgid "Content custom css class"
+msgstr "Kelas css kustom konten"
+
+#: public/views/popupDesignView.php:158
+msgid "Add a custom class to the content for additional customization"
+msgstr "Tambahkan kelas kustom ke konten untuk penyesuaian tambahan"
+
+#: public/views/popupDesignView.php:164
+msgid "Background settings"
+msgstr "Pengaturan latar belakang"
+
+#: public/views/popupDesignView.php:177
+msgid "Color"
+msgstr "Warna"
+
+#: public/views/popupDesignView.php:205
+msgid "Cloud icon"
+msgstr "Ikon awan"
+
+#: public/views/popupDesignView.php:208
+msgid "Recycle Bin"
+msgstr "Tempat Sampah"
+
+#: public/views/popupDesignView.php:217
+msgid "No Image"
+msgstr "Tidak Ada Gambar"
+
+#: public/views/popupDesignView.php:225
+msgid "Mode"
+msgstr "Mode"
+
+#: public/views/popupDesignView.php:230
+msgid "Choose how the background image will be displayed with your content"
+msgstr "Pilih bagaimana gambar latar belakang akan ditampilkan dengan konten Anda"
+
+#: public/views/popupOpeningCounter.php:13
+msgid "Disable popup counting"
+msgstr "Nonaktifkan penghitungan popup"
+
+#: public/views/popupOpeningCounter.php:27
+msgid "Reset"
+msgstr "Atur Ulang"
+
+#: public/views/popupTypes.php:23
+msgid "Get More Extensions"
+msgstr "Dapatkan Lebih Banyak Ekstensi"
+
+#: public/views/popupTypes.php:47
+msgid "More Ideas?"
+msgstr "Ide Lainnya?"
+
+#: public/views/popupTypes.php:53
+msgid "Pro Extensions"
+msgstr "Ekstensi Pro"
+
+#: public/views/settings.php:59
+msgid "General Settings"
+msgstr "Pengaturan Umum"
+
+#: public/views/settings.php:63
+msgid "Enable DEBUG MODE"
+msgstr "Aktifkan MODE DEBUG"
+
+#: public/views/settings.php:73
+msgid "Disable CUSTOM JS feature"
+msgstr "Nonaktifkan fitur JS KUSTOM"
+
+#: public/views/settings.php:83
+msgid "Delete popup data"
+msgstr "Hapus data popup"
+
+#: public/views/settings.php:94
+msgid "All the popup data will be deleted after removing the plugin if this option is checked."
+msgstr "Semua data popup akan dihapus setelah menghapus plugin jika opsi ini dicentang."
+
+#: public/views/settings.php:100
+msgid "Disable popup analytics"
+msgstr "Nonaktifkan analitik popup"
+
+#: public/views/settings.php:110
+msgid "User role to access the plugin"
+msgstr "Peran pengguna untuk mengakses plugin"
+
+#: public/views/settings.php:115
+msgid "In spite of user roles the administrator always has access to the plugin."
+msgstr "Terlepas dari peran pengguna, administrator selalu memiliki akses ke plugin."
+
+#: public/views/settings.php:120
+msgid "Disable The Enctyption Data For Import/Export of Subscribers"
+msgstr "Nonaktifkan Data Enkripsi untuk Impor/Ekspor Pelanggan"
+
+#: public/views/settings.php:130
+msgid "Token to Import/Export"
+msgstr "Token untuk Impor/Ekspor"
+
+#: public/views/settings.php:137
+msgid "Use this token in both your old and new site to move your data."
+msgstr "Gunakan token ini di situs lama dan baru Anda untuk memindahkan data Anda."
+
+#: public/views/settings.php:142
+msgid "Save Changes"
+msgstr "Simpan Perubahan"
+
+#: public/views/settings.php:146
+msgid "Debug tools"
+msgstr "Alat debug"
+
+#: public/views/settings.php:148
+msgid "System information"
+msgstr "Informasi sistem"
+
+#: public/views/settings.php:153
+msgid "Download"
+msgstr "Unduh"
+
+#: public/views/subscribers.php:21
+#: public/views/subscribers.php:131
+msgid "Select subscription(s):"
+msgstr "Pilih langganan:"
+
+#: public/views/subscribers.php:47
+msgid "Subscribers"
+msgstr "Pelanggan"
+
+#: public/views/subscribers.php:66
+msgid "Add new"
+msgstr "Tambah baru"
+
+#: public/views/subscribers.php:82
+msgid "Search Subscriber"
+msgstr "Cari Pelanggan"
+
+#: public/views/subscribers.php:83
+msgid "GO!"
+msgstr "MULAI!"
+
+#: public/views/subscribers.php:95
+msgid "Add New Subscribers"
+msgstr "Tambah Pelanggan Baru"
+
+#: public/views/subscribers.php:99
+msgid "Error occurred: could not add subscriber."
+msgstr "Terjadi kesalahan: tidak dapat menambahkan pelanggan."
+
+#: public/views/subscribers.php:109
+msgid "Subscription is not selected"
+msgstr "Langganan tidak dipilih"
+
+#: public/views/subscribers.php:113
+msgid "Invalid email address"
+msgstr "Alamat email tidak valid"
+
+#: public/views/subscribers.php:122
+msgid "Add to list"
+msgstr "Tambahkan ke daftar"
+
+#: public/views/subscribers.php:127
+msgid "Import Subscribers"
+msgstr "Impor Pelanggan"
+
+#: public/views/subscribers.php:137
+msgid "Import Subscribers from csv file:"
+msgstr "Impor Pelanggan dari file csv:"
+
+#: public/views/subscribers.php:145
+msgid "Select file"
+msgstr "Pilih file"
+
+#: public/views/unsubscribeLinkRequestForm.php:22
+msgid "Request New Unsubscribe Link"
+msgstr "Minta Tautan Berhenti Berlangganan Baru"
+
+#: public/views/unsubscribeLinkRequestForm.php:105
+msgid "Your link has expired"
+msgstr "Tautan Anda telah kedaluwarsa"
+
+#: public/views/unsubscribeLinkRequestForm.php:106
+msgid "Enter your email to receive a new unsubscribe link."
+msgstr "Masukkan email Anda untuk menerima tautan berhenti berlangganan baru."
+
+#: public/views/unsubscribeLinkRequestForm.php:111
+msgid "A new unsubscribe link has been sent to your email address."
+msgstr "Tautan berhenti berlangganan baru telah dikirim ke alamat email Anda."
+
+#: public/views/unsubscribeLinkRequestForm.php:115
+msgid "An error occurred. Please try again or contact the administrator."
+msgstr "Terjadi kesalahan. Silakan coba lagi atau hubungi administrator."
+
+#: public/views/unsubscribeLinkRequestForm.php:119
+msgid "Email address not found in our subscription list."
+msgstr "Alamat email tidak ditemukan dalam daftar langganan kami."
+
+#: public/views/unsubscribeLinkRequestForm.php:130
+msgid "Email Address"
+msgstr "Alamat Email"
+
+#: public/views/unsubscribeLinkRequestForm.php:131
+msgid "your@email.com"
+msgstr "your@email.com"
+
+#: public/views/unsubscribeLinkRequestForm.php:133
+msgid "Send New Unsubscribe Link"
+msgstr "Kirim Tautan Berhenti Berlangganan Baru"
+
+#: public/views/unsubscribeLinkRequestForm.php:138
+msgid "Return to homepage"
+msgstr "Kembali ke beranda"
+

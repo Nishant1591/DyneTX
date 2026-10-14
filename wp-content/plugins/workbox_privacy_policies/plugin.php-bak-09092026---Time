@@ -1,0 +1,687 @@
+<?php
+/*
+ Plugin Name: Privacy Policies (adopted for Dyne-tx.com)
+ Author: Artemy Kudryavtsev (Workbox Inc.)
+ Version: 1.0
+ Description: Privacy Policy blocks manager. Blocks are created in the admin area, sorted by drag & drop and rendered on the front-end with the [workbox_privacy_policy] shortcode (or one by one with [workbox_privacy_policy_item id=""]).
+*/
+
+class WorkboxPrivacyPolicies {
+
+	/**
+	 * Custom post type used to store single Privacy Policy blocks.
+	 */
+	const POST_TYPE = 'wb_privacy_policy';
+
+	/**
+	 * AJAX action name used by the drag & drop sorting in the admin list.
+	 */
+	const SORT_ACTION = 'workbox_privacy_policies_sort';
+
+	/**
+	 * Nonce name used to protect the drag & drop sorting request.
+	 */
+	const SORT_NONCE = 'workbox_privacy_policies_sort_nonce';
+
+	/**
+	 * Date format used for the "Last Updated" line (example: August 1, 2026).
+	 */
+	const DATE_FORMAT = 'F j, Y';
+
+	/**
+	 * Meta key that stores the "Last Updated" date of a block (Y-m-d).
+	 */
+	const META_DATE = '_wb_last_updated';
+
+	/**
+	 * Meta key that stores how the "Last Updated" date is maintained:
+	 * self::MODE_AUTO or self::MODE_MANUAL.
+	 */
+	const META_MODE = '_wb_last_updated_mode';
+
+	/**
+	 * Mode: the date is refreshed with the current date on every save.
+	 */
+	const MODE_AUTO = 'auto';
+
+	/**
+	 * Mode: the date is set by the user and never changes automatically.
+	 */
+	const MODE_MANUAL = 'manual';
+
+	/**
+	 * Nonce name used to protect the "Last Updated" meta box.
+	 */
+	const META_NONCE = 'workbox_privacy_policies_meta_nonce';
+
+	/**
+	 * Recursion guard for the_content filter while rendering a block.
+	 *
+	 * @var bool
+	 */
+	private $is_rendering = false;
+
+	/**
+	 * Counts how many blocks have already been rendered on the current page,
+	 * so that the very first one gets <h1> and the rest get <h2>.
+	 *
+	 * @var int
+	 */
+	private $rendered_count = 0;
+
+	/**
+	 * Constructor. Registers all hooks, filters and shortcodes of the plugin.
+	 *
+	 * @return void
+	 */
+	public function __construct() {
+		register_activation_hook( __FILE__, array( $this, 'activate' ) );
+		register_deactivation_hook( __FILE__, array( $this, 'deactivate' ) );
+
+		// Post type.
+		add_action( 'init', array( $this, 'registerPostType' ) );
+
+		// Shortcodes.
+		add_shortcode( 'workbox_privacy_policy', array( $this, 'doShortCodeList' ) );
+		add_shortcode( 'workbox_privacy_policy_item', array( $this, 'doShortCodeItem' ) );
+
+		// "Last Updated" meta box in the block editor.
+		add_action( 'add_meta_boxes_' . self::POST_TYPE, array( $this, 'addLastUpdatedMetaBox' ) );
+		add_action( 'save_post_' . self::POST_TYPE, array( $this, 'saveLastUpdated' ), 10, 3 );
+
+		// Admin list: ordering, columns, hint above the table, drag & drop assets.
+		add_action( 'pre_get_posts', array( $this, 'orderAdminList' ) );
+		add_filter( 'manage_' . self::POST_TYPE . '_posts_columns', array( $this, 'managePostColumns' ) );
+		add_action( 'manage_' . self::POST_TYPE . '_posts_custom_column', array( $this, 'showCustomPostColumns' ), 10, 2 );
+		add_action( 'admin_notices', array( $this, 'showSortingHint' ) );
+		add_action( 'admin_enqueue_scripts', array( $this, 'enqueueAdminAssets' ) );
+		add_action( 'admin_footer', array( $this, 'printSortingScript' ) );
+
+		// AJAX handler for the drag & drop sorting.
+		add_action( 'wp_ajax_' . self::SORT_ACTION, array( $this, 'ajaxSaveOrder' ) );
+	}
+
+	/**
+	 * Plugin activation callback. Registers the post type and flushes the
+	 * rewrite rules so that WordPress knows about it right after activation.
+	 *
+	 * @return void
+	 */
+	public function activate() {
+		$this->registerPostType();
+		flush_rewrite_rules();
+	}
+
+	/**
+	 * Plugin deactivation callback. Cleans up the rewrite rules.
+	 *
+	 * @return void
+	 */
+	public function deactivate() {
+		flush_rewrite_rules();
+	}
+
+	/**
+	 * Registers the "Privacy Policies" custom post type. Every post of this
+	 * type is a single Privacy Policy block: post title = block heading,
+	 * post content = block HTML, menu_order = position in the list.
+	 *
+	 * @return void
+	 */
+	public function registerPostType() {
+		$labels = array(
+			'name'               => 'Privacy Policies',
+			'singular_name'      => 'Privacy Policy Block',
+			'menu_name'          => 'Privacy Policies',
+			'name_admin_bar'     => 'Privacy Policy Block',
+			'add_new'            => 'Add New Block',
+			'add_new_item'       => 'Add New Block',
+			'new_item'           => 'New Block',
+			'edit_item'          => 'Edit Block',
+			'view_item'          => 'View Block',
+			'all_items'          => 'All Blocks',
+			'search_items'       => 'Search Blocks',
+			'not_found'          => 'No blocks found.',
+			'not_found_in_trash' => 'No blocks found in Trash.',
+		);
+
+		$args = array(
+			'labels'              => $labels,
+			'public'              => false,
+			'publicly_queryable'  => false,
+			'exclude_from_search' => true,
+			'show_ui'             => true,
+			'show_in_menu'        => true,
+			'show_in_rest'        => true,
+			'capability_type'     => 'post',
+			'has_archive'         => false,
+			'hierarchical'        => false,
+			'rewrite'             => false,
+			'menu_position'       => 25,
+			'menu_icon'           => 'dashicons-privacy',
+			'supports'            => array( 'title', 'editor', 'revisions', 'page-attributes' ),
+		);
+
+		register_post_type( self::POST_TYPE, $args );
+	}
+
+	/**
+	 * Registers the "Last Updated" meta box in the sidebar of the block editor.
+	 *
+	 * @param WP_Post $post Block being edited.
+	 *
+	 * @return void
+	 */
+	public function addLastUpdatedMetaBox( $post ) {
+		add_meta_box(
+			'wb_privacy_last_updated',
+			'Last Updated',
+			array( $this, 'showLastUpdatedMetaBox' ),
+			self::POST_TYPE,
+			'side',
+			'high'
+		);
+	}
+
+	/**
+	 * Prints the content of the "Last Updated" meta box: the mode selector
+	 * (automatic / manual) and the date field used in the manual mode.
+	 *
+	 * @param WP_Post $post Block being edited.
+	 *
+	 * @return void
+	 */
+	public function showLastUpdatedMetaBox( $post ) {
+		$mode = $this->getLastUpdatedMode( $post->ID );
+		$date = $this->getLastUpdatedRawDate( $post );
+
+		wp_nonce_field( self::META_NONCE, self::META_NONCE );
+
+		?>
+		<p>
+			<label>
+				<input type="radio" name="wb_last_updated_mode" value="<?php echo esc_attr( self::MODE_AUTO ); ?>" <?php checked( $mode, self::MODE_AUTO ); ?>>
+				Update automatically on save
+			</label>
+			<br>
+			<label>
+				<input type="radio" name="wb_last_updated_mode" value="<?php echo esc_attr( self::MODE_MANUAL ); ?>" <?php checked( $mode, self::MODE_MANUAL ); ?>>
+				Set manually
+			</label>
+		</p>
+		<p>
+			<input type="date" id="wb_last_updated_date" name="wb_last_updated_date"
+				   value="<?php echo esc_attr( $date ); ?>"
+				   <?php disabled( $mode, self::MODE_AUTO ); ?>>
+		</p>
+		<p class="description">
+			In the manual mode the date stays untouched when the block is saved again.
+			It is displayed as <strong><?php echo esc_html( $this->getLastUpdatedDate( $post ) ); ?></strong>.
+		</p>
+		<script type="text/javascript">
+			jQuery(document).ready(function ($) {
+				// Enables the date field in the manual mode only.
+				$('input[name="wb_last_updated_mode"]').on('change', function () {
+					$('#wb_last_updated_date').prop('disabled', $(this).val() !== '<?php echo esc_js( self::MODE_MANUAL ); ?>');
+				});
+			});
+		</script>
+		<?php
+	}
+
+	/**
+	 * Saves the "Last Updated" date and its mode when a block is saved.
+	 *
+	 * In the automatic mode the current date is stored on every save, including
+	 * saves made outside of the editor (quick edit, programmatic updates). In the
+	 * manual mode the date entered by the user is kept as is.
+	 *
+	 * @param int     $post_id ID of the saved block.
+	 * @param WP_Post $post    Saved block object.
+	 * @param bool    $update  True when an existing block is updated.
+	 *
+	 * @return void
+	 */
+	public function saveLastUpdated( $post_id, $post = false, $update = false ) {
+		if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
+			return;
+		}
+
+		if ( wp_is_post_revision( $post_id ) || wp_is_post_autosave( $post_id ) ) {
+			return;
+		}
+
+		$mode = $this->getLastUpdatedMode( $post_id );
+		$date = get_post_meta( $post_id, self::META_DATE, true );
+
+		// The meta box has been submitted: take the mode and the date from the request.
+		$has_meta_box = isset( $_POST[ self::META_NONCE ] )
+			&& wp_verify_nonce( $_POST[ self::META_NONCE ], self::META_NONCE )
+			&& current_user_can( 'edit_post', $post_id );
+
+		if ( $has_meta_box ) {
+			$mode = ( isset( $_POST['wb_last_updated_mode'] ) && $_POST['wb_last_updated_mode'] === self::MODE_MANUAL )
+				? self::MODE_MANUAL
+				: self::MODE_AUTO;
+
+			update_post_meta( $post_id, self::META_MODE, $mode );
+
+			if ( $mode === self::MODE_MANUAL && isset( $_POST['wb_last_updated_date'] ) ) {
+				$submitted = $this->sanitizeDate( $_POST['wb_last_updated_date'] );
+				if ( $submitted ) {
+					$date = $submitted;
+				}
+			}
+		}
+
+		// The automatic mode always refreshes the date, the manual one never does.
+		if ( $mode === self::MODE_AUTO || ! $date ) {
+			$date = current_time( 'Y-m-d' );
+		}
+
+		update_post_meta( $post_id, self::META_DATE, $date );
+	}
+
+	/**
+	 * Forces the admin list of the blocks to be sorted by the manual (drag & drop)
+	 * order and shows all blocks on a single page, so that they can be re-ordered
+	 * without pagination issues.
+	 *
+	 * @param WP_Query $query Current query object (passed by pre_get_posts).
+	 *
+	 * @return WP_Query The same query object, modified when needed.
+	 */
+	public function orderAdminList( $query ) {
+		if ( ! is_admin() || ! $query->is_main_query() ) {
+			return $query;
+		}
+
+		if ( $query->get( 'post_type' ) !== self::POST_TYPE ) {
+			return $query;
+		}
+
+		// Do not interfere when the user sorts the table by clicking a column header.
+		if ( ! empty( $_GET['orderby'] ) ) {
+			return $query;
+		}
+
+		$query->set( 'orderby', array( 'menu_order' => 'ASC', 'ID' => 'ASC' ) );
+		$query->set( 'posts_per_page', -1 );
+
+		return $query;
+	}
+
+	/**
+	 * Defines the columns of the blocks list table in the admin area.
+	 *
+	 * @param array $defaults Default columns provided by WordPress.
+	 *
+	 * @return array Modified list of columns.
+	 */
+	public function managePostColumns( $defaults ) {
+		unset( $defaults['date'] );
+
+		$defaults['wb_last_updated'] = 'Last Updated';
+		$defaults['wb_shortcode']    = 'Single Block Shortcode';
+
+		return $defaults;
+	}
+
+	/**
+	 * Prints the content of the custom columns of the blocks list table.
+	 *
+	 * @param string $column  Column key (see managePostColumns()).
+	 * @param int    $post_id ID of the block being displayed in the current row.
+	 *
+	 * @return void
+	 */
+	public function showCustomPostColumns( $column, $post_id ) {
+		switch ( $column ) {
+			case 'wb_last_updated':
+				$mode = ( $this->getLastUpdatedMode( $post_id ) === self::MODE_MANUAL ) ? 'manual' : 'auto';
+				echo esc_html( $this->getLastUpdatedDate( $post_id ) ) . ' <em>(' . esc_html( $mode ) . ')</em>';
+				break;
+
+			case 'wb_shortcode':
+				echo '<code>[workbox_privacy_policy_item id="' . intval( $post_id ) . '"]</code>';
+				break;
+		}
+	}
+
+	/**
+	 * Shows the drag & drop hint above the blocks list table in the admin area.
+	 *
+	 * @return void
+	 */
+	public function showSortingHint() {
+		if ( ! $this->isBlocksListScreen() ) {
+			return;
+		}
+
+		echo '<div class="notice notice-info wb-privacy-sort-hint">
+				<p><strong>Drag &amp; drop the rows of the table below to change the order of the blocks.</strong>
+				The order is saved automatically and is used by the <code>[workbox_privacy_policy]</code> shortcode.</p>
+			</div>';
+	}
+
+	/**
+	 * Loads jQuery UI Sortable and the inline styles required by the drag & drop
+	 * sorting. Assets are loaded on the blocks list screen only.
+	 *
+	 * @param string $hook Current admin page hook suffix.
+	 *
+	 * @return void
+	 */
+	public function enqueueAdminAssets( $hook ) {
+		if ( ! $this->isBlocksListScreen() ) {
+			return;
+		}
+
+		wp_enqueue_script( 'jquery-ui-sortable' );
+
+		$css = '.post-type-' . self::POST_TYPE . ' .wp-list-table tbody tr { cursor: move; }
+			.post-type-' . self::POST_TYPE . ' .wp-list-table tbody tr.wb-sort-placeholder { background: #f0f6fc; outline: 1px dashed #2271b1; }
+			.post-type-' . self::POST_TYPE . ' .wp-list-table tbody tr.wb-sort-helper { background: #fff; box-shadow: 0 1px 6px rgba(0,0,0,.2); }
+			.post-type-' . self::POST_TYPE . ' .wp-list-table.wb-sort-busy { opacity: .5; }';
+
+		wp_add_inline_style( 'list-tables', $css );
+	}
+
+	/**
+	 * Prints the JavaScript that makes the blocks list table sortable by
+	 * drag & drop and saves the new order through admin-ajax.
+	 *
+	 * @return void
+	 */
+	public function printSortingScript() {
+		if ( ! $this->isBlocksListScreen() ) {
+			return;
+		}
+
+		?>
+		<script type="text/javascript">
+			jQuery(document).ready(function ($) {
+				var $table = $('.wp-list-table.posts');
+				var $rows  = $table.find('#the-list');
+
+				if (!$rows.length || typeof $rows.sortable !== 'function') {
+					return;
+				}
+
+				$rows.sortable({
+					items: 'tr',
+					axis: 'y',
+					cursor: 'move',
+					placeholder: 'wb-sort-placeholder',
+					// Keeps the column widths of the dragged row.
+					helper: function (event, $row) {
+						var $cells = $row.children();
+						var $helper = $row.clone();
+
+						$helper.children().each(function (index) {
+							$(this).width($cells.eq(index).width());
+						});
+
+						return $helper.addClass('wb-sort-helper');
+					},
+					// Saves the new order as soon as a row is dropped.
+					update: function () {
+						var order = $rows.find('tr').map(function () {
+							var id = $(this).attr('id') || '';
+							return id.replace('post-', '');
+						}).get();
+
+						$table.addClass('wb-sort-busy');
+
+						$.post(ajaxurl, {
+							action: '<?php echo esc_js( self::SORT_ACTION ); ?>',
+							nonce: '<?php echo esc_js( wp_create_nonce( self::SORT_NONCE ) ); ?>',
+							order: order
+						}).always(function () {
+							$table.removeClass('wb-sort-busy');
+						});
+					}
+				});
+			});
+		</script>
+		<?php
+	}
+
+	/**
+	 * AJAX handler that stores the new order of the blocks. The menu_order field
+	 * is updated with a direct database query on purpose: wp_update_post() would
+	 * also change the modification date, which is displayed as "Last Updated".
+	 *
+	 * Expects $_POST['nonce'] and $_POST['order'] (array of block IDs in the new order).
+	 *
+	 * @return void Sends a JSON response and terminates the request.
+	 */
+	public function ajaxSaveOrder() {
+		global $wpdb;
+
+		if ( ! check_ajax_referer( self::SORT_NONCE, 'nonce', false ) ) {
+			wp_send_json_error( array( 'message' => 'Invalid security token.' ) );
+		}
+
+		if ( ! current_user_can( 'edit_posts' ) ) {
+			wp_send_json_error( array( 'message' => 'Not enough permissions.' ) );
+		}
+
+		$order = isset( $_POST['order'] ) ? (array) $_POST['order'] : array();
+		$saved = 0;
+
+		foreach ( $order as $position => $post_id ) {
+			$post_id = intval( $post_id );
+			if ( $post_id <= 0 || get_post_type( $post_id ) !== self::POST_TYPE ) {
+				continue;
+			}
+
+			$wpdb->update(
+				$wpdb->posts,
+				array( 'menu_order' => intval( $position ) ),
+				array( 'ID' => $post_id ),
+				array( '%d' ),
+				array( '%d' )
+			);
+
+			clean_post_cache( $post_id );
+			$saved++;
+		}
+
+		wp_send_json_success( array( 'saved' => $saved ) );
+	}
+
+	/**
+	 * Shortcode [workbox_privacy_policy]. Renders every published Privacy Policy
+	 * block in the order defined in the admin area. Blocks are separated
+	 * by <hr class="mb-5">.
+	 *
+	 * @param array|string $atts Shortcode attributes (not used).
+	 *
+	 * @return string Ready to use HTML of all blocks.
+	 */
+	public function doShortCodeList( $atts = '' ) {
+		$list = new WP_Query( array(
+			'post_type'      => self::POST_TYPE,
+			'post_status'    => 'publish',
+			'nopaging'       => true,
+			'posts_per_page' => -1,
+			'orderby'        => array( 'menu_order' => 'ASC', 'ID' => 'ASC' ),
+		) );
+
+		if ( ! $list->have_posts() ) {
+			return '';
+		}
+
+		$blocks = array();
+		foreach ( $list->posts as $post ) {
+			$blocks[] = $this->renderBlock( $post );
+		}
+
+		return implode( '<hr class="container mt-5">', $blocks );
+	}
+
+	/**
+	 * Shortcode [workbox_privacy_policy_item id=""]. Renders a single Privacy
+	 * Policy block by its database ID.
+	 *
+	 * @param array|string $atts Shortcode attributes: 'id' - ID of the block.
+	 *
+	 * @return string HTML of the requested block or an empty string when the
+	 *                block does not exist or is not published.
+	 */
+	public function doShortCodeItem( $atts = '' ) {
+		$atts = shortcode_atts( array( 'id' => 0 ), $atts, 'workbox_privacy_policy_item' );
+
+		$post_id = intval( $atts['id'] );
+		if ( $post_id <= 0 ) {
+			return '';
+		}
+
+		$post = get_post( $post_id );
+		if ( ! $post || $post->post_type !== self::POST_TYPE || $post->post_status !== 'publish' ) {
+			return '';
+		}
+
+		return $this->renderBlock( $post );
+	}
+
+	/**
+	 * Builds the HTML of a single block: title in <h1> for the first block
+	 * rendered on the page and <h2> for every subsequent one, the modification
+	 * date in <p><i>Last Updated: ...</i></p> and the content of the block.
+	 *
+	 * @param WP_Post $post Block to render.
+	 *
+	 * @return string HTML of the block.
+	 */
+	private function renderBlock( $post ) {
+		$tag = ( $this->rendered_count === 0 ) ? 'h1' : 'h2';
+		$this->rendered_count++;
+
+		$html = '<div class="container-fluid section py-5 my-5">';
+		$html .= '<div id="' . esc_attr( sanitize_title( $post->post_title ) ) . '" class="anchor"></div>';
+		$html .= '<div class="container">';
+		$html .= '<' . $tag . '>' . esc_html( $post->post_title ) . '</' . $tag . '>';
+		$html .= '<p><i>Last Updated: ' . esc_html( $this->getLastUpdatedDate( $post ) ) . '</i></p>';
+		$html .= $this->renderBlockContent( $post->post_content );
+		$html .= '</div>';
+		$html .= '</div>';
+
+		return $html;
+	}
+
+	/**
+	 * Applies the standard WordPress content filters (autop, Gutenberg blocks,
+	 * nested shortcodes) to the HTML of a block. The recursion guard prevents an
+	 * endless loop when a block contains one of the plugin shortcodes itself.
+	 *
+	 * @param string $content Raw content of the block.
+	 *
+	 * @return string Filtered content.
+	 */
+	private function renderBlockContent( $content ) {
+		if ( $this->is_rendering ) {
+			return wpautop( do_blocks( $content ) );
+		}
+
+		$this->is_rendering = true;
+		$content = apply_filters( 'the_content', $content );
+		$this->is_rendering = false;
+
+		return $content;
+	}
+
+	/**
+	 * Returns the "Last Updated" date of a block formatted for the front-end
+	 * (example: August 1, 2026).
+	 *
+	 * @param int|WP_Post $post Block object or its ID.
+	 *
+	 * @return string Formatted date or an empty string when the block is unknown.
+	 */
+	private function getLastUpdatedDate( $post ) {
+		$date = $this->getLastUpdatedRawDate( $post );
+		if ( ! $date ) {
+			return '';
+		}
+
+		return mysql2date( self::DATE_FORMAT, $date . ' 00:00:00' );
+	}
+
+	/**
+	 * Returns the raw "Last Updated" date of a block in the Y-m-d format. Blocks
+	 * saved before the meta field was introduced fall back to their modification date.
+	 *
+	 * @param int|WP_Post $post Block object or its ID.
+	 *
+	 * @return string Date in the Y-m-d format or an empty string when the block is unknown.
+	 */
+	private function getLastUpdatedRawDate( $post ) {
+		$post = get_post( $post );
+		if ( ! $post ) {
+			return '';
+		}
+
+		$date = $this->sanitizeDate( get_post_meta( $post->ID, self::META_DATE, true ) );
+		if ( $date ) {
+			return $date;
+		}
+
+		// post_modified is already the local site time, no conversion needed.
+		return mysql2date( 'Y-m-d', $post->post_modified );
+	}
+
+	/**
+	 * Returns the "Last Updated" mode of a block. New blocks and blocks saved
+	 * before the meta field was introduced use the automatic mode.
+	 *
+	 * @param int $post_id ID of the block.
+	 *
+	 * @return string self::MODE_AUTO or self::MODE_MANUAL.
+	 */
+	private function getLastUpdatedMode( $post_id ) {
+		$mode = get_post_meta( $post_id, self::META_MODE, true );
+
+		return ( $mode === self::MODE_MANUAL ) ? self::MODE_MANUAL : self::MODE_AUTO;
+	}
+
+	/**
+	 * Validates a date coming from the meta box or from the database.
+	 *
+	 * @param string $date Date to check, expected in the Y-m-d format.
+	 *
+	 * @return string The date in the Y-m-d format or an empty string when it is invalid.
+	 */
+	private function sanitizeDate( $date ) {
+		$date = trim( (string) $date );
+		if ( $date === '' ) {
+			return '';
+		}
+
+		$parts = explode( '-', substr( $date, 0, 10 ) );
+		if ( count( $parts ) !== 3 || ! checkdate( intval( $parts[1] ), intval( $parts[2] ), intval( $parts[0] ) ) ) {
+			return '';
+		}
+
+		return sprintf( '%04d-%02d-%02d', intval( $parts[0] ), intval( $parts[1] ), intval( $parts[2] ) );
+	}
+
+	/**
+	 * Checks whether the current admin screen is the list of the Privacy Policy
+	 * blocks (the only screen where the drag & drop sorting is available).
+	 *
+	 * @return bool True on the blocks list screen, false otherwise.
+	 */
+	private function isBlocksListScreen() {
+		if ( ! function_exists( 'get_current_screen' ) ) {
+			return false;
+		}
+
+		$screen = get_current_screen();
+
+		return ( $screen && $screen->base === 'edit' && $screen->post_type === self::POST_TYPE );
+	}
+}
+
+new WorkboxPrivacyPolicies();

@@ -1,0 +1,110 @@
+/*.mapwidget img{max-width:none;}
+.mapwidget,  #findusmap textarea {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	}
+.mqabasicwnd {
+    font:12px sans-serif;
+    width:180px !important;
+  }
+ 
+  .MQwp { font-size: 14px;
+       margin:0;
+	padding: 0;
+	line-height: 14px;}
+div.MQrollover {
+width:50px;
+}*/
+/* clear any image styling */	
+div.gdmap img, div.gdroute img {
+max-width:none;
+border: 0;
+background-color: transparent;
+box-shadow: 0 0 0;
+-moz-box-shadow: 0 0 0   ;
+-webkit-box-shadow: 0 0 0 ;
+margin: 0;
+padding: 0;
+}
+/* style the directions table */
+div.gdroute {
+padding-top: 100px;
+color: #333;
+}
+div.gdroute table {
+table-layout:fixed;
+width:100%;
+word-wrap:break-word;
+margin: 0px;
+padding: 0px;
+background: #ebebeb;
+border: 1px solid #ebebeb;
+}
+div.gdroute table th.direction {
+width: 63px;
+}
+div.gdroute table th.route {
+
+}
+div.gdroute table th.distance {
+width: 43px;
+}
+
+div.gdroute tbody {
+display: table-row-group;
+vertical-align: middle;
+border-color: inherit;
+}
+
+div.gdroute tr td {
+background: white;
+vertical-align: top;
+border: 1px solid #ebebeb;
+padding: 5px 10px 0px 10px;
+}
+div.gdroute tr {
+border: 1px solid #ebebeb;
+}
+
+/* style the optional branding */
+div.gdbranding {font-size: 10px;text-align: right;margin-bottom: 10px;}
+div.gdbranding a { font-style: italic; text-decoration: none;}
+
+/* style the responsive button */
+
+form.gdform {
+margin: 0 auto;
+width: 186px;
+}
+button.gdbutton {
+    border-radius: 2px 2px 2px 2px;
+    background-color: #4D90FE;
+    border: 1px solid #3079ED;
+	color: #FFFFFF;
+    font-weight: bold;
+	font-size: 20px;
+    padding: 24px;
+    text-decoration: none;
+    white-space: nowrap;
+	cursor: pointer;
+}
+.mqa_gs circle {
+/* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+
+  /* IE 5-7 */
+  filter: alpha(opacity=20);
+
+  /* Netscape */
+  -moz-opacity: 0.2;
+
+  /* Safari 1.x */
+  -khtml-opacity: 0.2;
+
+  /* Good browsers */
+  opacity: 0.2;
+  }

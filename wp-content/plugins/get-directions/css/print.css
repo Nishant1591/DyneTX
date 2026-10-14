@@ -1,0 +1,7 @@
+@media print{
+
+/*hide divs that are not needed for map route printing
+should be in the theme 
+ e.g.   #branding, #secondary, #footer, #llocally-banner{ display:none; }
+*/
+}

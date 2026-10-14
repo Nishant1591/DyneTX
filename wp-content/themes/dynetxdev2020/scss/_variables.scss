@@ -1,0 +1,200 @@
+/* Scss Document */
+$base-font:16;
+$breakpoint-xs:0px;
+$breakpoint-sm-sm:568px;// for iPhone S hor. position
+$breakpoint-sm:576px;
+$breakpoint-md:768px;
+$breakpoint-emd:812px; // for iPhone X/XS hor. position
+$breakpoint-lg:992px;
+$breakpoint-xl:1200px;
+$breakpoint-xxl:1400px;
+$breakpoint-full:1920px;
+$breakpoint-2k:2560px;
+$breakpoint-4k:3456px;
+
+$grid-breakpoints: ( xs: 0, xsm: 375px, sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl: 1400px, full: 1920px, 2k: 2560px, 4k: 3456px);
+
+
+$pad-xs: 10px; //глобальный мин. отступ
+$pad-sm: 15px; //глобальный сред. отступ
+$pad-md: 20px; //отступ элементов контента
+$pad-lg: 30px;
+$pad-xl: 40px;
+$pad-xxl: 50px;
+
+// отступы и поля основных блоков
+$xs-pad-outside: 40px;
+$xs-pad-inside: 30px;
+$xs-pad-content: 20px;
+
+$md-pad-outside: 60px;
+$md-pad-inside: 40px; 
+$md-pad-content: 20px;
+
+$xl-pad-outside: 80px;
+$xl-pad-inside: 60px;
+$xl-pad-content: 20px;
+
+// высота элементов шапки
+$top-bar-height: 40px;
+$nav-height-responsive: 19vh;
+$nav-height-lg: 70px;
+
+
+$color-1:#E02426; //red
+$color-1-1:#CA3B33; //red-dark
+$color-2:#115DA9; //blue
+$color-3:#A5DBE5; //light-blue 
+$color-3-5:#DAEAF0; //lighter-blue 
+$color-3-6:#F0F7F9; //superlighter-blue 
+$color-4:#06243A; //dark-blue
+$color-4-1:#083064; //darkest-blue
+$color-4-5:#00428B; //mid-blue
+$color-5:#0CB6D4; //cyan-blue 
+$color-5-2:#0089bb; //cyan-blue-dark
+$color-5-1:#07b4e1; //cyan-blue RDD
+$color-5-3:#0B6282; //washed-blue RDD
+$color-6:#19375B; //mid-blue
+$color-7:#58595B; //blue-dark-gray
+$color-8:#063680; //perspective-blue
+$color-9:#B5D1DB; //perspective-light-blue
+$color-10:#f36c20; //orange
+$color-11:#00a54d; //green
+$color-12:#65bd60; //green grass RDD
+$color-12-1:#88CD6E; //green grass RDD 25
+$color-13:#de1893; //pink RDD
+$color-14:#E44398; //pink RDD 1
+$color-15:#26534a; //green dark
+$color-16:#387d70; //green light
+$color-17:#97C5D5; //washed-mid-blue
+
+$stage-1:#91B4D6; 
+$stage-2:#6E9CC8;
+$stage-3:#3D7BB6;
+$stage-4:#024C82;
+$stage-5:#023962;
+$stage-6:#58595B;
+
+$stage-1-bg:#c4dff9; 
+$stage-2-bg:#b3d5f7;
+$stage-3-bg:#90c2f4;
+$stage-4-bg:#6aadf0;
+
+$wht:#fff;
+$blk:#000; 
+
+$bg-rounded-gradient: linear-gradient(to right,  rgba($color-3, .8), rgba($color-3, 0)); 
+$meet-a-person-gradient: linear-gradient(to right, $color-3-5, transparentize($wht, 1) 75%); 
+$wht-blue-gradient: linear-gradient(to right, transparentize($wht, 1), $color-3-5); 
+$wht-blue-gradient-2: linear-gradient(to left, $wht, $color-3-5); 
+$wht-blue-gradient-vert: linear-gradient(to top, $wht, $color-3-5  50%); 
+$wht-blue-gradient-vert-1: linear-gradient(to bottom, $wht, #eff6f8); 
+$wht-blue-gradient-inv-vert: linear-gradient(to top, $color-9, $wht); 
+$wht-blue-gradient-inv: linear-gradient(to left, transparentize($wht, 1), $color-3-5); 
+$transp-wht-gradient: linear-gradient(to right, transparentize($wht, 1), $wht); 
+$wht-blue-gradient-1: linear-gradient(to right, $wht, $color-3-5 30%, $color-3-5);
+$transp-blue-gradient: linear-gradient(to right, transparentize($color-3-5,1), $color-3-5);
+$blue-gradient: linear-gradient(to right, rgba(165, 219, 229, 0.4), rgba(218, 234, 240, 0.4));
+$dark-blue-gradient: linear-gradient(to right,$color-6, $color-4-5);
+$dark-blue-gradient-1: linear-gradient(to right, $color-6, $color-2 80%);
+//$mid-blue-gradient: linear-gradient(to right, $color-4-5, #115DA6);
+$mid-blue-gradient: linear-gradient(to right, #0d467d, #115DA6);
+$mid-blue-gradient-1: linear-gradient(to right, #1A4285, #2C5DA0 85%);
+$light-blue-gradient: linear-gradient(to right, #008DBF, $color-5);
+$cyan-blue-gradient: linear-gradient(to right, $color-5-2, $color-5 95%);
+$green-gradient: linear-gradient(to right, $color-15, $color-16);
+//$topbar-gradient: linear-gradient(to top, transparentize($color-4-1, 1), transparentize($color-4-1, .1) 15%);
+$wht-midblue-gradient-vert: linear-gradient(to top, $wht 30%, $color-17); 
+
+
+
+$btn-primary-hover-color: darken($color-1, 15%) !default;
+$btn-alert-hover-color: darken($color-3, 15%) !default;
+
+
+$transition-base: all .2s ease-in-out !default;
+
+@function strip-unit($num) {
+  @return $num / ($num * 0 + 1);
+}
+
+@function rem($num) {
+  @return strip-unit($num) / $base-font * 1rem;
+}
+
+@function fluid($f-min, $f-max, $v-min, $v-max, $unit: px) {
+  $f-min: strip-unit($f-min);
+  $f-max: strip-unit($f-max);
+  $v-min: strip-unit($v-min);
+  $v-max: strip-unit($v-max);
+
+  $k: ($f-max - $f-min) / ($v-max - $v-min);
+  $b: $f-min - $k * $v-min;
+
+  $lo: if($f-min < $f-max, $f-min, $f-max);
+  $hi: if($f-min < $f-max, $f-max, $f-min);
+  $sign: if($b < 0, "-", "+");
+  $abs:  if($b < 0, -$b, $b);
+
+  @if $unit == rem {
+    @return unquote("clamp(#{rem($lo)}, #{$k * 100}vw #{$sign} #{rem($abs)}, #{rem($hi)})");
+  }
+  @return unquote("clamp(#{$lo}px, #{$k * 100}vw #{$sign} #{$abs}px, #{$hi}px)");
+}
+
+@function fluidSpace($f-min, $f-max, $v-min, $v-max) {
+  @return fluid($f-min, $f-max, $v-min, $v-max, px);
+}
+
+@function fluidSize($f-min, $f-max, $v-min, $v-max) {
+  @return fluid($f-min, $f-max, $v-min, $v-max, rem);
+}
+
+
+
+@mixin button-reset {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  -webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
+}
+
+@mixin placeholder {
+  &::-webkit-input-placeholder { 
+		font-size: rem(16); 
+		color:$color-5;
+	}
+  &:-moz-placeholder           { 
+		font-size: rem(16); 
+		color:$color-5;
+	}
+  &::-moz-placeholder          { 
+		font-size: rem(16); 
+		color:$color-5;
+	}
+  &:-ms-input-placeholder      { 
+		font-size: rem(16); 
+		color:$color-5;
+	}  
+}
+
+@mixin placeholder-plus {
+  &::-webkit-input-placeholder { letter-spacing: 1px;	}
+  &:-moz-placeholder           { letter-spacing: 1px;	}
+  &::-moz-placeholder          { letter-spacing: 1px;	}
+  &:-ms-input-placeholder      { letter-spacing: 1px;	}  
+}
+
+
+@mixin spacer {
+	content: '';
+	display: block;
+	width: 0; 
+	height: 0;
+}
+
+
+

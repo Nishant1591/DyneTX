@@ -1,0 +1,448 @@
+// Scss Document
+
+
+.pipeline-chart-25 {
+	padding-top: calc(60vw/19.2);
+	padding-bottom: calc(60vw/19.2) !important;
+	margin-bottom: 6.25rem;
+	
+	~ .pipeline-description {
+		@media (max-width: #{$breakpoint-lg - .999px}) {
+			display: none;
+		}
+	}
+	
+	.container {
+		padding: 0 15px;
+	}
+	
+	.chart-headline {
+		font-family: 'ralewayregular';
+		background-color: $color-7; 
+		color: $wht;
+		height: 42px;
+		max-height: 42px;
+		padding: 0;
+		font-size: 15px;
+		text-transform: uppercase;
+
+		@media (min-width: #{$breakpoint-lg}) {
+			font-family: 'ralewaybold';
+			font-size: fluidSize(10, 14, 320, 1920);
+		}
+		
+		@media (min-width: #{$breakpoint-full}) {
+			font-size: 14px;
+		}
+		
+		[class*='col'] {
+			&:not(.stages) {
+				display: flex;
+				align-items: center;
+			}
+						
+			&:first-child {
+				@media (min-width: #{$breakpoint-lg}) {
+					padding-left: 10px;
+				}
+			}
+
+			&:not(:last-child) {
+				border-right: 2px solid $wht;
+			}
+			
+			&:not(:first-child) {
+				justify-content: center;
+				
+				@media (max-width: #{$breakpoint-lg - .999px}) {
+					display: none;
+				}
+				
+			}
+		}
+		
+		.stages {			
+			width: 55%;
+			max-width: 55%;
+			flex: 0 0 55%;
+			white-space: nowrap;
+			
+			.row, .row > div {
+				height: 100%;
+			}
+		}
+		
+		[class*="stage-"] {
+			position: relative;
+			white-space: nowrap;
+			display: inline-flex;
+			padding-left: fluidSize(20, 25, 320, 1920);
+
+			&:before {
+//				content: "";
+				display: inline-block;
+				width: 21px;
+				min-width: 21px;
+				height: 41px;
+				position: absolute;
+				left: -6px;
+				top: 0;
+				z-index: 0;
+			}	
+
+			span {
+				padding: 0 20px;
+				z-index: 1;
+				
+				@media (min-width: #{$breakpoint-lg}) {
+					padding: 0 calc(20vw/19.2);
+				}
+			}
+
+			&.stage-1 {
+				background-color: $stage-1;
+				display: none;
+
+				&:before {
+					background-image: url("../images/corner-1.svg");
+				}
+			} 
+
+			&.stage-2 {
+				min-width: 50%;
+				width: 50%;
+				background-color: $stage-2;
+
+				&:before {
+					background-image: url("../images/corner-2.svg");
+				}
+			} 
+
+			&.stage-3 {
+				min-width: 50%;
+				width: 50%;
+				background-color: $stage-3;
+
+				&:before {
+					background-image: url("../images/corner-3.svg");
+				}
+			} 
+
+			&.stage-6 {
+				background-color: $stage-6;
+//				width: 100%;
+				padding-left: 20px;
+				padding-right: 10px;
+
+				&:before {
+					background-image: url("../images/corner-4.svg");
+				}
+			} 
+		}
+	}
+	
+	.chart-body {
+		> div {
+			border: 1px solid $wht;
+//			border-bottom: none;
+			font-family: 'ralewaysemibold' !important;
+			font-size: fluidSize(16, 17, 375, 1920);
+			display: flex;
+			flex-wrap: wrap;
+			align-content: center;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			
+			&:first-child {
+				font-size: fluidSize(14, 17, 992, 1920);
+				border-left: none;
+				font-family: 'ralewaybold' !important;
+				position: relative;
+				text-align: left;
+
+				@media (max-width: #{$breakpoint-lg - .001px}) {
+					font-size: 17px;
+					margin-top: 10px;
+				}
+
+				@media (min-width: #{$breakpoint-lg}) {
+					padding-left: 10px;
+				}
+
+				@media (min-width: #{$breakpoint-full}) {
+					font-size: 17px;
+				}
+			}
+			
+			&:last-child {
+				border-right: none;
+				text-align: left;
+//				padding-left: $pad-sm;
+				padding-right: 0;
+			}
+	
+			@media (min-width: #{$breakpoint-full}) {
+				font-size: 17px;
+			}
+			
+			@media (max-width: #{$breakpoint-lg - .001px}) {
+				border: none;
+				padding-left: 40px !important;
+			}
+			
+			.btn-plus {
+				position: absolute;
+				top: 50%;
+				left: 0;
+				transform: translate(0, -50%);
+				
+				@media (min-width: #{$breakpoint-lg}) {
+					transform: translate(-100%, -50%);
+				}
+				
+				@media (min-width: #{$breakpoint-xl}) {
+					transform: translate(calc(-100% - 10vw/19.2), -50%);
+				}
+			}
+			
+			span, small {
+				font-family: 'ralewayregular';
+			}
+			
+			&.chart-wrapper {
+				@media (min-width: #{$breakpoint-lg}) {
+					width: 55%;
+					max-width: 55%;
+					flex: 0 0 55%;
+					white-space: nowrap;
+				}
+				
+				@media (max-width: #{$breakpoint-lg - .001px}) {
+					border-top-width: 0;
+					padding-top: 5px;
+					padding-bottom: 5px;
+				}
+			}
+			
+			&.target {
+				font-size: fluidSize(16, 17, 375, 1920);
+				flex-direction: column;
+				align-content: flex-start;
+				
+				@media (min-width: #{$breakpoint-lg}) {
+					align-content: center;
+					padding-left: calc(10vw/19.2);
+					padding-right: calc(10vw/19.2);
+				}
+				
+				@media (min-width: #{$breakpoint-full}) {
+					padding-left: 10px;
+					padding-right: 10px;
+				}
+				
+				@media (max-width: #{$breakpoint-lg - .001px}) {
+					font-family: 'ralewayregular' !important;
+					border-bottom-width: 0;
+					padding-top: 0;
+					padding-bottom: 0;
+				}
+				
+			 > div {
+					@media (min-width: #{$breakpoint-lg}) {
+						height: 36px; 
+						display: flex !important;
+						align-items: center;
+						justify-content: center;
+						white-space: nowrap;
+					}
+
+					&:not(:first-child) {
+						display: none;
+						margin-top: $pad-sm;
+					}
+				}				
+			}
+			
+		}
+
+		&:last-child {
+			> div {
+				border-bottom: none !important;
+			}
+		}
+		
+		&[class*="program-"]{
+
+			.chart-wrapper {
+				padding-left: 0;
+				padding-right: 0;
+				
+				.inner {
+					width: 100%;
+					
+					.d-lg-none {
+						font-family: 'ralewayregular';
+						margin-top: 5px;
+						margin-bottom: 3px;
+					}
+//					display: flex;
+//					align-items: center;
+//					justify-content: space-between;
+					
+					&:not(:first-child) {
+						@media (min-width: #{$breakpoint-lg}) {
+							margin-top: $pad-sm;
+						}
+					}
+				}
+				
+				span {
+					margin-left: auto;
+					font-size: fluidSize(10, 14, 375, 768);
+					padding-right: 15px;
+					font-style: italic;
+					line-height: 1.1;
+
+					@media (min-width: #{$breakpoint-lg}) {
+						display: none;
+					}
+				}
+			
+				.chart {
+					height: 36px;
+					display: flex;
+					position: relative;
+
+
+					&:before, &:after {
+						content: '';
+						display: inline-block;
+						height: 100%;
+					}
+
+					&:before {
+						width: 100%;
+					}
+
+					&:after {
+						width: 14px;
+						background-repeat: no-repeat;
+					}
+
+					> div {
+						position: absolute;
+						color: $wht;
+						width: 100%;
+						height: 100%;
+						display: flex;
+						align-items: center;
+						padding-left: 5px;
+//						padding-right: 5px;
+
+						@media (max-width: #{$breakpoint-lg - .999px}) {
+							font-size: fluidSize(11, 16, 375, 768);
+						}
+
+						@media (min-width: #{$breakpoint-lg}) {
+							padding-left: calc(20vw/19.2);
+						}
+
+						@media (min-width: #{$breakpoint-full}) {
+							padding-left: 20px;
+						}
+						
+					}
+					
+					&.short {
+						span {
+							@media (max-width: #{$breakpoint-md - .999px}) {
+								position: absolute;
+								right: 0;
+								padding-right: 0;
+								transform: translate(110%, 0);
+								color: $color-6;
+							}
+						}
+					}
+				}
+				
+			}
+		}
+		
+		&.program-1 {
+			> div {
+				color: $stage-4;
+				
+				.chart:before {
+					background-image: $dark-blue-gradient;
+				}
+				
+				.chart:after {
+					background-image:url("../images/stage-corner-1.svg");
+				}
+			}
+		}
+		
+		&.program-2 {
+			> div {
+				color: $stage-3;
+				
+				.chart:before {
+					background-image: $mid-blue-gradient;
+				}
+				
+				.chart:after {
+					background-image:url("../images/stage-corner-2.svg");
+				}
+			}
+		}
+		
+		&.program-3 {
+			> div {
+				color: $color-5 !important;
+				
+				.chart:before {
+					background-image: $light-blue-gradient;
+				}
+				
+				.chart:after {
+					background-image:url("../images/stage-corner-3.svg");
+				}
+			}
+		}
+		
+		&.program-4 {
+			> div {
+				color: $color-15 !important;
+				
+				.chart:before {
+					background-image: $green-gradient;
+				}
+				
+				.chart:after {
+					background-image:url("../images/stage-corner-4.svg");
+				}
+			}
+		}
+	}
+	
+	.pipeline-description {
+		background-color: $wht;
+		position: relative;
+		margin-right: -30px;
+		
+		
+		&:before {
+//			@include spacer();
+			width: 100vw;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 50%;
+			transform: translate(-50%, 0);
+			background-color: $wht;
+		}
+	}
+
+}
+
