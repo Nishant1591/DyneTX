@@ -1,0 +1,19 @@
+uuid: edc7a835-fcee-428b-afcc-2ca81888ee88
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_layout_heading
+    - paragraphs.paragraphs_type.dyne_acf_program_focus
+id: paragraph.dyne_acf_program_focus.field_layout_heading
+field_name: field_layout_heading
+entity_type: paragraph
+bundle: dyne_acf_program_focus
+label: Heading
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

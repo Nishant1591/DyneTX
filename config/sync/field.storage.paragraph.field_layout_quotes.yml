@@ -1,0 +1,20 @@
+uuid: b6c18183-5e21-4c2c-896f-b553c0c5077f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - paragraphs
+id: paragraph.field_layout_quotes
+field_name: field_layout_quotes
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

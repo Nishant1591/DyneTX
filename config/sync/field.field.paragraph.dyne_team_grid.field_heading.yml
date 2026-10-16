@@ -1,0 +1,19 @@
+uuid: c5a5709f-d19e-4036-826a-4bb9f60e9bb1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_heading
+    - paragraphs.paragraphs_type.dyne_team_grid
+id: paragraph.dyne_team_grid.field_heading
+field_name: field_heading
+entity_type: paragraph
+bundle: dyne_team_grid
+label: Heading
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

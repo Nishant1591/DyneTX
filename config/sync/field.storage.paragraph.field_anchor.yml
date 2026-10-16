@@ -1,0 +1,20 @@
+uuid: 4108897f-76f9-4331-9f8d-f96ea7ff3ff2
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_anchor
+field_name: field_anchor
+entity_type: paragraph
+type: text
+settings:
+  max_length: 64
+module: text
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

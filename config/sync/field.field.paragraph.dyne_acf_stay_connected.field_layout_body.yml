@@ -1,0 +1,22 @@
+uuid: 96af3574-e7ff-4ff2-8755-149bf0942077
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_layout_body
+    - paragraphs.paragraphs_type.dyne_acf_stay_connected
+  module:
+    - text
+id: paragraph.dyne_acf_stay_connected.field_layout_body
+field_name: field_layout_body
+entity_type: paragraph
+bundle: dyne_acf_stay_connected
+label: Text
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

@@ -1,0 +1,22 @@
+uuid: db2d6ca2-469f-4ea3-a64e-895411565023
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_body_text
+    - paragraphs.paragraphs_type.dyne_drug_detail
+  module:
+    - text
+id: paragraph.dyne_drug_detail.field_body_text
+field_name: field_body_text
+entity_type: paragraph
+bundle: dyne_drug_detail
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

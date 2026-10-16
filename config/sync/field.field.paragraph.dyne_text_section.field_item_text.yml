@@ -1,0 +1,19 @@
+uuid: 2be360c9-963f-44a8-827e-299a0f5c6898
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_item_text
+    - paragraphs.paragraphs_type.dyne_text_section
+id: paragraph.dyne_text_section.field_item_text
+field_name: field_item_text
+entity_type: paragraph
+bundle: dyne_text_section
+label: Text
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

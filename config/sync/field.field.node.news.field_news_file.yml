@@ -1,0 +1,24 @@
+uuid: 2a3f396c-c2f3-452d-b643-bc8a25f7eb74
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_news_file
+    - media.type.document
+    - node.type.news
+id: node.news.field_news_file
+field_name: field_news_file
+entity_type: node
+bundle: news
+label: 'News document'
+description: 'Media document used when the news content type is Document.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      document: document
+field_type: entity_reference

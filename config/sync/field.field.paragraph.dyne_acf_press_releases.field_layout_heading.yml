@@ -1,0 +1,19 @@
+uuid: 2476f9a9-25ae-43c9-94ab-7b5d281ae6dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_layout_heading
+    - paragraphs.paragraphs_type.dyne_acf_press_releases
+id: paragraph.dyne_acf_press_releases.field_layout_heading
+field_name: field_layout_heading
+entity_type: paragraph
+bundle: dyne_acf_press_releases
+label: Heading
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

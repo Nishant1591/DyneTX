@@ -1,0 +1,154 @@
+{
+    "layouts": 21,
+    "paragraphs_before": 253,
+    "paragraphs_after": 253,
+    "checks": [
+        {
+            "source_layout": "homepage_hero_band",
+            "paragraph_type": "dyne_acf_home_hero",
+            "controls": 4,
+            "rendered": true,
+            "native_widgets": true
+        },
+        {
+            "source_layout": "2_column_homepage_boxes",
+            "paragraph_type": "dyne_acf_promo_boxes",
+            "controls": 1,
+            "rendered": true,
+            "native_widgets": true
+        },
+        {
+            "source_layout": "latest_news_band",
+            "paragraph_type": "dyne_acf_latest_news",
+            "controls": 2,
+            "rendered": true,
+            "native_widgets": true
+        },
+        {
+            "source_layout": "interior_page_header_band",
+            "paragraph_type": "dyne_acf_interior_header",
+            "controls": 3,
+            "rendered": true,
+            "native_widgets": true
+        },
+        {
+            "source_layout": "centered_info_band",
+            "paragraph_type": "dyne_acf_centered_info",
+            "controls": 2,
+            "rendered": true,
+            "native_widgets": true
+        },
+        {
+            "source_layout": "wysiwyg_band",
+            "paragraph_type": "dyne_acf_wysiwyg",
+            "controls": 1,
+            "rendered": true,
+            "native_widgets": true
+        },
+        {
+            "source_layout": "program_focus_band",
+            "paragraph_type": "dyne_acf_program_focus",
+            "controls": 8,
+            "rendered": true,
+            "native_widgets": true
+        },
+        {
+            "source_layout": "team_highlights_band",
+            "paragraph_type": "dyne_acf_team_highlights",
+            "controls": 2,
+            "rendered": true,
+            "native_widgets": true
+        },
+        {
+            "source_layout": "leadership_team_band",
+            "paragraph_type": "dyne_acf_leadership",
+            "controls": 2,
+            "rendered": true,
+            "native_widgets": true
+        },
+        {
+            "source_layout": "investors_band",
+            "paragraph_type": "dyne_acf_investors",
+            "controls": 2,
+            "rendered": true,
+            "native_widgets": true
+        },
+        {
+            "source_layout": "challenge_vs_vision_band",
+            "paragraph_type": "dyne_acf_challenge_vision",
+            "controls": 2,
+            "rendered": true,
+            "native_widgets": true
+        },
+        {
+            "source_layout": "video_solutions_band",
+            "paragraph_type": "dyne_acf_video_solutions",
+            "controls": 4,
+            "rendered": true,
+            "native_widgets": true
+        },
+        {
+            "source_layout": "testimonials_band",
+            "paragraph_type": "dyne_acf_testimonials",
+            "controls": 2,
+            "rendered": true,
+            "native_widgets": true
+        },
+        {
+            "source_layout": "open_positions_band",
+            "paragraph_type": "dyne_acf_open_positions",
+            "controls": 2,
+            "rendered": true,
+            "native_widgets": true
+        },
+        {
+            "source_layout": "contact_us_band",
+            "paragraph_type": "dyne_acf_contact",
+            "controls": 3,
+            "rendered": true,
+            "native_widgets": true
+        },
+        {
+            "source_layout": "press_releases_band",
+            "paragraph_type": "dyne_acf_press_releases",
+            "controls": 4,
+            "rendered": true,
+            "native_widgets": true
+        },
+        {
+            "source_layout": "in_the_news_band",
+            "paragraph_type": "dyne_acf_in_the_news",
+            "controls": 3,
+            "rendered": true,
+            "native_widgets": true
+        },
+        {
+            "source_layout": "stay_connected",
+            "paragraph_type": "dyne_acf_stay_connected",
+            "controls": 3,
+            "rendered": true,
+            "native_widgets": true
+        },
+        {
+            "source_layout": "text_image_band",
+            "paragraph_type": "dyne_acf_text_image",
+            "controls": 4,
+            "rendered": true,
+            "native_widgets": true
+        },
+        {
+            "source_layout": "resources_band",
+            "paragraph_type": "dyne_acf_resources",
+            "controls": 3,
+            "rendered": true,
+            "native_widgets": true
+        },
+        {
+            "source_layout": "2_column_text_image_band",
+            "paragraph_type": "dyne_acf_two_column",
+            "controls": 5,
+            "rendered": true,
+            "native_widgets": true
+        }
+    ]
+}

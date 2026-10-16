@@ -1,0 +1,59 @@
+uuid: 0f6c2adf-8578-4080-a168-6908b826e267
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.dyne_cta.field_bg
+    - field.field.paragraph.dyne_cta.field_body_text
+    - field.field.paragraph.dyne_cta.field_heading
+    - field.field.paragraph.dyne_cta.field_link
+    - paragraphs.paragraphs_type.dyne_cta
+  module:
+    - image
+    - link
+    - text
+id: paragraph.dyne_cta.default
+targetEntityType: paragraph
+bundle: dyne_cta
+mode: default
+content:
+  field_bg:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_body_text:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_heading:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden: {  }

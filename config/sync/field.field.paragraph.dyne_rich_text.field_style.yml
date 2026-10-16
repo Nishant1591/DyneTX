@@ -1,0 +1,19 @@
+uuid: bd4c9b73-d84f-4b16-81f8-b94e728f8b90
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_style
+    - paragraphs.paragraphs_type.dyne_rich_text
+id: paragraph.dyne_rich_text.field_style
+field_name: field_style
+entity_type: paragraph
+bundle: dyne_rich_text
+label: Style
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

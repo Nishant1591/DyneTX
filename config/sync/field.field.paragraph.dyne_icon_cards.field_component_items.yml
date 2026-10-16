@@ -1,0 +1,30 @@
+uuid: 8e31e2c5-0d78-4d3c-8b6d-5b215f080b2c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_component_items
+    - paragraphs.paragraphs_type.dyne_card_item
+    - paragraphs.paragraphs_type.dyne_icon_cards
+  module:
+    - entity_reference_revisions
+id: paragraph.dyne_icon_cards.field_component_items
+field_name: field_component_items
+entity_type: paragraph
+bundle: dyne_icon_cards
+label: Items
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      dyne_card_item: dyne_card_item
+    target_bundles_drag_drop:
+      dyne_card_item:
+        weight: 0
+        enabled: true
+field_type: entity_reference_revisions

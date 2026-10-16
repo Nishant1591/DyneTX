@@ -1,0 +1,19 @@
+uuid: e5299acb-3411-4307-9686-2e117b55cd11
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_target
+    - node.type.pipeline_program
+id: node.pipeline_program.field_target
+field_name: field_target
+entity_type: node
+bundle: pipeline_program
+label: Target
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

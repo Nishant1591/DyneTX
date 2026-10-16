@@ -1,0 +1,14 @@
+uuid: c62606c2-aa2b-43b7-81d2-7ba1efb0cfe4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.dyne_acf_promo_boxes.field_layout_items
+    - paragraphs.paragraphs_type.dyne_acf_promo_boxes
+id: paragraph.dyne_acf_promo_boxes.default
+targetEntityType: paragraph
+bundle: dyne_acf_promo_boxes
+mode: default
+content: {  }
+hidden:
+  field_layout_items: true

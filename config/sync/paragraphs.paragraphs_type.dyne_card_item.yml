@@ -1,0 +1,10 @@
+uuid: bd279b42-95c8-49f9-ad8e-16fac4f01438
+langcode: en
+status: true
+dependencies: {  }
+id: dyne_card_item
+label: Card
+icon_uuid: null
+icon_default: null
+description: 'Editable item within a Dyne component.'
+behavior_plugins: {  }

@@ -1,0 +1,30 @@
+uuid: 30e27b8c-2428-4179-a625-d93b412dc453
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.dyne_pipeline_table.field_component_items
+    - field.field.paragraph.dyne_pipeline_table.field_heading
+    - field.field.paragraph.dyne_pipeline_table.field_native_components
+    - field.field.paragraph.dyne_pipeline_table.field_rows_json
+    - paragraphs.paragraphs_type.dyne_pipeline_table
+id: paragraph.dyne_pipeline_table.default
+targetEntityType: paragraph
+bundle: dyne_pipeline_table
+mode: default
+content:
+  field_heading:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_component_items: true
+  field_items_json: true
+  field_native_components: true
+  field_rows_json: true
+  field_sections_json: true

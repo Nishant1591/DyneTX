@@ -1,0 +1,2746 @@
+{
+  "failures": [],
+  "http_checks": [
+    {
+      "path": "/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/about-us",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/content-archive/wordpress-records.json",
+      "status": 404,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/documentation/97",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/post/1069",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/fshd-day",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/our-focus",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/press-releases/1227",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/comp_announcements/1317",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1328",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1329",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1330",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1331",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1332",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1333",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1334",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1335",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1336",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1337",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1338",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1339",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1340",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1341",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1342",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1343",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1344",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1345",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1346",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1347",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1348",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1349",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1350",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1351",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1352",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1353",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1354",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1355",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1356",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1357",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1358",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1359",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1360",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1361",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1362",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1363",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1364",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1365",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1366",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1367",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1368",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1369",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1370",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1371",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1372",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1373",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1374",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1375",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1376",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1377",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1378",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1379",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1380",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1381",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1382",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1383",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1384",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1385",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1386",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1387",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1388",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1389",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1390",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1391",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1392",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1393",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1394",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1395",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1396",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1397",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1398",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1399",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1400",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1401",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1402",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1403",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1404",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1405",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1406",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1407",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1408",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1409",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1410",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1411",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1412",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1413",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1414",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1415",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1416",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1417",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1418",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1419",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1420",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1421",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1422",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1423",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1424",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1425",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1426",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/wb_news_xml2/1427",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/post/1576",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/popupbuilder/1986",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/popupbuilder/1987",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/qr/2336",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/community-involvement",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/post/4061",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/post/4091",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/legacy-archive/post/4092",
+      "status": 403,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/muscle-therapies.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/icon-olt-01.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/icon-olt-02.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/icon-olt-03.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/icon-olt-04.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/icon-olt-05.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/icon-olt-06.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/icon-olt-07.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/icon-olt-08.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/mo-qatanani.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/romesh-subramanian.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/bruce-wentworth.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/catherine-stehman-breen.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/joanne-bryce.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/logo-atlas-venture.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/logo-forbion.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/logo-mpm.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/man-02.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/man-01.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/slider-01.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/slider-02.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/slider-03.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/brand-icon.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/homepageimage-012919-dough.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/home-box1.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/home-box2.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/interiorpageheader-1.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/interiorpageheader-2.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/interiorpageheader-3.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/interiorpageheader-4.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/interiorpageheader-5.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/interiorpageheader-6.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/2coltextimagebg.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/berman-family.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/sarah-berman-02.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/2colbackground.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/text-image-band-bg.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/dynelogo-final-fullcolor-rgb.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/dyne-homepageimage-final.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/force-platform.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/targeted-muscle-therapies.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/j-boeklman-1.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/j-boeklman-2.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/jboeklman-3.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/jessica-quote-carousel.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/catherine-quote-carousel.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/brendan-quote.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/cody-quote-carousel.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/mo-qatanani-quote.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/jboeklman-home.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/dynelogo-final-color-rgb-300-e1553866875862.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/20190316-ap-jboekl-054-sm-e1553712048615.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/mdf-logo.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/dyne-homepageimage-final-1920x780.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/dynelogo-final-color-rgb-300-small.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/logo-atlas-venture-1.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/force-platform-logo-options-final-color-1-.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/j-boeklman-2-1.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/jonathan-mcneil-headshot.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/dynelogo-final-color-rgb-300-small%402x.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/yoast-sq-logo-216x216.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/nelso-carousel.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/sean-carousel.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/mwi-5940-choice.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/josh-brumm-dyne-site-1.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/greenmyotonic-withhand.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/molly-white-forsite.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/dyne-oxana-headshot.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/dyne-cmix-photo.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/dyne-gene-kim.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/dyne-john-n.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/dyne-homepage-rdd2020-021820-v08.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/img-9085-1-website.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/2020-ASGCT-DyneTx-Poster-FINAL-2020-05-11.pdf",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Dyne-Lit-Review-April-2020-2020-05-04-FNL.pdf",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Invitation-to-the-FSHD-community_060320.pdf",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/dan-wilson-w-background-cropped.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/dyne-website-fshdheroimagewithouttext-061020-v03.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/2020-ASGCT-DyneTx-Poster-FINAL-2020-05-11-1.pdf",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/home-page-concept-1-%E2%80%93-8-1.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/dyne-webimage-focusonmd-062620-275x275-1.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/rickscalzo-cropped.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/howardchabner-119-6x9-1.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/howardchabner-110-rev-6x9-1.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/howardchabner-134-6x9-1.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/pipeline7-20-20-e1595425402448.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/pipeline7-20-20-1.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/ten-bridge-ravi-lipman-109-cropped.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/ten-bridge-ravi-lipman-060-cropped.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/ten-bridge-ravi-lipman-057-cropped.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/deb-photo.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/lilian-photo.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/oxana-photo.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/oxana-photo-1.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/surveyor-color-rgb-e1596739524813.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/1280px-wellington-management-logo-svg-e1596739512563.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/vida-logo.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/atlas-venture-opt.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/forbion-opt.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/mpm-opt.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/surveyor-opt.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/wellington-management.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/vida-ventures-opt.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/mobile-images-about-us-scaled.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-investors.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-investors-1.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-investors-mob.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/presenation-cover.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/mobile-images-home-scaled.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/favicon-32x32-1.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-about.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-about-mob.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/leadership-romesh-s.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/leadership-susanna-h.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/leadership-joshua-b.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/leadership-oxana-b.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/leadership-chris-m.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/leadership-john-m.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/leadership-gene-k.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/leadership-john-d.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/leadership-deb-f.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-focus-dm1.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-focus-dm1-mob.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-focus-dmd.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Chelsea-Mobile-Image-scaled.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-focus-fshd.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-focus-fshd-mob.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-force.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-force-mob.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-career.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-career-mob.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/quote-deb.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/quote-oxana.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/quote-cody.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/quote-lillian.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/quote-sean.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/quote-tim.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/quote-tim-1.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/leadership-amy-r.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/john-najim.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/leadership-molly-w.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/leadership-dan-w.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/leadership-rick-s.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/leadership-bruce-w.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/leadership-mo-q.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/leadership-john-n.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/mobile-pipeline-hero.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/pipeline-hero.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/dyne-logo-lg.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/pipeline-social.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-focus-fshd-social.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-career-social.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-focus-dm1-social.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-about-social.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/secondary-image-voices-scaled.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/mwi-5723-web.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/mobile-images-voices-copy-scaled.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-perspective.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-perspective-mob.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/persp-pub-1-1.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/romesh.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/romesh-1.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/persp-pub-2-1.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/persp-pub-3-1.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/fshd-1.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/sci-vc-1.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/leadership-wildon-farwell.jpeg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/dyne.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/eisen-dyne043021-38-scaled-1.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/eisen-dyne043021-49-scaled-1.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/eisen-dyne043021-51-scaled-1.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Dyne-APR9-ASOs.mp4",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/ASGCT-2021-Dyne-Therapeutics-Zanotti-et-al.pdf",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/2021-ASGCT-Conference-Presentation-Dyne-Therapeutics_Romesh-Subramanian.pdf",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-mob.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-1.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/2021-FSHD-IRC-Dyne-Presentation.pdf",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/josh.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Dyne_Force_Fact_Sheet-scaled.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Dyne_Pipeline_and_Programs.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Dyne_About-scaled.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Dyne_About_Final.pdf",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Dyne_Pipeline-and-Programs_Final.pdf",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Dyne_Force-Fact-Sheet_Final.pdf",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Dyne_Fact-Sheet_DM1.pdf",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Dyne-poster-MDF_FINAL.pdf",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Dyne-poster-MDF_2021.pdf",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Dyne_Patient-Sheet_Loraine_Final.pdf",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Rare-Disease-Day.mp4",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Dyne-FORCE-Platform-Video.mp4",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Pipeline-Programs-Thumbnail.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/FORCE-thumbnail.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/About-Thumbnail.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Dyne_Force-Fact-Sheet_090821.pdf",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Dyne-RDD-Day-group-photo-2020-02-29-scaled.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-joachim.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Loraine-Family.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Loraine-2.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Dyne_Loraine.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Loraine-story.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Molly-White-forsite-1.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/molly.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Dyne-World-Muscle-Society-DN-20001-03_KNv14.pdf",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/FINAL-DMD-MSG-Presentation-10-1-21.pdf",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/collage.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/from-the-trenches-collage.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-perspective-mob-1.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-perspective-1-1.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Dyne-About-Banner.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Dyne-Career.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Dyne-Careers-Banner.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Mobile-Images_careers.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Mobile-Images_about.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Home-Page-Image_Chelsea-scaled.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Dyne_About-Us-banner-scaled.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Dyne_Mobile-About-Us-scaled.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/dyne3.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/header-our-focus-scaled.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-focus-dmd-2.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-focus-dmd-2m.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-focus-fshd-2.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-focus-fshd-2m.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-focus-commitment.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-focus-commitment-m.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/header-our-focus-1-scaled.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Secondary-Image_third-level-strip-scaled.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-about-1.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Amy-Reilly.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Debra-Feldman.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Wildon-Farwell.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Gene-Kim.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Dan-Wilson.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/John-Davis.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Rick-Scalzo.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/John-Najim-1.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Susanna-High.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Kate-Mitchell.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Chris-Mix.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-trials.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Mobile-Images_pipeline-scaled.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Oxana-Beskrovnaya.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Molly-White.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Joshua-Brumm.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Jonathan-McNeill.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Bruce-Wentworth-1.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Ashish-Dugar.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-home-jordan.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Dyne_Leadership_2022_Francesco_B-scaled.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-home-jordan-mob.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-home-220913.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-home-mob-220913.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Dyne_Perspectives-page_main.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Dyne_Perspectives-page-secondary.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-home-220929_mobile.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-home-220929.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-home-desktop.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-home-mobile.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Dyne_RDD_banner.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Dyne_RDD_banner_mobile.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-our-commitment.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/our-commitment-mobile.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-csr.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-csr-1.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-csr-mob.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/pipeline-hero.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/pipeline-hero-mobile.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Dyne-Careers-social.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Dyne_Pipeline.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Dyne_Pipeline_mobile.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-perspective-1.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-perspective-mob-2.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Dyne_Perspectives_Kate.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Dyne_Perspectives_Kate-main_400px.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Dyne-Perspectives-Sept15.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Dyne_Perspectives_Kate-1.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Novack_2023-ISPOR_DM1_humanistic_burden_poster.pdf",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Zanotti_2023_ASGCT_DM1_CNS_FINAL.pdf",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Dyne-Web_Team.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Dyne_Mobile_Team_image.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-community-guideline.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Home-Page-Image_Chelsea.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Home-Page-Image_Chelsea-mobile.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Dyne_RDD_banner_mobile-1.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-AlanMom-mob.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-AlanMom.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Alan_and_Mom.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-sarah-mob.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-sarah.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Sarah_THumbnail.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-home-rdd-24-mob.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-home-rdd-24.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-resp.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-resp-mob.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-about-mob.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-about-24-scaled.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-our-commitment-mob.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-our-commitment.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/John-Cox.jpeg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/John-Cox.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/John-Cox-1.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Dyne_Leadership_John_Cox_2-scaled.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-perspective.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-perspective-mob.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-our-commitment-1.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-our-commitment-mob-1.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-rdd-24-mob.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-rdd-24.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-home-dmd-awrnss-24.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Doug_Kerr-scaled.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Johanna_Friedl-Naderer-scaled.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Johanna_Friedl-Naderer-1-scaled.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Lucia_Celone.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-home-dmd-awrnss-24-mob.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-home-dmd-awrnss-24-1.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-home-dmd-awrnss-24-mob-1.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-home-mob.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-home-blank-scaled.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-force-1.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-force-mob-1.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-about-24-scaled-1.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-community-involvement.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-force.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-pipeline.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-our-commitment-2.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-focus-dm1.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-focus-dmd-3.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-focus-fshd-3.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-about-mob-1.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-about.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-home-rdd-24-1.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Doug-Kerr-scaled-e1735571260831.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Dyne_Leadership_John_Cox_2-scaled-1.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Johanna_Friedl-Naderer-1-scaled-1.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/doug-1100291-4.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/leadership-erick-l.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Vik_Ranade.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Jim-Bilotta.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Raj-Manchanda.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Jose_Juves.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Ron_Batra.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Dyne_Oxana.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Dyne_JMJ.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Dyne_Vik-Ranade.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Dyne_Jim-Bilotta.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-fshd-25-1.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-fshd-25-mob.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-fshd-25.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-fshd-25-2.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-home-mob-1.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-home.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-fshd-25-3.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-our-commitment-mob-2.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-our-commitment-3-scaled.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-home-duchenne-25.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-home-duchenne-25-mob.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-home-myotonic-25-mob.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-home-myotonic-25.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Dyne-Monica-Fay-scaled.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Dyne_Monica-Fay.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Dyne_Monica-Fay-1.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Dyne_JMJ-1.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Dyne-Axel-Wiest-scaled.jpg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Dyne_Axel-Wiest.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-home-rdd-26.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-home-rdd-26-mob.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Dyne-Homepage-Banner-2026.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/mobile-Dyne.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Dyne-Homepage-Banner-2026-1.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-home-26-1.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-home-26-2.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-home-26-2-1.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/leadership-erick-lI.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/leadership-erick-l-new.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/leadership-erick-l-new-1.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/leadership-erick-l-new-2.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/About-the-FORZETTO-Trial.pdf",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/About-the-HARMONIA-Trial.pdf",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Previtali_2026_ICNMD_DELIVER-REC.pdf",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Naylor_2026_ICNMD_FORZETTO.pdf",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Alessandro-Martuscelli.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-about-bg-base-mobile%402x.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-about-bg-overlay-desktop%402x-scaled.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-about-bg-overlay-desktop.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-about-bg-base-desktop%402x-scaled.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-about-bg-base-desktop.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-force-bg-base-mobile%402x.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-force-bg-overlay-desktop%402x-scaled.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-force-bg-base-desktop%402x-scaled.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-pipeline-bg-overlay-desktop%402x-scaled.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-pipeline-bg-base-mobile%402x.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-pipeline-bg-base-desktop%402x-scaled.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-commitment-bg-overlay-desktop%402x-scaled.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-commitment-bg-base-mobile%402x.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-commitment-bg-base-desktop%402x-scaled.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-trials-bg-base-mobile%402x.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-trials-bg-overlay-desktop%402x-scaled.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-trials-bg-base-desktop%402x-scaled.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-dmd-bg-base-mobile%402x.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-dmd-bg-overlay-desktop%402x-scaled.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-dmd-bg-base-desktop%402x-scaled.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-dm1-bg-base-mobile%402x.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-dm1-bg-overlay-desktop%402x-scaled.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-dm1-bg-base-desktop%402x-scaled.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-fshd-bg-base-mobile%402x.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-fshd-bg-overlay-desktop%402x-scaled.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-fshd-bg-base-desktop%402x-scaled.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-careers-bg-base-mobile%402x.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-careers-bg-overlay-desktop%402x-scaled.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-careers-bg-base-desktop%402x-scaled.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-fshd-bg-overlay-desktop%402x-1-scaled.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-careers-bg-overlay-desktop%402x-1-scaled.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/hero-careers-bg-base-desktop%402x-1-scaled.webp",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Desjardins_2026_NMSG_-DMD-Franchise_Poster.pdf",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Natoli_2026_RNA-Leaders_DYNE-302_Presentation.pdf",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Mul_2026_WMS_ACHIEVE_ORAL.pdf",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/sites/default/files/legacy/Mul_2026_WMS_ACHIEVE_ORAL_APPENDIX.pdf",
+      "status": 200,
+      "ok": true
+    }
+  ],
+  "source_records": 1747,
+  "original_entities_unchanged": true,
+  "new_status_counts": {
+    "published": 2,
+    "unpublished": 112
+  },
+  "source_missing_assets": [
+    {
+      "source_id": "1850",
+      "path": "Dyne_Newsletter_DMD_FINAL.pdf",
+      "reason": "Original file unavailable"
+    },
+    {
+      "source_id": "1851",
+      "path": "Dyne_Newsletter_DM1_FINAL.pdf",
+      "reason": "Original file unavailable"
+    },
+    {
+      "source_id": "1855",
+      "path": "Dyne_Newsletter_DMD_Final.pdf",
+      "reason": "Original file unavailable"
+    },
+    {
+      "source_id": "1858",
+      "path": "Dyne_Newsletter_DMD_German_FINAL.pdf",
+      "reason": "Original file unavailable"
+    },
+    {
+      "source_id": "1859",
+      "path": "Dyne_Newsletter_DM1_German_FINAL.pdf",
+      "reason": "Original file unavailable"
+    },
+    {
+      "source_id": "1860",
+      "path": "Dyne_Newsletter_Combo_German_FINAL.pdf",
+      "reason": "Original file unavailable"
+    },
+    {
+      "source_id": "1864",
+      "path": "Dyne_Newsletter_Combo_ITA_FINAL.pdf",
+      "reason": "Original file unavailable"
+    },
+    {
+      "source_id": "1865",
+      "path": "Dyne_Newsletter_DM1_ITA_FINAL.pdf",
+      "reason": "Original file unavailable"
+    },
+    {
+      "source_id": "1866",
+      "path": "Dyne_Newsletter_DMD_ITA_FINAL.pdf",
+      "reason": "Original file unavailable"
+    },
+    {
+      "source_id": "1868",
+      "path": "Dyne_Newsletter_DMD_fr_FINAL.pdf",
+      "reason": "Original file unavailable"
+    },
+    {
+      "source_id": "1869",
+      "path": "Dyne_Newsletter_DM1_fr_FINAL.pdf",
+      "reason": "Original file unavailable"
+    },
+    {
+      "source_id": "1870",
+      "path": "Dyne_Newsletter_Combo_fr_FINAL.pdf",
+      "reason": "Original file unavailable"
+    }
+  ],
+  "available_content_verified": true,
+  "node_total": 458,
+  "managed_files": 417
+}

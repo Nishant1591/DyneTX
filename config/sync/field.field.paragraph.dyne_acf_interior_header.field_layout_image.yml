@@ -1,0 +1,24 @@
+uuid: d64a7d99-fd55-4ae0-a3f2-c1a434981a9f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_layout_image
+    - media.type.image
+    - paragraphs.paragraphs_type.dyne_acf_interior_header
+id: paragraph.dyne_acf_interior_header.field_layout_image
+field_name: field_layout_image
+entity_type: paragraph
+bundle: dyne_acf_interior_header
+label: Image
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+field_type: entity_reference

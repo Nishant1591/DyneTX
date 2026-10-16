@@ -1,0 +1,19 @@
+uuid: 233dee2f-e664-49f6-b43b-5f3bf675d749
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_items_json
+    - paragraphs.paragraphs_type.dyne_quote_carousel
+id: paragraph.dyne_quote_carousel.field_items_json
+field_name: field_items_json
+entity_type: paragraph
+bundle: dyne_quote_carousel
+label: 'Items JSON'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

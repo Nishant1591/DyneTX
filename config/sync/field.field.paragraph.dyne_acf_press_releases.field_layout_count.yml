@@ -1,0 +1,23 @@
+uuid: 1e63fd40-0dbf-445a-bb31-52b85493c5c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_layout_count
+    - paragraphs.paragraphs_type.dyne_acf_press_releases
+id: paragraph.dyne_acf_press_releases.field_layout_count
+field_name: field_layout_count
+entity_type: paragraph
+bundle: dyne_acf_press_releases
+label: 'Number of news items'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

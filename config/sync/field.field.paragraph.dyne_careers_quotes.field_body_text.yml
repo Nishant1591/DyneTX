@@ -1,0 +1,22 @@
+uuid: b60f9f28-fc26-4fc9-a63d-5e0d9bfb34a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_body_text
+    - paragraphs.paragraphs_type.dyne_careers_quotes
+  module:
+    - text
+id: paragraph.dyne_careers_quotes.field_body_text
+field_name: field_body_text
+entity_type: paragraph
+bundle: dyne_careers_quotes
+label: 'Introduction and videos'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

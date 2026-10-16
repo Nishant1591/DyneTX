@@ -1,25 +1,132 @@
-# Legacy archive reconciliation (October 13, 2026)
+# Native Drupal editorial upgrade (October 16, 2026)
 
-## GitHub checkout and deployment assets
+The response to **Document 6.docx** is recorded finding by finding in
+[`output/document-6-changes.html`](output/document-6-changes.html). The preview
+remains **http://dyne-tx-master.ddev.site/**.
 
-Git tracks the application code and assets, with application MP4 videos stored
-using Git LFS. Install Git LFS before cloning. For an existing checkout, run:
+Current database: **469 nodes** (357 published, 112 unpublished), **422 Media
+entities** (417 available source attachments plus five employee portraits), and
+424 managed files. The earlier 458 nodes, their body/title/status values, all
+64 menu records and 466 existing aliases are preserved. Nine reusable quote
+nodes and two policy nodes replace duplicated content on their landing pages.
+
+Hero/SEO/body-class fields, Media, taxonomy, publication dates and external links
+are native editor controls. Team cards reference leader nodes; news, jobs and
+perspectives read current node records. Cached pages respond to normal saves.
+21 ACF layout authoring types and nested card/row/section fields are provided.
+Older ACF copy is not substituted for the newer page markup; custom source HTML
+remains formatted content. Historical JSON fields and old revisions are retained
+for preservation and hidden from normal editing. The theme no longer reads
+presentation JSON files during requests.
+
+The complete archive migrations now use native Migrate maps for all 458 archive
+records. See [`migrations/README.md`](web/modules/custom/dyne_migrate/migrations/README.md)
+for import order, existing-node adoption and non-destructive rollback semantics.
+The new [`dyne_content_sync` module](web/modules/custom/dyne_content_sync/README.md)
+provides Greenhouse/GCS Drush, cron and queue integration. Both providers remain
+disabled. The local container requires its trusted issuer CA for outbound TLS;
+GCS also requires an approved client identifier. No live feed changes were
+published or queued. Twelve original newsletter PDFs remain unavailable.
+
+Configuration is exported to **`config/sync`** (822 YAML files). Settings point
+outside the public web root. `drush config:status` reports zero differences and
+there are no pending database updates. Old sample-era updates explicitly defer
+to the native model instead of reintroducing sample menus or JSON controls.
+
+For an existing pre-upgrade database, back it up before applying these ordered,
+idempotent upgrades. Keep `content-archive/` outside `web/` and preserve all local
+media files. Do not run `site:install` or sample page-seeding scripts.
 
 ```sh
-git lfs install --local
-git lfs pull
+ddev drush php:script scripts/upgrade-native-content.php
+ddev drush php:script scripts/upgrade-native-components.php
+ddev drush php:script scripts/upgrade-native-layouts.php
+ddev drush php:script scripts/finalize-native-editor-config.php
+ddev drush en dyne_content_sync -y
+ddev drush migrate:import dyne_pages,dyne_jobs,dyne_leaders,dyne_perspectives,dyne_news
+ddev drush php:script scripts/import-verified-redirects.php
+ddev drush updatedb -y
+ddev drush cr
 ```
 
-Database backups (`*.sql.gz`), the original `dyne-tx-2026-10-01.zip` archive, and
-environment-specific Drupal settings are kept locally and excluded from Git.
-Existing local copies are preserved.
+Verification evidence lives in `output/document-6-review/`: 3,415 URL checks,
+936 migration assertions, 29 feed assertions, all 31 biographies at desktop and
+mobile widths, 18 page/viewport checks, all 21 layout render/widget checks, and
+six save/restore checks demonstrating cache invalidation. Verification scripts
+that temporarily edit content restore it in `finally`; migration/feed tests use
+transactions. Use these on a local verification copy.
 
-For a new checkout, provision Drupal settings for the target environment and
-obtain the appropriate database backup separately before following the restore
-steps below. Ensure Git LFS has downloaded the actual video files before deploying;
-`output/media-recovery.json` records their source URLs, local paths, sizes and
-SHA-256 checksums. The database backup and local settings must be provided
-separately from the Git clone.
+Portable current database: **`output/dyne-drupal-document-6-updated-2026-10-16.sql.gz`**.
+Pre-upgrade backup: `output/dyne-before-document-6-changes-2026-10-16.sql.gz`.
+Import a backup only into an empty or intentionally replaceable database.
+
+## Earlier content-completion checkpoint (October 14, 2026)
+
+
+The complete source inventory is **`output/wordpress-content-inventory.html`**.
+Open this standalone HTML file locally; it contains search, filters, source IDs,
+publication states, Drupal destinations, media availability, and export/print
+controls. It accounts for all **1,747 WordPress post-table records** without
+treating plugin configuration, logs, attachments, or revisions as website pages.
+An additional archive section inventories 77 records outside the WordPress
+posts table: 63 cached social posts and 14 historical map, marker, QR,
+widget/footer and social-link records.
+
+The original 344 imported nodes are preserved. The additive completion adds
+114 records using the existing content types: two published source pages and
+112 unpublished private/draft/test/duplicate/foreign-feed records. At this checkpoint, Drupal
+had **458 nodes** (346 published, 112 unpublished). Six additional source privacy
+and quotation records remain embedded in the existing pages. WordPress's 464
+editorial records therefore map to 458 nodes plus those six component records.
+Drupal's Content screen is paginated at 50 rows; that is not the total count.
+
+The private Community Involvement page stays unpublished. FSHD DAY was restored
+from its archived ACF title and Vimeo embed; Vimeo currently requests sign-in
+for playback. Our Focus retains its original title and empty body. Historical
+ACF copy and 175 WordPress revisions are preserved as source archive data rather
+than replacing current public copy. The seven unused mobile navigation items
+are retained in a separate disabled, unplaced Drupal menu.
+
+All 2,528 eligible source-upload files are copied and hash-verified. All 417
+available attachment originals are registered with Drupal's existing File
+module. Twelve newsletter PDFs are missing from the supplied archive and their
+original URLs do not return PDFs; exact filenames and available preview images
+are listed in the HTML inventory. The additional FORCE Platform video was
+recovered from its original public URL. There are now 2,539 local media files,
+including eleven recovered videos, totaling approximately 2.47 GB.
+
+`content-archive/` contains the complete content-safe source catalog, attachment
+metadata, historical revisions, static theme snippets, and additive import
+fixture. **Keep this directory outside the public `web/` document root**: it
+includes private and unpublished editorial content. Credentials, submitted
+forms, operational log bodies and executable WordPress plugin settings are not
+imported. Do not publish the local inventory report as a public website page.
+
+Reproduce the completion after the original public import, with a database
+backup and the same source archive:
+
+```sh
+python3 scripts/export-wordpress-records.py /path/to/DyneTX
+python3 scripts/export-wordpress-additional-content.py /path/to/DyneTX
+python3 scripts/complete-wordpress-media.py /path/to/DyneTX/wp-content --apply
+# Add --recover to attempt recovery of missing originals at their source URLs.
+python3 scripts/build-wordpress-supplement.py
+ddev exec env DYNE_COMPLETION_DRY_RUN=1 drush php:script scripts/import-wordpress-supplement.php
+ddev drush php:script scripts/import-wordpress-supplement.php
+ddev drush cr
+python3 scripts/build-wordpress-inventory.py
+```
+
+The supplement import is additive and idempotent. It refuses alias collisions
+and changed source records instead of overwriting editorial changes. The
+original migration ledger, nodes, Paragraphs, files, menus and aliases were
+compared field-by-field before and after completion. Evidence and known missing
+source assets are in `output/content-audit/`. Restore the final database export
+`output/dyne-drupal-content-complete-2026-10-14.sql.gz` only into an empty or
+intentionally replaceable database; include theme/module code, `content-archive/`
+outside the document root, and the entire public legacy media directory.
+
+## Earlier public archive reconciliation (October 13, 2026)
 
 This checkout remains Drupal 11 with the existing `dynetx` Bootstrap5 theme,
 `dyne_migrate` module, node bundles and Paragraph component field. The public
@@ -152,19 +259,21 @@ public content.
 
 Marketing pages remain `dyne_page` nodes with the existing `field_components`
 Paragraph stack. Source layout sections use `dyne_rich_text`; team grids, jobs,
-news and hero headings use the existing specialized Paragraphs. A restricted
+news use specialized Paragraphs. Hero headings and media are edited on the
+page itself; legacy hero Paragraph controls are hidden. A restricted
 editorial permission is required for the trusted `dyne_legacy_html` format;
 it is not granted automatically to authenticated users. Use a trusted editor
 or the existing site owner to edit preserved layout HTML.
 
 Job listings query published `job` nodes with department and location filters.
 New/edited jobs invalidate the listing cache. Current vacancies reflect the
-October 12 archive; this is not a live Greenhouse synchronization service.
+October 12 archive until the new synchronization provider is configured and
+enabled. The provider is disabled by default.
 
-Source hero images and SEO metadata are recorded in the presentation metadata
-JSON; hero headings are taken from the editable hero Paragraph. Header/footer
-navigation remains editable through Drupal menus. Body-copy and metadata
-updates should be followed by `ddev drush cr` when fixtures or templates change.
+Source presentation metadata is retained as import evidence; rendering uses
+native node and Media fields. Header/footer navigation remains editable through
+Drupal menus. Normal content saves invalidate dependent pages automatically.
+Rebuild caches after template or code changes, not after ordinary content edits.
 
 ```sh
 PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s web/modules/custom/dyne_migrate/scripts/legacy/tests -v
@@ -179,12 +288,9 @@ image source, CSS font/background reference and named internal anchor. It reject
 unexpected external HTTP redirects. It does not submit forms or inspect external
 account contents. `scripts/verify-link-behavior.py` separately inventories link
 destinations and new-tab targets.
-Desktop/mobile visual evidence is saved in `output/playwright/`. The ten absent
-archive videos were recovered from their original URLs; the two empty source
-pages remain explicitly documented rather than filled with invented content.
+Desktop/mobile visual evidence is saved in `output/playwright/`. The missing archive videos were recovered from their original URLs; FSHD Day
+and Our Focus were restored during the later content-completion pass.
 
-The original database backups are unchanged. Pending Drupal update hooks may be
-applied using your normal release process after a backup; the source-menu guard
-prevents old menu seeding from replacing reconciled navigation. For this
-checkout, the importer applies only its required schema and avoids unrelated
-legacy page-building scripts.
+The original database backups are unchanged. There are no pending database updates in the final checkpoint.
+The native-model guard prevents old update hooks from reintroducing sample
+menus and editing controls. Continue to avoid legacy page-building seed scripts.

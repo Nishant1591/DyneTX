@@ -1,0 +1,25 @@
+uuid: c6e35c98-38e5-4850-a99f-02786a2097c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_quotes
+    - node.type.quote
+    - paragraphs.paragraphs_type.dyne_careers_quotes
+id: paragraph.dyne_careers_quotes.field_quotes
+field_name: field_quotes
+entity_type: paragraph
+bundle: dyne_careers_quotes
+label: 'Featured employee quotes (drag to order)'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      quote: quote
+    auto_create: false
+field_type: entity_reference

@@ -1,0 +1,24 @@
+uuid: 89db4564-1aef-4faf-95ff-a952ce623106
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_layout_quotes
+    - node.type.quote
+    - paragraphs.paragraphs_type.dyne_acf_testimonials
+id: paragraph.dyne_acf_testimonials.field_layout_quotes
+field_name: field_layout_quotes
+entity_type: paragraph
+bundle: dyne_acf_testimonials
+label: Quotes
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      quote: quote
+field_type: entity_reference

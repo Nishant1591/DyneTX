@@ -1,0 +1,18 @@
+<?php
+
+/**
+ * @file
+ * Native authoring safeguards for the preserved Dyne content model.
+ */
+
+/** Implements hook_node_presave(). */
+function dyne_migrate_node_presave(\Drupal\node\NodeInterface $node): void {
+  // Keep the long legacy title only while it still represents the current title.
+  // Editing a normal node title must update cards and modal headings too.
+  if (!$node->isNew() && $node->hasField('field_legacy_title')) {
+    $original = $node->getOriginal();
+    if ($original && $original->label() !== $node->label() && $node->get('field_legacy_title')->value === $original->get('field_legacy_title')->value) {
+      $node->set('field_legacy_title', $node->label());
+    }
+  }
+}

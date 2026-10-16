@@ -1,0 +1,22 @@
+uuid: 4ab0496c-dcaf-4a5a-95bd-bbb55eae81d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hero_second_line
+    - node.type.leader
+  module:
+    - text
+id: node.leader.field_hero_second_line
+field_name: field_hero_second_line
+entity_type: node
+bundle: leader
+label: 'Hero second line'
+description: 'Second heading line shown in this page’s hero banner.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text

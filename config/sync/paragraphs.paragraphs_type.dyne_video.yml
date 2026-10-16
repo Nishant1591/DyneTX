@@ -1,0 +1,10 @@
+uuid: edba1d07-8ed8-42c6-b9e9-4c366e96d500
+langcode: en
+status: true
+dependencies: {  }
+id: dyne_video
+label: 'Video lightbox'
+icon_uuid: null
+icon_default: null
+description: null
+behavior_plugins: {  }

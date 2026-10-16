@@ -1,0 +1,22 @@
+uuid: c7b29d8f-bb94-44fa-8e0d-4f07f4dbf69c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_body_text
+    - paragraphs.paragraphs_type.dyne_cta
+  module:
+    - text
+id: paragraph.dyne_cta.field_body_text
+field_name: field_body_text
+entity_type: paragraph
+bundle: dyne_cta
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

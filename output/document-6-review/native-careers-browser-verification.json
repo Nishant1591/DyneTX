@@ -1,0 +1,41 @@
+[
+  {
+    "viewport": 1440,
+    "width": 1170,
+    "slideWidth": 585,
+    "items": 5,
+    "broken": 0,
+    "overflow": false,
+    "nextScroll": 585,
+    "endScroll": 1755,
+    "previousRestored": true,
+    "keyboardHome": true,
+    "archivedHidden": true
+  },
+  {
+    "viewport": 768,
+    "width": 768,
+    "slideWidth": 768,
+    "items": 5,
+    "broken": 0,
+    "overflow": false,
+    "nextScroll": 768,
+    "endScroll": 3072,
+    "previousRestored": true,
+    "keyboardHome": true,
+    "archivedHidden": true
+  },
+  {
+    "viewport": 390,
+    "width": 390,
+    "slideWidth": 390,
+    "items": 5,
+    "broken": 0,
+    "overflow": false,
+    "nextScroll": 390,
+    "endScroll": 1560,
+    "previousRestored": true,
+    "keyboardHome": true,
+    "archivedHidden": true
+  }
+]

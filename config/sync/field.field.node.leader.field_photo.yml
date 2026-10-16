@@ -1,0 +1,24 @@
+uuid: 98a264cb-799e-4ea1-8fba-f3b41ba7976f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_photo
+    - media.type.image
+    - node.type.leader
+id: node.leader.field_photo
+field_name: field_photo
+entity_type: node
+bundle: leader
+label: Portrait
+description: 'Portrait shown on this profile and team cards. Board and advisory profiles may have no portrait.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+field_type: entity_reference

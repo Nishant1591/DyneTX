@@ -1,0 +1,23 @@
+uuid: 7f0bcc6c-32f9-4c16-be51-21e4eb9f28b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_quote_width
+    - node.type.quote
+id: node.quote.field_quote_width
+field_name: field_quote_width
+entity_type: node
+bundle: quote
+label: 'Text column width (Bootstrap columns)'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

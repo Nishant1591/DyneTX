@@ -1,0 +1,10 @@
+uuid: 968e43ba-0465-4a94-80c4-96a5391b0970
+langcode: en
+status: true
+dependencies: {  }
+id: dyne_acf_press_releases
+label: 'Press releases'
+icon_uuid: null
+icon_default: null
+description: null
+behavior_plugins: {  }

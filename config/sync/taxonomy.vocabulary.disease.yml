@@ -1,0 +1,9 @@
+uuid: 7a27c7df-1174-4183-a9b2-7cb0753ca64e
+langcode: en
+status: true
+dependencies: {  }
+name: Disease
+vid: disease
+description: null
+weight: 0
+new_revision: false

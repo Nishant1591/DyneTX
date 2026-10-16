@@ -1,0 +1,40 @@
+uuid: 927cc861-fc1f-49c7-b2be-2ee01a40189d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.dyne_quote_carousel.field_heading
+    - field.field.paragraph.dyne_quote_carousel.field_items_json
+    - field.field.paragraph.dyne_quote_carousel.field_native_components
+    - field.field.paragraph.dyne_quote_carousel.field_quotes
+    - paragraphs.paragraphs_type.dyne_quote_carousel
+id: paragraph.dyne_quote_carousel.default
+targetEntityType: paragraph
+bundle: dyne_quote_carousel
+mode: default
+content:
+  field_heading:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_quotes:
+    type: entity_reference_autocomplete
+    weight: 2
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_items_json: true
+  field_native_components: true
+  field_rows_json: true
+  field_sections_json: true
+  status: true

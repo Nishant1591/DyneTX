@@ -1,0 +1,23 @@
+uuid: c8593db7-385a-443d-8a87-d45bb763c915
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_wp_source_id
+    - node.type.privacy_policy
+id: node.privacy_policy.field_wp_source_id
+field_name: field_wp_source_id
+entity_type: node
+bundle: privacy_policy
+label: 'Original WordPress record ID'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,11 @@
+uuid: 8c1bfd29-b904-4df0-8455-76f0339f165d
+langcode: en
+status: true
+dependencies: {  }
+name: News
+type: news
+description: 'Latest news items.'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: true

@@ -1,0 +1,88 @@
+uuid: 28025eb1-f462-4a55-af08-51aeef525ab5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.dyne_acf_program_focus.field_layout_anchor
+    - field.field.paragraph.dyne_acf_program_focus.field_layout_body
+    - field.field.paragraph.dyne_acf_program_focus.field_layout_gene
+    - field.field.paragraph.dyne_acf_program_focus.field_layout_heading
+    - field.field.paragraph.dyne_acf_program_focus.field_layout_hide_dna
+    - field.field.paragraph.dyne_acf_program_focus.field_layout_link
+    - field.field.paragraph.dyne_acf_program_focus.field_layout_symptoms
+    - field.field.paragraph.dyne_acf_program_focus.field_layout_treatment
+    - paragraphs.paragraphs_type.dyne_acf_program_focus
+  module:
+    - link
+    - text
+id: paragraph.dyne_acf_program_focus.default
+targetEntityType: paragraph
+bundle: dyne_acf_program_focus
+mode: default
+content:
+  field_layout_anchor:
+    type: string_textfield
+    weight: 8
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_layout_body:
+    type: text_textarea
+    weight: 8
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_layout_gene:
+    type: string_textfield
+    weight: 8
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_layout_heading:
+    type: string_textfield
+    weight: 8
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_layout_hide_dna:
+    type: boolean_checkbox
+    weight: 8
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_layout_link:
+    type: link_default
+    weight: 8
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_layout_symptoms:
+    type: text_textarea
+    weight: 8
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_layout_treatment:
+    type: text_textarea
+    weight: 8
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

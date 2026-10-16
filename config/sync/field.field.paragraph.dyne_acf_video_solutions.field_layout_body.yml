@@ -1,0 +1,22 @@
+uuid: a7d22ab4-3001-4618-9459-6da8d67855ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_layout_body
+    - paragraphs.paragraphs_type.dyne_acf_video_solutions
+  module:
+    - text
+id: paragraph.dyne_acf_video_solutions.field_layout_body
+field_name: field_layout_body
+entity_type: paragraph
+bundle: dyne_acf_video_solutions
+label: Text
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

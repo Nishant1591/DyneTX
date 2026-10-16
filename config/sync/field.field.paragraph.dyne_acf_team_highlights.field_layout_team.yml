@@ -1,0 +1,24 @@
+uuid: 9d7f492c-8322-423c-8576-cdfdd162195e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_layout_team
+    - node.type.leader
+    - paragraphs.paragraphs_type.dyne_acf_team_highlights
+id: paragraph.dyne_acf_team_highlights.field_layout_team
+field_name: field_layout_team
+entity_type: paragraph
+bundle: dyne_acf_team_highlights
+label: Team
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      leader: leader
+field_type: entity_reference

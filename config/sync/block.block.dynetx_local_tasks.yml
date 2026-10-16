@@ -1,0 +1,22 @@
+uuid: 23b9d3f2-94e7-4c2d-899f-306f20a91ca9
+langcode: en
+status: true
+dependencies:
+  theme:
+    - dynetx
+_core:
+  default_config_hash: T0wbI6qVdThbbIqXDZFg_1VZ3_ittXBdEoUH7d7ux_E
+id: dynetx_local_tasks
+theme: dynetx
+region: content
+weight: -20
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

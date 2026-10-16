@@ -1,0 +1,10 @@
+uuid: c4dacae8-db80-4f63-9407-d8c1f13418c4
+langcode: en
+status: true
+dependencies: {  }
+id: dyne_acf_challenge_vision
+label: 'Challenge and vision'
+icon_uuid: null
+icon_default: null
+description: null
+behavior_plugins: {  }

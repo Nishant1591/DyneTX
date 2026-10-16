@@ -1,0 +1,11 @@
+uuid: 983bdff4-e735-4bcc-975f-3ac9c124c377
+langcode: en
+status: true
+dependencies:
+  module:
+    - redirect
+id: redirect.token
+label: Token
+description: null
+targetEntityType: redirect
+cache: true

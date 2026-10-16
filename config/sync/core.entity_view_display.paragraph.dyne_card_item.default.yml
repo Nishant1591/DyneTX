@@ -1,0 +1,22 @@
+uuid: 484fb35c-3fbe-44fa-9912-866d80954639
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.dyne_card_item.field_heading
+    - field.field.paragraph.dyne_card_item.field_item_icon
+    - field.field.paragraph.dyne_card_item.field_item_text
+    - field.field.paragraph.dyne_card_item.field_link
+    - field.field.paragraph.dyne_card_item.field_style
+    - paragraphs.paragraphs_type.dyne_card_item
+id: paragraph.dyne_card_item.default
+targetEntityType: paragraph
+bundle: dyne_card_item
+mode: default
+content: {  }
+hidden:
+  field_heading: true
+  field_item_icon: true
+  field_item_text: true
+  field_link: true
+  field_style: true

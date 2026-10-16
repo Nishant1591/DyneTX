@@ -1,0 +1,9 @@
+{{ dyne_list_cache }}
+<div class="dyne-legacy-content">
+  {% for policy in dyne_records %}
+    <section id="{{ policy.anchor }}" class="container-fluid section page-intro"><div class="container">
+      {% if loop.first %}<h1 class="h2 h2-new-sm h2-new-thin">{{ policy.title }}</h1>{% else %}<h2 class="h2 h2-new-sm h2-new-thin">{{ policy.title }}</h2>{% endif %}
+      <p><i>{{ 'Last Updated:'|t }} {{ policy.date }}</i></p>{{ policy.body }}
+    </div></section>
+  {% endfor %}
+</div>

@@ -1,0 +1,21 @@
+uuid: f282256b-44ed-4937-9895-93575f8cb48a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hero_third_level
+    - node.type.dyne_page
+id: node.dyne_page.field_hero_third_level
+field_name: field_hero_third_level
+entity_type: node
+bundle: dyne_page
+label: 'Compact interior hero'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,24 @@
+uuid: 9cdd5b4f-89bf-40d6-85e6-085945ef9f50
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_policies
+    - node.type.privacy_policy
+    - paragraphs.paragraphs_type.dyne_policy_list
+id: paragraph.dyne_policy_list.field_policies
+field_name: field_policies
+entity_type: paragraph
+bundle: dyne_policy_list
+label: 'Policies (display order)'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      privacy_policy: privacy_policy
+field_type: entity_reference

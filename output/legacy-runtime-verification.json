@@ -1,7 +1,7 @@
 {
   "base": "http://dyne-tx-master.ddev.site",
   "imported_routes_checked": 345,
-  "additional_local_assets_and_links_checked": 412,
+  "additional_local_assets_and_links_checked": 413,
   "failures": [],
   "missing_internal_anchors": [],
   "headings": [

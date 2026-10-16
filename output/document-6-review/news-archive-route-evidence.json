@@ -1,0 +1,10 @@
+{
+  "source": "DyneTX/wp-content/plugins/workbox_news/plugin.php",
+  "post_type_has_archive": false,
+  "post_type_setting_line": 519,
+  "archive_generator_guard_line": 685,
+  "published_shortcode_pages": 0,
+  "published_newsyear_links": 0,
+  "implemented_newsyear_routes": false,
+  "reason": "No active source archive route or existing destination; do not invent redirects."
+}

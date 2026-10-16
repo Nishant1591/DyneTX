@@ -1,0 +1,10 @@
+uuid: 41fa86bc-468d-49a3-b8eb-6836688f97ca
+langcode: en
+status: true
+dependencies: {  }
+id: dyne_team_grid
+label: 'Team grid'
+icon_uuid: null
+icon_default: null
+description: null
+behavior_plugins: {  }

@@ -1,0 +1,24 @@
+uuid: 5d5250f2-19a0-4595-8588-d4e55a3b1b46
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_disease
+    - node.type.news
+    - taxonomy.vocabulary.disease
+id: node.news.field_disease
+field_name: field_disease
+entity_type: node
+bundle: news
+label: Disease
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      disease: disease
+field_type: entity_reference

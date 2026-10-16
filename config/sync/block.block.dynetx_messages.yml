@@ -1,0 +1,22 @@
+uuid: 442428f9-2fef-486f-9a22-bb637f319c4b
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - dynetx
+_core:
+  default_config_hash: aeqlWs7HwctZeZC7ADcbxfqehJzBRfZKmuZz3DsH3_4
+id: dynetx_messages
+theme: dynetx
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

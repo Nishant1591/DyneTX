@@ -1,0 +1,10 @@
+uuid: 5eeca2c9-a3c0-4df6-be9a-19f50742065e
+langcode: en
+status: true
+dependencies: {  }
+id: dyne_perspective_list
+label: 'Perspectives listing'
+icon_uuid: null
+icon_default: null
+description: null
+behavior_plugins: {  }

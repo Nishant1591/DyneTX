@@ -1,0 +1,16 @@
+uuid: 4631feb1-3bea-423d-bc4b-55c995652d3e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.dyne_acf_open_positions.field_layout_body
+    - field.field.paragraph.dyne_acf_open_positions.field_layout_heading
+    - paragraphs.paragraphs_type.dyne_acf_open_positions
+id: paragraph.dyne_acf_open_positions.default
+targetEntityType: paragraph
+bundle: dyne_acf_open_positions
+mode: default
+content: {  }
+hidden:
+  field_layout_body: true
+  field_layout_heading: true

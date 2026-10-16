@@ -1,0 +1,30 @@
+uuid: 5ea1bdf0-a76f-4d5d-b244-cd4f72198a28
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_component_items
+    - paragraphs.paragraphs_type.dyne_pipeline_row
+    - paragraphs.paragraphs_type.dyne_pipeline_table
+  module:
+    - entity_reference_revisions
+id: paragraph.dyne_pipeline_table.field_component_items
+field_name: field_component_items
+entity_type: paragraph
+bundle: dyne_pipeline_table
+label: Items
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      dyne_pipeline_row: dyne_pipeline_row
+    target_bundles_drag_drop:
+      dyne_pipeline_row:
+        weight: 0
+        enabled: true
+field_type: entity_reference_revisions

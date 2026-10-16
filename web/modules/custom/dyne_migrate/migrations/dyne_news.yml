@@ -1,0 +1,14 @@
+id: dyne_news
+label: 'Dyne complete WordPress archive: news'
+migration_group: dyne
+migration_tags:
+  - Dyne archive
+source:
+  plugin: dyne_archive
+  bundle: news
+  track_changes: true
+process:
+  record: record
+destination:
+  plugin: dyne_archive_node
+migration_dependencies: {}

@@ -1,0 +1,22 @@
+uuid: 1bb4e8d4-1224-40e1-8a71-017a373ad625
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_body_text
+    - node.type.news
+  module:
+    - text
+id: node.news.field_body_text
+field_name: field_body_text
+entity_type: node
+bundle: news
+label: 'Body text'
+description: 'Main article, biography, or job content. This is the body shown on the website.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

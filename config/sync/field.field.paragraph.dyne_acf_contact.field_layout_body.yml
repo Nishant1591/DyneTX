@@ -1,0 +1,22 @@
+uuid: ee5a5741-45bf-4ee5-9988-d062cf03e8ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_layout_body
+    - paragraphs.paragraphs_type.dyne_acf_contact
+  module:
+    - text
+id: paragraph.dyne_acf_contact.field_layout_body
+field_name: field_layout_body
+entity_type: paragraph
+bundle: dyne_acf_contact
+label: Text
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

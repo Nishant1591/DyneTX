@@ -1,5 +1,5 @@
-{# Drug detail component: WP program sections (Onset/Cause/Symptoms/Unmet need). #}
-{# Sections JSON: [{title, body}] #}
+{{ dyne_component_cache }}
+{# Native program sections: Onset, Cause, Symptoms, and Unmet need. #}
 <section class="dyne-drug container py-5">
   {% if paragraph.field_heading.value %}<h2 class="h1">{{ paragraph.field_heading.value }}</h2>{% endif %}
   {{ paragraph.field_body_text.value|raw }}

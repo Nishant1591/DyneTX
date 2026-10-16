@@ -1,0 +1,22 @@
+uuid: 4c2c9ca4-b955-4f03-a1c5-f28be30db958
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_layout_body
+    - paragraphs.paragraphs_type.dyne_acf_program_focus
+  module:
+    - text
+id: paragraph.dyne_acf_program_focus.field_layout_body
+field_name: field_layout_body
+entity_type: paragraph
+bundle: dyne_acf_program_focus
+label: Text
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

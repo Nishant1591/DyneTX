@@ -1,0 +1,19 @@
+uuid: 1e61a05f-9c0f-490f-bbe1-42c25157dbbc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_wp_source_status
+    - node.type.dyne_page
+id: node.dyne_page.field_wp_source_status
+field_name: field_wp_source_status
+entity_type: node
+bundle: dyne_page
+label: 'Original WordPress status'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

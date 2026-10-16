@@ -1,0 +1,18 @@
+uuid: e2fc535d-0479-49ec-9feb-a5e64934a1e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.dyne_acf_contact.field_layout_body
+    - field.field.paragraph.dyne_acf_contact.field_layout_heading
+    - field.field.paragraph.dyne_acf_contact.field_layout_map
+    - paragraphs.paragraphs_type.dyne_acf_contact
+id: paragraph.dyne_acf_contact.default
+targetEntityType: paragraph
+bundle: dyne_acf_contact
+mode: default
+content: {  }
+hidden:
+  field_layout_body: true
+  field_layout_heading: true
+  field_layout_map: true

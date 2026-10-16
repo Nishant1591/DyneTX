@@ -1,0 +1,48 @@
+uuid: 07cc3aa0-a6e8-4e8d-be2c-8343837c98e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_components
+    - node.type.leader
+    - paragraphs.paragraphs_type.dyne_alert_banner
+    - paragraphs.paragraphs_type.dyne_cta
+    - paragraphs.paragraphs_type.dyne_drug_detail
+    - paragraphs.paragraphs_type.dyne_hero
+    - paragraphs.paragraphs_type.dyne_icon_cards
+    - paragraphs.paragraphs_type.dyne_jobs_list
+    - paragraphs.paragraphs_type.dyne_news_list
+    - paragraphs.paragraphs_type.dyne_pipeline_table
+    - paragraphs.paragraphs_type.dyne_quote_carousel
+    - paragraphs.paragraphs_type.dyne_rich_text
+    - paragraphs.paragraphs_type.dyne_team_grid
+    - paragraphs.paragraphs_type.dyne_video
+  module:
+    - entity_reference_revisions
+id: node.leader.field_components
+field_name: field_components
+entity_type: node
+bundle: leader
+label: Components
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      dyne_hero: dyne_hero
+      dyne_rich_text: dyne_rich_text
+      dyne_icon_cards: dyne_icon_cards
+      dyne_pipeline_table: dyne_pipeline_table
+      dyne_drug_detail: dyne_drug_detail
+      dyne_team_grid: dyne_team_grid
+      dyne_video: dyne_video
+      dyne_quote_carousel: dyne_quote_carousel
+      dyne_jobs_list: dyne_jobs_list
+      dyne_cta: dyne_cta
+      dyne_alert_banner: dyne_alert_banner
+      dyne_news_list: dyne_news_list
+field_type: entity_reference_revisions

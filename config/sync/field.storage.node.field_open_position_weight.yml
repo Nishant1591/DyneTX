@@ -1,0 +1,20 @@
+uuid: edbd1583-75d4-460d-b1d6-564a7b64b635
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_open_position_weight
+field_name: field_open_position_weight
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

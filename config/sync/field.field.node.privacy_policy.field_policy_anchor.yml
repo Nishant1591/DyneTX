@@ -1,0 +1,19 @@
+uuid: 001d224c-8910-4631-8691-0865602ee1d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_policy_anchor
+    - node.type.privacy_policy
+id: node.privacy_policy.field_policy_anchor
+field_name: field_policy_anchor
+entity_type: node
+bundle: privacy_policy
+label: 'Section anchor'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

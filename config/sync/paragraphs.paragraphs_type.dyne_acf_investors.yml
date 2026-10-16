@@ -1,0 +1,10 @@
+uuid: 6cd4b376-0941-44e2-a68e-e6fbd77518f6
+langcode: en
+status: true
+dependencies: {  }
+id: dyne_acf_investors
+label: 'Investor information'
+icon_uuid: null
+icon_default: null
+description: null
+behavior_plugins: {  }

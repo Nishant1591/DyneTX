@@ -1,0 +1,19 @@
+uuid: b81e5c07-1b06-433c-a15d-2292899aa88b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_heading
+    - paragraphs.paragraphs_type.dyne_news_list
+id: paragraph.dyne_news_list.field_heading
+field_name: field_heading
+entity_type: paragraph
+bundle: dyne_news_list
+label: Heading
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

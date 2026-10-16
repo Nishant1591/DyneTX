@@ -1,0 +1,22 @@
+uuid: 2ec04994-bb62-40a6-96a3-fe139bb439f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_body_text
+    - node.type.perspective
+  module:
+    - text
+id: node.perspective.field_body_text
+field_name: field_body_text
+entity_type: node
+bundle: perspective
+label: 'Body text'
+description: 'Main article, biography, or job content. This is the body shown on the website.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

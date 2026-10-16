@@ -1,0 +1,19 @@
+uuid: ed5b6d03-94cc-4033-8d0e-2571dfb2389c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_banner_text
+    - paragraphs.paragraphs_type.dyne_hero
+id: paragraph.dyne_hero.field_banner_text
+field_name: field_banner_text
+entity_type: paragraph
+bundle: dyne_hero
+label: 'Banner text'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

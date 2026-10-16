@@ -1,0 +1,24 @@
+uuid: a3764452-c7d7-426d-9505-58d01d96c874
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hero_mobile_image
+    - media.type.image
+    - node.type.job
+id: node.job.field_hero_mobile_image
+field_name: field_hero_mobile_image
+entity_type: node
+bundle: job
+label: 'Hero mobile image'
+description: 'Hero image used on smaller screens. Choose the portrait crop from the Media Library.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+field_type: entity_reference

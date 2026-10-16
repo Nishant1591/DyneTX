@@ -1,0 +1,23 @@
+uuid: f58721db-6c22-4081-84cc-e90de702ebe5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.dyne_components
+    - paragraphs.paragraphs_type.dyne_hero
+  module:
+    - entity_reference_revisions
+id: paragraph.dyne_hero.dyne_components
+field_name: dyne_components
+entity_type: paragraph
+bundle: dyne_hero
+label: Components
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings: {  }
+field_type: entity_reference_revisions

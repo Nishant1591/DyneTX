@@ -1,0 +1,30 @@
+uuid: 6ace3c6f-d46b-42b1-893d-c64ce2653a49
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.dyne_team_grid.field_heading
+    - field.field.paragraph.dyne_team_grid.field_items_json
+    - field.field.paragraph.dyne_team_grid.field_native_components
+    - field.field.paragraph.dyne_team_grid.field_team_members
+    - paragraphs.paragraphs_type.dyne_team_grid
+id: paragraph.dyne_team_grid.default
+targetEntityType: paragraph
+bundle: dyne_team_grid
+mode: default
+content:
+  field_heading:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_items_json: true
+  field_native_components: true
+  field_rows_json: true
+  field_sections_json: true
+  field_team_members: true

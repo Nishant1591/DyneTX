@@ -1,0 +1,70 @@
+uuid: aadd1030-73ea-406c-abab-cb78c5404d6f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.dyne_hero.dyne_components
+    - field.field.paragraph.dyne_hero.field_banner_logo
+    - field.field.paragraph.dyne_hero.field_banner_text
+    - field.field.paragraph.dyne_hero.field_bg
+    - field.field.paragraph.dyne_hero.field_title_line1
+    - field.field.paragraph.dyne_hero.field_title_line2
+    - paragraphs.paragraphs_type.dyne_hero
+  module:
+    - image
+id: paragraph.dyne_hero.default
+targetEntityType: paragraph
+bundle: dyne_hero
+mode: default
+content:
+  field_banner_logo:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_banner_text:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_bg:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_title_line1:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_title_line2:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 5
+    region: content
+hidden:
+  dyne_components: true

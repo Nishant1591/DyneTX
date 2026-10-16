@@ -1,0 +1,23 @@
+uuid: 96a42620-50ef-4c0c-9014-3b028c075de9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_native_components
+    - paragraphs.paragraphs_type.dyne_quote_carousel
+id: paragraph.dyne_quote_carousel.field_native_components
+field_name: field_native_components
+entity_type: paragraph
+bundle: dyne_quote_carousel
+label: 'Uses native component fields'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

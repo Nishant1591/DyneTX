@@ -1,0 +1,83 @@
+uuid: 148716e6-7a24-495a-8861-dfd63bae5441
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.perspective.field_author
+    - field.field.node.perspective.field_body_class
+    - field.field.node.perspective.field_body_text
+    - field.field.node.perspective.field_components
+    - field.field.node.perspective.field_disease
+    - field.field.node.perspective.field_external_link
+    - field.field.node.perspective.field_hero_classes
+    - field.field.node.perspective.field_hero_first_line
+    - field.field.node.perspective.field_hero_image
+    - field.field.node.perspective.field_hero_mobile_image
+    - field.field.node.perspective.field_hero_overlay_image
+    - field.field.node.perspective.field_hero_second_line
+    - field.field.node.perspective.field_hero_third_level
+    - field.field.node.perspective.field_image
+    - field.field.node.perspective.field_legacy_title
+    - field.field.node.perspective.field_link
+    - field.field.node.perspective.field_native_presentation
+    - field.field.node.perspective.field_seo_description
+    - field.field.node.perspective.field_seo_title
+    - field.field.node.perspective.field_story_date
+    - field.field.node.perspective.field_story_excerpt
+    - field.field.node.perspective.field_story_image
+    - field.field.node.perspective.field_subtitle
+    - field.field.node.perspective.field_wp_source_id
+    - node.type.perspective
+  module:
+    - entity_reference_revisions
+    - text
+    - user
+id: node.perspective.default
+targetEntityType: node
+bundle: perspective
+mode: default
+content:
+  field_body_text:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_components:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_author: true
+  field_body_class: true
+  field_disease: true
+  field_external_link: true
+  field_hero_classes: true
+  field_hero_first_line: true
+  field_hero_image: true
+  field_hero_mobile_image: true
+  field_hero_overlay_image: true
+  field_hero_second_line: true
+  field_hero_third_level: true
+  field_image: true
+  field_legacy_title: true
+  field_link: true
+  field_native_presentation: true
+  field_seo_description: true
+  field_seo_title: true
+  field_story_date: true
+  field_story_excerpt: true
+  field_story_image: true
+  field_subtitle: true
+  field_wp_source_id: true

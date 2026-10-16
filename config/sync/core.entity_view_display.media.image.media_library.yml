@@ -1,0 +1,38 @@
+uuid: 88fa268f-47d1-433f-89b1-6e4ff08f3f3b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.media_library
+    - field.field.media.image.field_media_caption
+    - field.field.media.image.field_media_description
+    - field.field.media.image.field_media_image
+    - field.field.media.image.field_wp_attachment_id
+    - image.style.medium
+    - media.type.image
+  module:
+    - image
+id: media.image.media_library
+targetEntityType: media
+bundle: image
+mode: media_library
+content:
+  thumbnail:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: medium
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  field_media_caption: true
+  field_media_description: true
+  field_media_image: true
+  field_wp_attachment_id: true
+  name: true
+  uid: true

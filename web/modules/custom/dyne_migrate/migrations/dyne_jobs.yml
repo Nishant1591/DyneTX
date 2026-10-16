@@ -1,42 +1,14 @@
 id: dyne_jobs
-label: 'Dyne jobs (WP CPT jobs)'
+label: 'Dyne complete WordPress archive: jobs'
 migration_group: dyne
+migration_tags:
+  - Dyne archive
 source:
-  plugin: csv
-  path: 'modules/custom/dyne_migrate/data/jobs-sample.csv'
-  header_offset: 0
-  ids:
-    - Slug
-  fields:
-    - name: Slug
-      label: 'Slug'
-    - name: Title
-      label: 'Title'
-    - name: Department
-      label: 'Department'
-    - name: Location
-      label: 'Location'
-    - name: WP URL
-      label: 'WP URL'
+  plugin: dyne_archive
+  bundle: job
+  track_changes: true
 process:
-  title: Title
-  field_department_text: Department
-  field_department_group: Department
-  field_open_position_weight:
-    plugin: default_value
-    default_value: 0
-  field_location_text: Location
-  path/alias:
-    plugin: concat
-    delimiter: ''
-    source:
-      - constants/prefix
-      - Slug
-    constants:
-      prefix: '/jobs/'
-  type:
-    plugin: default_value
-    default_value: job
+  record: record
 destination:
-  plugin: 'entity:node'
+  plugin: dyne_archive_node
 migration_dependencies: {}

@@ -1,0 +1,16 @@
+uuid: 44301ea7-71b3-48b2-8992-b90118a7a91d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.dyne_acf_investors.field_layout_body
+    - field.field.paragraph.dyne_acf_investors.field_layout_links
+    - paragraphs.paragraphs_type.dyne_acf_investors
+id: paragraph.dyne_acf_investors.default
+targetEntityType: paragraph
+bundle: dyne_acf_investors
+mode: default
+content: {  }
+hidden:
+  field_layout_body: true
+  field_layout_links: true

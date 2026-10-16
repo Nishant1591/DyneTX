@@ -1,0 +1,23 @@
+uuid: 147e7432-0b72-430e-8f28-2f0a9a5092ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_native_components
+    - paragraphs.paragraphs_type.dyne_careers_quotes
+id: paragraph.dyne_careers_quotes.field_native_components
+field_name: field_native_components
+entity_type: paragraph
+bundle: dyne_careers_quotes
+label: 'Uses native component fields'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -414,6 +414,8 @@ function _dyne_migrate_homepage(): void {
  * #positions, #dyne-consumer-health). Idempotent: re-runs _dyne_migrate_fields().
  */
 function dyne_migrate_update_8102(): void {
+  // The native upgrade supersedes sample-era menu and display configuration.
+  if (_dyne_migrate_native_model_ready()) { return; }
   _dyne_migrate_fields();
   _dyne_migrate_menus();
 }
@@ -425,6 +427,8 @@ function dyne_migrate_update_8102(): void {
  * bundles without replacing any display configuration already in use.
  */
 function dyne_migrate_update_8103(): void {
+  // The native upgrade supersedes sample-era menu and display configuration.
+  if (_dyne_migrate_native_model_ready()) { return; }
   _dyne_migrate_paragraph_displays();
 }
 
@@ -434,6 +438,8 @@ function dyne_migrate_update_8103(): void {
  * Adds editable long-form job content and previous/next navigation fields.
  */
 function dyne_migrate_update_8104(): void {
+  // The native upgrade supersedes sample-era menu and display configuration.
+  if (_dyne_migrate_native_model_ready()) { return; }
   _dyne_migrate_job_detail_fields();
 }
 
@@ -443,6 +449,8 @@ function dyne_migrate_update_8104(): void {
  * Adds a restricted HTML text format required to render migrated job markup.
  */
 function dyne_migrate_update_8105(): void {
+  // The native upgrade supersedes sample-era menu and display configuration.
+  if (_dyne_migrate_native_model_ready()) { return; }
   _dyne_migrate_job_text_format();
 }
 
@@ -452,6 +460,8 @@ function dyne_migrate_update_8105(): void {
  * Adds department grouping metadata and dynamic job-list Paragraph support.
  */
 function dyne_migrate_update_8106(): void {
+  // The native upgrade supersedes sample-era menu and display configuration.
+  if (_dyne_migrate_native_model_ready()) { return; }
   _dyne_migrate_job_detail_fields();
   _dyne_migrate_dynamic_jobs_list_field();
 }
@@ -462,6 +472,8 @@ function dyne_migrate_update_8106(): void {
  * Adds the introductory rich-text field to dynamic careers job lists.
  */
 function dyne_migrate_update_8107(): void {
+  // The native upgrade supersedes sample-era menu and display configuration.
+  if (_dyne_migrate_native_model_ready()) { return; }
   _dyne_migrate_dynamic_jobs_list_field();
 }
 
@@ -825,6 +837,8 @@ function _dyne_migrate_paragraph_displays(): void {
  * Prepare existing content bundles for the public legacy archive import.
  */
 function dyne_migrate_update_8108(): void {
+  // The native upgrade supersedes sample-era menu and display configuration.
+  if (_dyne_migrate_native_model_ready()) { return; }
   _dyne_migrate_legacy_schema();
 }
 
@@ -882,4 +896,13 @@ function _dyne_migrate_legacy_schema(): void {
     $display->setComponent('field_body_text', ['type' => 'text_default', 'label' => 'hidden', 'weight' => 0])->save();
   }
   \Drupal::state()->set('dyne_migrate.legacy_schema_version', 1);
+}
+
+
+/** Native migration has already applied the superseding field/display model. */
+function _dyne_migrate_native_model_ready(): bool {
+  $ledger = \Drupal::state()->get('dyne_migrate.native_content', []);
+  return !empty($ledger['nodes'])
+    && \Drupal\field\Entity\FieldConfig::loadByName('node', 'dyne_page', 'field_native_presentation')
+    && \Drupal\field\Entity\FieldConfig::loadByName('paragraph', 'dyne_team_grid', 'field_team_members');
 }

@@ -1,0 +1,19 @@
+uuid: 67e9e984-cadd-41a8-b264-3c1657e986ae
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.field_media_description
+field_name: field_media_description
+entity_type: media
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

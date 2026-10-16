@@ -1,0 +1,20 @@
+uuid: ea631d0b-5481-4fb6-b4f1-e0ec715c7855
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - paragraphs
+id: paragraph.field_layout_team
+field_name: field_layout_team
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

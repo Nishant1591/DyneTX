@@ -1,0 +1,25 @@
+uuid: 6db1d27e-03fc-421e-ba70-fe1af5e8a88f
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - dynetx
+id: dynetx_footer_menu
+theme: dynetx
+region: footer
+weight: 0
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: 'Footer navigation'
+  label_display: ''
+  provider: system
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility: {  }

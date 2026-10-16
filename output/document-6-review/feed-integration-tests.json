@@ -1,0 +1,7 @@
+{
+    "assertions": 15,
+    "failures": 0,
+    "node_count_before": 469,
+    "node_count_after": 469,
+    "writes_rolled_back": true
+}

@@ -1,0 +1,40 @@
+uuid: 162e4ef6-a648-4778-a1f5-fc3ad9ea2d24
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.dyne_team_grid.field_heading
+    - field.field.paragraph.dyne_team_grid.field_items_json
+    - field.field.paragraph.dyne_team_grid.field_native_components
+    - field.field.paragraph.dyne_team_grid.field_team_members
+    - paragraphs.paragraphs_type.dyne_team_grid
+id: paragraph.dyne_team_grid.default
+targetEntityType: paragraph
+bundle: dyne_team_grid
+mode: default
+content:
+  field_heading:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_team_members:
+    type: entity_reference_autocomplete
+    weight: 2
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_items_json: true
+  field_native_components: true
+  field_rows_json: true
+  field_sections_json: true
+  status: true

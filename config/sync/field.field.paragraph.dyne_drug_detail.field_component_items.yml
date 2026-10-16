@@ -1,0 +1,30 @@
+uuid: 00a76d33-a1bf-444f-987f-ff95a8c1bb2c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_component_items
+    - paragraphs.paragraphs_type.dyne_drug_detail
+    - paragraphs.paragraphs_type.dyne_text_section
+  module:
+    - entity_reference_revisions
+id: paragraph.dyne_drug_detail.field_component_items
+field_name: field_component_items
+entity_type: paragraph
+bundle: dyne_drug_detail
+label: Items
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      dyne_text_section: dyne_text_section
+    target_bundles_drag_drop:
+      dyne_text_section:
+        weight: 0
+        enabled: true
+field_type: entity_reference_revisions

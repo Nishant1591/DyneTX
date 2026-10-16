@@ -1,0 +1,10 @@
+uuid: 2c6a3c35-da5a-40d9-a2fb-14c6dd8421c0
+langcode: en
+status: true
+dependencies: {  }
+id: dyne_pipeline_table
+label: 'Pipeline table'
+icon_uuid: null
+icon_default: null
+description: null
+behavior_plugins: {  }

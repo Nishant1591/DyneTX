@@ -1,0 +1,23 @@
+uuid: dd9d4192-9abc-462d-9d01-f70ef5e15608
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_native_presentation
+    - node.type.leader
+id: node.leader.field_native_presentation
+field_name: field_native_presentation
+entity_type: node
+bundle: leader
+label: 'Use branded page presentation'
+description: 'Use this page’s hero and presentation settings in the branded page template.'
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

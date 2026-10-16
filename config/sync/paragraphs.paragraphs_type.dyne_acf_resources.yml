@@ -1,0 +1,10 @@
+uuid: b5b38307-b282-4c37-a44b-3e814412fee7
+langcode: en
+status: true
+dependencies: {  }
+id: dyne_acf_resources
+label: Resources
+icon_uuid: null
+icon_default: null
+description: null
+behavior_plugins: {  }

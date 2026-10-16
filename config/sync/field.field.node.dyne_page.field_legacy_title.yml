@@ -1,0 +1,19 @@
+uuid: 8410dcba-677e-4678-a1c1-4b044d030b9e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_legacy_title
+    - node.type.dyne_page
+id: node.dyne_page.field_legacy_title
+field_name: field_legacy_title
+entity_type: node
+bundle: dyne_page
+label: 'Full legacy title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

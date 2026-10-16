@@ -1,0 +1,6 @@
+services:
+  dyne_migrate.legacy_numeric_redirect:
+    class: Drupal\dyne_migrate\EventSubscriber\LegacyNumericRedirectSubscriber
+    arguments: ['@state', '@entity_type.manager', '@path_alias.manager']
+    tags:
+      - { name: event_subscriber }

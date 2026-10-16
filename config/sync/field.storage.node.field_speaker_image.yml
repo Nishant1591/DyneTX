@@ -1,0 +1,20 @@
+uuid: 506d59b4-1dd7-4d1e-9fb4-90b90bc17f39
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - node
+id: node.field_speaker_image
+field_name: field_speaker_image
+entity_type: node
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,20 @@
+[
+  {
+    "page": "home",
+    "before_tokens": 460,
+    "after_tokens": 460,
+    "text_diff_lines": 0
+  },
+  {
+    "page": "about",
+    "before_tokens": 5349,
+    "after_tokens": 5349,
+    "text_diff_lines": 0
+  },
+  {
+    "page": "careers",
+    "before_tokens": 1606,
+    "after_tokens": 1606,
+    "text_diff_lines": 0
+  }
+]

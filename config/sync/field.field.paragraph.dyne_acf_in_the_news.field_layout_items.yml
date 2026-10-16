@@ -1,0 +1,25 @@
+uuid: 1767bf0f-b392-4ddb-b231-fa12ddb97fb8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_layout_items
+    - paragraphs.paragraphs_type.dyne_acf_in_the_news
+  module:
+    - entity_reference_revisions
+id: paragraph.dyne_acf_in_the_news.field_layout_items
+field_name: field_layout_items
+entity_type: paragraph
+bundle: dyne_acf_in_the_news
+label: Items
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      dyne_layout_item: dyne_layout_item
+field_type: entity_reference_revisions

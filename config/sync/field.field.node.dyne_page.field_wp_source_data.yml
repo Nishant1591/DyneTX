@@ -1,0 +1,19 @@
+uuid: 4bde4a62-33d0-427b-8102-d9da3caaa18d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_wp_source_data
+    - node.type.dyne_page
+id: node.dyne_page.field_wp_source_data
+field_name: field_wp_source_data
+entity_type: node
+bundle: dyne_page
+label: 'Original WordPress content and metadata (archive)'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

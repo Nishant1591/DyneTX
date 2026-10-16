@@ -1,0 +1,24 @@
+uuid: 3bb928e5-1c48-4357-a6f3-abbda654916c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hero_image
+    - media.type.image
+    - node.type.dyne_page
+id: node.dyne_page.field_hero_image
+field_name: field_hero_image
+entity_type: node
+bundle: dyne_page
+label: 'Hero desktop image'
+description: 'Desktop hero image. Choose an image from the Media Library.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+field_type: entity_reference

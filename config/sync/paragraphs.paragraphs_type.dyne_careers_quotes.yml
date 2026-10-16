@@ -1,0 +1,10 @@
+uuid: c4e8e2cd-2e2d-4a86-a62e-186738837b0a
+langcode: en
+status: true
+dependencies: {  }
+id: dyne_careers_quotes
+label: 'Careers employee stories'
+icon_uuid: null
+icon_default: null
+description: 'Editable item within a Dyne component.'
+behavior_plugins: {  }

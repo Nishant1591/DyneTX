@@ -1,0 +1,20 @@
+uuid: e24cbb64-0168-432a-8ee6-51ebae240b21
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.dyne_acf_home_hero.field_layout_alignment
+    - field.field.paragraph.dyne_acf_home_hero.field_layout_body
+    - field.field.paragraph.dyne_acf_home_hero.field_layout_heading
+    - field.field.paragraph.dyne_acf_home_hero.field_layout_image
+    - paragraphs.paragraphs_type.dyne_acf_home_hero
+id: paragraph.dyne_acf_home_hero.default
+targetEntityType: paragraph
+bundle: dyne_acf_home_hero
+mode: default
+content: {  }
+hidden:
+  field_layout_alignment: true
+  field_layout_body: true
+  field_layout_heading: true
+  field_layout_image: true

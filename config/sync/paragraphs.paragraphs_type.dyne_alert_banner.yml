@@ -1,0 +1,10 @@
+uuid: 8eb547eb-44e8-4fe2-98d5-d47bd5acc975
+langcode: en
+status: true
+dependencies: {  }
+id: dyne_alert_banner
+label: 'Alert banner'
+icon_uuid: null
+icon_default: null
+description: null
+behavior_plugins: {  }

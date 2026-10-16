@@ -1,5 +1,5 @@
-{# Pipeline table component: WP interactive pipeline grid. #}
-{# Rows JSON: [{disease, prevalence, target, phase, status, url}] #}
+{{ dyne_component_cache }}
+{# Native pipeline rows retain the original interactive grid. #}
 <section class="dyne-pipeline container py-5">
   {% if paragraph.field_heading.value %}<h2 class="h1">{{ paragraph.field_heading.value }}</h2>{% endif %}
   <table class="pipeline-table">

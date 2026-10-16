@@ -1,0 +1,16 @@
+uuid: 6e961fcd-8fcf-4c74-8210-26ced0ade7fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.dyne_acf_centered_info.field_layout_body
+    - field.field.paragraph.dyne_acf_centered_info.field_layout_heading
+    - paragraphs.paragraphs_type.dyne_acf_centered_info
+id: paragraph.dyne_acf_centered_info.default
+targetEntityType: paragraph
+bundle: dyne_acf_centered_info
+mode: default
+content: {  }
+hidden:
+  field_layout_body: true
+  field_layout_heading: true

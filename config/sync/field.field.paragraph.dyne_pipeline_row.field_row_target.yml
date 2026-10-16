@@ -1,0 +1,19 @@
+uuid: 6a2a0e05-58cb-45da-b4a4-3c9a3a702df6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_row_target
+    - paragraphs.paragraphs_type.dyne_pipeline_row
+id: paragraph.dyne_pipeline_row.field_row_target
+field_name: field_row_target
+entity_type: paragraph
+bundle: dyne_pipeline_row
+label: Target
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

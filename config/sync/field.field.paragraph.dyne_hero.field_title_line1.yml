@@ -1,0 +1,19 @@
+uuid: 08439957-7648-4d1b-9b9b-b847ea65f770
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title_line1
+    - paragraphs.paragraphs_type.dyne_hero
+id: paragraph.dyne_hero.field_title_line1
+field_name: field_title_line1
+entity_type: paragraph
+bundle: dyne_hero
+label: 'Title line 1'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

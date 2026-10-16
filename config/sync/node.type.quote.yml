@@ -1,0 +1,11 @@
+uuid: 306c6716-8357-4c70-9d21-778ecdeed2b5
+langcode: en
+status: true
+dependencies: {  }
+name: 'Testimonial / Quote'
+type: quote
+description: 'Reusable employee or patient quotation.'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: true

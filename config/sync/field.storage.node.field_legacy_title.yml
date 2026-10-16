@@ -1,0 +1,19 @@
+uuid: 86d0def0-ef52-41e1-a810-5bbb1b6f4d1c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_legacy_title
+field_name: field_legacy_title
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

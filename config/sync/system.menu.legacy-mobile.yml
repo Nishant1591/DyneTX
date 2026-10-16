@@ -1,0 +1,8 @@
+uuid: bf1bb1d2-9ed1-47cd-bb65-e7c2d57f3bf7
+langcode: en
+status: true
+dependencies: {  }
+id: legacy-mobile
+label: 'WordPress mobile navigation (archive)'
+description: 'Unused source menu retained for completeness; not placed on the website.'
+locked: false

@@ -1,0 +1,19 @@
+uuid: 0f364c4d-132e-4102-b209-316067d28f87
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_sections_json
+    - paragraphs.paragraphs_type.dyne_drug_detail
+id: paragraph.dyne_drug_detail.field_sections_json
+field_name: field_sections_json
+entity_type: paragraph
+bundle: dyne_drug_detail
+label: 'Sections JSON'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

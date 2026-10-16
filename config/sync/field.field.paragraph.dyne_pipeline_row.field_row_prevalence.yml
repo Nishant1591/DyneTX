@@ -1,0 +1,19 @@
+uuid: ffb9ffd8-86e0-4147-9900-fb991ce00a1c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_row_prevalence
+    - paragraphs.paragraphs_type.dyne_pipeline_row
+id: paragraph.dyne_pipeline_row.field_row_prevalence
+field_name: field_row_prevalence
+entity_type: paragraph
+bundle: dyne_pipeline_row
+label: Prevalence
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

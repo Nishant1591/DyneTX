@@ -1,0 +1,9 @@
+name: Dyne Content Sync
+type: module
+description: 'Validated Greenhouse and GCS synchronization using cron, queues and Drush.'
+package: Custom
+core_version_requirement: ^11
+dependencies:
+  - dyne_migrate:dyne_migrate
+  - drupal:node
+  - drupal:taxonomy

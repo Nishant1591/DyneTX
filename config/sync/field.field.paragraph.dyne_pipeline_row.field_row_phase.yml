@@ -1,0 +1,19 @@
+uuid: 06bdc595-2e06-45e7-aa1a-d4df52123dda
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_row_phase
+    - paragraphs.paragraphs_type.dyne_pipeline_row
+id: paragraph.dyne_pipeline_row.field_row_phase
+field_name: field_row_phase
+entity_type: paragraph
+bundle: dyne_pipeline_row
+label: Phase
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

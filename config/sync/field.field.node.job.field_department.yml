@@ -1,0 +1,24 @@
+uuid: 0ba42138-0bd6-4d6c-a234-cf9535ff38c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_department
+    - node.type.job
+    - taxonomy.vocabulary.department
+id: node.job.field_department
+field_name: field_department
+entity_type: node
+bundle: job
+label: Department
+description: 'Department used in the careers listing and department filter.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      department: department
+field_type: entity_reference

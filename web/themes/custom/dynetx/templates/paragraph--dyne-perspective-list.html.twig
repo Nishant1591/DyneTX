@@ -1,0 +1,10 @@
+{{ dyne_list_cache }}
+<div class="dyne-legacy-content">
+  {{ dyne_list_intro }}
+  <section class="container-fluid section perspective-articles"><div class="container"><div class="row">
+    {% for story in dyne_records %}
+      <article class="col-12 col-md-6 card"><img src="{{ story.photo.url }}" alt="{{ story.photo.alt }}" class="card-img-top" loading="lazy"><div class="card-body"><h2 class="h3">{{ story.title }}</h2><p>{{ story.author }}</p><p>{{ story.summary }}</p><a class="btn btn-primary" href="{{ story.url }}">{{ 'Read more'|t }}</a></div></article>
+    {% endfor %}
+  </div></div></section>
+  {{ dyne_list_outro }}
+</div>

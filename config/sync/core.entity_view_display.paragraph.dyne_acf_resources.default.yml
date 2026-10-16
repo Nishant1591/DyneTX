@@ -1,0 +1,18 @@
+uuid: 375671bd-bb65-4178-aa47-1b91c1728a34
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.dyne_acf_resources.field_layout_body
+    - field.field.paragraph.dyne_acf_resources.field_layout_heading
+    - field.field.paragraph.dyne_acf_resources.field_layout_items
+    - paragraphs.paragraphs_type.dyne_acf_resources
+id: paragraph.dyne_acf_resources.default
+targetEntityType: paragraph
+bundle: dyne_acf_resources
+mode: default
+content: {  }
+hidden:
+  field_layout_body: true
+  field_layout_heading: true
+  field_layout_items: true

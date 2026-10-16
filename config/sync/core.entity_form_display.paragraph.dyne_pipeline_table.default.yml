@@ -1,0 +1,50 @@
+uuid: 28352eab-ff66-4157-9055-55e412db9223
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.dyne_pipeline_table.field_component_items
+    - field.field.paragraph.dyne_pipeline_table.field_heading
+    - field.field.paragraph.dyne_pipeline_table.field_native_components
+    - field.field.paragraph.dyne_pipeline_table.field_rows_json
+    - paragraphs.paragraphs_type.dyne_pipeline_table
+  module:
+    - paragraphs
+id: paragraph.dyne_pipeline_table.default
+targetEntityType: paragraph
+bundle: dyne_pipeline_table
+mode: default
+content:
+  field_component_items:
+    type: paragraphs
+    weight: 2
+    region: content
+    settings:
+      title: Item
+      title_plural: Items
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+  field_heading:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_items_json: true
+  field_native_components: true
+  field_rows_json: true
+  field_sections_json: true
+  status: true

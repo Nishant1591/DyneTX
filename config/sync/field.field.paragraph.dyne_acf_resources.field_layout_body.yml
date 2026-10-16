@@ -1,0 +1,22 @@
+uuid: 2fade98a-544e-4706-ad12-be6118f307e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_layout_body
+    - paragraphs.paragraphs_type.dyne_acf_resources
+  module:
+    - text
+id: paragraph.dyne_acf_resources.field_layout_body
+field_name: field_layout_body
+entity_type: paragraph
+bundle: dyne_acf_resources
+label: Text
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

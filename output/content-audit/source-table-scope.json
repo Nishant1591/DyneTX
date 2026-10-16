@@ -1,0 +1,1875 @@
+{
+  "source_sha256": "fe87e453c3cf35774a5ffb7e5d26f5660c4e0042d4713d887df36f7999018d50",
+  "table_count": 116,
+  "tables": [
+    {
+      "name": "_pantheon_heartbeat",
+      "columns": [
+        "time",
+        "actor"
+      ],
+      "row_count": 1
+    },
+    {
+      "name": "wp_actionscheduler_actions",
+      "columns": [
+        "action_id",
+        "hook",
+        "status",
+        "scheduled_date_gmt",
+        "scheduled_date_local",
+        "priority",
+        "args",
+        "schedule",
+        "group_id",
+        "attempts",
+        "last_attempt_gmt",
+        "last_attempt_local",
+        "claim_id",
+        "extended_args"
+      ],
+      "row_count": 25
+    },
+    {
+      "name": "wp_actionscheduler_claims",
+      "columns": [
+        "claim_id",
+        "date_created_gmt"
+      ],
+      "row_count": 0
+    },
+    {
+      "name": "wp_actionscheduler_groups",
+      "columns": [
+        "group_id",
+        "slug"
+      ],
+      "row_count": 2
+    },
+    {
+      "name": "wp_actionscheduler_logs",
+      "columns": [
+        "log_id",
+        "action_id",
+        "message",
+        "log_date_gmt",
+        "log_date_local"
+      ],
+      "row_count": 72
+    },
+    {
+      "name": "wp_aryo_activity_log",
+      "columns": [
+        "histid",
+        "user_caps",
+        "action",
+        "object_type",
+        "object_subtype",
+        "object_name",
+        "object_id",
+        "user_id",
+        "hist_ip",
+        "hist_time",
+        "request_source",
+        "meta"
+      ],
+      "row_count": 62585
+    },
+    {
+      "name": "wp_blc_filters",
+      "columns": [
+        "id",
+        "name",
+        "params"
+      ],
+      "row_count": 0
+    },
+    {
+      "name": "wp_blc_instances",
+      "columns": [
+        "instance_id",
+        "link_id",
+        "container_id",
+        "container_type",
+        "link_text",
+        "parser_type",
+        "container_field",
+        "link_context",
+        "raw_url"
+      ],
+      "row_count": 5
+    },
+    {
+      "name": "wp_blc_links",
+      "columns": [
+        "link_id",
+        "url",
+        "first_failure",
+        "last_check",
+        "last_success",
+        "last_check_attempt",
+        "check_count",
+        "final_url",
+        "redirect_count",
+        "log",
+        "http_code",
+        "status_code",
+        "status_text",
+        "request_duration",
+        "timeout",
+        "broken",
+        "warning",
+        "may_recheck",
+        "being_checked",
+        "result_hash",
+        "false_positive",
+        "dismissed"
+      ],
+      "row_count": 5
+    },
+    {
+      "name": "wp_blc_synch",
+      "columns": [
+        "container_id",
+        "container_type",
+        "synched",
+        "last_synch"
+      ],
+      "row_count": 9
+    },
+    {
+      "name": "wp_commentmeta",
+      "columns": [
+        "meta_id",
+        "comment_id",
+        "meta_key",
+        "meta_value"
+      ],
+      "row_count": 0
+    },
+    {
+      "name": "wp_comments",
+      "columns": [
+        "comment_ID",
+        "comment_post_ID",
+        "comment_author",
+        "comment_author_email",
+        "comment_author_url",
+        "comment_author_IP",
+        "comment_date",
+        "comment_date_gmt",
+        "comment_content",
+        "comment_karma",
+        "comment_approved",
+        "comment_agent",
+        "comment_type",
+        "comment_parent",
+        "user_id"
+      ],
+      "row_count": 0
+    },
+    {
+      "name": "wp_ctf_feed_caches",
+      "columns": [
+        "id",
+        "feed_id",
+        "cache_key",
+        "cache_value",
+        "cron_update",
+        "last_updated"
+      ],
+      "row_count": 13
+    },
+    {
+      "name": "wp_ctf_feed_locator",
+      "columns": [
+        "id",
+        "feed_id",
+        "post_id",
+        "html_location",
+        "shortcode_atts",
+        "last_update"
+      ],
+      "row_count": 0
+    },
+    {
+      "name": "wp_ctf_feeds",
+      "columns": [
+        "id",
+        "feed_name",
+        "feed_title",
+        "settings",
+        "author",
+        "status",
+        "last_modified"
+      ],
+      "row_count": 0
+    },
+    {
+      "name": "wp_ctf_feeds_posts",
+      "columns": [
+        "record_id",
+        "id",
+        "feed_id",
+        "type",
+        "term"
+      ],
+      "row_count": 64
+    },
+    {
+      "name": "wp_ctf_posts",
+      "columns": [
+        "id",
+        "twitter_id",
+        "created_on",
+        "last_requested",
+        "time_stamp",
+        "json_data",
+        "media_id",
+        "sizes",
+        "aspect_ratio",
+        "images_done"
+      ],
+      "row_count": 63
+    },
+    {
+      "name": "wp_duplicator_packages",
+      "columns": [
+        "id",
+        "name",
+        "hash",
+        "status",
+        "created",
+        "owner",
+        "package"
+      ],
+      "row_count": 1
+    },
+    {
+      "name": "wp_gf_draft_submissions",
+      "columns": [
+        "uuid",
+        "email",
+        "form_id",
+        "date_created",
+        "ip",
+        "source_url",
+        "submission"
+      ],
+      "row_count": 0
+    },
+    {
+      "name": "wp_gf_entry",
+      "columns": [
+        "id",
+        "form_id",
+        "post_id",
+        "date_created",
+        "date_updated",
+        "is_starred",
+        "is_read",
+        "ip",
+        "source_url",
+        "user_agent",
+        "currency",
+        "payment_status",
+        "payment_date",
+        "payment_amount",
+        "payment_method",
+        "transaction_id",
+        "is_fulfilled",
+        "created_by",
+        "transaction_type",
+        "status"
+      ],
+      "row_count": 0
+    },
+    {
+      "name": "wp_gf_entry_meta",
+      "columns": [
+        "id",
+        "form_id",
+        "entry_id",
+        "meta_key",
+        "meta_value",
+        "item_index"
+      ],
+      "row_count": 0
+    },
+    {
+      "name": "wp_gf_entry_notes",
+      "columns": [
+        "id",
+        "entry_id",
+        "user_name",
+        "user_id",
+        "date_created",
+        "value",
+        "note_type",
+        "sub_type"
+      ],
+      "row_count": 0
+    },
+    {
+      "name": "wp_gf_form",
+      "columns": [
+        "id",
+        "title",
+        "date_created",
+        "date_updated",
+        "is_active",
+        "is_trash"
+      ],
+      "row_count": 0
+    },
+    {
+      "name": "wp_gf_form_meta",
+      "columns": [
+        "form_id",
+        "display_meta",
+        "entries_grid_meta",
+        "confirmations",
+        "notifications"
+      ],
+      "row_count": 0
+    },
+    {
+      "name": "wp_gf_form_revisions",
+      "columns": [
+        "id",
+        "form_id",
+        "display_meta",
+        "date_created"
+      ],
+      "row_count": 0
+    },
+    {
+      "name": "wp_gf_form_view",
+      "columns": [
+        "id",
+        "form_id",
+        "date_created",
+        "ip",
+        "count"
+      ],
+      "row_count": 0
+    },
+    {
+      "name": "wp_imagify_files",
+      "columns": [
+        "file_id",
+        "folder_id",
+        "file_date",
+        "path",
+        "hash",
+        "mime_type",
+        "modified",
+        "width",
+        "height",
+        "original_size",
+        "optimized_size",
+        "percent",
+        "optimization_level",
+        "status",
+        "error"
+      ],
+      "row_count": 0
+    },
+    {
+      "name": "wp_imagify_folders",
+      "columns": [
+        "folder_id",
+        "path",
+        "active"
+      ],
+      "row_count": 0
+    },
+    {
+      "name": "wp_iwp_processed_iterator",
+      "columns": [
+        "id",
+        "name",
+        "offset"
+      ],
+      "row_count": 0
+    },
+    {
+      "name": "wp_links",
+      "columns": [
+        "link_id",
+        "link_url",
+        "link_name",
+        "link_image",
+        "link_target",
+        "link_description",
+        "link_visible",
+        "link_owner",
+        "link_rating",
+        "link_updated",
+        "link_rel",
+        "link_notes",
+        "link_rss"
+      ],
+      "row_count": 0
+    },
+    {
+      "name": "wp_monsterinsights_cache",
+      "columns": [
+        "cache_id",
+        "cache_key",
+        "cache_value",
+        "cache_group",
+        "expires_at",
+        "created_at"
+      ],
+      "row_count": 0
+    },
+    {
+      "name": "wp_options",
+      "columns": [
+        "option_id",
+        "option_name",
+        "option_value",
+        "autoload"
+      ],
+      "row_count": 896
+    },
+    {
+      "name": "wp_pantheon_sessions",
+      "columns": [
+        "user_id",
+        "session_id",
+        "secure_session_id",
+        "ip_address",
+        "datetime",
+        "data"
+      ],
+      "row_count": 149
+    },
+    {
+      "name": "wp_postmeta",
+      "columns": [
+        "meta_id",
+        "post_id",
+        "meta_key",
+        "meta_value"
+      ],
+      "row_count": 27932
+    },
+    {
+      "name": "wp_posts",
+      "columns": [
+        "ID",
+        "post_author",
+        "post_date",
+        "post_date_gmt",
+        "post_content",
+        "post_title",
+        "post_excerpt",
+        "post_status",
+        "comment_status",
+        "ping_status",
+        "post_password",
+        "post_name",
+        "to_ping",
+        "pinged",
+        "post_modified",
+        "post_modified_gmt",
+        "post_content_filtered",
+        "post_parent",
+        "guid",
+        "menu_order",
+        "post_type",
+        "post_mime_type",
+        "comment_count"
+      ],
+      "row_count": 1378
+    },
+    {
+      "name": "wp_redirection_404",
+      "columns": [
+        "id",
+        "created",
+        "url",
+        "agent",
+        "referrer",
+        "ip"
+      ],
+      "row_count": 0
+    },
+    {
+      "name": "wp_redirection_groups",
+      "columns": [
+        "id",
+        "name",
+        "tracking",
+        "module_id",
+        "status",
+        "position"
+      ],
+      "row_count": 2
+    },
+    {
+      "name": "wp_redirection_items",
+      "columns": [
+        "id",
+        "url",
+        "match_url",
+        "match_data",
+        "regex",
+        "position",
+        "last_count",
+        "last_access",
+        "group_id",
+        "status",
+        "action_type",
+        "action_code",
+        "action_data",
+        "match_type",
+        "title"
+      ],
+      "row_count": 1
+    },
+    {
+      "name": "wp_redirection_logs",
+      "columns": [
+        "id",
+        "created",
+        "url",
+        "sent_to",
+        "agent",
+        "referrer",
+        "redirection_id",
+        "ip",
+        "module_id",
+        "group_id"
+      ],
+      "row_count": 0
+    },
+    {
+      "name": "wp_rg_form",
+      "columns": [
+        "id",
+        "title",
+        "date_created",
+        "is_active",
+        "is_trash"
+      ],
+      "row_count": 0
+    },
+    {
+      "name": "wp_rg_form_meta",
+      "columns": [
+        "form_id",
+        "display_meta",
+        "entries_grid_meta",
+        "confirmations",
+        "notifications"
+      ],
+      "row_count": 0
+    },
+    {
+      "name": "wp_rg_form_view",
+      "columns": [
+        "id",
+        "form_id",
+        "date_created",
+        "ip",
+        "count"
+      ],
+      "row_count": 0
+    },
+    {
+      "name": "wp_rg_incomplete_submissions",
+      "columns": [
+        "uuid",
+        "email",
+        "form_id",
+        "date_created",
+        "ip",
+        "source_url",
+        "submission"
+      ],
+      "row_count": 0
+    },
+    {
+      "name": "wp_rg_lead",
+      "columns": [
+        "id",
+        "form_id",
+        "post_id",
+        "date_created",
+        "is_starred",
+        "is_read",
+        "ip",
+        "source_url",
+        "user_agent",
+        "currency",
+        "payment_status",
+        "payment_date",
+        "payment_amount",
+        "payment_method",
+        "transaction_id",
+        "is_fulfilled",
+        "created_by",
+        "transaction_type",
+        "status"
+      ],
+      "row_count": 0
+    },
+    {
+      "name": "wp_rg_lead_detail",
+      "columns": [
+        "id",
+        "lead_id",
+        "form_id",
+        "field_number",
+        "value"
+      ],
+      "row_count": 0
+    },
+    {
+      "name": "wp_rg_lead_detail_long",
+      "columns": [
+        "lead_detail_id",
+        "value"
+      ],
+      "row_count": 0
+    },
+    {
+      "name": "wp_rg_lead_meta",
+      "columns": [
+        "id",
+        "form_id",
+        "lead_id",
+        "meta_key",
+        "meta_value"
+      ],
+      "row_count": 0
+    },
+    {
+      "name": "wp_rg_lead_notes",
+      "columns": [
+        "id",
+        "lead_id",
+        "user_name",
+        "user_id",
+        "date_created",
+        "value",
+        "note_type"
+      ],
+      "row_count": 0
+    },
+    {
+      "name": "wp_searchwp_index",
+      "columns": [
+        "indexid",
+        "token",
+        "occurrences",
+        "id",
+        "attribute",
+        "source",
+        "site"
+      ],
+      "row_count": 11907
+    },
+    {
+      "name": "wp_searchwp_log",
+      "columns": [
+        "logid",
+        "query",
+        "tstamp",
+        "hits",
+        "engine",
+        "site"
+      ],
+      "row_count": 8
+    },
+    {
+      "name": "wp_searchwp_status",
+      "columns": [
+        "statusid",
+        "id",
+        "source",
+        "queued",
+        "indexed",
+        "omitted",
+        "site"
+      ],
+      "row_count": 29
+    },
+    {
+      "name": "wp_searchwp_tokens",
+      "columns": [
+        "id",
+        "token",
+        "stem"
+      ],
+      "row_count": 3340
+    },
+    {
+      "name": "wp_sgpb_subscribers",
+      "columns": [
+        "id",
+        "firstName",
+        "lastName",
+        "email",
+        "subscriptionType",
+        "cDate",
+        "status",
+        "unsubscribed"
+      ],
+      "row_count": 0
+    },
+    {
+      "name": "wp_sgpb_subscription_error_log",
+      "columns": [
+        "id",
+        "firstName",
+        "popupType",
+        "email",
+        "date"
+      ],
+      "row_count": 0
+    },
+    {
+      "name": "wp_sos_dqc_logs",
+      "columns": [
+        "log_id",
+        "status",
+        "code",
+        "qrcode_id",
+        "user_key",
+        "event_id",
+        "creation",
+        "cancelled",
+        "op_sys",
+        "dev_type",
+        "lang",
+        "country",
+        "region",
+        "city"
+      ],
+      "row_count": 36
+    },
+    {
+      "name": "wp_sos_dqc_otkeys",
+      "columns": [
+        "otk_id",
+        "qrcode_id",
+        "code",
+        "tally",
+        "creation"
+      ],
+      "row_count": 1
+    },
+    {
+      "name": "wp_sos_dqc_qrcodes",
+      "columns": [
+        "qrcode_id",
+        "disabled",
+        "code",
+        "description",
+        "url_redirect",
+        "url_inactive",
+        "url_expired",
+        "date_from",
+        "date_to",
+        "time_from",
+        "time_to",
+        "dotw",
+        "priority",
+        "max_scan_tot",
+        "url_finished",
+        "cypher",
+        "url_cypher",
+        "only_mfa",
+        "device_os",
+        "device_lang",
+        "img_forecolor",
+        "img_backcolor",
+        "creation",
+        "cancelled"
+      ],
+      "row_count": 3
+    },
+    {
+      "name": "wp_swp_cf",
+      "columns": [
+        "id",
+        "metakey",
+        "term",
+        "count",
+        "post_id"
+      ],
+      "row_count": 3584
+    },
+    {
+      "name": "wp_swp_index",
+      "columns": [
+        "id",
+        "term",
+        "content",
+        "title",
+        "comment",
+        "excerpt",
+        "slug",
+        "post_id"
+      ],
+      "row_count": 14761
+    },
+    {
+      "name": "wp_swp_log",
+      "columns": [
+        "id",
+        "event",
+        "query",
+        "tstamp",
+        "hits",
+        "engine",
+        "wpsearch"
+      ],
+      "row_count": 182
+    },
+    {
+      "name": "wp_swp_tax",
+      "columns": [
+        "id",
+        "taxonomy",
+        "term",
+        "count",
+        "post_id"
+      ],
+      "row_count": 0
+    },
+    {
+      "name": "wp_swp_terms",
+      "columns": [
+        "id",
+        "term",
+        "reverse",
+        "stem"
+      ],
+      "row_count": 7918
+    },
+    {
+      "name": "wp_term_relationships",
+      "columns": [
+        "object_id",
+        "term_taxonomy_id",
+        "term_order"
+      ],
+      "row_count": 462
+    },
+    {
+      "name": "wp_term_taxonomy",
+      "columns": [
+        "term_taxonomy_id",
+        "term_id",
+        "taxonomy",
+        "description",
+        "parent",
+        "count"
+      ],
+      "row_count": 21
+    },
+    {
+      "name": "wp_termmeta",
+      "columns": [
+        "meta_id",
+        "term_id",
+        "meta_key",
+        "meta_value"
+      ],
+      "row_count": 4
+    },
+    {
+      "name": "wp_terms",
+      "columns": [
+        "term_id",
+        "name",
+        "slug",
+        "term_group"
+      ],
+      "row_count": 21
+    },
+    {
+      "name": "wp_usermeta",
+      "columns": [
+        "umeta_id",
+        "user_id",
+        "meta_key",
+        "meta_value"
+      ],
+      "row_count": 529
+    },
+    {
+      "name": "wp_users",
+      "columns": [
+        "ID",
+        "user_login",
+        "user_pass",
+        "user_nicename",
+        "user_email",
+        "user_url",
+        "user_registered",
+        "user_activation_key",
+        "user_status",
+        "display_name"
+      ],
+      "row_count": 19
+    },
+    {
+      "name": "wp_userway",
+      "columns": [
+        "preference_id",
+        "account_id",
+        "state",
+        "created_time",
+        "updated_time"
+      ],
+      "row_count": 1
+    },
+    {
+      "name": "wp_wfauditevents",
+      "columns": [
+        "id",
+        "type",
+        "data",
+        "event_time",
+        "request_id",
+        "state",
+        "state_timestamp"
+      ],
+      "row_count": 0
+    },
+    {
+      "name": "wp_wfblockediplog",
+      "columns": [
+        "IP",
+        "countryCode",
+        "blockCount",
+        "unixday",
+        "blockType"
+      ],
+      "row_count": 123
+    },
+    {
+      "name": "wp_wfblocks7",
+      "columns": [
+        "id",
+        "type",
+        "IP",
+        "blockedTime",
+        "reason",
+        "lastAttempt",
+        "blockedHits",
+        "expiration",
+        "parameters"
+      ],
+      "row_count": 0
+    },
+    {
+      "name": "wp_wfconfig",
+      "columns": [
+        "name",
+        "val",
+        "autoload"
+      ],
+      "row_count": 329
+    },
+    {
+      "name": "wp_wfcrawlers",
+      "columns": [
+        "IP",
+        "patternSig",
+        "status",
+        "lastUpdate",
+        "PTR"
+      ],
+      "row_count": 0
+    },
+    {
+      "name": "wp_wffilechanges",
+      "columns": [
+        "filenameHash",
+        "file",
+        "md5"
+      ],
+      "row_count": 0
+    },
+    {
+      "name": "wp_wffilemods",
+      "columns": [
+        "filenameMD5",
+        "filename",
+        "real_path",
+        "knownFile",
+        "oldMD5",
+        "newMD5",
+        "SHAC",
+        "stoppedOnSignature",
+        "stoppedOnPosition",
+        "isSafeFile"
+      ],
+      "row_count": 15802
+    },
+    {
+      "name": "wp_wfhits",
+      "columns": [
+        "id",
+        "attackLogTime",
+        "ctime",
+        "IP",
+        "jsRun",
+        "statusCode",
+        "isGoogle",
+        "userID",
+        "newVisit",
+        "URL",
+        "referer",
+        "UA",
+        "action",
+        "actionDescription",
+        "actionData"
+      ],
+      "row_count": 642
+    },
+    {
+      "name": "wp_wfhoover",
+      "columns": [
+        "id",
+        "owner",
+        "host",
+        "path",
+        "hostKey"
+      ],
+      "row_count": 0
+    },
+    {
+      "name": "wp_wfissues",
+      "columns": [
+        "id",
+        "time",
+        "lastUpdated",
+        "status",
+        "type",
+        "severity",
+        "ignoreP",
+        "ignoreC",
+        "shortMsg",
+        "longMsg",
+        "data"
+      ],
+      "row_count": 17
+    },
+    {
+      "name": "wp_wfknownfilelist",
+      "columns": [
+        "id",
+        "path",
+        "wordpress_path"
+      ],
+      "row_count": 15803
+    },
+    {
+      "name": "wp_wflivetraffichuman",
+      "columns": [
+        "IP",
+        "identifier",
+        "expiration"
+      ],
+      "row_count": 0
+    },
+    {
+      "name": "wp_wflocs",
+      "columns": [
+        "IP",
+        "ctime",
+        "failed",
+        "city",
+        "region",
+        "countryName",
+        "countryCode",
+        "lat",
+        "lon"
+      ],
+      "row_count": 0
+    },
+    {
+      "name": "wp_wflogins",
+      "columns": [
+        "id",
+        "hitID",
+        "ctime",
+        "fail",
+        "action",
+        "username",
+        "userID",
+        "IP",
+        "UA"
+      ],
+      "row_count": 1131
+    },
+    {
+      "name": "wp_wfls_2fa_secrets",
+      "columns": [
+        "id",
+        "user_id",
+        "secret",
+        "recovery",
+        "ctime",
+        "vtime",
+        "mode"
+      ],
+      "row_count": 9
+    },
+    {
+      "name": "wp_wfls_role_counts",
+      "columns": [
+        "serialized_roles",
+        "two_factor_inactive",
+        "user_count"
+      ],
+      "row_count": 0
+    },
+    {
+      "name": "wp_wfls_settings",
+      "columns": [
+        "name",
+        "value",
+        "autoload"
+      ],
+      "row_count": 31
+    },
+    {
+      "name": "wp_wfnotifications",
+      "columns": [
+        "id",
+        "new",
+        "category",
+        "priority",
+        "ctime",
+        "html",
+        "links"
+      ],
+      "row_count": 84
+    },
+    {
+      "name": "wp_wfpendingissues",
+      "columns": [
+        "id",
+        "time",
+        "lastUpdated",
+        "status",
+        "type",
+        "severity",
+        "ignoreP",
+        "ignoreC",
+        "shortMsg",
+        "longMsg",
+        "data"
+      ],
+      "row_count": 0
+    },
+    {
+      "name": "wp_wfreversecache",
+      "columns": [
+        "IP",
+        "host",
+        "lastUpdate"
+      ],
+      "row_count": 0
+    },
+    {
+      "name": "wp_wfsecurityevents",
+      "columns": [
+        "id",
+        "type",
+        "data",
+        "event_time",
+        "state",
+        "state_timestamp"
+      ],
+      "row_count": 0
+    },
+    {
+      "name": "wp_wfsnipcache",
+      "columns": [
+        "id",
+        "IP",
+        "expiration",
+        "body",
+        "count",
+        "type"
+      ],
+      "row_count": 0
+    },
+    {
+      "name": "wp_wfstatus",
+      "columns": [
+        "id",
+        "ctime",
+        "level",
+        "type",
+        "msg"
+      ],
+      "row_count": 975
+    },
+    {
+      "name": "wp_wftrafficrates",
+      "columns": [
+        "eMin",
+        "IP",
+        "hitType",
+        "hits"
+      ],
+      "row_count": 0
+    },
+    {
+      "name": "wp_wfwafconfig",
+      "columns": [
+        "name",
+        "val",
+        "autoload"
+      ],
+      "row_count": 20
+    },
+    {
+      "name": "wp_wfwaffailures",
+      "columns": [
+        "id",
+        "throwable",
+        "rule_id",
+        "timestamp"
+      ],
+      "row_count": 0
+    },
+    {
+      "name": "wp_wp_ada_compliance_basic",
+      "columns": [
+        "id",
+        "postid",
+        "ignre",
+        "siteid",
+        "type",
+        "externalsrc",
+        "scantype",
+        "onsave",
+        "taxonomy",
+        "errorcode",
+        "object",
+        "posttitle",
+        "recordcheck",
+        "date",
+        "activeuser",
+        "examplecode",
+        "themeerror"
+      ],
+      "row_count": 160
+    },
+    {
+      "name": "wp_wpfm_backup",
+      "columns": [
+        "id",
+        "backup_name",
+        "backup_date"
+      ],
+      "row_count": 0
+    },
+    {
+      "name": "wp_wpgmza",
+      "columns": [
+        "id",
+        "map_id",
+        "address",
+        "description",
+        "pic",
+        "link",
+        "icon",
+        "lat",
+        "lng",
+        "anim",
+        "title",
+        "infoopen",
+        "category",
+        "approved",
+        "retina",
+        "type",
+        "did",
+        "other_data",
+        "latlng",
+        "sticky",
+        "layergroup"
+      ],
+      "row_count": 2
+    },
+    {
+      "name": "wp_wpgmza_admin_notices",
+      "columns": [
+        "id",
+        "name",
+        "message",
+        "active_date",
+        "options",
+        "dismissed"
+      ],
+      "row_count": 2
+    },
+    {
+      "name": "wp_wpgmza_categories",
+      "columns": [
+        "id",
+        "active",
+        "category_name",
+        "category_icon",
+        "retina"
+      ],
+      "row_count": 0
+    },
+    {
+      "name": "wp_wpgmza_category_maps",
+      "columns": [
+        "id",
+        "cat_id",
+        "map_id"
+      ],
+      "row_count": 0
+    },
+    {
+      "name": "wp_wpgmza_circles",
+      "columns": [
+        "id",
+        "map_id",
+        "name",
+        "center",
+        "radius",
+        "color",
+        "opacity",
+        "lineColor",
+        "lineOpacity",
+        "description",
+        "hoverEnabled",
+        "ohFillColor",
+        "ohLineColor",
+        "ohFillOpacity",
+        "ohLineOpacity",
+        "link",
+        "layergroup",
+        "linethickness"
+      ],
+      "row_count": 0
+    },
+    {
+      "name": "wp_wpgmza_image_overlays",
+      "columns": [
+        "id",
+        "map_id",
+        "name",
+        "cornerA",
+        "cornerB",
+        "image",
+        "opacity"
+      ],
+      "row_count": 0
+    },
+    {
+      "name": "wp_wpgmza_maps",
+      "columns": [
+        "id",
+        "map_title",
+        "map_width",
+        "map_height",
+        "map_start_lat",
+        "map_start_lng",
+        "map_start_location",
+        "map_start_zoom",
+        "default_marker",
+        "type",
+        "alignment",
+        "directions_enabled",
+        "styling_enabled",
+        "styling_json",
+        "active",
+        "kml",
+        "bicycle",
+        "traffic",
+        "dbox",
+        "dbox_width",
+        "listmarkers",
+        "listmarkers_advanced",
+        "filterbycat",
+        "ugm_enabled",
+        "ugm_category_enabled",
+        "fusion",
+        "map_width_type",
+        "map_height_type",
+        "mass_marker_support",
+        "ugm_access",
+        "order_markers_by",
+        "order_markers_choice",
+        "show_user_location",
+        "default_to",
+        "other_settings"
+      ],
+      "row_count": 2
+    },
+    {
+      "name": "wp_wpgmza_nominatim_geocode_cache",
+      "columns": [
+        "id",
+        "query",
+        "response"
+      ],
+      "row_count": 1
+    },
+    {
+      "name": "wp_wpgmza_point_labels",
+      "columns": [
+        "id",
+        "map_id",
+        "name",
+        "center",
+        "fillColor",
+        "lineColor",
+        "opacity",
+        "fontSize",
+        "other_data",
+        "layergroup"
+      ],
+      "row_count": 0
+    },
+    {
+      "name": "wp_wpgmza_polygon",
+      "columns": [
+        "id",
+        "map_id",
+        "polydata",
+        "innerpolydata",
+        "linecolor",
+        "lineopacity",
+        "fillcolor",
+        "opacity",
+        "title",
+        "link",
+        "ohfillcolor",
+        "ohlinecolor",
+        "ohopacity",
+        "polyname",
+        "description",
+        "linethickness",
+        "layergroup",
+        "linestyle"
+      ],
+      "row_count": 0
+    },
+    {
+      "name": "wp_wpgmza_polylines",
+      "columns": [
+        "id",
+        "map_id",
+        "polydata",
+        "linecolor",
+        "linethickness",
+        "opacity",
+        "polyname",
+        "layergroup",
+        "title",
+        "description",
+        "link",
+        "ohlinecolor",
+        "ohopacity",
+        "linestyle"
+      ],
+      "row_count": 0
+    },
+    {
+      "name": "wp_wpgmza_rectangles",
+      "columns": [
+        "id",
+        "map_id",
+        "name",
+        "cornerA",
+        "cornerB",
+        "color",
+        "opacity",
+        "lineColor",
+        "lineOpacity",
+        "description",
+        "hoverEnabled",
+        "ohFillColor",
+        "ohLineColor",
+        "ohFillOpacity",
+        "ohLineOpacity",
+        "link",
+        "layergroup",
+        "linethickness"
+      ],
+      "row_count": 0
+    },
+    {
+      "name": "wp_yoast_expiring_store",
+      "columns": [
+        "key_name",
+        "value",
+        "exp"
+      ],
+      "row_count": 0
+    },
+    {
+      "name": "wp_yoast_indexable",
+      "columns": [
+        "id",
+        "permalink",
+        "permalink_hash",
+        "object_id",
+        "object_type",
+        "object_sub_type",
+        "author_id",
+        "post_parent",
+        "title",
+        "description",
+        "breadcrumb_title",
+        "post_status",
+        "is_public",
+        "is_protected",
+        "has_public_posts",
+        "number_of_pages",
+        "canonical",
+        "primary_focus_keyword",
+        "primary_focus_keyword_score",
+        "readability_score",
+        "is_cornerstone",
+        "is_robots_noindex",
+        "is_robots_nofollow",
+        "is_robots_noarchive",
+        "is_robots_noimageindex",
+        "is_robots_nosnippet",
+        "twitter_title",
+        "twitter_image",
+        "twitter_description",
+        "twitter_image_id",
+        "twitter_image_source",
+        "open_graph_title",
+        "open_graph_description",
+        "open_graph_image",
+        "open_graph_image_id",
+        "open_graph_image_source",
+        "open_graph_image_meta",
+        "link_count",
+        "incoming_link_count",
+        "prominent_words_version",
+        "created_at",
+        "updated_at",
+        "blog_id",
+        "language",
+        "region",
+        "schema_page_type",
+        "schema_article_type",
+        "has_ancestors",
+        "estimated_reading_time_minutes",
+        "version",
+        "object_last_modified",
+        "object_published_at",
+        "inclusive_language_score",
+        "seo_title_score",
+        "meta_description_score"
+      ],
+      "row_count": 338
+    },
+    {
+      "name": "wp_yoast_indexable_hierarchy",
+      "columns": [
+        "indexable_id",
+        "ancestor_id",
+        "depth",
+        "blog_id"
+      ],
+      "row_count": 335
+    },
+    {
+      "name": "wp_yoast_migrations",
+      "columns": [
+        "id",
+        "version"
+      ],
+      "row_count": 27
+    },
+    {
+      "name": "wp_yoast_primary_term",
+      "columns": [
+        "id",
+        "post_id",
+        "term_id",
+        "taxonomy",
+        "created_at",
+        "updated_at",
+        "blog_id"
+      ],
+      "row_count": 10
+    },
+    {
+      "name": "wp_yoast_seo_links",
+      "columns": [
+        "id",
+        "url",
+        "post_id",
+        "target_post_id",
+        "type",
+        "indexable_id",
+        "target_indexable_id",
+        "height",
+        "width",
+        "size",
+        "language",
+        "region"
+      ],
+      "row_count": 2379
+    },
+    {
+      "name": "wp_yoast_seo_meta",
+      "columns": [
+        "object_id",
+        "internal_link_count",
+        "incoming_link_count"
+      ],
+      "row_count": 345
+    }
+  ],
+  "potential_content_tables": [
+    {
+      "name": "wp_comments",
+      "row_count": 0
+    },
+    {
+      "name": "wp_commentmeta",
+      "row_count": 0
+    },
+    {
+      "name": "wp_links",
+      "row_count": 0
+    },
+    {
+      "name": "wp_ctf_feed_caches",
+      "row_count": 13
+    },
+    {
+      "name": "wp_ctf_feed_locator",
+      "row_count": 0
+    },
+    {
+      "name": "wp_ctf_feeds",
+      "row_count": 0
+    },
+    {
+      "name": "wp_ctf_feeds_posts",
+      "row_count": 64
+    },
+    {
+      "name": "wp_ctf_posts",
+      "row_count": 63
+    },
+    {
+      "name": "wp_gf_form",
+      "row_count": 0
+    },
+    {
+      "name": "wp_gf_form_meta",
+      "row_count": 0
+    },
+    {
+      "name": "wp_gf_form_revisions",
+      "row_count": 0
+    },
+    {
+      "name": "wp_rg_form",
+      "row_count": 0
+    },
+    {
+      "name": "wp_rg_form_meta",
+      "row_count": 0
+    },
+    {
+      "name": "wp_sos_dqc_qrcodes",
+      "row_count": 3
+    },
+    {
+      "name": "wp_wpgmza",
+      "row_count": 2
+    },
+    {
+      "name": "wp_wpgmza_admin_notices",
+      "row_count": 2
+    },
+    {
+      "name": "wp_wpgmza_categories",
+      "row_count": 0
+    },
+    {
+      "name": "wp_wpgmza_category_maps",
+      "row_count": 0
+    },
+    {
+      "name": "wp_wpgmza_circles",
+      "row_count": 0
+    },
+    {
+      "name": "wp_wpgmza_image_overlays",
+      "row_count": 0
+    },
+    {
+      "name": "wp_wpgmza_maps",
+      "row_count": 2
+    },
+    {
+      "name": "wp_wpgmza_nominatim_geocode_cache",
+      "row_count": 1
+    },
+    {
+      "name": "wp_wpgmza_point_labels",
+      "row_count": 0
+    },
+    {
+      "name": "wp_wpgmza_polygon",
+      "row_count": 0
+    },
+    {
+      "name": "wp_wpgmza_polylines",
+      "row_count": 0
+    },
+    {
+      "name": "wp_wpgmza_rectangles",
+      "row_count": 0
+    }
+  ],
+  "comments_by_status_type": [],
+  "public_content_references": {
+    "menu": [
+      {
+        "source": "wp-content/themes/dynetxdev2020/header.php",
+        "line": 37
+      },
+      {
+        "source": "wp-content/themes/dynetxdev2020/header.php",
+        "line": 39
+      },
+      {
+        "source": "wp-content/themes/dynetxdev2020/header.php",
+        "line": 40
+      },
+      {
+        "source": "wp-content/themes/dynetxdev2020/header.php",
+        "line": 112
+      },
+      {
+        "source": "wp-content/themes/dynetxdev2020/header.php",
+        "line": 114
+      },
+      {
+        "source": "wp-content/themes/dynetxdev2020/header.php",
+        "line": 115
+      }
+    ],
+    "twitter_feed": [
+      {
+        "post_id": 1666,
+        "title": "Perspectives",
+        "status": "publish"
+      }
+    ]
+  },
+  "content_option_names_only": [
+    "widget_categories",
+    "widget_text",
+    "widget_rss",
+    "widget_search",
+    "widget_recent-posts",
+    "widget_recent-comments",
+    "widget_archives",
+    "widget_meta",
+    "theme_mods_twentyfourteen",
+    "theme_mods_canvas",
+    "widget_mmb_widget",
+    "theme_mods_roots-master",
+    "theme_mods_sage-master",
+    "theme_mods_twentyfifteen",
+    "theme_mods_theme-name",
+    "theme_mods_roots",
+    "theme_mods_sage-8.3.0",
+    "theme_mods_sage",
+    "widget_pages",
+    "widget_calendar",
+    "widget_tag_cloud",
+    "widget_nav_menu",
+    "widget_akismet_widget",
+    "widget_gform_widget",
+    "widget_pods_widget_single",
+    "widget_pods_widget_list",
+    "widget_pods_widget_field",
+    "widget_pods_widget_form",
+    "widget_pods_widget_view",
+    "widget_shortcodes-ultimate",
+    "widget_ssba_widget",
+    "widget_tribe-events-list-widget",
+    "widget_metaslider_widget",
+    "widget_media_audio",
+    "widget_media_image",
+    "widget_media_video",
+    "widget_custom_html",
+    "theme_mods_twentyseventeen",
+    "widget_wp_accessibility_toolbar",
+    "widget_media_gallery",
+    "widget_responsive_lightbox_gallery_widget",
+    "widget_responsive_lightbox_image_widget",
+    "theme_mods_twentynineteen",
+    "theme_mods_dynetherapeutics",
+    "options_logo",
+    "options_navigation",
+    "options_footer_links_0_label",
+    "options_footer_links_0_url",
+    "options_footer_links_0_open_in_new_tab",
+    "options_footer_links_1_label",
+    "options_footer_links_1_url",
+    "options_footer_links_1_open_in_new_tab",
+    "options_footer_links",
+    "options_social_media_links_0_name",
+    "options_social_media_links_0_icon",
+    "options_social_media_links",
+    "options_social_media_links_1_name",
+    "options_social_media_links_1_icon",
+    "options_social_media_links_0_url",
+    "options_social_media_links_1_url",
+    "widget_black-studio-tinymce",
+    "widget_wpe_powered_by_widget",
+    "widget_wpgmza_map_widget",
+    "options_social_media_links_2_name",
+    "options_social_media_links_2_icon",
+    "options_social_media_links_2_url",
+    "options_mobile_navigation",
+    "theme_mods_dynetxdev2020",
+    "widget_monsterinsights-popular-posts-widget",
+    "widget_custom-twitter-feeds-widget",
+    "widget_block",
+    "widget_cookiebot_declaration_widget"
+  ],
+  "notes": [
+    "Only table schemas, row counts, source code references and option names are exported. No users, credentials, option values, form submissions, comments, logs or security records are exported.",
+    "No NextGEN/gallery tables exist in this SQL dump.",
+    "Theme menus reference WordPress posts/terms; source pages/posts and editorial custom fields were already inventoried."
+  ],
+  "additional_content_export": {
+    "path": "content-archive/wordpress-additional-content.json",
+    "record_count": 77,
+    "counts": {
+      "cached_social_post": 63,
+      "legacy_map": 2,
+      "legacy_map_marker": 2,
+      "legacy_qr_definition": 3,
+      "historical_footer_link": 2,
+      "historical_social_link": 3,
+      "historical_widget": 2
+    },
+    "disposition": "Authored text/public URLs and allowlisted display fields preserved outside web; no database writes and no automatic publication."
+  },
+  "conclusion": "All identified non-post editorial/display content is now accounted for: 77 archival entries in the additional export. Feed caches/relationships duplicate the social records; map notices/geocode caches and other options are operational/configuration data. There are no comments, blogroll links, Gravity Forms definitions, or NextGEN tables in this snapshot."
+}

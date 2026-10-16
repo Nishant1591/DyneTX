@@ -1,0 +1,19 @@
+uuid: 93dd6e55-308f-4bf2-b2b4-4d3365130c84
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_layout_heading
+    - paragraphs.paragraphs_type.dyne_acf_home_hero
+id: paragraph.dyne_acf_home_hero.field_layout_heading
+field_name: field_layout_heading
+entity_type: paragraph
+bundle: dyne_acf_home_hero
+label: Heading
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

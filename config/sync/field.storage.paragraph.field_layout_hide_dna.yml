@@ -1,0 +1,18 @@
+uuid: e5f5513d-e094-4510-aa3a-cb93c588bacf
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_layout_hide_dna
+field_name: field_layout_hide_dna
+entity_type: paragraph
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

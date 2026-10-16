@@ -1,0 +1,10 @@
+uuid: ed7ba7d3-5cf9-48ac-96fa-77c9a8c63d4f
+langcode: en
+status: true
+dependencies: {  }
+id: dyne_pipeline_row
+label: 'Pipeline row'
+icon_uuid: null
+icon_default: null
+description: 'Editable item within a Dyne component.'
+behavior_plugins: {  }

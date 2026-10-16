@@ -1,0 +1,25 @@
+uuid: ba218114-8eaa-4b6d-bcbe-425f56ff6564
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_archived_quotes
+    - node.type.quote
+    - paragraphs.paragraphs_type.dyne_careers_quotes
+id: paragraph.dyne_careers_quotes.field_archived_quotes
+field_name: field_archived_quotes
+entity_type: paragraph
+bundle: dyne_careers_quotes
+label: 'Earlier employee quotes (hidden section)'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      quote: quote
+    auto_create: false
+field_type: entity_reference

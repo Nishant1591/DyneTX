@@ -1,0 +1,10 @@
+uuid: 221d9ddb-6bab-4cab-8806-1861a1988af8
+langcode: en
+status: true
+dependencies: {  }
+id: dyne_policy_list
+label: 'Privacy policies'
+icon_uuid: null
+icon_default: null
+description: null
+behavior_plugins: {  }

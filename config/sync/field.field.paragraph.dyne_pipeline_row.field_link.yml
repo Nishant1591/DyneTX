@@ -1,0 +1,23 @@
+uuid: e0aebccf-2f29-4cda-bd43-21178c10bb72
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_link
+    - paragraphs.paragraphs_type.dyne_pipeline_row
+  module:
+    - link
+id: paragraph.dyne_pipeline_row.field_link
+field_name: field_link
+entity_type: paragraph
+bundle: dyne_pipeline_row
+label: 'Program link'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

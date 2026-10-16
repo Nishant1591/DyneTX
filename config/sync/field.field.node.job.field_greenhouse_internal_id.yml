@@ -1,0 +1,19 @@
+uuid: 418e0cf7-2af6-4d6f-801c-96a970e24daa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_greenhouse_internal_id
+    - node.type.job
+id: node.job.field_greenhouse_internal_id
+field_name: field_greenhouse_internal_id
+entity_type: node
+bundle: job
+label: 'Greenhouse internal job ID'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

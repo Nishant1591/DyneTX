@@ -1,0 +1,10 @@
+uuid: 75981d81-a405-41c3-b917-6c4c617ae5a5
+langcode: en
+status: true
+dependencies: {  }
+id: dyne_drug_detail
+label: 'Drug detail'
+icon_uuid: null
+icon_default: null
+description: null
+behavior_plugins: {  }

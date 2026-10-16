@@ -1,0 +1,16 @@
+uuid: b7d79371-486d-4dae-87dd-241e8e0d4eea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.dyne_acf_latest_news.field_layout_count
+    - field.field.paragraph.dyne_acf_latest_news.field_layout_heading
+    - paragraphs.paragraphs_type.dyne_acf_latest_news
+id: paragraph.dyne_acf_latest_news.default
+targetEntityType: paragraph
+bundle: dyne_acf_latest_news
+mode: default
+content: {  }
+hidden:
+  field_layout_count: true
+  field_layout_heading: true

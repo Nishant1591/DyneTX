@@ -1,0 +1,19 @@
+uuid: 934bd15e-e90b-4619-b938-e99fa29fccfa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_heading
+    - paragraphs.paragraphs_type.dyne_card_item
+id: paragraph.dyne_card_item.field_heading
+field_name: field_heading
+entity_type: paragraph
+bundle: dyne_card_item
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

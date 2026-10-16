@@ -1,0 +1,23 @@
+uuid: 0d6a1f80-505c-43a3-ae62-610a9a179f57
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_native_components
+    - paragraphs.paragraphs_type.dyne_pipeline_table
+id: paragraph.dyne_pipeline_table.field_native_components
+field_name: field_native_components
+entity_type: paragraph
+bundle: dyne_pipeline_table
+label: 'Uses native component fields'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,22 @@
+uuid: c3ff4016-10df-406f-994a-0d190bdcef3d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hero_second_line
+    - node.type.news
+  module:
+    - text
+id: node.news.field_hero_second_line
+field_name: field_hero_second_line
+entity_type: node
+bundle: news
+label: 'Hero second line'
+description: 'Second heading line shown in this page’s hero banner.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text

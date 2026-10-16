@@ -1,0 +1,49 @@
+uuid: 188ba855-7345-430f-bfcd-9063d571e036
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.dyne_acf_press_releases.field_layout_count
+    - field.field.paragraph.dyne_acf_press_releases.field_layout_heading
+    - field.field.paragraph.dyne_acf_press_releases.field_layout_sidebar
+    - field.field.paragraph.dyne_acf_press_releases.field_layout_sidebar_body
+    - paragraphs.paragraphs_type.dyne_acf_press_releases
+  module:
+    - text
+id: paragraph.dyne_acf_press_releases.default
+targetEntityType: paragraph
+bundle: dyne_acf_press_releases
+mode: default
+content:
+  field_layout_count:
+    type: number
+    weight: 3
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_layout_heading:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_layout_sidebar:
+    type: options_select
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_layout_sidebar_body:
+    type: text_textarea
+    weight: 3
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

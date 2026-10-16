@@ -1,0 +1,91 @@
+uuid: 8e6c913a-ff3a-4620-aa9d-f97c85b291c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.news.field_body_class
+    - field.field.node.news.field_body_text
+    - field.field.node.news.field_components
+    - field.field.node.news.field_date_text
+    - field.field.node.news.field_disease
+    - field.field.node.news.field_external_id
+    - field.field.node.news.field_external_url
+    - field.field.node.news.field_hero_classes
+    - field.field.node.news.field_hero_first_line
+    - field.field.node.news.field_hero_image
+    - field.field.node.news.field_hero_mobile_image
+    - field.field.node.news.field_hero_overlay_image
+    - field.field.node.news.field_hero_second_line
+    - field.field.node.news.field_hero_third_level
+    - field.field.node.news.field_image
+    - field.field.node.news.field_legacy_title
+    - field.field.node.news.field_link
+    - field.field.node.news.field_native_presentation
+    - field.field.node.news.field_news_date
+    - field.field.node.news.field_news_file
+    - field.field.node.news.field_news_type
+    - field.field.node.news.field_seo_description
+    - field.field.node.news.field_seo_title
+    - field.field.node.news.field_source_url
+    - field.field.node.news.field_wp_source_data
+    - field.field.node.news.field_wp_source_id
+    - field.field.node.news.field_wp_source_status
+    - field.field.node.news.field_wp_source_type
+    - node.type.news
+  module:
+    - entity_reference_revisions
+    - text
+    - user
+id: node.news.default
+targetEntityType: node
+bundle: news
+mode: default
+content:
+  field_body_text:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_components:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_body_class: true
+  field_date_text: true
+  field_disease: true
+  field_external_id: true
+  field_external_url: true
+  field_hero_classes: true
+  field_hero_first_line: true
+  field_hero_image: true
+  field_hero_mobile_image: true
+  field_hero_overlay_image: true
+  field_hero_second_line: true
+  field_hero_third_level: true
+  field_image: true
+  field_legacy_title: true
+  field_link: true
+  field_native_presentation: true
+  field_news_date: true
+  field_news_file: true
+  field_news_type: true
+  field_seo_description: true
+  field_seo_title: true
+  field_source_url: true
+  field_wp_source_data: true
+  field_wp_source_id: true
+  field_wp_source_status: true
+  field_wp_source_type: true

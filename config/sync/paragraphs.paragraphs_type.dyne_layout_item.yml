@@ -1,0 +1,10 @@
+uuid: d5326d5c-2040-40fb-afb0-2bf374872be3
+langcode: en
+status: true
+dependencies: {  }
+id: dyne_layout_item
+label: 'Layout item / card'
+icon_uuid: null
+icon_default: null
+description: null
+behavior_plugins: {  }

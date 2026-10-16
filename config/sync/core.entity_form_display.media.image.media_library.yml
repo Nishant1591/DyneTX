@@ -1,0 +1,43 @@
+uuid: 59602382-3e5e-4e19-a254-9b340e3f9c77
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.media.media_library
+    - field.field.media.image.field_media_caption
+    - field.field.media.image.field_media_description
+    - field.field.media.image.field_media_image
+    - field.field.media.image.field_wp_attachment_id
+    - image.style.thumbnail
+    - media.type.image
+  module:
+    - image
+id: media.image.media_library
+targetEntityType: media
+bundle: image
+mode: media_library
+content:
+  field_media_image:
+    type: image_image
+    weight: 5
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_media_caption: true
+  field_media_description: true
+  field_wp_attachment_id: true
+  path: true
+  status: true
+  uid: true

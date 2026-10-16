@@ -5,6 +5,10 @@
  * dynetx theme hooks — ports WP dynetxdev2020 custom.js behaviours.
  */
 
+require_once __DIR__ . '/includes/native-metadata.inc';
+require_once __DIR__ . '/includes/native-components.inc';
+require_once __DIR__ . '/includes/native-layouts.inc';
+
 /**
  * Implements hook_preprocess_page().
  */
@@ -16,37 +20,12 @@ function dynetx_preprocess_page(&$variables): void {
   $variables['dyne_phone'] = '781.786.8230';
   $variables['dyne_year'] = date('Y');
   $node = \Drupal::routeMatch()->getParameter('node');
-  $metadata = _dynetx_legacy_metadata($node);
+  $metadata = _dynetx_entity_metadata($node);
   $variables['dyne_legacy'] = !empty($metadata);
   $variables['dyne_hero'] = $metadata['hero'] ?? [];
   $variables['dyne_page_classes'] = _dynetx_legacy_classes($metadata);
   $variables['dyne_is_home'] = \Drupal::service('path.matcher')->isFrontPage();
-  if ($metadata && $node->hasField('field_components')) {
-    foreach ($node->get('field_components')->referencedEntities() as $component) {
-      if ($component->bundle() === 'dyne_hero') {
-        $variables['dyne_hero']['line1'] = $component->get('field_title_line1')->value ?? '';
-        $variables['dyne_hero']['line2'] = $component->get('field_title_line2')->value ?? '';
-        break;
-      }
-    }
-  }
-}
-
-/**
- * Reads the public archive's presentation metadata for the current node.
- */
-function _dynetx_legacy_metadata($node): array {
-  if (!$node instanceof \Drupal\node\NodeInterface) {
-    return [];
-  }
-  static $pages;
-  if (!isset($pages)) {
-    $path = DRUPAL_ROOT . '/modules/custom/dyne_migrate/data/legacy-page-metadata.json';
-    $pages = is_readable($path) ? json_decode(file_get_contents($path), TRUE) : [];
-    $pages = is_array($pages) ? $pages : [];
-  }
-  $alias = \Drupal::service('path_alias.manager')->getAliasByPath('/node/' . $node->id(), $node->language()->getId());
-  return $pages[rtrim($alias, '/') ?: '/home'] ?? [];
+  $variables['dyne_metadata_cache'] = _dynetx_native_metadata_cache($node);
 }
 
 /**
@@ -71,7 +50,7 @@ function dynetx_preprocess_html(&$variables): void {
     'crossorigin' => 'anonymous',
   ], FALSE];
   $node = \Drupal::routeMatch()->getParameter('node');
-  $metadata = _dynetx_legacy_metadata($node);
+  $metadata = _dynetx_entity_metadata($node);
   if (!$metadata) {
     return;
   }
@@ -117,24 +96,18 @@ function dynetx_preprocess_block(&$variables): void {
  */
 function dynetx_preprocess_node(&$variables): void {
   $node = $variables['node'];
-  if ($node->hasField('field_legacy_title') && !$node->get('field_legacy_title')->isEmpty()) {
-    $variables['label'] = $node->get('field_legacy_title')->value;
-  }
+  $variables['label'] = _dynetx_native_title($node);
+  $variables['dyne_native_details'] = _dynetx_native_node_details($node);
+  $variables['dyne_job_department'] = $node->hasField('field_department') && $node->get('field_department')->entity ? $node->get('field_department')->entity->label() : '';
+  $variables['dyne_job_location'] = $node->hasField('field_location') && $node->get('field_location')->entity ? $node->get('field_location')->entity->label() : '';
+  $variables['dyne_apply_url'] = _dynetx_component_link($node, 'field_application_link');
   $variables['dyne_leader_role'] = $node->hasField('field_role') ? $node->get('field_role')->value : '';
-  $metadata = _dynetx_legacy_metadata($node);
+  $metadata = _dynetx_entity_metadata($node);
   $variables['dyne_legacy'] = !empty($metadata);
   $variables['dyne_hero'] = $metadata['hero'] ?? [];
   $variables['dyne_page_classes'] = _dynetx_legacy_classes($metadata);
   $variables['dyne_is_home'] = \Drupal::service('path.matcher')->isFrontPage();
-  if ($metadata && $node->hasField('field_components')) {
-    foreach ($node->get('field_components')->referencedEntities() as $component) {
-      if ($component->bundle() === 'dyne_hero') {
-        $variables['dyne_hero']['line1'] = $component->get('field_title_line1')->value ?? '';
-        $variables['dyne_hero']['line2'] = $component->get('field_title_line2')->value ?? '';
-        break;
-      }
-    }
-  }
+  $variables['dyne_metadata_cache'] = _dynetx_native_metadata_cache($node);
   if ($node->bundle() === 'pipeline_program') {
     $variables['#attached']['library'][] = 'dynetx/global';
   }
@@ -145,7 +118,8 @@ function dynetx_preprocess_node(&$variables): void {
  * in PHP (Twig has no json_decode filter in Drupal core).
  */
 function _dyne_json_field($paragraph, string $field): array {
-  if (!$paragraph->hasField($field) || $paragraph->get($field)->isEmpty()) {
+  // JSON is read only when viewing an archived pre-upgrade Paragraph revision.
+  if (($paragraph->hasField('field_native_components') && $paragraph->get('field_native_components')->value) || !$paragraph->hasField($field) || $paragraph->get($field)->isEmpty()) {
     return [];
   }
   $decoded = json_decode($paragraph->get($field)->value, TRUE);
@@ -178,12 +152,13 @@ function _dynetx_job_groups(): array {
   $locations = [];
 
   foreach ($storage->loadMultiple($ids) as $job) {
-    $department = trim((string) $job->get('field_department_group')->value);
+    $department = $job->hasField('field_department') && $job->get('field_department')->entity ? $job->get('field_department')->entity->label() : '';
+    $department = preg_replace('/^\s*\d+[A-Z]*\s*-\s*/', '', $department);
     if ($department === '') {
       $department = trim((string) $job->get('field_department_text')->value);
     }
     $department_key = mb_strtoupper($department);
-    $location = trim((string) $job->get('field_location_text')->value);
+    $location = $job->hasField('field_location') && $job->get('field_location')->entity ? $job->get('field_location')->entity->label() : trim((string) $job->get('field_location_text')->value);
     if (!isset($groups[$department_key])) {
       $groups[$department_key] = [
         'label' => $department,
@@ -233,7 +208,7 @@ function _dynetx_job_groups(): array {
 function dynetx_preprocess_paragraph(&$variables): void {
   /** @var \Drupal\paragraphs\Entity\Paragraph $paragraph */
   $paragraph = $variables['paragraph'];
-  $variables['dyne_legacy'] = !empty(_dynetx_legacy_metadata(\Drupal::routeMatch()->getParameter('node')));
+  $variables['dyne_legacy'] = !empty(_dynetx_entity_metadata(\Drupal::routeMatch()->getParameter('node')));
   $variables['dyne_items'] = _dyne_json_field($paragraph, 'field_items_json');
   $variables['dyne_rows'] = _dyne_json_field($paragraph, 'field_rows_json');
   $variables['dyne_sections'] = _dyne_json_field($paragraph, 'field_sections_json');
@@ -251,11 +226,22 @@ function dynetx_preprocess_paragraph(&$variables): void {
     $variables['dyne_job_locations'] = $job_data['locations'];
     // A new/edited job must invalidate the cached listing, including empty ones.
     $cache = new \Drupal\Core\Cache\CacheableMetadata();
-    $cache->setCacheTags(\Drupal::entityTypeManager()->getDefinition('node')->getListCacheTags());
+    $cache->setCacheTags(array_merge(\Drupal::entityTypeManager()->getDefinition('node')->getListCacheTags(), ['taxonomy_term_list']));
     $cache->setCacheContexts(['user.permissions', 'user.node_grants:view', 'languages:language_content']);
     // Render this empty dependency in Twig so cache metadata bubbles to both
     // the Paragraph and page even though the job data is plain arrays.
     $variables['dyne_job_cache'] = ['#markup' => ''];
     $cache->applyTo($variables['dyne_job_cache']);
+  }
+  _dynetx_native_components($variables);
+  _dynetx_native_lists_preprocess($variables);
+  _dynetx_native_layout_preprocess($variables);
+}
+
+
+/** Implements hook_theme_suggestions_paragraph_alter(). */
+function dynetx_theme_suggestions_paragraph_alter(array &$suggestions, array $variables): void {
+  if (str_starts_with($variables['elements']['#paragraph']->bundle(), 'dyne_acf_')) {
+    $suggestions[] = 'paragraph__dyne_layout';
   }
 }

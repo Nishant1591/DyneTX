@@ -1,0 +1,23 @@
+uuid: 815e4a34-905c-4bd6-b14b-b784f3856dde
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_open_position_weight
+    - node.type.job
+id: node.job.field_open_position_weight
+field_name: field_open_position_weight
+entity_type: node
+bundle: job
+label: 'Open position order within department'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

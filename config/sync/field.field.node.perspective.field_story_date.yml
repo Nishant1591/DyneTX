@@ -1,0 +1,21 @@
+uuid: 55857fb7-8b55-4d05-b49d-76b2436205fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_story_date
+    - node.type.perspective
+  module:
+    - datetime
+id: node.perspective.field_story_date
+field_name: field_story_date
+entity_type: node
+bundle: perspective
+label: 'Publication date'
+description: 'Publication date used to sort perspectives.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

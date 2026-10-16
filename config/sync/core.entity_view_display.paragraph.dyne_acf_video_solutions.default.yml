@@ -1,0 +1,20 @@
+uuid: abed2898-89fd-4185-810e-2101aedc86a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.dyne_acf_video_solutions.field_layout_body
+    - field.field.paragraph.dyne_acf_video_solutions.field_layout_disable_accordion
+    - field.field.paragraph.dyne_acf_video_solutions.field_layout_heading
+    - field.field.paragraph.dyne_acf_video_solutions.field_layout_video
+    - paragraphs.paragraphs_type.dyne_acf_video_solutions
+id: paragraph.dyne_acf_video_solutions.default
+targetEntityType: paragraph
+bundle: dyne_acf_video_solutions
+mode: default
+content: {  }
+hidden:
+  field_layout_body: true
+  field_layout_disable_accordion: true
+  field_layout_heading: true
+  field_layout_video: true

@@ -1,0 +1,22 @@
+uuid: cd796671-4bc8-44d2-82ca-fcead2bdc2cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_layout_symptoms
+    - paragraphs.paragraphs_type.dyne_acf_program_focus
+  module:
+    - text
+id: paragraph.dyne_acf_program_focus.field_layout_symptoms
+field_name: field_layout_symptoms
+entity_type: paragraph
+bundle: dyne_acf_program_focus
+label: Symptoms
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

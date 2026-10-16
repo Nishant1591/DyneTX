@@ -1,0 +1,23 @@
+{
+  "before_counts": {
+    "nodes": 344,
+    "paragraphs": 234,
+    "files": 27,
+    "menus": 57,
+    "aliases": 352
+  },
+  "after_counts": {
+    "nodes": 458,
+    "paragraphs": 248,
+    "files": 417,
+    "menus": 64,
+    "aliases": 466
+  },
+  "changes": [],
+  "legacy_ledger_unchanged": true,
+  "new_node_status_counts": {
+    "0": 112,
+    "1": 2
+  },
+  "complete": true
+}

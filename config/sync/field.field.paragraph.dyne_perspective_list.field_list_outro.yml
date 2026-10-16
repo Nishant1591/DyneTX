@@ -1,0 +1,22 @@
+uuid: fb9ec8d8-151a-49d4-8194-6c761059b391
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_list_outro
+    - paragraphs.paragraphs_type.dyne_perspective_list
+  module:
+    - text
+id: paragraph.dyne_perspective_list.field_list_outro
+field_name: field_list_outro
+entity_type: paragraph
+bundle: dyne_perspective_list
+label: 'Following content'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

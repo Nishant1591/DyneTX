@@ -1,0 +1,23 @@
+uuid: a11bbf67-0d3f-495b-9f0b-5f8cf52e3ca8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_dynamic_jobs
+    - paragraphs.paragraphs_type.dyne_jobs_list
+id: paragraph.dyne_jobs_list.field_dynamic_jobs
+field_name: field_dynamic_jobs
+entity_type: paragraph
+bundle: dyne_jobs_list
+label: 'List published job records dynamically'
+description: 'Use published job content and group it by careers department instead of the static items JSON.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

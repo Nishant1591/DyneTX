@@ -1,0 +1,10 @@
+uuid: d80be8d4-fb9f-40a7-8ff8-492e4a8fe755
+langcode: en
+status: true
+dependencies: {  }
+id: dyne_acf_wysiwyg
+label: 'Formatted text'
+icon_uuid: null
+icon_default: null
+description: null
+behavior_plugins: {  }

@@ -1,0 +1,19 @@
+uuid: f12abbf7-c2d4-4251-9674-31ddba5cb16e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_video_url
+    - paragraphs.paragraphs_type.dyne_video
+id: paragraph.dyne_video.field_video_url
+field_name: field_video_url
+entity_type: paragraph
+bundle: dyne_video
+label: 'Video URL'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

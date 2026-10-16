@@ -1,0 +1,18 @@
+uuid: bebd9bd3-71a4-4829-bb7a-8c22f816563f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.dyne_acf_stay_connected.field_layout_body
+    - field.field.paragraph.dyne_acf_stay_connected.field_layout_heading
+    - field.field.paragraph.dyne_acf_stay_connected.field_layout_show_form
+    - paragraphs.paragraphs_type.dyne_acf_stay_connected
+id: paragraph.dyne_acf_stay_connected.default
+targetEntityType: paragraph
+bundle: dyne_acf_stay_connected
+mode: default
+content: {  }
+hidden:
+  field_layout_body: true
+  field_layout_heading: true
+  field_layout_show_form: true

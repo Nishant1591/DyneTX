@@ -1,0 +1,24 @@
+uuid: 09f97091-0bc2-42e5-9314-ac00b26b1853
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hero_overlay_image
+    - media.type.image
+    - node.type.leader
+id: node.leader.field_hero_overlay_image
+field_name: field_hero_overlay_image
+entity_type: node
+bundle: leader
+label: 'Hero overlay image'
+description: 'Optional transparent decoration layered over the hero background.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+field_type: entity_reference

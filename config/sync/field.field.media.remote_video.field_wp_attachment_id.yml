@@ -1,0 +1,23 @@
+uuid: 23fbf032-9e0d-4645-ae59-39eae36b16fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_wp_attachment_id
+    - media.type.remote_video
+id: media.remote_video.field_wp_attachment_id
+field_name: field_wp_attachment_id
+entity_type: media
+bundle: remote_video
+label: 'Original WordPress attachment ID'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

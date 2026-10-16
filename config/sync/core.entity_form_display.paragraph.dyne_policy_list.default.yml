@@ -1,0 +1,25 @@
+uuid: 54cc50db-36cf-4dbe-a3de-ee394c352a47
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.dyne_policy_list.field_policies
+    - paragraphs.paragraphs_type.dyne_policy_list
+id: paragraph.dyne_policy_list.default
+targetEntityType: paragraph
+bundle: dyne_policy_list
+mode: default
+content:
+  field_policies:
+    type: entity_reference_autocomplete
+    weight: 0
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

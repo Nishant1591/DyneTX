@@ -1,0 +1,25 @@
+uuid: 2271f0f6-d0a2-440e-805d-1415c1a072b8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_layout_items
+    - paragraphs.paragraphs_type.dyne_acf_two_column
+  module:
+    - entity_reference_revisions
+id: paragraph.dyne_acf_two_column.field_layout_items
+field_name: field_layout_items
+entity_type: paragraph
+bundle: dyne_acf_two_column
+label: Items
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      dyne_layout_item: dyne_layout_item
+field_type: entity_reference_revisions

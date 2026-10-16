@@ -1,0 +1,20 @@
+{
+  "source_post_records": 1747,
+  "additional_archive_entries": 77,
+  "drupal_nodes": 458,
+  "published": 346,
+  "unpublished": 112,
+  "original_entities_unchanged": true,
+  "all_available_content_verified": true,
+  "http_checks_passed": 534,
+  "known_unavailable_pdfs": 12,
+  "managed_attachment_originals": 417,
+  "eligible_source_media_files": 2528,
+  "local_media_files": 2539,
+  "local_media_bytes": 2472003714,
+  "repeat_import_created_nodes": 0,
+  "repeat_import_created_files": 0,
+  "repeat_import_created_menus": 0,
+  "inventory": "output/wordpress-content-inventory.html",
+  "database_export": "output/dyne-drupal-content-complete-2026-10-14.sql.gz"
+}

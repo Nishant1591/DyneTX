@@ -1,0 +1,22 @@
+uuid: 9302117c-8f75-4057-9d11-4ee0b568f529
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_body_text
+    - paragraphs.paragraphs_type.dyne_rich_text
+  module:
+    - text
+id: paragraph.dyne_rich_text.field_body_text
+field_name: field_body_text
+entity_type: paragraph
+bundle: dyne_rich_text
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

@@ -1,0 +1,10 @@
+uuid: 9a908797-89e5-427c-be57-d8a7610ff2a0
+langcode: en
+status: true
+dependencies: {  }
+id: dyne_acf_two_column
+label: 'Two-column text and image'
+icon_uuid: null
+icon_default: null
+description: null
+behavior_plugins: {  }

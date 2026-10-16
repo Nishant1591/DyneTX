@@ -1,0 +1,62 @@
+uuid: 99386d13-28a5-403a-a03c-d80f0bc294a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.dyne_rich_text.field_body_text
+    - field.field.paragraph.dyne_rich_text.field_heading
+    - field.field.paragraph.dyne_rich_text.field_icon
+    - field.field.paragraph.dyne_rich_text.field_link
+    - field.field.paragraph.dyne_rich_text.field_style
+    - paragraphs.paragraphs_type.dyne_rich_text
+  module:
+    - link
+    - text
+id: paragraph.dyne_rich_text.default
+targetEntityType: paragraph
+bundle: dyne_rich_text
+mode: default
+content:
+  field_body_text:
+    type: text_textarea
+    weight: 0
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_heading:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_icon:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_link:
+    type: link_default
+    weight: 3
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_style:
+    type: string_textfield
+    weight: 4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

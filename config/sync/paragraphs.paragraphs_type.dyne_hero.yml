@@ -1,0 +1,10 @@
+uuid: b5143d69-4770-4f7d-88f6-050ef720b7d1
+langcode: en
+status: true
+dependencies: {  }
+id: dyne_hero
+label: 'Hero banner'
+icon_uuid: null
+icon_default: null
+description: null
+behavior_plugins: {  }

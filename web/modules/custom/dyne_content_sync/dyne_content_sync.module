@@ -1,0 +1,29 @@
+<?php
+
+/**
+ * @file
+ * Feed scheduling; no network calls occur in normal page rendering.
+ */
+
+/**
+ * Implements hook_cron().
+ */
+function dyne_content_sync_cron(): void {
+  $config = \Drupal::config('dyne_content_sync.settings');
+  foreach (['greenhouse', 'gcs'] as $provider) {
+    if (!$config->get($provider . '_enabled')) {
+      continue;
+    }
+    $last = (int) \Drupal::state()->get('dyne_content_sync.last_queued.' . $provider, 0);
+    if ($last + max(300, (int) $config->get('interval')) > time()) {
+      continue;
+    }
+    try {
+      \Drupal::service('dyne_content_sync.synchronizer')->refresh($provider, FALSE);
+    }
+    catch (\Throwable $error) {
+      // Never log request URLs: the GCS client identifier is sensitive.
+      \Drupal::logger('dyne_content_sync')->error('@provider refresh failed; existing content retained. @reason', ['@provider' => $provider, '@reason' => $error instanceof \UnexpectedValueException ? $error->getMessage() : get_class($error)]);
+    }
+  }
+}

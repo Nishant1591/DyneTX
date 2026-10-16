@@ -1,0 +1,37 @@
+{
+  "original_nodes_retained": 458,
+  "current_nodes": 469,
+  "media": 422,
+  "files": 424,
+  "menus_preserved": 64,
+  "aliases_preserved": 466,
+  "component_ids_changed_on": [
+    {
+      "nid": "17",
+      "title": "Careers + Culture"
+    },
+    {
+      "nid": "19",
+      "title": "Perspectives"
+    },
+    {
+      "nid": "21",
+      "title": "Privacy Policy"
+    }
+  ],
+  "unchanged_original_body_title_status_fields": true,
+  "unexpected_changes": [],
+  "node_types": {
+    "dyne_page": 59,
+    "job": 49,
+    "leader": 31,
+    "news": 306,
+    "perspective": 13,
+    "quote": 9,
+    "privacy_policy": 2
+  },
+  "status": {
+    "1": 357,
+    "0": 112
+  }
+}

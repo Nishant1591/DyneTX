@@ -1,0 +1,91 @@
+uuid: 65a6dc3d-e3db-45d7-b3ac-f5711883aad6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.privacy_policy.field_body_text
+    - field.field.node.privacy_policy.field_policy_anchor
+    - field.field.node.privacy_policy.field_policy_updated
+    - field.field.node.privacy_policy.field_wp_source_id
+    - node.type.privacy_policy
+  module:
+    - datetime
+    - path
+    - text
+id: node.privacy_policy.default
+targetEntityType: node
+bundle: privacy_policy
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_body_text:
+    type: text_textarea
+    weight: 8
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_policy_anchor:
+    type: string_textfield
+    weight: 11
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_policy_updated:
+    type: datetime_default
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 120
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_legacy_title: true
+  field_wp_source_data: true
+  field_wp_source_id: true
+  field_wp_source_status: true
+  field_wp_source_type: true
+  promote: true
+  sticky: true

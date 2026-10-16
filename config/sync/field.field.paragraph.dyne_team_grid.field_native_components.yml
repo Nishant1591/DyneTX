@@ -1,0 +1,23 @@
+uuid: 174935d3-29bb-46f6-a533-5b0800ea9152
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_native_components
+    - paragraphs.paragraphs_type.dyne_team_grid
+id: paragraph.dyne_team_grid.field_native_components
+field_name: field_native_components
+entity_type: paragraph
+bundle: dyne_team_grid
+label: 'Uses native component fields'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,23 @@
+uuid: befe8bea-bce8-4a3b-8ab9-73797b5501e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_weight
+    - node.type.leader
+id: node.leader.field_weight
+field_name: field_weight
+entity_type: node
+bundle: leader
+label: 'Presentation order'
+description: 'Order within team listings; lower numbers appear first.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

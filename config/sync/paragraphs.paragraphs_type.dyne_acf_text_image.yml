@@ -1,0 +1,10 @@
+uuid: 2895a82d-ea62-4f8f-9b4c-58e289712a1d
+langcode: en
+status: true
+dependencies: {  }
+id: dyne_acf_text_image
+label: 'Text and image'
+icon_uuid: null
+icon_default: null
+description: null
+behavior_plugins: {  }

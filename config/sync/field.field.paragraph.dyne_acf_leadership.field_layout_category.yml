@@ -1,0 +1,24 @@
+uuid: 22aaedf7-382c-4a2a-8714-f87a3ae2c031
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_layout_category
+    - paragraphs.paragraphs_type.dyne_acf_leadership
+    - taxonomy.vocabulary.leader_type
+id: paragraph.dyne_acf_leadership.field_layout_category
+field_name: field_layout_category
+entity_type: paragraph
+bundle: dyne_acf_leadership
+label: Category
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      leader_type: leader_type
+field_type: entity_reference

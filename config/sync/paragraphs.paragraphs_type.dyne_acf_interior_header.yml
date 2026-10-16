@@ -1,0 +1,10 @@
+uuid: 0a11b383-e268-4886-b60d-5ca061cc3440
+langcode: en
+status: true
+dependencies: {  }
+id: dyne_acf_interior_header
+label: 'Interior page header'
+icon_uuid: null
+icon_default: null
+description: null
+behavior_plugins: {  }

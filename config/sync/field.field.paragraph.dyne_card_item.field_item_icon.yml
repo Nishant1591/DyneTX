@@ -1,0 +1,24 @@
+uuid: 2653f9b8-f02a-42f8-b580-b230acf5d24e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_item_icon
+    - media.type.image
+    - paragraphs.paragraphs_type.dyne_card_item
+id: paragraph.dyne_card_item.field_item_icon
+field_name: field_item_icon
+entity_type: paragraph
+bundle: dyne_card_item
+label: 'Icon or image'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+field_type: entity_reference

@@ -1,0 +1,23 @@
+uuid: 70c41b9e-3323-417a-835f-fa97e6b0cebf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_native_components
+    - paragraphs.paragraphs_type.dyne_jobs_list
+id: paragraph.dyne_jobs_list.field_native_components
+field_name: field_native_components
+entity_type: paragraph
+bundle: dyne_jobs_list
+label: 'Uses native component fields'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

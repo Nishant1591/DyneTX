@@ -1,0 +1,16 @@
+uuid: fe7e53fd-f908-4fc5-9852-39e938014b7a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.dyne_acf_team_highlights.field_layout_heading
+    - field.field.paragraph.dyne_acf_team_highlights.field_layout_team
+    - paragraphs.paragraphs_type.dyne_acf_team_highlights
+id: paragraph.dyne_acf_team_highlights.default
+targetEntityType: paragraph
+bundle: dyne_acf_team_highlights
+mode: default
+content: {  }
+hidden:
+  field_layout_heading: true
+  field_layout_team: true

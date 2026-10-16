@@ -1,0 +1,16 @@
+uuid: ec79a69c-2021-4f3b-83e9-98e5b992a8e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.dyne_perspective_list.field_list_intro
+    - field.field.paragraph.dyne_perspective_list.field_list_outro
+    - paragraphs.paragraphs_type.dyne_perspective_list
+id: paragraph.dyne_perspective_list.default
+targetEntityType: paragraph
+bundle: dyne_perspective_list
+mode: default
+content: {  }
+hidden:
+  field_list_intro: true
+  field_list_outro: true

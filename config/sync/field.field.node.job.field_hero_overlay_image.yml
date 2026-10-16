@@ -1,0 +1,24 @@
+uuid: a95a5271-68a1-4cf3-925e-ce8ab255ca39
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hero_overlay_image
+    - media.type.image
+    - node.type.job
+id: node.job.field_hero_overlay_image
+field_name: field_hero_overlay_image
+entity_type: node
+bundle: job
+label: 'Hero overlay image'
+description: 'Optional transparent decoration layered over the hero background.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+field_type: entity_reference

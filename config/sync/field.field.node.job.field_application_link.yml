@@ -1,0 +1,23 @@
+uuid: 7ade0a3d-8cca-46f4-a691-e639f9d8deb5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_application_link
+    - node.type.job
+  module:
+    - link
+id: node.job.field_application_link
+field_name: field_application_link
+entity_type: node
+bundle: job
+label: 'Application URL'
+description: 'Application destination used by the job page.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 0
+  link_type: 16
+field_type: link

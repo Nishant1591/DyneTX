@@ -1,0 +1,19 @@
+uuid: 7ae882bc-922a-4b22-8627-3151800d4378
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_legacy_title
+    - node.type.job
+id: node.job.field_legacy_title
+field_name: field_legacy_title
+entity_type: node
+bundle: job
+label: 'Full legacy title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

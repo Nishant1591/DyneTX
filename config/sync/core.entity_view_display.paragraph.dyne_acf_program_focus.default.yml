@@ -1,0 +1,28 @@
+uuid: 619f160f-1d02-446f-abc0-5fa6ece6e1b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.dyne_acf_program_focus.field_layout_anchor
+    - field.field.paragraph.dyne_acf_program_focus.field_layout_body
+    - field.field.paragraph.dyne_acf_program_focus.field_layout_gene
+    - field.field.paragraph.dyne_acf_program_focus.field_layout_heading
+    - field.field.paragraph.dyne_acf_program_focus.field_layout_hide_dna
+    - field.field.paragraph.dyne_acf_program_focus.field_layout_link
+    - field.field.paragraph.dyne_acf_program_focus.field_layout_symptoms
+    - field.field.paragraph.dyne_acf_program_focus.field_layout_treatment
+    - paragraphs.paragraphs_type.dyne_acf_program_focus
+id: paragraph.dyne_acf_program_focus.default
+targetEntityType: paragraph
+bundle: dyne_acf_program_focus
+mode: default
+content: {  }
+hidden:
+  field_layout_anchor: true
+  field_layout_body: true
+  field_layout_gene: true
+  field_layout_heading: true
+  field_layout_hide_dna: true
+  field_layout_link: true
+  field_layout_symptoms: true
+  field_layout_treatment: true

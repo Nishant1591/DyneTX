@@ -1,0 +1,22 @@
+uuid: 5cb8dac3-a3f7-4b13-9704-158865fb5112
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_list_intro
+    - paragraphs.paragraphs_type.dyne_perspective_list
+  module:
+    - text
+id: paragraph.dyne_perspective_list.field_list_intro
+field_name: field_list_intro
+entity_type: paragraph
+bundle: dyne_perspective_list
+label: Introduction
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

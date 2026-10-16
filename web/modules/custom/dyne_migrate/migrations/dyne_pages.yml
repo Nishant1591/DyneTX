@@ -1,31 +1,14 @@
 id: dyne_pages
-label: 'Dyne pages (WP page-sitemap)'
+label: 'Dyne complete WordPress archive: pages'
 migration_group: dyne
+migration_tags:
+  - Dyne archive
 source:
-  plugin: csv
-  path: 'modules/custom/dyne_migrate/data/pages.csv'
-  header_offset: 0
-  ids:
-    - Slug
-  fields:
-    - name: Slug
-      label: 'Slug'
-    - name: Title
-      label: 'Title'
-    - name: WP URL
-      label: 'WP URL'
-    - name: Drupal path
-      label: 'Drupal path'
+  plugin: dyne_archive
+  bundle: dyne_page
+  track_changes: true
 process:
-  title: Title
-  path/alias: Drupal path
-  body/value: Title
-  body/format:
-    plugin: default_value
-    default_value: full_html
-  type:
-    plugin: default_value
-    default_value: page
+  record: record
 destination:
-  plugin: 'entity:node'
+  plugin: dyne_archive_node
 migration_dependencies: {}

@@ -1,0 +1,19 @@
+uuid: ad724a3b-b955-45fa-99a4-6e463b7ffb68
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_layout_gene
+    - paragraphs.paragraphs_type.dyne_acf_program_focus
+id: paragraph.dyne_acf_program_focus.field_layout_gene
+field_name: field_layout_gene
+entity_type: paragraph
+bundle: dyne_acf_program_focus
+label: Gene
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

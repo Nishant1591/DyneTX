@@ -1,0 +1,23 @@
+uuid: dbc8aa0c-ede4-456a-9eca-e54ac2dbce2a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_native_components
+    - paragraphs.paragraphs_type.dyne_news_list
+id: paragraph.dyne_news_list.field_native_components
+field_name: field_native_components
+entity_type: paragraph
+bundle: dyne_news_list
+label: 'Uses native component fields'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

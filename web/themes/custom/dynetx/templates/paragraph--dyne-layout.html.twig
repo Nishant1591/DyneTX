@@ -1,0 +1,35 @@
+{{ dyne_layout_cache }}
+{% set layout = dyne_layout %}
+<section{{ attributes.addClass('container-fluid', 'section', 'dyne-native-layout', layout.background, layout.hide_dna ? 'no-dna' : '').setAttribute('id', layout.anchor ?: 'layout-' ~ paragraph.id()) }}>
+  {% if layout.background_image.url %}<div class="bg-img"><img src="{{ layout.background_image.url }}" alt="{{ layout.background_image.alt }}" loading="lazy"></div>{% endif %}
+  <div class="container{{ layout.alignment ? ' text-' ~ layout.alignment : '' }}">
+    {% if layout.heading %}<h2>{{ layout.heading }}</h2>{% endif %}
+    {% if layout.type in ['dyne_acf_home_hero', 'dyne_acf_interior_header'] and layout.image.url %}<img class="img-fluid" src="{{ layout.image.url }}" alt="{{ layout.image.alt }}">{% endif %}
+    <div class="row"><div class="{{ layout.type in ['dyne_acf_text_image', 'dyne_acf_two_column'] ? 'col-md-6' : 'col-12' }}">{% if layout.type != 'dyne_acf_video_solutions' or layout.disable_accordion %}{{ layout.body }}{% endif %}
+      {% if layout.gene %}<p><strong>{{ 'Gene:'|t }}</strong> {{ layout.gene }}</p>{% endif %}
+      {{ layout.symptoms }}{{ layout.treatment }}
+      {% for link in layout.link %}<a class="btn btn-primary" href="{{ link.url }}">{{ link.title }}</a>{% endfor %}
+    </div>
+    {% if layout.type in ['dyne_acf_text_image', 'dyne_acf_two_column'] and layout.image.url %}<figure class="col-md-6"><img class="img-fluid" src="{{ layout.image.url }}" alt="{{ layout.image.alt }}" loading="lazy">{% if layout.caption %}<figcaption>{{ layout.caption }}</figcaption>{% endif %}</figure>{% endif %}</div>
+    {% if layout.video.render %}{{ layout.video.render }}{% endif %}
+    {% if layout.type == 'dyne_acf_video_solutions' and not layout.disable_accordion and layout.body %}<details><summary>{{ 'About this video'|t }}</summary>{{ layout.body }}</details>{% endif %}
+    {% if layout.items %}<div class="row">
+      {% for item in layout.items %}<article class="col-md-6 card">
+        {% if item.image.url %}<img class="card-img-top" src="{{ item.image.url }}" alt="{{ item.image.alt }}" loading="lazy">{% endif %}
+        <div class="card-body">{% if item.heading %}<h3>{{ item.heading }}</h3>{% endif %}{{ item.body }}{% if item.caption %}<p>{{ item.caption }}</p>{% endif %}{% if item.link %}<a class="btn btn-primary" href="{{ item.link.url }}">{{ item.link.title }}</a>{% endif %}</div>
+      </article>{% endfor %}
+    </div>{% endif %}
+    {% if layout.records %}<div class="row">{% if layout.sidebar in ['left', 'right'] %}<aside class="col-lg-4 {{ layout.sidebar == 'left' ? 'order-lg-first' : 'order-lg-last' }}">{{ layout.sidebar_body }}</aside><div class="col-lg-8"><div class="row">{% endif %}
+      {% for record in layout.records %}<article class="col-md-6 card"><div class="card-body">
+        {% if record.image.url %}<img class="img-fluid" src="{{ record.image.url }}" alt="{{ record.image.alt }}" loading="lazy">{% endif %}
+        {% if layout.type == 'dyne_acf_testimonials' %}<blockquote>{{ record.body }}</blockquote><p>{{ record.title }}</p>{% else %}
+          {% if record.date %}<p>{{ record.date }}</p>{% endif %}<h3><a href="{{ record.url }}">{{ record.title }}</a></h3>{% if record.role %}<p>{{ record.role }}</p>{% endif %}
+        {% endif %}
+      </div></article>{% endfor %}
+    {% if layout.sidebar in ['left', 'right'] %}</div></div>{% endif %}</div>{% endif %}
+    {% for group in layout.jobs %}<h3>{{ group.label }}</h3><ul>{% for job in group.jobs %}<li><a href="{{ job.url }}">{{ job.title }}</a> — {{ job.location }}</li>{% endfor %}</ul>{% endfor %}
+    {% if layout.links %}<ul>{% for link in layout.links %}<li><a href="{{ link.url }}">{{ link.title }}</a></li>{% endfor %}</ul>{% endif %}
+    {% for link in layout.map %}<p><a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">{{ link.title }}</a></p>{% endfor %}
+    {% if layout.show_form %}<div data-dyne-onetrust-form></div>{% endif %}
+  </div>
+</section>

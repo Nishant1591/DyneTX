@@ -1,0 +1,21 @@
+uuid: 989d72f1-8b6e-4496-af51-ccf5c00bbf48
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_policy_updated
+    - node.type.privacy_policy
+  module:
+    - datetime
+id: node.privacy_policy.field_policy_updated
+field_name: field_policy_updated
+entity_type: node
+bundle: privacy_policy
+label: 'Last updated'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

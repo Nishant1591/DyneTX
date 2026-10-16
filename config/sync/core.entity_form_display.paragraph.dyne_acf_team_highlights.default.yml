@@ -1,0 +1,34 @@
+uuid: 96052b62-fbef-4b2e-97c7-70a388698cd2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.dyne_acf_team_highlights.field_layout_heading
+    - field.field.paragraph.dyne_acf_team_highlights.field_layout_team
+    - paragraphs.paragraphs_type.dyne_acf_team_highlights
+id: paragraph.dyne_acf_team_highlights.default
+targetEntityType: paragraph
+bundle: dyne_acf_team_highlights
+mode: default
+content:
+  field_layout_heading:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_layout_team:
+    type: entity_reference_autocomplete
+    weight: 2
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,23 @@
+uuid: 8053abe5-035a-4728-90fc-a85c464ace52
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_wp_source_id
+    - node.type.quote
+id: node.quote.field_wp_source_id
+field_name: field_wp_source_id
+entity_type: node
+bundle: quote
+label: 'WordPress source ID'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

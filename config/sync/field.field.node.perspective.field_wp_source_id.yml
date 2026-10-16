@@ -1,0 +1,23 @@
+uuid: ff185da0-6d36-4155-a807-09198c11071c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_wp_source_id
+    - node.type.perspective
+id: node.perspective.field_wp_source_id
+field_name: field_wp_source_id
+entity_type: node
+bundle: perspective
+label: 'Original WordPress record ID'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

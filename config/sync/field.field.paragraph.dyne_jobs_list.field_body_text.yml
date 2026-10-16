@@ -1,0 +1,22 @@
+uuid: 96e4cd82-43e9-470c-b7a0-f96a1de57e59
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_body_text
+    - paragraphs.paragraphs_type.dyne_jobs_list
+  module:
+    - text
+id: paragraph.dyne_jobs_list.field_body_text
+field_name: field_body_text
+entity_type: paragraph
+bundle: dyne_jobs_list
+label: 'Section introduction'
+description: 'Optional introduction displayed above the job filters.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

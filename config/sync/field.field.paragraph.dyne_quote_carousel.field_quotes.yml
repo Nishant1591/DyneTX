@@ -1,0 +1,25 @@
+uuid: 82717009-a7c6-4c5c-8366-0490c9cbcb4c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_quotes
+    - node.type.quote
+    - paragraphs.paragraphs_type.dyne_quote_carousel
+id: paragraph.dyne_quote_carousel.field_quotes
+field_name: field_quotes
+entity_type: paragraph
+bundle: dyne_quote_carousel
+label: 'Quotes (drag to order)'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      quote: quote
+    auto_create: false
+field_type: entity_reference

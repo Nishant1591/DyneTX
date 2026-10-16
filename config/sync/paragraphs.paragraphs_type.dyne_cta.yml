@@ -1,0 +1,10 @@
+uuid: 603f0df3-f315-4655-b910-fc2a7ab7de81
+langcode: en
+status: true
+dependencies: {  }
+id: dyne_cta
+label: 'CTA band'
+icon_uuid: null
+icon_default: null
+description: null
+behavior_plugins: {  }

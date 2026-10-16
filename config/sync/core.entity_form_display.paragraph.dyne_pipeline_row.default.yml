@@ -1,0 +1,70 @@
+uuid: 7edf7f58-4ead-4040-bbbe-cbd9454ac471
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.dyne_pipeline_row.field_link
+    - field.field.paragraph.dyne_pipeline_row.field_row_disease
+    - field.field.paragraph.dyne_pipeline_row.field_row_phase
+    - field.field.paragraph.dyne_pipeline_row.field_row_prevalence
+    - field.field.paragraph.dyne_pipeline_row.field_row_status
+    - field.field.paragraph.dyne_pipeline_row.field_row_target
+    - paragraphs.paragraphs_type.dyne_pipeline_row
+  module:
+    - link
+id: paragraph.dyne_pipeline_row.default
+targetEntityType: paragraph
+bundle: dyne_pipeline_row
+mode: default
+content:
+  field_link:
+    type: link_default
+    weight: 6
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_row_disease:
+    type: string_textarea
+    weight: 6
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_row_phase:
+    type: string_textarea
+    weight: 6
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_row_prevalence:
+    type: string_textarea
+    weight: 6
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_row_status:
+    type: string_textarea
+    weight: 6
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_row_target:
+    type: string_textarea
+    weight: 6
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,10 @@
+uuid: 48850938-2b71-4593-9e75-10a3466ddc68
+langcode: en
+status: true
+dependencies: {  }
+id: dyne_acf_home_hero
+label: 'Homepage hero'
+icon_uuid: null
+icon_default: null
+description: null
+behavior_plugins: {  }

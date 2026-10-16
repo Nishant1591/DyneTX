@@ -1,0 +1,19 @@
+uuid: 4ed13c2f-cff2-4ca6-95b3-18db1583fc76
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_heading
+    - paragraphs.paragraphs_type.dyne_drug_detail
+id: paragraph.dyne_drug_detail.field_heading
+field_name: field_heading
+entity_type: paragraph
+bundle: dyne_drug_detail
+label: Heading
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

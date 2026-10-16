@@ -1,0 +1,21 @@
+uuid: 8ed144f2-c5ca-46e6-bb01-a36d40fe290f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hero_third_level
+    - node.type.job
+id: node.job.field_hero_third_level
+field_name: field_hero_third_level
+entity_type: node
+bundle: job
+label: 'Compact interior hero'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

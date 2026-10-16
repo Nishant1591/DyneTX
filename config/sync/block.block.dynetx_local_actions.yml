@@ -1,0 +1,20 @@
+uuid: 22aba3a3-62ee-4f2c-9ce9-ee1bf5fd085b
+langcode: en
+status: true
+dependencies:
+  theme:
+    - dynetx
+_core:
+  default_config_hash: ABoKnlk20KHqZRw_2Qr4EvaFvH4lnQ2nuhunHeE1JIU
+id: dynetx_local_actions
+theme: dynetx
+region: content
+weight: -10
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

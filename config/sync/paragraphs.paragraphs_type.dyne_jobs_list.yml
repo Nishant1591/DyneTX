@@ -1,0 +1,10 @@
+uuid: 63ecac3e-5ce6-4ac5-850a-52743ebd90a5
+langcode: en
+status: true
+dependencies: {  }
+id: dyne_jobs_list
+label: 'Jobs grouped list'
+icon_uuid: null
+icon_default: null
+description: null
+behavior_plugins: {  }

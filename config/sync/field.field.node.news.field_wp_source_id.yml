@@ -1,0 +1,23 @@
+uuid: c2e3d24f-ce95-4502-94ec-3c099adbb83d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_wp_source_id
+    - node.type.news
+id: node.news.field_wp_source_id
+field_name: field_wp_source_id
+entity_type: node
+bundle: news
+label: 'WordPress record ID'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

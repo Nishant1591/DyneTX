@@ -1,0 +1,18 @@
+uuid: 50f6f749-260e-4b66-be8e-0d85ab6327c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.dyne_acf_in_the_news.field_layout_background
+    - field.field.paragraph.dyne_acf_in_the_news.field_layout_heading
+    - field.field.paragraph.dyne_acf_in_the_news.field_layout_items
+    - paragraphs.paragraphs_type.dyne_acf_in_the_news
+id: paragraph.dyne_acf_in_the_news.default
+targetEntityType: paragraph
+bundle: dyne_acf_in_the_news
+mode: default
+content: {  }
+hidden:
+  field_layout_background: true
+  field_layout_heading: true
+  field_layout_items: true

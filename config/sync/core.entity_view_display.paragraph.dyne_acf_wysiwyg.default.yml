@@ -1,0 +1,14 @@
+uuid: 58fbe8ef-d36e-48f1-ab97-2cf48c2989dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.dyne_acf_wysiwyg.field_layout_body
+    - paragraphs.paragraphs_type.dyne_acf_wysiwyg
+id: paragraph.dyne_acf_wysiwyg.default
+targetEntityType: paragraph
+bundle: dyne_acf_wysiwyg
+mode: default
+content: {  }
+hidden:
+  field_layout_body: true

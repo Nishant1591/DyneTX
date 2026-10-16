@@ -1,0 +1,10 @@
+uuid: 553a3c19-9d9f-46df-ae43-f85d6783390a
+langcode: en
+status: true
+dependencies: {  }
+id: dyne_news_list
+label: 'News list'
+icon_uuid: null
+icon_default: null
+description: null
+behavior_plugins: {  }

@@ -1,0 +1,19 @@
+uuid: 0f3098ee-a56b-4ae6-8c9d-215ab40c0522
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_text
+    - node.type.news
+id: node.news.field_date_text
+field_name: field_date_text
+entity_type: node
+bundle: news
+label: 'Date text'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

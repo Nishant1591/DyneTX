@@ -1,0 +1,21 @@
+uuid: a29266cc-0386-41cc-bc08-4334b790e35c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_layout_alignment
+    - paragraphs.paragraphs_type.dyne_acf_home_hero
+  module:
+    - options
+id: paragraph.dyne_acf_home_hero.field_layout_alignment
+field_name: field_layout_alignment
+entity_type: paragraph
+bundle: dyne_acf_home_hero
+label: Alignment
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

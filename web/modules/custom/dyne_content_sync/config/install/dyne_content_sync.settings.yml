@@ -1,0 +1,5 @@
+greenhouse_enabled: false
+greenhouse_board: dynetherapeutics
+gcs_enabled: false
+gcs_client_id: ''
+interval: 3600

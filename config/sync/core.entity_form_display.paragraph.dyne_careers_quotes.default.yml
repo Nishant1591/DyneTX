@@ -1,0 +1,52 @@
+uuid: 19d65aa8-3bac-4c92-a854-005acdb8213a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.dyne_careers_quotes.field_archived_quotes
+    - field.field.paragraph.dyne_careers_quotes.field_body_text
+    - field.field.paragraph.dyne_careers_quotes.field_native_components
+    - field.field.paragraph.dyne_careers_quotes.field_quotes
+    - paragraphs.paragraphs_type.dyne_careers_quotes
+  module:
+    - text
+id: paragraph.dyne_careers_quotes.default
+targetEntityType: paragraph
+bundle: dyne_careers_quotes
+mode: default
+content:
+  field_archived_quotes:
+    type: entity_reference_autocomplete
+    weight: 3
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_body_text:
+    type: text_textarea
+    weight: 3
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_quotes:
+    type: entity_reference_autocomplete
+    weight: 3
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_items_json: true
+  field_native_components: true
+  field_rows_json: true
+  field_sections_json: true
+  status: true

@@ -1,0 +1,23 @@
+uuid: b26d08ce-0d92-483a-88ac-66c28ba65853
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_native_components
+    - paragraphs.paragraphs_type.dyne_icon_cards
+id: paragraph.dyne_icon_cards.field_native_components
+field_name: field_native_components
+entity_type: paragraph
+bundle: dyne_icon_cards
+label: 'Uses native component fields'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

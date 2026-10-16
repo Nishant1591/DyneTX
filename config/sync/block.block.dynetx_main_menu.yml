@@ -1,0 +1,28 @@
+uuid: 3e3ca4f3-dff5-4766-a6a1-6f51f90abdae
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - dynetx
+id: dynetx_main_menu
+theme: dynetx
+region: primary_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: core
+  level: 1
+  depth: null
+  expand_all_items: true
+  menu: main
+  title: ''
+  collapse: 0
+visibility: {  }

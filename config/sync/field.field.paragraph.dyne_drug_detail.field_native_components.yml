@@ -1,0 +1,23 @@
+uuid: bf9c4474-01de-4759-af0e-54b8ad0a0fee
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_native_components
+    - paragraphs.paragraphs_type.dyne_drug_detail
+id: paragraph.dyne_drug_detail.field_native_components
+field_name: field_native_components
+entity_type: paragraph
+bundle: dyne_drug_detail
+label: 'Uses native component fields'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

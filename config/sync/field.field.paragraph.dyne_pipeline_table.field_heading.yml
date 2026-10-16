@@ -1,0 +1,19 @@
+uuid: 8db6b8d3-c7ca-420e-9058-23a590260aca
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_heading
+    - paragraphs.paragraphs_type.dyne_pipeline_table
+id: paragraph.dyne_pipeline_table.field_heading
+field_name: field_heading
+entity_type: paragraph
+bundle: dyne_pipeline_table
+label: Heading
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

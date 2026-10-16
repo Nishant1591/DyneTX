@@ -1,0 +1,21 @@
+uuid: fc8f255e-f7ec-4657-8d3f-96069b00ff88
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_layout_show_form
+    - paragraphs.paragraphs_type.dyne_acf_stay_connected
+id: paragraph.dyne_acf_stay_connected.field_layout_show_form
+field_name: field_layout_show_form
+entity_type: paragraph
+bundle: dyne_acf_stay_connected
+label: 'Show configured OneTrust form'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

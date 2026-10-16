@@ -1,0 +1,10 @@
+uuid: c7cbf5a4-f0ba-42a9-a021-85a8a8390b58
+langcode: en
+status: true
+dependencies: {  }
+id: dyne_text_section
+label: 'Text section'
+icon_uuid: null
+icon_default: null
+description: 'Editable item within a Dyne component.'
+behavior_plugins: {  }

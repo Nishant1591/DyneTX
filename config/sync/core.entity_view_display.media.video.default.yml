@@ -1,0 +1,79 @@
+uuid: 6741a236-0819-487e-898d-5df3af882c3d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.video.field_media_caption
+    - field.field.media.video.field_media_description
+    - field.field.media.video.field_media_video_file
+    - field.field.media.video.field_wp_attachment_id
+    - image.style.thumbnail
+    - media.type.video
+  module:
+    - file
+    - image
+    - user
+id: media.video.default
+targetEntityType: media
+bundle: video
+mode: default
+content:
+  created:
+    type: timestamp
+    label: hidden
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+      tooltip:
+        date_format: long
+        custom_date_format: ''
+      time_diff:
+        enabled: false
+        future_format: '@interval hence'
+        past_format: '@interval ago'
+        granularity: 2
+        refresh: 60
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_media_video_file:
+    type: file_video
+    label: visually_hidden
+    settings:
+      controls: true
+      autoplay: false
+      loop: false
+      multiple_file_display_type: tags
+      muted: false
+      playsinline: false
+      width: 640
+      height: 480
+      poster: ''
+      poster_image_style: ''
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  thumbnail:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: thumbnail
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  uid:
+    type: author
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_media_caption: true
+  field_media_description: true
+  field_wp_attachment_id: true
+  name: true

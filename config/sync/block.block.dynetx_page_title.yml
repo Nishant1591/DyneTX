@@ -1,0 +1,20 @@
+uuid: 6d2e34b3-1fff-4094-9185-93ce8c57814f
+langcode: en
+status: true
+dependencies:
+  theme:
+    - dynetx
+_core:
+  default_config_hash: Oh72CHUkp6cj6dbrXMK2hzCsM05w9cHVoD22rMLQUfk
+id: dynetx_page_title
+theme: dynetx
+region: content
+weight: -30
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

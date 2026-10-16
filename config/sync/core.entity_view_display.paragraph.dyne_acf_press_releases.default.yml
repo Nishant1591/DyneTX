@@ -1,0 +1,20 @@
+uuid: 05b4ad8b-48aa-4c31-a058-9fbcf81c8978
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.dyne_acf_press_releases.field_layout_count
+    - field.field.paragraph.dyne_acf_press_releases.field_layout_heading
+    - field.field.paragraph.dyne_acf_press_releases.field_layout_sidebar
+    - field.field.paragraph.dyne_acf_press_releases.field_layout_sidebar_body
+    - paragraphs.paragraphs_type.dyne_acf_press_releases
+id: paragraph.dyne_acf_press_releases.default
+targetEntityType: paragraph
+bundle: dyne_acf_press_releases
+mode: default
+content: {  }
+hidden:
+  field_layout_count: true
+  field_layout_heading: true
+  field_layout_sidebar: true
+  field_layout_sidebar_body: true

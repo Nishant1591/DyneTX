@@ -1,0 +1,26 @@
+uuid: 4bfb4e43-40c5-41df-9dab-c84c6d7e2677
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_layout_video
+    - media.type.remote_video
+    - media.type.video
+    - paragraphs.paragraphs_type.dyne_acf_video_solutions
+id: paragraph.dyne_acf_video_solutions.field_layout_video
+field_name: field_layout_video
+entity_type: paragraph
+bundle: dyne_acf_video_solutions
+label: Video
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      video: video
+      remote_video: remote_video
+field_type: entity_reference

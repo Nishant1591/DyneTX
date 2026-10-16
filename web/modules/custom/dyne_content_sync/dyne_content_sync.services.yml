@@ -1,0 +1,7 @@
+services:
+  dyne_content_sync.synchronizer:
+    class: Drupal\dyne_content_sync\FeedSynchronizer
+    arguments: ['@http_client', '@entity_type.manager', '@config.factory', '@state', '@lock', '@queue', '@logger.channel.dyne_content_sync']
+  logger.channel.dyne_content_sync:
+    parent: logger.channel_base
+    arguments: ['dyne_content_sync']

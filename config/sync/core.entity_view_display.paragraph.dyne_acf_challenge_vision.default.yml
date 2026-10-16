@@ -1,0 +1,16 @@
+uuid: 2292810c-acf7-4288-8348-f1d83260c407
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.dyne_acf_challenge_vision.field_layout_heading
+    - field.field.paragraph.dyne_acf_challenge_vision.field_layout_items
+    - paragraphs.paragraphs_type.dyne_acf_challenge_vision
+id: paragraph.dyne_acf_challenge_vision.default
+targetEntityType: paragraph
+bundle: dyne_acf_challenge_vision
+mode: default
+content: {  }
+hidden:
+  field_layout_heading: true
+  field_layout_items: true

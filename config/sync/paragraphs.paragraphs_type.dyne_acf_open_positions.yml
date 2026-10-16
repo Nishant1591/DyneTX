@@ -1,0 +1,10 @@
+uuid: 3c7b6564-f58d-436f-80f5-07fb49d4fb41
+langcode: en
+status: true
+dependencies: {  }
+id: dyne_acf_open_positions
+label: 'Open positions'
+icon_uuid: null
+icon_default: null
+description: null
+behavior_plugins: {  }

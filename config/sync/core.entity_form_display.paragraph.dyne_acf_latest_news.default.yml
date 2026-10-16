@@ -1,0 +1,31 @@
+uuid: 886d84bb-4c9e-42a6-8907-279c882c3983
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.dyne_acf_latest_news.field_layout_count
+    - field.field.paragraph.dyne_acf_latest_news.field_layout_heading
+    - paragraphs.paragraphs_type.dyne_acf_latest_news
+id: paragraph.dyne_acf_latest_news.default
+targetEntityType: paragraph
+bundle: dyne_acf_latest_news
+mode: default
+content:
+  field_layout_count:
+    type: number
+    weight: 2
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_layout_heading:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

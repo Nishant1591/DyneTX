@@ -1,0 +1,46 @@
+uuid: f15f8f12-ea08-47ba-b0e7-c7c2bba6a798
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.dyne_video.field_heading
+    - field.field.paragraph.dyne_video.field_poster
+    - field.field.paragraph.dyne_video.field_video_url
+    - paragraphs.paragraphs_type.dyne_video
+  module:
+    - image
+id: paragraph.dyne_video.default
+targetEntityType: paragraph
+bundle: dyne_video
+mode: default
+content:
+  field_heading:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_poster:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_video_url:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

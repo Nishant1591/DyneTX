@@ -1,0 +1,258 @@
+{
+  "status": "pass",
+  "tested_widths": [
+    1440,
+    768,
+    390
+  ],
+  "results": [
+    {
+      "slug": "fshd-day",
+      "width": 1440,
+      "status": 200,
+      "screenshot": "output/content-audit/fshd-day-1440.png",
+      "title": "FSHD DAY",
+      "h1": [
+        {
+          "text": "FSHD Community Speaks to Dyne Team on World FSHD Day",
+          "x": 150,
+          "y": 138,
+          "width": 1140,
+          "height": 97.5,
+          "bottom": 235.5
+        }
+      ],
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 71.125,
+        "bottom": 71.125
+      },
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "main": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 917.75,
+        "bottom": 917.75
+      },
+      "iframes": [
+        {
+          "src": "https://player.vimeo.com/video/430827122",
+          "title": "FSHD Community Speaks to Dyne Team on World FSHD Day",
+          "x": 150,
+          "y": 276.5,
+          "width": 1140,
+          "height": 641.25,
+          "bottom": 917.75
+        }
+      ],
+      "brokenImages": [],
+      "mainText": "FSHD Community Speaks to Dyne Team on World FSHD Day"
+    },
+    {
+      "slug": "our-focus",
+      "width": 1440,
+      "status": 200,
+      "screenshot": "output/content-audit/our-focus-1440.png",
+      "title": "Our Focus | Dyne Therapeutics",
+      "h1": [
+        {
+          "text": "Our Focus",
+          "x": 150,
+          "y": 138,
+          "width": 1140,
+          "height": 48.75,
+          "bottom": 186.75
+        }
+      ],
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 90,
+        "bottom": 90
+      },
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "main": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 227.75,
+        "bottom": 227.75
+      },
+      "iframes": [],
+      "brokenImages": [],
+      "mainText": "Our Focus"
+    },
+    {
+      "slug": "fshd-day",
+      "width": 768,
+      "status": 200,
+      "screenshot": "output/content-audit/fshd-day-768.png",
+      "title": "FSHD DAY",
+      "h1": [
+        {
+          "text": "FSHD Community Speaks to Dyne Team on World FSHD Day",
+          "x": 15,
+          "y": 108,
+          "width": 738,
+          "height": 76.8125,
+          "bottom": 184.8125
+        }
+      ],
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 70,
+        "bottom": 70
+      },
+      "viewport": 768,
+      "documentWidth": 768,
+      "main": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 628.328125,
+        "bottom": 628.328125
+      },
+      "iframes": [
+        {
+          "src": "https://player.vimeo.com/video/430827122",
+          "title": "FSHD Community Speaks to Dyne Team on World FSHD Day",
+          "x": 15,
+          "y": 213.203125,
+          "width": 738,
+          "height": 415.125,
+          "bottom": 628.328125
+        }
+      ],
+      "brokenImages": [],
+      "mainText": "FSHD Community Speaks to Dyne Team on World FSHD Day"
+    },
+    {
+      "slug": "our-focus",
+      "width": 768,
+      "status": 200,
+      "screenshot": "output/content-audit/our-focus-768.png",
+      "title": "Our Focus | Dyne Therapeutics",
+      "h1": [
+        {
+          "text": "Our Focus",
+          "x": 15,
+          "y": 108,
+          "width": 738,
+          "height": 38.40625,
+          "bottom": 146.40625
+        }
+      ],
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 70,
+        "bottom": 70
+      },
+      "viewport": 768,
+      "documentWidth": 768,
+      "main": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 174.796875,
+        "bottom": 174.796875
+      },
+      "iframes": [],
+      "brokenImages": [],
+      "mainText": "Our Focus"
+    },
+    {
+      "slug": "fshd-day",
+      "width": 390,
+      "status": 200,
+      "screenshot": "output/content-audit/fshd-day-390.png",
+      "title": "FSHD DAY",
+      "h1": [
+        {
+          "text": "FSHD Community Speaks to Dyne Team on World FSHD Day",
+          "x": 15,
+          "y": 88.75,
+          "width": 360,
+          "height": 52.5,
+          "bottom": 141.25
+        }
+      ],
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 70,
+        "bottom": 70
+      },
+      "viewport": 390,
+      "documentWidth": 390,
+      "main": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 365.0625,
+        "bottom": 365.0625
+      },
+      "iframes": [
+        {
+          "src": "https://player.vimeo.com/video/430827122",
+          "title": "FSHD Community Speaks to Dyne Team on World FSHD Day",
+          "x": 15,
+          "y": 162.5625,
+          "width": 360,
+          "height": 202.5,
+          "bottom": 365.0625
+        }
+      ],
+      "brokenImages": [],
+      "mainText": "FSHD Community Speaks to Dyne Team on World FSHD Day"
+    },
+    {
+      "slug": "our-focus",
+      "width": 390,
+      "status": 200,
+      "screenshot": "output/content-audit/our-focus-390.png",
+      "title": "Our Focus | Dyne Therapeutics",
+      "h1": [
+        {
+          "text": "Our Focus",
+          "x": 15,
+          "y": 88.75,
+          "width": 360,
+          "height": 26.25,
+          "bottom": 115
+        }
+      ],
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 70,
+        "bottom": 70
+      },
+      "viewport": 390,
+      "documentWidth": 390,
+      "main": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 136.3125,
+        "bottom": 136.3125
+      },
+      "iframes": [],
+      "brokenImages": [],
+      "mainText": "Our Focus"
+    }
+  ],
+  "issues": [],
+  "provider_note": "Original Vimeo provider displayed sign-in/cookies requirement in anonymous test; external video was not played."
+}

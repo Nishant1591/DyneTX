@@ -1,0 +1,24 @@
+uuid: d9c9f9fd-3dd6-4a5a-9f71-672e84f10cbb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hero_overlay_image
+    - media.type.image
+    - node.type.perspective
+id: node.perspective.field_hero_overlay_image
+field_name: field_hero_overlay_image
+entity_type: node
+bundle: perspective
+label: 'Hero overlay image'
+description: 'Optional transparent decoration layered over the hero background.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+field_type: entity_reference

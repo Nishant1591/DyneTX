@@ -1,0 +1,16 @@
+uuid: bfc8bcd0-5a18-4416-afcc-7f90926eccdb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.dyne_text_section.field_heading
+    - field.field.paragraph.dyne_text_section.field_item_text
+    - paragraphs.paragraphs_type.dyne_text_section
+id: paragraph.dyne_text_section.default
+targetEntityType: paragraph
+bundle: dyne_text_section
+mode: default
+content: {  }
+hidden:
+  field_heading: true
+  field_item_text: true

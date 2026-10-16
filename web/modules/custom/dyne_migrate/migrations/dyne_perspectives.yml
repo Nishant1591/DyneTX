@@ -1,35 +1,14 @@
 id: dyne_perspectives
-label: 'Dyne perspectives + patient stories'
+label: 'Dyne complete WordPress archive: perspectives'
 migration_group: dyne
+migration_tags:
+  - Dyne archive
 source:
-  plugin: csv
-  path: 'modules/custom/dyne_migrate/data/perspectives.csv'
-  header_offset: 0
-  ids:
-    - Slug
-  fields:
-    - name: Slug
-      label: 'Slug'
-    - name: Title
-      label: 'Title'
-    - name: Disease
-      label: 'Disease'
-    - name: WP URL
-      label: 'WP URL'
+  plugin: dyne_archive
+  bundle: perspective
+  track_changes: true
 process:
-  title: Title
-  field_disease: Disease
-  path/alias:
-    plugin: concat
-    delimiter: ''
-    source:
-      - constants/prefix
-      - Slug
-    constants:
-      prefix: '/perspectives/'
-  type:
-    plugin: default_value
-    default_value: perspective
+  record: record
 destination:
-  plugin: 'entity:node'
+  plugin: dyne_archive_node
 migration_dependencies: {}

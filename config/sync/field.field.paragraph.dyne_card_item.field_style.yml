@@ -1,0 +1,19 @@
+uuid: f3e44d54-6313-43ab-aa50-695ee5a60349
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_style
+    - paragraphs.paragraphs_type.dyne_card_item
+id: paragraph.dyne_card_item.field_style
+field_name: field_style
+entity_type: paragraph
+bundle: dyne_card_item
+label: 'Style class'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,4 +1,5 @@
-{# Independent, accessible carousel instances for editable quote Paragraphs. #}
+{{ dyne_component_cache }}
+{# Independent, accessible carousel instances for reusable quote records. #}
 {% set carousel_id = 'dyneQuoteCarousel-' ~ paragraph.id() %}
 <section{{ attributes.addClass('dyne-quotes', 'container', 'py-5') }}>
   {% if paragraph.field_heading.value %}<h2 class="h1">{{ paragraph.field_heading.value }}</h2>{% endif %}

@@ -1,0 +1,21 @@
+uuid: d60b3910-798e-4e7d-a4cf-2adaeec78457
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_layout_hide_dna
+    - paragraphs.paragraphs_type.dyne_acf_program_focus
+id: paragraph.dyne_acf_program_focus.field_layout_hide_dna
+field_name: field_layout_hide_dna
+entity_type: paragraph
+bundle: dyne_acf_program_focus
+label: 'Hide DNA decoration'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,30 @@
+uuid: e137bd0a-16f8-434b-ab11-3e1f799be63f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_news_type
+field_name: field_news_type
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: html
+      label: 'HTML page'
+    -
+      value: url
+      label: 'External URL'
+    -
+      value: file
+      label: Document
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

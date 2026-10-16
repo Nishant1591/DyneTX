@@ -1,0 +1,23 @@
+uuid: fe5164fa-0dcc-4a02-b85a-6b26f0bad5bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_native_presentation
+    - node.type.perspective
+id: node.perspective.field_native_presentation
+field_name: field_native_presentation
+entity_type: node
+bundle: perspective
+label: 'Use branded page presentation'
+description: 'Use this page’s hero and presentation settings in the branded page template.'
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

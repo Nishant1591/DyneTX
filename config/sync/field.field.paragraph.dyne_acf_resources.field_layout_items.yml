@@ -1,0 +1,25 @@
+uuid: c054077b-9648-4052-b01f-b4e3bd106798
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_layout_items
+    - paragraphs.paragraphs_type.dyne_acf_resources
+  module:
+    - entity_reference_revisions
+id: paragraph.dyne_acf_resources.field_layout_items
+field_name: field_layout_items
+entity_type: paragraph
+bundle: dyne_acf_resources
+label: Items
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      dyne_layout_item: dyne_layout_item
+field_type: entity_reference_revisions

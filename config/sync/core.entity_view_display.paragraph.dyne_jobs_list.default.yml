@@ -1,0 +1,50 @@
+uuid: 608cc116-6dd4-45c1-9ceb-abee7bb24804
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.dyne_jobs_list.field_anchor
+    - field.field.paragraph.dyne_jobs_list.field_body_text
+    - field.field.paragraph.dyne_jobs_list.field_dynamic_jobs
+    - field.field.paragraph.dyne_jobs_list.field_heading
+    - field.field.paragraph.dyne_jobs_list.field_items_json
+    - field.field.paragraph.dyne_jobs_list.field_native_components
+    - paragraphs.paragraphs_type.dyne_jobs_list
+  module:
+    - text
+id: paragraph.dyne_jobs_list.default
+targetEntityType: paragraph
+bundle: dyne_jobs_list
+mode: default
+content:
+  field_anchor:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_body_text:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_heading:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_dynamic_jobs: true
+  field_items_json: true
+  field_native_components: true
+  field_rows_json: true
+  field_sections_json: true

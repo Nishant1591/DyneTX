@@ -1,0 +1,14 @@
+uuid: c275dfd3-2bae-4510-bb7e-e41c69015598
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.dyne_policy_list.field_policies
+    - paragraphs.paragraphs_type.dyne_policy_list
+id: paragraph.dyne_policy_list.default
+targetEntityType: paragraph
+bundle: dyne_policy_list
+mode: default
+content: {  }
+hidden:
+  field_policies: true

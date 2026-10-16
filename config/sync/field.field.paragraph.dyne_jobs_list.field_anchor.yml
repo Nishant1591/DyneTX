@@ -1,0 +1,22 @@
+uuid: ac9f3227-11d4-4da5-bb7e-320e491388e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_anchor
+    - paragraphs.paragraphs_type.dyne_jobs_list
+  module:
+    - text
+id: paragraph.dyne_jobs_list.field_anchor
+field_name: field_anchor
+entity_type: paragraph
+bundle: dyne_jobs_list
+label: 'Section anchor id'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text

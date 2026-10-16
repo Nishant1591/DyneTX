@@ -1,0 +1,19 @@
+uuid: 8fab81f5-ca49-4bb9-9bff-9d772a314302
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_previous_url
+    - node.type.job
+id: node.job.field_previous_url
+field_name: field_previous_url
+entity_type: node
+bundle: job
+label: 'Previous job URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

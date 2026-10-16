@@ -1,0 +1,24 @@
+uuid: 92d17c60-d59f-42bf-a57a-11856bb072d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_layout_background_image
+    - media.type.image
+    - paragraphs.paragraphs_type.dyne_acf_two_column
+id: paragraph.dyne_acf_two_column.field_layout_background_image
+field_name: field_layout_background_image
+entity_type: paragraph
+bundle: dyne_acf_two_column
+label: 'Background image'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+field_type: entity_reference

@@ -1,0 +1,21 @@
+uuid: fc374718-ad8e-42e5-9368-1035c3ef906a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hero_third_level
+    - node.type.perspective
+id: node.perspective.field_hero_third_level
+field_name: field_hero_third_level
+entity_type: node
+bundle: perspective
+label: 'Compact interior hero'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

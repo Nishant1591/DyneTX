@@ -1,0 +1,19 @@
+uuid: a038e575-2831-4942-8338-9bd9a6754fcf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_heading
+    - paragraphs.paragraphs_type.dyne_quote_carousel
+id: paragraph.dyne_quote_carousel.field_heading
+field_name: field_heading
+entity_type: paragraph
+bundle: dyne_quote_carousel
+label: Heading
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

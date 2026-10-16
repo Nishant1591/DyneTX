@@ -1,0 +1,24 @@
+uuid: 4e9c3dec-edb2-4028-888e-552753ffb52e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.dyne_pipeline_row.field_link
+    - field.field.paragraph.dyne_pipeline_row.field_row_disease
+    - field.field.paragraph.dyne_pipeline_row.field_row_phase
+    - field.field.paragraph.dyne_pipeline_row.field_row_prevalence
+    - field.field.paragraph.dyne_pipeline_row.field_row_status
+    - field.field.paragraph.dyne_pipeline_row.field_row_target
+    - paragraphs.paragraphs_type.dyne_pipeline_row
+id: paragraph.dyne_pipeline_row.default
+targetEntityType: paragraph
+bundle: dyne_pipeline_row
+mode: default
+content: {  }
+hidden:
+  field_link: true
+  field_row_disease: true
+  field_row_phase: true
+  field_row_prevalence: true
+  field_row_status: true
+  field_row_target: true

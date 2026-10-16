@@ -1,0 +1,22 @@
+uuid: d2b05792-c5cc-4aa0-9606-598cd5089638
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_story_excerpt
+    - node.type.perspective
+  module:
+    - text
+id: node.perspective.field_story_excerpt
+field_name: field_story_excerpt
+entity_type: node
+bundle: perspective
+label: 'Listing summary'
+description: 'Optional introduction shown on perspective cards; leave blank when no excerpt is intended.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

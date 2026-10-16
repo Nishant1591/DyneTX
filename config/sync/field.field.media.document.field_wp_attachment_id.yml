@@ -1,0 +1,23 @@
+uuid: 16684cd9-30e7-4b5a-a697-3bbee482ea1c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_wp_attachment_id
+    - media.type.document
+id: media.document.field_wp_attachment_id
+field_name: field_wp_attachment_id
+entity_type: media
+bundle: document
+label: 'Original WordPress attachment ID'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

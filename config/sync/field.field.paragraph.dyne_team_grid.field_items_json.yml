@@ -1,0 +1,19 @@
+uuid: 4521ccf9-311e-4c5f-8c32-5ce7bbb61e08
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_items_json
+    - paragraphs.paragraphs_type.dyne_team_grid
+id: paragraph.dyne_team_grid.field_items_json
+field_name: field_items_json
+entity_type: paragraph
+bundle: dyne_team_grid
+label: 'Items JSON'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

@@ -1,0 +1,32 @@
+uuid: e0313af5-fde7-40c6-9295-be1f247384bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.dyne_news_list.field_heading
+    - field.field.paragraph.dyne_news_list.field_items_json
+    - field.field.paragraph.dyne_news_list.field_native_components
+    - field.field.paragraph.dyne_news_list.field_news_limit
+    - field.field.paragraph.dyne_news_list.field_news_year
+    - paragraphs.paragraphs_type.dyne_news_list
+id: paragraph.dyne_news_list.default
+targetEntityType: paragraph
+bundle: dyne_news_list
+mode: default
+content:
+  field_heading:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_items_json: true
+  field_native_components: true
+  field_news_limit: true
+  field_news_year: true
+  field_rows_json: true
+  field_sections_json: true

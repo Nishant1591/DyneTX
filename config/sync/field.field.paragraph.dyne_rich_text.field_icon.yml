@@ -1,0 +1,19 @@
+uuid: 7ca8d3e5-a72c-474c-b699-8acb35294490
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_icon
+    - paragraphs.paragraphs_type.dyne_rich_text
+id: paragraph.dyne_rich_text.field_icon
+field_name: field_icon
+entity_type: paragraph
+bundle: dyne_rich_text
+label: 'Icon path'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

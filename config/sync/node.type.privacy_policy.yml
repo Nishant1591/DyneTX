@@ -1,0 +1,11 @@
+uuid: ea4541ea-a5d6-498e-8156-bde538d13580
+langcode: en
+status: true
+dependencies: {  }
+name: 'Privacy policy'
+type: privacy_policy
+description: 'Reusable policy blocks displayed on the privacy page.'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: true

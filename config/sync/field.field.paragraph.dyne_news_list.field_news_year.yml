@@ -1,0 +1,23 @@
+uuid: f4f09653-0737-4f9e-9be4-8f15c20ef363
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_news_year
+    - paragraphs.paragraphs_type.dyne_news_list
+id: paragraph.dyne_news_list.field_news_year
+field_name: field_news_year
+entity_type: paragraph
+bundle: dyne_news_list
+label: 'Publication year (empty = all years)'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

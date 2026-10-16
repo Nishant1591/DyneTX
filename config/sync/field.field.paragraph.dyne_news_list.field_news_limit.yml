@@ -1,0 +1,25 @@
+uuid: 8e16048a-c014-46a5-9a25-b5110d4f2e68
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_news_limit
+    - paragraphs.paragraphs_type.dyne_news_list
+id: paragraph.dyne_news_list.field_news_limit
+field_name: field_news_limit
+entity_type: paragraph
+bundle: dyne_news_list
+label: 'Number of articles (0 = all)'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 2
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

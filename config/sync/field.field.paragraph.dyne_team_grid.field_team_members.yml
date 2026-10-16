@@ -1,0 +1,25 @@
+uuid: 54188d90-0f44-4360-983a-d2b436e64046
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_team_members
+    - node.type.leader
+    - paragraphs.paragraphs_type.dyne_team_grid
+id: paragraph.dyne_team_grid.field_team_members
+field_name: field_team_members
+entity_type: paragraph
+bundle: dyne_team_grid
+label: 'Team members (drag to order)'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      leader: leader
+    auto_create: false
+field_type: entity_reference

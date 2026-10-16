@@ -1,0 +1,19 @@
+uuid: 6d1a94da-1510-4e44-8ea1-9bd2f832c5ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_source_url
+    - node.type.news
+id: node.news.field_source_url
+field_name: field_source_url
+entity_type: node
+bundle: news
+label: 'Source URL'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

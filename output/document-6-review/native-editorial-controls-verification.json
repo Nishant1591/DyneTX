@@ -1,0 +1,12 @@
+{
+  "hidden_legacy_controls": 11,
+  "failures": [],
+  "perspective_cards_matched": 13,
+  "perspective_data_changes_needed": 0,
+  "notes": [
+    "All thirteen source excerpts are empty.",
+    "No current perspective record has a thumbnail override or external-link flag value 1.",
+    "Native news date and dispatch links intentionally become visible.",
+    "Leader profile portraits now use Media references."
+  ]
+}

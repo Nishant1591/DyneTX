@@ -1,0 +1,931 @@
+Detailed WordPress-to-Drupal Migration Analysis Report (Read-Only)
+
+
+1. Executive Summary
+1.1 High-Level Assessment & Critical Verdict
+The current DyneTX Drupal implementation has achieved visual rendering parity for marketing page shells, but possesses severe architectural, data-integrity, and editorial defects that prevent it from being production-ready or maintainable:
+The "JSON Text Flattening" Anti-Pattern: Instead of modeling the 21 ACF Flexible Content layouts and nested repeaters into proper Drupal Paragraph types and field entities, the current implementation created only 12 Paragraph types and flattened complex nested structures (cards, quotes, team members, table rows, and links) into raw JSON strings stored in text_long fields (field_items_json, field_rows_json, field_sections_json). Content editors cannot edit items using Drupal UI forms without editing raw JSON syntax.
+Entity Disconnect and Dual-State Fragmentation: Standalone nodes (job, leader, news) were imported via an ad-hoc PHP script (import-legacy.php), but the primary landing pages (About Us, Careers, Home) display content from hardcoded JSON strings inside Paragraphs, completely disconnected from the entity nodes. Updating a Leader or Job node has zero effect on the landing pages.
+Bypassed Core Media System: Drupal Core Media is entirely absent (media table does not exist). The database contains only 27 managed files (file_managed), while over 400 images, PDFs, and video assets are referenced as unmanaged static filesystem paths (/sites/default/files/legacy/...).
+Idle and Broken Migration Framework: All four registered Drupal migrate_plus CSV migrations (dyne_pages, dyne_jobs, dyne_leaders, dyne_perspectives) are completely idle with 0 imported records. They target incomplete 8-to-22 row sample CSV files and contain broken schema mappings (e.g. dyne_pages.yml targets page bundle while the site uses dyne_page, mapping title into body).
+Zero 301 Redirects: The redirect table contains 0 records. Legacy WordPress URLs dating back to 2014 will trigger 404 errors upon DNS cutover.
+Theme Runtime Dependency on Static Disk Fixtures: dynetx.theme executes file_get_contents() on a static JSON file (legacy-page-metadata.json) on every page request to resolve hero banners and CSS body classes, bypassing Drupal entity fields.
+
+    
+2.1 File System & Path Catalog
+Project
+Location
+Tech Stack
+Key Migration Components
+Ref WP
+D:\wp-to-dp\wp
+WP 6.7 Multisite, Bricks Builder, PHP 8.4, MariaDB
+dmc-multisite-db-2026.sql (47.2MB), content-stats.php, table_list.txt
+Ref Drupal
+\\wsl.localhost\Ubuntu\home\aniket\medicalhubus
+Drupal 10/11, Composer, Acquia-ready, DDEV
+Custom modules dmc_publications_migrate, dynemed_wxr_migrate, JSON migrations, import_redirects.php
+DyneTX Drupal
+\\wsl.localhost\Ubuntu\home\aniket\dyne-tx-updated\DyneTX
+Drupal 11.4.6, PHP 8.4, MariaDB 11.8, DDEV
+dyne_migrate, ot_webform, theme dynetx, import-legacy.php, create-pages.php, legacy-content.json
+DyneTX WP
+d:\dyne - tx - wordress\DyneTX
+WP 6.7, Theme dynetxdev2020, ACF Pro, MySQL
+mysql.sql (50.9MB), 7 workbox_* plugins, OneTrust-EmbedForm, Active_Directory_Report.csv
+
+3. Reference WordPress Content Inventory (D:\wp-to-dp\wp)
+The reference WordPress project is a WordPress Multisite network containing two active blogs:
+Blog ID 1: https://dynemedicalcentral.com ("Dyne Medical Central")
+Blog ID 2: https://publications.dynemedicalcentral.com ("Publications - Dyne Medical Central")
+3.1 Content Entities in Reference WordPress
+Post Type
+Blog 1 Count
+Blog 2 Count
+Purpose & Structure
+scientific-meeting
+0
+48
+Scientific medical congresses (ASGCT, MDA, WMS, ICNMD). Contains meeting slug, meeting year reference, link text, logo.
+journal-article
+0
+6
+Peer-reviewed medical journal publications.
+upcoming-event
+12
+21
+Clinical congress calendar with start date, end date, location, and external calendar URLs.
+resource
+6
+5
+Clinical and educational resources (PDFs, disease overview slides).
+module
+14
+15
+Disease educational modules (DMD, DM1, FSHD).
+asset-block
+8
+0
+Reusable marketing and callout blocks.
+bricks_template
+18
+14
+Layout and component templates built with Bricks Builder.
+page
+12
+4
+Standard pages.
+post
+4
+4
+Standard blog articles.
+attachment
+179
+294
+PDFs, posters, slides, logos, hero WebP/PNG images.
+3.2 Taxonomies in Reference WordPress
+meeting-year: 5 terms (2022, 2023, 2024, 2025, 2026) associated with scientific-meeting.
+events-by-year: 2 terms associated with upcoming-event.
+category: 5 terms.
+
+4. Reference Drupal Content Model (\\wsl.localhost\Ubuntu\home\aniket\medicalhubus)
+The reference Drupal migration demonstrates an enterprise-grade migration architecture following Drupal best practices:
+classDiagram    class ScientificMeeting {        +String title        +String field_meeting_slug        +EntityReferenceTaxonomy field_meeting_year        +String field_meeting_link_text        +Integer field_meeting_sort        +MediaImage field_meeting_image    }    class ScientificPublication {        +String title        +EntityReferenceNode field_parent_meeting        +MediaDocument field_publication_file_media        +Integer field_publication_sort    }    class MedicalEvent {        +String title        +DateTime field_event_start        +DateTime field_event_end        +String field_location        +Link field_external_url    }    class JournalArticle {        +String title        +String field_journal_title        +TextLong field_journal_intro        +MediaImage field_journal_image_file    }    ScientificPublication --> ScientificMeeting : references 
+4.1 Migration Implementation Patterns in MedicalHub
+Intermediate JSON Extraction: Rather than connecting directly to live WordPress MySQL, WordPress content was extracted into structured JSON files (scientific_meeting.json, medical_event.json, medical_resource.json).
+Declarative migrate_plus Pipelines: Migration YAML files define explicit source selectors, data types, and transformation process plugins:
+entity_lookup: Resolves taxonomy term IDs (field_meeting_year lookup by slug against meeting_year vocabulary).
+skip_on_value / skip_on_empty: Prevents duplicate records and halts execution cleanly when foreign keys fail.
+migration_dependencies: Enforces strict execution order (e.g. dmc_publications_meeting_year must run before dmc_publications_scientific_meeting).
+Core Media Integration: Media entities (media:document, media:image) are generated with managed file IDs (fid) and proper stream wrappers (public://).
+URL Redirection Strategy: Script import_redirects.php processes url_mapping.xlsx and creates managed redirect entities.
+
+5. Current DyneTX Drupal Content Inventory (\\wsl.localhost\Ubuntu\home\aniket\dyne-tx-updated\DyneTX)
+5.1 Runtime Database Audit (Local DDEV Instance)
+A live, read-only SQL inspection of the dyne-tx-master database revealed:
+Entity Type
+Bundle
+Database Count
+Implemented State
+Node
+dyne_page
+52
+Populated by import-legacy.php
+Node
+job
+49
+Populated by import-legacy.php
+Node
+leader
+31
+Populated by import-legacy.php
+Node
+news
+199
+Populated by import-legacy.php
+Node
+perspective
+13
+Populated by import-legacy.php
+Node
+pipeline_program
+0
+Empty (Bundle defined in install hook)
+Paragraph
+dyne_rich_text
+115
+Populated
+Paragraph
+dyne_hero
+76
+Populated
+Paragraph
+dyne_team_grid
+6
+Populated with flattened JSON strings
+Paragraph
+dyne_news_list
+4
+Populated with flattened JSON strings
+Paragraph
+dyne_icon_cards
+3
+Populated with flattened JSON strings
+Paragraph
+dyne_drug_detail
+3
+Populated with flattened JSON strings
+Paragraph
+dyne_cta
+3
+Populated
+Paragraph
+dyne_jobs_list
+2
+Populated with flattened JSON strings
+Paragraph
+dyne_pipeline_table
+1
+Populated with flattened JSON strings
+Paragraph
+dyne_quote_carousel
+1
+Populated with flattened JSON strings
+File
+file_managed
+27
+Deficient (Over 400 assets unmanaged)
+Media
+media
+0
+Module not installed / Table does not exist
+Redirect
+redirect
+0
+Zero redirects imported
+Taxonomy
+department
+9 terms
+Seeded by install hook
+Taxonomy
+job_location
+5 terms
+Seeded by install hook
+Taxonomy
+disease
+4 terms
+Seeded by install hook
+Taxonomy
+leader_type
+3 terms
+Seeded by install hook
+Taxonomy
+story_type
+3 terms
+Seeded by install hook
+
+6. Required DyneTX Content Types and Fields (The Recommended Model)
+6.1 Recommended Node Content Types
+1. Content Type: Landing Page / Flexible Page (page)
+Machine Name: page (replaces non-standard dyne_page)
+Purpose: All curated marketing, disease, program, and corporate overview pages.
+Fields:
+title (Core Title): Page Name.
+field_components (entity_reference_revisions -> paragraph, unlimited): References the 21 Paragraph component types.
+field_hero_first_line (string, single, optional): Header typography line 1.
+field_hero_second_line (string, single, optional): Header typography line 2.
+field_hero_third_level (boolean, single, optional, default: 0): Enables compact interior banner.
+field_hero_mobile_image (entity_reference -> media:image, single, optional): Mobile portrait crop.
+field_hero_overlay_image (entity_reference -> media:image, single, optional): Decorative SVG/PNG overlay.
+field_body_class (string, single, optional): Custom body classes for CSS targeting.
+2. Content Type: News Article (news)
+Machine Name: news
+Purpose: Corporate announcements and press releases (populated via GCS Web API sync).
+Fields:
+title (Core Title): Press release headline.
+body (text_with_summary): Full release body HTML.
+field_news_date (datetime, single, required): Release publication timestamp.
+field_news_type (list_string, single, required, allowed: html|HTML Page, url|External URL, file|PDF Document).
+field_external_url (link, single, optional): Hosted GlobeNewswire URL.
+field_news_file (entity_reference -> media:document, single, optional): Attached PDF publication.
+field_external_id (string, single, required): Unique GCS feed ID (prevents duplicates).
+3. Content Type: Career Position (job)
+Machine Name: job
+Purpose: Open job positions (populated via Greenhouse Harvest API sync).
+Fields:
+title (Core Title): Position Title.
+body (text_with_summary): Role summary, responsibilities, and qualifications.
+field_department (entity_reference -> taxonomy_term:department, single, required): Department classification.
+field_location (entity_reference -> taxonomy_term:job_location, single, required): Office or Remote location.
+field_greenhouse_id (string, single, required): Greenhouse job ID.
+field_apply_url (link, single, required): Application submission URL.
+4. Content Type: Team Member (team_member)
+Machine Name: team_member (replaces ad-hoc leader)
+Purpose: Corporate leadership, board of directors, and scientific advisory board profiles.
+Fields:
+title (Core Title): Full Executive Name.
+body (text_with_summary): Executive biography displayed in modal popups.
+field_position (string, single, required): Professional title (e.g. "President & Chief Executive Officer").
+field_position_info (string, single, optional): Degrees and credentials (e.g. "M.D., Ph.D.").
+field_photo (entity_reference -> media:image, single, required): Portrait headshot.
+field_team_category (entity_reference -> taxonomy_term:team_category, single, required): Leadership Team, Board of Directors, Founders, SAB.
+field_weight (integer, single, default: 0): Presentation sort order.
+5. Content Type: Perspective / Patient Story (perspective)
+Machine Name: perspective
+Purpose: Patient stories, Dynamo employee culture spotlights, and thought leadership articles.
+Fields:
+title (Core Title): Story headline.
+body (text_with_summary): Story content.
+field_author (string, single, optional): Author byline.
+field_subtitle (string, single, optional): Timeframe or story subhead.
+field_story_date (datetime, single, required): Publication date.
+field_image (entity_reference -> media:image, single, required): Hero and card thumbnail.
+field_disease (entity_reference -> taxonomy_term:disease, single, optional): Disease focus (DMD, DM1, FSHD, Pompe).
+field_external_link (link, single, optional): External interview or podcast URL.
+6. Content Type: Testimonial / Quote (quote)
+Machine Name: quote
+Purpose: Employee and patient quotes displayed in carousels and sidebars.
+Fields:
+title (Core Title): Speaker Name.
+field_quote_text (text_long, single, required): Statement text.
+field_speaker_image (entity_reference -> media:image, single, optional): Speaker portrait.
+
+6.2 Recommended Drupal Paragraph Types (Mapping the 21 ACF Layouts)
+Instead of flattening into JSON, the 21 ACF layouts must be modeled as discrete Paragraph types:
+#
+ACF Layout (key)
+Drupal Paragraph Type
+Individual Drupal Fields (No JSON Strings!)
+1
+homepage_hero_band
+paragraph_homepage_hero
+field_title (formatted), field_subtitle, field_bg_image (media:image), field_alignment (list_string)
+2
+2_column_homepage_boxes
+paragraph_2_col_boxes
+field_boxes (nested paragraph promo_box: title, link, media:image)
+3
+latest_news_band
+paragraph_latest_news
+field_title, field_view_reference (renders News View dynamically)
+4
+interior_page_header_band
+paragraph_interior_header
+field_title, field_description, field_bg_image (media:image)
+5
+centered_info_band
+paragraph_centered_info
+field_section_title, field_text (WYSIWYG)
+6
+wysiwyg_band
+paragraph_wysiwyg
+field_content (WYSIWYG formatted text)
+7
+program_focus_band
+paragraph_program_focus
+field_program_title, field_short_desc, field_gene_name, field_symptoms (text_long), field_treatment, field_cta_link, field_cta_text, field_hide_dna (boolean), field_band_id
+8
+team_highlights_band
+paragraph_team_highlights
+field_title, field_team_members (entity_reference -> node:team_member, multi-value)
+9
+leadership_team_band
+paragraph_leadership_team
+field_title, field_category (entity_reference -> taxonomy_term:team_category)
+10
+investors_band
+paragraph_investors
+field_intro_text (WYSIWYG), field_links (link, multi-value)
+11
+challenge_vs_vision_band
+paragraph_challenge_vision
+field_section_title, field_challenge_title, field_challenge_desc, field_challenge_img (media:image), field_vision_title, field_vision_desc, field_vision_img (media:image)
+12
+video_solutions_band
+paragraph_video_solutions
+field_section_title, field_video (media:remote_video), field_video_text, field_disable_accordion (boolean)
+13
+testimonials_band
+paragraph_testimonials
+field_quotes (entity_reference -> node:quote, multi-value)
+14
+open_positions_band
+paragraph_open_positions
+field_section_title, field_intro_text, field_view_reference (renders dynamic Jobs View)
+15
+contact_us_band
+paragraph_contact_us
+field_section_title, field_contact_info (WYSIWYG), field_map_code (text_long)
+16
+press_releases_band
+paragraph_press_releases
+field_title, field_count (integer), field_sidebar (list_string)
+17
+in_the_news_band
+paragraph_in_the_news
+field_title, field_bg_color, field_articles (nested paragraph: title, date, link, source)
+18
+stay_connected
+paragraph_stay_connected
+field_title, field_text (WYSIWYG), field_onetrust_form (embedded OneTrust block)
+19
+text_image_band
+paragraph_text_image
+field_section_title, field_subtitle, field_image (media:image), field_caption
+20
+resources_band
+paragraph_resources
+field_section_title, field_text (WYSIWYG), field_links (nested paragraph: url, label)
+21
+2_column_text_image_band
+paragraph_2_col_text_img
+field_intro_text, field_banner_bg (media:image), field_left_img (media:image), field_right_title, field_right_desc
+
+7. Source-to-Drupal Mapping Matrix
+WordPress Source
+Source Field / Key
+Source Type
+Drupal Destination
+Drupal Field
+Transformation / Process Plugin
+Current Status
+Issue ID
+page
+post_title
+string
+node:page
+title
+Direct map
+Partially Implemented (dyne_page)
+ISS-01
+page
+post_name
+string
+node:page
+path/alias
+Prepend /
+Correct
+-
+page
+field_5c5f45a24b2dc
+flexible_content
+node:page
+field_components
+Custom process: create Paragraph entities
+Incorrect (Flattened to JSON)
+ISS-02
+page
+first_line
+text
+node:page
+field_hero_first_line
+Direct map
+Partially Implemented (Read from JSON disk file)
+ISS-03
+page
+second_line
+text
+node:page
+field_hero_second_line
+Direct map
+Partially Implemented (Read from JSON disk file)
+ISS-03
+page
+hero_third_level
+true_false
+node:page
+field_hero_third_level
+Boolean casting
+Missing in node schema
+ISS-04
+page
+secondary-image
+attachment ID
+node:page
+field_hero_mobile_image
+Entity lookup: media:image
+Missing in node schema
+ISS-05
+page
+hero-overlay-image
+attachment ID
+node:page
+field_hero_overlay_image
+Entity lookup: media:image
+Missing in node schema
+ISS-05
+page
+_thumbnail_id
+attachment ID
+node:page
+field_image
+Entity lookup: media:image
+Missing in node schema
+ISS-05
+news
+post_title
+string
+node:news
+title
+Direct map
+Correct
+-
+news
+post_content
+longtext
+node:news
+body
+Filter format: full_html
+Missing in CSV migration
+ISS-06
+news
+news_date
+timestamp
+node:news
+field_news_date
+format_date (Y-m-d\TH:i:s)
+Incorrect (Mapped to field_date_text string)
+ISS-07
+news
+news_content_type
+integer
+node:news
+field_news_type
+Map 0->html, 1->url, 2->file
+Missing in Drupal schema
+ISS-08
+news
+news_url
+url string
+node:news
+field_external_url
+Direct map
+Incorrect (Mapped to field_source_url string)
+ISS-09
+news
+news_file
+file string
+node:news
+field_news_file
+Media document lookup
+Missing in Drupal schema
+ISS-08
+news
+news_external_id
+string
+node:news
+field_external_id
+Direct map
+Missing in Drupal schema
+ISS-08
+team
+post_title
+string
+node:team_member
+title
+Direct map
+Correct (Mapped as leader)
+ISS-10
+team
+post_content
+longtext
+node:team_member
+body
+Filter format: full_html
+Missing in CSV migration
+ISS-11
+team
+_position
+text
+node:team_member
+field_position
+Direct map
+Incorrect (Mapped to field_role)
+ISS-12
+team
+_position_info
+text
+node:team_member
+field_position_info
+Direct map
+Missing in Drupal schema
+ISS-13
+team
+_thumbnail_id
+attachment ID
+node:team_member
+field_photo
+Media image lookup
+Missing in CSV migration
+ISS-14
+team
+team_category
+term string
+node:team_member
+field_team_category
+entity_lookup (vid: team_category)
+Incorrect (No lookup, broken term ref)
+ISS-15
+team
+menu_order
+integer
+node:team_member
+field_weight
+Direct integer map
+Missing in Drupal schema
+ISS-16
+jobs
+post_title
+string
+node:job
+title
+Direct map
+Correct
+-
+jobs
+post_content
+longtext
+node:job
+body
+Filter format: dyne_job_html
+Missing in CSV migration
+ISS-17
+jobs
+_department
+text
+node:job
+field_department
+entity_lookup (vid: department)
+Incorrect (Stored as plain string text)
+ISS-18
+jobs
+_job_id
+string
+node:job
+field_greenhouse_id
+Direct map
+Missing in CSV migration
+ISS-19
+perspectives
+post_title
+string
+node:perspective
+title
+Direct map
+Correct
+-
+perspectives
+post_content
+longtext
+node:perspective
+body
+Filter format: full_html
+Missing in CSV migration
+ISS-20
+perspectives
+author
+text
+node:perspective
+field_author
+Direct map
+Missing in Drupal schema
+ISS-21
+perspectives
+image
+attachment ID
+node:perspective
+field_image
+Media image lookup
+Missing in CSV migration
+ISS-22
+perspectives
+perspectives_date
+timestamp
+node:perspective
+field_story_date
+format_date (Y-m-d\TH:i:s)
+Missing in Drupal schema
+ISS-23
+wb_quotes
+post_title
+string
+node:quote
+title
+Direct map
+Missing Content Type
+ISS-24
+wb_quotes
+post_content
+longtext
+node:quote
+field_quote_text
+Direct map
+Missing Content Type
+ISS-24
+wb_privacy_policy
+post_title
+string
+node:privacy_policy
+title
+Direct map
+Missing Content Type
+ISS-25
+attachment
+guid / path
+file path
+media:document / media:image
+field_media_file / field_media_image
+File download & media entity create
+Deficient (Zero Media Entities)
+ISS-26
+wp_redirection_items
+url
+url string
+redirect entity
+redirect_source, redirect_redirect
+URL path normalization
+Missing (Zero Redirects)
+ISS-27
+
+8. Migration Mistakes and Missing Implementations
+Issue ID: ISS-01
+Severity: High
+Affected Entity: node:dyne_page vs node:page
+File Paths:
+web/modules/custom/dyne_migrate/dyne_migrate.install (Line 88)
+web/modules/custom/dyne_migrate/migrations/dyne_pages.yml (Line 25)
+Current Implementation: dyne_migrate.install defines and populates node bundle dyne_page. However, dyne_pages.yml declares default_value: page.
+Expected Implementation: A unified bundle machine name (page). The migration definition must match the active bundle.
+Impact: Running drush migrate:import dyne_pages imports records into the wrong bundle (page), creating duplicate or orphan nodes that ignore the dyne_page theme templates.
+Correction: Align dyne_pages.yml to target the active landing page bundle, or rename dyne_page to page across all install hooks, displays, and templates.
+
+Issue ID: ISS-02
+Severity: Critical
+Affected Entity: All Paragraph Types (field_items_json, field_rows_json, field_sections_json)
+File Paths:
+web/modules/custom/dyne_migrate/dyne_migrate.install (Lines 140–165)
+web/themes/custom/dynetx/templates/paragraph--dyne-team-grid.html.twig
+web/themes/custom/dynetx/templates/paragraph--dyne-news-list.html.twig
+Current Implementation: Complex nested repeaters (cards, leadership bios, news items, pipeline drugs) are encoded as raw JSON strings stored in text_long fields.
+Expected Implementation: Structured Drupal sub-fields, nested paragraph types, or dynamic entity references (e.g. field_team_members referencing node:team_member).
+Impact:
+Content editors cannot edit items through Drupal UI forms without editing raw JSON strings.
+Hardcoded unmanaged file paths in JSON bypass Drupal image styles and media tracking.
+Complete loss of search indexing and translatability for items inside JSON blobs.
+Correction: Refactor the 6 affected paragraph types to use dedicated Drupal field configurations and entity references as defined in §6.2.
+
+Issue ID: ISS-03
+Severity: High
+Affected Entity: Theme Preprocessing & Hero Presentation
+File Paths:
+web/themes/custom/dynetx/dynetx.theme (Lines 34–45)
+web/modules/custom/dyne_migrate/data/legacy-page-metadata.json
+Current Implementation: _dynetx_legacy_metadata() executes file_get_contents() on a static JSON file on disk on every request to determine hero headings and body classes.
+Expected Implementation: Hero fields (field_hero_first_line, field_hero_second_line, field_body_class) must be read directly from the loaded Node entity.
+Impact: Content editors editing page titles, heroes, or body classes in Drupal admin see no changes on the frontend because the static disk JSON overrides entity values.
+Correction: Remove legacy-page-metadata.json dependency from dynetx.theme; retrieve hero values from $node->get('field_hero_first_line')->value.
+
+Issue ID: ISS-04
+Severity: Medium
+Affected Entity: node:dyne_page
+File Paths:
+wp-content/themes/dynetxdev2020/header.php (Line 223)
+web/modules/custom/dyne_migrate/dyne_migrate.install
+Current Implementation: In WordPress, ACF boolean field hero_third_level flags compact hero layouts on personal stories and policy pages. This field was omitted from Drupal node configuration.
+Expected Implementation: A boolean field field_hero_third_level on the page content type.
+Impact: Inability to toggle compact hero presentation on third-level pages through the Drupal editor interface.
+Correction: Add field_hero_third_level (boolean) to the landing page bundle.
+
+Issue ID: ISS-05
+Severity: High
+Affected Entity: Media & Hero Images (MultiPostThumbnails)
+File Paths:
+wp-content/themes/dynetxdev2020/functions.php (Lines 84–100)
+wp-content/themes/dynetxdev2020/header.php (Lines 255–267)
+web/modules/custom/dyne_migrate/dyne_migrate.install
+Current Implementation: MultiPostThumbnails (secondary-image for mobile and hero-overlay-image for decorative overlays) were ignored during Drupal schema creation.
+Expected Implementation: Dedicated media reference fields: field_hero_mobile_image and field_hero_overlay_image referencing media:image.
+Impact: Mobile visitors receive desktop crops or fallback images, degrading responsive design fidelity and performance.
+Correction: Create field_hero_mobile_image and field_hero_overlay_image on page and populate from WordPress postmeta keys page_secondary-image_thumbnail_id and page_hero-overlay-image_thumbnail_id.
+
+Issue ID: ISS-06 & ISS-07
+Severity: High
+Affected Entity: node:news Date & Content Fields
+File Paths:
+web/modules/custom/dyne_migrate/dyne_migrate.install (Lines 125–130)
+web/modules/custom/dyne_migrate/data/legacy-content.json
+Current Implementation: Publication date is stored as a plain string in field_date_text (text, e.g. "September 08, 2026") instead of a native datetime field. post_content was omitted from migration definitions.
+Expected Implementation: field_news_date (datetime) and body (text_with_summary).
+Impact: News cannot be sorted, filtered, or indexed chronologically in Drupal Views, date archives, or RSS feeds.
+Correction: Convert field_date_text to field_news_date (datetime) and populate via format_date plugin from UNIX timestamp news_date.
+
+Issue ID: ISS-08 & ISS-09
+Severity: High
+Affected Entity: node:news External Feed & Dispatch Type
+File Paths:
+wp-content/plugins/workbox_news/plugin.php (Lines 109–119, 543–560)
+web/modules/custom/dyne_migrate/dyne_migrate.install
+Current Implementation: WordPress news_content_type (0 = HTML, 1 = External URL, 2 = PDF File) was flattened into a plain URL string field_source_url.
+Expected Implementation: A structured field_news_type (list_string), field_external_url (link), and field_news_file (media:document).
+Impact: Release items linking to external GlobeNewswire pages or PDF documents cannot open in new tabs or display download icons; all items behave identically.
+Correction: Add field_news_type, field_external_url, and field_news_file to news bundle.
+
+Issue ID: ISS-10 & ISS-12 & ISS-15
+Severity: High
+Affected Entity: node:leader vs node:team_member
+File Paths:
+web/modules/custom/dyne_migrate/migrations/dyne_leaders.yml
+web/modules/custom/dyne_migrate/data/leaders.csv
+Current Implementation: dyne_leaders.yml attempts to map a CSV string (Group: "Leadership") directly into field_leader_type without an entity_lookup plugin. The CSV contains only 11 rows.
+Expected Implementation: Migrate all 31 team members from WordPress team CPT using entity_lookup to resolve team_category terms. Map _position to field_position and _position_info to field_position_info.
+Impact: Migration fails or leaves taxonomy references empty. 20 team members are missing from the CSV source.
+Correction: Build a comprehensive migration querying WordPress team records with entity_lookup on team_category.
+
+Issue ID: ISS-17 & ISS-18 & ISS-19
+Severity: High
+Affected Entity: node:job Careers Integration
+File Paths:
+web/modules/custom/dyne_migrate/migrations/dyne_jobs.yml
+web/modules/custom/dyne_migrate/data/jobs-sample.csv
+Current Implementation: dyne_jobs.yml maps an 8-row sample CSV. It maps Department and Location to plain text fields (field_department_text, field_location_text), ignoring the taxonomy vocabularies created in dyne_migrate.install.
+Expected Implementation: Migrate all 49 jobs from WordPress jobs CPT. Map department and location to taxonomy term references (field_department, field_location). Map Greenhouse job ID to field_greenhouse_id.
+Impact: 41 active job listings are missing. Careers search and facet filtering by department/location cannot function.
+Correction: Replace sample CSV with complete 49-row export or direct DB query, mapping terms via entity_lookup.
+
+Issue ID: ISS-24 & ISS-25
+Severity: Medium
+Affected Entity: Missing CPTs (wb_quotes, wb_privacy_policy)
+File Paths:
+wp-content/plugins/workbox_quotes/plugin.php
+wp-content/plugins/workbox_privacy_policies/plugin.php
+Current Implementation: Neither wb_quotes nor wb_privacy_policy exist as content types in Drupal. Their content was embedded into static paragraphs or discarded.
+Expected Implementation: Content type quote for testimonial management and privacy_policy for drag-and-drop policy sections.
+Impact: Quotes and policy blocks cannot be updated centrally or reused across multiple pages.
+Correction: Create quote and privacy_policy bundles or dedicated paragraph components.
+
+Issue ID: ISS-26
+Severity: Critical
+Affected Entity: Drupal Core Media System
+File Paths:
+web/sites/default/files/legacy/
+Database table file_managed
+Current Implementation: Drupal Core media module is not installed. Over 400 assets are referenced as unmanaged filesystem paths (/sites/default/files/legacy/...).
+Expected Implementation: Enable media and media_library. Migrate WordPress attachment posts into media:image, media:document, and media:video.
+Impact:
+No file usage tracking; deleting a node does not clean up files.
+Editors cannot reuse uploaded assets via Media Library.
+High-resolution images cannot generate responsive image derivatives (<picture> tags).
+Correction: Execute a phased media migration converting all 429 WordPress attachments into managed Drupal Media entities.
+
+Issue ID: ISS-27
+Severity: Critical
+Affected Entity: 301 URL Redirection & SEO Authority
+File Paths:
+Database table redirect
+web/modules/custom/dyne_migrate/data/url-map.csv
+Current Implementation: The redirect table contains 0 records. url-map.csv contains only 6 sample rows.
+Expected Implementation: Complete import of all legacy URLs and WordPress redirection rules (wp_redirection_items) into Drupal Core redirect.
+Impact: Immediate catastrophic loss of Google search rankings, broken external backlinks from press releases, and 404 errors for visitors following legacy URLs upon launch.
+Correction: Extract all URLs from WordPress wp_posts and wp_redirection_items into a master redirect CSV and import using redirect module API.
+
+9. Reference Project vs. Current Project Comparison
+Architecture Area
+Reference MedicalHub (medicalhubus)
+Current DyneTX (DyneTX)
+Recommended Approach for DyneTX
+Content Modeling
+13 discrete, structured content types matching source CPTs (scientific_meeting, medical_event, etc.).
+6 content types, with 52 pages collapsed into a single dyne_page bundle.
+Retain dedicated CPT bundles (news, job, team_member, perspective, page).
+Component Architecture
+Page-level structured fields; no Paragraphs used (Bricks template source).
+12 Paragraph types storing flattened JSON strings in field_items_json.
+21 Paragraph types with native Drupal field controls matching the 21 ACF layouts.
+Media Handling
+Core Media entities (media:document, media:image) with managed file IDs.
+Plain unmanaged filesystem paths; zero Media entities; file_managed count is 27.
+Core Media entities (media:image, media:document, media:video) for all 429 assets.
+Migration Method
+Declarative migrate_plus YAML pipelines parsing structured JSON fixtures.
+Procedural PHP script (import-legacy.php) injecting entities; CSV migrations idle (0 rows).
+Declarative migrate_plus pipelines with rollback and idempotency support.
+External API Ingestion
+Custom module dmc_publications_migrate processing scheduled feeds.
+Codebase contains outdated WP plugins; Drupal ingestion pipelines not implemented.
+Custom Migrate / QueueWorker modules for live Greenhouse and GCS API ingestion.
+Redirect Management
+Dedicated import script (import_redirects.php) importing 173 mapped URLs.
+0 redirects in database; only 6 sample rows in url-map.csv.
+Full redirect import of all legacy WP URLs and wp_redirection_items rules.
+Theme Decoupling
+Pure Twig templates consuming render arrays from Drupal field entities.
+dynetx.theme reads static JSON disk file on every request (legacy-page-metadata.json).
+Decouple theme entirely from disk files; consume native Drupal field values.
+Configuration Mgmt
+Clean config/default sync directory containing all exported entity YAMLs.
+sites/default/files/sync is completely empty; all schema defined in .install hook.
+Export complete site configuration to repository-tracked config/sync.
+
+10. Content Completeness and Data Integrity Assessment
+10.1 Verified Source vs. Target Content Reconciliation
+Entity Category
+WordPress DB Source
+DyneTX Drupal DB
+Completeness Status
+Identified Data Integrity Gap
+Landing Pages
+54
+52
+96% (Count)
+Page components are flattened into JSON rather than relational paragraphs.
+News Articles
+183
+199
+100% (Count)
+Stored without post_content body, without valid datetime, and without file refs.
+Career Positions
+49
+49
+100% (Count)
+Disconnected from taxonomy terms; job descriptions stripped in CSV migration.
+Team Profiles
+31
+31
+100% (Count)
+Disconnected from landing page grids; _position_info credentials omitted.
+Perspectives
+13
+13
+100% (Count)
+Author, subtitle, and publication dates omitted from schema.
+Testimonials / Quotes
+4
+0
+0% (Entity)
+Entirely flattened into a single JSON paragraph string on the homepage.
+Privacy Policies
+2
+0
+0% (Entity)
+Content hardcoded into templates or lost.
+Managed Media
+429
+27
+6.2%
+93.8% of media assets are completely unmanaged by Drupal.
+URL Redirects
+1+ rules
+0
+0%
+100% of legacy URLs lack 301 redirect protection.
+
+11. Prioritized Recommendations
+Phase 1: Critical Architecture Corrections (Must complete before any data freeze)
+Refactor Paragraph Architecture (Eliminate JSON Strings): Replace field_items_json, field_rows_json, and field_sections_json on the Paragraph types with native Drupal field collections or nested Paragraphs.
+Establish the Core Media Foundation: Enable core media and media_library. Migrate all 429 WordPress attachments into media:image, media:document, and media:video. Replace hardcoded /sites/default/files/legacy/... string paths with entity references.
+Decouple Theme from Disk Files: Remove _dynetx_legacy_metadata() from dynetx.theme. Ensure all hero titles, subtitles, and body classes are served directly from Drupal entity fields.
+Phase 2: Migration Pipeline Alignment (Replace Scripts with Migrate Plus)
+Rebuild Declarative Migration YAMLs: Rewrite dyne_pages.yml, dyne_jobs.yml, dyne_leaders.yml, and dyne_perspectives.yml. Connect them to complete source extracts (not sample CSVs).
+Implement entity_lookup for Taxonomy References: Ensure field_department, field_location, field_team_category, and field_disease properly resolve to taxonomy term IDs.
+Implement 301 Redirect Pipeline: Generate a comprehensive CSV mapping all legacy WordPress URLs (/%postname%/, /news/newsyear/*) to their new Drupal canonical paths and import into redirect entities.
+Phase 3: Live API Ingestion & Enterprise Governance
+Build Live API Ingestion Modules: Implement dyne_greenhouse_sync (replacing WorkboxJobsGreenhouse) and dyne_news_sync (replacing WorkboxNews) as scheduled Drupal Migrate tasks or QueueWorkers.
+Export Configuration to Git: Execute drush config:export to commit all content types, field storages, field instances, form displays, and view displays to version-controlled config/sync.
+
+12. Unverified Items and Additional Evidence Required
+Acquia Hosting Environment Details: The Jira task mentions Acquia Cloud and BLT setup, but the workspace contains only local DDEV configuration. Cloud environments, SSH endpoints, and Acquia pipelines cannot be verified without infrastructure credentials.
+Greenhouse API Production Token: The production Greenhouse board token (wb_harvest_board_token) is stored in the WordPress database options. API endpoint rate limits and live webhook capabilities require client confirmation.
+GlobeNewswire (GCS Web) Feed Credentials: The client ID (wb_xml_news_client_id) for clientapi.gcs-web.com must be verified against current enterprise licensing.
+OneTrust Production Collection Point GUIDs: ot-webform-plugin.php contains placeholder GUIDs for staging and production. Final production collection point IDs must be validated by the compliance team.
+
+13. Final Validation Checklist
+All 21 ACF Flexible Content layouts are represented by discrete Drupal Paragraph types with zero JSON string fields.
+Core Media Library contains all 429 source images, PDFs, and MP4 videos with alt text and stream wrappers.
+Landing page team grids reference node:team_member entities rather than embedding hardcoded bios.
+Landing page news bands reference dynamic Views rather than hardcoded news JSON.
+All 49 jobs, 31 team members, 183 news items, and 13 perspectives exist as queryable, editable nodes.
+Drupal redirect module contains 100% of legacy WordPress URLs with verified HTTP 301 status.
+dynetx.theme contains zero calls to file_get_contents() reading static JSON files from disk.
+Configuration sync directory (config/sync) is fully populated and passes drush config:status with zero differences.
+Automated regression testing via Playwright confirms visual and functional parity against the reference WordPress site.
+Greenhouse and GCS news API sync tasks execute cleanly via Drush without errors or duplicate nodes.

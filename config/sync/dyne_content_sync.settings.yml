@@ -1,0 +1,7 @@
+_core:
+  default_config_hash: MoKevkBwUdz1R6UhfAVwmjGGQSjJzL64YnK-r0YXF3M
+greenhouse_enabled: false
+greenhouse_board: dynetherapeutics
+gcs_enabled: false
+gcs_client_id: ''
+interval: 3600

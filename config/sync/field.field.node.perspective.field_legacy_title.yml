@@ -1,0 +1,19 @@
+uuid: 7c498cce-d079-4a40-be73-e767f94c1670
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_legacy_title
+    - node.type.perspective
+id: node.perspective.field_legacy_title
+field_name: field_legacy_title
+entity_type: node
+bundle: perspective
+label: 'Full legacy title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

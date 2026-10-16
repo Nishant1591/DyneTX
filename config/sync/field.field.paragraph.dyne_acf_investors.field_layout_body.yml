@@ -1,0 +1,22 @@
+uuid: c5820101-0b17-4016-93b3-bf93a49e47b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_layout_body
+    - paragraphs.paragraphs_type.dyne_acf_investors
+  module:
+    - text
+id: paragraph.dyne_acf_investors.field_layout_body
+field_name: field_layout_body
+entity_type: paragraph
+bundle: dyne_acf_investors
+label: Text
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

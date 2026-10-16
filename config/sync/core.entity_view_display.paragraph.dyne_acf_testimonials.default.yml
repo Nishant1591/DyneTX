@@ -1,0 +1,16 @@
+uuid: 14046fea-f7ce-4819-a465-6930253f752c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.dyne_acf_testimonials.field_layout_heading
+    - field.field.paragraph.dyne_acf_testimonials.field_layout_quotes
+    - paragraphs.paragraphs_type.dyne_acf_testimonials
+id: paragraph.dyne_acf_testimonials.default
+targetEntityType: paragraph
+bundle: dyne_acf_testimonials
+mode: default
+content: {  }
+hidden:
+  field_layout_heading: true
+  field_layout_quotes: true

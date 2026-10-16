@@ -1,0 +1,11 @@
+uuid: b35792b8-125a-4cae-8940-99365a9d9a95
+langcode: en
+status: true
+dependencies: {  }
+name: Job
+type: job
+description: 'Careers position.'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: true

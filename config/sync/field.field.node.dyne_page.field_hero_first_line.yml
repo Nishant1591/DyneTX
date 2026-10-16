@@ -1,0 +1,22 @@
+uuid: fdc6f6f8-4d53-4f1a-b212-3b4ce8e48f11
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hero_first_line
+    - node.type.dyne_page
+  module:
+    - text
+id: node.dyne_page.field_hero_first_line
+field_name: field_hero_first_line
+entity_type: node
+bundle: dyne_page
+label: 'Hero first line'
+description: 'First heading line shown in this page’s hero banner.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text

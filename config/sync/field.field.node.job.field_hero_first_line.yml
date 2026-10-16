@@ -1,0 +1,22 @@
+uuid: 1a890b29-38ff-45b5-8147-6ea1313c79e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hero_first_line
+    - node.type.job
+  module:
+    - text
+id: node.job.field_hero_first_line
+field_name: field_hero_first_line
+entity_type: node
+bundle: job
+label: 'Hero first line'
+description: 'First heading line shown in this page’s hero banner.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text

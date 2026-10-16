@@ -1,0 +1,11 @@
+uuid: 04074b0b-0a54-4075-9159-2441a7d4a37f
+langcode: en
+status: true
+dependencies: {  }
+name: 'Pipeline program'
+type: pipeline_program
+description: 'DMD / DM1 / FSHD program detail.'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: true

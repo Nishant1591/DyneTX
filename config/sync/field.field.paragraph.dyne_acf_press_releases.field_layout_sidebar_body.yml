@@ -1,0 +1,22 @@
+uuid: 3231f4ce-9356-4501-b604-6829c38eb6ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_layout_sidebar_body
+    - paragraphs.paragraphs_type.dyne_acf_press_releases
+  module:
+    - text
+id: paragraph.dyne_acf_press_releases.field_layout_sidebar_body
+field_name: field_layout_sidebar_body
+entity_type: paragraph
+bundle: dyne_acf_press_releases
+label: 'Sidebar content'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

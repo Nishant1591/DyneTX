@@ -1,0 +1,52 @@
+uuid: 4b79ed19-b1a3-4c6f-94e8-896163c60808
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.dyne_acf_text_image.field_layout_body
+    - field.field.paragraph.dyne_acf_text_image.field_layout_caption
+    - field.field.paragraph.dyne_acf_text_image.field_layout_heading
+    - field.field.paragraph.dyne_acf_text_image.field_layout_image
+    - paragraphs.paragraphs_type.dyne_acf_text_image
+  module:
+    - media_library
+    - text
+id: paragraph.dyne_acf_text_image.default
+targetEntityType: paragraph
+bundle: dyne_acf_text_image
+mode: default
+content:
+  field_layout_body:
+    type: text_textarea
+    weight: 4
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_layout_caption:
+    type: string_textarea
+    weight: 4
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_layout_heading:
+    type: string_textfield
+    weight: 4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_layout_image:
+    type: media_library_widget
+    weight: 4
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

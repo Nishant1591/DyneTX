@@ -1,0 +1,38 @@
+{{ dyne_component_cache }}
+<div class="dyne-legacy-content">
+  <div class="container-fluid section dynamic-dynamos">
+    <span id="HfD" class="anchor" aria-hidden="true"></span><div id="dynamic" class="anchor mb-5 mt-n5 pb-5"></div>
+    <div class="container">
+      {{ dyne_quotes_intro }}
+      <div class="row quotes-carousel"><div class="col-12 px-0">
+        <div id="quotesCarousel" class="multi-carousel" data-mdb-multi-carousel-init data-mdb-items="2">
+          <div class="carousel-indicators">
+            {% for quote in dyne_items %}<button type="button" data-mdb-target="#quotesCarousel" aria-label="Slide {{ loop.index }}"{% if loop.first %} class="active" aria-current="true"{% endif %}></button>{% endfor %}
+          </div>
+          <div class="multi-carousel-inner">
+            {% for quote in dyne_items %}
+              <div item="{{ loop.index0 }}" class="multi-carousel-item"><div class="row mx-0">
+                <div class="col-{{ quote.width }} quote-container"><p class="title">{{ quote.author }}</p><p class="text">{{ quote.quote }}</p></div>
+                <div class="col-5 px-0 pic-container">{% if quote.photo %}<img src="{{ quote.photo }}" alt="{{ quote.author }} picture" class="img-fluid">{% endif %}</div>
+              </div></div>
+            {% endfor %}
+          </div>
+          <button data-mdb-target="#quotesCarousel" class="carousel-control-prev" type="button" tabindex="0" data-mdb-slide="prev" aria-label="Previous quote"><span class="carousel-control-prev-icon" aria-hidden="true"></span></button>
+          <button data-mdb-target="#quotesCarousel" class="carousel-control-next" type="button" tabindex="0" data-mdb-slide="next" aria-label="Next quote"><span class="carousel-control-next-icon" aria-hidden="true"></span></button>
+        </div>
+      </div></div>
+    </div>
+  </div>
+  <div id="employees" class="container-fluid section careers-employees d-none">
+    <div class="container">
+      <div class="row"><div class="col-12"><h2 class="fancy-title">Why we joined</h2></div></div>
+      <div class="row"><div class="col-12">
+        <div id="empl-quotes" class="carousel slide carousel-fade" data-ride="carousel">
+          <div class="carousel-inner" role="listbox">{% for quote in dyne_archived_quotes %}<div class="carousel-item{{ loop.first ? ' active' : '' }}"><blockquote>{{ quote.quote }}</blockquote><p>{{ quote.author }}</p></div>{% endfor %}</div>
+          <span class="sr-only">Previous slide</span><span class="sr-only">Next slide</span>
+          <ol class="carousel-indicators">{% for quote in dyne_archived_quotes %}<li data-bs-target="#empl-quotes" data-bs-slide-to="{{ loop.index0 }}" class="{{ loop.first ? 'active' : '' }}" aria-label="Quote {{ loop.index }}"></li>{% endfor %}</ol>
+        </div>
+      </div></div>
+    </div>
+  </div>
+</div>

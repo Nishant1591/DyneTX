@@ -1,0 +1,35 @@
+uuid: 25e8c94f-2954-404b-9f49-30691f8d0ca2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.dyne_alert_banner.field_banner_logo
+    - field.field.paragraph.dyne_alert_banner.field_banner_text
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.dyne_alert_banner
+  module:
+    - image
+id: paragraph.dyne_alert_banner.default
+targetEntityType: paragraph
+bundle: dyne_alert_banner
+mode: default
+content:
+  field_banner_logo:
+    type: image_image
+    weight: 0
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_banner_text:
+    type: string_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

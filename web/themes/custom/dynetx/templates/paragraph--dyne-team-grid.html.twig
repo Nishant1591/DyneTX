@@ -1,3 +1,4 @@
+{{ dyne_component_cache }}
 {# Preserve the editable Paragraph data and use the original site's team layout.
    The live source has one visible leadership group and two collapsed boards. #}
 {% set team_id = 'dyne-team-' ~ paragraph.id() %}
@@ -37,7 +38,7 @@
       {% if is_board %}</div></div>{% endif %}
     </div>
   </section>
-  {# Keep biography content editable in its existing Paragraph. These inert
+  {# Biography content comes from referenced team nodes. These inert
      templates populate the single shared dialog without closing it on arrows. #}
   {% for m in dyne_items %}
     {% set bio_id = team_id ~ '-' ~ loop.index %}

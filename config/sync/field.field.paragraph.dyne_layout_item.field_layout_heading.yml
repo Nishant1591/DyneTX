@@ -1,0 +1,19 @@
+uuid: 12ee9f8d-b907-4959-b906-7b33dd03f221
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_layout_heading
+    - paragraphs.paragraphs_type.dyne_layout_item
+id: paragraph.dyne_layout_item.field_layout_heading
+field_name: field_layout_heading
+entity_type: paragraph
+bundle: dyne_layout_item
+label: Heading
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

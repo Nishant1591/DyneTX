@@ -1,0 +1,22 @@
+uuid: 6ac95e4a-fa2c-4d66-8d71-07687b93d2f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hero_second_line
+    - node.type.dyne_page
+  module:
+    - text
+id: node.dyne_page.field_hero_second_line
+field_name: field_hero_second_line
+entity_type: node
+bundle: dyne_page
+label: 'Hero second line'
+description: 'Second heading line shown in this page’s hero banner.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text

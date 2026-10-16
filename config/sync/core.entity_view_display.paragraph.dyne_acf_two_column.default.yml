@@ -1,0 +1,22 @@
+uuid: b989cc68-7c2c-46bf-9b40-44ef2b06aa93
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.dyne_acf_two_column.field_layout_background_image
+    - field.field.paragraph.dyne_acf_two_column.field_layout_body
+    - field.field.paragraph.dyne_acf_two_column.field_layout_heading
+    - field.field.paragraph.dyne_acf_two_column.field_layout_image
+    - field.field.paragraph.dyne_acf_two_column.field_layout_items
+    - paragraphs.paragraphs_type.dyne_acf_two_column
+id: paragraph.dyne_acf_two_column.default
+targetEntityType: paragraph
+bundle: dyne_acf_two_column
+mode: default
+content: {  }
+hidden:
+  field_layout_background_image: true
+  field_layout_body: true
+  field_layout_heading: true
+  field_layout_image: true
+  field_layout_items: true

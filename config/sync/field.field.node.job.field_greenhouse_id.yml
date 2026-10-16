@@ -1,0 +1,19 @@
+uuid: a0b2b317-0f21-4c2e-a995-e974f7cc73c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_greenhouse_id
+    - node.type.job
+id: node.job.field_greenhouse_id
+field_name: field_greenhouse_id
+entity_type: node
+bundle: job
+label: 'Greenhouse public job ID'
+description: 'Public Greenhouse job ID used for feed reconciliation and application URLs.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

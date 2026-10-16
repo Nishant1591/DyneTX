@@ -1,0 +1,19 @@
+uuid: 6a4fc33b-913c-41cb-bae5-36f0da4308fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_seo_title
+    - node.type.perspective
+id: node.perspective.field_seo_title
+field_name: field_seo_title
+entity_type: node
+bundle: perspective
+label: 'Search result title'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

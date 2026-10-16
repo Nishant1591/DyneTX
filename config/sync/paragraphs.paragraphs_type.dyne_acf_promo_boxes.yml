@@ -1,0 +1,10 @@
+uuid: 302246f5-f78d-4388-b045-6814ee3299b1
+langcode: en
+status: true
+dependencies: {  }
+id: dyne_acf_promo_boxes
+label: 'Two-column promotional boxes'
+icon_uuid: null
+icon_default: null
+description: null
+behavior_plugins: {  }

@@ -1,0 +1,19 @@
+uuid: 14e93d9d-44b7-45de-9948-b8ee47f3c0af
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hero_classes
+    - node.type.news
+id: node.news.field_hero_classes
+field_name: field_hero_classes
+entity_type: node
+bundle: news
+label: 'Hero CSS classes'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

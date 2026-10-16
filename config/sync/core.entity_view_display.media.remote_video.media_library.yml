@@ -1,0 +1,38 @@
+uuid: dd25fc67-168c-450a-8703-387defa3b8b8
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.media_library
+    - field.field.media.remote_video.field_media_caption
+    - field.field.media.remote_video.field_media_description
+    - field.field.media.remote_video.field_media_oembed_video
+    - field.field.media.remote_video.field_wp_attachment_id
+    - image.style.medium
+    - media.type.remote_video
+  module:
+    - image
+id: media.remote_video.media_library
+targetEntityType: media
+bundle: remote_video
+mode: media_library
+content:
+  thumbnail:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: medium
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  field_media_caption: true
+  field_media_description: true
+  field_media_oembed_video: true
+  field_wp_attachment_id: true
+  name: true
+  uid: true

@@ -1,0 +1,30 @@
+uuid: 4c5db1fe-1960-4b41-acd5-1c6361723188
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.dyne_quote_carousel.field_heading
+    - field.field.paragraph.dyne_quote_carousel.field_items_json
+    - field.field.paragraph.dyne_quote_carousel.field_native_components
+    - field.field.paragraph.dyne_quote_carousel.field_quotes
+    - paragraphs.paragraphs_type.dyne_quote_carousel
+id: paragraph.dyne_quote_carousel.default
+targetEntityType: paragraph
+bundle: dyne_quote_carousel
+mode: default
+content:
+  field_heading:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_items_json: true
+  field_native_components: true
+  field_quotes: true
+  field_rows_json: true
+  field_sections_json: true

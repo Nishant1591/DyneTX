@@ -1,0 +1,25 @@
+uuid: 0ba5c8e3-3600-4576-a5fc-2282799b175b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.dyne_acf_wysiwyg.field_layout_body
+    - paragraphs.paragraphs_type.dyne_acf_wysiwyg
+  module:
+    - text
+id: paragraph.dyne_acf_wysiwyg.default
+targetEntityType: paragraph
+bundle: dyne_acf_wysiwyg
+mode: default
+content:
+  field_layout_body:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

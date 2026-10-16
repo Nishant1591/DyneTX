@@ -1,0 +1,22 @@
+uuid: 387f24bb-6368-4a0f-b1b8-14f18dba8796
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hero_first_line
+    - node.type.news
+  module:
+    - text
+id: node.news.field_hero_first_line
+field_name: field_hero_first_line
+entity_type: node
+bundle: news
+label: 'Hero first line'
+description: 'First heading line shown in this page’s hero banner.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text

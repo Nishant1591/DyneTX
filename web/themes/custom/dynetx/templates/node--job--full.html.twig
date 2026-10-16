@@ -1,3 +1,4 @@
+{{ dyne_metadata_cache }}
 {% if dyne_legacy %}
   <div class="wrapper pages">{% include '@dynetx/includes/legacy-hero.html.twig' %}</div>
 {% else %}
@@ -15,18 +16,18 @@
 <article{{ attributes.addClass('dyne-job-detail') }}>
   <h1 class="dyne-job-detail__title">{{ label }}</h1>
 
-  {% if node.field_apply_url.value %}
+  {% if dyne_apply_url %}
     <div class="dyne-job-detail__apply dyne-job-detail__apply--top">
-      <a class="btn btn-primary btn-lg" href="{{ node.field_apply_url.value }}" target="_blank" rel="noopener">{{ 'Apply for this job'|t }}</a>
+      <a class="btn btn-primary btn-lg" href="{{ dyne_apply_url }}" target="_blank" rel="noopener">{{ 'Apply for this job'|t }}</a>
     </div>
   {% endif %}
 
   <div class="dyne-job-detail__meta">
-    {% if node.field_department_text.value %}
-      <p><strong>{{ 'Department:'|t }}</strong> {{ node.field_department_text.value }}</p>
+    {% if dyne_job_department %}
+      <p><strong>{{ 'Department:'|t }}</strong> {{ dyne_job_department }}</p>
     {% endif %}
-    {% if node.field_location_text.value %}
-      <p><strong>{{ 'Location:'|t }}</strong> {{ node.field_location_text.value }}</p>
+    {% if dyne_job_location %}
+      <p><strong>{{ 'Location:'|t }}</strong> {{ dyne_job_location }}</p>
     {% endif %}
   </div>
 
@@ -34,9 +35,9 @@
     {{ content.field_body_text }}
   </div>
 
-  {% if node.field_apply_url.value %}
+  {% if dyne_apply_url %}
     <div class="dyne-job-detail__apply dyne-job-detail__apply--bottom">
-      <a class="btn btn-primary btn-lg" href="{{ node.field_apply_url.value }}" target="_blank" rel="noopener">{{ 'Apply for this job'|t }}</a>
+      <a class="btn btn-primary btn-lg" href="{{ dyne_apply_url }}" target="_blank" rel="noopener">{{ 'Apply for this job'|t }}</a>
     </div>
   {% endif %}
 

@@ -1,0 +1,21 @@
+uuid: 72107a0b-5529-4fe5-87fe-0659644d3256
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_news_date
+    - node.type.news
+  module:
+    - datetime
+id: node.news.field_news_date
+field_name: field_news_date
+entity_type: node
+bundle: news
+label: 'Publication date'
+description: 'Publication date used in chronological news listings.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,9 @@
+uuid: d6ac609d-9769-40fe-99bc-935675d146d1
+langcode: en
+status: true
+dependencies: {  }
+name: 'Leader type'
+vid: leader_type
+description: null
+weight: 0
+new_revision: false

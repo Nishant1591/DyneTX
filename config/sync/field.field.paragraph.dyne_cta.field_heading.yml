@@ -1,0 +1,19 @@
+uuid: a8322bf9-f246-480e-8781-d3680aa86b3b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_heading
+    - paragraphs.paragraphs_type.dyne_cta
+id: paragraph.dyne_cta.field_heading
+field_name: field_heading
+entity_type: paragraph
+bundle: dyne_cta
+label: Heading
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

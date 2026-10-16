@@ -1,0 +1,10 @@
+uuid: cb6778ad-2011-4ed4-b7d0-3bc9f21fb683
+langcode: en
+status: true
+dependencies: {  }
+id: dyne_quote_carousel
+label: 'Quote carousel'
+icon_uuid: null
+icon_default: null
+description: null
+behavior_plugins: {  }

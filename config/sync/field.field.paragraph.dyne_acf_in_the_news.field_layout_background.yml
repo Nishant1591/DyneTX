@@ -1,0 +1,21 @@
+uuid: 39ffde4e-e60a-4d8c-bbdc-a718efbbe0be
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_layout_background
+    - paragraphs.paragraphs_type.dyne_acf_in_the_news
+  module:
+    - options
+id: paragraph.dyne_acf_in_the_news.field_layout_background
+field_name: field_layout_background
+entity_type: paragraph
+bundle: dyne_acf_in_the_news
+label: Background
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

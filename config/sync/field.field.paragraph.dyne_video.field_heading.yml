@@ -1,0 +1,19 @@
+uuid: 2ed72d8e-be75-4f73-8d4d-8ffcf735a327
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_heading
+    - paragraphs.paragraphs_type.dyne_video
+id: paragraph.dyne_video.field_heading
+field_name: field_heading
+entity_type: paragraph
+bundle: dyne_video
+label: Heading
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
