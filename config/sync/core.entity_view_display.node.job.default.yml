@@ -1,0 +1,247 @@
+uuid: f7755fa5-ffc7-4d82-94c0-62e84da62563
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.job.field_apply_url
+    - field.field.node.job.field_body_text
+    - field.field.node.job.field_components
+    - field.field.node.job.field_department_group
+    - field.field.node.job.field_department_text
+    - field.field.node.job.field_image
+    - field.field.node.job.field_job_company_overview
+    - field.field.node.job.field_job_eoe_statement
+    - field.field.node.job.field_job_link_facebook
+    - field.field.node.job.field_job_link_linkedin
+    - field.field.node.job.field_job_link_website
+    - field.field.node.job.field_job_link_x
+    - field.field.node.job.field_job_pay_currency
+    - field.field.node.job.field_job_pay_disclaimer
+    - field.field.node.job.field_job_pay_max
+    - field.field.node.job.field_job_pay_min
+    - field.field.node.job.field_job_pay_title
+    - field.field.node.job.field_job_role_summary
+    - field.field.node.job.field_job_sections
+    - field.field.node.job.field_job_workplace_type
+    - field.field.node.job.field_legacy_title
+    - field.field.node.job.field_link
+    - field.field.node.job.field_location_text
+    - field.field.node.job.field_next_url
+    - field.field.node.job.field_open_position_weight
+    - field.field.node.job.field_previous_url
+    - node.type.job
+  module:
+    - entity_reference_revisions
+    - text
+    - user
+id: node.job.default
+targetEntityType: node
+bundle: job
+mode: default
+content:
+  field_apply_url:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_body_text:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_components:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  field_department_group:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_department_text:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_job_company_overview:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  field_job_eoe_statement:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 50
+    region: content
+  field_job_link_facebook:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 14
+    region: content
+  field_job_link_linkedin:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 13
+    region: content
+  field_job_link_website:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 11
+    region: content
+  field_job_link_x:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 12
+    region: content
+  field_job_pay_currency:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 43
+    region: content
+  field_job_pay_disclaimer:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 44
+    region: content
+  field_job_pay_max:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 42
+    region: content
+  field_job_pay_min:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 41
+    region: content
+  field_job_pay_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 40
+    region: content
+  field_job_role_summary:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 20
+    region: content
+  field_job_sections:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 30
+    region: content
+  field_job_workplace_type:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_location_text:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_next_url:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_open_position_weight:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_previous_url:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_image: true
+  field_legacy_title: true
+  field_link: true

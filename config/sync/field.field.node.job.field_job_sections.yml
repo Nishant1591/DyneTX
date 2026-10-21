@@ -1,0 +1,26 @@
+uuid: dd0aa3aa-0ea4-46f5-9e68-414ad2d272d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_job_sections
+    - node.type.job
+    - paragraphs.paragraphs_type.dyne_job_section
+  module:
+    - entity_reference_revisions
+id: node.job.field_job_sections
+field_name: field_job_sections
+entity_type: node
+bundle: job
+label: 'Job Sections (Responsibilities, Requirements, Initiatives)'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      dyne_job_section: dyne_job_section
+field_type: entity_reference_revisions

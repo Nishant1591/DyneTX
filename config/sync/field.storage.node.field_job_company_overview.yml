@@ -1,0 +1,19 @@
+uuid: bfe940c7-7ddb-4a8e-b055-5fe606fc177b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_job_company_overview
+field_name: field_job_company_overview
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

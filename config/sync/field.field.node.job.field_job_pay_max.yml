@@ -1,0 +1,19 @@
+uuid: 0ed97ed5-e1a9-4c69-a1bf-a54461901555
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_job_pay_max
+    - node.type.job
+id: node.job.field_job_pay_max
+field_name: field_job_pay_max
+entity_type: node
+bundle: job
+label: 'Pay Range Maximum (e.g. $280,000)'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

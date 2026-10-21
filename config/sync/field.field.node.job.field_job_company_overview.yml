@@ -1,0 +1,22 @@
+uuid: 77baa983-8b2a-4a30-b10a-dc602288e2cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_job_company_overview
+    - node.type.job
+  module:
+    - text
+id: node.job.field_job_company_overview
+field_name: field_job_company_overview
+entity_type: node
+bundle: job
+label: 'Company Overview'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

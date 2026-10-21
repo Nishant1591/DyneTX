@@ -1,3 +1,4 @@
+﻿{{ dyne_metadata_cache }}
 {% if dyne_legacy %}
   <div class="wrapper pages">{% include '@dynetx/includes/legacy-hero.html.twig' %}</div>
 {% else %}
@@ -15,28 +16,102 @@
 <article{{ attributes.addClass('dyne-job-detail') }}>
   <h1 class="dyne-job-detail__title">{{ label }}</h1>
 
-  {% if node.field_apply_url.value %}
+  {% if dyne_apply_url %}
     <div class="dyne-job-detail__apply dyne-job-detail__apply--top">
-      <a class="btn btn-primary btn-lg" href="{{ node.field_apply_url.value }}" target="_blank" rel="noopener">{{ 'Apply for this job'|t }}</a>
+      <a class="btn btn-primary btn-lg" href="{{ dyne_apply_url }}" target="_blank" rel="noopener">{{ 'Apply for this job'|t }}</a>
     </div>
   {% endif %}
 
   <div class="dyne-job-detail__meta">
-    {% if node.field_department_text.value %}
-      <p><strong>{{ 'Department:'|t }}</strong> {{ node.field_department_text.value }}</p>
+    {% if dyne_job_department %}
+      <p><strong>{{ 'Department:'|t }}</strong> {{ dyne_job_department }}</p>
     {% endif %}
-    {% if node.field_location_text.value %}
-      <p><strong>{{ 'Location:'|t }}</strong> {{ node.field_location_text.value }}</p>
+    {% if dyne_job_location %}
+      <p><strong>{{ 'Location:'|t }}</strong> {{ dyne_job_location }}</p>
+    {% endif %}
+    {% if node.field_job_workplace_type.value %}
+      <p><strong>{{ 'Workplace:'|t }}</strong> {{ node.field_job_workplace_type.value }}</p>
     {% endif %}
   </div>
 
   <div class="dyne-job-detail__body">
-    {{ content.field_body_text }}
+    {% if node.field_job_sections is not empty or node.field_job_role_summary.value %}
+      {# Structured Job Content (Clean HTML & Drupal Standards) #}
+
+      {# 1. Company Overview #}
+      {% if node.field_job_company_overview.value %}
+        <div class="job-copy--company">
+          <h3>{{ 'Company Overview:'|t }}</h3>
+          {{ content.field_job_company_overview }}
+          {% if node.field_job_link_website.value or node.field_job_link_x.value or node.field_job_link_linkedin.value or node.field_job_link_facebook.value %}
+            <p class="job-company-socials mt-2">
+              {% if node.field_job_link_website.value %}
+                <a href="{{ node.field_job_link_website.value }}" target="_blank" rel="noopener">{{ node.field_job_link_website.value }}</a>
+              {% endif %}
+              {% if node.field_job_link_x.value or node.field_job_link_linkedin.value or node.field_job_link_facebook.value %}
+                {{ ' | Follow us on:'|t }}
+                {% if node.field_job_link_x.value %}<a href="{{ node.field_job_link_x.value }}" target="_blank" rel="noopener">X</a>{% endif %}
+                {% if node.field_job_link_linkedin.value %}{% if node.field_job_link_x.value %}, {% endif %}<a href="{{ node.field_job_link_linkedin.value }}" target="_blank" rel="noopener">LinkedIn</a>{% endif %}
+                {% if node.field_job_link_facebook.value %}{% if node.field_job_link_x.value or node.field_job_link_linkedin.value %}, {% endif %}<a href="{{ node.field_job_link_facebook.value }}" target="_blank" rel="noopener">Facebook</a>{% endif %}
+              {% endif %}
+            </p>
+          {% endif %}
+        </div>
+      {% endif %}
+
+      {# 2. Role Summary #}
+      {% if node.field_job_role_summary.value %}
+        <div class="job-copy--role mt-4">
+          <h3>{{ 'Role Summary:'|t }}</h3>
+          {{ content.field_job_role_summary }}
+        </div>
+      {% endif %}
+
+      {# 3. Dynamic Sections (Responsibilities, Requirements, Leadership Model, etc.) #}
+      {% if content.field_job_sections %}
+        <div class="dyne-job-sections mt-4">
+          {{ content.field_job_sections }}
+        </div>
+      {% endif %}
+
+      {# 4. Workplace Arrangement Tag (e.g. #LI-Onsite) #}
+      {% if node.field_job_workplace_type.value %}
+        <p class="job-onsite"><strong>{{ node.field_job_workplace_type.value }}</strong></p>
+      {% endif %}
+
+      {# 5. Pay Transparency #}
+      {% if node.field_job_pay_min.value or node.field_job_pay_max.value %}
+        <div class="job-compensation mt-4">
+          <p class="job-compensation__range">
+            {% if node.field_job_pay_title.value %}
+              <strong>{{ node.field_job_pay_title.value }}</strong>
+            {% endif %}
+            <span>{{ node.field_job_pay_min.value }}{% if node.field_job_pay_max.value %} &mdash; {{ node.field_job_pay_max.value }}{% if node.field_job_pay_currency.value %} {{ node.field_job_pay_currency.value }}{% endif %}{% endif %}</span>
+          </p>
+          {% if node.field_job_pay_disclaimer.value %}
+            <div class="job-compensation__disclaimer mt-2">
+              {{ content.field_job_pay_disclaimer }}
+            </div>
+          {% endif %}
+        </div>
+      {% endif %}
+
+      {# 6. Conclusion & Equal Opportunity Employer Statement #}
+      {% if node.field_job_eoe_statement.value %}
+        <div class="job-compensation__equal mt-4">
+          {{ content.field_job_eoe_statement }}
+        </div>
+      {% endif %}
+
+    {% else %}
+      {# Fallback to legacy raw body field for unmigrated jobs #}
+      {{ content.field_body_text }}
+    {% endif %}
   </div>
 
-  {% if node.field_apply_url.value %}
+  {% if dyne_apply_url %}
     <div class="dyne-job-detail__apply dyne-job-detail__apply--bottom">
-      <a class="btn btn-primary btn-lg" href="{{ node.field_apply_url.value }}" target="_blank" rel="noopener">{{ 'Apply for this job'|t }}</a>
+      <a class="btn btn-primary btn-lg" href="{{ dyne_apply_url }}" target="_blank" rel="noopener">{{ 'Apply for this job'|t }}</a>
     </div>
   {% endif %}
 

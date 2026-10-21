@@ -1,0 +1,17 @@
+﻿{# Job section component: heading and list/items #}
+{% set heading_lower = paragraph.field_heading.value|lower %}
+{% set section_class = 'job-copy--section' %}
+{% if 'responsibilit' in heading_lower %}
+  {% set section_class = 'job-copy--responsibilities' %}
+{% elseif 'requirement' in heading_lower or 'skill' in heading_lower or 'education' in heading_lower %}
+  {% set section_class = 'job-copy--requirements' %}
+{% endif %}
+
+<div class="dyne-job-section {{ section_class }} mb-4">
+  {% if paragraph.field_heading.value %}
+    <h3>{{ paragraph.field_heading.value }}</h3>
+  {% endif %}
+  <div class="dyne-job-section__content">
+    {{ content.field_body_text }}
+  </div>
+</div>

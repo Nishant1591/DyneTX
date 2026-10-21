@@ -1,0 +1,10 @@
+uuid: ed817ac8-792d-4439-b1ec-e5bdd6bb62c8
+langcode: en
+status: true
+dependencies: {  }
+id: dyne_job_section
+label: 'Job Section'
+icon_uuid: null
+icon_default: null
+description: 'A dynamic section for responsibilities, requirements, or operating models in a job posting.'
+behavior_plugins: {  }

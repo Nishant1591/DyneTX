@@ -1,0 +1,22 @@
+uuid: e987b31f-2457-4603-a5c7-e1112475f05b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_job_eoe_statement
+    - node.type.job
+  module:
+    - text
+id: node.job.field_job_eoe_statement
+field_name: field_job_eoe_statement
+entity_type: node
+bundle: job
+label: 'Equal Opportunity Employer Statement / Disclaimer'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

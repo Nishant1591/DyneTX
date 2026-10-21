@@ -1,0 +1,19 @@
+uuid: d59fa579-ddc7-4fd9-8929-bdbc49f48fec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_job_link_website
+    - node.type.job
+id: node.job.field_job_link_website
+field_name: field_job_link_website
+entity_type: node
+bundle: job
+label: 'Company Website URL'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

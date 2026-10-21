@@ -1,0 +1,19 @@
+uuid: b1913736-bf73-47d1-a22e-4da96073b6a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_job_link_x
+    - node.type.job
+id: node.job.field_job_link_x
+field_name: field_job_link_x
+entity_type: node
+bundle: job
+label: 'X / Twitter URL'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

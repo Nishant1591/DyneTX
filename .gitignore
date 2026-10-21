@@ -9,3 +9,21 @@
 /web/sites/*/settings.php
 /web/sites/*/settings.local.php
 /web/sites/*/settings.ddev.php
+
+# Ignore Drupal generated PHP cache and image derivatives
+/web/sites/*/files/php/
+/web/sites/*/files/styles/
+
+# Ignore DDEV configuration
+/.ddev/
+/.editorconfig
+
+
+# Ignore uploaded legacy media files
+/web/sites/*/files/legacy/
+
+# Ignore migration script output and logs
+/output/
+
+# Ignore files sync directory
+/web/sites/*/files/sync/

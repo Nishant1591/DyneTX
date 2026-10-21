@@ -1,0 +1,22 @@
+uuid: 348eacf1-7fbb-4a5c-9b4f-8c5c367a6bd3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_job_role_summary
+    - node.type.job
+  module:
+    - text
+id: node.job.field_job_role_summary
+field_name: field_job_role_summary
+entity_type: node
+bundle: job
+label: 'Role Summary'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long
