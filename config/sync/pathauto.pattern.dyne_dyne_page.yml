@@ -1,0 +1,23 @@
+uuid: a9416558-635a-4bf4-9266-273d15bb1f2e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.dyne_page
+  module:
+    - node
+id: dyne_dyne_page
+label: 'Dyne Page URLs'
+type: 'canonical_entities:node'
+pattern: '/[node:title]'
+selection_criteria:
+  27ea7a13-112c-4665-96a3-f7b7ebf6ea24:
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      dyne_page: dyne_page
+selection_logic: and
+weight: 0
+relationships: {  }

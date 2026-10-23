@@ -123,8 +123,13 @@ final class DyneArchiveNode extends DestinationBase {
           $node->setCreatedTime($created);
         }
         $node->setRevisionLogMessage('Complete WordPress archive migration: ' . $key);
+        require_once DRUPAL_ROOT . '/modules/custom/dyne_migrate/includes/title-aliases.inc';
+        // Preserve the archive's canonical URL without generating a competing
+        // title alias before the new node ID is available.
+        $import_alias_state = dyne_migrate_preserve_import_alias($node);
         $node->save();
         PathAlias::create(['path' => '/node/' . $node->id(), 'alias' => $record['alias'], 'langcode' => 'en'])->save();
+        dyne_migrate_restore_import_alias($node, $import_alias_state);
         unset($transaction);
       }
       catch (\Throwable $error) {

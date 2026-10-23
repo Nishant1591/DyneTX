@@ -185,6 +185,12 @@ final class FeedSynchronizer {
         }
         $node->setNewRevision(TRUE);
         $node->setRevisionLogMessage('Validated ' . $provider . ' feed update: ' . $row['id']);
+        if ($created) {
+          require_once DRUPAL_ROOT . '/modules/custom/dyne_migrate/includes/title-aliases.inc';
+          // The provider-owned alias is created after the node has its ID.
+          // Suppress an additional title alias during this initial save only.
+          $import_alias_state = dyne_migrate_preserve_import_alias($node);
+        }
         $node->save();
         if ($created) {
           $slug = trim(strtolower(preg_replace('/[^a-zA-Z0-9]+/', '-', $row['title'])), '-');
@@ -193,6 +199,7 @@ final class FeedSynchronizer {
             throw new \UnexpectedValueException('Feed alias collision; transaction rolled back.');
           }
           $this->entities->getStorage('path_alias')->create(['path' => '/node/' . $node->id(), 'alias' => $alias, 'langcode' => 'en'])->save();
+          dyne_migrate_restore_import_alias($node, $import_alias_state);
         }
         $this->entities->getStorage('node')->resetCache([$node->id()]);
         $persisted = $this->entities->getStorage('node')->load($node->id());

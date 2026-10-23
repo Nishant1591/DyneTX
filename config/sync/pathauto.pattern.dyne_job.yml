@@ -1,0 +1,23 @@
+uuid: e5ee8e3c-019f-4871-9ea8-cbb1f8831823
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.job
+  module:
+    - node
+id: dyne_job
+label: 'Job URLs'
+type: 'canonical_entities:node'
+pattern: '/jobs/[node:title]'
+selection_criteria:
+  155271f8-8dad-46ba-93a4-38d8ee015fca:
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      job: job
+selection_logic: and
+weight: 0
+relationships: {  }

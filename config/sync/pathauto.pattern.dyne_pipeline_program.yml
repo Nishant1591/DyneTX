@@ -1,0 +1,23 @@
+uuid: 5b94c636-090b-4792-a637-65f98dac544a
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.pipeline_program
+  module:
+    - node
+id: dyne_pipeline_program
+label: 'Pipeline Program URLs'
+type: 'canonical_entities:node'
+pattern: '/pipeline/[node:title]'
+selection_criteria:
+  5b19e8ee-b36c-4afe-9e56-acb346d0505d:
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      pipeline_program: pipeline_program
+selection_logic: and
+weight: 0
+relationships: {  }

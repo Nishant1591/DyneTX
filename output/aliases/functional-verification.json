@@ -1,0 +1,97 @@
+{
+    "passed": true,
+    "database": "dyne_alias_verify_20261023_3e739b",
+    "checks": 180,
+    "guards": 45,
+    "failures": [],
+    "bundles": {
+        "dyne_page": {
+            "nid": 484,
+            "initial": "/aliasverify-544fa4ad-dynepage-first",
+            "renamed": "/aliasverify-544fa4ad-dynepage-second",
+            "renamed_again": "/aliasverify-544fa4ad-dynepage-third"
+        },
+        "job": {
+            "nid": 485,
+            "initial": "/jobs/aliasverify-544fa4ad-job-first",
+            "renamed": "/jobs/aliasverify-544fa4ad-job-second",
+            "renamed_again": "/jobs/aliasverify-544fa4ad-job-third"
+        },
+        "leader": {
+            "nid": 486,
+            "initial": "/team/aliasverify-544fa4ad-leader-first",
+            "renamed": "/team/aliasverify-544fa4ad-leader-second",
+            "renamed_again": "/team/aliasverify-544fa4ad-leader-third"
+        },
+        "news": {
+            "nid": 487,
+            "initial": "/news/aliasverify-544fa4ad-news-first",
+            "renamed": "/news/aliasverify-544fa4ad-news-second",
+            "renamed_again": "/news/aliasverify-544fa4ad-news-third"
+        },
+        "perspective": {
+            "nid": 488,
+            "initial": "/perspectives/aliasverify-544fa4ad-perspective-first",
+            "renamed": "/perspectives/aliasverify-544fa4ad-perspective-second",
+            "renamed_again": "/perspectives/aliasverify-544fa4ad-perspective-third"
+        },
+        "pipeline_program": {
+            "nid": 489,
+            "initial": "/pipeline/aliasverify-544fa4ad-pipelineprogram-first",
+            "renamed": "/pipeline/aliasverify-544fa4ad-pipelineprogram-second",
+            "renamed_again": "/pipeline/aliasverify-544fa4ad-pipelineprogram-third"
+        },
+        "privacy_policy": {
+            "nid": 490,
+            "initial": "/policies/aliasverify-544fa4ad-privacypolicy-first",
+            "renamed": "/policies/aliasverify-544fa4ad-privacypolicy-second",
+            "renamed_again": "/policies/aliasverify-544fa4ad-privacypolicy-third"
+        },
+        "quote": {
+            "nid": 491,
+            "initial": "/quotes/aliasverify-544fa4ad-quote-first",
+            "renamed": "/quotes/aliasverify-544fa4ad-quote-second",
+            "renamed_again": "/quotes/aliasverify-544fa4ad-quote-third"
+        }
+    },
+    "created_node_ids": [
+        484,
+        485,
+        486,
+        487,
+        488,
+        489,
+        490,
+        491,
+        492,
+        493,
+        494,
+        495
+    ],
+    "default_database_booted": false,
+    "hook_discovery": {
+        "container_rebuilt": true,
+        "shared_file_cache_disabled": true,
+        "pathauto_alias_alter": {
+            "dyne_migrate_pathauto_alias_alter": "dyne_migrate"
+        }
+    },
+    "manual_override": {
+        "nid": 492,
+        "custom": "/jobs/aliasverify-544fa4ad-custom",
+        "automatic": "/jobs/aliasverify-544fa4ad-manual-renamed"
+    },
+    "collision": [
+        "/jobs/aliasverify-544fa4ad-collision",
+        "/jobs/aliasverify-544fa4ad-collision-0"
+    ],
+    "imported_leader": {
+        "nid": 29,
+        "renamed_alias": "/team/aliasverify-544fa4ad-imported-leader-renamed"
+    },
+    "source_alias": {
+        "nid": 495,
+        "imported": "/jobs/aliasverify-544fa4ad-source-owned",
+        "renamed": "/jobs/aliasverify-544fa4ad-source-renamed"
+    }
+}

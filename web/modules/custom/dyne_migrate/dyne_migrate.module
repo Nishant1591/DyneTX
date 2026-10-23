@@ -7,9 +7,16 @@
 
 // Element validation callbacks must also exist when a cached form is submitted.
 require_once __DIR__ . '/includes/rich-text-component-fields.inc';
+require_once __DIR__ . '/includes/title-aliases.inc';
+
+/** Native quote/policy bundles can be created after the initial install. */
+function dyne_migrate_node_type_insert(\Drupal\node\NodeTypeInterface $type): void {
+  dyne_migrate_title_alias_pattern($type->id());
+}
 
 /** Implements hook_node_presave(). */
 function dyne_migrate_node_presave(\Drupal\node\NodeInterface $node): void {
+  dyne_migrate_title_alias_prepare($node);
   // Keep the long legacy title only while it still represents the current title.
   // Editing a normal node title must update cards and modal headings too.
   if (!$node->isNew() && $node->hasField('field_legacy_title')) {
@@ -43,6 +50,24 @@ function dyne_migrate_node_presave(\Drupal\node\NodeInterface $node): void {
     elseif ($node->isNew() || !$node->get('field_structured_content')->value) {
       $node->set('field_structured_content', TRUE);
     }
+  }
+}
+
+/** Preserve imported paths on unrelated edits; titles still drive auto URLs. */
+function dyne_migrate_pathauto_alias_alter(string &$alias, array &$context): void {
+  $node = $context['data']['node'] ?? NULL;
+  if (($context['op'] ?? '') !== 'update' || !$node instanceof \Drupal\node\NodeInterface || !($original = $node->getOriginal())) {
+    return;
+  }
+  // Checking automatic generation after a manual override is an explicit
+  // request to apply the pattern, even if the title did not change.
+  if ($node->label() !== $original->label() || (int) $original->get('path')->pathauto !== \Drupal\pathauto\PathautoState::CREATE) {
+    return;
+  }
+  $source = $context['source'];
+  $existing = \Drupal::service('path_alias.manager')->getAliasByPath($source, $context['language']);
+  if ($existing !== $source) {
+    $alias = $existing;
   }
 }
 

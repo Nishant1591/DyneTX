@@ -1,0 +1,23 @@
+uuid: 6a0431fd-8c54-43ae-8e3f-8c4164df93e2
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.leader
+  module:
+    - node
+id: dyne_leader
+label: 'Leader URLs'
+type: 'canonical_entities:node'
+pattern: '/team/[node:title]'
+selection_criteria:
+  bc5a002a-b96d-4383-ba80-35baa5dc658e:
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      leader: leader
+selection_logic: and
+weight: 0
+relationships: {  }

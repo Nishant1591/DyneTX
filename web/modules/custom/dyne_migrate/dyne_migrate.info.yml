@@ -7,6 +7,8 @@ dependencies:
   - drupal:node
   - drupal:menu_link_content
   - drupal:path_alias
+  - pathauto:pathauto
+  - redirect:redirect
   - drupal:text
   - drupal:ckeditor5
   - drupal:link

@@ -17,6 +17,7 @@ use Drupal\system\Entity\Menu;
 use Drupal\menu_link_content\Entity\MenuLinkContent;
 
 $root = dirname(DRUPAL_ROOT);
+require_once DRUPAL_ROOT . '/modules/custom/dyne_migrate/includes/title-aliases.inc';
 $read = static fn(string $path): array => json_decode(file_get_contents($root . '/' . $path), TRUE, 512, JSON_THROW_ON_ERROR);
 $fixture = $read('content-archive/wordpress-supplement.json');
 $source = $read('content-archive/wordpress-records.json');
@@ -102,8 +103,12 @@ foreach ($fixture['records'] as $record) {
           }
           $node->set('field_components', $refs);
         }
+        // This archive owns its initial URL. Avoid generating a competing
+        // title alias while obtaining the new node ID, then restore policy.
+        $import_alias_state = dyne_migrate_preserve_import_alias($node);
         $node->save();
         PathAlias::create(['path' => '/node/' . $node->id(), 'alias' => $record['alias'], 'langcode' => 'en'])->save();
+        dyne_migrate_restore_import_alias($node, $import_alias_state);
         $ledger[$key] = ['nid' => $node->id(), 'hash' => $hash];
         $state->set('dyne_migrate.content_completion', $ledger);
         unset($transaction);

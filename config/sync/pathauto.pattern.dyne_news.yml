@@ -1,0 +1,23 @@
+uuid: b72a4104-6a29-464c-9201-c3079fd5487d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.news
+  module:
+    - node
+id: dyne_news
+label: 'News URLs'
+type: 'canonical_entities:node'
+pattern: '/news/[node:title]'
+selection_criteria:
+  e2e18fc8-cb59-46da-8159-83735aee061c:
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      news: news
+selection_logic: and
+weight: 0
+relationships: {  }

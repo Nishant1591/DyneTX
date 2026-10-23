@@ -1,3 +1,34 @@
+# Title-based URL aliases (October 23, 2026)
+
+Saving a changed title now updates the URL when **Generate automatic URL alias**
+is checked. Pathauto patterns cover all eight content types, using `jobs/`,
+`team/`, `news/`, `perspectives/`, `pipeline/`, `policies/` and `quotes/` where
+appropriate. Pages use the title directly. Uncheck the option to retain or enter
+a manual URL.
+
+Existing URLs are retained during setup and on unrelated content edits. A title
+change creates an automatic 301 redirect from the previous URL to the same
+content. Source imports retain their initial source URLs and restore the editor's
+automatic/manual policy afterward. The home page keeps its internal `/node/3`
+configuration, so changing its alias does not break the front page.
+
+Apply with `ddev drush updatedb -y`. Update 8113 creates patterns and enrolls
+existing records without saving content or rewriting existing aliases.
+Configuration is exported in `config/sync`.
+
+```sh
+ddev drush php:script scripts/tests/title-aliases.php
+```
+
+The read-only check uses unsaved clones. Real save/redirect tests use
+`scripts/tests/title-aliases-isolated.php`, which refuses to run without an
+explicit disposable database named `dyne_alias_verify_*`. Reports are in
+`output/aliases/`; the pre-update backup is
+`output/dyne-before-title-aliases-2026-10-23.sql.gz`.
+The completed database is `output/dyne-drupal-title-aliases-2026-10-23.sql.gz`.
+Job 334's previously saved title change was repaired without resaving its content;
+the earlier URL redirects to the corrected title-based alias.
+
 # CKEditor 5 authoring (October 23, 2026)
 
 CKEditor 5 is enabled on both Dyne HTML text formats, covering formatted text

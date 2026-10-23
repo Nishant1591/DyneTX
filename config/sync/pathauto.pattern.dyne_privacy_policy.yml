@@ -1,0 +1,23 @@
+uuid: ca1e67cf-536f-464e-ade3-b3aa6d1a451d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.privacy_policy
+  module:
+    - node
+id: dyne_privacy_policy
+label: 'Privacy Policy URLs'
+type: 'canonical_entities:node'
+pattern: '/policies/[node:title]'
+selection_criteria:
+  81ab625d-2afa-4c19-af5c-e5aa716736aa:
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      privacy_policy: privacy_policy
+selection_logic: and
+weight: 0
+relationships: {  }

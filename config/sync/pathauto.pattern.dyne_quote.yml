@@ -1,0 +1,23 @@
+uuid: 6dc9714d-c71c-4830-b085-b915af96554f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.quote
+  module:
+    - node
+id: dyne_quote
+label: 'Quote URLs'
+type: 'canonical_entities:node'
+pattern: '/quotes/[node:title]'
+selection_criteria:
+  1598f366-ef9a-4d37-9444-e8e965eb09c7:
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      quote: quote
+selection_logic: and
+weight: 0
+relationships: {  }

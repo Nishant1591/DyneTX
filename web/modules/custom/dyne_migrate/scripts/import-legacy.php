@@ -19,6 +19,7 @@ use Drupal\paragraphs\Entity\Paragraph;
 use Drupal\path_alias\Entity\PathAlias;
 
 $module = dirname(__DIR__);
+require_once $module . '/includes/title-aliases.inc';
 $fixture = json_decode(file_get_contents($module . '/data/legacy-content.json'), TRUE, 512, JSON_THROW_ON_ERROR);
 $navigation_plan = json_decode(file_get_contents($module . '/data/legacy-navigation-update.json'), TRUE, 512, JSON_THROW_ON_ERROR)['records'];
 require_once __DIR__ . '/navigation-normalizer.inc';
@@ -202,11 +203,15 @@ foreach ($fixture['records'] as $record) {
       $node->set('field_link', ['uri' => str_starts_with($url, '/') ? 'internal:' . $url : $url, 'title' => 'Read more']);
     }
     $fill_metadata($node, $record);
+    // Reconciliation retains the source-owned alias. Preserve an existing
+    // editor's opt-out, then restore that policy without another node save.
+    $import_alias_state = dyne_migrate_preserve_import_alias($node);
     $node->save();
     $matches = $aliases->loadByProperties(['alias' => $record['alias']]);
     if (!$matches) {
       PathAlias::create(['path' => '/node/' . $node->id(), 'alias' => $record['alias'], 'langcode' => 'en'])->save();
     }
+    dyne_migrate_restore_import_alias($node, $import_alias_state);
     $ledger[$key] = ['nid' => $node->id(), 'hash' => $hash, 'previous_revision' => $old_revision, 'imported_revision' => $node->getRevisionId()];
     $state->set('dyne_migrate.legacy_import', $ledger);
     $summary[$action]++;

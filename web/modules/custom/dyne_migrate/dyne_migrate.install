@@ -32,6 +32,8 @@ function dyne_migrate_install(): void {
   _dyne_migrate_legacy_schema();
   require_once __DIR__ . '/includes/rich-text-editors.inc';
   dyne_migrate_enable_rich_text_editors();
+  require_once __DIR__ . '/includes/title-aliases.inc';
+  dyne_migrate_title_alias_schema();
 }
 
 /**
@@ -937,4 +939,11 @@ function dyne_migrate_update_8112(): void {
       $format->set('name', $label)->save();
     }
   }
+}
+
+/** Generate aliases from titles and retain redirects from earlier URLs. */
+function dyne_migrate_update_8113(): void {
+  require_once __DIR__ . '/includes/title-aliases.inc';
+  dyne_migrate_title_alias_schema();
+  dyne_migrate_title_alias_enroll();
 }

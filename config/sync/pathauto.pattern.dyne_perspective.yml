@@ -1,0 +1,23 @@
+uuid: b746dc03-3f80-4974-ad92-134e20dea996
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.perspective
+  module:
+    - node
+id: dyne_perspective
+label: 'Perspective URLs'
+type: 'canonical_entities:node'
+pattern: '/perspectives/[node:title]'
+selection_criteria:
+  feb96880-8d83-440d-abea-1f1df0185682:
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      perspective: perspective
+selection_logic: and
+weight: 0
+relationships: {  }
