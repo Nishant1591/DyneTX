@@ -1,4 +1,4 @@
-﻿{# Job section component: heading and list/items #}
+{# Job section component: heading and list/items #}
 {% set heading_lower = paragraph.field_heading.value|lower %}
 {% set section_class = 'job-copy--section' %}
 {% if 'responsibilit' in heading_lower %}
@@ -12,6 +12,11 @@
     <h3>{{ paragraph.field_heading.value }}</h3>
   {% endif %}
   <div class="dyne-job-section__content">
-    {{ content.field_body_text }}
+    {% if paragraph.field_job_subsections and not paragraph.field_job_subsections.isEmpty() %}
+      {{ content.field_job_subsections }}
+    {% endif %}
+    {% if paragraph.field_body_text and not paragraph.field_body_text.isEmpty() %}
+      {{ content.field_body_text }}
+    {% endif %}
   </div>
 </div>

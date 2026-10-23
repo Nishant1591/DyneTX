@@ -1,0 +1,31 @@
+uuid: bc45bf90-6131-485b-aeb1-9b1a04eba039
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_job_subsections
+    - paragraphs.paragraphs_type.dyne_job_section
+    - paragraphs.paragraphs_type.dyne_job_subsection
+  module:
+    - entity_reference_revisions
+id: paragraph.dyne_job_section.field_job_subsections
+field_name: field_job_subsections
+entity_type: paragraph
+bundle: dyne_job_section
+label: 'Sub-sections (Subheadings & Content)'
+description: 'Add individual subheadings with their own bullet lists.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      dyne_job_subsection: dyne_job_subsection
+    negate: 0
+    target_bundles_drag_drop:
+      dyne_job_subsection:
+        weight: 0
+        enabled: true
+field_type: entity_reference_revisions

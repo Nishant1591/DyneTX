@@ -1,0 +1,22 @@
+uuid: b606a73b-274d-4d34-8ab3-07f72d579a55
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_body_text
+    - paragraphs.paragraphs_type.dyne_job_subsection
+  module:
+    - text
+id: paragraph.dyne_job_subsection.field_body_text
+field_name: field_body_text
+entity_type: paragraph
+bundle: dyne_job_subsection
+label: 'Sub-section Content / List'
+description: 'Bullet points or description for this specific sub-heading.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

@@ -5,8 +5,10 @@ dependencies:
   config:
     - field.field.paragraph.dyne_job_section.field_body_text
     - field.field.paragraph.dyne_job_section.field_heading
+    - field.field.paragraph.dyne_job_section.field_job_subsections
     - paragraphs.paragraphs_type.dyne_job_section
   module:
+    - entity_reference_revisions
     - text
 id: paragraph.dyne_job_section.default
 targetEntityType: paragraph
@@ -18,7 +20,7 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 1
+    weight: 2
     region: content
   field_heading:
     type: string
@@ -28,5 +30,14 @@ content:
       link_rel: canonical
     third_party_settings: {  }
     weight: 0
+    region: content
+  field_job_subsections:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
     region: content
 hidden: {  }

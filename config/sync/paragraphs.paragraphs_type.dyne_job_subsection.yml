@@ -1,0 +1,10 @@
+uuid: 2f1ad588-d1c9-4cbc-b703-511973dc4b8b
+langcode: en
+status: true
+dependencies: {  }
+id: dyne_job_subsection
+label: 'Job Sub-section'
+icon_uuid: null
+icon_default: null
+description: 'Subheading and content list within a major job section.'
+behavior_plugins: {  }

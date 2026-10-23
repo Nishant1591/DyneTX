@@ -1,0 +1,19 @@
+uuid: 393cd31a-2fd9-4e34-aa3c-e61425e5b6aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_heading
+    - paragraphs.paragraphs_type.dyne_job_subsection
+id: paragraph.dyne_job_subsection.field_heading
+field_name: field_heading
+entity_type: paragraph
+bundle: dyne_job_subsection
+label: Subheading
+description: 'e.g. Patient & Caregiver Support, Account Strategy & Execution, etc.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

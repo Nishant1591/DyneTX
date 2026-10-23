@@ -1,0 +1,32 @@
+uuid: 6c9a25f4-35f2-45df-b231-03d291315394
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.dyne_job_subsection.field_body_text
+    - field.field.paragraph.dyne_job_subsection.field_heading
+    - paragraphs.paragraphs_type.dyne_job_subsection
+  module:
+    - text
+id: paragraph.dyne_job_subsection.default
+targetEntityType: paragraph
+bundle: dyne_job_subsection
+mode: default
+content:
+  field_body_text:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_heading:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

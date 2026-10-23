@@ -1,0 +1,9 @@
+{# Job sub-section component: individual subheading and bullet list #}
+<div class="dyne-job-subsection mb-3">
+  {% if paragraph.field_heading.value %}
+    <p class="job-subheading"><strong><em>{{ paragraph.field_heading.value }}</em></strong></p>
+  {% endif %}
+  <div class="dyne-job-subsection__content">
+    {{ content.field_body_text }}
+  </div>
+</div>
