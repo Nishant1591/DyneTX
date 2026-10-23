@@ -3,8 +3,10 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.dyne_alert_banner.field_banner_body
     - field.field.paragraph.dyne_alert_banner.field_banner_logo
     - field.field.paragraph.dyne_alert_banner.field_banner_text
+    - field.field.paragraph.dyne_alert_banner.field_component_rich_text_ready
     - paragraphs.paragraphs_type.dyne_alert_banner
   module:
     - image
@@ -33,4 +35,6 @@ content:
     third_party_settings: {  }
     weight: 1
     region: content
-hidden: {  }
+hidden:
+  field_banner_body: true
+  field_component_rich_text_ready: true

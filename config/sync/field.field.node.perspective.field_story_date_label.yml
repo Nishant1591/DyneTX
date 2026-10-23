@@ -1,0 +1,19 @@
+uuid: eedd2658-31c2-4cbe-b73d-380326becd72
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_story_date_label
+    - node.type.perspective
+id: node.perspective.field_story_date_label
+field_name: field_story_date_label
+entity_type: node
+bundle: perspective
+label: 'Displayed publication date'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

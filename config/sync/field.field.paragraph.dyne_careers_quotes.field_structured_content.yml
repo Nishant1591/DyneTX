@@ -1,0 +1,21 @@
+uuid: 7385ac7a-d53e-4bec-a713-9fc7360b64f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_structured_content
+    - paragraphs.paragraphs_type.dyne_careers_quotes
+id: paragraph.dyne_careers_quotes.field_structured_content
+field_name: field_structured_content
+entity_type: paragraph
+bundle: dyne_careers_quotes
+label: 'Uses structured content'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

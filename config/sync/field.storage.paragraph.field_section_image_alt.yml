@@ -1,0 +1,19 @@
+uuid: 75848d5c-53b7-49c3-a70f-e8b7e8f8c6bb
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_section_image_alt
+field_name: field_section_image_alt
+entity_type: paragraph
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

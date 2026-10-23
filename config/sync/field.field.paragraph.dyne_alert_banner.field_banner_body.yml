@@ -1,0 +1,24 @@
+uuid: f1cd8764-35fa-4994-bc1f-110e2fb5ebcb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_banner_body
+    - filter.format.dyne_legacy_html
+    - paragraphs.paragraphs_type.dyne_alert_banner
+  module:
+    - text
+id: paragraph.dyne_alert_banner.field_banner_body
+field_name: field_banner_body
+entity_type: paragraph
+bundle: dyne_alert_banner
+label: 'Banner text'
+description: 'Formatted content shown on the website.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - dyne_legacy_html
+field_type: text_long

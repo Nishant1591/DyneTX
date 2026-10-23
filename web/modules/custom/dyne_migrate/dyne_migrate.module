@@ -5,6 +5,9 @@
  * Native authoring safeguards for the preserved Dyne content model.
  */
 
+// Element validation callbacks must also exist when a cached form is submitted.
+require_once __DIR__ . '/includes/rich-text-component-fields.inc';
+
 /** Implements hook_node_presave(). */
 function dyne_migrate_node_presave(\Drupal\node\NodeInterface $node): void {
   // Keep the long legacy title only while it still represents the current title.
@@ -14,5 +17,126 @@ function dyne_migrate_node_presave(\Drupal\node\NodeInterface $node): void {
     if ($original && $original->label() !== $node->label() && $node->get('field_legacy_title')->value === $original->get('field_legacy_title')->value) {
       $node->set('field_legacy_title', $node->label());
     }
+  }
+  // A source import must populate the same fields editors use. Normal field
+  // edits do not reparse the retained source body or overwrite editorial work.
+  if ($node->hasField('field_structured_content') && $node->hasField('field_body_text')) {
+    $original = $node->isNew() ? NULL : $node->getOriginal();
+    $source_changed = $original && !$node->get('field_body_text')->equals($original->get('field_body_text'));
+    if (($node->isNew() && !$node->get('field_body_text')->isEmpty()) || $source_changed) {
+      require_once __DIR__ . '/includes/structured-content.inc';
+      $baseline = $original ? \Drupal::state()->get('dyne_migrate.structured_baseline.' . $node->id()) : NULL;
+      if ($source_changed && $baseline && $baseline !== dyne_structured_editorial_hash($original)) {
+        throw new \RuntimeException('This record has edited structured content. Review the incoming source changes before replacing it.');
+      }
+      if ($node->bundle() === 'job') {
+        dyne_structured_job_backfill($node, TRUE);
+      }
+      else {
+        foreach (dyne_structured_article_fields()[$node->bundle()] ?? [] as $name => $definition) {
+          $node->set($name, []);
+        }
+        $node->set('field_structured_content', FALSE);
+        dyne_structured_article_backfill($node);
+      }
+    }
+    elseif ($node->isNew() || !$node->get('field_structured_content')->value) {
+      $node->set('field_structured_content', TRUE);
+    }
+  }
+}
+
+/** Retain the last source baseline; normal editorial saves never reset it. */
+function dyne_migrate_node_insert(\Drupal\node\NodeInterface $node): void {
+  _dyne_migrate_structured_baseline($node);
+}
+
+/** Implements hook_node_update(). */
+function dyne_migrate_node_update(\Drupal\node\NodeInterface $node): void {
+  $original = $node->getOriginal();
+  if ($original && $node->hasField('field_body_text') && !$node->get('field_body_text')->equals($original->get('field_body_text'))) {
+    _dyne_migrate_structured_baseline($node);
+  }
+}
+
+function _dyne_migrate_structured_baseline(\Drupal\node\NodeInterface $node): void {
+  if ($node->hasField('field_structured_content') && $node->get('field_structured_content')->value) {
+    require_once __DIR__ . '/includes/structured-content.inc';
+    \Drupal::state()->set('dyne_migrate.structured_baseline.' . $node->id(), dyne_structured_editorial_hash($node));
+  }
+}
+
+/** Newly authored sections use the same native fields as migrated sections. */
+function dyne_migrate_paragraph_presave(\Drupal\paragraphs\ParagraphInterface $paragraph): void {
+  dyne_rich_text_component_presave($paragraph);
+  if (!in_array($paragraph->bundle(), ['dyne_rich_text', 'dyne_careers_quotes', 'dyne_article_section'], TRUE) || !$paragraph->hasField('field_structured_content')) {
+    return;
+  }
+  if (!$paragraph->get('field_structured_content')->value && $paragraph->hasField('field_body_text') && !$paragraph->get('field_body_text')->isEmpty()) {
+    require_once __DIR__ . '/includes/structured-content.inc';
+    dyne_structured_article_backfill($paragraph);
+  }
+  else {
+    $paragraph->set('field_structured_content', TRUE);
+  }
+}
+
+/** A link caption has one editing control; its retained markup is archival. */
+function dyne_migrate_field_widget_single_element_form_alter(array &$element, \Drupal\Core\Form\FormStateInterface $form_state, array $context): void {
+  $items = $context['items'];
+  $entity = $items->getEntity();
+  if ($entity->getEntityTypeId() === 'paragraph') {
+    dyne_rich_text_component_widget_alter($element, $form_state, $context);
+  }
+  if ($entity->getEntityTypeId() !== 'paragraph' || $entity->bundle() !== 'dyne_article_section') {
+    return;
+  }
+  $template = (string) $entity->get('field_content_template')->value;
+  $link_only = str_starts_with(strtolower(ltrim($template)), '<a ') && preg_match('~</a>\s*$~i', $template) && substr_count(strtolower($template), '<a ') === 1;
+  if ($link_only && $items->getName() === 'field_section_body') {
+    $element['#access'] = FALSE;
+  }
+  if ($link_only && $items->getName() === 'field_section_link' && isset($element['title']) && !$entity->get('field_section_link')->title && !$entity->get('field_section_body')->isEmpty()) {
+    $element['title']['#description'] = t('Current caption: @caption. Enter replacement text to change it.', ['@caption' => trim(strip_tags((string) $entity->get('field_section_body')->value))]);
+  }
+}
+
+/** Organize the native controls around editorial tasks, without extra modules. */
+function dyne_migrate_form_node_form_alter(array &$form, \Drupal\Core\Form\FormStateInterface $form_state): void {
+  $node = $form_state->getFormObject()->getEntity();
+  $groups = [
+    'company' => ['Company information', ['field_company_overview', 'field_company_website', 'field_company_twitter', 'field_company_linkedin', 'field_company_facebook']],
+    'role' => ['Role details', ['field_role_summary', 'field_responsibilities', 'field_education_skills', 'field_additional_job_content']],
+    'pay' => ['Compensation and notices', ['field_pay_range_label', 'field_pay_range_currency', 'field_pay_range_min', 'field_pay_range_max', 'field_compensation_notes', 'field_job_disclaimer', 'field_equal_opportunity']],
+    'article' => ['Article content', ['field_story_heading', 'field_story_date_label', 'field_story_intro', 'field_story_byline', 'field_story_portrait', 'field_story_mission', 'field_article_intro', 'field_article_body', 'field_article_sections']],
+    'release' => ['Release information', ['field_forward_looking', 'field_news_contacts']],
+    'presentation' => ['Page presentation', ['field_native_presentation', 'field_hero_first_line', 'field_hero_second_line', 'field_hero_image', 'field_hero_mobile_image', 'field_hero_overlay_image', 'field_hero_third_level', 'field_hero_classes', 'field_body_class']],
+    'search' => ['Search results', ['field_seo_title', 'field_seo_description']],
+    'source' => ['Feed and navigation settings', ['field_greenhouse_id', 'field_greenhouse_internal_id', 'field_external_id', 'field_previous_url', 'field_next_url', 'field_open_position_weight']],
+  ];
+  $weight = 10;
+  foreach ($groups as $id => [$label, $fields]) {
+    $present = array_filter($fields, static fn($name) => isset($form[$name]));
+    if (!$present) {
+      continue;
+    }
+    $key = 'dyne_' . $id;
+    $form[$key] = ['#type' => 'details', '#title' => t($label), '#open' => !in_array($id, ['presentation', 'search', 'source', 'release'], TRUE), '#weight' => $weight++];
+    foreach ($fields as $delta => $name) {
+      if (isset($form[$name])) {
+        $form[$name]['#group'] = $key;
+        $form[$name]['#weight'] = $delta;
+      }
+    }
+  }
+  if ($node->bundle() === 'job') {
+    foreach (['title', 'field_department', 'field_location', 'field_workplace_arrangement', 'field_application_link'] as $weight => $name) {
+      if (isset($form[$name])) {
+        $form[$name]['#weight'] = $weight - 10;
+      }
+    }
+  }
+  if ($node->bundle() === 'leader' && isset($form['title']['widget'][0]['value'])) {
+    $form['title']['widget'][0]['value']['#title'] = t('Full name');
   }
 }

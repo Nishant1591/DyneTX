@@ -1,3 +1,92 @@
+# CKEditor 5 authoring (October 23, 2026)
+
+CKEditor 5 is enabled on both Dyne HTML text formats, covering formatted text
+areas across Jobs, Leaders, News, Perspectives, Policies and paragraph sections.
+Cards, text sections and alert banners also have native formatted text controls;
+their earlier plain source fields remain available for historical revisions.
+The trusted legacy format retains arbitrary HTML attributes, classes and styles;
+its toolbar includes headings, links, lists, tables and Source editing. The
+restricted job format offers the controls supported by its allowed HTML.
+Plain metadata such as SEO descriptions, image alt text, source JSON and revision
+messages remains plain text.
+
+The editor configuration and core module dependencies are exported in
+`config/sync`. Existing databases apply the update with
+`ddev drush updatedb -y`, followed by `ddev drush cr`. New module installations
+configure the same editors. Existing administrator editor customizations are
+preserved when the setup helper is rerun.
+
+Read-only verification:
+
+```sh
+ddev drush php:script scripts/tests/rich-text-editors.php
+ddev exec php scripts/tests/structured-inline-rendering.php
+ddev exec php scripts/tests/rich-text-component-fields.php
+```
+
+The local preview is **http://dyne-tx-workspace.ddev.site/**. The pre-editor
+database backup is `output/dyne-before-ckeditor-2026-10-23.sql.gz`.
+The completed database is `output/dyne-drupal-ckeditor-2026-10-23.sql.gz`.
+Verification reports and a Job editor preview are in `output/ckeditor/`.
+
+# Structured editorial fields (October 22, 2026)
+
+The current workspace preview is **http://dyne-tx-workspace.ddev.site/**.
+Its database is separate from the earlier Downloads checkout.
+
+Jobs now expose company overview, company/social URLs, workplace arrangement,
+role summary, responsibilities, education/experience and skills requirements,
+typed salary endpoints/currency, compensation information, job disclaimer and
+equal-opportunity statement. The department, location and application controls
+continue to use their existing native fields. Fields are grouped and ordered
+around those editing tasks; the combined archived description is retained but
+hidden from normal authoring.
+
+News separates the article, company information, forward-looking statements and
+contacts. Perspectives expose article heading, introduction, byline, portrait
+and ordered sections. Policies and marketing text components use sections with
+separate heading, formatted text, Media image and link controls. Existing leader
+profile and quote fields remain the appropriate model for a single biography
+or quotation. The unused Pipeline program bundle now exposes its existing
+disease, prevalence, target, phase and status controls.
+
+The public renderer consumes the native fields, including new optional fields
+and new/reordered sections. Original bodies, node IDs, aliases, publication
+states and historical revisions are preserved. Imported layout scaffolding is
+hidden from editors; it preserves presentation rather than supplying the copy.
+Source updates populate the same native fields and refuse to replace structured
+content that has been edited since its last source baseline.
+
+Back up an existing database before applying the repeatable migration:
+
+```sh
+ddev drush updatedb -y
+ddev drush cr
+```
+
+For a local audit/report run, use
+`ddev drush php:script scripts/upgrade-structured-content.php`.
+Evidence is in `output/structured-model/`. The before-migration backup is
+`output/dyne-before-structured-model-2026-10-22.sql.gz`.
+The completed local database is
+`output/dyne-drupal-structured-content-2026-10-22.sql.gz`; configuration is
+exported in `config/sync` (924 YAML files).
+`workplace-review.json` records the source conflict for job 4088: its explicit
+Remote location takes precedence over its inconsistent Onsite LinkedIn tag.
+Unspecified workplace arrangements remain empty.
+
+Regression checks:
+
+```sh
+ddev exec php scripts/tests/structured-job-parser.php
+ddev exec php scripts/tests/structured-article-parser.php
+ddev drush php:script scripts/tests/structured-content-forms.php
+ddev drush php:script scripts/tests/structured-content-source-guard.php
+```
+
+The form and source-guard checks do not save content. The separate transactional
+save test is disabled by default and belongs on a disposable verification copy.
+
 # Native Drupal editorial upgrade (October 16, 2026)
 
 The response to **Document 6.docx** is recorded finding by finding in

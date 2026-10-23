@@ -1,0 +1,22 @@
+uuid: 581d4104-69e0-45bb-92bc-11fe2fbe963d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_education_skills
+    - node.type.job
+  module:
+    - text
+id: node.job.field_education_skills
+field_name: field_education_skills
+entity_type: node
+bundle: job
+label: 'Education, experience and skills requirements'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

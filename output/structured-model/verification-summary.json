@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "original_nodes_preserved": 469,
+  "published_routes_http200": 357,
+  "published_views_with_no_unexpected_content_changes": 357,
+  "expected_workplace_metadata_rows": 44,
+  "byte_identical_media_attribute_relocations": 74,
+  "verified_internal_trailing_slash_canonicalizations": 7,
+  "form_checks": 57,
+  "content_bundles_covered": 8,
+  "source_guard_in_memory_passed": true,
+  "current_test_markers": [],
+  "extra_nodes": [],
+  "entity_saves_during_final_verification": 0,
+  "source_rendering_basis": "Read-only original node field values from before-entities.json, retained pre-migration paragraph revision references, and current entity view rendering using the corrected HTML parser. The initial before-rendered.json used flawed void-tag depth handling and is retained for audit, not used as authoritative text parity.",
+  "transactional_save_suite": "14 functional assertions observed before an admin widget recursion interruption; not certified as a complete transactional suite. Approved cleanup finished, all originals restored and preserved;57 subsequent read-only admin form checks passed.",
+  "reports": [
+    "preservation-verification.json",
+    "source-after-comparison.json",
+    "after-rendered.json",
+    "form-verification.json",
+    "source-guard-verification.json",
+    "canonical-link-verification.json",
+    "approved-test-cleanup.json",
+    "editing-observed-results.json"
+  ]
+}

@@ -26,6 +26,10 @@ function _dynetx_component_link($entity, string $field): string {
 
 /** Uses Drupal field formatting for biographies instead of raw unfiltered text. */
 function _dynetx_component_text($entity, string $field) {
+  if ($field === 'field_body_text' && $entity->hasField('field_structured_content') && $entity->get('field_structured_content')->value) {
+    $build = _dynetx_structured_article_body($entity);
+    return \Drupal::service('renderer')->renderInIsolation($build);
+  }
   if (!$entity->hasField($field) || $entity->get($field)->isEmpty()) {
     return '';
   }
@@ -55,9 +59,33 @@ function _dynetx_component_format_cache($entity, string $field, CacheableMetadat
   }
 }
 
+/** Formatted component values own output once saved, including empty values. */
+function _dynetx_component_has_rich_text($entity, string $field): bool {
+  return $entity->hasField($field) && (($entity->hasField('field_component_rich_text_ready') && $entity->get('field_component_rich_text_ready')->value) || !$entity->get($field)->isEmpty());
+}
+
+/** Render with normal text filtering and bubble format/access dependencies. */
+function _dynetx_component_rich_text($entity, string $field): array {
+  $cache = CacheableMetadata::createFromObject($entity);
+  $list = $entity->get($field); $access = $list->access('view', NULL, TRUE);
+  $cache->addCacheableDependency($access);
+  $build = ['#markup' => ''];
+  if ($access->isAllowed() && !$list->isEmpty()) {
+    $item = $list->first(); $format = $item->format ?: 'dyne_legacy_html';
+    if ($configuration = \Drupal\filter\Entity\FilterFormat::load($format)) $cache->addCacheableDependency($configuration);
+    $build = ['#type' => 'processed_text', '#text' => $item->value, '#format' => $format, '#langcode' => $entity->language()->getId()];
+  }
+  $cache->applyTo($build);
+  return $build;
+}
+
 /** Apply native values and cache dependencies after the general preprocess. */
 function _dynetx_native_components(array &$variables): void {
   $paragraph = $variables['paragraph'];
+  if ($paragraph->bundle() === 'dyne_alert_banner') {
+    $variables['dyne_banner_rich'] = _dynetx_component_has_rich_text($paragraph, 'field_banner_body');
+    if ($variables['dyne_banner_rich']) $variables['dyne_banner_body'] = _dynetx_component_rich_text($paragraph, 'field_banner_body');
+  }
   if (!$paragraph->hasField('field_native_components') || !$paragraph->get('field_native_components')->value) {
     return;
   }
@@ -100,7 +128,9 @@ function _dynetx_native_components(array &$variables): void {
     }
     if ($paragraph->bundle() === 'dyne_careers_quotes') {
       _dynetx_component_format_cache($paragraph, 'field_body_text', $cache);
-      $variables['dyne_quotes_intro'] = _dynetx_component_text($paragraph, 'field_body_text');
+      $variables['dyne_quotes_intro'] = $paragraph->hasField('field_structured_content') && $paragraph->get('field_structured_content')->value
+        ? _dynetx_structured_article_body($paragraph)
+        : _dynetx_component_text($paragraph, 'field_body_text');
     }
   }
   elseif ($paragraph->bundle() === 'dyne_news_list') {
@@ -134,7 +164,8 @@ function _dynetx_native_components(array &$variables): void {
       $cache->addCacheableDependency($item);
       if ($item->bundle() === 'dyne_card_item') {
         _dynetx_component_media_cache($item, 'field_item_icon', $cache);
-        $variables['dyne_items'][] = ['title' => $item->get('field_heading')->value, 'text' => $item->get('field_item_text')->value, 'icon' => _dynetx_native_media_url($item, 'field_item_icon'), 'style' => $item->get('field_style')->value, 'link' => _dynetx_component_link($item, 'field_link')];
+        $rich = _dynetx_component_has_rich_text($item, 'field_item_body');
+        $variables['dyne_items'][] = ['title' => $item->get('field_heading')->value, 'text' => $item->get('field_item_text')->value, 'rich' => $rich, 'body' => $rich ? _dynetx_component_rich_text($item, 'field_item_body') : [], 'icon' => _dynetx_native_media_url($item, 'field_item_icon'), 'style' => $item->get('field_style')->value, 'link' => _dynetx_component_link($item, 'field_link')];
       }
       elseif ($item->bundle() === 'dyne_pipeline_row') {
         $row = ['url' => _dynetx_component_link($item, 'field_link')];
@@ -144,7 +175,8 @@ function _dynetx_native_components(array &$variables): void {
         $variables['dyne_rows'][] = $row;
       }
       elseif ($item->bundle() === 'dyne_text_section') {
-        $variables['dyne_sections'][] = ['title' => $item->get('field_heading')->value, 'body' => $item->get('field_item_text')->value];
+        $rich = _dynetx_component_has_rich_text($item, 'field_item_body');
+        $variables['dyne_sections'][] = ['title' => $item->get('field_heading')->value, 'rich' => $rich, 'body' => $rich ? _dynetx_component_rich_text($item, 'field_item_body') : $item->get('field_item_text')->value];
       }
     }
   }

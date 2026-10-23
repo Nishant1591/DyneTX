@@ -8,6 +8,7 @@ dependencies:
   - drupal:menu_link_content
   - drupal:path_alias
   - drupal:text
+  - drupal:ckeditor5
   - drupal:link
   - drupal:image
   - drupal:field_ui

@@ -1,0 +1,15 @@
+{
+  "original_nodes_checked": 469,
+  "original_node_identity_changes": [],
+  "original_body_or_source_archive_changes": [],
+  "other_preexisting_field_changes_excluding_component_revision_refs": [],
+  "current_entities_containing_test_markers": [],
+  "extra_nodes": [],
+  "final_entity_and_revision_counts": {
+    "node": 469,
+    "node_revision": 2088,
+    "paragraphs_item": 1938,
+    "paragraphs_item_revision": 2514
+  },
+  "passed": true
+}

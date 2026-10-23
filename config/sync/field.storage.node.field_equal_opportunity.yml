@@ -1,0 +1,19 @@
+uuid: e06899e8-7eed-4c4f-b2f7-59590db2e84c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_equal_opportunity
+field_name: field_equal_opportunity
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

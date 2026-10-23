@@ -1,0 +1,19 @@
+uuid: 2e96e3c9-0c8b-46f3-882b-336ab37867d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pay_range_currency
+    - node.type.job
+id: node.job.field_pay_range_currency
+field_name: field_pay_range_currency
+entity_type: node
+bundle: job
+label: 'Salary currency / symbol'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,24 @@
+uuid: 2abebe6f-bf53-40d7-91f2-4edec9896b35
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_story_portrait
+    - media.type.image
+    - node.type.perspective
+id: node.perspective.field_story_portrait
+field_name: field_story_portrait
+entity_type: node
+bundle: perspective
+label: 'Author portrait'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+field_type: entity_reference

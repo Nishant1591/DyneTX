@@ -3,7 +3,9 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.dyne_text_section.field_component_rich_text_ready
     - field.field.paragraph.dyne_text_section.field_heading
+    - field.field.paragraph.dyne_text_section.field_item_body
     - field.field.paragraph.dyne_text_section.field_item_text
     - paragraphs.paragraphs_type.dyne_text_section
 id: paragraph.dyne_text_section.default
@@ -12,5 +14,7 @@ bundle: dyne_text_section
 mode: default
 content: {  }
 hidden:
+  field_component_rich_text_ready: true
   field_heading: true
+  field_item_body: true
   field_item_text: true

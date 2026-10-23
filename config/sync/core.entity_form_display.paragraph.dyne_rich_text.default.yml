@@ -3,27 +3,40 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.dyne_rich_text.field_article_sections
     - field.field.paragraph.dyne_rich_text.field_body_text
+    - field.field.paragraph.dyne_rich_text.field_content_template
     - field.field.paragraph.dyne_rich_text.field_heading
     - field.field.paragraph.dyne_rich_text.field_icon
     - field.field.paragraph.dyne_rich_text.field_link
+    - field.field.paragraph.dyne_rich_text.field_structured_content
     - field.field.paragraph.dyne_rich_text.field_style
     - paragraphs.paragraphs_type.dyne_rich_text
   module:
     - link
-    - text
+    - paragraphs
 id: paragraph.dyne_rich_text.default
 targetEntityType: paragraph
 bundle: dyne_rich_text
 mode: default
 content:
-  field_body_text:
-    type: text_textarea
-    weight: 0
+  field_article_sections:
+    type: paragraphs
+    weight: 7
     region: content
     settings:
-      rows: 5
-      placeholder: ''
+      title: Section
+      title_plural: Sections
+      edit_mode: closed
+      closed_mode: summary
+      autocollapse: all
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: _none
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
     third_party_settings: {  }
   field_heading:
     type: string_textfield
@@ -59,4 +72,8 @@ content:
     third_party_settings: {  }
 hidden:
   created: true
+  field_body_text: true
+  field_content_template: true
+  field_section_template: true
+  field_structured_content: true
   status: true

@@ -1,0 +1,8 @@
+{
+    "passed": true,
+    "unchanged_source_baseline_accepts_incoming_copy_in_memory": true,
+    "native_editorial_change_blocks_conflicting_source_in_memory": true,
+    "persistent_content_unchanged": true,
+    "entity_saves": 0,
+    "state_writes": 0
+}

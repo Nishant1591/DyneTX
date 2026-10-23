@@ -1,0 +1,26 @@
+uuid: 7ec80833-1ea7-40b5-be7e-9654bdba526e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_article_sections
+    - node.type.privacy_policy
+    - paragraphs.paragraphs_type.dyne_article_section
+  module:
+    - entity_reference_revisions
+id: node.privacy_policy.field_article_sections
+field_name: field_article_sections
+entity_type: node
+bundle: privacy_policy
+label: 'Content sections (drag to order)'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      dyne_article_section: dyne_article_section
+field_type: entity_reference_revisions

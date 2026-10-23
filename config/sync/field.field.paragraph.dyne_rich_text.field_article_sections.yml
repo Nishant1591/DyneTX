@@ -1,0 +1,26 @@
+uuid: 4c29668e-8c92-4a98-a86f-69d87f202400
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_article_sections
+    - paragraphs.paragraphs_type.dyne_article_section
+    - paragraphs.paragraphs_type.dyne_rich_text
+  module:
+    - entity_reference_revisions
+id: paragraph.dyne_rich_text.field_article_sections
+field_name: field_article_sections
+entity_type: paragraph
+bundle: dyne_rich_text
+label: 'Content sections (drag to order)'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      dyne_article_section: dyne_article_section
+field_type: entity_reference_revisions

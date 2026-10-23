@@ -1,0 +1,22 @@
+uuid: 6bdb35f6-e6dc-4dbe-aa82-8fc326bdd724
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_section_heading
+    - paragraphs.paragraphs_type.dyne_article_section
+  module:
+    - text
+id: paragraph.dyne_article_section.field_section_heading
+field_name: field_section_heading
+entity_type: paragraph
+bundle: dyne_article_section
+label: 'Section heading'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

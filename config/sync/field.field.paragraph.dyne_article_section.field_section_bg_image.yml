@@ -1,0 +1,24 @@
+uuid: a02477e7-5d39-46cd-ab82-6cf4aaee47b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_section_bg_image
+    - media.type.image
+    - paragraphs.paragraphs_type.dyne_article_section
+id: paragraph.dyne_article_section.field_section_bg_image
+field_name: field_section_bg_image
+entity_type: paragraph
+bundle: dyne_article_section
+label: 'Background image'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+field_type: entity_reference

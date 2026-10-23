@@ -1,0 +1,19 @@
+uuid: feacc6f5-8ad3-4b34-9568-3bf6bf09fd1e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_content_template
+    - paragraphs.paragraphs_type.dyne_rich_text
+id: paragraph.dyne_rich_text.field_content_template
+field_name: field_content_template
+entity_type: paragraph
+bundle: dyne_rich_text
+label: 'Preserved content layout'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

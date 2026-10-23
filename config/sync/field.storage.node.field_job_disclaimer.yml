@@ -1,0 +1,19 @@
+uuid: 6f42f14f-fdf2-4b3d-9ad3-0f53c8a0fcea
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_job_disclaimer
+field_name: field_job_disclaimer
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

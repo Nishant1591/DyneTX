@@ -1,0 +1,22 @@
+uuid: 5206f9ba-0aa5-4771-be25-516144632508
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_article_body
+    - node.type.perspective
+  module:
+    - text
+id: node.perspective.field_article_body
+field_name: field_article_body
+entity_type: node
+bundle: perspective
+label: 'Article text'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

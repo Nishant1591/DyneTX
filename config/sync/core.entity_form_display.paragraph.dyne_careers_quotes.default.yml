@@ -4,12 +4,15 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.dyne_careers_quotes.field_archived_quotes
+    - field.field.paragraph.dyne_careers_quotes.field_article_sections
     - field.field.paragraph.dyne_careers_quotes.field_body_text
+    - field.field.paragraph.dyne_careers_quotes.field_content_template
     - field.field.paragraph.dyne_careers_quotes.field_native_components
     - field.field.paragraph.dyne_careers_quotes.field_quotes
+    - field.field.paragraph.dyne_careers_quotes.field_structured_content
     - paragraphs.paragraphs_type.dyne_careers_quotes
   module:
-    - text
+    - paragraphs
 id: paragraph.dyne_careers_quotes.default
 targetEntityType: paragraph
 bundle: dyne_careers_quotes
@@ -25,13 +28,23 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  field_body_text:
-    type: text_textarea
-    weight: 3
+  field_article_sections:
+    type: paragraphs
+    weight: 5
     region: content
     settings:
-      rows: 5
-      placeholder: ''
+      title: Section
+      title_plural: Sections
+      edit_mode: closed
+      closed_mode: summary
+      autocollapse: all
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: _none
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
     third_party_settings: {  }
   field_quotes:
     type: entity_reference_autocomplete
@@ -45,8 +58,12 @@ content:
     third_party_settings: {  }
 hidden:
   created: true
+  field_body_text: true
+  field_content_template: true
   field_items_json: true
   field_native_components: true
   field_rows_json: true
+  field_section_template: true
   field_sections_json: true
+  field_structured_content: true
   status: true

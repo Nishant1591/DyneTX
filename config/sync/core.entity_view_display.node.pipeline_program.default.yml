@@ -15,7 +15,6 @@ dependencies:
     - field.field.node.pipeline_program.field_target
     - node.type.pipeline_program
   module:
-    - entity_reference_revisions
     - text
     - user
 id: node.pipeline_program.default
@@ -30,14 +29,50 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
-  field_components:
-    type: entity_reference_revisions_entity_view
-    label: hidden
+  field_disease_text:
+    type: string
+    label: above
     settings:
-      view_mode: default
-      link: ''
+      link_to_entity: false
+      link_rel: canonical
     third_party_settings: {  }
-    weight: 10
+    weight: 0
+    region: content
+  field_phase:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_prevalence:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_status:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_target:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 2
     region: content
   links:
     settings: {  }
@@ -45,11 +80,7 @@ content:
     weight: 100
     region: content
 hidden:
-  field_disease_text: true
+  field_components: true
   field_image: true
   field_legacy_title: true
   field_link: true
-  field_phase: true
-  field_prevalence: true
-  field_status: true
-  field_target: true

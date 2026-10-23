@@ -114,7 +114,24 @@ final class FeedSynchronizer {
       if ($node && $this->matches($node, $row)) {
         return 'unchanged';
       }
+      if ($node && $node->hasField('field_structured_content')) {
+        require_once DRUPAL_ROOT . '/modules/custom/dyne_migrate/includes/structured-content.inc';
+        $editorial_baseline = $this->state->get('dyne_migrate.structured_baseline.' . $node->id());
+        if ($editorial_baseline && $editorial_baseline !== dyne_structured_editorial_hash($node)) {
+          throw new \UnexpectedValueException('Structured editorial changes conflict with feed update; node preserved: ' . $node->id());
+        }
+      }
       $baseline = $this->state->get('dyne_content_sync.node_hash.' . $key);
+      if ($node && $baseline && $node->hasField('field_structured_content')) {
+        $current = $this->nodeHash($node, $provider);
+        $structured_baseline = $this->state->get('dyne_migrate.structured_baseline.' . $node->id());
+        // Upgrade an old feed fingerprint only when both the old managed fields
+        // and the newly modeled editorial values are still untouched.
+        if ($baseline === $this->nodeHash($node, $provider, FALSE) && $structured_baseline && $structured_baseline === dyne_structured_editorial_hash($node)) {
+          $baseline = $current;
+          $this->state->set('dyne_content_sync.node_hash.' . $key, $current);
+        }
+      }
       if ($node && $baseline && $baseline !== $this->nodeHash($node, $provider)) {
         throw new \UnexpectedValueException('Editorial changes conflict with feed update; node preserved: ' . $node->id());
       }
@@ -147,6 +164,12 @@ final class FeedSynchronizer {
           $this->set($node, 'field_location_text', $row['location']);
           $this->setTerm($node, 'field_department', 'department', $row['department']);
           $this->setTerm($node, 'field_location', 'job_location', $row['location']);
+          if ($node->hasField('field_workplace_arrangement')) {
+            require_once DRUPAL_ROOT . '/modules/custom/dyne_migrate/includes/structured-job-parser.inc';
+            $parsed_job = dyne_job_parse($row['body']);
+            $workplace = strcasecmp(trim($row['location']), 'Remote') === 0 ? 'Remote' : $parsed_job['fields']['field_workplace_arrangement'];
+            $node->set('field_workplace_arrangement', $workplace === '' ? [] : $workplace);
+          }
         }
         else {
           $this->set($node, 'field_external_id', $row['id']);
@@ -174,6 +197,9 @@ final class FeedSynchronizer {
         $this->entities->getStorage('node')->resetCache([$node->id()]);
         $persisted = $this->entities->getStorage('node')->load($node->id());
         $this->state->set('dyne_content_sync.node_hash.' . $key, $this->nodeHash($persisted, $provider));
+        if ($persisted->hasField('field_structured_content') && $persisted->get('field_structured_content')->value) {
+          $this->state->set('dyne_migrate.structured_baseline.' . $persisted->id(), dyne_structured_editorial_hash($persisted));
+        }
         $this->state->delete('dyne_content_sync.queued.' . hash('sha256', json_encode($row, JSON_THROW_ON_ERROR)));
         unset($transaction);
         return $created ? 'created' : 'updated';
@@ -216,8 +242,13 @@ final class FeedSynchronizer {
     return ['field_body_text' => $row['body']] + ($row['provider'] === 'greenhouse' ? ['field_apply_url' => $row['url'], 'field_department_text' => $row['department'], 'field_location_text' => $row['location']] : ['field_news_date' => $row['date']]);
   }
 
-  private function nodeHash(NodeInterface $node, string $provider): string {
+  private function nodeHash(NodeInterface $node, string $provider, bool $structured = TRUE): string {
     $fields = ['title', 'field_body_text', 'body', 'field_legacy_title', 'field_apply_url', 'field_application_link', 'field_department_text', 'field_department_group', 'field_location_text', 'field_department', 'field_location', 'field_news_date', 'field_date_text', 'field_link', 'field_external_url', 'field_news_type'];
+    if ($structured && $node->hasField('field_structured_content')) {
+      require_once DRUPAL_ROOT . '/modules/custom/dyne_migrate/includes/structured-content.inc';
+      $definitions = $node->bundle() === 'job' ? dyne_structured_job_fields() : (dyne_structured_article_fields()[$node->bundle()] ?? []);
+      $fields = array_merge($fields, array_keys($definitions), ['field_structured_content', 'field_content_template']);
+    }
     $values = [];
     foreach ($fields as $name) {
       if ($node->hasField($name)) {

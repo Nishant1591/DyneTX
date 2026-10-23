@@ -9,7 +9,7 @@
           {% if item.icon %}<img class="card-img-top mx-auto" src="{{ item.icon }}" alt="" />{% endif %}
           <div class="card-body">
             <h3 class="h4 {{ item.style }}">{{ item.title }}</h3>
-            <p>{{ item.text }}</p>
+            {% if item.rich %}<div>{{ item.body }}</div>{% else %}<p>{{ item.text }}</p>{% endif %}
             {% if item.link %}<a href="{{ item.link }}" class="btn btn-primary stretched-link">Learn more</a>{% endif %}
           </div>
         </div>

@@ -1,0 +1,223 @@
+{
+    "authorization": "User explicitly approved test-only cleanup.",
+    "rewrites_original_defaults": false,
+    "active_original_references_to_test_revisions": [],
+    "test_entities": [
+        {
+            "type": "node",
+            "id": 480,
+            "exact_marker_verified": true
+        },
+        {
+            "type": "node",
+            "id": 481,
+            "exact_marker_verified": true
+        },
+        {
+            "type": "node",
+            "id": 482,
+            "exact_marker_verified": true
+        },
+        {
+            "type": "node",
+            "id": 483,
+            "exact_marker_verified": true
+        },
+        {
+            "type": "paragraph",
+            "id": 2038,
+            "exact_marker_verified": true
+        },
+        {
+            "type": "paragraph",
+            "id": 2039,
+            "exact_marker_verified": true
+        },
+        {
+            "type": "paragraph",
+            "id": 2040,
+            "exact_marker_verified": true
+        },
+        {
+            "type": "paragraph",
+            "id": 2041,
+            "exact_marker_verified": true
+        }
+    ],
+    "test_revisions": [
+        {
+            "type": "node",
+            "id": 28,
+            "revision": 2099,
+            "exact_marker_or_child_verified": true
+        },
+        {
+            "type": "node",
+            "id": 44,
+            "revision": 2100,
+            "exact_marker_or_child_verified": true
+        },
+        {
+            "type": "node",
+            "id": 74,
+            "revision": 2101,
+            "exact_marker_or_child_verified": true
+        },
+        {
+            "type": "node",
+            "id": 3,
+            "revision": 2102,
+            "exact_marker_or_child_verified": true
+        },
+        {
+            "type": "node",
+            "id": 474,
+            "revision": 2103,
+            "exact_marker_or_child_verified": true
+        },
+        {
+            "type": "node",
+            "id": 480,
+            "revision": 2104,
+            "exact_marker_or_child_verified": true
+        },
+        {
+            "type": "node",
+            "id": 481,
+            "revision": 2105,
+            "exact_marker_or_child_verified": true
+        },
+        {
+            "type": "node",
+            "id": 482,
+            "revision": 2106,
+            "exact_marker_or_child_verified": true
+        },
+        {
+            "type": "node",
+            "id": 482,
+            "revision": 2107,
+            "exact_marker_or_child_verified": true
+        },
+        {
+            "type": "node",
+            "id": 482,
+            "revision": 2108,
+            "exact_marker_or_child_verified": true
+        },
+        {
+            "type": "node",
+            "id": 483,
+            "revision": 2109,
+            "exact_marker_or_child_verified": true
+        },
+        {
+            "type": "paragraph",
+            "id": 1221,
+            "revision": 2601,
+            "exact_marker_or_child_verified": true
+        },
+        {
+            "type": "paragraph",
+            "id": 1223,
+            "revision": 2602,
+            "exact_marker_or_child_verified": true
+        },
+        {
+            "type": "paragraph",
+            "id": 1224,
+            "revision": 2603,
+            "exact_marker_or_child_verified": true
+        },
+        {
+            "type": "paragraph",
+            "id": 367,
+            "revision": 2604,
+            "exact_marker_or_child_verified": true
+        },
+        {
+            "type": "paragraph",
+            "id": 381,
+            "revision": 2605,
+            "exact_marker_or_child_verified": true
+        },
+        {
+            "type": "paragraph",
+            "id": 382,
+            "revision": 2606,
+            "exact_marker_or_child_verified": true
+        },
+        {
+            "type": "paragraph",
+            "id": 383,
+            "revision": 2607,
+            "exact_marker_or_child_verified": true
+        },
+        {
+            "type": "paragraph",
+            "id": 384,
+            "revision": 2608,
+            "exact_marker_or_child_verified": true
+        },
+        {
+            "type": "paragraph",
+            "id": 193,
+            "revision": 2609,
+            "exact_marker_or_child_verified": true
+        },
+        {
+            "type": "paragraph",
+            "id": 1978,
+            "revision": 2610,
+            "exact_marker_or_child_verified": true
+        },
+        {
+            "type": "paragraph",
+            "id": 2038,
+            "revision": 2611,
+            "exact_marker_or_child_verified": true
+        },
+        {
+            "type": "paragraph",
+            "id": 2039,
+            "revision": 2612,
+            "exact_marker_or_child_verified": true
+        },
+        {
+            "type": "paragraph",
+            "id": 2040,
+            "revision": 2613,
+            "exact_marker_or_child_verified": true
+        },
+        {
+            "type": "paragraph",
+            "id": 2039,
+            "revision": 2614,
+            "exact_marker_or_child_verified": true
+        },
+        {
+            "type": "paragraph",
+            "id": 2040,
+            "revision": 2615,
+            "exact_marker_or_child_verified": true
+        },
+        {
+            "type": "paragraph",
+            "id": 2038,
+            "revision": 2616,
+            "exact_marker_or_child_verified": true
+        },
+        {
+            "type": "paragraph",
+            "id": 2040,
+            "revision": 2617,
+            "exact_marker_or_child_verified": true
+        },
+        {
+            "type": "paragraph",
+            "id": 2041,
+            "revision": 2618,
+            "exact_marker_or_child_verified": true
+        }
+    ]
+}

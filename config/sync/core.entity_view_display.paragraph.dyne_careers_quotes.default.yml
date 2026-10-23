@@ -4,9 +4,12 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.dyne_careers_quotes.field_archived_quotes
+    - field.field.paragraph.dyne_careers_quotes.field_article_sections
     - field.field.paragraph.dyne_careers_quotes.field_body_text
+    - field.field.paragraph.dyne_careers_quotes.field_content_template
     - field.field.paragraph.dyne_careers_quotes.field_native_components
     - field.field.paragraph.dyne_careers_quotes.field_quotes
+    - field.field.paragraph.dyne_careers_quotes.field_structured_content
     - paragraphs.paragraphs_type.dyne_careers_quotes
 id: paragraph.dyne_careers_quotes.default
 targetEntityType: paragraph
@@ -15,9 +18,12 @@ mode: default
 content: {  }
 hidden:
   field_archived_quotes: true
+  field_article_sections: true
   field_body_text: true
+  field_content_template: true
   field_items_json: true
   field_native_components: true
   field_quotes: true
   field_rows_json: true
   field_sections_json: true
+  field_structured_content: true

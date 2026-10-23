@@ -1,0 +1,21 @@
+uuid: 3bcbbb57-f9fb-4cb1-9768-d818eadf2fbe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_structured_content
+    - paragraphs.paragraphs_type.dyne_article_section
+id: paragraph.dyne_article_section.field_structured_content
+field_name: field_structured_content
+entity_type: paragraph
+bundle: dyne_article_section
+label: 'Uses structured content'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

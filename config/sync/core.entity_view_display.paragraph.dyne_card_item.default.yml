@@ -3,7 +3,9 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.dyne_card_item.field_component_rich_text_ready
     - field.field.paragraph.dyne_card_item.field_heading
+    - field.field.paragraph.dyne_card_item.field_item_body
     - field.field.paragraph.dyne_card_item.field_item_icon
     - field.field.paragraph.dyne_card_item.field_item_text
     - field.field.paragraph.dyne_card_item.field_link
@@ -15,7 +17,9 @@ bundle: dyne_card_item
 mode: default
 content: {  }
 hidden:
+  field_component_rich_text_ready: true
   field_heading: true
+  field_item_body: true
   field_item_icon: true
   field_item_text: true
   field_link: true

@@ -1,0 +1,22 @@
+uuid: 019beaa7-3cb2-4a47-a37b-3977b057fe82
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_forward_looking
+    - node.type.news
+  module:
+    - text
+id: node.news.field_forward_looking
+field_name: field_forward_looking
+entity_type: node
+bundle: news
+label: 'Forward-looking statements'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

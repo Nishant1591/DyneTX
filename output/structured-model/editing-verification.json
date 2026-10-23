@@ -1,0 +1,23 @@
+{
+    "passed": false,
+    "checks": [
+        "Saved Job role summary appears after warming full entity cache.",
+        "Saved typed company URL appears in the Job link.",
+        "Saved decimal salary endpoints appear in the Job body.",
+        "Rollback restores exact node, paragraph and revision counts.",
+        "Rollback restores unchanged entity node:28."
+    ],
+    "counts_before": {
+        "node": 469,
+        "node_revision": 2082,
+        "paragraphs_item": 1924,
+        "paragraphs_item_revision": 2487
+    },
+    "counts_after": {
+        "node": 469,
+        "node_revision": 2082,
+        "paragraphs_item": 1924,
+        "paragraphs_item_revision": 2487
+    },
+    "error": "Editing structured Job fields preserves the archived merged body."
+}

@@ -3,13 +3,17 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.news.field_article_body
     - field.field.node.news.field_body_class
     - field.field.node.news.field_body_text
+    - field.field.node.news.field_company_overview
     - field.field.node.news.field_components
+    - field.field.node.news.field_content_template
     - field.field.node.news.field_date_text
     - field.field.node.news.field_disease
     - field.field.node.news.field_external_id
     - field.field.node.news.field_external_url
+    - field.field.node.news.field_forward_looking
     - field.field.node.news.field_hero_classes
     - field.field.node.news.field_hero_first_line
     - field.field.node.news.field_hero_image
@@ -21,12 +25,14 @@ dependencies:
     - field.field.node.news.field_legacy_title
     - field.field.node.news.field_link
     - field.field.node.news.field_native_presentation
+    - field.field.node.news.field_news_contacts
     - field.field.node.news.field_news_date
     - field.field.node.news.field_news_file
     - field.field.node.news.field_news_type
     - field.field.node.news.field_seo_description
     - field.field.node.news.field_seo_title
     - field.field.node.news.field_source_url
+    - field.field.node.news.field_structured_content
     - field.field.node.news.field_wp_source_data
     - field.field.node.news.field_wp_source_id
     - field.field.node.news.field_wp_source_status
@@ -63,11 +69,15 @@ content:
     weight: 100
     region: content
 hidden:
+  field_article_body: true
   field_body_class: true
+  field_company_overview: true
+  field_content_template: true
   field_date_text: true
   field_disease: true
   field_external_id: true
   field_external_url: true
+  field_forward_looking: true
   field_hero_classes: true
   field_hero_first_line: true
   field_hero_image: true
@@ -79,12 +89,14 @@ hidden:
   field_legacy_title: true
   field_link: true
   field_native_presentation: true
+  field_news_contacts: true
   field_news_date: true
   field_news_file: true
   field_news_type: true
   field_seo_description: true
   field_seo_title: true
   field_source_url: true
+  field_structured_content: true
   field_wp_source_data: true
   field_wp_source_id: true
   field_wp_source_status: true

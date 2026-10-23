@@ -1,0 +1,24 @@
+uuid: ce26f4bc-dbff-4025-b83b-f625723ee4ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_item_body
+    - filter.format.dyne_legacy_html
+    - paragraphs.paragraphs_type.dyne_text_section
+  module:
+    - text
+id: paragraph.dyne_text_section.field_item_body
+field_name: field_item_body
+entity_type: paragraph
+bundle: dyne_text_section
+label: Text
+description: 'Formatted content shown on the website.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - dyne_legacy_html
+field_type: text_long

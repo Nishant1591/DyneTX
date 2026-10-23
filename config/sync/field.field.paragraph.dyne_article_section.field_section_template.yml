@@ -1,0 +1,19 @@
+uuid: 86f9f610-1c61-40ce-a1b6-82acafe5b3e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_section_template
+    - paragraphs.paragraphs_type.dyne_article_section
+id: paragraph.dyne_article_section.field_section_template
+field_name: field_section_template
+entity_type: paragraph
+bundle: dyne_article_section
+label: 'Preserved section layout'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

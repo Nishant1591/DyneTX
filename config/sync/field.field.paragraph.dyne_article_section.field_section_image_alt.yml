@@ -1,0 +1,19 @@
+uuid: 7a7fae75-02ed-43b6-ad7c-a3cc85337949
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_section_image_alt
+    - paragraphs.paragraphs_type.dyne_article_section
+id: paragraph.dyne_article_section.field_section_image_alt
+field_name: field_section_image_alt
+entity_type: paragraph
+bundle: dyne_article_section
+label: 'Alternative text for this placement'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

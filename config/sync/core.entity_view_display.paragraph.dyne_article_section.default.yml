@@ -1,0 +1,36 @@
+uuid: 28ce154a-2f28-4e7a-be58-b1f35c52cf86
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.dyne_article_section.field_article_sections
+    - field.field.paragraph.dyne_article_section.field_content_template
+    - field.field.paragraph.dyne_article_section.field_section_bg_image
+    - field.field.paragraph.dyne_article_section.field_section_body
+    - field.field.paragraph.dyne_article_section.field_section_heading
+    - field.field.paragraph.dyne_article_section.field_section_image
+    - field.field.paragraph.dyne_article_section.field_section_image_alt
+    - field.field.paragraph.dyne_article_section.field_section_link
+    - field.field.paragraph.dyne_article_section.field_section_mobile_image
+    - field.field.paragraph.dyne_article_section.field_section_retina_image
+    - field.field.paragraph.dyne_article_section.field_section_template
+    - field.field.paragraph.dyne_article_section.field_structured_content
+    - paragraphs.paragraphs_type.dyne_article_section
+id: paragraph.dyne_article_section.default
+targetEntityType: paragraph
+bundle: dyne_article_section
+mode: default
+content: {  }
+hidden:
+  field_article_sections: true
+  field_content_template: true
+  field_section_bg_image: true
+  field_section_body: true
+  field_section_heading: true
+  field_section_image: true
+  field_section_image_alt: true
+  field_section_link: true
+  field_section_mobile_image: true
+  field_section_retina_image: true
+  field_section_template: true
+  field_structured_content: true

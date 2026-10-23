@@ -1,0 +1,24 @@
+uuid: 6ee6c97e-d1c2-4316-bab9-d544581aceaf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_section_image
+    - media.type.image
+    - paragraphs.paragraphs_type.dyne_article_section
+id: paragraph.dyne_article_section.field_section_image
+field_name: field_section_image
+entity_type: paragraph
+bundle: dyne_article_section
+label: 'Section image'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+field_type: entity_reference

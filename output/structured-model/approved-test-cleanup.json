@@ -1,0 +1,73 @@
+{
+    "authorization": "User explicitly approved test-only cleanup.",
+    "backup": "/var/www/html/output/structured-model/before-approved-test-cleanup.sql.gz",
+    "rewrites_original_defaults": false,
+    "deleted_entities": [
+        {
+            "type": "node",
+            "id": 480
+        },
+        {
+            "type": "node",
+            "id": 481
+        },
+        {
+            "type": "node",
+            "id": 482
+        },
+        {
+            "type": "node",
+            "id": 483
+        },
+        {
+            "type": "paragraph",
+            "id": 2038
+        },
+        {
+            "type": "paragraph",
+            "id": 2039
+        },
+        {
+            "type": "paragraph",
+            "id": 2040
+        },
+        {
+            "type": "paragraph",
+            "id": 2041
+        }
+    ],
+    "deleted_revisions": [
+        {
+            "type": "node",
+            "revision": 2099
+        },
+        {
+            "type": "node",
+            "revision": 2100
+        },
+        {
+            "type": "node",
+            "revision": 2101
+        },
+        {
+            "type": "node",
+            "revision": 2102
+        },
+        {
+            "type": "node",
+            "revision": 2103
+        }
+    ],
+    "counts": {
+        "node": 469,
+        "node_revision": 2088,
+        "paragraphs_item": 1938,
+        "paragraphs_item_revision": 2514
+    },
+    "all_original_values_and_defaults_preserved": true,
+    "expected_original_entities_before_cleanup": {
+        "node": 469,
+        "paragraph": 1938
+    },
+    "passed": true
+}

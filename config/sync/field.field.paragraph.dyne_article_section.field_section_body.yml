@@ -1,0 +1,22 @@
+uuid: 011812db-3967-4ad2-bdaf-86b58abf0f3f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_section_body
+    - paragraphs.paragraphs_type.dyne_article_section
+  module:
+    - text
+id: paragraph.dyne_article_section.field_section_body
+field_name: field_section_body
+entity_type: paragraph
+bundle: dyne_article_section
+label: 'Section text'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

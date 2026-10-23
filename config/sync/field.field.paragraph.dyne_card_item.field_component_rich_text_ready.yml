@@ -1,0 +1,21 @@
+uuid: 22488a3d-94e2-411f-8a16-74f8c11ef11a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_component_rich_text_ready
+    - paragraphs.paragraphs_type.dyne_card_item
+id: paragraph.dyne_card_item.field_component_rich_text_ready
+field_name: field_component_rich_text_ready
+entity_type: paragraph
+bundle: dyne_card_item
+label: 'Uses formatted component text'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,22 @@
+uuid: 4b200ff1-2a30-419e-b327-386cd4e8157b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_story_mission
+    - node.type.perspective
+  module:
+    - text
+id: node.perspective.field_story_mission
+field_name: field_story_mission
+entity_type: node
+bundle: perspective
+label: 'Banner introduction'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

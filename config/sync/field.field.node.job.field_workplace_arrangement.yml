@@ -1,0 +1,19 @@
+uuid: 73a73368-b440-4c1b-8e29-3589db4b2f5c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_workplace_arrangement
+    - node.type.job
+id: node.job.field_workplace_arrangement
+field_name: field_workplace_arrangement
+entity_type: node
+bundle: job
+label: 'Workplace arrangement'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

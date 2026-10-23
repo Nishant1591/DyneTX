@@ -3,17 +3,28 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.dyne_alert_banner.field_banner_body
     - field.field.paragraph.dyne_alert_banner.field_banner_logo
     - field.field.paragraph.dyne_alert_banner.field_banner_text
+    - field.field.paragraph.dyne_alert_banner.field_component_rich_text_ready
     - image.style.thumbnail
     - paragraphs.paragraphs_type.dyne_alert_banner
   module:
     - image
+    - text
 id: paragraph.dyne_alert_banner.default
 targetEntityType: paragraph
 bundle: dyne_alert_banner
 mode: default
 content:
+  field_banner_body:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
   field_banner_logo:
     type: image_image
     weight: 0
@@ -22,14 +33,8 @@ content:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
-  field_banner_text:
-    type: string_textarea
-    weight: 1
-    region: content
-    settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
 hidden:
   created: true
+  field_banner_text: true
+  field_component_rich_text_ready: true
   status: true

@@ -1,0 +1,22 @@
+uuid: c179433a-11b2-4ed4-8f8b-ea13ebea2e26
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_company_overview
+    - node.type.news
+  module:
+    - text
+id: node.news.field_company_overview
+field_name: field_company_overview
+entity_type: node
+bundle: news
+label: 'About the company'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

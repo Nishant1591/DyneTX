@@ -1,0 +1,21 @@
+uuid: e64b98cf-6732-4a0f-a4ae-e75978a8d416
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_structured_content
+    - node.type.news
+id: node.news.field_structured_content
+field_name: field_structured_content
+entity_type: node
+bundle: news
+label: 'Uses structured content'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

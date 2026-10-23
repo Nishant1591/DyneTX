@@ -8,6 +8,8 @@
 require_once __DIR__ . '/includes/native-metadata.inc';
 require_once __DIR__ . '/includes/native-components.inc';
 require_once __DIR__ . '/includes/native-layouts.inc';
+require_once __DIR__ . '/includes/structured-content.inc';
+require_once __DIR__ . '/includes/structured-articles.inc';
 
 /**
  * Implements hook_preprocess_page().
@@ -96,10 +98,14 @@ function dynetx_preprocess_block(&$variables): void {
  */
 function dynetx_preprocess_node(&$variables): void {
   $node = $variables['node'];
+  if ($node->hasField('field_structured_content') && $node->get('field_structured_content')->value) {
+    $variables['content']['field_body_text'] = $node->bundle() === 'job' ? _dynetx_structured_job_body($node) : _dynetx_structured_article_body($node);
+  }
   $variables['label'] = _dynetx_native_title($node);
   $variables['dyne_native_details'] = _dynetx_native_node_details($node);
   $variables['dyne_job_department'] = $node->hasField('field_department') && $node->get('field_department')->entity ? $node->get('field_department')->entity->label() : '';
   $variables['dyne_job_location'] = $node->hasField('field_location') && $node->get('field_location')->entity ? $node->get('field_location')->entity->label() : '';
+  $variables['dyne_job_workplace'] = $node->hasField('field_workplace_arrangement') && $node->get('field_workplace_arrangement')->access('view') ? $node->get('field_workplace_arrangement')->value : '';
   $variables['dyne_apply_url'] = _dynetx_component_link($node, 'field_application_link');
   $variables['dyne_leader_role'] = $node->hasField('field_role') ? $node->get('field_role')->value : '';
   $metadata = _dynetx_entity_metadata($node);
@@ -206,6 +212,10 @@ function _dynetx_job_groups(): array {
  * Implements hook_preprocess_paragraph() for all dyne_* components.
  */
 function dynetx_preprocess_paragraph(&$variables): void {
+  $structured_paragraph = $variables['paragraph'];
+  if ($structured_paragraph->hasField('field_structured_content') && $structured_paragraph->get('field_structured_content')->value) {
+    $variables['content']['field_body_text'] = _dynetx_structured_article_body($structured_paragraph);
+  }
   /** @var \Drupal\paragraphs\Entity\Paragraph $paragraph */
   $paragraph = $variables['paragraph'];
   $variables['dyne_legacy'] = !empty(_dynetx_entity_metadata(\Drupal::routeMatch()->getParameter('node')));

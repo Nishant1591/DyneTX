@@ -3,10 +3,13 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.dyne_rich_text.field_article_sections
     - field.field.paragraph.dyne_rich_text.field_body_text
+    - field.field.paragraph.dyne_rich_text.field_content_template
     - field.field.paragraph.dyne_rich_text.field_heading
     - field.field.paragraph.dyne_rich_text.field_icon
     - field.field.paragraph.dyne_rich_text.field_link
+    - field.field.paragraph.dyne_rich_text.field_structured_content
     - field.field.paragraph.dyne_rich_text.field_style
     - paragraphs.paragraphs_type.dyne_rich_text
   module:
@@ -63,4 +66,7 @@ content:
     third_party_settings: {  }
     weight: 4
     region: content
-hidden: {  }
+hidden:
+  field_article_sections: true
+  field_content_template: true
+  field_structured_content: true

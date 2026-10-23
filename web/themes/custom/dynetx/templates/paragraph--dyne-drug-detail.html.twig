@@ -5,6 +5,6 @@
   {{ paragraph.field_body_text.value|raw }}
   {% for s in dyne_sections %}
     <h3>{{ s.title }}</h3>
-    <p>{{ s.body }}</p>
+    {% if s.rich %}<div>{{ s.body }}</div>{% else %}<p>{{ s.body }}</p>{% endif %}
   {% endfor %}
 </section>

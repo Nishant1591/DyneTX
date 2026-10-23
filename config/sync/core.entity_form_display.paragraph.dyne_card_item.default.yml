@@ -3,7 +3,9 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.dyne_card_item.field_component_rich_text_ready
     - field.field.paragraph.dyne_card_item.field_heading
+    - field.field.paragraph.dyne_card_item.field_item_body
     - field.field.paragraph.dyne_card_item.field_item_icon
     - field.field.paragraph.dyne_card_item.field_item_text
     - field.field.paragraph.dyne_card_item.field_link
@@ -12,6 +14,7 @@ dependencies:
   module:
     - link
     - media_library
+    - text
 id: paragraph.dyne_card_item.default
 targetEntityType: paragraph
 bundle: dyne_card_item
@@ -25,20 +28,20 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  field_item_body:
+    type: text_textarea
+    weight: 5
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
   field_item_icon:
     type: media_library_widget
     weight: 5
     region: content
     settings:
       media_types: {  }
-    third_party_settings: {  }
-  field_item_text:
-    type: string_textarea
-    weight: 5
-    region: content
-    settings:
-      rows: 5
-      placeholder: ''
     third_party_settings: {  }
   field_link:
     type: link_default
@@ -58,4 +61,6 @@ content:
     third_party_settings: {  }
 hidden:
   created: true
+  field_component_rich_text_ready: true
+  field_item_text: true
   status: true

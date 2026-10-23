@@ -1,0 +1,22 @@
+uuid: 99d5dba8-0681-4493-b876-9f157320fec3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_story_heading
+    - node.type.perspective
+  module:
+    - text
+id: node.perspective.field_story_heading
+field_name: field_story_heading
+entity_type: node
+bundle: perspective
+label: 'Article heading'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

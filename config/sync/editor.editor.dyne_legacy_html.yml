@@ -1,0 +1,53 @@
+uuid: 31d55a52-832b-433d-9a2c-f8c051c87699
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.dyne_legacy_html
+  module:
+    - ckeditor5
+format: dyne_legacy_html
+editor: ckeditor5
+settings:
+  toolbar:
+    items:
+      - undo
+      - redo
+      - '|'
+      - heading
+      - '|'
+      - bold
+      - italic
+      - underline
+      - strikethrough
+      - superscript
+      - subscript
+      - removeFormat
+      - '|'
+      - link
+      - '|'
+      - bulletedList
+      - numberedList
+      - blockQuote
+      - insertTable
+      - horizontalLine
+      - '|'
+      - sourceEditing
+  plugins:
+    ckeditor5_heading:
+      enabled_headings:
+        - heading2
+        - heading3
+        - heading4
+        - heading5
+        - heading6
+    ckeditor5_list:
+      properties:
+        reversed: true
+        startIndex: true
+        styles: true
+      multiBlock: true
+    ckeditor5_sourceEditing:
+      allowed_tags: {  }
+image_upload:
+  status: false

@@ -116,4 +116,6 @@ function dyne_native_components_schema(): void {
   // A quote is editable as a standalone content record as well as reusable.
   $quote_view = EntityViewDisplay::load('node.quote.default');
   $quote_view->setComponent('field_quote_text', ['type' => 'text_default', 'label' => 'hidden'])->save();
+  require_once __DIR__ . '/rich-text-component-fields.inc';
+  dyne_rich_text_component_schema();
 }

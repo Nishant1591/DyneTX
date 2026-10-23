@@ -1,0 +1,22 @@
+uuid: 3387258e-0f12-44b0-b993-2f2fc7f9fd0d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_article_intro
+    - node.type.privacy_policy
+  module:
+    - text
+id: node.privacy_policy.field_article_intro
+field_name: field_article_intro
+entity_type: node
+bundle: privacy_policy
+label: 'Policy introduction'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

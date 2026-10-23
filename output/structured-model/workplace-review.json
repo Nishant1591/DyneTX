@@ -1,0 +1,12 @@
+{
+    "updated": 41,
+    "source_conflicts": [
+        {
+            "nid": 333,
+            "source_id": 4088,
+            "location": "Remote",
+            "source_tag": "#LI-Onsite",
+            "selected": "Remote"
+        }
+    ]
+}

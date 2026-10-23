@@ -1,0 +1,10 @@
+uuid: f901cf76-ad3a-440f-9fee-324ceae6c3b6
+langcode: en
+status: true
+dependencies: {  }
+id: dyne_article_section
+label: 'Content section'
+icon_uuid: null
+icon_default: null
+description: 'A heading, formatted text, image or link within an article or page section.'
+behavior_plugins: {  }

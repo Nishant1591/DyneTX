@@ -29,6 +29,9 @@
     {% if dyne_job_location %}
       <p><strong>{{ 'Location:'|t }}</strong> {{ dyne_job_location }}</p>
     {% endif %}
+    {% if dyne_job_workplace %}
+      <p class="dyne-job-workplace"><strong>{{ 'Workplace arrangement:'|t }}</strong> {{ dyne_job_workplace }}</p>
+    {% endif %}
   </div>
 
   <div class="dyne-job-detail__body">

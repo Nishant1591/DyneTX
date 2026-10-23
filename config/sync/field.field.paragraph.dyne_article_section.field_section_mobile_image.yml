@@ -1,0 +1,24 @@
+uuid: f8627c84-6f94-4e22-86c2-860b04eb0c1c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_section_mobile_image
+    - media.type.image
+    - paragraphs.paragraphs_type.dyne_article_section
+id: paragraph.dyne_article_section.field_section_mobile_image
+field_name: field_section_mobile_image
+entity_type: paragraph
+bundle: dyne_article_section
+label: 'Mobile image'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+field_type: entity_reference

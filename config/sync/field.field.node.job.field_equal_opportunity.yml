@@ -1,0 +1,22 @@
+uuid: 3a33bca6-7e38-4dd1-91e5-b7d41a3a10dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_equal_opportunity
+    - node.type.job
+  module:
+    - text
+id: node.job.field_equal_opportunity
+field_name: field_equal_opportunity
+entity_type: node
+bundle: job
+label: 'Equal opportunity statement'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

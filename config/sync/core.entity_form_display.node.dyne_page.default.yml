@@ -51,14 +51,6 @@ content:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
-  field_body_text:
-    type: text_textarea
-    weight: 20
-    region: content
-    settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
   field_components:
     type: paragraphs
     weight: 10
@@ -205,6 +197,7 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_body_text: true
   field_legacy_title: true
   field_wp_source_data: true
   field_wp_source_id: true

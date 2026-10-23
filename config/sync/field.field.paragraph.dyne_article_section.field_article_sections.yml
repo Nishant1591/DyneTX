@@ -1,0 +1,25 @@
+uuid: db77ba01-ebed-4123-b498-117e7d8cac4d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_article_sections
+    - paragraphs.paragraphs_type.dyne_article_section
+  module:
+    - entity_reference_revisions
+id: paragraph.dyne_article_section.field_article_sections
+field_name: field_article_sections
+entity_type: paragraph
+bundle: dyne_article_section
+label: 'Content sections (drag to order)'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      dyne_article_section: dyne_article_section
+field_type: entity_reference_revisions

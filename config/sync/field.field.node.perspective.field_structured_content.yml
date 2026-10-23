@@ -1,0 +1,21 @@
+uuid: 3f18381d-e713-4df5-82be-c6f7f876cf29
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_structured_content
+    - node.type.perspective
+id: node.perspective.field_structured_content
+field_name: field_structured_content
+entity_type: node
+bundle: perspective
+label: 'Uses structured content'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

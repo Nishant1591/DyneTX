@@ -3,9 +3,13 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.privacy_policy.field_article_intro
+    - field.field.node.privacy_policy.field_article_sections
     - field.field.node.privacy_policy.field_body_text
+    - field.field.node.privacy_policy.field_content_template
     - field.field.node.privacy_policy.field_policy_anchor
     - field.field.node.privacy_policy.field_policy_updated
+    - field.field.node.privacy_policy.field_structured_content
     - field.field.node.privacy_policy.field_wp_source_id
     - node.type.privacy_policy
   module:
@@ -29,6 +33,10 @@ content:
     weight: 100
     region: content
 hidden:
+  field_article_intro: true
+  field_article_sections: true
+  field_content_template: true
   field_policy_anchor: true
   field_policy_updated: true
+  field_structured_content: true
   field_wp_source_id: true

@@ -1,0 +1,19 @@
+uuid: 0a99afac-516d-4875-aa7c-b89007b9514d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content_template
+    - node.type.news
+id: node.news.field_content_template
+field_name: field_content_template
+entity_type: node
+bundle: news
+label: 'Preserved content layout'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

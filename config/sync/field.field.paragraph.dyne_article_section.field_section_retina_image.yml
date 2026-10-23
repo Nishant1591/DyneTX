@@ -1,0 +1,24 @@
+uuid: 11ef2f40-b54c-44ff-a369-6c9776952e03
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_section_retina_image
+    - media.type.image
+    - paragraphs.paragraphs_type.dyne_article_section
+id: paragraph.dyne_article_section.field_section_retina_image
+field_name: field_section_retina_image
+entity_type: paragraph
+bundle: dyne_article_section
+label: 'High resolution image'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+field_type: entity_reference

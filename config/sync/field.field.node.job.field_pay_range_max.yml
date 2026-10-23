@@ -1,0 +1,23 @@
+uuid: 88d0f291-6ce8-4a5d-b2a1-72e8e5500490
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pay_range_max
+    - node.type.job
+id: node.job.field_pay_range_max
+field_name: field_pay_range_max
+entity_type: node
+bundle: job
+label: 'Maximum base salary'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

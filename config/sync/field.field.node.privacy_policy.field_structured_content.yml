@@ -1,0 +1,21 @@
+uuid: 16a8a1ef-e921-421b-b26d-a80d7949425d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_structured_content
+    - node.type.privacy_policy
+id: node.privacy_policy.field_structured_content
+field_name: field_structured_content
+entity_type: node
+bundle: privacy_policy
+label: 'Uses structured content'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

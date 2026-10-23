@@ -3,10 +3,13 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.perspective.field_article_body
+    - field.field.node.perspective.field_article_sections
     - field.field.node.perspective.field_author
     - field.field.node.perspective.field_body_class
     - field.field.node.perspective.field_body_text
     - field.field.node.perspective.field_components
+    - field.field.node.perspective.field_content_template
     - field.field.node.perspective.field_disease
     - field.field.node.perspective.field_external_link
     - field.field.node.perspective.field_hero_classes
@@ -22,9 +25,16 @@ dependencies:
     - field.field.node.perspective.field_native_presentation
     - field.field.node.perspective.field_seo_description
     - field.field.node.perspective.field_seo_title
+    - field.field.node.perspective.field_story_byline
     - field.field.node.perspective.field_story_date
+    - field.field.node.perspective.field_story_date_label
     - field.field.node.perspective.field_story_excerpt
+    - field.field.node.perspective.field_story_heading
     - field.field.node.perspective.field_story_image
+    - field.field.node.perspective.field_story_intro
+    - field.field.node.perspective.field_story_mission
+    - field.field.node.perspective.field_story_portrait
+    - field.field.node.perspective.field_structured_content
     - field.field.node.perspective.field_subtitle
     - field.field.node.perspective.field_wp_source_id
     - node.type.perspective
@@ -59,8 +69,11 @@ content:
     weight: 100
     region: content
 hidden:
+  field_article_body: true
+  field_article_sections: true
   field_author: true
   field_body_class: true
+  field_content_template: true
   field_disease: true
   field_external_link: true
   field_hero_classes: true
@@ -76,8 +89,15 @@ hidden:
   field_native_presentation: true
   field_seo_description: true
   field_seo_title: true
+  field_story_byline: true
   field_story_date: true
+  field_story_date_label: true
   field_story_excerpt: true
+  field_story_heading: true
   field_story_image: true
+  field_story_intro: true
+  field_story_mission: true
+  field_story_portrait: true
+  field_structured_content: true
   field_subtitle: true
   field_wp_source_id: true

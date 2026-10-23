@@ -1,0 +1,19 @@
+uuid: 460eb7b7-3a3e-4c00-8ed8-1b5c4689d4d7
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_story_byline
+field_name: field_story_byline
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

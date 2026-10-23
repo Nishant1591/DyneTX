@@ -30,6 +30,8 @@ function dyne_migrate_install(): void {
   _dyne_migrate_paragraph_displays();
   _dyne_migrate_menus();
   _dyne_migrate_legacy_schema();
+  require_once __DIR__ . '/includes/rich-text-editors.inc';
+  dyne_migrate_enable_rich_text_editors();
 }
 
 /**
@@ -487,7 +489,7 @@ function _dyne_migrate_job_text_format(): void {
 
   \Drupal\filter\Entity\FilterFormat::create([
     'format' => 'dyne_job_html',
-    'name' => 'Dyne job HTML',
+    'name' => 'Restricted HTML',
     'weight' => 10,
     'roles' => ['authenticated'],
     'filters' => [
@@ -853,7 +855,7 @@ function _dyne_migrate_legacy_schema(): void {
   if (!\Drupal\filter\Entity\FilterFormat::load('dyne_legacy_html')) {
     \Drupal\filter\Entity\FilterFormat::create([
       'format' => 'dyne_legacy_html',
-      'name' => 'Dyne legacy layout HTML (trusted editors)',
+      'name' => 'Full HTML',
       'status' => TRUE,
       'weight' => 20,
       // Input is sanitized by the archive builder. Do not escape or rewrite its
@@ -905,4 +907,34 @@ function _dyne_migrate_native_model_ready(): bool {
   return !empty($ledger['nodes'])
     && \Drupal\field\Entity\FieldConfig::loadByName('node', 'dyne_page', 'field_native_presentation')
     && \Drupal\field\Entity\FieldConfig::loadByName('paragraph', 'dyne_team_grid', 'field_team_members');
+}
+
+/** Separate combined article and job content into native editorial fields. */
+function dyne_migrate_update_8109(): void {
+  require_once __DIR__ . '/includes/structured-content.inc';
+  dyne_structured_schema();
+  dyne_structured_backfill();
+  dyne_structured_complete_workplaces();
+  dyne_structured_complete_images();
+}
+
+/** Enable CKEditor 5 on all Dyne formatted text areas. */
+function dyne_migrate_update_8110(): void {
+  require_once __DIR__ . '/includes/rich-text-editors.inc';
+  dyne_migrate_enable_rich_text_editors();
+}
+
+/** Give remaining component narratives formatted controls, preserving originals. */
+function dyne_migrate_update_8111(): void {
+  require_once __DIR__ . '/includes/rich-text-component-fields.inc';
+  dyne_rich_text_component_schema();
+}
+
+/** Use Drupal's generic text-format labels in authoring controls. */
+function dyne_migrate_update_8112(): void {
+  foreach (['dyne_legacy_html' => 'Full HTML', 'dyne_job_html' => 'Restricted HTML'] as $id => $label) {
+    if ($format = \Drupal\filter\Entity\FilterFormat::load($id)) {
+      $format->set('name', $label)->save();
+    }
+  }
 }

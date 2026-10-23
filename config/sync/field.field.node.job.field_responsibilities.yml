@@ -1,0 +1,22 @@
+uuid: 40f8b9e1-bb17-42d2-8311-fe2154d25960
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_responsibilities
+    - node.type.job
+  module:
+    - text
+id: node.job.field_responsibilities
+field_name: field_responsibilities
+entity_type: node
+bundle: job
+label: 'Primary responsibilities'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

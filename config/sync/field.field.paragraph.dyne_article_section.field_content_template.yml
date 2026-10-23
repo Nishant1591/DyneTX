@@ -1,0 +1,19 @@
+uuid: 643f954c-ce57-49e8-87e7-8df155a69336
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_content_template
+    - paragraphs.paragraphs_type.dyne_article_section
+id: paragraph.dyne_article_section.field_content_template
+field_name: field_content_template
+entity_type: paragraph
+bundle: dyne_article_section
+label: 'Preserved content layout'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

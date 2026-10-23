@@ -2,6 +2,9 @@
 
 /** Native field rendering; no JSON fixtures or legacy database access. */
 function _dynetx_layout_text($entity, string $field): array {
+  if ($field === 'field_body_text' && $entity->hasField('field_structured_content') && $entity->get('field_structured_content')->value) {
+    return $entity->bundle() === 'job' ? _dynetx_structured_job_body($entity) : _dynetx_structured_article_body($entity);
+  }
   if (!$entity->hasField($field) || $entity->get($field)->isEmpty()) return [];
   $item = $entity->get($field)->first();
   return ['#type' => 'processed_text', '#text' => $item->value, '#format' => $item->format ?: 'dyne_legacy_html'];

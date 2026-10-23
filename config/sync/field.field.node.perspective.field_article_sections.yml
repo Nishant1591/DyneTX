@@ -1,0 +1,26 @@
+uuid: da3de3cb-1353-497d-aafb-db4348e22d47
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_article_sections
+    - node.type.perspective
+    - paragraphs.paragraphs_type.dyne_article_section
+  module:
+    - entity_reference_revisions
+id: node.perspective.field_article_sections
+field_name: field_article_sections
+entity_type: node
+bundle: perspective
+label: 'Content sections (drag to order)'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      dyne_article_section: dyne_article_section
+field_type: entity_reference_revisions

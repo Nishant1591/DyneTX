@@ -1,0 +1,22 @@
+uuid: cc8307d5-819a-4dc9-b9e1-13a96656fc9f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_job_disclaimer
+    - node.type.job
+  module:
+    - text
+id: node.job.field_job_disclaimer
+field_name: field_job_disclaimer
+entity_type: node
+bundle: job
+label: 'Job description disclaimer'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

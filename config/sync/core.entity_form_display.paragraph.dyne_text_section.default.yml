@@ -3,9 +3,13 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.dyne_text_section.field_component_rich_text_ready
     - field.field.paragraph.dyne_text_section.field_heading
+    - field.field.paragraph.dyne_text_section.field_item_body
     - field.field.paragraph.dyne_text_section.field_item_text
     - paragraphs.paragraphs_type.dyne_text_section
+  module:
+    - text
 id: paragraph.dyne_text_section.default
 targetEntityType: paragraph
 bundle: dyne_text_section
@@ -19,8 +23,8 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  field_item_text:
-    type: string_textarea
+  field_item_body:
+    type: text_textarea
     weight: 2
     region: content
     settings:
@@ -29,4 +33,6 @@ content:
     third_party_settings: {  }
 hidden:
   created: true
+  field_component_rich_text_ready: true
+  field_item_text: true
   status: true

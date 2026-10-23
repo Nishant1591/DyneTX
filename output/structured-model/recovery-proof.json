@@ -1,0 +1,30 @@
+{
+  "original_nodes_checked": 469,
+  "original_node_identity_changes": [],
+  "original_body_or_source_archive_changes": [],
+  "original_current_fields_with_test_markers": [],
+  "other_preexisting_field_changes_excluding_component_revision_refs": [],
+  "unpublished_test_nodes": [
+    {
+      "nid": 480,
+      "title": "DYNE_STRUCTURED_TEST_0c0e0dd306_NEW_JOB",
+      "status": false
+    },
+    {
+      "nid": 481,
+      "title": "DYNE_STRUCTURED_TEST_0c0e0dd306_NEW_NEWS",
+      "status": false
+    },
+    {
+      "nid": 482,
+      "title": "DYNE_STRUCTURED_TEST_0c0e0dd306_NEW_STORY",
+      "status": false
+    },
+    {
+      "nid": 483,
+      "title": "DYNE_STRUCTURED_TEST_0c0e0dd306_NEW_PAGE",
+      "status": false
+    }
+  ],
+  "passed": true
+}

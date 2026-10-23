@@ -1,0 +1,22 @@
+uuid: 81e8a508-eb5f-4d34-81c8-c4d5502a9e8f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_story_byline
+    - node.type.perspective
+  module:
+    - text
+id: node.perspective.field_story_byline
+field_name: field_story_byline
+entity_type: node
+bundle: perspective
+label: 'Article byline'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

@@ -2,7 +2,7 @@ uuid: 8afe5865-a044-4fd8-85ca-6c93f087ed0a
 langcode: en
 status: true
 dependencies: {  }
-name: 'Dyne legacy layout HTML (trusted editors)'
+name: 'Full HTML'
 format: dyne_legacy_html
 weight: 20
 filters: {  }
