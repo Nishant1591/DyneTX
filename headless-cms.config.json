@@ -7,7 +7,7 @@
     "previewHandlers": [],
     "webhookHandlers": [],
     "migrations": ["web/modules/custom/dyne_migrate/includes/pipeline-programs.inc", "scripts/upgrade-pipeline-programs.php"],
-    "tests": ["scripts/tests/pipeline-program-parser.php", "scripts/tests/pipeline-programs-isolated.php", "scripts/tests/image-library-isolated.php"]
+    "tests": ["scripts/tests/pipeline-program-parser.php", "scripts/tests/pipeline-programs-isolated.php", "scripts/tests/image-library-isolated.php", "scripts/tests/sitemap.php"]
   },
   "features": {"preview": false, "webhooks": false, "localization": false, "migrations": true},
   "environments": ["development", "test", "production"],

@@ -39,6 +39,8 @@ function dyne_migrate_install(): void {
   dyne_pipeline_component_schema();
   require_once __DIR__ . '/includes/image-library.inc';
   dyne_image_library_schema();
+  require_once __DIR__ . '/includes/sitemap.inc';
+  dyne_migrate_sitemap_setup();
 }
 
 /**
@@ -969,4 +971,10 @@ function dyne_migrate_update_8115(): void {
 function dyne_migrate_update_8116(): void {
   require_once __DIR__ . '/includes/image-library.inc';
   dyne_image_library_schema();
+}
+
+/** Index public pages and enable sitemap discovery and normal cron refresh. */
+function dyne_migrate_update_8117(): void {
+  require_once __DIR__ . '/includes/sitemap.inc';
+  dyne_migrate_sitemap_setup();
 }

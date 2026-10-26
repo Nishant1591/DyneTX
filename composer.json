@@ -33,6 +33,7 @@
         "drupal/paragraphs": "^1.23",
         "drupal/pathauto": "^1.15",
         "drupal/redirect": "^1.13",
+        "drupal/robotstxt": "^1.6",
         "drupal/social_media_links": "^2.10",
         "drupal/video_embed_field": "^3.1",
         "drupal/webform": "^6.3",
@@ -49,6 +50,9 @@
         "drupal-scaffold": {
             "locations": {
                 "web-root": "web/"
+            },
+            "file-mapping": {
+                "[web-root]/robots.txt": false
             }
         },
         "installer-paths": {

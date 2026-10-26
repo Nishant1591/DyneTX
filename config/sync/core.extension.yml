@@ -39,6 +39,7 @@ module:
   path: 0
   path_alias: 0
   redirect: 0
+  robotstxt: 0
   social_media_links: 0
   system: 0
   taxonomy: 0

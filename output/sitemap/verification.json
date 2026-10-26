@@ -1,0 +1,83 @@
+{
+    "passed": true,
+    "checks": 1339,
+    "failures": [],
+    "modules": {
+        "xmlsitemap": true,
+        "robotstxt": true,
+        "automated_cron": false
+    },
+    "counts": {
+        "nodes": 477,
+        "eligible_node_translations": 170,
+        "visible_node_rows": 170,
+        "frontpage_rows": 1,
+        "stored_rows": 467,
+        "generated_chunks": 1,
+        "generated_urls": 171,
+        "expected_unique_urls": 171,
+        "homepage_occurrences": 1
+    },
+    "policy_probes": {
+        "published_public_node": {
+            "visible": true,
+            "expected": true
+        },
+        "unpublished_node": {
+            "visible": false,
+            "expected": false
+        },
+        "archive_path_policy": {
+            "visible": false,
+            "expected": false
+        },
+        "frontpage_node_even_manually_included": {
+            "visible": false,
+            "expected": false
+        },
+        "existing_archive_alias": {
+            "visible": false,
+            "expected": false
+        },
+        "quote_even_when_manually_included": {
+            "visible": false,
+            "expected": false
+        },
+        "privacy_policy_even_when_manually_included": {
+            "visible": false,
+            "expected": false
+        },
+        "news_html": {
+            "visible": true,
+            "expected": true
+        },
+        "news_empty_type_is_html": {
+            "visible": true,
+            "expected": true
+        },
+        "news_url": {
+            "visible": false,
+            "expected": false
+        },
+        "news_file": {
+            "visible": false,
+            "expected": false
+        }
+    },
+    "entity_saves": 0,
+    "config_saves": 0,
+    "state_writes": 0,
+    "network_requests": 0,
+    "cron_calls": 0,
+    "automated_cron_interval_seconds": 0,
+    "automated_cron_runtime_interval_seconds": 0,
+    "automated_cron_cli_suppression": false,
+    "base_url": "https://dyne-tx-workspace.ddev.site",
+    "sitemap_label": "Default sitemap",
+    "content_fingerprints": {
+        "before": "586c84c265b2278494eff507942073b47c120c4c7b56b6226a407f4418bd5f6e",
+        "after": "586c84c265b2278494eff507942073b47c120c4c7b56b6226a407f4418bd5f6e",
+        "tables": 411
+    },
+    "pre_upgrade_content_unchanged": true
+}

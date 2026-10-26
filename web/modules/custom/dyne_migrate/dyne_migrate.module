@@ -10,6 +10,12 @@ require_once __DIR__ . '/includes/rich-text-component-fields.inc';
 require_once __DIR__ . '/includes/title-aliases.inc';
 require_once __DIR__ . '/includes/pipeline-program-model.inc';
 require_once __DIR__ . '/includes/image-library.inc';
+require_once __DIR__ . '/includes/sitemap.inc';
+
+/** Implements hook_xmlsitemap_link_alter(). */
+function dyne_migrate_xmlsitemap_link_alter(array &$link, array $context): void {
+  dyne_migrate_sitemap_link_alter($link, $context);
+}
 
 /** Native quote/policy bundles can be created after the initial install. */
 function dyne_migrate_node_type_insert(\Drupal\node\NodeTypeInterface $type): void {

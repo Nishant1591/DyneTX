@@ -1,3 +1,11 @@
+# XML sitemap (October 26, 2026)
+
+The public sitemap at `/sitemap.xml` includes public editorial pages and is
+advertised through dynamic `/robots.txt`. Reusable blocks, archives, external
+news destinations and unpublished content are excluded. Update 8117 configures
+indexing and cron regeneration; run `drush xmlsitemap:rebuild` after updates.
+See [sitemap setup, deployment and verification](docs/sitemap.md).
+
 # Title-based URL aliases (October 23, 2026)
 
 Saving a changed title now updates the URL when **Generate automatic URL alias**

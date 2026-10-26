@@ -9,6 +9,8 @@ dependencies:
   - drupal:path_alias
   - pathauto:pathauto
   - redirect:redirect
+  - xmlsitemap:xmlsitemap
+  - robotstxt:robotstxt
   - drupal:text
   - drupal:ckeditor5
   - drupal:link

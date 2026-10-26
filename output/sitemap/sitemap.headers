@@ -1,0 +1,18 @@
+HTTP/2 200 
+accept-ranges: bytes
+cache-control: must-revalidate, private
+content-language: en
+content-type: text/xml; charset=utf-8
+date: Mon, 26 Oct 2026 12:48:55 GMT
+etag: "0c895a74bebb5f5ad646fcd723bda923-gzip"
+expires: Mon, 26 Oct 2026 12:48:16 GMT
+last-modified: Mon, 26 Oct 2026 12:48:16 GMT
+server: Apache/2.4.68 (Debian)
+vary: Accept-Encoding
+x-content-type-options: nosniff
+x-drupal-cache: UNCACHEABLE (no cacheability)
+x-drupal-dynamic-cache: UNCACHEABLE (no cacheability)
+x-frame-options: SAMEORIGIN
+x-generator: Drupal 11 (https://www.drupal.org)
+x-robots-tag: noindex, follow
+

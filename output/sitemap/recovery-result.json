@@ -1,0 +1,17 @@
+{
+    "restored_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+    ],
+    "restored_tables": 20,
+    "content_tables_verified": 411,
+    "pre_upgrade_content_unchanged": true
+}

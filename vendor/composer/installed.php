@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'dyne-tx/drupal',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => null,
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => 'c06803e80c264641004607566175ae5f43dbd2a7',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -628,6 +628,15 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+        'drupal/robotstxt' => array(
+            'pretty_version' => '1.6.0',
+            'version' => '1.6.0.0',
+            'reference' => '8.x-1.6',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/robotstxt',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'drupal/search' => array(
             'dev_requirement' => false,
             'replaced' => array(
@@ -707,9 +716,9 @@
             'dev_requirement' => false,
         ),
         'dyne-tx/drupal' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => null,
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => 'c06803e80c264641004607566175ae5f43dbd2a7',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
