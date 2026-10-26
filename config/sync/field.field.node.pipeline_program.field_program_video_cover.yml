@@ -1,0 +1,24 @@
+uuid: 35e774e4-06ed-44f4-8026-974a8d95c7d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_program_video_cover
+    - media.type.image
+    - node.type.pipeline_program
+id: node.pipeline_program.field_program_video_cover
+field_name: field_program_video_cover
+entity_type: node
+bundle: pipeline_program
+label: 'Video cover image'
+description: 'Optional managed cover image displayed for the program video.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+field_type: entity_reference

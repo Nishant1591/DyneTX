@@ -8,6 +8,7 @@
 // Element validation callbacks must also exist when a cached form is submitted.
 require_once __DIR__ . '/includes/rich-text-component-fields.inc';
 require_once __DIR__ . '/includes/title-aliases.inc';
+require_once __DIR__ . '/includes/pipeline-program-model.inc';
 
 /** Native quote/policy bundles can be created after the initial install. */
 function dyne_migrate_node_type_insert(\Drupal\node\NodeTypeInterface $type): void {
@@ -164,4 +165,5 @@ function dyne_migrate_form_node_form_alter(array &$form, \Drupal\Core\Form\FormS
   if ($node->bundle() === 'leader' && isset($form['title']['widget'][0]['value'])) {
     $form['title']['widget'][0]['value']['#title'] = t('Full name');
   }
+  dyne_pipeline_program_form_alter($form, $form_state);
 }

@@ -1,0 +1,24 @@
+uuid: f36278b6-f035-481a-9150-e97b452fa395
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_disease_overview
+    - filter.format.dyne_legacy_html
+    - node.type.pipeline_program
+  module:
+    - text
+id: node.pipeline_program.field_disease_overview
+field_name: field_disease_overview
+entity_type: node
+bundle: pipeline_program
+label: 'Disease overview'
+description: 'Overview of the disease associated with this program.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - dyne_legacy_html
+field_type: text_long

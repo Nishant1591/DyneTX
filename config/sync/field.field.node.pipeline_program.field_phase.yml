@@ -9,8 +9,8 @@ id: node.pipeline_program.field_phase
 field_name: field_phase
 entity_type: node
 bundle: pipeline_program
-label: Phase
-description: ''
+label: 'Chart phase label'
+description: 'Text displayed on the program bar in the pipeline chart.'
 required: false
 translatable: true
 default_value: {  }

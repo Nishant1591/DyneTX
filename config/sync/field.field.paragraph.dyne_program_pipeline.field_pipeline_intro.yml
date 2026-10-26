@@ -1,0 +1,24 @@
+uuid: 82b143f0-494c-4777-8f17-1feda915c0e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pipeline_intro
+    - filter.format.dyne_legacy_html
+    - paragraphs.paragraphs_type.dyne_program_pipeline
+  module:
+    - text
+id: paragraph.dyne_program_pipeline.field_pipeline_intro
+field_name: field_pipeline_intro
+entity_type: paragraph
+bundle: dyne_program_pipeline
+label: Introduction
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - dyne_legacy_html
+field_type: text_long

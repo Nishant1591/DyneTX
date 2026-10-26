@@ -1,0 +1,24 @@
+uuid: 855e2de1-cb12-44eb-a2d8-1121bad41bad
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_expansion_body
+    - filter.format.dyne_legacy_html
+    - paragraphs.paragraphs_type.dyne_program_pipeline
+  module:
+    - text
+id: paragraph.dyne_program_pipeline.field_expansion_body
+field_name: field_expansion_body
+entity_type: paragraph
+bundle: dyne_program_pipeline
+label: 'Expansion detail text'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - dyne_legacy_html
+field_type: text_long

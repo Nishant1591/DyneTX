@@ -18,7 +18,7 @@ try {
     'privacy_policy' => ['field_article_intro', 'field_article_sections', 'field_policy_updated'],
     'leader' => ['field_role', 'field_body_text', 'field_photo'],
     'dyne_page' => ['field_components'],
-    'pipeline_program' => ['field_disease_text', 'field_prevalence', 'field_target', 'field_phase', 'field_status'],
+    'pipeline_program' => ['field_program_code', 'field_disease_text', 'field_prevalence_us', 'field_prevalence_eu', 'field_target', 'field_phase', 'field_status', 'field_body_text', 'field_disease_overview', 'field_disease_onset', 'field_disease_cause', 'field_disease_symptoms', 'field_unmet_need', 'field_trial_links'],
     'quote' => ['field_quote_text', 'field_speaker_image', 'field_quote_width'],
   ];
   foreach ($expected as $bundle => $fields) {

@@ -1,0 +1,19 @@
+uuid: be17d512-6f08-418b-adee-f88f5b4fa076
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_disease_symptoms
+field_name: field_disease_symptoms
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

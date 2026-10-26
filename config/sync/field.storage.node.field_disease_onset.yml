@@ -1,0 +1,19 @@
+uuid: 2fa90e3a-4045-4e54-b69b-585d556d9573
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_disease_onset
+field_name: field_disease_onset
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

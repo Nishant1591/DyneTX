@@ -9,8 +9,8 @@ id: node.pipeline_program.field_status
 field_name: field_status
 entity_type: node
 bundle: pipeline_program
-label: Status
-description: ''
+label: 'Milestone or status'
+description: 'Optional milestone text displayed beside the program bar.'
 required: false
 translatable: true
 default_value: {  }

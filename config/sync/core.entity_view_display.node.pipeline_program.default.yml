@@ -5,48 +5,42 @@ dependencies:
   config:
     - field.field.node.pipeline_program.field_body_text
     - field.field.node.pipeline_program.field_components
+    - field.field.node.pipeline_program.field_disease_cause
+    - field.field.node.pipeline_program.field_disease_heading
+    - field.field.node.pipeline_program.field_disease_onset
+    - field.field.node.pipeline_program.field_disease_overview
+    - field.field.node.pipeline_program.field_disease_short
+    - field.field.node.pipeline_program.field_disease_symptoms
     - field.field.node.pipeline_program.field_disease_text
     - field.field.node.pipeline_program.field_image
     - field.field.node.pipeline_program.field_legacy_title
     - field.field.node.pipeline_program.field_link
     - field.field.node.pipeline_program.field_phase
     - field.field.node.pipeline_program.field_prevalence
+    - field.field.node.pipeline_program.field_prevalence_eu
+    - field.field.node.pipeline_program.field_prevalence_us
+    - field.field.node.pipeline_program.field_program_aliases
+    - field.field.node.pipeline_program.field_program_anchor
+    - field.field.node.pipeline_program.field_program_code
+    - field.field.node.pipeline_program.field_program_heading
+    - field.field.node.pipeline_program.field_program_image
+    - field.field.node.pipeline_program.field_program_progress
+    - field.field.node.pipeline_program.field_program_short_name
+    - field.field.node.pipeline_program.field_program_video
+    - field.field.node.pipeline_program.field_program_video_alt
+    - field.field.node.pipeline_program.field_program_video_cover
     - field.field.node.pipeline_program.field_status
     - field.field.node.pipeline_program.field_target
+    - field.field.node.pipeline_program.field_trial_links
+    - field.field.node.pipeline_program.field_unmet_need
     - node.type.pipeline_program
   module:
-    - text
     - user
 id: node.pipeline_program.default
 targetEntityType: node
 bundle: pipeline_program
 mode: default
 content:
-  field_body_text:
-    type: text_default
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    weight: 0
-    region: content
-  field_disease_text:
-    type: string
-    label: above
-    settings:
-      link_to_entity: false
-      link_rel: canonical
-    third_party_settings: {  }
-    weight: 0
-    region: content
-  field_phase:
-    type: string
-    label: above
-    settings:
-      link_to_entity: false
-      link_rel: canonical
-    third_party_settings: {  }
-    weight: 3
-    region: content
   field_prevalence:
     type: string
     label: above
@@ -56,31 +50,38 @@ content:
     third_party_settings: {  }
     weight: 1
     region: content
-  field_status:
-    type: string
-    label: above
-    settings:
-      link_to_entity: false
-      link_rel: canonical
-    third_party_settings: {  }
-    weight: 4
-    region: content
-  field_target:
-    type: string
-    label: above
-    settings:
-      link_to_entity: false
-      link_rel: canonical
-    third_party_settings: {  }
-    weight: 2
-    region: content
   links:
     settings: {  }
     third_party_settings: {  }
     weight: 100
     region: content
 hidden:
+  field_body_text: true
   field_components: true
+  field_disease_cause: true
+  field_disease_heading: true
+  field_disease_onset: true
+  field_disease_overview: true
+  field_disease_short: true
+  field_disease_symptoms: true
+  field_disease_text: true
   field_image: true
   field_legacy_title: true
   field_link: true
+  field_phase: true
+  field_prevalence_eu: true
+  field_prevalence_us: true
+  field_program_aliases: true
+  field_program_anchor: true
+  field_program_code: true
+  field_program_heading: true
+  field_program_image: true
+  field_program_progress: true
+  field_program_short_name: true
+  field_program_video: true
+  field_program_video_alt: true
+  field_program_video_cover: true
+  field_status: true
+  field_target: true
+  field_trial_links: true
+  field_unmet_need: true

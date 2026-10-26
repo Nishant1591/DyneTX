@@ -1,0 +1,10 @@
+uuid: e5d805e6-4b40-4ddd-9a73-218a82093431
+langcode: en
+status: true
+dependencies: {  }
+id: dyne_program_pipeline
+label: 'Program pipeline'
+icon_uuid: null
+icon_default: null
+description: 'Pipeline chart and details from reusable Pipeline program records.'
+behavior_plugins: {  }

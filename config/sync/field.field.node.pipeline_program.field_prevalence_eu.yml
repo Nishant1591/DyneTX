@@ -1,0 +1,19 @@
+uuid: de3cb279-1442-4ed7-9b25-51e66a0d15aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_prevalence_eu
+    - node.type.pipeline_program
+id: node.pipeline_program.field_prevalence_eu
+field_name: field_prevalence_eu
+entity_type: node
+bundle: pipeline_program
+label: 'European prevalence'
+description: 'Preserve the published estimate, range, and approximation symbols.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

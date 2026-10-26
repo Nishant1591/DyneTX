@@ -1,0 +1,23 @@
+{% import '@dynetx/paragraph--dyne-program-pipeline.html.twig' as pipeline %}
+{{ dyne_program_cache }}
+{% if dyne_program %}
+  <article{{ attributes.addClass('dyne-program-detail', 'wrapper', 'pages') }}>
+    <div class="hero hero-third-level" aria-hidden="true"></div>
+    <div class="container py-5">
+      {{ title_prefix }}<h1>{{ dyne_program.title }}</h1>{{ title_suffix }}
+      {% if dyne_program.image %}<img class="img-fluid mb-4" src="{{ dyne_program.image.url }}" alt="{{ dyne_program.image.alt }}">{% endif %}
+      <dl class="row">
+        {% if dyne_program.code %}<dt class="col-sm-3">{{ 'Program'|t }}</dt><dd class="col-sm-9">{{ dyne_program.code }}</dd>{% endif %}
+        {% if dyne_program.short_name %}<dt class="col-sm-3">{{ 'Short name'|t }}</dt><dd class="col-sm-9">{{ dyne_program.short_name }}</dd>{% endif %}
+        {% if dyne_program.aliases %}<dt class="col-sm-3">{{ 'Also known as'|t }}</dt><dd class="col-sm-9">{{ dyne_program.aliases|join(', ') }}</dd>{% endif %}
+        {% if dyne_program.disease %}<dt class="col-sm-3">{{ 'Disease'|t }}</dt><dd class="col-sm-9">{{ dyne_program.disease }}</dd>{% endif %}
+        {% if dyne_program.prevalence_us %}<dt class="col-sm-3">{{ 'U.S. prevalence'|t }}</dt><dd class="col-sm-9">{{ dyne_program.prevalence_us }}</dd>{% endif %}
+        {% if dyne_program.prevalence_europe %}<dt class="col-sm-3">{{ 'Europe prevalence'|t }}</dt><dd class="col-sm-9">{{ dyne_program.prevalence_europe }}</dd>{% endif %}
+        {% if dyne_program.target %}<dt class="col-sm-3">{{ 'Target'|t }}</dt><dd class="col-sm-9">{{ dyne_program.target }}</dd>{% endif %}
+        {% if dyne_program.phase %}<dt class="col-sm-3">{{ 'Phase'|t }}</dt><dd class="col-sm-9">{{ dyne_program.phase }}</dd>{% endif %}
+        {% if dyne_program.status %}<dt class="col-sm-3">{{ 'Milestone'|t }}</dt><dd class="col-sm-9">{{ dyne_program.status }}</dd>{% endif %}
+      </dl>
+    </div>
+    <div class="container-fluid section pipeline-description">{{ pipeline.details(dyne_program, false, '/pipeline#chart') }}</div>
+  </article>
+{% endif %}

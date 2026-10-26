@@ -1,0 +1,19 @@
+uuid: 7761604b-bc07-4df9-9c21-2785f1f99fdf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_expansion_title
+    - paragraphs.paragraphs_type.dyne_program_pipeline
+id: paragraph.dyne_program_pipeline.field_expansion_title
+field_name: field_expansion_title
+entity_type: paragraph
+bundle: dyne_program_pipeline
+label: 'Expansion detail heading'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

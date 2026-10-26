@@ -1,0 +1,19 @@
+uuid: aca3262b-c18c-4d1a-bbba-8c9da46431db
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_prevalence_us
+    - node.type.pipeline_program
+id: node.pipeline_program.field_prevalence_us
+field_name: field_prevalence_us
+entity_type: node
+bundle: pipeline_program
+label: 'U.S. prevalence'
+description: 'Preserve the published estimate, range, and approximation symbols.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

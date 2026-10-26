@@ -1,0 +1,21 @@
+uuid: 5b662a82-940f-4681-b421-a160683d3044
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_expansion_targets
+field_name: field_expansion_targets
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

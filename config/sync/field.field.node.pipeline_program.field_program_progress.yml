@@ -1,0 +1,23 @@
+uuid: 00d7e0e7-878d-45cb-87d4-3fda43c034a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_program_progress
+    - node.type.pipeline_program
+id: node.pipeline_program.field_program_progress
+field_name: field_program_progress
+entity_type: node
+bundle: pipeline_program
+label: 'Chart bar width (%)'
+description: 'Presentation width of the program bar, from 0 to 100. Leave empty when no width is specified.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: 100
+  prefix: ''
+  suffix: ''
+field_type: integer

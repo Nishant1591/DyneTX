@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_body_text
+    - filter.format.dyne_legacy_html
     - node.type.pipeline_program
   module:
     - text
@@ -11,12 +12,13 @@ id: node.pipeline_program.field_body_text
 field_name: field_body_text
 entity_type: node
 bundle: pipeline_program
-label: 'Body text'
-description: ''
+label: 'Program description'
+description: 'Introduction describing this program and its therapeutic approach.'
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  allowed_formats: {  }
+  allowed_formats:
+    - dyne_legacy_html
 field_type: text_long

@@ -34,6 +34,9 @@ function dyne_migrate_install(): void {
   dyne_migrate_enable_rich_text_editors();
   require_once __DIR__ . '/includes/title-aliases.inc';
   dyne_migrate_title_alias_schema();
+  require_once __DIR__ . '/includes/pipeline-programs.inc';
+  dyne_pipeline_program_model_schema();
+  dyne_pipeline_component_schema();
 }
 
 /**
@@ -946,4 +949,16 @@ function dyne_migrate_update_8113(): void {
   require_once __DIR__ . '/includes/title-aliases.inc';
   dyne_migrate_title_alias_schema();
   dyne_migrate_title_alias_enroll();
+}
+
+/** Populate Pipeline programs and connect the current chart to native records. */
+function dyne_migrate_update_8114(): void {
+  require_once __DIR__ . '/includes/pipeline-programs.inc';
+  dyne_pipeline_program_upgrade();
+}
+
+/** Keep CKEditor selected on empty fields after adopting generic format names. */
+function dyne_migrate_update_8115(): void {
+  require_once __DIR__ . '/includes/rich-text-editors.inc';
+  dyne_migrate_rich_text_format_order();
 }

@@ -4,7 +4,7 @@ status: true
 dependencies: {  }
 name: 'Pipeline program'
 type: pipeline_program
-description: 'DMD / DM1 / FSHD program detail.'
+description: 'Reusable neuromuscular pipeline program with chart facts, disease details and clinical trial links.'
 help: null
 new_revision: true
 preview_mode: 1

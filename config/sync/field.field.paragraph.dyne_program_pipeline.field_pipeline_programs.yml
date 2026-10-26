@@ -1,0 +1,25 @@
+uuid: 31113915-de15-4b53-9df1-9c82f54eca1b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pipeline_programs
+    - node.type.pipeline_program
+    - paragraphs.paragraphs_type.dyne_program_pipeline
+id: paragraph.dyne_program_pipeline.field_pipeline_programs
+field_name: field_pipeline_programs
+entity_type: paragraph
+bundle: dyne_program_pipeline
+label: 'Pipeline programs (drag to order)'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      pipeline_program: pipeline_program
+    auto_create: false
+field_type: entity_reference

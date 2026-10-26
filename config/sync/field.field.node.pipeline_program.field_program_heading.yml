@@ -1,0 +1,24 @@
+uuid: 270d6950-c6e0-4e6f-b337-a5bd1f706f37
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_program_heading
+    - filter.format.dyne_legacy_html
+    - node.type.pipeline_program
+  module:
+    - text
+id: node.pipeline_program.field_program_heading
+field_name: field_program_heading
+entity_type: node
+bundle: pipeline_program
+label: 'Program heading'
+description: 'Full heading displayed above the program description, including any inline emphasis.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - dyne_legacy_html
+field_type: text_long

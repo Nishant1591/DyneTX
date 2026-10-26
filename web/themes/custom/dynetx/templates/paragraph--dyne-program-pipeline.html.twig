@@ -1,0 +1,111 @@
+{% macro details(program, mobile = false, back_url = '#chart', show_back = true) %}
+  {% if not mobile %}<div class="container">{% endif %}
+  {% if program.heading or program.body or program.trials or program.video %}
+    <div class="row{% if not mobile %}{% if program.style == 'program-1' %} rounded-blue-tail-right full-width{% else %} rounded-blue-tail-left{% endif %}{% endif %}">
+      {% if program.video and not mobile %}
+        {% if program.heading %}<div class="col-12{% if program.style == 'program-1' %} restricted-width{% endif %}"><h2 class="h1">{{ program.heading }}</h2></div>{% endif %}
+        <div class="col-12 col-lg-6">
+      {% else %}
+        <div class="col-12{% if mobile %} py-4{% endif %}">
+        {% if program.heading %}<h2{% if mobile or program.style == 'program-1' %} class="h1"{% endif %}>{{ program.heading }}</h2>{% endif %}
+      {% endif %}
+        {{ program.body }}
+        {% for link in program.trials %}<p class="mt-5 mt-lg-0"><a class="btn {{ program.trial_class }} btn-lg" href="{{ link.url }}">{{ link.title ?: link.url }} <i class="ico-play-wht ico-xs" aria-hidden="true"></i></a></p>{% endfor %}
+      </div>
+      {% if program.video %}
+        <div class="col-12 col-lg-6 d-flex flex-column justify-content-center">
+          {% if program.video.cover and program.video.embed_id %}
+            <div class="embed-responsive-16x9 custom-cover custom-cover-fancy" data-dyne-video="{{ program.video.url }}" embd-data-url="{{ program.video.embed_id }}" embd-data-title="{{ program.video.title }}" aria-label="{{ program.video.title ?: 'Watch video'|t }}">
+              <img class="img-fluid" src="{{ program.video.cover.url }}" alt="{{ program.video.cover.alt }}">
+            </div>
+          {% elseif program.video.cover %}<a href="{{ program.video.url }}"><img class="img-fluid" src="{{ program.video.cover.url }}" alt="{{ program.video.cover.alt }}"></a>
+          {% else %}<p><a{% if program.video.embed_id %} class="video-link" data-video-title="{{ program.video.title }}"{% endif %} href="{{ program.video.url }}">{{ program.video.title ?: program.video.url }}</a></p>{% endif %}
+          {% if program.video.title %}<p class="text-alert">{{ program.video.title }}</p>{% endif %}
+        </div>
+      {% endif %}
+    </div>
+  {% endif %}
+  {% if program.disease_heading or program.overview %}
+    <div class="row"><div class="col-12">
+      {% if program.disease_heading %}<h2>{{ program.disease_heading }}</h2>{% endif %}
+      {{ program.overview }}
+    </div></div>
+  {% endif %}
+  {% if program.onset or program.cause or program.symptoms or program.unmet_need or show_back %}
+    <div class="row mt-2 pt-1 pt-lg-0 mt-lg-5">
+      <div class="col-12 col-md-6{% if not mobile %} pe-md-4{% endif %}">
+        {% if program.onset %}<h3>{{ program.disease_short }} {{ 'Onset'|t }}</h3>{{ program.onset }}{% endif %}
+        {% if program.cause %}<h3>{{ program.disease_short }} {{ 'Cause'|t }}</h3>{{ program.cause }}{% endif %}
+      </div>
+      <div class="col-12 col-md-6 mt-2 pt-1{% if mobile %} p-lg-0 m-lg-0{% else %} pt-md-0 mt-md-0 ps-md-4{% endif %}">
+        {% if program.symptoms %}<h3>{{ program.disease_short }} {{ 'Symptoms'|t }}</h3>{{ program.symptoms }}{% endif %}
+        {% if program.unmet_need %}<h3>{{ program.disease_short }} {{ 'Unmet Therapeutic Need'|t }}</h3>{{ program.unmet_need }}{% endif %}
+      </div>
+      {% if show_back %}<div class="back-to w-100 ms-3 smooth-scroll"><a class="btn btn-primary" href="{{ back_url }}">{{ 'Back to pipeline'|t }}</a></div>{% endif %}
+    </div>
+  {% endif %}
+  {% if not mobile %}</div>{% endif %}
+{% endmacro %}
+
+{{ dyne_pipeline_cache }}
+{% if dyne_pipeline_intro_heading or dyne_pipeline_intro %}
+  <div class="container-fluid section pipeline-intro page-intro"><div class="container"><div class="row"><div class="col-12 intro">
+    {% if dyne_pipeline_intro_heading %}<h1 class="h2 h2-new-sm h2-new-thin mb-4 pb-xl-2">{{ dyne_pipeline_intro_heading }}</h1>{% endif %}
+    {{ dyne_pipeline_intro }}
+  </div></div></div></div>
+{% endif %}
+<span id="programs" class="anchor" aria-hidden="true"></span>
+<div class="container-fluid section pipeline-chart-26 bg-wht-blue">
+  <div class="anchor" id="chart"></div>
+  <div class="container">
+    {% if dyne_pipeline_heading %}<h3>{{ dyne_pipeline_heading }}</h3>{% endif %}
+    <div class="row chart-headline">
+      <div class="col-12 col-lg-3"><span>{{ 'DISEASE & PREVALENCE'|t }}<span class="d-lg-none">/{{ 'TARGET'|t }}</span></span></div>
+      <div class="col d-none d-lg-flex">{{ 'TARGET'|t }}</div>
+      <div class="col-8 stages"><div class="row">
+        <div class="col-3 stage-1"><span>{{ 'PRECLINICAL'|t }}</span></div>
+        <div class="col-3 stage-2"><span>{{ 'CLINICAL'|t }}</span></div>
+        <div class="col-3 stage-3"><span>{{ 'REGISTRATIONAL'|t }}</span></div>
+        <div class="col-3 stage-4"><span>{{ 'Commercial'|t }}</span></div>
+      </div></div>
+    </div>
+    {% for group in dyne_pipeline_groups %}
+      {% set primary = group.program %}
+      <div class="row chart-body smooth-scroll {{ primary.style }}">
+        <div class="col-12 col-lg-3">
+          {% if primary.anchor and primary.has_detail %}<a class="btn btn-primary btn-plus btn-plus-collapse collapsed" data-mdb-collapse-init data-mdb-target="#collapse{{ primary.anchor }}" aria-expanded="false" aria-controls="collapse{{ primary.anchor }}" href="#{{ primary.anchor }}"><i aria-hidden="true"></i><span class="sr-only">{{ primary.disease }} {{ 'information'|t }}</span></a>{% endif %}
+          {{ primary.disease|replace({'Duchenne muscular': 'Duchenne muscular', 'Myotonic dystrophy': 'Myotonic dystrophy'}) }}
+          {% if primary.prevalence_us %}<div class="mt-2"><span>{{ 'U.S.:'|t }}</span> {{ primary.prevalence_us }}</div>{% endif %}
+          {% if primary.prevalence_europe %}<div><span>{{ 'Europe:'|t }}</span> {{ primary.prevalence_europe }}</div>{% endif %}
+        </div>
+        <div class="col target">{% for program in group.items %}<div>{{ program.target }}</div>{% endfor %}</div>
+        <div class="col-12 col-lg-8 chart-wrapper">
+          {% for program in group.items %}
+            <div class="inner">
+              {% if group.items|length > 1 %}<div class="d-lg-none">{{ program.target }}</div>{% endif %}
+              {% if program.progress is not null %}<div class="chart short" style="width: {{ program.progress }}%"><div>{% if program.short_name %}<div>{{ program.display_name }}</div>{% else %}{{ program.display_name }}{% endif %}{% if program.phase %}<span>{{ program.phase }}</span>{% endif %}</div></div>{% else %}<div>{{ program.display_name }}{% if program.phase %} <span>{{ program.phase }}</span>{% endif %}</div>{% endif %}
+              {% if program.status %}<div class="eta"><i class="fa-sharp fa-solid fa-star" aria-hidden="true"></i><div>{{ program.status }}</div></div>{% endif %}
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+      {% if primary.anchor and primary.has_detail %}<div class="row pipeline-description collapse" id="collapse{{ primary.anchor }}">{{ _self.details(primary, true) }}</div>{% endif %}
+    {% endfor %}
+    {% if dyne_pipeline_expansion_heading or dyne_pipeline_expansion_targets %}
+      <div class="row chart-headline"><div class="col-12"><span>{{ dyne_pipeline_expansion_heading }}</span> <div class="ps-lg-2">{{ dyne_pipeline_expansion_targets }}</div></div></div>
+    {% endif %}
+    {% if dyne_pipeline_expansion_title or dyne_pipeline_expansion_body %}
+      <div class="row pipeline-description collapse" id="collapseEXP"><div class="col-12 py-4">
+        {% if dyne_pipeline_expansion_title %}<h2 class="h1">{{ dyne_pipeline_expansion_title }}</h2>{% endif %}
+        {{ dyne_pipeline_expansion_body }}
+        <a class="btn btn-primary mt-4 mt-lg-0" href="#chart">{{ 'Back to pipeline'|t }}</a>
+      </div></div>
+    {% endif %}
+  </div>
+</div>
+{% for program in dyne_pipeline_details %}
+  <div class="container-fluid section pipeline-description">
+    <div id="{{ program.anchor }}" class="anchor"></div>
+    {{ _self.details(program) }}
+  </div>
+{% endfor %}

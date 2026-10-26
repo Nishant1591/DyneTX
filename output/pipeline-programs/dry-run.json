@@ -1,0 +1,533 @@
+{
+    "available": true,
+    "complete": false,
+    "page_id": 6,
+    "page_revision": 1636,
+    "source": {
+        "delta": 1,
+        "id": 324,
+        "revision": 998
+    },
+    "parsed": {
+        "source_sha256": "77ec25601ebd9ed38b62953fc6e2ddcff4673cb9b8fdca2e0e6a8e530fe9fda1",
+        "intro_heading_html": "a pipeline driven by purpose with the potential to effect real change",
+        "intro_html": "<p>We are advancing therapeutics to provide functional improvement for people living with genetically driven neuromuscular diseases. By utilizing our FORCE<sup>TM</sup> platform, we believe we will be able to deliver targeted therapies to muscle and the central nervous system (CNS) to address the root cause of disease.</p><p>We have a broad pipeline, including clinical programs for Duchenne muscular dystrophy (DMD) and myotonic dystrophy type 1 (DM1) as well as preclinical programs for facioscapulohumeral muscular dystrophy (FSHD), Pompe disease and multiple DMD mutations. Each of these neuromuscular diseases has a profound impact on affected communities around the world.</p>",
+        "chart_heading": "Neuromuscular Pipeline Leveraging Clinically Validated Platform",
+        "stages": [
+            "PRECLINICAL",
+            "CLINICAL",
+            "REGISTRATIONAL",
+            "Commercial"
+        ],
+        "note_html": "<div class=\"row chart-headline\">\r\n\t\t\t\t\t\t\t<div class=\"col-12\"><span>Pipeline Expansion Opportunities:</span> <div class=\"ps-lg-2\">CNS, Rare skeletal, Cardiac, Metabolic</div></div>\r\n\t\t\t\t\t</div><div class=\"row pipeline-description collapse\" id=\"collapseEXP\">\r\n\t\t\t\t\t\t<div class=\"col-12 py-4\">\r\n\t\t\t\t\t\t\t<h2 class=\"h1\">Expansion Opportunities</h2>\n\t\t\t\t\t\t\t<p> We intend to utilize our FORCE platform to expand our portfolio by pursuing the development of programs in additional indications, including additional rare skeletal, CNS, cardiac and metabolic muscle diseases. By rationally selecting therapeutic payloads to conjugate with our proprietary antibody and linker, we believe we can develop product candidates to address the genetic basis of additional muscle diseases.</p>\r\n\t\t\t\t\t\t\t<a class=\"btn btn-primary mt-4 mt-lg-0\" href=\"#chart\">Back to pipeline</a> \r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>",
+        "expansion_html": "<div class=\"row pipeline-description collapse\" id=\"collapseEXP\">\r\n\t\t\t\t\t\t<div class=\"col-12 py-4\">\r\n\t\t\t\t\t\t\t<h2 class=\"h1\">Expansion Opportunities</h2>\n\t\t\t\t\t\t\t<p> We intend to utilize our FORCE platform to expand our portfolio by pursuing the development of programs in additional indications, including additional rare skeletal, CNS, cardiac and metabolic muscle diseases. By rationally selecting therapeutic payloads to conjugate with our proprietary antibody and linker, we believe we can develop product candidates to address the genetic basis of additional muscle diseases.</p>\r\n\t\t\t\t\t\t\t<a class=\"btn btn-primary mt-4 mt-lg-0\" href=\"#chart\">Back to pipeline</a> \r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>",
+        "expansion": {
+            "heading": "Pipeline Expansion Opportunities:",
+            "targets": "CNS, Rare skeletal, Cardiac, Metabolic",
+            "title": "Expansion Opportunities",
+            "body_html": "<p> We intend to utilize our FORCE platform to expand our portfolio by pursuing the development of programs in additional indications, including additional rare skeletal, CNS, cardiac and metabolic muscle diseases. By rationally selecting therapeutic payloads to conjugate with our proprietary antibody and linker, we believe we can develop product candidates to address the genetic basis of additional muscle diseases.</p>"
+        },
+        "programs": {
+            "DYNE-251": {
+                "code": "DYNE-251",
+                "name": "Zeleciment rostudirsen",
+                "short_name": "z-rostudirsen",
+                "chart_name": "Zeleciment rostudirsen (z-rostudirsen)",
+                "aliases": [
+                    "DYNE-251",
+                    "Zeleciment rostudirsen",
+                    "z-rostudirsen"
+                ],
+                "disease": "Duchenne muscular dystrophy (DMD)",
+                "disease_short": "DMD",
+                "prevalence_us": "~12,000",
+                "prevalence_europe": "~16,000",
+                "target": "Exon 51",
+                "phase_label": "Commercial",
+                "milestone": "PDUFA Jan 21, 2027",
+                "bar_percent": 74,
+                "order": 1,
+                "group": "DMD",
+                "group_order": 1,
+                "source_group": "program-2",
+                "chart_row_index": 0,
+                "chart_bar_index": 0,
+                "anchor": "DMD",
+                "legacy_alias": "/dyne-251-for-dmd",
+                "html": {
+                    "program_heading": "Zeleciment rostudirsen (z-rostudirsen, also known as DYNE-251), an investigational therapeutic for people living with Duchenne muscular dystrophy (DMD)",
+                    "disease_heading": "About Duchenne Muscular Dystrophy",
+                    "introduction": "<p class=\"\">Z-rostudirsen is an investigational therapeutic for individuals with DMD who have mutations in the <i>DMD</i> gene that are amenable to exon 51 skipping. The registrational expansion cohort of the global Phase 1/2 DELIVER clinical trial of z-rostudirsen met its primary endpoint. Data from the DELIVER trial served as the basis for a Biologics License Application (BLA) for potential U.S. Accelerated Approval, which has been granted Priority Review. Z-rostudirsen continues to be evaluated in the long-term extension portion of the DELIVER trial and in the global confirmatory Phase 3 FORZETTO clinical trial. Z-rostudirsen consists of a phosphorodiamidate morpholino oligomer (PMO) conjugated to an antigen-binding fragment (Fab) that binds to the transferrin receptor 1 (TfR1). It is designed to enable the production of near-full length dystrophin in muscle and the central nervous system (CNS) to provide functional improvement. Z-rostudirsen has received Breakthrough Therapy, Fast Track and Rare Pediatric Disease designations from the U.S. Food and Drug Administration (FDA), as well as Orphan Drug designation from the FDA, European Medicines Agency (EMA) and the Ministry of Health, Labour and Welfare (MHLW) in Japan for the treatment of individuals with DMD amenable to exon 51 skipping.</p><p class=\"\">In addition to z-rostudirsen, Dyne is building a DMD franchise and has preclinical programs targeting other exons, including DYNE-253, DYNE-245, DYNE-244 and DYNE-255.</p>",
+                    "disease_overview": "<p class=\"\">Duchenne muscular dystrophy (DMD) is a rare, X-linked and progressive neuromuscular disorder. DMD affects ~12,000 people in the U.S. and ~16,000 in the EU.</p>",
+                    "onset": "<p class=\"\">DMD is the most common childhood-onset form of muscular dystrophy. Loss of strength and function typically first appear between 3 and 5 years of age.</p>",
+                    "cause": "<p class=\"\">DMD results from mutations in the <i>DMD</i> gene which lead to total absence or nearly undetectable levels of dystrophin protein, essential for muscle structure, function and preservation.</p>",
+                    "symptoms": "<p class=\"\">People living with DMD experience a range of symptoms, which may include:</p><ul>\n \t<li>Progressive muscle weakness that worsens over time, typically beginning in the hips, pelvis, and upper legs before progressing to affect the shoulders, arms, trunk, neck, and other muscle groups throughout the body</li>\n \t<li>Cognitive function impairment and neuropsychiatric disorders (e.g., intellectual disability, learning disability, behavioral difficulties)</li>\n \t<li>Enlarged calf muscles</li>\n \t<li>Delays in developing motor skills such as sitting, standing or walking</li>\n \t<li>Toe walking or waddling gait</li>\n \t<li>Breathing problems</li>\n \t<li>Cardiomyopathy, or inflammation of the muscles in the heart</li>\n \t<li>Varying degrees of cognitive impairment in approximately one third of patients</li>\n</ul>",
+                    "unmet_need": "<p class=\"\">There is a significant unmet need for new treatment options that deliver functional improvement.</p>",
+                    "additional": ""
+                },
+                "section_labels": {
+                    "onset": "DMD Onset",
+                    "cause": "DMD Cause",
+                    "symptoms": "DMD Symptoms",
+                    "unmet_need": "DMD Unmet Therapeutic Need"
+                },
+                "cta": {
+                    "url": "/clinical-trials/#deliver",
+                    "title": "Learn more about DELIVER"
+                },
+                "back_link": {
+                    "url": "#chart",
+                    "title": "Back to pipeline"
+                },
+                "video": {
+                    "id": "",
+                    "title": "",
+                    "cover": "",
+                    "alt": "",
+                    "caption_html": ""
+                },
+                "selectors": {
+                    "chart_row_xpath": "(//div[contains(concat(\" \", normalize-space(@class), \" \"), \" chart-body \")])[1]",
+                    "chart_bar_xpath": "((//div[contains(concat(\" \", normalize-space(@class), \" \"), \" chart-body \")])[1]//div[contains(concat(\" \", normalize-space(@class), \" \"), \" chart \")])[1]",
+                    "desktop_xpath": "//div[contains(concat(\" \", normalize-space(@class), \" \"), \" section \") and contains(concat(\" \", normalize-space(@class), \" \"), \" pipeline-description \")][div[@id=\"DMD\"]]",
+                    "mobile_xpath": "//*[@id=\"collapseDMD\"]",
+                    "desktop_id": "DMD",
+                    "mobile_id": "collapseDMD"
+                }
+            },
+            "DYNE-101": {
+                "code": "DYNE-101",
+                "name": "Zeleciment basivarsen",
+                "short_name": "z-basivarsen",
+                "chart_name": "Zeleciment basivarsen (z-basivarsen)",
+                "aliases": [
+                    "DYNE-101",
+                    "Zeleciment basivarsen",
+                    "z-basivarsen"
+                ],
+                "disease": "Myotonic dystrophy type 1 (DM1)",
+                "disease_short": "DM1",
+                "prevalence_us": "~40,000",
+                "prevalence_europe": "~55,000",
+                "target": "DMPK",
+                "phase_label": "Registration",
+                "milestone": "",
+                "bar_percent": 64,
+                "order": 2,
+                "group": "DM1",
+                "group_order": 2,
+                "source_group": "program-1",
+                "chart_row_index": 1,
+                "chart_bar_index": 0,
+                "anchor": "DM1",
+                "legacy_alias": "/dyne-101-for-dm1",
+                "html": {
+                    "program_heading": "Zeleciment basivarsen (z-basivarsen, also known as DYNE-101), an investigational therapeutic for people living with myotonic dystrophy type 1 (DM1)",
+                    "disease_heading": "About Myotonic Dystrophy Type 1 (DM1)",
+                    "introduction": "<p class=\"\">Z-basivarsen is an investigational therapeutic being evaluated in the fully enrolled global Phase 1/2 ACHIEVE clinical trial and the global confirmatory Phase 3 HARMONIA clinical trial for people living with DM1. Z-basivarsen consists of an antisense oligonucleotide (ASO) conjugated to an antigen-binding fragment (Fab) that binds to the transferrin receptor 1 (TfR1) to enable delivery to muscle and the central nervous system. It is designed to deliver functional improvement in individuals living with DM1 by reducing toxic nuclear <i>DMPK</i> RNA to release splicing proteins and allow normal mRNA processing. Z-basivarsen has been granted Breakthrough Therapy, Orphan Drug and Fast Track designations by the U.S. Food and Drug Administration (FDA), as well as Orphan Drug designation from the European Medicines Agency (EMA) and the Ministry of Health, Labour and Welfare (MHLW) in Japan for the treatment of DM1.</p>",
+                    "disease_overview": "<p class=\"\">Myotonic dystrophy type 1 (DM1) is a rare, progressive, genetic neuromuscular disease with high morbidity and early mortality. DM1 affects ~40,000 people in the U.S. and ~55,000 people in the EU. The severity of symptoms and rate of progression vary.</p>",
+                    "onset": "<p class=\"\">Symptoms can begin at any point in an affected person’s life, depending on the DM1 subtype. Adult-onset DM1 symptoms typically appear between 20 to 40 years of age.</p>",
+                    "cause": "<p class=\"\">DM1 is caused by mutations in the <i>DMPK</i> gene, leading to a widespread disruption of RNA splicing, known as spliceopathy, which drives the multi-system manifestations of the disease.</p>",
+                    "symptoms": "<p class=\"\">People experience a broad spectrum of symptoms, including:</p><ul>\n \t<li>Muscle weakness throughout the body</li>\n \t<li>Myotonia or difficulty relaxing muscles</li>\n \t<li>Cognitive impairments, excessive daytime sleepiness, fatigue and dysregulated sleep</li>\n \t<li>Cardiac arrhythmias</li>\n \t<li>Respiratory issues</li>\n \t<li>Gastrointestinal dysfunction</li>\n</ul>",
+                    "unmet_need": "<p class=\"\">Although the genetic cause of DM1 is well understood, there are currently no approved disease-modifying treatments for DM1.</p>",
+                    "additional": ""
+                },
+                "section_labels": {
+                    "onset": "DM1 Onset",
+                    "cause": "DM1 Cause",
+                    "symptoms": "DM1 Symptoms",
+                    "unmet_need": "DM1 Unmet Therapeutic Need"
+                },
+                "cta": {
+                    "url": "/clinical-trials/#achieve",
+                    "title": "Learn more about ACHIEVE"
+                },
+                "back_link": {
+                    "url": "#chart",
+                    "title": "Back to pipeline"
+                },
+                "video": {
+                    "id": "gHNBjvgziNA",
+                    "title": "Learn more about DM1 and z-basivarsen",
+                    "cover": "/sites/default/files/legacy/theme-assets/cover-dm1.webp",
+                    "alt": "more about DM1 and DYNE-101",
+                    "caption_html": "Learn more about DM1 and z-basivarsen"
+                },
+                "selectors": {
+                    "chart_row_xpath": "(//div[contains(concat(\" \", normalize-space(@class), \" \"), \" chart-body \")])[2]",
+                    "chart_bar_xpath": "((//div[contains(concat(\" \", normalize-space(@class), \" \"), \" chart-body \")])[2]//div[contains(concat(\" \", normalize-space(@class), \" \"), \" chart \")])[1]",
+                    "desktop_xpath": "//div[contains(concat(\" \", normalize-space(@class), \" \"), \" section \") and contains(concat(\" \", normalize-space(@class), \" \"), \" pipeline-description \")][div[@id=\"DM1\"]]",
+                    "mobile_xpath": "//*[@id=\"collapseDM1\"]",
+                    "desktop_id": "DM1",
+                    "mobile_id": "collapseDM1"
+                }
+            },
+            "DYNE-302": {
+                "code": "DYNE-302",
+                "name": "DYNE-302",
+                "short_name": "",
+                "chart_name": "DYNE-302",
+                "aliases": [
+                    "DYNE-302"
+                ],
+                "disease": "Facioscapulohumeral muscular dystrophy (FSHD)",
+                "disease_short": "FSHD",
+                "prevalence_us": "~15,000-40,000",
+                "prevalence_europe": "~20,000-50,000",
+                "target": "DUX4",
+                "phase_label": "Clinical",
+                "milestone": "IND Cleared",
+                "bar_percent": 24,
+                "order": 3,
+                "group": "FSHD",
+                "group_order": 3,
+                "source_group": "program-3",
+                "chart_row_index": 2,
+                "chart_bar_index": 0,
+                "anchor": "FSHD",
+                "legacy_alias": "/dyne-302-for-fshd",
+                "html": {
+                    "program_heading": "DYNE-302, a product candidate for people living with facioscapulohumeral muscular dystrophy (FSHD)",
+                    "disease_heading": "About facioscapulohumeral muscular dystrophy (FSHD)",
+                    "introduction": "<p class=\"\">DYNE-302 is Dyne’s product candidate being developed for people living with FSHD. DYNE-302 consists of an antigen-binding fragment (Fab) that binds to the transferrin receptor 1 (TfR1), conjugated to an siRNA designed to reduce <i>DUX4</i> expression. Dyne has generated extensive preclinical data that demonstrate robust and durable <i>DUX4</i> suppression and functional improvement in a preclinical <i>in vivo</i> model developed by Dyne.</p>",
+                    "disease_overview": "<p class=\"\">FSHD is a rare, progressive, genetic disease caused by a mutation in the <i>DUX4</i> gene, leading to aberrant DUX4 expression in muscle with consequent damage and loss of function. These restrict daily activities and have a high physical, emotional and financial burden. FSHD affects ~15,000 to 40,000 people in the U.S. and ~20,000 to 50,000 people in the EU.</p>",
+                    "onset": "<p class=\"\">There is wide variability in age of onset with FSHD. Symptoms typically begin to appear in the teen years or early adulthood.</p>",
+                    "cause": "<p class=\"\">Individuals with FSHD carry a genetic mutation that allows the <i>DUX4</i> gene to be sporadically activated in muscle cells, causing their gradual destruction throughout the body.</p>",
+                    "symptoms": "<p class=\"\">The symptoms of FSHD often emerge first with a loss of facial muscle strength, making it difficult to smile or use a straw. Weakness typically progresses to all major muscle groups including the arms, torso, legs, and abdomen, leading to limited mobility.</p>",
+                    "unmet_need": "<p class=\"\">Although the genetic cause of FSHD is well understood, there are currently no approved disease-modifying treatments for FSHD.</p>",
+                    "additional": ""
+                },
+                "section_labels": {
+                    "onset": "FSHD Onset",
+                    "cause": "FSHD Cause",
+                    "symptoms": "FSHD Symptoms",
+                    "unmet_need": "FSHD Unmet Therapeutic Need"
+                },
+                "cta": {
+                    "url": "",
+                    "title": ""
+                },
+                "back_link": {
+                    "url": "#chart",
+                    "title": "Back to pipeline"
+                },
+                "video": {
+                    "id": "",
+                    "title": "",
+                    "cover": "",
+                    "alt": "",
+                    "caption_html": ""
+                },
+                "selectors": {
+                    "chart_row_xpath": "(//div[contains(concat(\" \", normalize-space(@class), \" \"), \" chart-body \")])[3]",
+                    "chart_bar_xpath": "((//div[contains(concat(\" \", normalize-space(@class), \" \"), \" chart-body \")])[3]//div[contains(concat(\" \", normalize-space(@class), \" \"), \" chart \")])[1]",
+                    "desktop_xpath": "//div[contains(concat(\" \", normalize-space(@class), \" \"), \" section \") and contains(concat(\" \", normalize-space(@class), \" \"), \" pipeline-description \")][div[@id=\"FSHD\"]]",
+                    "mobile_xpath": "//*[@id=\"collapseFSHD\"]",
+                    "desktop_id": "FSHD",
+                    "mobile_id": "collapseFSHD"
+                }
+            },
+            "DYNE-253": {
+                "code": "DYNE-253",
+                "name": "DYNE-253",
+                "short_name": "",
+                "chart_name": "DYNE-253",
+                "aliases": [
+                    "DYNE-253"
+                ],
+                "disease": "Duchenne muscular dystrophy (DMD)",
+                "disease_short": "DMD",
+                "prevalence_us": "~12,000",
+                "prevalence_europe": "~16,000",
+                "target": "Exon 53",
+                "phase_label": "Preclinical",
+                "milestone": "",
+                "bar_percent": 15,
+                "order": 4,
+                "group": "DMD",
+                "group_order": 1,
+                "source_group": "program-2",
+                "chart_row_index": 3,
+                "chart_bar_index": 0,
+                "anchor": "",
+                "legacy_alias": "",
+                "html": {
+                    "program_heading": "",
+                    "disease_heading": "",
+                    "introduction": "",
+                    "disease_overview": "",
+                    "onset": "",
+                    "cause": "",
+                    "symptoms": "",
+                    "unmet_need": "",
+                    "additional": ""
+                },
+                "section_labels": [],
+                "cta": {
+                    "url": "",
+                    "title": ""
+                },
+                "back_link": {
+                    "url": "",
+                    "title": ""
+                },
+                "video": {
+                    "id": "",
+                    "title": "",
+                    "cover": "",
+                    "alt": "",
+                    "caption_html": ""
+                },
+                "selectors": {
+                    "chart_row_xpath": "(//div[contains(concat(\" \", normalize-space(@class), \" \"), \" chart-body \")])[4]",
+                    "chart_bar_xpath": "((//div[contains(concat(\" \", normalize-space(@class), \" \"), \" chart-body \")])[4]//div[contains(concat(\" \", normalize-space(@class), \" \"), \" chart \")])[1]",
+                    "desktop_xpath": "",
+                    "mobile_xpath": "",
+                    "desktop_id": "",
+                    "mobile_id": ""
+                }
+            },
+            "DYNE-245": {
+                "code": "DYNE-245",
+                "name": "DYNE-245",
+                "short_name": "",
+                "chart_name": "DYNE-245",
+                "aliases": [
+                    "DYNE-245"
+                ],
+                "disease": "Duchenne muscular dystrophy (DMD)",
+                "disease_short": "DMD",
+                "prevalence_us": "~12,000",
+                "prevalence_europe": "~16,000",
+                "target": "Exon 45",
+                "phase_label": "Preclinical",
+                "milestone": "",
+                "bar_percent": 15,
+                "order": 5,
+                "group": "DMD",
+                "group_order": 1,
+                "source_group": "program-2",
+                "chart_row_index": 3,
+                "chart_bar_index": 1,
+                "anchor": "",
+                "legacy_alias": "",
+                "html": {
+                    "program_heading": "",
+                    "disease_heading": "",
+                    "introduction": "",
+                    "disease_overview": "",
+                    "onset": "",
+                    "cause": "",
+                    "symptoms": "",
+                    "unmet_need": "",
+                    "additional": ""
+                },
+                "section_labels": [],
+                "cta": {
+                    "url": "",
+                    "title": ""
+                },
+                "back_link": {
+                    "url": "",
+                    "title": ""
+                },
+                "video": {
+                    "id": "",
+                    "title": "",
+                    "cover": "",
+                    "alt": "",
+                    "caption_html": ""
+                },
+                "selectors": {
+                    "chart_row_xpath": "(//div[contains(concat(\" \", normalize-space(@class), \" \"), \" chart-body \")])[4]",
+                    "chart_bar_xpath": "((//div[contains(concat(\" \", normalize-space(@class), \" \"), \" chart-body \")])[4]//div[contains(concat(\" \", normalize-space(@class), \" \"), \" chart \")])[2]",
+                    "desktop_xpath": "",
+                    "mobile_xpath": "",
+                    "desktop_id": "",
+                    "mobile_id": ""
+                }
+            },
+            "DYNE-244": {
+                "code": "DYNE-244",
+                "name": "DYNE-244",
+                "short_name": "",
+                "chart_name": "DYNE-244",
+                "aliases": [
+                    "DYNE-244"
+                ],
+                "disease": "Duchenne muscular dystrophy (DMD)",
+                "disease_short": "DMD",
+                "prevalence_us": "~12,000",
+                "prevalence_europe": "~16,000",
+                "target": "Exon 44",
+                "phase_label": "Preclinical",
+                "milestone": "",
+                "bar_percent": 15,
+                "order": 6,
+                "group": "DMD",
+                "group_order": 1,
+                "source_group": "program-2",
+                "chart_row_index": 3,
+                "chart_bar_index": 2,
+                "anchor": "",
+                "legacy_alias": "",
+                "html": {
+                    "program_heading": "",
+                    "disease_heading": "",
+                    "introduction": "",
+                    "disease_overview": "",
+                    "onset": "",
+                    "cause": "",
+                    "symptoms": "",
+                    "unmet_need": "",
+                    "additional": ""
+                },
+                "section_labels": [],
+                "cta": {
+                    "url": "",
+                    "title": ""
+                },
+                "back_link": {
+                    "url": "",
+                    "title": ""
+                },
+                "video": {
+                    "id": "",
+                    "title": "",
+                    "cover": "",
+                    "alt": "",
+                    "caption_html": ""
+                },
+                "selectors": {
+                    "chart_row_xpath": "(//div[contains(concat(\" \", normalize-space(@class), \" \"), \" chart-body \")])[4]",
+                    "chart_bar_xpath": "((//div[contains(concat(\" \", normalize-space(@class), \" \"), \" chart-body \")])[4]//div[contains(concat(\" \", normalize-space(@class), \" \"), \" chart \")])[3]",
+                    "desktop_xpath": "",
+                    "mobile_xpath": "",
+                    "desktop_id": "",
+                    "mobile_id": ""
+                }
+            },
+            "DYNE-255": {
+                "code": "DYNE-255",
+                "name": "DYNE-255",
+                "short_name": "",
+                "chart_name": "DYNE-255",
+                "aliases": [
+                    "DYNE-255"
+                ],
+                "disease": "Duchenne muscular dystrophy (DMD)",
+                "disease_short": "DMD",
+                "prevalence_us": "~12,000",
+                "prevalence_europe": "~16,000",
+                "target": "Exon 55",
+                "phase_label": "Preclinical",
+                "milestone": "",
+                "bar_percent": 15,
+                "order": 7,
+                "group": "DMD",
+                "group_order": 1,
+                "source_group": "program-2",
+                "chart_row_index": 3,
+                "chart_bar_index": 3,
+                "anchor": "",
+                "legacy_alias": "",
+                "html": {
+                    "program_heading": "",
+                    "disease_heading": "",
+                    "introduction": "",
+                    "disease_overview": "",
+                    "onset": "",
+                    "cause": "",
+                    "symptoms": "",
+                    "unmet_need": "",
+                    "additional": ""
+                },
+                "section_labels": [],
+                "cta": {
+                    "url": "",
+                    "title": ""
+                },
+                "back_link": {
+                    "url": "",
+                    "title": ""
+                },
+                "video": {
+                    "id": "",
+                    "title": "",
+                    "cover": "",
+                    "alt": "",
+                    "caption_html": ""
+                },
+                "selectors": {
+                    "chart_row_xpath": "(//div[contains(concat(\" \", normalize-space(@class), \" \"), \" chart-body \")])[4]",
+                    "chart_bar_xpath": "((//div[contains(concat(\" \", normalize-space(@class), \" \"), \" chart-body \")])[4]//div[contains(concat(\" \", normalize-space(@class), \" \"), \" chart \")])[4]",
+                    "desktop_xpath": "",
+                    "mobile_xpath": "",
+                    "desktop_id": "",
+                    "mobile_id": ""
+                }
+            },
+            "DYNE-401": {
+                "code": "DYNE-401",
+                "name": "DYNE-401",
+                "short_name": "",
+                "chart_name": "DYNE-401",
+                "aliases": [
+                    "DYNE-401"
+                ],
+                "disease": "Pompe disease",
+                "disease_short": "Pompe",
+                "prevalence_us": "~4,500",
+                "prevalence_europe": "~5,500",
+                "target": "GAA",
+                "phase_label": "Preclinical",
+                "milestone": "",
+                "bar_percent": 16,
+                "order": 8,
+                "group": "POMPE",
+                "group_order": 4,
+                "source_group": "program-4",
+                "chart_row_index": 4,
+                "chart_bar_index": 0,
+                "anchor": "",
+                "legacy_alias": "",
+                "html": {
+                    "program_heading": "",
+                    "disease_heading": "",
+                    "introduction": "",
+                    "disease_overview": "",
+                    "onset": "",
+                    "cause": "",
+                    "symptoms": "",
+                    "unmet_need": "",
+                    "additional": ""
+                },
+                "section_labels": [],
+                "cta": {
+                    "url": "",
+                    "title": ""
+                },
+                "back_link": {
+                    "url": "",
+                    "title": ""
+                },
+                "video": {
+                    "id": "",
+                    "title": "",
+                    "cover": "",
+                    "alt": "",
+                    "caption_html": ""
+                },
+                "selectors": {
+                    "chart_row_xpath": "(//div[contains(concat(\" \", normalize-space(@class), \" \"), \" chart-body \")])[5]",
+                    "chart_bar_xpath": "((//div[contains(concat(\" \", normalize-space(@class), \" \"), \" chart-body \")])[5]//div[contains(concat(\" \", normalize-space(@class), \" \"), \" chart \")])[1]",
+                    "desktop_xpath": "",
+                    "mobile_xpath": "",
+                    "desktop_id": "",
+                    "mobile_id": ""
+                }
+            }
+        },
+        "warnings": []
+    }
+}

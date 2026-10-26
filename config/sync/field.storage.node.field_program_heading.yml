@@ -1,0 +1,19 @@
+uuid: 857520e3-7ed9-4b79-886b-ce3a5f4ff1e7
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_program_heading
+field_name: field_program_heading
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

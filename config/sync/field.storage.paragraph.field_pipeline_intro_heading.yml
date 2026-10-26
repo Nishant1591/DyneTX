@@ -1,0 +1,19 @@
+uuid: 11bf4889-f9df-444d-b752-a0b4d23eb957
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_pipeline_intro_heading
+field_name: field_pipeline_intro_heading
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

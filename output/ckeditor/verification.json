@@ -1,6 +1,6 @@
 {
     "passed": true,
-    "checks": 156,
+    "checks": 166,
     "failures": [],
     "formats": {
         "dyne_legacy_html": {
@@ -246,9 +246,49 @@
         "node.pipeline_program.default:field_body_text": {
             "widget": "text_textarea",
             "eligible_formats": [
-                "dyne_job_html",
-                "dyne_legacy_html",
-                "webform_default"
+                "dyne_legacy_html"
+            ]
+        },
+        "node.pipeline_program.default:field_disease_cause": {
+            "widget": "text_textarea",
+            "eligible_formats": [
+                "dyne_legacy_html"
+            ]
+        },
+        "node.pipeline_program.default:field_disease_heading": {
+            "widget": "text_textarea",
+            "eligible_formats": [
+                "dyne_legacy_html"
+            ]
+        },
+        "node.pipeline_program.default:field_disease_onset": {
+            "widget": "text_textarea",
+            "eligible_formats": [
+                "dyne_legacy_html"
+            ]
+        },
+        "node.pipeline_program.default:field_disease_overview": {
+            "widget": "text_textarea",
+            "eligible_formats": [
+                "dyne_legacy_html"
+            ]
+        },
+        "node.pipeline_program.default:field_disease_symptoms": {
+            "widget": "text_textarea",
+            "eligible_formats": [
+                "dyne_legacy_html"
+            ]
+        },
+        "node.pipeline_program.default:field_program_heading": {
+            "widget": "text_textarea",
+            "eligible_formats": [
+                "dyne_legacy_html"
+            ]
+        },
+        "node.pipeline_program.default:field_unmet_need": {
+            "widget": "text_textarea",
+            "eligible_formats": [
+                "dyne_legacy_html"
             ]
         },
         "node.privacy_policy.default:field_article_intro": {
@@ -471,6 +511,24 @@
                 "webform_default"
             ]
         },
+        "paragraph.dyne_program_pipeline.default:field_expansion_body": {
+            "widget": "text_textarea",
+            "eligible_formats": [
+                "dyne_legacy_html"
+            ]
+        },
+        "paragraph.dyne_program_pipeline.default:field_pipeline_intro": {
+            "widget": "text_textarea",
+            "eligible_formats": [
+                "dyne_legacy_html"
+            ]
+        },
+        "paragraph.dyne_program_pipeline.default:field_pipeline_intro_heading": {
+            "widget": "text_textarea",
+            "eligible_formats": [
+                "dyne_legacy_html"
+            ]
+        },
         "paragraph.dyne_text_section.default:field_item_body": {
             "widget": "text_textarea",
             "eligible_formats": [
@@ -532,7 +590,7 @@
                 "core/ckeditor5.sourceEditing",
                 "core/ckeditor5.specialCharacters"
             ],
-            "rendered_bytes": 3633
+            "rendered_bytes": 3603
         },
         "node.leader:field_body_text": {
             "entity_id": "29",
@@ -587,7 +645,7 @@
                 "core/ckeditor5.sourceEditing",
                 "core/ckeditor5.specialCharacters"
             ],
-            "rendered_bytes": 3633
+            "rendered_bytes": 3603
         },
         "node.news:field_article_body": {
             "entity_id": "44",
@@ -642,7 +700,7 @@
                 "core/ckeditor5.sourceEditing",
                 "core/ckeditor5.specialCharacters"
             ],
-            "rendered_bytes": 5373
+            "rendered_bytes": 5343
         },
         "node.privacy_policy:field_article_intro": {
             "entity_id": "474",
@@ -697,7 +755,7 @@
                 "core/ckeditor5.sourceEditing",
                 "core/ckeditor5.specialCharacters"
             ],
-            "rendered_bytes": 1726
+            "rendered_bytes": 1696
         },
         "node.perspective:field_story_intro": {
             "entity_id": "74",
@@ -752,7 +810,7 @@
                 "core/ckeditor5.sourceEditing",
                 "core/ckeditor5.specialCharacters"
             ],
-            "rendered_bytes": 1687
+            "rendered_bytes": 1657
         },
         "paragraph.dyne_article_section:field_section_body": {
             "entity_id": "368",
@@ -807,7 +865,7 @@
                 "core/ckeditor5.sourceEditing",
                 "core/ckeditor5.specialCharacters"
             ],
-            "rendered_bytes": 1749
+            "rendered_bytes": 1719
         },
         "paragraph.dyne_card_item:field_item_body": {
             "entity_id": null,
@@ -983,6 +1041,6 @@
         "provider": "webform",
         "source": "web/modules/contrib/webform/config/optional/ckeditor5/editor.editor.webform_default.yml"
     },
-    "formatted_textarea_fields": 49,
+    "formatted_textarea_fields": 59,
     "short_formatted_textfields": 10
 }

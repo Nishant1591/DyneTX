@@ -10,7 +10,7 @@ field_name: field_target
 entity_type: node
 bundle: pipeline_program
 label: Target
-description: ''
+description: 'Molecular target or exon shown for this program.'
 required: false
 translatable: true
 default_value: {  }

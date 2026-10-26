@@ -37,6 +37,7 @@ dependencies:
     - paragraphs.paragraphs_type.dyne_perspective_list
     - paragraphs.paragraphs_type.dyne_pipeline_table
     - paragraphs.paragraphs_type.dyne_policy_list
+    - paragraphs.paragraphs_type.dyne_program_pipeline
     - paragraphs.paragraphs_type.dyne_quote_carousel
     - paragraphs.paragraphs_type.dyne_rich_text
     - paragraphs.paragraphs_type.dyne_team_grid
@@ -93,4 +94,5 @@ settings:
       dyne_policy_list: dyne_policy_list
       dyne_perspective_list: dyne_perspective_list
       dyne_careers_quotes: dyne_careers_quotes
+      dyne_program_pipeline: dyne_program_pipeline
 field_type: entity_reference_revisions

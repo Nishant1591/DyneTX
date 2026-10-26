@@ -1,0 +1,19 @@
+uuid: 38ef4152-c687-47b3-94ee-da360aeda7ec
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_program_video
+field_name: field_program_video
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

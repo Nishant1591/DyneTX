@@ -1,0 +1,90 @@
+uuid: c5a573c0-d045-4b19-bc25-bb682d0a8377
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.dyne_program_pipeline.field_expansion_body
+    - field.field.paragraph.dyne_program_pipeline.field_expansion_heading
+    - field.field.paragraph.dyne_program_pipeline.field_expansion_targets
+    - field.field.paragraph.dyne_program_pipeline.field_expansion_title
+    - field.field.paragraph.dyne_program_pipeline.field_pipeline_heading
+    - field.field.paragraph.dyne_program_pipeline.field_pipeline_intro
+    - field.field.paragraph.dyne_program_pipeline.field_pipeline_intro_heading
+    - field.field.paragraph.dyne_program_pipeline.field_pipeline_programs
+    - paragraphs.paragraphs_type.dyne_program_pipeline
+  module:
+    - text
+id: paragraph.dyne_program_pipeline.default
+targetEntityType: paragraph
+bundle: dyne_program_pipeline
+mode: default
+content:
+  field_expansion_body:
+    type: text_textarea
+    weight: 7
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_expansion_heading:
+    type: string_textfield
+    weight: 4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_expansion_targets:
+    type: string_textfield
+    weight: 5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_expansion_title:
+    type: string_textfield
+    weight: 6
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_pipeline_heading:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_pipeline_intro:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_pipeline_intro_heading:
+    type: text_textarea
+    weight: 0
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_pipeline_programs:
+    type: entity_reference_autocomplete
+    weight: 3
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

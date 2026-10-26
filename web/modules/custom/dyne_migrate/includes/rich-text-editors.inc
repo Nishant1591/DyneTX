@@ -69,4 +69,16 @@ function dyne_migrate_enable_rich_text_editors(): void {
   }
   require_once __DIR__ . '/rich-text-component-fields.inc';
   dyne_rich_text_component_schema();
+  dyne_migrate_rich_text_format_order();
+}
+
+/** Empty fields need an editor format before the editor-free fallback. */
+function dyne_migrate_rich_text_format_order(): void {
+  $restricted = FilterFormat::load('dyne_job_html');
+  $plain = FilterFormat::load('plain_text');
+  if (!$restricted || !$plain) return;
+  // Drupal resolves equal weights alphabetically. Generic labels must not
+  // cause an empty field to select Plain text instead of an HTML editor.
+  $weight = min((int) $restricted->get('weight'), (int) $plain->get('weight') - 1);
+  if ((int) $restricted->get('weight') !== $weight) $restricted->set('weight', $weight)->save();
 }

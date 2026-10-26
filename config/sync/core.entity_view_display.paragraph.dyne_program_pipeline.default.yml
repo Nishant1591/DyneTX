@@ -1,0 +1,28 @@
+uuid: 904a2dbb-ec33-4dc0-a1e4-57d5f2f19e33
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.dyne_program_pipeline.field_expansion_body
+    - field.field.paragraph.dyne_program_pipeline.field_expansion_heading
+    - field.field.paragraph.dyne_program_pipeline.field_expansion_targets
+    - field.field.paragraph.dyne_program_pipeline.field_expansion_title
+    - field.field.paragraph.dyne_program_pipeline.field_pipeline_heading
+    - field.field.paragraph.dyne_program_pipeline.field_pipeline_intro
+    - field.field.paragraph.dyne_program_pipeline.field_pipeline_intro_heading
+    - field.field.paragraph.dyne_program_pipeline.field_pipeline_programs
+    - paragraphs.paragraphs_type.dyne_program_pipeline
+id: paragraph.dyne_program_pipeline.default
+targetEntityType: paragraph
+bundle: dyne_program_pipeline
+mode: default
+content: {  }
+hidden:
+  field_expansion_body: true
+  field_expansion_heading: true
+  field_expansion_targets: true
+  field_expansion_title: true
+  field_pipeline_heading: true
+  field_pipeline_intro: true
+  field_pipeline_intro_heading: true
+  field_pipeline_programs: true

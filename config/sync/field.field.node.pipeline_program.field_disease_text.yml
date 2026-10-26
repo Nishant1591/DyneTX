@@ -10,7 +10,7 @@ field_name: field_disease_text
 entity_type: node
 bundle: pipeline_program
 label: Disease
-description: ''
+description: 'Full disease name shown in the pipeline.'
 required: false
 translatable: true
 default_value: {  }

@@ -1,0 +1,19 @@
+uuid: b58f9b0f-ca9f-4de4-b977-107706c34be4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pipeline_heading
+    - paragraphs.paragraphs_type.dyne_program_pipeline
+id: paragraph.dyne_program_pipeline.field_pipeline_heading
+field_name: field_pipeline_heading
+entity_type: paragraph
+bundle: dyne_program_pipeline
+label: 'Chart heading'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

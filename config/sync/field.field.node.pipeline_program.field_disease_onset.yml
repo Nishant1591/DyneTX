@@ -1,0 +1,24 @@
+uuid: b4201b5e-3388-4925-aca4-ddd6291bf095
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_disease_onset
+    - filter.format.dyne_legacy_html
+    - node.type.pipeline_program
+  module:
+    - text
+id: node.pipeline_program.field_disease_onset
+field_name: field_disease_onset
+entity_type: node
+bundle: pipeline_program
+label: 'Disease onset'
+description: 'When the disease or its symptoms typically begin.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - dyne_legacy_html
+field_type: text_long

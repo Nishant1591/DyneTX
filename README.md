@@ -78,8 +78,12 @@ contacts. Perspectives expose article heading, introduction, byline, portrait
 and ordered sections. Policies and marketing text components use sections with
 separate heading, formatted text, Media image and link controls. Existing leader
 profile and quote fields remain the appropriate model for a single biography
-or quotation. The unused Pipeline program bundle now exposes its existing
-disease, prevalence, target, phase and status controls.
+or quotation. Pipeline programs now own the eight assets named in the current
+pipeline chart. Program names/codes, U.S./European prevalence, targets, chart
+labels, milestones, program descriptions, disease details, trial links and video
+controls are separate native fields. The pipeline page references those records
+in editorial order; both its chart and responsive detail panels read them.
+See [Pipeline program authoring and migration](docs/pipeline-programs.md).
 
 The public renderer consumes the native fields, including new optional fields
 and new/reordered sections. Original bodies, node IDs, aliases, publication
