@@ -5,12 +5,14 @@ dependencies:
   config:
     - field.field.paragraph.dyne_alert_banner.field_banner_body
     - field.field.paragraph.dyne_alert_banner.field_banner_logo
+    - field.field.paragraph.dyne_alert_banner.field_banner_logo_alt
+    - field.field.paragraph.dyne_alert_banner.field_banner_logo_media
     - field.field.paragraph.dyne_alert_banner.field_banner_text
     - field.field.paragraph.dyne_alert_banner.field_component_rich_text_ready
-    - image.style.thumbnail
+    - field.field.paragraph.dyne_alert_banner.field_media_images_ready
     - paragraphs.paragraphs_type.dyne_alert_banner
   module:
-    - image
+    - media_library
     - text
 id: paragraph.dyne_alert_banner.default
 targetEntityType: paragraph
@@ -19,22 +21,32 @@ mode: default
 content:
   field_banner_body:
     type: text_textarea
-    weight: 1
+    weight: 2
     region: content
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
-  field_banner_logo:
-    type: image_image
+  field_banner_logo_alt:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_banner_logo_media:
+    type: media_library_widget
     weight: 0
     region: content
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+      media_types:
+        - image
     third_party_settings: {  }
 hidden:
   created: true
+  field_banner_logo: true
   field_banner_text: true
   field_component_rich_text_ready: true
+  field_media_images_ready: true
   status: true

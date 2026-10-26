@@ -37,6 +37,8 @@ function dyne_migrate_install(): void {
   require_once __DIR__ . '/includes/pipeline-programs.inc';
   dyne_pipeline_program_model_schema();
   dyne_pipeline_component_schema();
+  require_once __DIR__ . '/includes/image-library.inc';
+  dyne_image_library_schema();
 }
 
 /**
@@ -961,4 +963,10 @@ function dyne_migrate_update_8114(): void {
 function dyne_migrate_update_8115(): void {
   require_once __DIR__ . '/includes/rich-text-editors.inc';
   dyne_migrate_rich_text_format_order();
+}
+
+/** Use the image library for every active editorial image placement. */
+function dyne_migrate_update_8116(): void {
+  require_once __DIR__ . '/includes/image-library.inc';
+  dyne_image_library_schema();
 }

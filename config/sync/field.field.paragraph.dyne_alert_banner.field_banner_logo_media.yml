@@ -1,0 +1,24 @@
+uuid: dcd43aaf-6615-4dd2-b9ca-8ad48edc99d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_banner_logo_media
+    - media.type.image
+    - paragraphs.paragraphs_type.dyne_alert_banner
+id: paragraph.dyne_alert_banner.field_banner_logo_media
+field_name: field_banner_logo_media
+entity_type: paragraph
+bundle: dyne_alert_banner
+label: 'Banner logo'
+description: 'Choose an existing image from the library or upload a new image.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+field_type: entity_reference

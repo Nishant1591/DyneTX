@@ -9,10 +9,8 @@ dependencies:
     - field.field.paragraph.dyne_hero.field_bg
     - field.field.paragraph.dyne_hero.field_title_line1
     - field.field.paragraph.dyne_hero.field_title_line2
-    - image.style.thumbnail
     - paragraphs.paragraphs_type.dyne_hero
   module:
-    - image
     - paragraphs
 id: paragraph.dyne_hero.default
 targetEntityType: paragraph
@@ -31,16 +29,9 @@ content:
       form_display_mode: default
       default_paragraph_type: ''
     third_party_settings: {  }
-  field_banner_logo:
-    type: image_image
-    weight: 1
-    region: content
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
-    third_party_settings: {  }
 hidden:
   created: true
+  field_banner_logo: true
   field_banner_text: true
   field_bg: true
   field_image: true

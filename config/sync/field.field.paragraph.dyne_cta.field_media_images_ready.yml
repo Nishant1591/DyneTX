@@ -1,0 +1,21 @@
+uuid: f02449f1-09ef-496e-8641-ac0da6a0e184
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_media_images_ready
+    - paragraphs.paragraphs_type.dyne_cta
+id: paragraph.dyne_cta.field_media_images_ready
+field_name: field_media_images_ready
+entity_type: paragraph
+bundle: dyne_cta
+label: 'Uses Media image placements'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

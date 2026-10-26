@@ -4,12 +4,13 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.dyne_video.field_heading
+    - field.field.paragraph.dyne_video.field_media_images_ready
     - field.field.paragraph.dyne_video.field_poster
+    - field.field.paragraph.dyne_video.field_poster_media
     - field.field.paragraph.dyne_video.field_video_url
-    - image.style.thumbnail
     - paragraphs.paragraphs_type.dyne_video
   module:
-    - image
+    - media_library
 id: paragraph.dyne_video.default
 targetEntityType: paragraph
 bundle: dyne_video
@@ -23,13 +24,13 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  field_poster:
-    type: image_image
+  field_poster_media:
+    type: media_library_widget
     weight: 1
     region: content
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+      media_types:
+        - image
     third_party_settings: {  }
   field_video_url:
     type: string_textfield
@@ -41,4 +42,6 @@ content:
     third_party_settings: {  }
 hidden:
   created: true
+  field_media_images_ready: true
+  field_poster: true
   status: true

@@ -1,7 +1,8 @@
 {# Alert banner component: WP Duchenne Awareness bar as reusable section. #}
+{{ dyne_library_image_cache }}
 <div class="duchenne-alert-bar" role="banner">
   <div class="container d-flex align-items-center gap-3">
-    {% if paragraph.field_banner_logo.entity %}<img src="{{ file_url(paragraph.field_banner_logo.entity.uri.value) }}" alt="Duchenne Awareness Day logo" class="img-fluid" height="40" />{% endif %}
+    {% if dyne_library_image.url %}<img src="{{ dyne_library_image.url }}" alt="{{ dyne_library_image.alt }}" class="img-fluid" height="40" />{% endif %}
     {% if dyne_banner_rich %}<div class="mb-0">{{ dyne_banner_body }}</div>{% else %}<p class="mb-0">{{ paragraph.field_banner_text.value }}</p>{% endif %}
   </div>
 </div>

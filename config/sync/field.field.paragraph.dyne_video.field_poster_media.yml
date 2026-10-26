@@ -1,0 +1,24 @@
+uuid: ca7f9d75-186b-4590-869e-bc1a7b2d1834
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_poster_media
+    - media.type.image
+    - paragraphs.paragraphs_type.dyne_video
+id: paragraph.dyne_video.field_poster_media
+field_name: field_poster_media
+entity_type: paragraph
+bundle: dyne_video
+label: 'Video poster'
+description: 'Choose an existing image from the library or upload a new image.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+field_type: entity_reference

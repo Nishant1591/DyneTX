@@ -4,27 +4,28 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.dyne_cta.field_bg
+    - field.field.paragraph.dyne_cta.field_bg_media
     - field.field.paragraph.dyne_cta.field_body_text
     - field.field.paragraph.dyne_cta.field_heading
     - field.field.paragraph.dyne_cta.field_link
-    - image.style.thumbnail
+    - field.field.paragraph.dyne_cta.field_media_images_ready
     - paragraphs.paragraphs_type.dyne_cta
   module:
-    - image
     - link
+    - media_library
     - text
 id: paragraph.dyne_cta.default
 targetEntityType: paragraph
 bundle: dyne_cta
 mode: default
 content:
-  field_bg:
-    type: image_image
+  field_bg_media:
+    type: media_library_widget
     weight: 0
     region: content
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+      media_types:
+        - image
     third_party_settings: {  }
   field_body_text:
     type: text_textarea
@@ -52,4 +53,6 @@ content:
     third_party_settings: {  }
 hidden:
   created: true
+  field_bg: true
+  field_media_images_ready: true
   status: true

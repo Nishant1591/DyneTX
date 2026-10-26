@@ -4,7 +4,9 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.dyne_video.field_heading
+    - field.field.paragraph.dyne_video.field_media_images_ready
     - field.field.paragraph.dyne_video.field_poster
+    - field.field.paragraph.dyne_video.field_poster_media
     - field.field.paragraph.dyne_video.field_video_url
     - paragraphs.paragraphs_type.dyne_video
   module:
@@ -43,4 +45,6 @@ content:
     third_party_settings: {  }
     weight: 2
     region: content
-hidden: {  }
+hidden:
+  field_media_images_ready: true
+  field_poster_media: true

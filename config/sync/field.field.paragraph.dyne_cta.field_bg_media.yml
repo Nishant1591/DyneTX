@@ -1,0 +1,24 @@
+uuid: bf1bdf29-d785-4033-b162-0545df3676d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_bg_media
+    - media.type.image
+    - paragraphs.paragraphs_type.dyne_cta
+id: paragraph.dyne_cta.field_bg_media
+field_name: field_bg_media
+entity_type: paragraph
+bundle: dyne_cta
+label: Image
+description: 'Choose an existing image from the library or upload a new image.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: dyne_image_library_cta_default_value
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+field_type: entity_reference

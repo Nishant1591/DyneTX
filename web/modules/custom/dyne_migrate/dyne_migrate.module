@@ -9,6 +9,7 @@
 require_once __DIR__ . '/includes/rich-text-component-fields.inc';
 require_once __DIR__ . '/includes/title-aliases.inc';
 require_once __DIR__ . '/includes/pipeline-program-model.inc';
+require_once __DIR__ . '/includes/image-library.inc';
 
 /** Native quote/policy bundles can be created after the initial install. */
 function dyne_migrate_node_type_insert(\Drupal\node\NodeTypeInterface $type): void {
@@ -94,6 +95,7 @@ function _dyne_migrate_structured_baseline(\Drupal\node\NodeInterface $node): vo
 
 /** Newly authored sections use the same native fields as migrated sections. */
 function dyne_migrate_paragraph_presave(\Drupal\paragraphs\ParagraphInterface $paragraph): void {
+  dyne_image_library_paragraph_presave($paragraph);
   dyne_rich_text_component_presave($paragraph);
   if (!in_array($paragraph->bundle(), ['dyne_rich_text', 'dyne_careers_quotes', 'dyne_article_section'], TRUE) || !$paragraph->hasField('field_structured_content')) {
     return;

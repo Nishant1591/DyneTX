@@ -1,0 +1,21 @@
+uuid: 5a894d9f-16f4-47e7-b9bb-5a5d18e95a8e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_media_images_ready
+    - paragraphs.paragraphs_type.dyne_alert_banner
+id: paragraph.dyne_alert_banner.field_media_images_ready
+field_name: field_media_images_ready
+entity_type: paragraph
+bundle: dyne_alert_banner
+label: 'Uses Media image placements'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -11,6 +11,7 @@ require_once __DIR__ . '/includes/native-layouts.inc';
 require_once __DIR__ . '/includes/structured-content.inc';
 require_once __DIR__ . '/includes/structured-articles.inc';
 require_once __DIR__ . '/includes/pipeline-programs.inc';
+require_once __DIR__ . '/includes/image-library.inc';
 
 /**
  * Implements hook_preprocess_page().
@@ -249,6 +250,7 @@ function dynetx_preprocess_paragraph(&$variables): void {
   _dynetx_native_lists_preprocess($variables);
   _dynetx_native_layout_preprocess($variables);
   _dynetx_pipeline_programs_preprocess($variables);
+  _dynetx_library_images_preprocess($variables);
 }
 
 

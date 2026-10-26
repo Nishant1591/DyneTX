@@ -1,11 +1,12 @@
 {# CTA band component: WP culture split (image + heading/body/link). #}
+{{ dyne_library_image_cache }}
 <section class="dyne-cta py-5">
   <div class="container">
     <div class="row align-items-center">
       <div class="col-12 col-md-6">
-        {% if paragraph.field_bg.entity and paragraph.field_bg.entity.uri.value %}
-          <img src="{{ file_url(paragraph.field_bg.entity.uri.value) }}" alt="" class="img-fluid" />
-        {% else %}
+        {% if dyne_library_image.url %}
+          <img src="{{ dyne_library_image.url }}" alt="{{ dyne_library_image.alt }}" class="img-fluid" />
+        {% elseif not dyne_library_image.managed %}
           <img src="{{ directory }}/images/home-culture.webp" alt="" class="img-fluid" />
         {% endif %}
       </div>

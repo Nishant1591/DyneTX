@@ -85,6 +85,12 @@ controls are separate native fields. The pipeline page references those records
 in editorial order; both its chart and responsive detail panels read them.
 See [Pipeline program authoring and migration](docs/pipeline-programs.md).
 
+Editorial images use the core Media Library: browse/search existing thumbnails
+or upload a new image in the same picker. Alert logos, CTA images and video
+posters now use that picker too. Unused archival upload controls are hidden;
+their original fields and historical values remain stored. See
+[Image selection and reuse](docs/image-library.md).
+
 The public renderer consumes the native fields, including new optional fields
 and new/reordered sections. Original bodies, node IDs, aliases, publication
 states and historical revisions are preserved. Imported layout scaffolding is

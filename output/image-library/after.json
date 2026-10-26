@@ -1,0 +1,1216 @@
+{
+    "modules": {
+        "media": true,
+        "media_library": true,
+        "views": true,
+        "image": true,
+        "file": true
+    },
+    "node_counts": {
+        "dyne_page": 59,
+        "job": 49,
+        "leader": 31,
+        "news": 306,
+        "perspective": 13,
+        "pipeline_program": 8,
+        "privacy_policy": 2,
+        "quote": 9
+    },
+    "widgets": [
+        {
+            "entity_type": "media",
+            "bundle": "document",
+            "bundle_label": "Document",
+            "field": "field_media_document",
+            "label": "Document",
+            "field_type": "file",
+            "cardinality": 1,
+            "widget": "file_generic",
+            "target_bundles": null,
+            "widget_media_types": null,
+            "file_extensions": "pdf doc docx txt xls xlsx ppt pptx",
+            "alt_field": null,
+            "alt_required": null
+        },
+        {
+            "entity_type": "media",
+            "bundle": "image",
+            "bundle_label": "Image",
+            "field": "field_media_image",
+            "label": "Image",
+            "field_type": "image",
+            "cardinality": 1,
+            "widget": "image_image",
+            "target_bundles": null,
+            "widget_media_types": null,
+            "file_extensions": "png gif jpg jpeg webp avif",
+            "alt_field": true,
+            "alt_required": false
+        },
+        {
+            "entity_type": "media",
+            "bundle": "video",
+            "bundle_label": "Video",
+            "field": "field_media_video_file",
+            "label": "Video",
+            "field_type": "file",
+            "cardinality": 1,
+            "widget": "file_generic",
+            "target_bundles": null,
+            "widget_media_types": null,
+            "file_extensions": "mp4 webm mov",
+            "alt_field": null,
+            "alt_required": null
+        },
+        {
+            "entity_type": "node",
+            "bundle": "dyne_page",
+            "bundle_label": "Dyne page",
+            "field": "field_hero_image",
+            "label": "Hero desktop image",
+            "field_type": "entity_reference",
+            "cardinality": 1,
+            "widget": "media_library_widget",
+            "target_bundles": {
+                "image": "image"
+            },
+            "widget_media_types": []
+        },
+        {
+            "entity_type": "node",
+            "bundle": "dyne_page",
+            "bundle_label": "Dyne page",
+            "field": "field_hero_mobile_image",
+            "label": "Hero mobile image",
+            "field_type": "entity_reference",
+            "cardinality": 1,
+            "widget": "media_library_widget",
+            "target_bundles": {
+                "image": "image"
+            },
+            "widget_media_types": []
+        },
+        {
+            "entity_type": "node",
+            "bundle": "dyne_page",
+            "bundle_label": "Dyne page",
+            "field": "field_hero_overlay_image",
+            "label": "Hero overlay image",
+            "field_type": "entity_reference",
+            "cardinality": 1,
+            "widget": "media_library_widget",
+            "target_bundles": {
+                "image": "image"
+            },
+            "widget_media_types": []
+        },
+        {
+            "entity_type": "node",
+            "bundle": "job",
+            "bundle_label": "Job",
+            "field": "field_hero_image",
+            "label": "Hero desktop image",
+            "field_type": "entity_reference",
+            "cardinality": 1,
+            "widget": "media_library_widget",
+            "target_bundles": {
+                "image": "image"
+            },
+            "widget_media_types": []
+        },
+        {
+            "entity_type": "node",
+            "bundle": "job",
+            "bundle_label": "Job",
+            "field": "field_hero_mobile_image",
+            "label": "Hero mobile image",
+            "field_type": "entity_reference",
+            "cardinality": 1,
+            "widget": "media_library_widget",
+            "target_bundles": {
+                "image": "image"
+            },
+            "widget_media_types": []
+        },
+        {
+            "entity_type": "node",
+            "bundle": "job",
+            "bundle_label": "Job",
+            "field": "field_hero_overlay_image",
+            "label": "Hero overlay image",
+            "field_type": "entity_reference",
+            "cardinality": 1,
+            "widget": "media_library_widget",
+            "target_bundles": {
+                "image": "image"
+            },
+            "widget_media_types": []
+        },
+        {
+            "entity_type": "node",
+            "bundle": "leader",
+            "bundle_label": "Leader",
+            "field": "field_hero_image",
+            "label": "Hero desktop image",
+            "field_type": "entity_reference",
+            "cardinality": 1,
+            "widget": "media_library_widget",
+            "target_bundles": {
+                "image": "image"
+            },
+            "widget_media_types": []
+        },
+        {
+            "entity_type": "node",
+            "bundle": "leader",
+            "bundle_label": "Leader",
+            "field": "field_hero_mobile_image",
+            "label": "Hero mobile image",
+            "field_type": "entity_reference",
+            "cardinality": 1,
+            "widget": "media_library_widget",
+            "target_bundles": {
+                "image": "image"
+            },
+            "widget_media_types": []
+        },
+        {
+            "entity_type": "node",
+            "bundle": "leader",
+            "bundle_label": "Leader",
+            "field": "field_hero_overlay_image",
+            "label": "Hero overlay image",
+            "field_type": "entity_reference",
+            "cardinality": 1,
+            "widget": "media_library_widget",
+            "target_bundles": {
+                "image": "image"
+            },
+            "widget_media_types": []
+        },
+        {
+            "entity_type": "node",
+            "bundle": "leader",
+            "bundle_label": "Leader",
+            "field": "field_photo",
+            "label": "Portrait",
+            "field_type": "entity_reference",
+            "cardinality": 1,
+            "widget": "media_library_widget",
+            "target_bundles": {
+                "image": "image"
+            },
+            "widget_media_types": []
+        },
+        {
+            "entity_type": "node",
+            "bundle": "news",
+            "bundle_label": "News",
+            "field": "field_hero_image",
+            "label": "Hero desktop image",
+            "field_type": "entity_reference",
+            "cardinality": 1,
+            "widget": "media_library_widget",
+            "target_bundles": {
+                "image": "image"
+            },
+            "widget_media_types": []
+        },
+        {
+            "entity_type": "node",
+            "bundle": "news",
+            "bundle_label": "News",
+            "field": "field_hero_mobile_image",
+            "label": "Hero mobile image",
+            "field_type": "entity_reference",
+            "cardinality": 1,
+            "widget": "media_library_widget",
+            "target_bundles": {
+                "image": "image"
+            },
+            "widget_media_types": []
+        },
+        {
+            "entity_type": "node",
+            "bundle": "news",
+            "bundle_label": "News",
+            "field": "field_hero_overlay_image",
+            "label": "Hero overlay image",
+            "field_type": "entity_reference",
+            "cardinality": 1,
+            "widget": "media_library_widget",
+            "target_bundles": {
+                "image": "image"
+            },
+            "widget_media_types": []
+        },
+        {
+            "entity_type": "node",
+            "bundle": "news",
+            "bundle_label": "News",
+            "field": "field_news_file",
+            "label": "News document",
+            "field_type": "entity_reference",
+            "cardinality": 1,
+            "widget": "media_library_widget",
+            "target_bundles": {
+                "document": "document"
+            },
+            "widget_media_types": []
+        },
+        {
+            "entity_type": "node",
+            "bundle": "perspective",
+            "bundle_label": "Perspective",
+            "field": "field_hero_image",
+            "label": "Hero desktop image",
+            "field_type": "entity_reference",
+            "cardinality": 1,
+            "widget": "media_library_widget",
+            "target_bundles": {
+                "image": "image"
+            },
+            "widget_media_types": []
+        },
+        {
+            "entity_type": "node",
+            "bundle": "perspective",
+            "bundle_label": "Perspective",
+            "field": "field_hero_mobile_image",
+            "label": "Hero mobile image",
+            "field_type": "entity_reference",
+            "cardinality": 1,
+            "widget": "media_library_widget",
+            "target_bundles": {
+                "image": "image"
+            },
+            "widget_media_types": []
+        },
+        {
+            "entity_type": "node",
+            "bundle": "perspective",
+            "bundle_label": "Perspective",
+            "field": "field_hero_overlay_image",
+            "label": "Hero overlay image",
+            "field_type": "entity_reference",
+            "cardinality": 1,
+            "widget": "media_library_widget",
+            "target_bundles": {
+                "image": "image"
+            },
+            "widget_media_types": []
+        },
+        {
+            "entity_type": "node",
+            "bundle": "perspective",
+            "bundle_label": "Perspective",
+            "field": "field_story_image",
+            "label": "Story image",
+            "field_type": "entity_reference",
+            "cardinality": 1,
+            "widget": "media_library_widget",
+            "target_bundles": {
+                "image": "image"
+            },
+            "widget_media_types": []
+        },
+        {
+            "entity_type": "node",
+            "bundle": "perspective",
+            "bundle_label": "Perspective",
+            "field": "field_story_portrait",
+            "label": "Author portrait",
+            "field_type": "entity_reference",
+            "cardinality": 1,
+            "widget": "media_library_widget",
+            "target_bundles": {
+                "image": "image"
+            },
+            "widget_media_types": []
+        },
+        {
+            "entity_type": "node",
+            "bundle": "pipeline_program",
+            "bundle_label": "Pipeline program",
+            "field": "field_program_image",
+            "label": "Program image",
+            "field_type": "entity_reference",
+            "cardinality": 1,
+            "widget": "media_library_widget",
+            "target_bundles": {
+                "image": "image"
+            },
+            "widget_media_types": []
+        },
+        {
+            "entity_type": "node",
+            "bundle": "pipeline_program",
+            "bundle_label": "Pipeline program",
+            "field": "field_program_video_cover",
+            "label": "Video cover image",
+            "field_type": "entity_reference",
+            "cardinality": 1,
+            "widget": "media_library_widget",
+            "target_bundles": {
+                "image": "image"
+            },
+            "widget_media_types": []
+        },
+        {
+            "entity_type": "node",
+            "bundle": "quote",
+            "bundle_label": "Testimonial / Quote",
+            "field": "field_speaker_image",
+            "label": "Speaker image",
+            "field_type": "entity_reference",
+            "cardinality": 1,
+            "widget": "media_library_widget",
+            "target_bundles": {
+                "image": "image"
+            },
+            "widget_media_types": []
+        },
+        {
+            "entity_type": "paragraph",
+            "bundle": "dyne_acf_home_hero",
+            "bundle_label": "Homepage hero",
+            "field": "field_layout_image",
+            "label": "Image",
+            "field_type": "entity_reference",
+            "cardinality": 1,
+            "widget": "media_library_widget",
+            "target_bundles": {
+                "image": "image"
+            },
+            "widget_media_types": []
+        },
+        {
+            "entity_type": "paragraph",
+            "bundle": "dyne_acf_interior_header",
+            "bundle_label": "Interior page header",
+            "field": "field_layout_image",
+            "label": "Image",
+            "field_type": "entity_reference",
+            "cardinality": 1,
+            "widget": "media_library_widget",
+            "target_bundles": {
+                "image": "image"
+            },
+            "widget_media_types": []
+        },
+        {
+            "entity_type": "paragraph",
+            "bundle": "dyne_acf_text_image",
+            "bundle_label": "Text and image",
+            "field": "field_layout_image",
+            "label": "Image",
+            "field_type": "entity_reference",
+            "cardinality": 1,
+            "widget": "media_library_widget",
+            "target_bundles": {
+                "image": "image"
+            },
+            "widget_media_types": []
+        },
+        {
+            "entity_type": "paragraph",
+            "bundle": "dyne_acf_two_column",
+            "bundle_label": "Two-column text and image",
+            "field": "field_layout_background_image",
+            "label": "Background image",
+            "field_type": "entity_reference",
+            "cardinality": 1,
+            "widget": "media_library_widget",
+            "target_bundles": {
+                "image": "image"
+            },
+            "widget_media_types": []
+        },
+        {
+            "entity_type": "paragraph",
+            "bundle": "dyne_acf_two_column",
+            "bundle_label": "Two-column text and image",
+            "field": "field_layout_image",
+            "label": "Image",
+            "field_type": "entity_reference",
+            "cardinality": 1,
+            "widget": "media_library_widget",
+            "target_bundles": {
+                "image": "image"
+            },
+            "widget_media_types": []
+        },
+        {
+            "entity_type": "paragraph",
+            "bundle": "dyne_acf_video_solutions",
+            "bundle_label": "Video solutions",
+            "field": "field_layout_video",
+            "label": "Video",
+            "field_type": "entity_reference",
+            "cardinality": 1,
+            "widget": "media_library_widget",
+            "target_bundles": {
+                "video": "video",
+                "remote_video": "remote_video"
+            },
+            "widget_media_types": []
+        },
+        {
+            "entity_type": "paragraph",
+            "bundle": "dyne_alert_banner",
+            "bundle_label": "Alert banner",
+            "field": "field_banner_logo_media",
+            "label": "Banner logo",
+            "field_type": "entity_reference",
+            "cardinality": 1,
+            "widget": "media_library_widget",
+            "target_bundles": {
+                "image": "image"
+            },
+            "widget_media_types": [
+                "image"
+            ]
+        },
+        {
+            "entity_type": "paragraph",
+            "bundle": "dyne_article_section",
+            "bundle_label": "Content section",
+            "field": "field_section_bg_image",
+            "label": "Background image",
+            "field_type": "entity_reference",
+            "cardinality": 1,
+            "widget": "media_library_widget",
+            "target_bundles": {
+                "image": "image"
+            },
+            "widget_media_types": []
+        },
+        {
+            "entity_type": "paragraph",
+            "bundle": "dyne_article_section",
+            "bundle_label": "Content section",
+            "field": "field_section_image",
+            "label": "Section image",
+            "field_type": "entity_reference",
+            "cardinality": 1,
+            "widget": "media_library_widget",
+            "target_bundles": {
+                "image": "image"
+            },
+            "widget_media_types": []
+        },
+        {
+            "entity_type": "paragraph",
+            "bundle": "dyne_article_section",
+            "bundle_label": "Content section",
+            "field": "field_section_mobile_image",
+            "label": "Mobile image",
+            "field_type": "entity_reference",
+            "cardinality": 1,
+            "widget": "media_library_widget",
+            "target_bundles": {
+                "image": "image"
+            },
+            "widget_media_types": []
+        },
+        {
+            "entity_type": "paragraph",
+            "bundle": "dyne_article_section",
+            "bundle_label": "Content section",
+            "field": "field_section_retina_image",
+            "label": "High resolution image",
+            "field_type": "entity_reference",
+            "cardinality": 1,
+            "widget": "media_library_widget",
+            "target_bundles": {
+                "image": "image"
+            },
+            "widget_media_types": []
+        },
+        {
+            "entity_type": "paragraph",
+            "bundle": "dyne_card_item",
+            "bundle_label": "Card",
+            "field": "field_item_icon",
+            "label": "Icon or image",
+            "field_type": "entity_reference",
+            "cardinality": 1,
+            "widget": "media_library_widget",
+            "target_bundles": {
+                "image": "image"
+            },
+            "widget_media_types": []
+        },
+        {
+            "entity_type": "paragraph",
+            "bundle": "dyne_cta",
+            "bundle_label": "CTA band",
+            "field": "field_bg_media",
+            "label": "Image",
+            "field_type": "entity_reference",
+            "cardinality": 1,
+            "widget": "media_library_widget",
+            "target_bundles": {
+                "image": "image"
+            },
+            "widget_media_types": [
+                "image"
+            ]
+        },
+        {
+            "entity_type": "paragraph",
+            "bundle": "dyne_layout_item",
+            "bundle_label": "Layout item / card",
+            "field": "field_layout_image",
+            "label": "Image",
+            "field_type": "entity_reference",
+            "cardinality": 1,
+            "widget": "media_library_widget",
+            "target_bundles": {
+                "image": "image"
+            },
+            "widget_media_types": []
+        },
+        {
+            "entity_type": "paragraph",
+            "bundle": "dyne_video",
+            "bundle_label": "Video lightbox",
+            "field": "field_poster_media",
+            "label": "Video poster",
+            "field_type": "entity_reference",
+            "cardinality": 1,
+            "widget": "media_library_widget",
+            "target_bundles": {
+                "image": "image"
+            },
+            "widget_media_types": [
+                "image"
+            ]
+        }
+    ],
+    "hidden_image_fields": [
+        {
+            "entity_type": "media",
+            "bundle": "document",
+            "bundle_label": "Document",
+            "field": "thumbnail",
+            "label": "Thumbnail",
+            "field_type": "image",
+            "cardinality": 1
+        },
+        {
+            "entity_type": "media",
+            "bundle": "image",
+            "bundle_label": "Image",
+            "field": "thumbnail",
+            "label": "Thumbnail",
+            "field_type": "image",
+            "cardinality": 1
+        },
+        {
+            "entity_type": "media",
+            "bundle": "remote_video",
+            "bundle_label": "Remote video",
+            "field": "thumbnail",
+            "label": "Thumbnail",
+            "field_type": "image",
+            "cardinality": 1
+        },
+        {
+            "entity_type": "media",
+            "bundle": "video",
+            "bundle_label": "Video",
+            "field": "thumbnail",
+            "label": "Thumbnail",
+            "field_type": "image",
+            "cardinality": 1
+        },
+        {
+            "entity_type": "node",
+            "bundle": "dyne_page",
+            "bundle_label": "Dyne page",
+            "field": "field_image",
+            "label": "Image",
+            "field_type": "image",
+            "cardinality": 1
+        },
+        {
+            "entity_type": "node",
+            "bundle": "job",
+            "bundle_label": "Job",
+            "field": "field_image",
+            "label": "Image",
+            "field_type": "image",
+            "cardinality": 1
+        },
+        {
+            "entity_type": "node",
+            "bundle": "leader",
+            "bundle_label": "Leader",
+            "field": "field_image",
+            "label": "Image",
+            "field_type": "image",
+            "cardinality": 1
+        },
+        {
+            "entity_type": "node",
+            "bundle": "news",
+            "bundle_label": "News",
+            "field": "field_image",
+            "label": "Image",
+            "field_type": "image",
+            "cardinality": 1
+        },
+        {
+            "entity_type": "node",
+            "bundle": "perspective",
+            "bundle_label": "Perspective",
+            "field": "field_image",
+            "label": "Image",
+            "field_type": "image",
+            "cardinality": 1
+        },
+        {
+            "entity_type": "node",
+            "bundle": "pipeline_program",
+            "bundle_label": "Pipeline program",
+            "field": "field_image",
+            "label": "Image",
+            "field_type": "image",
+            "cardinality": 1
+        },
+        {
+            "entity_type": "paragraph",
+            "bundle": "dyne_alert_banner",
+            "bundle_label": "Alert banner",
+            "field": "field_banner_logo",
+            "label": "Banner logo",
+            "field_type": "image",
+            "cardinality": 1
+        },
+        {
+            "entity_type": "paragraph",
+            "bundle": "dyne_cta",
+            "bundle_label": "CTA band",
+            "field": "field_bg",
+            "label": "Image",
+            "field_type": "image",
+            "cardinality": 1
+        },
+        {
+            "entity_type": "paragraph",
+            "bundle": "dyne_hero",
+            "bundle_label": "Hero banner",
+            "field": "field_banner_logo",
+            "label": "Banner logo",
+            "field_type": "image",
+            "cardinality": 1
+        },
+        {
+            "entity_type": "paragraph",
+            "bundle": "dyne_hero",
+            "bundle_label": "Hero banner",
+            "field": "field_bg",
+            "label": "Background image",
+            "field_type": "image",
+            "cardinality": 1
+        },
+        {
+            "entity_type": "paragraph",
+            "bundle": "dyne_video",
+            "bundle_label": "Video lightbox",
+            "field": "field_poster",
+            "label": "Poster",
+            "field_type": "image",
+            "cardinality": 1
+        }
+    ],
+    "widget_totals": {
+        "media:file_generic": 2,
+        "media:image_image": 1,
+        "node:media_library_widget": 22,
+        "paragraph:media_library_widget": 15
+    },
+    "media_types": {
+        "document": {
+            "label": "Document",
+            "source": "file",
+            "source_field": "field_media_document",
+            "total": 27,
+            "published": 27,
+            "missing_files": [],
+            "image_thumbnail_matches_source": 0,
+            "missing_thumbnails": [],
+            "thumbnail_differs": [],
+            "source_upload_widget": null
+        },
+        "image": {
+            "label": "Image",
+            "source": "image",
+            "source_field": "field_media_image",
+            "total": 479,
+            "published": 479,
+            "missing_files": [],
+            "image_thumbnail_matches_source": 479,
+            "missing_thumbnails": [],
+            "thumbnail_differs": [],
+            "source_upload_widget": "image_image"
+        },
+        "remote_video": {
+            "label": "Remote video",
+            "source": "oembed:video",
+            "source_field": "field_media_oembed_video",
+            "total": 0,
+            "published": 0,
+            "missing_files": [],
+            "image_thumbnail_matches_source": 0,
+            "missing_thumbnails": [],
+            "thumbnail_differs": [],
+            "source_upload_widget": null
+        },
+        "video": {
+            "label": "Video",
+            "source": "video_file",
+            "source_field": "field_media_video_file",
+            "total": 3,
+            "published": 3,
+            "missing_files": [],
+            "image_thumbnail_matches_source": 0,
+            "missing_thumbnails": [],
+            "thumbnail_differs": [],
+            "source_upload_widget": null
+        }
+    },
+    "files": {
+        "image_total": 481,
+        "permanent": 481,
+        "temporary": 0,
+        "mapped_to_image_media": 479,
+        "mimes": {
+            "image/webp": 185,
+            "image/jpeg": 232,
+            "image/png": 64
+        },
+        "unregistered": [
+            {
+                "fid": 418,
+                "name": "generic.png",
+                "mime": "image/png",
+                "uri": "public://media-icons/generic/generic.png",
+                "permanent": true,
+                "exists": true,
+                "usage": [
+                    {
+                        "module": "file",
+                        "type": "media",
+                        "id": "174",
+                        "count": "1"
+                    },
+                    {
+                        "module": "file",
+                        "type": "media",
+                        "id": "175",
+                        "count": "1"
+                    },
+                    {
+                        "module": "file",
+                        "type": "media",
+                        "id": "178",
+                        "count": "1"
+                    },
+                    {
+                        "module": "file",
+                        "type": "media",
+                        "id": "183",
+                        "count": "1"
+                    },
+                    {
+                        "module": "file",
+                        "type": "media",
+                        "id": "184",
+                        "count": "1"
+                    },
+                    {
+                        "module": "file",
+                        "type": "media",
+                        "id": "185",
+                        "count": "1"
+                    },
+                    {
+                        "module": "file",
+                        "type": "media",
+                        "id": "186",
+                        "count": "1"
+                    },
+                    {
+                        "module": "file",
+                        "type": "media",
+                        "id": "187",
+                        "count": "1"
+                    },
+                    {
+                        "module": "file",
+                        "type": "media",
+                        "id": "188",
+                        "count": "1"
+                    },
+                    {
+                        "module": "file",
+                        "type": "media",
+                        "id": "189",
+                        "count": "1"
+                    },
+                    {
+                        "module": "file",
+                        "type": "media",
+                        "id": "195",
+                        "count": "1"
+                    },
+                    {
+                        "module": "file",
+                        "type": "media",
+                        "id": "204",
+                        "count": "1"
+                    },
+                    {
+                        "module": "file",
+                        "type": "media",
+                        "id": "205",
+                        "count": "1"
+                    },
+                    {
+                        "module": "file",
+                        "type": "media",
+                        "id": "277",
+                        "count": "1"
+                    },
+                    {
+                        "module": "file",
+                        "type": "media",
+                        "id": "278",
+                        "count": "1"
+                    },
+                    {
+                        "module": "file",
+                        "type": "media",
+                        "id": "377",
+                        "count": "1"
+                    },
+                    {
+                        "module": "file",
+                        "type": "media",
+                        "id": "378",
+                        "count": "1"
+                    },
+                    {
+                        "module": "file",
+                        "type": "media",
+                        "id": "379",
+                        "count": "1"
+                    },
+                    {
+                        "module": "file",
+                        "type": "media",
+                        "id": "380",
+                        "count": "1"
+                    },
+                    {
+                        "module": "file",
+                        "type": "media",
+                        "id": "414",
+                        "count": "1"
+                    },
+                    {
+                        "module": "file",
+                        "type": "media",
+                        "id": "415",
+                        "count": "1"
+                    },
+                    {
+                        "module": "file",
+                        "type": "media",
+                        "id": "416",
+                        "count": "1"
+                    },
+                    {
+                        "module": "file",
+                        "type": "media",
+                        "id": "417",
+                        "count": "1"
+                    },
+                    {
+                        "module": "file",
+                        "type": "media",
+                        "id": "74",
+                        "count": "1"
+                    },
+                    {
+                        "module": "file",
+                        "type": "media",
+                        "id": "75",
+                        "count": "1"
+                    },
+                    {
+                        "module": "file",
+                        "type": "media",
+                        "id": "76",
+                        "count": "1"
+                    },
+                    {
+                        "module": "file",
+                        "type": "media",
+                        "id": "79",
+                        "count": "1"
+                    }
+                ]
+            },
+            {
+                "fid": 419,
+                "name": "video.png",
+                "mime": "image/png",
+                "uri": "public://media-icons/generic/video.png",
+                "permanent": true,
+                "exists": true,
+                "usage": [
+                    {
+                        "module": "file",
+                        "type": "media",
+                        "id": "173",
+                        "count": "1"
+                    },
+                    {
+                        "module": "file",
+                        "type": "media",
+                        "id": "190",
+                        "count": "1"
+                    },
+                    {
+                        "module": "file",
+                        "type": "media",
+                        "id": "191",
+                        "count": "1"
+                    }
+                ]
+            }
+        ],
+        "duplicates": []
+    },
+    "physical_legacy_images": {
+        "total": 2506,
+        "not_managed_exact_uri": 2027,
+        "unmanaged_size_suffix": 1805,
+        "unmanaged_other": 222,
+        "unmanaged_other_samples": [
+            "public://legacy/Mul_2026_WMS_ACHIEVE_ORAL-pdf.jpg",
+            "public://legacy/Dyne_Mobile-About-Us.jpg",
+            "public://legacy/Dyne_Newsletter_DMD_Final-pdf-1.jpg",
+            "public://legacy/mobile-images-about-us.jpg",
+            "public://legacy/secondary-image-voices.jpg",
+            "public://legacy/mobile-images-home.jpg",
+            "public://legacy/header-our-focus-1.jpg",
+            "public://legacy/Dyne_Newsletter_Combo_ITA_FINAL-pdf.jpg",
+            "public://legacy/Novack_2023-ISPOR_DM1_humanistic_burden_poster-pdf.jpg",
+            "public://legacy/Dyne-Axel-Wiest-600x574.jpg.webp",
+            "public://legacy/hero-commitment-bg-overlay-desktop@2x.webp",
+            "public://legacy/joachim-1.jpg",
+            "public://legacy/hero-trials-bg-overlay-desktop@2x.webp",
+            "public://legacy/hero-careers-bg-overlay-desktop@2x-1.webp",
+            "public://legacy/Doug-Kerr.jpg",
+            "public://legacy/Dyne_Force-Fact-Sheet_Final-pdf.jpg",
+            "public://legacy/md-awareness.svg",
+            "public://legacy/hero-fshd-bg-base-desktop@2x.webp",
+            "public://legacy/hero-dm1-bg-base-desktop@2x.webp",
+            "public://legacy/Dyne_Force-Fact-Sheet_090821-pdf.jpg"
+        ]
+    },
+    "roles": {
+        "anonymous": {
+            "admin_role": false,
+            "media_permissions": [
+                "view media"
+            ],
+            "can_view_media": true,
+            "can_create_image_media": false
+        },
+        "authenticated": {
+            "admin_role": false,
+            "media_permissions": [
+                "view media"
+            ],
+            "can_view_media": true,
+            "can_create_image_media": false
+        }
+    },
+    "uid1": {
+        "active": true,
+        "can_view_media": true,
+        "can_create_image_media": true
+    },
+    "direct_image_values": [],
+    "media_library_settings": {
+        "_core": {
+            "default_config_hash": "_3gQsCnZELUjUUqHk8SSh8bXnx7TZwN95vctAeVJG60"
+        },
+        "advanced_ui": false
+    },
+    "media_library_view": {
+        "status": true,
+        "default": {
+            "pager": {
+                "type": "mini",
+                "options": {
+                    "offset": 0,
+                    "pagination_heading_level": "h4",
+                    "items_per_page": 24,
+                    "total_pages": null,
+                    "id": 0,
+                    "tags": {
+                        "next": "››",
+                        "previous": "‹‹"
+                    },
+                    "expose": {
+                        "items_per_page": false,
+                        "items_per_page_label": "Items per page",
+                        "items_per_page_options": "6, 12, 24, 48",
+                        "items_per_page_options_all": false,
+                        "items_per_page_options_all_label": "- All -",
+                        "offset": false,
+                        "offset_label": "Offset"
+                    }
+                }
+            },
+            "access": {
+                "type": "perm",
+                "options": {
+                    "perm": "access media overview"
+                }
+            },
+            "style": {
+                "type": "default",
+                "options": {
+                    "grouping": [],
+                    "row_class": "",
+                    "default_row_class": true
+                }
+            },
+            "filters": {
+                "status": {
+                    "plugin_id": "boolean",
+                    "operator": "=",
+                    "value": "1",
+                    "exposed": true
+                },
+                "name": {
+                    "plugin_id": "string",
+                    "operator": "contains",
+                    "value": "",
+                    "exposed": true
+                },
+                "bundle": {
+                    "plugin_id": "bundle",
+                    "operator": "in",
+                    "value": [],
+                    "exposed": true
+                },
+                "status_extra": {
+                    "plugin_id": "media_status",
+                    "operator": "=",
+                    "value": "",
+                    "exposed": false
+                },
+                "langcode": {
+                    "plugin_id": "language",
+                    "operator": "in",
+                    "value": [],
+                    "exposed": true
+                }
+            }
+        },
+        "widget": {
+            "access": {
+                "type": "perm",
+                "options": {
+                    "perm": "view media"
+                }
+            },
+            "defaults": {
+                "access": false,
+                "css_class": false,
+                "fields": false,
+                "arguments": false,
+                "filters": false,
+                "filter_groups": false,
+                "header": false
+            },
+            "path": "admin/content/media-widget",
+            "filters": {
+                "status": {
+                    "plugin_id": "boolean",
+                    "operator": "=",
+                    "value": "1",
+                    "exposed": false
+                },
+                "name": {
+                    "plugin_id": "string",
+                    "operator": "contains",
+                    "value": "",
+                    "exposed": true
+                },
+                "default_langcode": {
+                    "plugin_id": "boolean",
+                    "operator": "=",
+                    "value": "1",
+                    "exposed": false
+                }
+            }
+        },
+        "widget_table": {
+            "access": {
+                "type": "perm",
+                "options": {
+                    "perm": "view media"
+                }
+            },
+            "style": {
+                "type": "table",
+                "options": {
+                    "row_class": "media-library-item media-library-item--table js-media-library-item js-click-to-select",
+                    "default_row_class": true,
+                    "class": ""
+                }
+            },
+            "defaults": {
+                "access": false,
+                "css_class": false,
+                "style": false,
+                "row": false,
+                "fields": false,
+                "arguments": false,
+                "filters": false,
+                "filter_groups": false,
+                "header": false
+            },
+            "path": "admin/content/media-widget-table",
+            "filters": {
+                "status": {
+                    "plugin_id": "boolean",
+                    "operator": "=",
+                    "value": "1",
+                    "exposed": false
+                },
+                "name": {
+                    "plugin_id": "string",
+                    "operator": "contains",
+                    "value": "",
+                    "exposed": true
+                },
+                "default_langcode": {
+                    "plugin_id": "boolean",
+                    "operator": "=",
+                    "value": "1",
+                    "exposed": false
+                }
+            }
+        }
+    }
+}

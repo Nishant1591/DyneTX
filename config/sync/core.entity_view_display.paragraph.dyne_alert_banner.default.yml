@@ -5,8 +5,11 @@ dependencies:
   config:
     - field.field.paragraph.dyne_alert_banner.field_banner_body
     - field.field.paragraph.dyne_alert_banner.field_banner_logo
+    - field.field.paragraph.dyne_alert_banner.field_banner_logo_alt
+    - field.field.paragraph.dyne_alert_banner.field_banner_logo_media
     - field.field.paragraph.dyne_alert_banner.field_banner_text
     - field.field.paragraph.dyne_alert_banner.field_component_rich_text_ready
+    - field.field.paragraph.dyne_alert_banner.field_media_images_ready
     - paragraphs.paragraphs_type.dyne_alert_banner
   module:
     - image
@@ -37,4 +40,7 @@ content:
     region: content
 hidden:
   field_banner_body: true
+  field_banner_logo_alt: true
+  field_banner_logo_media: true
   field_component_rich_text_ready: true
+  field_media_images_ready: true
