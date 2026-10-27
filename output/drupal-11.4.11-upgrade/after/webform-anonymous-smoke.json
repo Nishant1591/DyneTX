@@ -1,0 +1,41 @@
+{
+  "method": "GET",
+  "authentication": "anonymous",
+  "forms_submitted": 0,
+  "checks": [
+    {
+      "path": "/webform/contact",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/form/contact",
+      "unexpected_error": false,
+      "expected_fields_present": {
+        "name": true,
+        "email": true,
+        "subject": true,
+        "message": true
+      },
+      "passed": true,
+      "forms": [
+        {
+          "method": "post",
+          "action": "/form/contact"
+        }
+      ]
+    },
+    {
+      "path": "/admin/structure/webform/manage/contact",
+      "status": 403,
+      "final_url": "http://dyne-tx-workspace.ddev.site/admin/structure/webform/manage/contact",
+      "unexpected_error": false,
+      "passed": true
+    },
+    {
+      "path": "/admin/structure/webform/manage/contact/results/submissions",
+      "status": 403,
+      "final_url": "http://dyne-tx-workspace.ddev.site/admin/structure/webform/manage/contact/results/submissions",
+      "unexpected_error": false,
+      "passed": true
+    }
+  ],
+  "passed": true
+}

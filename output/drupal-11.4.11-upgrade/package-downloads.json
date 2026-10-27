@@ -1,0 +1,50 @@
+[
+  {
+    "package": "drupal/core",
+    "version": "11.4.11",
+    "url": "https://api.github.com/repos/drupal/core/zipball/50e8bbd254710de4bebff081d421400d4eb60998",
+    "cache_key": "drupal/core/c021ae2f4d36ddcdffa5324d4b08773c87076c93.zip",
+    "bytes": 32952820,
+    "sha256": "48d4b7b8fb64f0513b210834d5237f89f0a88c01b5bfd44f61c5c2b66926f580"
+  },
+  {
+    "package": "drupal/core-composer-scaffold",
+    "version": "11.4.11",
+    "url": "https://api.github.com/repos/drupal/core-composer-scaffold/zipball/678f9ecb912958ebb046d6f9122b84a0cc6401ff",
+    "cache_key": "drupal/core-composer-scaffold/95fb4617fe93b2da02f7c2057c89e40fc065c120.zip",
+    "bytes": 50201,
+    "sha256": "1525a7b6759f1de48f4e473a09493db4ea40cac3bc27dfffc048e933b81c4329"
+  },
+  {
+    "package": "drupal/core-project-message",
+    "version": "11.4.11",
+    "url": "https://api.github.com/repos/drupal/core-project-message/zipball/f921f1c88502d559f77a9c86c87ce9bfd8082d07",
+    "cache_key": "drupal/core-project-message/a19bf5ff4a065668449274698b72589a21388a87.zip",
+    "bytes": 11449,
+    "sha256": "aba6a66c33c2e22febf936bf16bd89d08419da57732eb57a6b3aba9fc66a4ca1"
+  },
+  {
+    "package": "drupal/webform",
+    "version": "6.3.1",
+    "url": "https://ftp.drupal.org/files/projects/webform-6.3.1.zip",
+    "cache_key": "drupal/webform/4b58340f34e8adbc1f4a59f8e912aa45d225b627.zip",
+    "bytes": 6870817,
+    "sha256": "7c3159091db20b43b8c698500f58102e3e3a237d1cfe8f35ea351acc083a4d01"
+  },
+  {
+    "package": "symfony/http-foundation",
+    "version": "v7.4.21",
+    "url": "https://api.github.com/repos/symfony/http-foundation/zipball/58c89144c7a36dd89c3d01917e9fa3a72d8aaf31",
+    "cache_key": "symfony/http-foundation/48a6bae61713fab9855a86ed645c8860f236b03e.zip",
+    "bytes": 177662,
+    "sha256": "8499d1ca275fd9712cb2000faa409dfca5e10df2d6ffe718686f39c01f42e48e"
+  },
+  {
+    "package": "symfony/yaml",
+    "version": "v7.4.21",
+    "url": "https://api.github.com/repos/symfony/yaml/zipball/044907929c7999814378be22da34722c7a86bad4",
+    "cache_key": "symfony/yaml/2ab5708a7ae7a8f9edfe75b34e2ae996ab53218a.zip",
+    "bytes": 39454,
+    "sha256": "7b456c6ccd19d7092bb4658fbc2dc3d040b7f9ef71b000537ffbe15603fad06a"
+  }
+]

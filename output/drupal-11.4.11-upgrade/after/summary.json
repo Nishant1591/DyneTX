@@ -1,0 +1,134 @@
+{
+  "source_version": "11.4.11",
+  "webform_version": "6.3.1",
+  "checks": [
+    {
+      "command": "ddev drush php:script scripts/tests/rich-text-editors.php",
+      "exit_code": 0,
+      "checks": 166,
+      "widgets_rendered": 9
+    },
+    {
+      "command": "ddev drush php:script scripts/tests/title-aliases.php",
+      "exit_code": 0,
+      "checks": 1528,
+      "current_nodes": 477
+    },
+    {
+      "command": "ddev drush php:script scripts/tests/structured-content-forms.php",
+      "exit_code": 0,
+      "bundles": 8,
+      "checks": 66
+    },
+    {
+      "command": "ddev exec php scripts/tests/structured-inline-rendering.php",
+      "exit_code": 0,
+      "cases": 18
+    },
+    {
+      "command": "ddev exec php scripts/tests/rich-text-component-fields.php",
+      "exit_code": 0,
+      "cases": 19
+    }
+  ],
+  "prior_reports_restored": true,
+  "comparison": {
+    "reports": {
+      "ckeditor/verification.json": {
+        "identical": true,
+        "changed_keys": []
+      },
+      "aliases/verification.json": {
+        "identical": true,
+        "changed_keys": []
+      },
+      "aliases/alias-comparison.json": {
+        "identical": true,
+        "changed_keys": []
+      },
+      "structured-model/form-verification.json": {
+        "identical": true,
+        "changed_keys": []
+      }
+    },
+    "fingerprints": {
+      "configuration": {
+        "identical": true,
+        "baseline": {
+          "count": 1024,
+          "sha256": "21a44c2076ad5c6d89a4ad0382e681f58051725309a9e6d3b6f3f8c0cff578d4"
+        },
+        "after": {
+          "count": 1024,
+          "sha256": "21a44c2076ad5c6d89a4ad0382e681f58051725309a9e6d3b6f3f8c0cff578d4"
+        }
+      },
+      "node": {
+        "identical": true,
+        "baseline": {
+          "count": 477,
+          "sha256": "65b555e6904a824fca4ac4e8c77d78fcb62a42f2fb77fcc4aadada7f2c886d4f"
+        },
+        "after": {
+          "count": 477,
+          "sha256": "65b555e6904a824fca4ac4e8c77d78fcb62a42f2fb77fcc4aadada7f2c886d4f"
+        }
+      },
+      "node_field_data": {
+        "identical": true,
+        "baseline": {
+          "count": 477,
+          "sha256": "47381051dc528105885252821b512041d9533611576135eebb6f9174a451ecf6"
+        },
+        "after": {
+          "count": 477,
+          "sha256": "47381051dc528105885252821b512041d9533611576135eebb6f9174a451ecf6"
+        }
+      },
+      "node_revision": {
+        "identical": true,
+        "baseline": {
+          "count": 2099,
+          "sha256": "fc9d6e65a5030e265b206850f76de3513f289a826cd9b2369d83d2475f56c07f"
+        },
+        "after": {
+          "count": 2099,
+          "sha256": "fc9d6e65a5030e265b206850f76de3513f289a826cd9b2369d83d2475f56c07f"
+        }
+      },
+      "path_alias": {
+        "identical": true,
+        "baseline": {
+          "count": 474,
+          "sha256": "a7b0ecbbec31f58ba2a51d1eb81e9096965b44d30406faa74315f8cadf57ba77"
+        },
+        "after": {
+          "count": 474,
+          "sha256": "a7b0ecbbec31f58ba2a51d1eb81e9096965b44d30406faa74315f8cadf57ba77"
+        }
+      },
+      "pathauto_states": {
+        "identical": true,
+        "baseline": {
+          "count": 477,
+          "sha256": "2dab6b381523d1da0beb5720b5e0988f3afc98f9cbb21f9711482788df6df3c7"
+        },
+        "after": {
+          "count": 477,
+          "sha256": "2dab6b381523d1da0beb5720b5e0988f3afc98f9cbb21f9711482788df6df3c7"
+        }
+      },
+      "redirect": {
+        "identical": true,
+        "baseline": {
+          "count": 3,
+          "sha256": "e234a80bf633dc3f1dd3e8268e6cfca9d1dbd6d231af4d5b030e9deb1d3dd955"
+        },
+        "after": {
+          "count": 3,
+          "sha256": "e234a80bf633dc3f1dd3e8268e6cfca9d1dbd6d231af4d5b030e9deb1d3dd955"
+        }
+      }
+    }
+  }
+}

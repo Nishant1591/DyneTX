@@ -1,0 +1,3129 @@
+{
+  "base": "http://dyne-tx-workspace.ddev.site",
+  "imported_routes_checked": 345,
+  "additional_local_assets_and_links_checked": 411,
+  "failures": [],
+  "missing_internal_anchors": [],
+  "headings": [
+    {
+      "path": "/",
+      "h1": 1
+    },
+    {
+      "path": "/about-us",
+      "h1": 2
+    },
+    {
+      "path": "/careers-culture",
+      "h1": 2
+    },
+    {
+      "path": "/clinical-trials",
+      "h1": 1
+    },
+    {
+      "path": "/community-guidelines",
+      "h1": 1
+    },
+    {
+      "path": "/community-letter",
+      "h1": 0
+    },
+    {
+      "path": "/community-letter-deliver-clinical-trial",
+      "h1": 1
+    },
+    {
+      "path": "/community-letter-duchenne-added-to-newborn-screening",
+      "h1": 1
+    },
+    {
+      "path": "/community-letter-duchenne-muscular-dystrophy-community",
+      "h1": 1
+    },
+    {
+      "path": "/cookie-declaration",
+      "h1": 1
+    },
+    {
+      "path": "/corporate-responsibility",
+      "h1": 1
+    },
+    {
+      "path": "/diana-and-jordan-2022",
+      "h1": 1
+    },
+    {
+      "path": "/dm1",
+      "h1": 1
+    },
+    {
+      "path": "/dm1-story-billydean",
+      "h1": 1
+    },
+    {
+      "path": "/dm1-story-emily",
+      "h1": 1
+    },
+    {
+      "path": "/dm1-story-joachim",
+      "h1": 1
+    },
+    {
+      "path": "/dm1-story-loraine",
+      "h1": 1
+    },
+    {
+      "path": "/dmd",
+      "h1": 1
+    },
+    {
+      "path": "/dmd-copy",
+      "h1": 0
+    },
+    {
+      "path": "/dmd-story-ravi",
+      "h1": 1
+    },
+    {
+      "path": "/dyne-101-for-dm1",
+      "h1": 1
+    },
+    {
+      "path": "/dyne-251-for-dmd",
+      "h1": 1
+    },
+    {
+      "path": "/dyne-302-for-fshd",
+      "h1": 1
+    },
+    {
+      "path": "/dyne-culture-video",
+      "h1": 1
+    },
+    {
+      "path": "/dyne-therapeutics-accelerates-programs-in-facioscapulohumeral-muscular-dystrophy-fshd-with-exclusive-licensing-of-technologies-to-target-genetic-basis-of-fshd-and-expanded-scientific-advisory-board",
+      "h1": 1
+    },
+    {
+      "path": "/dyne-therapeutics-announces-appointment-of-debra-feldman-as-vice-president-head-of-regulatory",
+      "h1": 1
+    },
+    {
+      "path": "/dyne-therapeutics-announces-appointment-of-joshua-brumm-as-president-and-chief-executive-officer",
+      "h1": 2
+    },
+    {
+      "path": "/dyne-therapeutics-announces-appointment-of-leading-dmd-expert-francesco-muntoni-to-scientific-advisory-board",
+      "h1": 1
+    },
+    {
+      "path": "/dyne-therapeutics-announces-appointment-of-molly-white-as-vice-president-medical-communications-and-advocacy",
+      "h1": 2
+    },
+    {
+      "path": "/dyne-therapeutics-announces-equity-investment-from-cureduchenne-ventures-to-support-pioneering-approach-to-restoring-muscle-health-in-dmd",
+      "h1": 2
+    },
+    {
+      "path": "/dyne-therapeutics-announces-support-for-end-dm1-natural-history-study-of-patients-with-myotonic-dystrophy-type-1-dm1",
+      "h1": 2
+    },
+    {
+      "path": "/dyne-therapeutics-announces-support-for-resolve-natural-history-study-of-patients-with-facioscapulohumeral-muscular-dystrophy-fshd",
+      "h1": 2
+    },
+    {
+      "path": "/dyne-therapeutics-appoints-catherine-stehman-breen-to-its-board-of-directors",
+      "h1": 2
+    },
+    {
+      "path": "/dyne-therapeutics-appoints-daniel-wilson-as-vice-president-head-of-intellectual-property",
+      "h1": 1
+    },
+    {
+      "path": "/dyne-therapeutics-appoints-david-lubner-to-board-of-directors",
+      "h1": 1
+    },
+    {
+      "path": "/dyne-therapeutics-demonstrates-forcetm-platforms-potential-to-deliver-potent-exon-skipping-molecules-directly-to-muscle-to-treat-duchenne-muscular-dystrophy",
+      "h1": 1
+    },
+    {
+      "path": "/dyne-therapeutics-expands-board-of-directors-with-appointment-of-lawrence-klein",
+      "h1": 3
+    },
+    {
+      "path": "/dyne-therapeutics-expands-leadership-team-with-key-hires",
+      "h1": 2
+    },
+    {
+      "path": "/dyne-therapeutics-launches-with-50-million-series-a-to-develop-targeted-therapies-for-muscle-diseases",
+      "h1": 2
+    },
+    {
+      "path": "/dyne-therapeutics-presents-nonhuman-primate-proof-of-concept-data-on-force-therapeutic-platform-at-international-myotonic-dystrophy-consortium-meeting-idmc-12",
+      "h1": 3
+    },
+    {
+      "path": "/early-stage-fshd-clinical-trial",
+      "h1": 1
+    },
+    {
+      "path": "/expansion-opportunities",
+      "h1": 1
+    },
+    {
+      "path": "/fda-accepts-bla-for-z-rostudirsen",
+      "h1": 1
+    },
+    {
+      "path": "/finding-strength-beyond-muscle",
+      "h1": 0
+    },
+    {
+      "path": "/force-for-good-service-day-2022",
+      "h1": 1
+    },
+    {
+      "path": "/force-video",
+      "h1": 1
+    },
+    {
+      "path": "/forzetto-trial-initiated",
+      "h1": 1
+    },
+    {
+      "path": "/fshd",
+      "h1": 1
+    },
+    {
+      "path": "/fshd-story-chelsea",
+      "h1": 1
+    },
+    {
+      "path": "/home",
+      "h1": 1
+    },
+    {
+      "path": "/joachim-and-tim",
+      "h1": 1
+    },
+    {
+      "path": "/jobs/associate-director-clinical-operations-study-lead",
+      "h1": 1
+    },
+    {
+      "path": "/jobs/associate-director-financial-planning-analysis-fpa",
+      "h1": 1
+    },
+    {
+      "path": "/jobs/associate-director-formulation-and-drug-product-development",
+      "h1": 1
+    },
+    {
+      "path": "/jobs/associate-director-market-research-competitive-intelligence",
+      "h1": 1
+    },
+    {
+      "path": "/jobs/associate-director-medical-information-and-review",
+      "h1": 1
+    },
+    {
+      "path": "/jobs/associate-director-quality-management-systems",
+      "h1": 1
+    },
+    {
+      "path": "/jobs/associate-director-regulatory-operations-veeva-vault-rim",
+      "h1": 1
+    },
+    {
+      "path": "/jobs/associate-director-talent-acquisition-operations-programs",
+      "h1": 1
+    },
+    {
+      "path": "/jobs/director-business-strategy-operations-commercialization",
+      "h1": 1
+    },
+    {
+      "path": "/jobs/director-clinical-scientist",
+      "h1": 1
+    },
+    {
+      "path": "/jobs/director-cost-accounting",
+      "h1": 1
+    },
+    {
+      "path": "/jobs/director-drug-safety-pharmacovigilance-scientist",
+      "h1": 1
+    },
+    {
+      "path": "/jobs/director-medical-writing",
+      "h1": 1
+    },
+    {
+      "path": "/jobs/director-people-operations",
+      "h1": 1
+    },
+    {
+      "path": "/jobs/director-qa-gmp-operations",
+      "h1": 1
+    },
+    {
+      "path": "/jobs/director-revenue",
+      "h1": 1
+    },
+    {
+      "path": "/jobs/dyne-care-partner-atlanta",
+      "h1": 1
+    },
+    {
+      "path": "/jobs/dyne-care-partner-central",
+      "h1": 1
+    },
+    {
+      "path": "/jobs/dyne-care-partner-florida",
+      "h1": 1
+    },
+    {
+      "path": "/jobs/dyne-care-partner-michigan",
+      "h1": 1
+    },
+    {
+      "path": "/jobs/dyne-care-partner-new-england",
+      "h1": 1
+    },
+    {
+      "path": "/jobs/dyne-care-partner-north-central",
+      "h1": 1
+    },
+    {
+      "path": "/jobs/dyne-care-partner-northeast-metro",
+      "h1": 1
+    },
+    {
+      "path": "/jobs/dyne-care-partner-northern-california",
+      "h1": 1
+    },
+    {
+      "path": "/jobs/dyne-care-partner-southern-california",
+      "h1": 1
+    },
+    {
+      "path": "/jobs/dyne-care-partner-virginia",
+      "h1": 1
+    },
+    {
+      "path": "/jobs/executive-assistant",
+      "h1": 1
+    },
+    {
+      "path": "/jobs/executive-director-regulatory-affairs",
+      "h1": 1
+    },
+    {
+      "path": "/jobs/executive-director-techops-alliance-and-strategic-partnerships",
+      "h1": 1
+    },
+    {
+      "path": "/jobs/key-account-manager-central-plains",
+      "h1": 1
+    },
+    {
+      "path": "/jobs/key-account-manager-great-lakes",
+      "h1": 1
+    },
+    {
+      "path": "/jobs/key-account-manager-mid-atlantic",
+      "h1": 1
+    },
+    {
+      "path": "/jobs/key-account-manager-south",
+      "h1": 1
+    },
+    {
+      "path": "/jobs/medical-director-clinical-development",
+      "h1": 1
+    },
+    {
+      "path": "/jobs/scientist-bioconjugation",
+      "h1": 1
+    },
+    {
+      "path": "/jobs/scientist-rna-chemistry",
+      "h1": 1
+    },
+    {
+      "path": "/jobs/senior-administrative-assistant-us-affiliate",
+      "h1": 1
+    },
+    {
+      "path": "/jobs/senior-director-financial-planning-analysis-rd",
+      "h1": 1
+    },
+    {
+      "path": "/jobs/senior-director-medical-affairs-biostatistics",
+      "h1": 1
+    },
+    {
+      "path": "/jobs/senior-director-medical-affairs-learning-development",
+      "h1": 1
+    },
+    {
+      "path": "/jobs/senior-director-program-management",
+      "h1": 1
+    },
+    {
+      "path": "/jobs/senior-director-quality-control",
+      "h1": 1
+    },
+    {
+      "path": "/jobs/senior-manager-us-medical-affairs",
+      "h1": 1
+    },
+    {
+      "path": "/jobs/thought-leader-liaison-midwest",
+      "h1": 1
+    },
+    {
+      "path": "/jobs/thought-leader-liaison-northeast",
+      "h1": 1
+    },
+    {
+      "path": "/jobs/thought-leader-liaison-southeast",
+      "h1": 1
+    },
+    {
+      "path": "/jobs/thought-leader-liaison-west",
+      "h1": 1
+    },
+    {
+      "path": "/jobs/vp-dm1-commercial-asset-lead",
+      "h1": 1
+    },
+    {
+      "path": "/jobs/vp-learning-leadership-development",
+      "h1": 1
+    },
+    {
+      "path": "/loraines-story",
+      "h1": 0
+    },
+    {
+      "path": "/message-to-the-global-myotonic-dystrophy-community",
+      "h1": 1
+    },
+    {
+      "path": "/new-clinical-trial-opportunity-in-dm1",
+      "h1": 1
+    },
+    {
+      "path": "/new-one-year-efficacy-data-on-z-basivarsen-dyne-101-for-dm1",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-accelerates-programs-in-facioscapulohumeral-muscular-dystrophy-fshd-with-exclusive-licensing-of-technologies-to-target-genetic-basis-of-fshd-and-expanded-scientific-advisory-board",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-115-million-financing-to-advance-pipeline-of-modern-oligonucleotide-therapeutics-for-serious-muscle-diseases",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-additional-one-year-clinical-data-demonstrating-functional-improvement-from-phase-1-2-achieve-trial-of-zeleciment-basivarsen-dyne-101-for-myotonic-dystrophy-type-1-dm1",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-additional-one-year-clinical-data-from-phase-1-2-achieve-trial-of-z-basivarsen-dyne-101-for-myotonic-dystrophy-type-1-dm1",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-appointment-of-debra-feldman-as-vice-president-head-of-regulatory",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-appointment-of-erick-j-lucera-as-chief-financial-officer",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-appointment-of-joshua-brumm-as-president-and-chief-executive-officer",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-appointment-of-leading-dmd-expert-francesco-muntoni-to-scientific-advisory-board",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-appointment-of-molly-white-as-vice-president-medical-communications-and-advocacy",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-breakthrough-article-publication-of-duchenne-muscular-dystrophy-program-data-in-nucleic-acids-research",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-ceo-transition",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-chief-business-officer-and-chief-scientific-officer-appointments",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-chief-scientific-officer-transition",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-clearance-of-clinical-trial-application-for-dyne-101-for-the-treatment-of-myotonic-dystrophy-type-1",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-closing-of-initial-public-offering",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-closing-of-public-offering-of-common-stock-and-full-exercise-by-underwriters-of-option-to-purchase-additional-shares",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-closing-of-public-offering-of-common-stock-and-full-exercise-by-underwriters-of-option-to-purchase-additional-shares-2",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-closing-of-public-offering-of-common-stock-and-full-exercise-by-underwriters-of-option-to-purchase-additional-shares-3",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-closing-of-upsized-public-offering-of-common-stock-and-full-exercise-by-underwriters-of-option-to-purchase-additional-shares",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-closing-of-upsized-public-offering-of-common-stock-and-full-exercise-by-underwriters-of-option-to-purchase-additional-shares-2",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-completion-of-enrollment-in-registrational-expansion-cohort-of-achieve-trial-of-z-basivarsen-for-myotonic-dystrophy-type-1-dm1",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-equity-investment-from-cureduchenne-ventures-to-support-pioneering-approach-to-restoring-muscle-health-in-dmd",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-expanded-debt-facility-of-up-to-400-million-with-hercules-capital-inc",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-fda-breakthrough-therapy-designation-for-dyne-101-and-updated-plan-for-accelerated-approval-in-dm1-following-type-c-meeting",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-fda-breakthrough-therapy-designation-for-dyne-251-in-duchenne-muscular-dystrophy-dmd",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-fda-clearance-of-ind-application-for-dyne-251-for-the-treatment-of-duchenne-muscular-dystrophy",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-fda-clinical-hold-on-ind-application-for-dyne-251-in-duchenne-muscular-dystrophy",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-first-patient-dosed-in-phase-1-2-deliver-clinical-trial-of-dyne-251-for-the-treatment-of-duchenne-muscular-dystrophy",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-initiation-of-phase-1-2-achieve-clinical-trial-of-dyne-101-for-the-treatment-of-myotonic-dystrophy-type-1",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-initiation-of-phase-3-forzetto-trial-of-z-rostudirsen-in-duchenne-muscular-dystrophy-dmd-ahead-of-planned-bla-submission-for-u-s-accelerated-approval",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-initiation-of-phase-3-harmonia-trial-of-z-basivarsen-in-myotonic-dystrophy-type-1-dm1",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-key-leadership-appointments",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-new-clinical-data-from-achieve-trial-of-dyne-101-in-dm1-and-deliver-trial-of-dyne-251-in-dmd-demonstrating-compelling-impact-on-key-disease-biomarkers-and-improvement-in-mu",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-new-clinical-data-from-phase-1-2-deliver-trial-of-dyne-251-in-duchenne-muscular-dystrophy-demonstrating-unprecedented-dystrophin-expression-and-functional-improvement-in-mu",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-new-long-term-clinical-data-from-phase-1-2-deliver-trial-of-dyne-251-in-duchenne-muscular-dystrophy-demonstrating-unprecedented-and-sustained-functional-improvement-through",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-new-positive-cardiopulmonary-results-from-deliver-trial-of-z-rostudirsen-in-duchenne-muscular-dystrophy-dmd",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-participation-at-2026-academy-of-managed-care-pharmacy-amcp-conference-to-begin-shaping-access-in-us-for-potential-neuromuscular-medicines",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-positive-initial-clinical-data-from-achieve-trial-in-dm1-patients-and-deliver-trial-in-dmd-patients-demonstrating-promise-of-the-force-platform-in-developing-thera",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-positive-topline-results-from-phase-1-2-deliver-trial-of-z-rostudirsen-in-duchenne-muscular-dystrophy-dmd",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-presentations-on-its-dm1-and-dmd-programs-at-the-2023-muscular-dystrophy-association-clinical-scientific-conference",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-pricing-of-168-million-public-offering",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-pricing-of-200-0-million-public-offering-of-common-stock",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-pricing-of-300-million-public-offering-of-common-stock",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-pricing-of-325-5-million-public-offering-of-common-stock",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-pricing-of-initial-public-offering",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-pricing-of-upsized-350-0-million-public-offering-of-common-stock",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-pricing-of-upsized-375-million-public-offering-of-common-stock",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-proposed-public-offering-of-common-stock",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-proposed-public-offering-of-common-stock-2",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-proposed-public-offering-of-common-stock-3",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-proposed-public-offering-of-common-stock-4",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-proposed-public-offering-of-common-stock-5",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-submission-of-biologics-license-application-bla-to-u-s-fda-for-z-rostudirsen-in-exon-51-duchenne-muscular-dystrophy-dmd",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-submission-of-ind-application-to-initiate-clinical-trial-of-dyne-251-for-duchenne-muscular-dystrophy",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-support-for-end-dm1-natural-history-study-of-patients-with-myotonic-dystrophy-type-1-dm1",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-support-for-resolve-natural-history-study-of-patients-with-facioscapulohumeral-muscular-dystrophy-fshd",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-u-s-fda-acceptance-of-biologics-license-application-bla-for-z-rostudirsen-in-exon-51-duchenne-muscular-dystrophy-dmd",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-u-s-fda-clearance-of-investigational-new-drug-ind-application-for-dyne-302-in-facioscapulohumeral-muscular-dystrophy-fshd",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-upcoming-presentation-highlighting-robust-cns-activity-in-nonhuman-primates-with-its-force-platform-at-2026-asgct-annual-meeting",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-upcoming-presentations-across-neuromuscular-pipeline-at-2026-mda-clinical-scientific-conference",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-upcoming-presentations-at-the-2025-mda-clinical-scientific-conference",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-upcoming-presentations-on-initial-clinical-data-from-its-achieve-trial-in-dm1-patients-and-deliver-trial-in-dmd-patients-at-the-2024-muscular-dystrophy-association-clinical",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-appoints-ashish-dugar-ph-d-mba-senior-vice-president-global-head-of-medical-affairs",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-appoints-ashish-dugar-ph-d-mba-senior-vice-president-global-head-of-medical-affairs-2",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-appoints-barry-greene-to-board-of-directors",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-appoints-brian-posner-to-its-board-of-directors",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-appoints-carlo-incerti-m-d-to-its-board-of-directors",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-appoints-catherine-stehman-breen-to-its-board-of-directors",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-appoints-daniel-wilson-as-vice-president-head-of-intellectual-property",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-appoints-david-lubner-to-board-of-directors",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-appoints-francesco-bibbiani-m-d-as-senior-vice-president-head-of-development",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-appoints-susanna-high-as-chief-operating-officer",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-appoints-vikram-karnani-to-board-of-directors",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-appoints-wildon-farwell-m-d-mph-as-chief-medical-officer",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-demonstrates-force-tm-platforms-potential-to-deliver-potent-exon-skipping-molecules-directly-to-muscle-to-treat-duchenne-muscular-dystrophy",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-expands-board-of-directors-with-appointment-of-lawrence-klein",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-expands-leadership-team-with-key-hires",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-highlights-dm1-and-dmd-clinical-programs-during-spotlight-on-the-clinic-virtual-event",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-highlights-preclinical-data-and-clinical-development-plans-for-dmd-and-dm1-programs-at-inaugural-rd-day",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-launches-with-50-million-series-a-to-develop-targeted-therapies-for-muscle-diseases",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-myotonic-dystrophy-type-1-program-achieves-robust-rna-knock-down-of-toxic-human-nuclear-dmpk-in-preclinical-study",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-preclinical-data-demonstrating-force-platform-delivery-to-cns-featured-in-oral-presentation-at-asgct-annual-meeting",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-presents-data-at-world-muscle-society-congress-highlighting-promise-of-force-platform-to-address-underlying-causes-of-neuromuscular-diseases",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-presents-new-in-vivo-data-for-its-duchenne-muscular-dystrophy-program-during-muscle-study-group-annual-scientific-meeting-demonstrating-robust-and-durable-exon-skipping-and-dystrophi",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-presents-new-in-vivo-data-for-its-myotonic-dystrophy-type-1-candidate-dyne-101-demonstrating-robust-splicing-correction-during-world-muscle-society-2021-virtual-congress",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-presents-new-in-vivo-data-from-dyne-101-at-asgct-annual-meeting-demonstrating-low-monthly-dosing-leads-to-robust-dmpk-rna-knockdown",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-presents-new-preclinical-data-demonstrating-the-potential-of-the-force-platform-to-deliver-enzyme-replacement-therapy-to-muscle-and-cns-in-pompe-disease",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-presents-new-preclinical-data-for-its-facioscapulohumeral-muscular-dystrophy-program-during-the-fshd-society-international-research-congress",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-presents-new-preclinical-data-from-its-myotonic-dystrophy-type-1-program-during-american-society-of-gene-cell-therapy-annual-meeting-demonstrating-sustained-knockdown-of-toxic",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-presents-nonhuman-primate-proof-of-concept-data-on-force-therapeutic-platform-at-international-myotonic-dystrophy-consortium-meeting-idmc-12",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-presents-preclinical-data-from-its-duchenne-muscular-dystrophy-programs-targeting-exons-51-and-53-at-world-muscle-society-2022-congress",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-presents-preclinical-data-from-its-facioscapulohumeral-muscular-dystrophy-program-during-the-fshd-society-international-research-congress",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-receives-european-medicines-agency-ema-orphan-drug-designation-for-dyne-101",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-receives-european-medicines-agency-ema-orphan-drug-designation-for-dyne-251-in-duchenne-muscular-dystrophy",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-receives-fda-fast-track-designation-for-dyne-101-for-the-treatment-of-myotonic-dystrophy-type-1",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-receives-fda-fast-track-designation-for-dyne-251-for-the-treatment-of-duchenne-muscular-dystrophy",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-receives-fda-orphan-drug-and-rare-pediatric-designations-for-dyne-251-for-the-treatment-of-duchenne-muscular-dystrophy",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-receives-fda-orphan-drug-designation-for-dyne-101-for-the-treatment-of-myotonic-dystrophy-type-1",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-receives-orphan-drug-designation-in-japan-for-dyne-251-in-duchenne-muscular-dystrophy",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-receives-orphan-drug-designation-in-japan-for-zeleciment-basivarsen-dyne-101-for-myotonic-dystrophy-type-1",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-reports-first-quarter-2021-financial-results-and-business-highlights",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-reports-first-quarter-2022-financial-results-and-business-highlights",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-reports-first-quarter-2023-financial-results-and-business-highlights",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-reports-first-quarter-2024-financial-results-and-recent-business-highlights",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-reports-first-quarter-2025-financial-results-and-recent-business-highlights",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-reports-first-quarter-2026-financial-results-and-recent-business-highlights",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-reports-fourth-quarter-and-full-year-2020-financial-results-and-recent-highlights",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-reports-fourth-quarter-and-full-year-2020-financial-results-and-recent-highlights-2",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-reports-fourth-quarter-and-full-year-2021-financial-results-and-recent-highlights",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-reports-fourth-quarter-and-full-year-2022-financial-results-and-business-highlights",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-reports-fourth-quarter-and-full-year-2023-financial-results-and-recent-business-highlights",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-reports-fourth-quarter-and-full-year-2024-financial-results-and-recent-business-highlights",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-reports-fourth-quarter-and-full-year-2025-financial-results-and-recent-business-highlights",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-reports-inducement-grant-under-nasdaq-listing-rule-5635c4-to-newly-appointed-president-and-chief-executive-officer",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-reports-inducement-grant-under-nasdaq-listing-rule-5635c4-to-newly-appointed-president-and-chief-executive-officer-2",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-reports-inducement-grants-under-nasdaq-listing-rule-5635c4",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-reports-inducement-grants-under-nasdaq-listing-rule-5635c4-2",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-reports-inducement-grants-under-nasdaq-listing-rule-5635c4-3",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-reports-inducement-grants-under-nasdaq-listing-rule-5635c4-4",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-reports-inducement-grants-under-nasdaq-listing-rule-5635c4-5",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-reports-inducement-grants-under-nasdaq-listing-rule-5635c4-6",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-reports-inducement-grants-under-nasdaq-listing-rule-5635c4-7",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-reports-inducement-grants-under-nasdaq-listing-rule-5635c4-to-newly-appointed-chief-financial-officer",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-reports-new-clinical-data-showing-compelling-impact-on-multiple-measures-of-myotonic-dystrophy-type-1-dm1-dyne-plans-to-initiate-registrational-expansion-cohort-to-support-potenti",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-reports-second-quarter-2021-financial-results-and-business-highlights",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-reports-second-quarter-2022-financial-results-and-business-highlights",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-reports-second-quarter-2023-financial-results-and-business-highlights",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-reports-second-quarter-2023-financial-results-and-business-highlights-2",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-reports-second-quarter-2024-financial-results-and-recent-business-highlights",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-reports-second-quarter-2025-financial-results-and-recent-business-highlights",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-reports-second-quarter-2026-financial-results-and-recent-business-highlights",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-reports-third-quarter-2020-financial-results-and-recent-highlights",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-reports-third-quarter-2021-financial-results-and-business-highlights",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-reports-third-quarter-2022-financial-results-and-business-highlights",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-reports-third-quarter-2023-financial-results-and-provides-update-on-significant-progress-for-achieve-and-deliver-trials-and-upcoming-clinical-milestones",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-reports-third-quarter-2024-financial-results-and-provides-corporate-update",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-reports-third-quarter-2025-financial-results-and-recent-business-highlights",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-secures-up-to-275-million-in-debt-financing-from-hercules-capital",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-host-investor-conference-call-and-webcast-to-provide-update-on-dyne-101-for-myotonic-dystrophy-type-1-tomorrow-tuesday-june-17-at-800-a-m-et",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-host-investor-conference-call-and-webcast-to-review-new-clinical-data-from-the-achieve-trial-friday-january-10-at-800-a-m-et",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-host-investor-conference-call-and-webcast-to-review-topline-results-from-registrational-expansion-cohort-rec-of-deliver-clinical-trial-of-z-rostudirsen-dyne-251-in-duchenne-mu",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-host-virtual-event-tomorrow-january-3-at-800-am-et-to-present-initial-clinical-data-from-achieve-and-deliver-trials",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-host-virtual-investor-event-to-review-new-clinical-data-from-the-achieve-and-deliver-trials-tomorrow-may-20-at-800-a-m-et",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-host-virtual-research-and-development-day-on-wednesday-october-13-2021",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-participate-in-upcoming-investor-conferences",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-participate-in-upcoming-investor-conferences-2",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-participate-in-upcoming-investor-conferences-3",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-present-additional-one-year-clinical-data-from-phase-1-2-achieve-trial-of-z-basivarsen-dyne-101-for-myotonic-dystrophy-type-1-dm1-at-upcoming-medical-meetings",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-present-at-39th-annual-j-p-morgan-healthcare-conference",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-present-at-41st-annual-j-p-morgan-healthcare-conference",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-present-at-42nd-annual-j-p-morgan-healthcare-conference",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-present-at-43rd-annual-j-p-morgan-healthcare-conference",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-present-at-44th-annual-j-p-morgan-healthcare-conference",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-present-at-bofa-securities-2023-healthcare-conference",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-present-at-chardans-6th-annual-genetic-medicines-conference",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-present-at-chardans-8th-annual-genetic-medicines-conference",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-present-at-chardans-virtual-5th-annual-genetic-medicines-conference",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-present-at-february-investor-conferences",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-present-at-investor-conferences-in-november",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-present-at-jefferies-global-healthcare-conference",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-present-at-jefferies-global-healthcare-conference-2",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-present-at-jefferies-healthcare-conference",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-present-at-jefferies-virtual-healthcare-conference",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-present-at-morgan-stanley-20th-annual-global-healthcare-conference",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-present-at-morgan-stanley-21st-annual-global-healthcare-conference",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-present-at-morgan-stanley-22nd-annual-global-healthcare-conference",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-present-at-november-investor-conferences",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-present-at-october-investor-conferences",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-present-at-oppenheimer-35th-annual-healthcare-life-sciences-conference",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-present-at-stifel-2024-virtual-cns-days",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-present-at-stifel-2025-virtual-cns-forum",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-present-at-the-40th-annual-j-p-morgan-healthcare-conference",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-present-at-the-cantor-virtual-muscular-dystrophy-symposium",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-present-at-the-cantor-virtual-muscular-dystrophy-symposium-2",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-present-at-upcoming-investor-conferences",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-present-at-upcoming-investor-conferences-2",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-present-at-upcoming-investor-conferences-3",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-present-at-upcoming-investor-conferences-4",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-present-at-upcoming-investor-conferences-5",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-present-new-preclinical-data-at-asgct-annual-meeting-demonstrating-force-platform-delivery-to-cns",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-present-new-preclinical-data-in-facioscapulohumeral-muscular-dystrophy-at-the-fshd-society-international-research-congress",
+      "h1": 1
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-present-preclinical-data-for-multiple-development-candidates-for-duchenne-muscular-dystrophy-dmd-at-27th-annual-nmsg-scientific-meeting",
+      "h1": 1
+    },
+    {
+      "path": "/news/new-preclinical-data-from-dyne-therapeutics-myotonic-dystrophy-type-1-program-to-be-featured-in-presentations-during-upcoming-american-society-of-gene-cell-therapy-annual-meeting",
+      "h1": 1
+    },
+    {
+      "path": "/our-commitment",
+      "h1": 1
+    },
+    {
+      "path": "/our-commitment-video",
+      "h1": 1
+    },
+    {
+      "path": "/our-forcetm-platform",
+      "h1": 1
+    },
+    {
+      "path": "/our-forcetm-publications",
+      "h1": 1
+    },
+    {
+      "path": "/perspectives",
+      "h1": 0
+    },
+    {
+      "path": "/perspectives-2",
+      "h1": 1
+    },
+    {
+      "path": "/perspectives/beyond-the-balance-sheet-thinking-broadly-about-dilution-in-building-a-transformative-biotech",
+      "h1": 1
+    },
+    {
+      "path": "/perspectives/cultivating-a-dynamic-culture-centered-around-purpose-driven-values",
+      "h1": 1
+    },
+    {
+      "path": "/perspectives/from-the-trenches-a-lifesci-vc-blog",
+      "h1": 1
+    },
+    {
+      "path": "/perspectives/fshd-society-radio",
+      "h1": 1
+    },
+    {
+      "path": "/perspectives/lessons-learned-on-preparing-to-weather-the-inevitable-challenges-in-biotech",
+      "h1": 1
+    },
+    {
+      "path": "/perspectives/ordinary-people-achieving-the-extraordinary-lessons-in-leadership-from-the-court-to-the-c-suite",
+      "h1": 1
+    },
+    {
+      "path": "/perspectives/playing-to-win-building-a-position-of-strength-in-biotech",
+      "h1": 1
+    },
+    {
+      "path": "/perspectives/preparing-to-pitch-in-a-virtual-world",
+      "h1": 1
+    },
+    {
+      "path": "/perspectives/scaling-culture-with-growth-how-to-maintain-your-startups-special-sauce",
+      "h1": 1
+    },
+    {
+      "path": "/perspectives/starting-a-new-tradition-of-support",
+      "h1": 1
+    },
+    {
+      "path": "/perspectives/the-power-of-hope-a-joint-perspective-on-finding-balance-in-the-search-for-life-changing-therapies",
+      "h1": 1
+    },
+    {
+      "path": "/perspectives/toward-a-brighter-future-targeting-the-genetic-basis-of-rare-muscle-diseases",
+      "h1": 1
+    },
+    {
+      "path": "/perspectives/voice-of-the-patient-the-biopharma-perspective",
+      "h1": 1
+    },
+    {
+      "path": "/pipeline",
+      "h1": 1
+    },
+    {
+      "path": "/privacy-policy",
+      "h1": 1
+    },
+    {
+      "path": "/rare-disease-day-2023",
+      "h1": 1
+    },
+    {
+      "path": "/rare-disease-day-video-presentation",
+      "h1": 1
+    },
+    {
+      "path": "/rdd2022",
+      "h1": 1
+    },
+    {
+      "path": "/resources",
+      "h1": 1
+    },
+    {
+      "path": "/team/alessandro-martuscelli",
+      "h1": 1
+    },
+    {
+      "path": "/team/barry-greene",
+      "h1": 1
+    },
+    {
+      "path": "/team/brian-posner",
+      "h1": 1
+    },
+    {
+      "path": "/team/carlo-incerti-m-d",
+      "h1": 1
+    },
+    {
+      "path": "/team/catherine-stehman-breen",
+      "h1": 1
+    },
+    {
+      "path": "/team/catherine-stehman-breen-copy",
+      "h1": 1
+    },
+    {
+      "path": "/team/charles-thornton-m-d",
+      "h1": 1
+    },
+    {
+      "path": "/team/daniel-wilson-copy",
+      "h1": 1
+    },
+    {
+      "path": "/team/daniel-wilson-copy-2",
+      "h1": 1
+    },
+    {
+      "path": "/team/daniel-wilson-copy-3",
+      "h1": 1
+    },
+    {
+      "path": "/team/david-lubner",
+      "h1": 1
+    },
+    {
+      "path": "/team/debra-feldman",
+      "h1": 1
+    },
+    {
+      "path": "/team/debra-feldman-copy",
+      "h1": 1
+    },
+    {
+      "path": "/team/debra-feldman-copy-copy",
+      "h1": 1
+    },
+    {
+      "path": "/team/dirk-kirsten",
+      "h1": 1
+    },
+    {
+      "path": "/team/ed-hurwitz",
+      "h1": 1
+    },
+    {
+      "path": "/team/human-1",
+      "h1": 1
+    },
+    {
+      "path": "/team/human-2",
+      "h1": 1
+    },
+    {
+      "path": "/team/human-3",
+      "h1": 1
+    },
+    {
+      "path": "/team/human-4",
+      "h1": 1
+    },
+    {
+      "path": "/team/jason-rhodes",
+      "h1": 1
+    },
+    {
+      "path": "/team/jeffrey-statland-m-d",
+      "h1": 1
+    },
+    {
+      "path": "/team/joshua-brumm",
+      "h1": 1
+    },
+    {
+      "path": "/team/joshua-brumm-2",
+      "h1": 1
+    },
+    {
+      "path": "/team/monica-fay",
+      "h1": 1
+    },
+    {
+      "path": "/team/oxana-beskrovnaya-ph-d",
+      "h1": 1
+    },
+    {
+      "path": "/team/oxana-beskrovnaya-ph-d-copy",
+      "h1": 1
+    },
+    {
+      "path": "/team/oxana-beskrovnaya-ph-d-copy-copy",
+      "h1": 1
+    },
+    {
+      "path": "/team/oxana-beskrovnaya-ph-d-copy-copy-copy",
+      "h1": 1
+    },
+    {
+      "path": "/team/rick-scalzo-copy",
+      "h1": 1
+    },
+    {
+      "path": "/team/rick-scalzo-copy-copy",
+      "h1": 1
+    },
+    {
+      "path": "/terms-of-service",
+      "h1": 1
+    },
+    {
+      "path": "/world-fshd-day-2022",
+      "h1": 1
+    }
+  ],
+  "routes": [
+    {
+      "path": "/",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/"
+    },
+    {
+      "path": "/about-us",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/about-us"
+    },
+    {
+      "path": "/careers-culture",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/careers-culture"
+    },
+    {
+      "path": "/clinical-trials",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/clinical-trials"
+    },
+    {
+      "path": "/community-guidelines",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/community-guidelines"
+    },
+    {
+      "path": "/community-letter",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/community-letter"
+    },
+    {
+      "path": "/community-letter-deliver-clinical-trial",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/community-letter-deliver-clinical-trial"
+    },
+    {
+      "path": "/community-letter-duchenne-added-to-newborn-screening",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/community-letter-duchenne-added-to-newborn-screening"
+    },
+    {
+      "path": "/community-letter-duchenne-muscular-dystrophy-community",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/community-letter-duchenne-muscular-dystrophy-community"
+    },
+    {
+      "path": "/cookie-declaration",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/cookie-declaration"
+    },
+    {
+      "path": "/corporate-responsibility",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/corporate-responsibility"
+    },
+    {
+      "path": "/diana-and-jordan-2022",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/diana-and-jordan-2022"
+    },
+    {
+      "path": "/dm1",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/dm1"
+    },
+    {
+      "path": "/dm1-story-billydean",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/dm1-story-billydean"
+    },
+    {
+      "path": "/dm1-story-emily",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/dm1-story-emily"
+    },
+    {
+      "path": "/dm1-story-joachim",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/dm1-story-joachim"
+    },
+    {
+      "path": "/dm1-story-loraine",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/dm1-story-loraine"
+    },
+    {
+      "path": "/dmd",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/dmd"
+    },
+    {
+      "path": "/dmd-copy",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/dmd-copy"
+    },
+    {
+      "path": "/dmd-story-ravi",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/dmd-story-ravi"
+    },
+    {
+      "path": "/dyne-101-for-dm1",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/dyne-101-for-dm1"
+    },
+    {
+      "path": "/dyne-251-for-dmd",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/dyne-251-for-dmd"
+    },
+    {
+      "path": "/dyne-302-for-fshd",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/dyne-302-for-fshd"
+    },
+    {
+      "path": "/dyne-culture-video",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/dyne-culture-video"
+    },
+    {
+      "path": "/dyne-therapeutics-accelerates-programs-in-facioscapulohumeral-muscular-dystrophy-fshd-with-exclusive-licensing-of-technologies-to-target-genetic-basis-of-fshd-and-expanded-scientific-advisory-board",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/dyne-therapeutics-accelerates-programs-in-facioscapulohumeral-muscular-dystrophy-fshd-with-exclusive-licensing-of-technologies-to-target-genetic-basis-of-fshd-and-expanded-scientific-advisory-board"
+    },
+    {
+      "path": "/dyne-therapeutics-announces-appointment-of-debra-feldman-as-vice-president-head-of-regulatory",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/dyne-therapeutics-announces-appointment-of-debra-feldman-as-vice-president-head-of-regulatory"
+    },
+    {
+      "path": "/dyne-therapeutics-announces-appointment-of-joshua-brumm-as-president-and-chief-executive-officer",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/dyne-therapeutics-announces-appointment-of-joshua-brumm-as-president-and-chief-executive-officer"
+    },
+    {
+      "path": "/dyne-therapeutics-announces-appointment-of-leading-dmd-expert-francesco-muntoni-to-scientific-advisory-board",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/dyne-therapeutics-announces-appointment-of-leading-dmd-expert-francesco-muntoni-to-scientific-advisory-board"
+    },
+    {
+      "path": "/dyne-therapeutics-announces-appointment-of-molly-white-as-vice-president-medical-communications-and-advocacy",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/dyne-therapeutics-announces-appointment-of-molly-white-as-vice-president-medical-communications-and-advocacy"
+    },
+    {
+      "path": "/dyne-therapeutics-announces-equity-investment-from-cureduchenne-ventures-to-support-pioneering-approach-to-restoring-muscle-health-in-dmd",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/dyne-therapeutics-announces-equity-investment-from-cureduchenne-ventures-to-support-pioneering-approach-to-restoring-muscle-health-in-dmd"
+    },
+    {
+      "path": "/dyne-therapeutics-announces-support-for-end-dm1-natural-history-study-of-patients-with-myotonic-dystrophy-type-1-dm1",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/dyne-therapeutics-announces-support-for-end-dm1-natural-history-study-of-patients-with-myotonic-dystrophy-type-1-dm1"
+    },
+    {
+      "path": "/dyne-therapeutics-announces-support-for-resolve-natural-history-study-of-patients-with-facioscapulohumeral-muscular-dystrophy-fshd",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/dyne-therapeutics-announces-support-for-resolve-natural-history-study-of-patients-with-facioscapulohumeral-muscular-dystrophy-fshd"
+    },
+    {
+      "path": "/dyne-therapeutics-appoints-catherine-stehman-breen-to-its-board-of-directors",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/dyne-therapeutics-appoints-catherine-stehman-breen-to-its-board-of-directors"
+    },
+    {
+      "path": "/dyne-therapeutics-appoints-daniel-wilson-as-vice-president-head-of-intellectual-property",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/dyne-therapeutics-appoints-daniel-wilson-as-vice-president-head-of-intellectual-property"
+    },
+    {
+      "path": "/dyne-therapeutics-appoints-david-lubner-to-board-of-directors",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/dyne-therapeutics-appoints-david-lubner-to-board-of-directors"
+    },
+    {
+      "path": "/dyne-therapeutics-demonstrates-forcetm-platforms-potential-to-deliver-potent-exon-skipping-molecules-directly-to-muscle-to-treat-duchenne-muscular-dystrophy",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/dyne-therapeutics-demonstrates-forcetm-platforms-potential-to-deliver-potent-exon-skipping-molecules-directly-to-muscle-to-treat-duchenne-muscular-dystrophy"
+    },
+    {
+      "path": "/dyne-therapeutics-expands-board-of-directors-with-appointment-of-lawrence-klein",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/dyne-therapeutics-expands-board-of-directors-with-appointment-of-lawrence-klein"
+    },
+    {
+      "path": "/dyne-therapeutics-expands-leadership-team-with-key-hires",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/dyne-therapeutics-expands-leadership-team-with-key-hires"
+    },
+    {
+      "path": "/dyne-therapeutics-launches-with-50-million-series-a-to-develop-targeted-therapies-for-muscle-diseases",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/dyne-therapeutics-launches-with-50-million-series-a-to-develop-targeted-therapies-for-muscle-diseases"
+    },
+    {
+      "path": "/dyne-therapeutics-presents-nonhuman-primate-proof-of-concept-data-on-force-therapeutic-platform-at-international-myotonic-dystrophy-consortium-meeting-idmc-12",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/dyne-therapeutics-presents-nonhuman-primate-proof-of-concept-data-on-force-therapeutic-platform-at-international-myotonic-dystrophy-consortium-meeting-idmc-12"
+    },
+    {
+      "path": "/early-stage-fshd-clinical-trial",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/early-stage-fshd-clinical-trial"
+    },
+    {
+      "path": "/expansion-opportunities",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/expansion-opportunities"
+    },
+    {
+      "path": "/fda-accepts-bla-for-z-rostudirsen",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/fda-accepts-bla-for-z-rostudirsen"
+    },
+    {
+      "path": "/finding-strength-beyond-muscle",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/finding-strength-beyond-muscle"
+    },
+    {
+      "path": "/force-for-good-service-day-2022",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/force-for-good-service-day-2022"
+    },
+    {
+      "path": "/force-video",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/force-video"
+    },
+    {
+      "path": "/forzetto-trial-initiated",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/forzetto-trial-initiated"
+    },
+    {
+      "path": "/fshd",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/fshd"
+    },
+    {
+      "path": "/fshd-story-chelsea",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/fshd-story-chelsea"
+    },
+    {
+      "path": "/home",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/"
+    },
+    {
+      "path": "/joachim-and-tim",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/joachim-and-tim"
+    },
+    {
+      "path": "/jobs/associate-director-clinical-operations-study-lead",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/jobs/associate-director-clinical-operations-study-lead"
+    },
+    {
+      "path": "/jobs/associate-director-financial-planning-analysis-fpa",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/jobs/associate-director-financial-planning-analysis-fpa"
+    },
+    {
+      "path": "/jobs/associate-director-formulation-and-drug-product-development",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/jobs/associate-director-formulation-and-drug-product-development"
+    },
+    {
+      "path": "/jobs/associate-director-market-research-competitive-intelligence",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/jobs/associate-director-market-research-competitive-intelligence"
+    },
+    {
+      "path": "/jobs/associate-director-medical-information-and-review",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/jobs/associate-director-medical-information-and-review"
+    },
+    {
+      "path": "/jobs/associate-director-quality-management-systems",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/jobs/associate-director-quality-management-systems"
+    },
+    {
+      "path": "/jobs/associate-director-regulatory-operations-veeva-vault-rim",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/jobs/associate-director-regulatory-operations-veeva-vault-rim"
+    },
+    {
+      "path": "/jobs/associate-director-talent-acquisition-operations-programs",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/jobs/associate-director-talent-acquisition-operations-programs"
+    },
+    {
+      "path": "/jobs/director-business-strategy-operations-commercialization",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/jobs/director-business-strategy-operations-commercialization"
+    },
+    {
+      "path": "/jobs/director-clinical-scientist",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/jobs/director-clinical-scientist"
+    },
+    {
+      "path": "/jobs/director-cost-accounting",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/jobs/director-cost-accounting"
+    },
+    {
+      "path": "/jobs/director-drug-safety-pharmacovigilance-scientist",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/jobs/director-drug-safety-pharmacovigilance-scientist"
+    },
+    {
+      "path": "/jobs/director-medical-writing",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/jobs/director-medical-writing"
+    },
+    {
+      "path": "/jobs/director-people-operations",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/jobs/director-people-operations"
+    },
+    {
+      "path": "/jobs/director-qa-gmp-operations",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/jobs/director-qa-gmp-operations"
+    },
+    {
+      "path": "/jobs/director-revenue",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/jobs/director-revenue"
+    },
+    {
+      "path": "/jobs/dyne-care-partner-atlanta",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/jobs/dyne-care-partner-atlanta"
+    },
+    {
+      "path": "/jobs/dyne-care-partner-central",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/jobs/dyne-care-partner-central"
+    },
+    {
+      "path": "/jobs/dyne-care-partner-florida",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/jobs/dyne-care-partner-florida"
+    },
+    {
+      "path": "/jobs/dyne-care-partner-michigan",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/jobs/dyne-care-partner-michigan"
+    },
+    {
+      "path": "/jobs/dyne-care-partner-new-england",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/jobs/dyne-care-partner-new-england"
+    },
+    {
+      "path": "/jobs/dyne-care-partner-north-central",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/jobs/dyne-care-partner-north-central"
+    },
+    {
+      "path": "/jobs/dyne-care-partner-northeast-metro",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/jobs/dyne-care-partner-northeast-metro"
+    },
+    {
+      "path": "/jobs/dyne-care-partner-northern-california",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/jobs/dyne-care-partner-northern-california"
+    },
+    {
+      "path": "/jobs/dyne-care-partner-southern-california",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/jobs/dyne-care-partner-southern-california"
+    },
+    {
+      "path": "/jobs/dyne-care-partner-virginia",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/jobs/dyne-care-partner-virginia"
+    },
+    {
+      "path": "/jobs/executive-assistant",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/jobs/executive-assistant"
+    },
+    {
+      "path": "/jobs/executive-director-regulatory-affairs",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/jobs/executive-director-regulatory-affairs"
+    },
+    {
+      "path": "/jobs/executive-director-techops-alliance-and-strategic-partnerships",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/jobs/executive-director-techops-alliance-and-strategic-partnerships"
+    },
+    {
+      "path": "/jobs/key-account-manager-central-plains",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/jobs/key-account-manager-central-plains"
+    },
+    {
+      "path": "/jobs/key-account-manager-great-lakes",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/jobs/key-account-manager-great-lakes"
+    },
+    {
+      "path": "/jobs/key-account-manager-mid-atlantic",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/jobs/key-account-manager-mid-atlantic"
+    },
+    {
+      "path": "/jobs/key-account-manager-south",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/jobs/key-account-manager-south"
+    },
+    {
+      "path": "/jobs/medical-director-clinical-development",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/jobs/medical-director-clinical-development"
+    },
+    {
+      "path": "/jobs/scientist-bioconjugation",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/jobs/scientist-bioconjugation"
+    },
+    {
+      "path": "/jobs/scientist-rna-chemistry",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/jobs/scientist-rna-chemistry"
+    },
+    {
+      "path": "/jobs/senior-administrative-assistant-us-affiliate",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/jobs/senior-administrative-assistant-us-affiliate"
+    },
+    {
+      "path": "/jobs/senior-director-financial-planning-analysis-rd",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/jobs/senior-director-financial-planning-analysis-rd"
+    },
+    {
+      "path": "/jobs/senior-director-medical-affairs-biostatistics",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/jobs/senior-director-medical-affairs-biostatistics"
+    },
+    {
+      "path": "/jobs/senior-director-medical-affairs-learning-development",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/jobs/senior-director-medical-affairs-learning-development"
+    },
+    {
+      "path": "/jobs/senior-director-program-management",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/jobs/senior-director-program-management"
+    },
+    {
+      "path": "/jobs/senior-director-quality-control",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/jobs/senior-director-quality-control"
+    },
+    {
+      "path": "/jobs/senior-manager-us-medical-affairs",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/jobs/senior-manager-us-medical-affairs"
+    },
+    {
+      "path": "/jobs/thought-leader-liaison-midwest",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/jobs/thought-leader-liaison-midwest"
+    },
+    {
+      "path": "/jobs/thought-leader-liaison-northeast",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/jobs/thought-leader-liaison-northeast"
+    },
+    {
+      "path": "/jobs/thought-leader-liaison-southeast",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/jobs/thought-leader-liaison-southeast"
+    },
+    {
+      "path": "/jobs/thought-leader-liaison-west",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/jobs/thought-leader-liaison-west"
+    },
+    {
+      "path": "/jobs/vp-dm1-commercial-asset-lead",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/jobs/vp-dm1-commercial-asset-lead"
+    },
+    {
+      "path": "/jobs/vp-learning-leadership-development",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/jobs/vp-learning-leadership-development"
+    },
+    {
+      "path": "/loraines-story",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/loraines-story"
+    },
+    {
+      "path": "/message-to-the-global-myotonic-dystrophy-community",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/message-to-the-global-myotonic-dystrophy-community"
+    },
+    {
+      "path": "/new-clinical-trial-opportunity-in-dm1",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/new-clinical-trial-opportunity-in-dm1"
+    },
+    {
+      "path": "/new-one-year-efficacy-data-on-z-basivarsen-dyne-101-for-dm1",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/new-one-year-efficacy-data-on-z-basivarsen-dyne-101-for-dm1"
+    },
+    {
+      "path": "/news/dyne-therapeutics-accelerates-programs-in-facioscapulohumeral-muscular-dystrophy-fshd-with-exclusive-licensing-of-technologies-to-target-genetic-basis-of-fshd-and-expanded-scientific-advisory-board",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-accelerates-programs-in-facioscapulohumeral-muscular-dystrophy-fshd-with-exclusive-licensing-of-technologies-to-target-genetic-basis-of-fshd-and-expanded-scientific-advisory-board"
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-115-million-financing-to-advance-pipeline-of-modern-oligonucleotide-therapeutics-for-serious-muscle-diseases",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-announces-115-million-financing-to-advance-pipeline-of-modern-oligonucleotide-therapeutics-for-serious-muscle-diseases"
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-additional-one-year-clinical-data-demonstrating-functional-improvement-from-phase-1-2-achieve-trial-of-zeleciment-basivarsen-dyne-101-for-myotonic-dystrophy-type-1-dm1",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-announces-additional-one-year-clinical-data-demonstrating-functional-improvement-from-phase-1-2-achieve-trial-of-zeleciment-basivarsen-dyne-101-for-myotonic-dystrophy-type-1-dm1"
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-additional-one-year-clinical-data-from-phase-1-2-achieve-trial-of-z-basivarsen-dyne-101-for-myotonic-dystrophy-type-1-dm1",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-announces-additional-one-year-clinical-data-from-phase-1-2-achieve-trial-of-z-basivarsen-dyne-101-for-myotonic-dystrophy-type-1-dm1"
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-appointment-of-debra-feldman-as-vice-president-head-of-regulatory",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-announces-appointment-of-debra-feldman-as-vice-president-head-of-regulatory"
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-appointment-of-erick-j-lucera-as-chief-financial-officer",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-announces-appointment-of-erick-j-lucera-as-chief-financial-officer"
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-appointment-of-joshua-brumm-as-president-and-chief-executive-officer",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-announces-appointment-of-joshua-brumm-as-president-and-chief-executive-officer"
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-appointment-of-leading-dmd-expert-francesco-muntoni-to-scientific-advisory-board",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-announces-appointment-of-leading-dmd-expert-francesco-muntoni-to-scientific-advisory-board"
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-appointment-of-molly-white-as-vice-president-medical-communications-and-advocacy",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-announces-appointment-of-molly-white-as-vice-president-medical-communications-and-advocacy"
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-breakthrough-article-publication-of-duchenne-muscular-dystrophy-program-data-in-nucleic-acids-research",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-announces-breakthrough-article-publication-of-duchenne-muscular-dystrophy-program-data-in-nucleic-acids-research"
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-ceo-transition",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-announces-ceo-transition"
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-chief-business-officer-and-chief-scientific-officer-appointments",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-announces-chief-business-officer-and-chief-scientific-officer-appointments"
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-chief-scientific-officer-transition",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-announces-chief-scientific-officer-transition"
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-clearance-of-clinical-trial-application-for-dyne-101-for-the-treatment-of-myotonic-dystrophy-type-1",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-announces-clearance-of-clinical-trial-application-for-dyne-101-for-the-treatment-of-myotonic-dystrophy-type-1"
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-closing-of-initial-public-offering",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-announces-closing-of-initial-public-offering"
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-closing-of-public-offering-of-common-stock-and-full-exercise-by-underwriters-of-option-to-purchase-additional-shares",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-announces-closing-of-public-offering-of-common-stock-and-full-exercise-by-underwriters-of-option-to-purchase-additional-shares"
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-closing-of-public-offering-of-common-stock-and-full-exercise-by-underwriters-of-option-to-purchase-additional-shares-2",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-announces-closing-of-public-offering-of-common-stock-and-full-exercise-by-underwriters-of-option-to-purchase-additional-shares-2"
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-closing-of-public-offering-of-common-stock-and-full-exercise-by-underwriters-of-option-to-purchase-additional-shares-3",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-announces-closing-of-public-offering-of-common-stock-and-full-exercise-by-underwriters-of-option-to-purchase-additional-shares-3"
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-closing-of-upsized-public-offering-of-common-stock-and-full-exercise-by-underwriters-of-option-to-purchase-additional-shares",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-announces-closing-of-upsized-public-offering-of-common-stock-and-full-exercise-by-underwriters-of-option-to-purchase-additional-shares"
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-closing-of-upsized-public-offering-of-common-stock-and-full-exercise-by-underwriters-of-option-to-purchase-additional-shares-2",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-announces-closing-of-upsized-public-offering-of-common-stock-and-full-exercise-by-underwriters-of-option-to-purchase-additional-shares-2"
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-completion-of-enrollment-in-registrational-expansion-cohort-of-achieve-trial-of-z-basivarsen-for-myotonic-dystrophy-type-1-dm1",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-announces-completion-of-enrollment-in-registrational-expansion-cohort-of-achieve-trial-of-z-basivarsen-for-myotonic-dystrophy-type-1-dm1"
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-equity-investment-from-cureduchenne-ventures-to-support-pioneering-approach-to-restoring-muscle-health-in-dmd",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-announces-equity-investment-from-cureduchenne-ventures-to-support-pioneering-approach-to-restoring-muscle-health-in-dmd"
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-expanded-debt-facility-of-up-to-400-million-with-hercules-capital-inc",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-announces-expanded-debt-facility-of-up-to-400-million-with-hercules-capital-inc"
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-fda-breakthrough-therapy-designation-for-dyne-101-and-updated-plan-for-accelerated-approval-in-dm1-following-type-c-meeting",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-announces-fda-breakthrough-therapy-designation-for-dyne-101-and-updated-plan-for-accelerated-approval-in-dm1-following-type-c-meeting"
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-fda-breakthrough-therapy-designation-for-dyne-251-in-duchenne-muscular-dystrophy-dmd",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-announces-fda-breakthrough-therapy-designation-for-dyne-251-in-duchenne-muscular-dystrophy-dmd"
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-fda-clearance-of-ind-application-for-dyne-251-for-the-treatment-of-duchenne-muscular-dystrophy",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-announces-fda-clearance-of-ind-application-for-dyne-251-for-the-treatment-of-duchenne-muscular-dystrophy"
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-fda-clinical-hold-on-ind-application-for-dyne-251-in-duchenne-muscular-dystrophy",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-announces-fda-clinical-hold-on-ind-application-for-dyne-251-in-duchenne-muscular-dystrophy"
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-first-patient-dosed-in-phase-1-2-deliver-clinical-trial-of-dyne-251-for-the-treatment-of-duchenne-muscular-dystrophy",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-announces-first-patient-dosed-in-phase-1-2-deliver-clinical-trial-of-dyne-251-for-the-treatment-of-duchenne-muscular-dystrophy"
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-initiation-of-phase-1-2-achieve-clinical-trial-of-dyne-101-for-the-treatment-of-myotonic-dystrophy-type-1",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-announces-initiation-of-phase-1-2-achieve-clinical-trial-of-dyne-101-for-the-treatment-of-myotonic-dystrophy-type-1"
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-initiation-of-phase-3-forzetto-trial-of-z-rostudirsen-in-duchenne-muscular-dystrophy-dmd-ahead-of-planned-bla-submission-for-u-s-accelerated-approval",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-announces-initiation-of-phase-3-forzetto-trial-of-z-rostudirsen-in-duchenne-muscular-dystrophy-dmd-ahead-of-planned-bla-submission-for-u-s-accelerated-approval"
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-initiation-of-phase-3-harmonia-trial-of-z-basivarsen-in-myotonic-dystrophy-type-1-dm1",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-announces-initiation-of-phase-3-harmonia-trial-of-z-basivarsen-in-myotonic-dystrophy-type-1-dm1"
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-key-leadership-appointments",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-announces-key-leadership-appointments"
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-new-clinical-data-from-achieve-trial-of-dyne-101-in-dm1-and-deliver-trial-of-dyne-251-in-dmd-demonstrating-compelling-impact-on-key-disease-biomarkers-and-improvement-in-mu",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-announces-new-clinical-data-from-achieve-trial-of-dyne-101-in-dm1-and-deliver-trial-of-dyne-251-in-dmd-demonstrating-compelling-impact-on-key-disease-biomarkers-and-improvement-in-mu"
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-new-clinical-data-from-phase-1-2-deliver-trial-of-dyne-251-in-duchenne-muscular-dystrophy-demonstrating-unprecedented-dystrophin-expression-and-functional-improvement-in-mu",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-announces-new-clinical-data-from-phase-1-2-deliver-trial-of-dyne-251-in-duchenne-muscular-dystrophy-demonstrating-unprecedented-dystrophin-expression-and-functional-improvement-in-mu"
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-new-long-term-clinical-data-from-phase-1-2-deliver-trial-of-dyne-251-in-duchenne-muscular-dystrophy-demonstrating-unprecedented-and-sustained-functional-improvement-through",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-announces-new-long-term-clinical-data-from-phase-1-2-deliver-trial-of-dyne-251-in-duchenne-muscular-dystrophy-demonstrating-unprecedented-and-sustained-functional-improvement-through"
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-new-positive-cardiopulmonary-results-from-deliver-trial-of-z-rostudirsen-in-duchenne-muscular-dystrophy-dmd",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-announces-new-positive-cardiopulmonary-results-from-deliver-trial-of-z-rostudirsen-in-duchenne-muscular-dystrophy-dmd"
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-participation-at-2026-academy-of-managed-care-pharmacy-amcp-conference-to-begin-shaping-access-in-us-for-potential-neuromuscular-medicines",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-announces-participation-at-2026-academy-of-managed-care-pharmacy-amcp-conference-to-begin-shaping-access-in-us-for-potential-neuromuscular-medicines"
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-positive-initial-clinical-data-from-achieve-trial-in-dm1-patients-and-deliver-trial-in-dmd-patients-demonstrating-promise-of-the-force-platform-in-developing-thera",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-announces-positive-initial-clinical-data-from-achieve-trial-in-dm1-patients-and-deliver-trial-in-dmd-patients-demonstrating-promise-of-the-force-platform-in-developing-thera"
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-positive-topline-results-from-phase-1-2-deliver-trial-of-z-rostudirsen-in-duchenne-muscular-dystrophy-dmd",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-announces-positive-topline-results-from-phase-1-2-deliver-trial-of-z-rostudirsen-in-duchenne-muscular-dystrophy-dmd"
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-presentations-on-its-dm1-and-dmd-programs-at-the-2023-muscular-dystrophy-association-clinical-scientific-conference",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-announces-presentations-on-its-dm1-and-dmd-programs-at-the-2023-muscular-dystrophy-association-clinical-scientific-conference"
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-pricing-of-168-million-public-offering",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-announces-pricing-of-168-million-public-offering"
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-pricing-of-200-0-million-public-offering-of-common-stock",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-announces-pricing-of-200-0-million-public-offering-of-common-stock"
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-pricing-of-300-million-public-offering-of-common-stock",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-announces-pricing-of-300-million-public-offering-of-common-stock"
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-pricing-of-325-5-million-public-offering-of-common-stock",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-announces-pricing-of-325-5-million-public-offering-of-common-stock"
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-pricing-of-initial-public-offering",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-announces-pricing-of-initial-public-offering"
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-pricing-of-upsized-350-0-million-public-offering-of-common-stock",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-announces-pricing-of-upsized-350-0-million-public-offering-of-common-stock"
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-pricing-of-upsized-375-million-public-offering-of-common-stock",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-announces-pricing-of-upsized-375-million-public-offering-of-common-stock"
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-proposed-public-offering-of-common-stock",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-announces-proposed-public-offering-of-common-stock"
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-proposed-public-offering-of-common-stock-2",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-announces-proposed-public-offering-of-common-stock-2"
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-proposed-public-offering-of-common-stock-3",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-announces-proposed-public-offering-of-common-stock-3"
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-proposed-public-offering-of-common-stock-4",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-announces-proposed-public-offering-of-common-stock-4"
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-proposed-public-offering-of-common-stock-5",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-announces-proposed-public-offering-of-common-stock-5"
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-submission-of-biologics-license-application-bla-to-u-s-fda-for-z-rostudirsen-in-exon-51-duchenne-muscular-dystrophy-dmd",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-announces-submission-of-biologics-license-application-bla-to-u-s-fda-for-z-rostudirsen-in-exon-51-duchenne-muscular-dystrophy-dmd"
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-submission-of-ind-application-to-initiate-clinical-trial-of-dyne-251-for-duchenne-muscular-dystrophy",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-announces-submission-of-ind-application-to-initiate-clinical-trial-of-dyne-251-for-duchenne-muscular-dystrophy"
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-support-for-end-dm1-natural-history-study-of-patients-with-myotonic-dystrophy-type-1-dm1",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-announces-support-for-end-dm1-natural-history-study-of-patients-with-myotonic-dystrophy-type-1-dm1"
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-support-for-resolve-natural-history-study-of-patients-with-facioscapulohumeral-muscular-dystrophy-fshd",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-announces-support-for-resolve-natural-history-study-of-patients-with-facioscapulohumeral-muscular-dystrophy-fshd"
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-u-s-fda-acceptance-of-biologics-license-application-bla-for-z-rostudirsen-in-exon-51-duchenne-muscular-dystrophy-dmd",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-announces-u-s-fda-acceptance-of-biologics-license-application-bla-for-z-rostudirsen-in-exon-51-duchenne-muscular-dystrophy-dmd"
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-u-s-fda-clearance-of-investigational-new-drug-ind-application-for-dyne-302-in-facioscapulohumeral-muscular-dystrophy-fshd",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-announces-u-s-fda-clearance-of-investigational-new-drug-ind-application-for-dyne-302-in-facioscapulohumeral-muscular-dystrophy-fshd"
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-upcoming-presentation-highlighting-robust-cns-activity-in-nonhuman-primates-with-its-force-platform-at-2026-asgct-annual-meeting",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-announces-upcoming-presentation-highlighting-robust-cns-activity-in-nonhuman-primates-with-its-force-platform-at-2026-asgct-annual-meeting"
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-upcoming-presentations-across-neuromuscular-pipeline-at-2026-mda-clinical-scientific-conference",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-announces-upcoming-presentations-across-neuromuscular-pipeline-at-2026-mda-clinical-scientific-conference"
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-upcoming-presentations-at-the-2025-mda-clinical-scientific-conference",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-announces-upcoming-presentations-at-the-2025-mda-clinical-scientific-conference"
+    },
+    {
+      "path": "/news/dyne-therapeutics-announces-upcoming-presentations-on-initial-clinical-data-from-its-achieve-trial-in-dm1-patients-and-deliver-trial-in-dmd-patients-at-the-2024-muscular-dystrophy-association-clinical",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-announces-upcoming-presentations-on-initial-clinical-data-from-its-achieve-trial-in-dm1-patients-and-deliver-trial-in-dmd-patients-at-the-2024-muscular-dystrophy-association-clinical"
+    },
+    {
+      "path": "/news/dyne-therapeutics-appoints-ashish-dugar-ph-d-mba-senior-vice-president-global-head-of-medical-affairs",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-appoints-ashish-dugar-ph-d-mba-senior-vice-president-global-head-of-medical-affairs"
+    },
+    {
+      "path": "/news/dyne-therapeutics-appoints-ashish-dugar-ph-d-mba-senior-vice-president-global-head-of-medical-affairs-2",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-appoints-ashish-dugar-ph-d-mba-senior-vice-president-global-head-of-medical-affairs-2"
+    },
+    {
+      "path": "/news/dyne-therapeutics-appoints-barry-greene-to-board-of-directors",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-appoints-barry-greene-to-board-of-directors"
+    },
+    {
+      "path": "/news/dyne-therapeutics-appoints-brian-posner-to-its-board-of-directors",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-appoints-brian-posner-to-its-board-of-directors"
+    },
+    {
+      "path": "/news/dyne-therapeutics-appoints-carlo-incerti-m-d-to-its-board-of-directors",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-appoints-carlo-incerti-m-d-to-its-board-of-directors"
+    },
+    {
+      "path": "/news/dyne-therapeutics-appoints-catherine-stehman-breen-to-its-board-of-directors",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-appoints-catherine-stehman-breen-to-its-board-of-directors"
+    },
+    {
+      "path": "/news/dyne-therapeutics-appoints-daniel-wilson-as-vice-president-head-of-intellectual-property",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-appoints-daniel-wilson-as-vice-president-head-of-intellectual-property"
+    },
+    {
+      "path": "/news/dyne-therapeutics-appoints-david-lubner-to-board-of-directors",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-appoints-david-lubner-to-board-of-directors"
+    },
+    {
+      "path": "/news/dyne-therapeutics-appoints-francesco-bibbiani-m-d-as-senior-vice-president-head-of-development",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-appoints-francesco-bibbiani-m-d-as-senior-vice-president-head-of-development"
+    },
+    {
+      "path": "/news/dyne-therapeutics-appoints-susanna-high-as-chief-operating-officer",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-appoints-susanna-high-as-chief-operating-officer"
+    },
+    {
+      "path": "/news/dyne-therapeutics-appoints-vikram-karnani-to-board-of-directors",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-appoints-vikram-karnani-to-board-of-directors"
+    },
+    {
+      "path": "/news/dyne-therapeutics-appoints-wildon-farwell-m-d-mph-as-chief-medical-officer",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-appoints-wildon-farwell-m-d-mph-as-chief-medical-officer"
+    },
+    {
+      "path": "/news/dyne-therapeutics-demonstrates-force-tm-platforms-potential-to-deliver-potent-exon-skipping-molecules-directly-to-muscle-to-treat-duchenne-muscular-dystrophy",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-demonstrates-force-tm-platforms-potential-to-deliver-potent-exon-skipping-molecules-directly-to-muscle-to-treat-duchenne-muscular-dystrophy"
+    },
+    {
+      "path": "/news/dyne-therapeutics-expands-board-of-directors-with-appointment-of-lawrence-klein",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-expands-board-of-directors-with-appointment-of-lawrence-klein"
+    },
+    {
+      "path": "/news/dyne-therapeutics-expands-leadership-team-with-key-hires",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-expands-leadership-team-with-key-hires"
+    },
+    {
+      "path": "/news/dyne-therapeutics-highlights-dm1-and-dmd-clinical-programs-during-spotlight-on-the-clinic-virtual-event",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-highlights-dm1-and-dmd-clinical-programs-during-spotlight-on-the-clinic-virtual-event"
+    },
+    {
+      "path": "/news/dyne-therapeutics-highlights-preclinical-data-and-clinical-development-plans-for-dmd-and-dm1-programs-at-inaugural-rd-day",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-highlights-preclinical-data-and-clinical-development-plans-for-dmd-and-dm1-programs-at-inaugural-rd-day"
+    },
+    {
+      "path": "/news/dyne-therapeutics-launches-with-50-million-series-a-to-develop-targeted-therapies-for-muscle-diseases",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-launches-with-50-million-series-a-to-develop-targeted-therapies-for-muscle-diseases"
+    },
+    {
+      "path": "/news/dyne-therapeutics-myotonic-dystrophy-type-1-program-achieves-robust-rna-knock-down-of-toxic-human-nuclear-dmpk-in-preclinical-study",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-myotonic-dystrophy-type-1-program-achieves-robust-rna-knock-down-of-toxic-human-nuclear-dmpk-in-preclinical-study"
+    },
+    {
+      "path": "/news/dyne-therapeutics-preclinical-data-demonstrating-force-platform-delivery-to-cns-featured-in-oral-presentation-at-asgct-annual-meeting",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-preclinical-data-demonstrating-force-platform-delivery-to-cns-featured-in-oral-presentation-at-asgct-annual-meeting"
+    },
+    {
+      "path": "/news/dyne-therapeutics-presents-data-at-world-muscle-society-congress-highlighting-promise-of-force-platform-to-address-underlying-causes-of-neuromuscular-diseases",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-presents-data-at-world-muscle-society-congress-highlighting-promise-of-force-platform-to-address-underlying-causes-of-neuromuscular-diseases"
+    },
+    {
+      "path": "/news/dyne-therapeutics-presents-new-in-vivo-data-for-its-duchenne-muscular-dystrophy-program-during-muscle-study-group-annual-scientific-meeting-demonstrating-robust-and-durable-exon-skipping-and-dystrophi",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-presents-new-in-vivo-data-for-its-duchenne-muscular-dystrophy-program-during-muscle-study-group-annual-scientific-meeting-demonstrating-robust-and-durable-exon-skipping-and-dystrophi"
+    },
+    {
+      "path": "/news/dyne-therapeutics-presents-new-in-vivo-data-for-its-myotonic-dystrophy-type-1-candidate-dyne-101-demonstrating-robust-splicing-correction-during-world-muscle-society-2021-virtual-congress",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-presents-new-in-vivo-data-for-its-myotonic-dystrophy-type-1-candidate-dyne-101-demonstrating-robust-splicing-correction-during-world-muscle-society-2021-virtual-congress"
+    },
+    {
+      "path": "/news/dyne-therapeutics-presents-new-in-vivo-data-from-dyne-101-at-asgct-annual-meeting-demonstrating-low-monthly-dosing-leads-to-robust-dmpk-rna-knockdown",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-presents-new-in-vivo-data-from-dyne-101-at-asgct-annual-meeting-demonstrating-low-monthly-dosing-leads-to-robust-dmpk-rna-knockdown"
+    },
+    {
+      "path": "/news/dyne-therapeutics-presents-new-preclinical-data-demonstrating-the-potential-of-the-force-platform-to-deliver-enzyme-replacement-therapy-to-muscle-and-cns-in-pompe-disease",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-presents-new-preclinical-data-demonstrating-the-potential-of-the-force-platform-to-deliver-enzyme-replacement-therapy-to-muscle-and-cns-in-pompe-disease"
+    },
+    {
+      "path": "/news/dyne-therapeutics-presents-new-preclinical-data-for-its-facioscapulohumeral-muscular-dystrophy-program-during-the-fshd-society-international-research-congress",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-presents-new-preclinical-data-for-its-facioscapulohumeral-muscular-dystrophy-program-during-the-fshd-society-international-research-congress"
+    },
+    {
+      "path": "/news/dyne-therapeutics-presents-new-preclinical-data-from-its-myotonic-dystrophy-type-1-program-during-american-society-of-gene-cell-therapy-annual-meeting-demonstrating-sustained-knockdown-of-toxic",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-presents-new-preclinical-data-from-its-myotonic-dystrophy-type-1-program-during-american-society-of-gene-cell-therapy-annual-meeting-demonstrating-sustained-knockdown-of-toxic"
+    },
+    {
+      "path": "/news/dyne-therapeutics-presents-nonhuman-primate-proof-of-concept-data-on-force-therapeutic-platform-at-international-myotonic-dystrophy-consortium-meeting-idmc-12",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-presents-nonhuman-primate-proof-of-concept-data-on-force-therapeutic-platform-at-international-myotonic-dystrophy-consortium-meeting-idmc-12"
+    },
+    {
+      "path": "/news/dyne-therapeutics-presents-preclinical-data-from-its-duchenne-muscular-dystrophy-programs-targeting-exons-51-and-53-at-world-muscle-society-2022-congress",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-presents-preclinical-data-from-its-duchenne-muscular-dystrophy-programs-targeting-exons-51-and-53-at-world-muscle-society-2022-congress"
+    },
+    {
+      "path": "/news/dyne-therapeutics-presents-preclinical-data-from-its-facioscapulohumeral-muscular-dystrophy-program-during-the-fshd-society-international-research-congress",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-presents-preclinical-data-from-its-facioscapulohumeral-muscular-dystrophy-program-during-the-fshd-society-international-research-congress"
+    },
+    {
+      "path": "/news/dyne-therapeutics-receives-european-medicines-agency-ema-orphan-drug-designation-for-dyne-101",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-receives-european-medicines-agency-ema-orphan-drug-designation-for-dyne-101"
+    },
+    {
+      "path": "/news/dyne-therapeutics-receives-european-medicines-agency-ema-orphan-drug-designation-for-dyne-251-in-duchenne-muscular-dystrophy",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-receives-european-medicines-agency-ema-orphan-drug-designation-for-dyne-251-in-duchenne-muscular-dystrophy"
+    },
+    {
+      "path": "/news/dyne-therapeutics-receives-fda-fast-track-designation-for-dyne-101-for-the-treatment-of-myotonic-dystrophy-type-1",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-receives-fda-fast-track-designation-for-dyne-101-for-the-treatment-of-myotonic-dystrophy-type-1"
+    },
+    {
+      "path": "/news/dyne-therapeutics-receives-fda-fast-track-designation-for-dyne-251-for-the-treatment-of-duchenne-muscular-dystrophy",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-receives-fda-fast-track-designation-for-dyne-251-for-the-treatment-of-duchenne-muscular-dystrophy"
+    },
+    {
+      "path": "/news/dyne-therapeutics-receives-fda-orphan-drug-and-rare-pediatric-designations-for-dyne-251-for-the-treatment-of-duchenne-muscular-dystrophy",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-receives-fda-orphan-drug-and-rare-pediatric-designations-for-dyne-251-for-the-treatment-of-duchenne-muscular-dystrophy"
+    },
+    {
+      "path": "/news/dyne-therapeutics-receives-fda-orphan-drug-designation-for-dyne-101-for-the-treatment-of-myotonic-dystrophy-type-1",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-receives-fda-orphan-drug-designation-for-dyne-101-for-the-treatment-of-myotonic-dystrophy-type-1"
+    },
+    {
+      "path": "/news/dyne-therapeutics-receives-orphan-drug-designation-in-japan-for-dyne-251-in-duchenne-muscular-dystrophy",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-receives-orphan-drug-designation-in-japan-for-dyne-251-in-duchenne-muscular-dystrophy"
+    },
+    {
+      "path": "/news/dyne-therapeutics-receives-orphan-drug-designation-in-japan-for-zeleciment-basivarsen-dyne-101-for-myotonic-dystrophy-type-1",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-receives-orphan-drug-designation-in-japan-for-zeleciment-basivarsen-dyne-101-for-myotonic-dystrophy-type-1"
+    },
+    {
+      "path": "/news/dyne-therapeutics-reports-first-quarter-2021-financial-results-and-business-highlights",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-reports-first-quarter-2021-financial-results-and-business-highlights"
+    },
+    {
+      "path": "/news/dyne-therapeutics-reports-first-quarter-2022-financial-results-and-business-highlights",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-reports-first-quarter-2022-financial-results-and-business-highlights"
+    },
+    {
+      "path": "/news/dyne-therapeutics-reports-first-quarter-2023-financial-results-and-business-highlights",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-reports-first-quarter-2023-financial-results-and-business-highlights"
+    },
+    {
+      "path": "/news/dyne-therapeutics-reports-first-quarter-2024-financial-results-and-recent-business-highlights",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-reports-first-quarter-2024-financial-results-and-recent-business-highlights"
+    },
+    {
+      "path": "/news/dyne-therapeutics-reports-first-quarter-2025-financial-results-and-recent-business-highlights",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-reports-first-quarter-2025-financial-results-and-recent-business-highlights"
+    },
+    {
+      "path": "/news/dyne-therapeutics-reports-first-quarter-2026-financial-results-and-recent-business-highlights",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-reports-first-quarter-2026-financial-results-and-recent-business-highlights"
+    },
+    {
+      "path": "/news/dyne-therapeutics-reports-fourth-quarter-and-full-year-2020-financial-results-and-recent-highlights",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-reports-fourth-quarter-and-full-year-2020-financial-results-and-recent-highlights"
+    },
+    {
+      "path": "/news/dyne-therapeutics-reports-fourth-quarter-and-full-year-2020-financial-results-and-recent-highlights-2",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-reports-fourth-quarter-and-full-year-2020-financial-results-and-recent-highlights-2"
+    },
+    {
+      "path": "/news/dyne-therapeutics-reports-fourth-quarter-and-full-year-2021-financial-results-and-recent-highlights",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-reports-fourth-quarter-and-full-year-2021-financial-results-and-recent-highlights"
+    },
+    {
+      "path": "/news/dyne-therapeutics-reports-fourth-quarter-and-full-year-2022-financial-results-and-business-highlights",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-reports-fourth-quarter-and-full-year-2022-financial-results-and-business-highlights"
+    },
+    {
+      "path": "/news/dyne-therapeutics-reports-fourth-quarter-and-full-year-2023-financial-results-and-recent-business-highlights",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-reports-fourth-quarter-and-full-year-2023-financial-results-and-recent-business-highlights"
+    },
+    {
+      "path": "/news/dyne-therapeutics-reports-fourth-quarter-and-full-year-2024-financial-results-and-recent-business-highlights",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-reports-fourth-quarter-and-full-year-2024-financial-results-and-recent-business-highlights"
+    },
+    {
+      "path": "/news/dyne-therapeutics-reports-fourth-quarter-and-full-year-2025-financial-results-and-recent-business-highlights",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-reports-fourth-quarter-and-full-year-2025-financial-results-and-recent-business-highlights"
+    },
+    {
+      "path": "/news/dyne-therapeutics-reports-inducement-grant-under-nasdaq-listing-rule-5635c4-to-newly-appointed-president-and-chief-executive-officer",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-reports-inducement-grant-under-nasdaq-listing-rule-5635c4-to-newly-appointed-president-and-chief-executive-officer"
+    },
+    {
+      "path": "/news/dyne-therapeutics-reports-inducement-grant-under-nasdaq-listing-rule-5635c4-to-newly-appointed-president-and-chief-executive-officer-2",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-reports-inducement-grant-under-nasdaq-listing-rule-5635c4-to-newly-appointed-president-and-chief-executive-officer-2"
+    },
+    {
+      "path": "/news/dyne-therapeutics-reports-inducement-grants-under-nasdaq-listing-rule-5635c4",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-reports-inducement-grants-under-nasdaq-listing-rule-5635c4"
+    },
+    {
+      "path": "/news/dyne-therapeutics-reports-inducement-grants-under-nasdaq-listing-rule-5635c4-2",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-reports-inducement-grants-under-nasdaq-listing-rule-5635c4-2"
+    },
+    {
+      "path": "/news/dyne-therapeutics-reports-inducement-grants-under-nasdaq-listing-rule-5635c4-3",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-reports-inducement-grants-under-nasdaq-listing-rule-5635c4-3"
+    },
+    {
+      "path": "/news/dyne-therapeutics-reports-inducement-grants-under-nasdaq-listing-rule-5635c4-4",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-reports-inducement-grants-under-nasdaq-listing-rule-5635c4-4"
+    },
+    {
+      "path": "/news/dyne-therapeutics-reports-inducement-grants-under-nasdaq-listing-rule-5635c4-5",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-reports-inducement-grants-under-nasdaq-listing-rule-5635c4-5"
+    },
+    {
+      "path": "/news/dyne-therapeutics-reports-inducement-grants-under-nasdaq-listing-rule-5635c4-6",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-reports-inducement-grants-under-nasdaq-listing-rule-5635c4-6"
+    },
+    {
+      "path": "/news/dyne-therapeutics-reports-inducement-grants-under-nasdaq-listing-rule-5635c4-7",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-reports-inducement-grants-under-nasdaq-listing-rule-5635c4-7"
+    },
+    {
+      "path": "/news/dyne-therapeutics-reports-inducement-grants-under-nasdaq-listing-rule-5635c4-to-newly-appointed-chief-financial-officer",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-reports-inducement-grants-under-nasdaq-listing-rule-5635c4-to-newly-appointed-chief-financial-officer"
+    },
+    {
+      "path": "/news/dyne-therapeutics-reports-new-clinical-data-showing-compelling-impact-on-multiple-measures-of-myotonic-dystrophy-type-1-dm1-dyne-plans-to-initiate-registrational-expansion-cohort-to-support-potenti",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-reports-new-clinical-data-showing-compelling-impact-on-multiple-measures-of-myotonic-dystrophy-type-1-dm1-dyne-plans-to-initiate-registrational-expansion-cohort-to-support-potenti"
+    },
+    {
+      "path": "/news/dyne-therapeutics-reports-second-quarter-2021-financial-results-and-business-highlights",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-reports-second-quarter-2021-financial-results-and-business-highlights"
+    },
+    {
+      "path": "/news/dyne-therapeutics-reports-second-quarter-2022-financial-results-and-business-highlights",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-reports-second-quarter-2022-financial-results-and-business-highlights"
+    },
+    {
+      "path": "/news/dyne-therapeutics-reports-second-quarter-2023-financial-results-and-business-highlights",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-reports-second-quarter-2023-financial-results-and-business-highlights"
+    },
+    {
+      "path": "/news/dyne-therapeutics-reports-second-quarter-2023-financial-results-and-business-highlights-2",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-reports-second-quarter-2023-financial-results-and-business-highlights-2"
+    },
+    {
+      "path": "/news/dyne-therapeutics-reports-second-quarter-2024-financial-results-and-recent-business-highlights",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-reports-second-quarter-2024-financial-results-and-recent-business-highlights"
+    },
+    {
+      "path": "/news/dyne-therapeutics-reports-second-quarter-2025-financial-results-and-recent-business-highlights",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-reports-second-quarter-2025-financial-results-and-recent-business-highlights"
+    },
+    {
+      "path": "/news/dyne-therapeutics-reports-second-quarter-2026-financial-results-and-recent-business-highlights",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-reports-second-quarter-2026-financial-results-and-recent-business-highlights"
+    },
+    {
+      "path": "/news/dyne-therapeutics-reports-third-quarter-2020-financial-results-and-recent-highlights",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-reports-third-quarter-2020-financial-results-and-recent-highlights"
+    },
+    {
+      "path": "/news/dyne-therapeutics-reports-third-quarter-2021-financial-results-and-business-highlights",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-reports-third-quarter-2021-financial-results-and-business-highlights"
+    },
+    {
+      "path": "/news/dyne-therapeutics-reports-third-quarter-2022-financial-results-and-business-highlights",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-reports-third-quarter-2022-financial-results-and-business-highlights"
+    },
+    {
+      "path": "/news/dyne-therapeutics-reports-third-quarter-2023-financial-results-and-provides-update-on-significant-progress-for-achieve-and-deliver-trials-and-upcoming-clinical-milestones",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-reports-third-quarter-2023-financial-results-and-provides-update-on-significant-progress-for-achieve-and-deliver-trials-and-upcoming-clinical-milestones"
+    },
+    {
+      "path": "/news/dyne-therapeutics-reports-third-quarter-2024-financial-results-and-provides-corporate-update",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-reports-third-quarter-2024-financial-results-and-provides-corporate-update"
+    },
+    {
+      "path": "/news/dyne-therapeutics-reports-third-quarter-2025-financial-results-and-recent-business-highlights",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-reports-third-quarter-2025-financial-results-and-recent-business-highlights"
+    },
+    {
+      "path": "/news/dyne-therapeutics-secures-up-to-275-million-in-debt-financing-from-hercules-capital",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-secures-up-to-275-million-in-debt-financing-from-hercules-capital"
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-host-investor-conference-call-and-webcast-to-provide-update-on-dyne-101-for-myotonic-dystrophy-type-1-tomorrow-tuesday-june-17-at-800-a-m-et",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-to-host-investor-conference-call-and-webcast-to-provide-update-on-dyne-101-for-myotonic-dystrophy-type-1-tomorrow-tuesday-june-17-at-800-a-m-et"
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-host-investor-conference-call-and-webcast-to-review-new-clinical-data-from-the-achieve-trial-friday-january-10-at-800-a-m-et",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-to-host-investor-conference-call-and-webcast-to-review-new-clinical-data-from-the-achieve-trial-friday-january-10-at-800-a-m-et"
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-host-investor-conference-call-and-webcast-to-review-topline-results-from-registrational-expansion-cohort-rec-of-deliver-clinical-trial-of-z-rostudirsen-dyne-251-in-duchenne-mu",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-to-host-investor-conference-call-and-webcast-to-review-topline-results-from-registrational-expansion-cohort-rec-of-deliver-clinical-trial-of-z-rostudirsen-dyne-251-in-duchenne-mu"
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-host-virtual-event-tomorrow-january-3-at-800-am-et-to-present-initial-clinical-data-from-achieve-and-deliver-trials",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-to-host-virtual-event-tomorrow-january-3-at-800-am-et-to-present-initial-clinical-data-from-achieve-and-deliver-trials"
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-host-virtual-investor-event-to-review-new-clinical-data-from-the-achieve-and-deliver-trials-tomorrow-may-20-at-800-a-m-et",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-to-host-virtual-investor-event-to-review-new-clinical-data-from-the-achieve-and-deliver-trials-tomorrow-may-20-at-800-a-m-et"
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-host-virtual-research-and-development-day-on-wednesday-october-13-2021",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-to-host-virtual-research-and-development-day-on-wednesday-october-13-2021"
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-participate-in-upcoming-investor-conferences",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-to-participate-in-upcoming-investor-conferences"
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-participate-in-upcoming-investor-conferences-2",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-to-participate-in-upcoming-investor-conferences-2"
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-participate-in-upcoming-investor-conferences-3",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-to-participate-in-upcoming-investor-conferences-3"
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-present-additional-one-year-clinical-data-from-phase-1-2-achieve-trial-of-z-basivarsen-dyne-101-for-myotonic-dystrophy-type-1-dm1-at-upcoming-medical-meetings",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-to-present-additional-one-year-clinical-data-from-phase-1-2-achieve-trial-of-z-basivarsen-dyne-101-for-myotonic-dystrophy-type-1-dm1-at-upcoming-medical-meetings"
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-present-at-39th-annual-j-p-morgan-healthcare-conference",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-to-present-at-39th-annual-j-p-morgan-healthcare-conference"
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-present-at-41st-annual-j-p-morgan-healthcare-conference",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-to-present-at-41st-annual-j-p-morgan-healthcare-conference"
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-present-at-42nd-annual-j-p-morgan-healthcare-conference",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-to-present-at-42nd-annual-j-p-morgan-healthcare-conference"
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-present-at-43rd-annual-j-p-morgan-healthcare-conference",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-to-present-at-43rd-annual-j-p-morgan-healthcare-conference"
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-present-at-44th-annual-j-p-morgan-healthcare-conference",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-to-present-at-44th-annual-j-p-morgan-healthcare-conference"
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-present-at-bofa-securities-2023-healthcare-conference",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-to-present-at-bofa-securities-2023-healthcare-conference"
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-present-at-chardans-6th-annual-genetic-medicines-conference",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-to-present-at-chardans-6th-annual-genetic-medicines-conference"
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-present-at-chardans-8th-annual-genetic-medicines-conference",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-to-present-at-chardans-8th-annual-genetic-medicines-conference"
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-present-at-chardans-virtual-5th-annual-genetic-medicines-conference",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-to-present-at-chardans-virtual-5th-annual-genetic-medicines-conference"
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-present-at-february-investor-conferences",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-to-present-at-february-investor-conferences"
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-present-at-investor-conferences-in-november",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-to-present-at-investor-conferences-in-november"
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-present-at-jefferies-global-healthcare-conference",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-to-present-at-jefferies-global-healthcare-conference"
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-present-at-jefferies-global-healthcare-conference-2",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-to-present-at-jefferies-global-healthcare-conference-2"
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-present-at-jefferies-healthcare-conference",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-to-present-at-jefferies-healthcare-conference"
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-present-at-jefferies-virtual-healthcare-conference",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-to-present-at-jefferies-virtual-healthcare-conference"
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-present-at-morgan-stanley-20th-annual-global-healthcare-conference",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-to-present-at-morgan-stanley-20th-annual-global-healthcare-conference"
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-present-at-morgan-stanley-21st-annual-global-healthcare-conference",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-to-present-at-morgan-stanley-21st-annual-global-healthcare-conference"
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-present-at-morgan-stanley-22nd-annual-global-healthcare-conference",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-to-present-at-morgan-stanley-22nd-annual-global-healthcare-conference"
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-present-at-november-investor-conferences",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-to-present-at-november-investor-conferences"
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-present-at-october-investor-conferences",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-to-present-at-october-investor-conferences"
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-present-at-oppenheimer-35th-annual-healthcare-life-sciences-conference",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-to-present-at-oppenheimer-35th-annual-healthcare-life-sciences-conference"
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-present-at-stifel-2024-virtual-cns-days",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-to-present-at-stifel-2024-virtual-cns-days"
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-present-at-stifel-2025-virtual-cns-forum",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-to-present-at-stifel-2025-virtual-cns-forum"
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-present-at-the-40th-annual-j-p-morgan-healthcare-conference",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-to-present-at-the-40th-annual-j-p-morgan-healthcare-conference"
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-present-at-the-cantor-virtual-muscular-dystrophy-symposium",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-to-present-at-the-cantor-virtual-muscular-dystrophy-symposium"
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-present-at-the-cantor-virtual-muscular-dystrophy-symposium-2",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-to-present-at-the-cantor-virtual-muscular-dystrophy-symposium-2"
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-present-at-upcoming-investor-conferences",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-to-present-at-upcoming-investor-conferences"
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-present-at-upcoming-investor-conferences-2",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-to-present-at-upcoming-investor-conferences-2"
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-present-at-upcoming-investor-conferences-3",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-to-present-at-upcoming-investor-conferences-3"
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-present-at-upcoming-investor-conferences-4",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-to-present-at-upcoming-investor-conferences-4"
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-present-at-upcoming-investor-conferences-5",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-to-present-at-upcoming-investor-conferences-5"
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-present-new-preclinical-data-at-asgct-annual-meeting-demonstrating-force-platform-delivery-to-cns",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-to-present-new-preclinical-data-at-asgct-annual-meeting-demonstrating-force-platform-delivery-to-cns"
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-present-new-preclinical-data-in-facioscapulohumeral-muscular-dystrophy-at-the-fshd-society-international-research-congress",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-to-present-new-preclinical-data-in-facioscapulohumeral-muscular-dystrophy-at-the-fshd-society-international-research-congress"
+    },
+    {
+      "path": "/news/dyne-therapeutics-to-present-preclinical-data-for-multiple-development-candidates-for-duchenne-muscular-dystrophy-dmd-at-27th-annual-nmsg-scientific-meeting",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/dyne-therapeutics-to-present-preclinical-data-for-multiple-development-candidates-for-duchenne-muscular-dystrophy-dmd-at-27th-annual-nmsg-scientific-meeting"
+    },
+    {
+      "path": "/news/new-preclinical-data-from-dyne-therapeutics-myotonic-dystrophy-type-1-program-to-be-featured-in-presentations-during-upcoming-american-society-of-gene-cell-therapy-annual-meeting",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/news/new-preclinical-data-from-dyne-therapeutics-myotonic-dystrophy-type-1-program-to-be-featured-in-presentations-during-upcoming-american-society-of-gene-cell-therapy-annual-meeting"
+    },
+    {
+      "path": "/our-commitment",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/our-commitment"
+    },
+    {
+      "path": "/our-commitment-video",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/our-commitment-video"
+    },
+    {
+      "path": "/our-forcetm-platform",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/our-forcetm-platform"
+    },
+    {
+      "path": "/our-forcetm-publications",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/our-forcetm-publications"
+    },
+    {
+      "path": "/perspectives",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/perspectives"
+    },
+    {
+      "path": "/perspectives-2",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/perspectives-2"
+    },
+    {
+      "path": "/perspectives/beyond-the-balance-sheet-thinking-broadly-about-dilution-in-building-a-transformative-biotech",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/perspectives/beyond-the-balance-sheet-thinking-broadly-about-dilution-in-building-a-transformative-biotech"
+    },
+    {
+      "path": "/perspectives/cultivating-a-dynamic-culture-centered-around-purpose-driven-values",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/perspectives/cultivating-a-dynamic-culture-centered-around-purpose-driven-values"
+    },
+    {
+      "path": "/perspectives/from-the-trenches-a-lifesci-vc-blog",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/perspectives/from-the-trenches-a-lifesci-vc-blog"
+    },
+    {
+      "path": "/perspectives/fshd-society-radio",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/perspectives/fshd-society-radio"
+    },
+    {
+      "path": "/perspectives/lessons-learned-on-preparing-to-weather-the-inevitable-challenges-in-biotech",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/perspectives/lessons-learned-on-preparing-to-weather-the-inevitable-challenges-in-biotech"
+    },
+    {
+      "path": "/perspectives/ordinary-people-achieving-the-extraordinary-lessons-in-leadership-from-the-court-to-the-c-suite",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/perspectives/ordinary-people-achieving-the-extraordinary-lessons-in-leadership-from-the-court-to-the-c-suite"
+    },
+    {
+      "path": "/perspectives/playing-to-win-building-a-position-of-strength-in-biotech",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/perspectives/playing-to-win-building-a-position-of-strength-in-biotech"
+    },
+    {
+      "path": "/perspectives/preparing-to-pitch-in-a-virtual-world",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/perspectives/preparing-to-pitch-in-a-virtual-world"
+    },
+    {
+      "path": "/perspectives/scaling-culture-with-growth-how-to-maintain-your-startups-special-sauce",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/perspectives/scaling-culture-with-growth-how-to-maintain-your-startups-special-sauce"
+    },
+    {
+      "path": "/perspectives/starting-a-new-tradition-of-support",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/perspectives/starting-a-new-tradition-of-support"
+    },
+    {
+      "path": "/perspectives/the-power-of-hope-a-joint-perspective-on-finding-balance-in-the-search-for-life-changing-therapies",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/perspectives/the-power-of-hope-a-joint-perspective-on-finding-balance-in-the-search-for-life-changing-therapies"
+    },
+    {
+      "path": "/perspectives/toward-a-brighter-future-targeting-the-genetic-basis-of-rare-muscle-diseases",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/perspectives/toward-a-brighter-future-targeting-the-genetic-basis-of-rare-muscle-diseases"
+    },
+    {
+      "path": "/perspectives/voice-of-the-patient-the-biopharma-perspective",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/perspectives/voice-of-the-patient-the-biopharma-perspective"
+    },
+    {
+      "path": "/pipeline",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/pipeline"
+    },
+    {
+      "path": "/privacy-policy",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/privacy-policy"
+    },
+    {
+      "path": "/rare-disease-day-2023",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/rare-disease-day-2023"
+    },
+    {
+      "path": "/rare-disease-day-video-presentation",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/rare-disease-day-video-presentation"
+    },
+    {
+      "path": "/rdd2022",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/rdd2022"
+    },
+    {
+      "path": "/resources",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/resources"
+    },
+    {
+      "path": "/team/alessandro-martuscelli",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/team/alessandro-martuscelli"
+    },
+    {
+      "path": "/team/barry-greene",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/team/barry-greene"
+    },
+    {
+      "path": "/team/brian-posner",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/team/brian-posner"
+    },
+    {
+      "path": "/team/carlo-incerti-m-d",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/team/carlo-incerti-m-d"
+    },
+    {
+      "path": "/team/catherine-stehman-breen",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/team/catherine-stehman-breen"
+    },
+    {
+      "path": "/team/catherine-stehman-breen-copy",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/team/catherine-stehman-breen-copy"
+    },
+    {
+      "path": "/team/charles-thornton-m-d",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/team/charles-thornton-m-d"
+    },
+    {
+      "path": "/team/daniel-wilson-copy",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/team/daniel-wilson-copy"
+    },
+    {
+      "path": "/team/daniel-wilson-copy-2",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/team/daniel-wilson-copy-2"
+    },
+    {
+      "path": "/team/daniel-wilson-copy-3",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/team/daniel-wilson-copy-3"
+    },
+    {
+      "path": "/team/david-lubner",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/team/david-lubner"
+    },
+    {
+      "path": "/team/debra-feldman",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/team/debra-feldman"
+    },
+    {
+      "path": "/team/debra-feldman-copy",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/team/debra-feldman-copy"
+    },
+    {
+      "path": "/team/debra-feldman-copy-copy",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/team/debra-feldman-copy-copy"
+    },
+    {
+      "path": "/team/dirk-kirsten",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/team/dirk-kirsten"
+    },
+    {
+      "path": "/team/ed-hurwitz",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/team/ed-hurwitz"
+    },
+    {
+      "path": "/team/human-1",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/team/human-1"
+    },
+    {
+      "path": "/team/human-2",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/team/human-2"
+    },
+    {
+      "path": "/team/human-3",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/team/human-3"
+    },
+    {
+      "path": "/team/human-4",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/team/human-4"
+    },
+    {
+      "path": "/team/jason-rhodes",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/team/jason-rhodes"
+    },
+    {
+      "path": "/team/jeffrey-statland-m-d",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/team/jeffrey-statland-m-d"
+    },
+    {
+      "path": "/team/joshua-brumm",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/team/joshua-brumm"
+    },
+    {
+      "path": "/team/joshua-brumm-2",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/team/joshua-brumm-2"
+    },
+    {
+      "path": "/team/monica-fay",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/team/monica-fay"
+    },
+    {
+      "path": "/team/oxana-beskrovnaya-ph-d",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/team/oxana-beskrovnaya-ph-d"
+    },
+    {
+      "path": "/team/oxana-beskrovnaya-ph-d-copy",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/team/oxana-beskrovnaya-ph-d-copy"
+    },
+    {
+      "path": "/team/oxana-beskrovnaya-ph-d-copy-copy",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/team/oxana-beskrovnaya-ph-d-copy-copy"
+    },
+    {
+      "path": "/team/oxana-beskrovnaya-ph-d-copy-copy-copy",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/team/oxana-beskrovnaya-ph-d-copy-copy-copy"
+    },
+    {
+      "path": "/team/rick-scalzo-copy",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/team/rick-scalzo-copy"
+    },
+    {
+      "path": "/team/rick-scalzo-copy-copy",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/team/rick-scalzo-copy-copy"
+    },
+    {
+      "path": "/terms-of-service",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/terms-of-service"
+    },
+    {
+      "path": "/world-fshd-day-2022",
+      "status": 200,
+      "final_url": "http://dyne-tx-workspace.ddev.site/world-fshd-day-2022"
+    }
+  ],
+  "source_missing_assets": [],
+  "source_skipped": [
+    {
+      "source_id": 1124,
+      "alias": "/fshd-day",
+      "reason": "Published legacy page has no content or media destination."
+    },
+    {
+      "source_id": 1211,
+      "alias": "/our-focus",
+      "reason": "Published legacy page has no content or media destination."
+    }
+  ]
+}

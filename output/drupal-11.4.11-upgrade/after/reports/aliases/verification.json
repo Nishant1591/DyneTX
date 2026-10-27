@@ -1,0 +1,170 @@
+{
+    "passed": true,
+    "setup_mode": false,
+    "checks": 1528,
+    "failures": [],
+    "patterns": {
+        "dyne_page": {
+            "id": "dyne_dyne_page",
+            "pattern": "/[node:title]",
+            "candidate": "/alias-cafe-deja-vu-qa-research-2026",
+            "prototype_is_new": false
+        },
+        "job": {
+            "id": "dyne_job",
+            "pattern": "/jobs/[node:title]",
+            "candidate": "/jobs/alias-cafe-deja-vu-qa-research-2026",
+            "prototype_is_new": false
+        },
+        "leader": {
+            "id": "dyne_leader",
+            "pattern": "/team/[node:title]",
+            "candidate": "/team/alias-cafe-deja-vu-qa-research-2026",
+            "prototype_is_new": false
+        },
+        "news": {
+            "id": "dyne_news",
+            "pattern": "/news/[node:title]",
+            "candidate": "/news/alias-cafe-deja-vu-qa-research-2026",
+            "prototype_is_new": false
+        },
+        "perspective": {
+            "id": "dyne_perspective",
+            "pattern": "/perspectives/[node:title]",
+            "candidate": "/perspectives/alias-cafe-deja-vu-qa-research-2026",
+            "prototype_is_new": false
+        },
+        "pipeline_program": {
+            "id": "dyne_pipeline_program",
+            "pattern": "/pipeline/[node:title]",
+            "candidate": "/pipeline/alias-cafe-deja-vu-qa-research-2026",
+            "prototype_is_new": false
+        },
+        "privacy_policy": {
+            "id": "dyne_privacy_policy",
+            "pattern": "/policies/[node:title]",
+            "candidate": "/policies/alias-cafe-deja-vu-qa-research-2026",
+            "prototype_is_new": false
+        },
+        "quote": {
+            "id": "dyne_quote",
+            "pattern": "/quotes/[node:title]",
+            "candidate": "/quotes/alias-cafe-deja-vu-qa-research-2026",
+            "prototype_is_new": false
+        }
+    },
+    "widgets": {
+        "29": {
+            "class": "Drupal\\pathauto\\PathautoWidget",
+            "checkbox_type": "checkbox",
+            "title": "Generate automatic URL alias",
+            "checked": true,
+            "alias": "/team/joshua-brumm"
+        },
+        "334": {
+            "class": "Drupal\\pathauto\\PathautoWidget",
+            "checkbox_type": "checkbox",
+            "title": "Generate automatic URL alias",
+            "checked": true,
+            "alias": "/jobs/senior-director-medical-affairs-biostatistics"
+        }
+    },
+    "hook_cases": {
+        "29": {
+            "same_title": "/team/joshua-brumm",
+            "changed_title": "/verification-proposed-alias-29",
+            "manual_reenabled": "/verification-proposed-alias-29",
+            "insert": "/verification-proposed-alias-29"
+        },
+        "334": {
+            "same_title": "/jobs/senior-director-medical-affairs-biostatistics",
+            "changed_title": "/verification-proposed-alias-334",
+            "manual_reenabled": "/verification-proposed-alias-334",
+            "insert": "/verification-proposed-alias-334"
+        }
+    },
+    "repaired_aliases": [],
+    "entity_saves": 0,
+    "alias_saves": 0,
+    "config_saves": 0,
+    "state_writes": 0,
+    "current_nodes": 477,
+    "bundle_counts": {
+        "dyne_page": 59,
+        "job": 49,
+        "leader": 31,
+        "news": 306,
+        "perspective": 13,
+        "quote": 9,
+        "privacy_policy": 2,
+        "pipeline_program": 8
+    },
+    "collision": {
+        "occupied": "/about-us",
+        "candidate": "/about-us-0",
+        "owner_node": 4,
+        "clone_node": 3
+    },
+    "front": "/node/3",
+    "read_only_before": {
+        "path_alias": {
+            "count": 474,
+            "sha256": "a7b0ecbbec31f58ba2a51d1eb81e9096965b44d30406faa74315f8cadf57ba77"
+        },
+        "redirect": {
+            "count": 3,
+            "sha256": "e234a80bf633dc3f1dd3e8268e6cfca9d1dbd6d231af4d5b030e9deb1d3dd955"
+        },
+        "node": {
+            "count": 477,
+            "sha256": "65b555e6904a824fca4ac4e8c77d78fcb62a42f2fb77fcc4aadada7f2c886d4f"
+        },
+        "node_field_data": {
+            "count": 477,
+            "sha256": "47381051dc528105885252821b512041d9533611576135eebb6f9174a451ecf6"
+        },
+        "node_revision": {
+            "count": 2099,
+            "sha256": "fc9d6e65a5030e265b206850f76de3513f289a826cd9b2369d83d2475f56c07f"
+        },
+        "pathauto_states": {
+            "count": 477,
+            "sha256": "2dab6b381523d1da0beb5720b5e0988f3afc98f9cbb21f9711482788df6df3c7"
+        },
+        "configuration": {
+            "count": 1024,
+            "sha256": "21a44c2076ad5c6d89a4ad0382e681f58051725309a9e6d3b6f3f8c0cff578d4"
+        }
+    },
+    "read_only_after": {
+        "path_alias": {
+            "count": 474,
+            "sha256": "a7b0ecbbec31f58ba2a51d1eb81e9096965b44d30406faa74315f8cadf57ba77"
+        },
+        "redirect": {
+            "count": 3,
+            "sha256": "e234a80bf633dc3f1dd3e8268e6cfca9d1dbd6d231af4d5b030e9deb1d3dd955"
+        },
+        "node": {
+            "count": 477,
+            "sha256": "65b555e6904a824fca4ac4e8c77d78fcb62a42f2fb77fcc4aadada7f2c886d4f"
+        },
+        "node_field_data": {
+            "count": 477,
+            "sha256": "47381051dc528105885252821b512041d9533611576135eebb6f9174a451ecf6"
+        },
+        "node_revision": {
+            "count": 2099,
+            "sha256": "fc9d6e65a5030e265b206850f76de3513f289a826cd9b2369d83d2475f56c07f"
+        },
+        "pathauto_states": {
+            "count": 477,
+            "sha256": "2dab6b381523d1da0beb5720b5e0988f3afc98f9cbb21f9711482788df6df3c7"
+        },
+        "configuration": {
+            "count": 1024,
+            "sha256": "21a44c2076ad5c6d89a4ad0382e681f58051725309a9e6d3b6f3f8c0cff578d4"
+        }
+    },
+    "alias_comparison": "/var/www/html/output/aliases/alias-comparison.json"
+}

@@ -1,3 +1,17 @@
+# Drupal 11.4.11 upgrade (October 27, 2026)
+
+The local app now runs **Drupal 11.4.11** and **Webform 6.3.1**. Core Composer
+requirements are pinned to the requested release; Webform requires at least
+6.3.1. The lockfile includes the corresponding Symfony HTTP Foundation and YAML
+updates. Composer scaffolding preserves the repository's Git LFS rules and the
+dynamic robots.txt setup, and generates the updated `.htaccess` assertion rule.
+
+The database backup is `output/dyne-before-drupal-11.4.11-2026-10-27.sql.gz`.
+No database updates were required. Before/after editorial checks and all 345
+public routes plus 411 local assets/links passed; the final dependency audit
+reported no advisories. See [upgrade verification and deployment notes](docs/drupal-11.4.11-upgrade.md)
+for commands, evidence, rollback information, and remaining local setup issues.
+
 # XML sitemap (October 26, 2026)
 
 The public sitemap at `/sitemap.xml` includes public editorial pages and is

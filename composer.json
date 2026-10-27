@@ -20,9 +20,9 @@
         "drupal/bootstrap5": "^4.0",
         "drupal/ckeditor5_premium_features": "^1.8",
         "drupal/colorbox": "^2.0",
-        "drupal/core-composer-scaffold": "^11",
-        "drupal/core-project-message": "^11",
-        "drupal/core-recommended": "^11",
+        "drupal/core-composer-scaffold": "11.4.11",
+        "drupal/core-project-message": "11.4.11",
+        "drupal/core-recommended": "11.4.11",
         "drupal/eu_cookie_compliance": "^1.29",
         "drupal/external_link_popup": "^2.0",
         "drupal/layout_builder_restrictions": "^3.0",
@@ -36,12 +36,12 @@
         "drupal/robotstxt": "^1.6",
         "drupal/social_media_links": "^2.10",
         "drupal/video_embed_field": "^3.1",
-        "drupal/webform": "^6.3",
+        "drupal/webform": "^6.3.1",
         "drupal/xmlsitemap": "^2.0",
         "drush/drush": "^13"
     },
     "require-dev": {
-        "drupal/core-dev": "^11"
+        "drupal/core-dev": "11.4.11"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -52,6 +52,7 @@
                 "web-root": "web/"
             },
             "file-mapping": {
+                "[project-root]/.gitattributes": false,
                 "[web-root]/robots.txt": false
             }
         },

@@ -1,0 +1,9 @@
+{
+    "passed": true,
+    "checks": 166,
+    "formatted_textarea_fields": 59,
+    "widgets_rendered": 9,
+    "widgets_requested": 9,
+    "failures": [],
+    "report": "/var/www/html/output/ckeditor/verification.json"
+}

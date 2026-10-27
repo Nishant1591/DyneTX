@@ -1,0 +1,11 @@
+{
+    "passed": true,
+    "setup_mode": false,
+    "checks": 1528,
+    "patterns": 8,
+    "current_nodes": 477,
+    "widgets": 2,
+    "repaired_aliases": [],
+    "failures": [],
+    "report": "/var/www/html/output/aliases/verification.json"
+}

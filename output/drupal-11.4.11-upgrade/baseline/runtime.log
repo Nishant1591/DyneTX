@@ -1,0 +1,19 @@
+{
+  "base": "http://dyne-tx-workspace.ddev.site",
+  "imported_routes_checked": 345,
+  "additional_local_assets_and_links_checked": 411,
+  "failures": [],
+  "missing_internal_anchors": [],
+  "source_skipped": [
+    {
+      "source_id": 1124,
+      "alias": "/fshd-day",
+      "reason": "Published legacy page has no content or media destination."
+    },
+    {
+      "source_id": 1211,
+      "alias": "/our-focus",
+      "reason": "Published legacy page has no content or media destination."
+    }
+  ]
+}

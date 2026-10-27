@@ -1,0 +1,34 @@
+{
+  "source_version": "11.4.6",
+  "checks": [
+    {
+      "command": "ddev drush php:script scripts/tests/rich-text-editors.php",
+      "exit_code": 0,
+      "checks": 166,
+      "widgets_rendered": 9
+    },
+    {
+      "command": "ddev drush php:script scripts/tests/title-aliases.php",
+      "exit_code": 0,
+      "checks": 1528,
+      "current_nodes": 477
+    },
+    {
+      "command": "ddev drush php:script scripts/tests/structured-content-forms.php",
+      "exit_code": 0,
+      "bundles": 8,
+      "checks": 66
+    },
+    {
+      "command": "ddev exec php scripts/tests/structured-inline-rendering.php",
+      "exit_code": 0,
+      "cases": 18
+    },
+    {
+      "command": "ddev exec php scripts/tests/rich-text-component-fields.php",
+      "exit_code": 0,
+      "cases": 19
+    }
+  ],
+  "prior_reports_restored": true
+}

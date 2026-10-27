@@ -1,0 +1,412 @@
+{
+    "advisories": {
+        "drupal/core": [
+            {
+                "advisoryId": "SA-CORE-2026-016",
+                "packageName": "drupal/core",
+                "affectedVersions": ">= 10.3.0 < 10.6.19 || >= 11.0.0 < 11.3.19 || >= 11.4.0 < 11.4.10 || >= 12.0.0-alpha1 < 12.0.0-beta2",
+                "title": "Drupal core - Moderately critical - Cross-site scripting - SA-CORE-2026-016",
+                "cve": "CVE-2026-108514",
+                "link": "https://www.drupal.org/sa-core-2026-016",
+                "reportedAt": "2026-10-14T17:25:38+00:00",
+                "sources": [
+                    {
+                        "name": "Drupal core - Moderately critical - Cross-site scripting - SA-CORE-2026-016",
+                        "remoteId": "SA-CORE-2026-016"
+                    }
+                ],
+                "severity": null
+            },
+            {
+                "advisoryId": "SA-CORE-2026-013",
+                "packageName": "drupal/core",
+                "affectedVersions": ">=10.5.0 <10.6.17 || >=11.0.0 <11.3.17 || >=11.4.0 <11.4.7",
+                "title": "Drupal core - Moderately critical - Third-party libraries - SA-CORE-2026-013",
+                "cve": null,
+                "link": "https://www.drupal.org/sa-core-2026-na0isdadth",
+                "reportedAt": "2026-09-16T16:21:04+00:00",
+                "sources": [
+                    {
+                        "name": "Drupal core - Moderately critical - Third-party libraries - SA-CORE-2026-013",
+                        "remoteId": "SA-CORE-2026-013"
+                    }
+                ],
+                "severity": null
+            },
+            {
+                "advisoryId": "SA-CORE-2026-015",
+                "packageName": "drupal/core",
+                "affectedVersions": ">= 8.9.0 < 10.6.19 || >= 11.0.0 < 11.3.19 || >= 11.4.0 < 11.4.10 || >= 12.0.0-alpha1 < 12.0.0-beta2",
+                "title": "Drupal core - Moderately critical - Cross-site scripting - SA-CORE-2026-015",
+                "cve": "CVE-2026-108515",
+                "link": "https://www.drupal.org/sa-core-2026-015",
+                "reportedAt": "2026-10-14T17:25:19+00:00",
+                "sources": [
+                    {
+                        "name": "Drupal core - Moderately critical - Cross-site scripting - SA-CORE-2026-015",
+                        "remoteId": "SA-CORE-2026-015"
+                    }
+                ],
+                "severity": null
+            },
+            {
+                "advisoryId": "SA-CORE-2026-014",
+                "packageName": "drupal/core",
+                "affectedVersions": ">= 8.9.0 < 10.6.19 || >= 11.0.0 < 11.3.19 || >= 11.4.0 < 11.4.10 || >= 12.0.0-alpha1 < 12.0.0-beta2",
+                "title": "Drupal core - Critical - Remote code execution - SA-CORE-2026-014",
+                "cve": "CVE-2026-108097",
+                "link": "https://www.drupal.org/sa-core-2026-014",
+                "reportedAt": "2026-10-14T16:10:00+00:00",
+                "sources": [
+                    {
+                        "name": "Drupal core - Critical - Remote code execution - SA-CORE-2026-014",
+                        "remoteId": "SA-CORE-2026-014"
+                    }
+                ],
+                "severity": null
+            }
+        ],
+        "drupal/webform": [
+            {
+                "advisoryId": "SA-CONTRIB-2026-175",
+                "packageName": "drupal/webform",
+                "affectedVersions": "<6.2.12 || >=6.3.0 <6.3.1",
+                "title": "Webform - Critical - Remote Code Execution - SA-CONTRIB-2026-175",
+                "cve": "CVE-2026-96355",
+                "link": "https://www.drupal.org/sa-contrib-2026-175",
+                "reportedAt": "2026-09-23T16:27:38+00:00",
+                "sources": [
+                    {
+                        "name": "Webform - Critical - Remote Code Execution - SA-CONTRIB-2026-175",
+                        "remoteId": "SA-CONTRIB-2026-175"
+                    }
+                ],
+                "severity": null
+            },
+            {
+                "advisoryId": "SA-CONTRIB-2026-174",
+                "packageName": "drupal/webform",
+                "affectedVersions": "<6.2.12 || >=6.3.0 <6.3.1",
+                "title": "Webform - Moderately critical - Access bypass - SA-CONTRIB-2026-174",
+                "cve": "CVE-2026-96356",
+                "link": "https://www.drupal.org/sa-contrib-2026-174",
+                "reportedAt": "2026-09-23T16:27:21+00:00",
+                "sources": [
+                    {
+                        "name": "Webform - Moderately critical - Access bypass - SA-CONTRIB-2026-174",
+                        "remoteId": "SA-CONTRIB-2026-174"
+                    }
+                ],
+                "severity": null
+            },
+            {
+                "advisoryId": "SA-CONTRIB-2026-173",
+                "packageName": "drupal/webform",
+                "affectedVersions": "<6.2.12 || >=6.3.0 <6.3.1",
+                "title": "Webform - Less critical - Access bypass - SA-CONTRIB-2026-173",
+                "cve": "CVE-2026-96398",
+                "link": "https://www.drupal.org/sa-contrib-2026-173",
+                "reportedAt": "2026-09-23T16:27:04+00:00",
+                "sources": [
+                    {
+                        "name": "Webform - Less critical - Access bypass - SA-CONTRIB-2026-173",
+                        "remoteId": "SA-CONTRIB-2026-173"
+                    }
+                ],
+                "severity": null
+            },
+            {
+                "advisoryId": "SA-CONTRIB-2026-172",
+                "packageName": "drupal/webform",
+                "affectedVersions": "<6.2.12 || >=6.3.0 <6.3.1",
+                "title": "Webform - Moderately critical - Cross-site scripting - SA-CONTRIB-2026-172",
+                "cve": "CVE-2026-96357",
+                "link": "https://www.drupal.org/sa-contrib-2026-172",
+                "reportedAt": "2026-09-23T16:26:49+00:00",
+                "sources": [
+                    {
+                        "name": "Webform - Moderately critical - Cross-site scripting - SA-CONTRIB-2026-172",
+                        "remoteId": "SA-CONTRIB-2026-172"
+                    }
+                ],
+                "severity": null
+            },
+            {
+                "advisoryId": "SA-CONTRIB-2026-158",
+                "packageName": "drupal/webform",
+                "affectedVersions": "<6.2.12 || >=6.3.0 <6.3.1",
+                "title": "Webform - Moderately critical - Cross-site scripting - SA-CONTRIB-2026-158",
+                "cve": "CVE-2026-96358",
+                "link": "https://www.drupal.org/sa-contrib-2026-158",
+                "reportedAt": "2026-09-23T16:13:34+00:00",
+                "sources": [
+                    {
+                        "name": "Webform - Moderately critical - Cross-site scripting - SA-CONTRIB-2026-158",
+                        "remoteId": "SA-CONTRIB-2026-158"
+                    }
+                ],
+                "severity": null
+            },
+            {
+                "advisoryId": "SA-CONTRIB-2026-159",
+                "packageName": "drupal/webform",
+                "affectedVersions": "<6.2.12 || >=6.3.0 <6.3.1",
+                "title": "Webform - Moderately critical - Cross-site scripting - SA-CONTRIB-2026-159",
+                "cve": "CVE-2026-96359",
+                "link": "https://www.drupal.org/sa-contrib-2026-159",
+                "reportedAt": "2026-09-23T16:13:50+00:00",
+                "sources": [
+                    {
+                        "name": "Webform - Moderately critical - Cross-site scripting - SA-CONTRIB-2026-159",
+                        "remoteId": "SA-CONTRIB-2026-159"
+                    }
+                ],
+                "severity": null
+            },
+            {
+                "advisoryId": "SA-CONTRIB-2026-154",
+                "packageName": "drupal/webform",
+                "affectedVersions": "<6.2.12 || >=6.3.0 <6.3.1",
+                "title": "Webform - Moderately critical - Cross-site scripting - SA-CONTRIB-2026-154",
+                "cve": "CVE-2026-96360",
+                "link": "https://www.drupal.org/sa-contrib-2026-154",
+                "reportedAt": "2026-09-23T16:11:28+00:00",
+                "sources": [
+                    {
+                        "name": "Webform - Moderately critical - Cross-site scripting - SA-CONTRIB-2026-154",
+                        "remoteId": "SA-CONTRIB-2026-154"
+                    }
+                ],
+                "severity": null
+            },
+            {
+                "advisoryId": "SA-CONTRIB-2026-155",
+                "packageName": "drupal/webform",
+                "affectedVersions": "<6.2.12 || >=6.3.0 <6.3.1",
+                "title": "Webform - Moderately critical - Cross-site scripting - SA-CONTRIB-2026-155",
+                "cve": "CVE-2026-96361",
+                "link": "https://www.drupal.org/sa-contrib-2026-155",
+                "reportedAt": "2026-09-23T16:11:35+00:00",
+                "sources": [
+                    {
+                        "name": "Webform - Moderately critical - Cross-site scripting - SA-CONTRIB-2026-155",
+                        "remoteId": "SA-CONTRIB-2026-155"
+                    }
+                ],
+                "severity": null
+            },
+            {
+                "advisoryId": "SA-CONTRIB-2026-160",
+                "packageName": "drupal/webform",
+                "affectedVersions": "<6.2.12 || >=6.3.0 <6.3.1",
+                "title": "Webform - Moderately critical - Cross-site scripting - SA-CONTRIB-2026-160",
+                "cve": "CVE-2026-96362",
+                "link": "https://www.drupal.org/sa-contrib-2026-160",
+                "reportedAt": "2026-09-23T16:14:14+00:00",
+                "sources": [
+                    {
+                        "name": "Webform - Moderately critical - Cross-site scripting - SA-CONTRIB-2026-160",
+                        "remoteId": "SA-CONTRIB-2026-160"
+                    }
+                ],
+                "severity": null
+            },
+            {
+                "advisoryId": "SA-CONTRIB-2026-161",
+                "packageName": "drupal/webform",
+                "affectedVersions": "<6.2.12 || >=6.3.0 <6.3.1",
+                "title": "Webform - Moderately critical - Cross-site scripting - SA-CONTRIB-2026-161",
+                "cve": "CVE-2026-96363",
+                "link": "https://www.drupal.org/sa-contrib-2026-161",
+                "reportedAt": "2026-09-23T16:14:32+00:00",
+                "sources": [
+                    {
+                        "name": "Webform - Moderately critical - Cross-site scripting - SA-CONTRIB-2026-161",
+                        "remoteId": "SA-CONTRIB-2026-161"
+                    }
+                ],
+                "severity": null
+            },
+            {
+                "advisoryId": "SA-CONTRIB-2026-171",
+                "packageName": "drupal/webform",
+                "affectedVersions": "<6.2.12 || >=6.3.0 <6.3.1",
+                "title": "Webform - Moderately critical - Access bypass - SA-CONTRIB-2026-171",
+                "cve": "CVE-2026-96364",
+                "link": "https://www.drupal.org/sa-contrib-2026-171",
+                "reportedAt": "2026-09-23T16:26:32+00:00",
+                "sources": [
+                    {
+                        "name": "Webform - Moderately critical - Access bypass - SA-CONTRIB-2026-171",
+                        "remoteId": "SA-CONTRIB-2026-171"
+                    }
+                ],
+                "severity": null
+            },
+            {
+                "advisoryId": "SA-CONTRIB-2026-170",
+                "packageName": "drupal/webform",
+                "affectedVersions": "<6.2.12 || >=6.3.0 <6.3.1",
+                "title": "Webform - Less critical - Denial of service - SA-CONTRIB-2026-170",
+                "cve": "CVE-2026-96365",
+                "link": "https://www.drupal.org/sa-contrib-2026-170",
+                "reportedAt": "2026-09-23T16:26:17+00:00",
+                "sources": [
+                    {
+                        "name": "Webform - Less critical - Denial of service - SA-CONTRIB-2026-170",
+                        "remoteId": "SA-CONTRIB-2026-170"
+                    }
+                ],
+                "severity": null
+            },
+            {
+                "advisoryId": "SA-CONTRIB-2026-169",
+                "packageName": "drupal/webform",
+                "affectedVersions": "<6.2.12 || >=6.3.0 <6.3.1",
+                "title": "Webform - Moderately critical - Access bypass - SA-CONTRIB-2026-169",
+                "cve": "CVE-2026-96366",
+                "link": "https://www.drupal.org/sa-contrib-2026-169",
+                "reportedAt": "2026-09-23T16:25:53+00:00",
+                "sources": [
+                    {
+                        "name": "Webform - Moderately critical - Access bypass - SA-CONTRIB-2026-169",
+                        "remoteId": "SA-CONTRIB-2026-169"
+                    }
+                ],
+                "severity": null
+            },
+            {
+                "advisoryId": "SA-CONTRIB-2026-162",
+                "packageName": "drupal/webform",
+                "affectedVersions": "<6.2.12 || >=6.3.0 <6.3.1",
+                "title": "Webform - Moderately critical - Cross-site scripting - SA-CONTRIB-2026-162",
+                "cve": "CVE-2026-96367",
+                "link": "https://www.drupal.org/sa-contrib-2026-162",
+                "reportedAt": "2026-09-23T16:15:26+00:00",
+                "sources": [
+                    {
+                        "name": "Webform - Moderately critical - Cross-site scripting - SA-CONTRIB-2026-162",
+                        "remoteId": "SA-CONTRIB-2026-162"
+                    }
+                ],
+                "severity": null
+            },
+            {
+                "advisoryId": "SA-CONTRIB-2026-163",
+                "packageName": "drupal/webform",
+                "affectedVersions": "<6.2.12 || >=6.3.0 <6.3.1",
+                "title": "Webform - Moderately critical - Cross-site scripting - SA-CONTRIB-2026-163",
+                "cve": "CVE-2026-96368",
+                "link": "https://www.drupal.org/sa-contrib-2026-163",
+                "reportedAt": "2026-09-23T16:16:18+00:00",
+                "sources": [
+                    {
+                        "name": "Webform - Moderately critical - Cross-site scripting - SA-CONTRIB-2026-163",
+                        "remoteId": "SA-CONTRIB-2026-163"
+                    }
+                ],
+                "severity": null
+            },
+            {
+                "advisoryId": "SA-CONTRIB-2026-165",
+                "packageName": "drupal/webform",
+                "affectedVersions": "<6.2.12 || >=6.3.0 <6.3.1",
+                "title": "Webform - Less critical - Access bypass - SA-CONTRIB-2026-165",
+                "cve": "CVE-2026-96369",
+                "link": "https://www.drupal.org/sa-contrib-2026-165",
+                "reportedAt": "2026-09-23T16:17:08+00:00",
+                "sources": [
+                    {
+                        "name": "Webform - Less critical - Access bypass - SA-CONTRIB-2026-165",
+                        "remoteId": "SA-CONTRIB-2026-165"
+                    }
+                ],
+                "severity": null
+            },
+            {
+                "advisoryId": "SA-CONTRIB-2026-164",
+                "packageName": "drupal/webform",
+                "affectedVersions": "<6.2.12 || >=6.3.0 <6.3.1",
+                "title": "Webform - Moderately critical - Access bypass, Server-side request forgery - SA-CONTRIB-2026-164",
+                "cve": "CVE-2026-96370",
+                "link": "https://www.drupal.org/sa-contrib-2026-164",
+                "reportedAt": "2026-09-23T16:16:35+00:00",
+                "sources": [
+                    {
+                        "name": "Webform - Moderately critical - Access bypass, Server-side request forgery - SA-CONTRIB-2026-164",
+                        "remoteId": "SA-CONTRIB-2026-164"
+                    }
+                ],
+                "severity": null
+            },
+            {
+                "advisoryId": "SA-CONTRIB-2026-166",
+                "packageName": "drupal/webform",
+                "affectedVersions": "<6.2.12 || >=6.3.0 <6.3.1",
+                "title": "Webform - Moderately critical - Cross-site scripting - SA-CONTRIB-2026-166",
+                "cve": "CVE-2026-96371",
+                "link": "https://www.drupal.org/sa-contrib-2026-166",
+                "reportedAt": "2026-09-23T16:17:47+00:00",
+                "sources": [
+                    {
+                        "name": "Webform - Moderately critical - Cross-site scripting - SA-CONTRIB-2026-166",
+                        "remoteId": "SA-CONTRIB-2026-166"
+                    }
+                ],
+                "severity": null
+            },
+            {
+                "advisoryId": "SA-CONTRIB-2026-167",
+                "packageName": "drupal/webform",
+                "affectedVersions": "<6.2.12 || >=6.3.0 <6.3.1",
+                "title": "Webform - Moderately critical - Access bypass - SA-CONTRIB-2026-167",
+                "cve": "CVE-2026-96372",
+                "link": "https://www.drupal.org/sa-contrib-2026-167",
+                "reportedAt": "2026-09-23T16:18:15+00:00",
+                "sources": [
+                    {
+                        "name": "Webform - Moderately critical - Access bypass - SA-CONTRIB-2026-167",
+                        "remoteId": "SA-CONTRIB-2026-167"
+                    }
+                ],
+                "severity": null
+            },
+            {
+                "advisoryId": "SA-CONTRIB-2026-168",
+                "packageName": "drupal/webform",
+                "affectedVersions": "<6.2.12 || >=6.3.0 <6.3.1",
+                "title": "Webform - Moderately critical - Access bypass - SA-CONTRIB-2026-168",
+                "cve": "CVE-2026-96373",
+                "link": "https://www.drupal.org/sa-contrib-2026-168",
+                "reportedAt": "2026-09-23T16:20:24+00:00",
+                "sources": [
+                    {
+                        "name": "Webform - Moderately critical - Access bypass - SA-CONTRIB-2026-168",
+                        "remoteId": "SA-CONTRIB-2026-168"
+                    }
+                ],
+                "severity": null
+            }
+        ],
+        "symfony/http-foundation": [
+            {
+                "advisoryId": "PKSA-xmwy-rmx5-m7h4",
+                "packageName": "symfony/http-foundation",
+                "affectedVersions": ">=5.4.1,<5.4.54|>=6.0.1,<6.1.0|>=6.1.0,<6.2.0|>=6.2.0,<6.3.0|>=6.3.0,<6.4.0|>=6.4.0,<6.4.46|>=7.0.0,<7.1.0|>=7.1.0,<7.2.0|>=7.2.0,<7.3.0|>=7.3.0,<7.4.0|>=7.4.0,<7.4.19|>=8.0.0,<8.1.0|>=8.1.0,<8.1.7",
+                "title": "CVE-2026-108082: ReDoS in HeaderUtils::split() Reachable Through the Cache-Control Request Header",
+                "cve": "CVE-2026-108082",
+                "link": "https://symfony.com/cve-2026-108082",
+                "reportedAt": "2026-09-15T08:00:00+00:00",
+                "sources": [
+                    {
+                        "name": "FriendsOfPHP/security-advisories",
+                        "remoteId": "symfony/http-foundation/CVE-2026-108082.yaml"
+                    }
+                ],
+                "severity": null
+            }
+        ]
+    },
+    "abandoned": [],
+    "filter": []
+}

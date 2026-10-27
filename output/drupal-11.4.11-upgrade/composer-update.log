@@ -1,0 +1,36 @@
+Composer [update drupal/core-recommended drupal/core-composer-scaffold drupal/core-project-message drupal/core-dev --with-all-dependencies --minimal-changes --no-interaction] failed, composer command failed: exit status 100. stderr=Loading composer repositories with package information
+Updating dependencies
+Lock file operations: 0 installs, 7 updates, 0 removals
+  - Upgrading drupal/core (11.4.6 => 11.4.11)
+  - Upgrading drupal/core-composer-scaffold (11.4.6 => 11.4.11)
+  - Upgrading drupal/core-dev (11.4.6 => 11.4.11)
+  - Upgrading drupal/core-project-message (11.4.6 => 11.4.11)
+  - Upgrading drupal/core-recommended (11.4.6 => 11.4.11)
+  - Upgrading symfony/http-foundation (v7.4.18 => v7.4.21)
+  - Upgrading symfony/yaml (v7.4.18 => v7.4.21)
+Writing lock file
+Installing dependencies from lock file (including require-dev)
+Package operations: 0 installs, 7 updates, 0 removals
+  - Downloading symfony/yaml (v7.4.21)
+  - Downloading symfony/http-foundation (v7.4.21)
+  - Downloading drupal/core (11.4.11)
+ 0/3 [>---------------------------]   0%    Failed to download symfony/yaml from dist: curl error 28 while downloading https://api.github.com/repos/symfony/yaml/zipball/044907929c7999814378be22da34722c7a86bad4: SSL certificate problem: unable to get local issuer certificate
+    Source fallback is disabled. Not trying alternative sources.
+    Failed to download symfony/http-foundation from dist: curl error 28 while downloading https://api.github.com/repos/symfony/http-foundation/zipball/58c89144c7a36dd89c3d01917e9fa3a72d8aaf31: SSL certificate problem: unable to get local issuer certificate
+    Source fallback is disabled. Not trying alternative sources.
+
+ 2/3 [==================>---------]  66%    Failed to download drupal/core from dist: curl error 28 while downloading https://api.github.com/repos/drupal/core/zipball/50e8bbd254710de4bebff081d421400d4eb60998: SSL certificate problem: unable to get local issuer certificate
+    Source fallback is disabled. Not trying alternative sources.
+
+ 3/3 [============================] 100%If you intend to run Composer without connecting to the internet, run the command again prefixed with COMPOSER_DISABLE_NETWORK=1 to make Composer run in offline mode.
+
+In CurlDownloader.php line 407:
+                                                                               
+  curl error 28 while downloading https://api.github.com/repos/symfony/yaml/z  
+  ipball/044907929c7999814378be22da34722c7a86bad4: SSL certificate problem: u  
+  nable to get local issuer certificate                                        
+                                                                               
+
+update [--with WITH] [--prefer-source] [--prefer-dist] [--prefer-install PREFER-INSTALL] [--dry-run] [--dev] [--no-dev] [--lock] [--no-install] [--no-audit] [--audit-format AUDIT-FORMAT] [--no-security-blocking] [--no-blocking] [--no-autoloader] [--no-suggest] [--no-progress] [-w|--with-dependencies] [-W|--with-all-dependencies] [-v|vv|vvv|--verbose] [-o|--optimize-autoloader] [-a|--classmap-authoritative] [--strict-psr-autoloader] [--apcu-autoloader] [--apcu-autoloader-prefix APCU-AUTOLOADER-PREFIX] [--ignore-platform-req IGNORE-PLATFORM-REQ] [--ignore-platform-reqs] [--prefer-stable] [--prefer-lowest] [-m|--minimal-changes] [--patch-only] [-i|--interactive] [--root-reqs] [--bump-after-update [BUMP-AFTER-UPDATE]] [--] [<packages>...]
+
+
