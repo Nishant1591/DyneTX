@@ -2,7 +2,7 @@
 
 Dyne Therapeutics site built on Drupal **11.4.11**, PHP 8.3, the custom `dynetx`
 Bootstrap5 theme, and native Drupal content, Paragraphs and Media. Webform is
-locked to **6.3.1**. The local preview is <http://dyne-tx-workspace.ddev.site/>.
+locked to **6.3.1**. The local preview is <https://dyne-tx-workspace.ddev.site/>.
 
 ## Run the existing site
 
@@ -86,6 +86,13 @@ code. Do not replace the archive imports with placeholder/sample content.
 
 OneTrust and external feed providers require explicit provider configuration.
 Their live submissions/synchronization are separate from local regression tests.
+
+The UserWay accessibility menu loads asynchronously through the theme's global
+library using the original site's public account identifier. Its button is
+positioned at the bottom right. Use the HTTPS preview above: the provider SDK
+logs a browser-crypto error on HTTP, where its menu did not finish loading during
+verification. The loader and account/position attributes are in
+`web/themes/custom/dynetx/dynetx.libraries.yml`.
 
 ## Read-only regression checks
 

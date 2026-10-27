@@ -1,5 +1,5 @@
 global:
-  version: 2.8
+  version: 2.9
   css:
     theme:
       # The source stylesheet owns font faces and public-site presentation.
@@ -21,6 +21,12 @@ global:
     js/custom.js: {}
     js/team.js: {}
     js/navigation.js: {}
+    https://cdn.userway.org/widget.js:
+      type: external
+      attributes:
+        async: true
+        data-account: AsYxVDdeyq
+        data-position: 3
   dependencies:
     - core/jquery
     - core/drupal
