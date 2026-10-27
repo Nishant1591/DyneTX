@@ -1,6 +1,0 @@
-./composer.json is valid, but with a few warnings
-See https://getcomposer.org/doc/04-schema.md for details on the schema
-# General warnings
-- require.drupal/core-composer-scaffold : exact version constraints (11.4.11) should be avoided if the package follows semantic versioning
-- require.drupal/core-project-message : exact version constraints (11.4.11) should be avoided if the package follows semantic versioning
-- require.drupal/core-recommended : exact version constraints (11.4.11) should be avoided if the package follows semantic versioning

@@ -1,6 +1,6 @@
 # Complete archive migrations
 
-The five `dyne_*` pipelines consume all 458 node records from the sanitized public archive and the private supplemental catalog. They use the existing bundle names (`dyne_page`, `job`, `leader`, `perspective`, `news`), not sample CSVs. Private/draft/unrelated source entries retain their unpublished status. The obsolete one-off job migration is outside plugin discovery in `data/obsolete-single-job-migration.yml.example`.
+The five pipelines (`dyne_pages`, `dyne_jobs`, `dyne_leaders`, `dyne_perspectives`, and `dyne_news`) consume the 458 records in the retained source snapshot through the `dyne_archive` source plugin. They use the existing bundle names (`dyne_page`, `job`, `leader`, `perspective`, and `news`). The source combines the module's `data/legacy-content.json` with project-root `content-archive/wordpress-supplement.json`, which must have matching archive hashes. These source catalogs remain required for imports. Private, draft, and unrelated source entries retain their unpublished status.
 
 Run after the existing architecture/native-field setup and managed-media import:
 

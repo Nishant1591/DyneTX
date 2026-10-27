@@ -1,7 +1,0 @@
-wp_url,drupal_path,redirect_code,notes
-https://www.dyne-tx.com/,/,200,homepage keep alias
-https://www.dyne-tx.com/about-us/,/about-us,200,keep
-https://www.dyne-tx.com/dmd-copy/,/dmd,301,duplicate of /dmd — redirect
-https://www.dyne-tx.com/perspectives-2/,/perspectives,301,duplicate listing
-https://www.dyne-tx.com/jobs/*,/jobs/*,200,CPT jobs keep pattern
-https://www.dyne-tx.com/perspectives/*,/perspectives/*,200,keep

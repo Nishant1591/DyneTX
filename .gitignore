@@ -1,11 +1,23 @@
-# Local operating-system metadata.
+# Local operating-system metadata and Python bytecode.
 .DS_Store
+__pycache__/
+*.py[cod]
 
 # Local database backups and the original migration archive.
 *.sql.gz
 /dyne-tx-2026-10-01.zip
-
-
-
-# Generated sitemap files contain the current deployment's origin.
+# Generated Drupal caches and environment-specific sitemap files.
+/web/sites/default/files/php/
+/web/sites/default/files/css/
+/web/sites/default/files/js/
 /web/sites/default/files/xmlsitemap/
+
+# Generated reports and screenshots. Keep directory skeletons and the existing
+# source/baseline inputs consumed by maintained regression checks.
+/output/**
+!/output/**/
+!/output/**/.gitkeep
+!/output/pipeline-programs/live-components.json
+!/output/aliases/before.json
+!/output/aliases/current-job-repair.json
+!/output/sitemap/content-before.json

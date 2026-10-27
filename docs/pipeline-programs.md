@@ -6,14 +6,9 @@ composed editorial content into reusable native records and replaces that single
 component in a new page revision. It does not use the older three-row chart or
 the older standalone program pages as its source.
 
-This retains Drupal's existing server-rendered architecture; no external CMS,
-SDK, credentials, webhook or headless preview endpoint is introduced. The
-`headless-cms.config.json` contract scopes the CMS structural validator to this
-model, native rendering adapter and migration. Its environment names describe
-deployment boundaries; this change is applied only to the local DDEV workspace.
-APIs were checked against the installed Drupal 11.4.6 entity, field, render and
-cache implementations on October 26, 2026. External documentation retrieval was
-unavailable during the check.
+This uses Drupal's existing server-rendered architecture. Program records,
+component references, rendering, and cache invalidation remain in the existing
+custom module and theme.
 
 ## Authoring
 
@@ -66,7 +61,8 @@ ddev drush php:script scripts/upgrade-pipeline-programs.php
 ddev exec env DYNE_PIPELINE_APPLY=1 vendor/bin/drush php:script scripts/upgrade-pipeline-programs.php
 ```
 
-The script writes `output/pipeline-programs/dry-run.json` or `migration.json`.
+The script generates `output/pipeline-programs/dry-run.json` or `migration.json`
+when run. Historical generated reports were removed during repository cleanup.
 The state key `dyne_migrate.pipeline_programs` stores exact source revision IDs,
 source SHA-256 and resulting program/component IDs. Rerunning the adoption
 preserves existing records and editorial edits; it does not create duplicates
@@ -88,6 +84,9 @@ Read-only extraction tests:
 ddev exec php scripts/tests/pipeline-program-parser.php
 ```
 
+The parser test uses `output/pipeline-programs/live-components.json` as a
+preserved source fixture. Keep this file when clearing generated test reports.
+
 Real-save migration, rendering and editing tests require a separately created
 database clone. The runner refuses to boot without an explicitly named
 `dyne_pipeline_verify_*` database and switches the connection before Drupal
@@ -97,5 +96,6 @@ boots. Never run save tests transactionally in the working database.
 ddev exec env DYNE_PIPELINE_TEST_DATABASE=dyne_pipeline_verify_example php scripts/tests/pipeline-programs-isolated.php
 ```
 
-Inspect `output/pipeline-programs/isolated-verification.json` for reconciliation,
-revision preservation, form controls, rendered edits and publication checks.
+The isolated runner generates `output/pipeline-programs/isolated-verification.json`
+with reconciliation, revision preservation, form controls, rendered edits and
+publication checks.

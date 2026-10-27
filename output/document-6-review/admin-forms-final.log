@@ -1,9 +1,0 @@
-### Result
-[{"route":"/node/4/edit","error":false,"titleControl":true,"nativeHeroHeading":true,"jsonControls":0,"provenanceControls":0,"oldHeroTitles":0,"mediaPickerButtons":3},{"route":"/node/add/quote","error":false,"titleControl":true,"nativeHeroHeading":false,"jsonControls":0,"provenanceControls":0,"oldHeroTitles":0,"mediaPickerButtons":1},{"route":"/node/add/privacy_policy","error":false,"titleControl":true,"nativeHeroHeading":false,"jsonControls":0,"provenanceControls":0,"oldHeroTitles":0,"mediaPickerButtons":0}]
-### Ran Playwright code
-```js
-await (async page => { const out=[]; for(const route of ["/node/4/edit","/node/add/quote","/node/add/privacy_policy"]) { await page.goto("http://dyne-tx-master.ddev.site"+route); out.push(await page.evaluate(route=>({route,error:document.body.innerText.includes("unexpected error"),titleControl:!!document.querySelector("input[name=\"title[0][value]\"]"),nativeHeroHeading:!!document.querySelector("[name=\"field_hero_first_line[0][value]\"]"),jsonControls:[...document.querySelectorAll("textarea,input")].filter(i=>/field_(items|rows|sections)_json/.test(i.name)).length,provenanceControls:[...document.querySelectorAll("textarea,input")].filter(i=>/field_wp_source_(id|data)/.test(i.name)).length,oldHeroTitles:[...document.querySelectorAll("textarea,input")].filter(i=>/field_title_line[12]/.test(i.name)).length,mediaPickerButtons:[...document.querySelectorAll("input,button")].filter(i=>/Add media/i.test(i.value||i.textContent||"")).length}),route)); } return out; })(page);
-```
-### Page
-- Page URL: http://dyne-tx-master.ddev.site/node/add/privacy_policy
-- Page Title: Create Privacy policy | Dyne Therapeutics

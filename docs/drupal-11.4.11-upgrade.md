@@ -32,8 +32,9 @@ Git LFS video rules, which were restored after Composer initially replaced them.
 
 ## Verification
 
-Evidence is in `output/drupal-11.4.11-upgrade/`. All five existing regression
-commands passed before and after:
+All five existing regression commands passed before and after the October 27
+upgrade. Their generated logs and report snapshots were subsequently removed
+during repository cleanup. Running the commands regenerates their test reports:
 
 ```sh
 ddev drush php:script scripts/tests/rich-text-editors.php
@@ -43,21 +44,20 @@ ddev exec php scripts/tests/structured-inline-rendering.php
 ddev exec php scripts/tests/rich-text-component-fields.php
 ```
 
-Results: 166 CKEditor checks, 1,528 alias checks, 66 content-form checks, and 37
-rendering/component cases. All four generated report JSONs match the baseline.
-The captured fingerprints for configuration, nodes, node data, node revisions,
-aliases, Pathauto states, and redirects are unchanged. Historical report files
-outside the upgrade evidence folder were restored after testing.
+Recorded results: 166 CKEditor checks, 1,528 alias checks, 66 content-form checks,
+and 37 rendering/component cases. All four generated report JSONs matched the
+baseline. Captured fingerprints for configuration, nodes, node data, node
+revisions, aliases, Pathauto states, and redirects were unchanged.
 
 The public verifier passed all 345 routes and 411 additional local assets/links
-with zero failures or missing anchors in both runs. Route results are unchanged.
-The anonymous Webform contact route returns HTTP 200 with expected fields;
-anonymous edit and submission-results routes return HTTP 403. No forms were
-submitted. Drupal's browser status report confirms version 11.4.11.
+with zero failures or missing anchors in both runs. Route results were unchanged.
+The anonymous Webform contact route returned HTTP 200 with expected fields;
+anonymous edit and submission-results routes returned HTTP 403. No forms were
+submitted. Drupal's browser status report confirmed version 11.4.11.
 
 `ddev composer validate --no-check-publish` and `check-platform-reqs` passed.
 Validation emits expected warnings about the user-requested exact core pins.
-The final `composer audit --locked --format=json` reports no advisories and no
+The final `composer audit --locked --format=json` reported no advisories and no
 abandoned packages, compared with 25 advisories before the upgrade. This is a
 dependency advisory check, not a complete application security audit.
 
@@ -86,19 +86,21 @@ environment. No production deployment was performed in this session.
 
 The pre-upgrade local database backup is
 `output/dyne-before-drupal-11.4.11-2026-10-27.sql.gz`; gzip integrity was checked.
-`baseline/` contains the original Composer files, `.htaccess`, and Git revision.
-For a rollback, restore the previous code and dependency lockfile together and
-rebuild caches. Restore the database backup only if necessary, into the intended
-local environment, after preserving any newer editorial work. The upgrade had no
-pending schema updates, so a database restore was not needed or tested.
+The pre-upgrade Git revision is
+`eb2dfe53824246f6808bc2f7e260da462b4a198c`. For a rollback, restore that previous
+code version and its dependency lockfile together, reinstall its dependencies,
+and rebuild caches. Restore the database backup only if necessary, into the
+intended local environment, after preserving any newer editorial work. The
+upgrade had no pending schema updates, so a database restore was not needed or
+tested.
 
 ## Local environment limitations
 
 The container could resolve package metadata but failed certificate validation
 for GitHub archive downloads. The exact locked archives were downloaded with the
 host's trusted TLS configuration, checked for ZIP integrity, and placed in
-Composer's cache. `package-downloads.json` records URLs, versions, and SHA-256
-hashes. TLS verification was never disabled. A fresh container may still need
+Composer's cache. The temporary download inventory was removed during repository
+cleanup. TLS verification was never disabled. A fresh container may still need
 the organization's trusted issuer configured before uncached downloads work.
 
 The Drupal status page also reports a missing Colorbox library and other local

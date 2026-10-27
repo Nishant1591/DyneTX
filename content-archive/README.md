@@ -18,7 +18,8 @@ history. It is local migration data, not a public website endpoint.
   historical map, QR and widget/footer copy stored outside `wp_posts`. These are
   dated source records, not a live social feed or active site configuration.
 
-The standalone inventory is `../output/wordpress-content-inventory.html`.
-The scripts under `../scripts/` regenerate and reconcile these files. Preserve
-the original archive as the source of truth; this catalog is deliberately not
-a copy of WordPress users, credentials or plugin runtime configuration.
+The historical generated HTML inventory and one-time audit reports were removed
+during repository cleanup. This source catalog remains because the maintained
+migration scripts and parser tests read these records. Preserve the original
+archive as the source of truth; this catalog is deliberately not a copy of
+WordPress users, credentials or plugin runtime configuration.
