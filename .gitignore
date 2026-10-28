@@ -4,7 +4,7 @@ __pycache__/
 *.py[cod]
 
 # Local database backups and the original migration archive.
-*.sql.gz
+
 /dyne-tx-2026-10-01.zip
 # Generated Drupal caches and environment-specific sitemap files.
 /web/sites/default/files/php/
