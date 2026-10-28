@@ -119,7 +119,7 @@
       once('dyne-cookie-declaration', '[data-dyne-cookie-declaration]', context).forEach((marker) => {
         if (!window.drupalSettings?.otWebform?.cookiebot_enabled) {
           const note = document.createElement('p');
-          note.textContent = Drupal.t('Use Cookie settings to review or change your cookie preferences. You can also read our privacy policy below.');
+          note.textContent = Drupal.t('You can read our privacy policy below.');
           marker.appendChild(note);
           return;
         }

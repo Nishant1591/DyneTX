@@ -68,13 +68,13 @@ withdraw_message:
   format: dyne_legacy_html
 withdraw_tab_button_label: 'Cookie settings'
 withdraw_action_button_label: 'Withdraw your consent'
-withdraw_enabled: true
+withdraw_enabled: false
 withdraw_button_on_info_popup: false
 save_preferences_button_label: 'Save preferences'
 accept_all_categories_button_label: 'Accept all cookies'
 enable_save_preferences_button: true
 domain_all_sites: false
-settings_tab_enabled: true
+settings_tab_enabled: false
 containing_element: body
 cookie_policy_version: 1.0.0
 cookie_value_disagreed: '0'

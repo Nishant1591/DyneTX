@@ -64,8 +64,7 @@ $native_values = [
   'popup_clicking_confirmation' => FALSE,
   'popup_scrolling_confirmation' => FALSE,
   'method' => 'opt_in',
-  'withdraw_enabled' => TRUE,
-  'settings_tab_enabled' => TRUE,
+  // Keep the site's current settings-tab/withdrawal visibility preference.
   'withdraw_tab_button_label' => 'Cookie settings',
   'withdraw_action_button_label' => 'Withdraw your consent',
   'withdraw_message.value' => '<h2>This website uses cookies</h2><p>You can withdraw your consent and review your cookie preferences.</p>',
