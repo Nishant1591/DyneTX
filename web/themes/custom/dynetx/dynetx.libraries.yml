@@ -1,5 +1,5 @@
 global:
-  version: 2.9
+  version: 2.17
   css:
     theme:
       # The source stylesheet owns font faces and public-site presentation.
@@ -41,3 +41,9 @@ exit-modal:
   dependencies:
     - core/jquery
     - core/once
+
+perspectives:
+  version: 1.2
+  css:
+    theme:
+      css/perspectives.css: {}

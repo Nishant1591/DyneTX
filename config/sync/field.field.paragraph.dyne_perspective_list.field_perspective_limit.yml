@@ -1,0 +1,25 @@
+uuid: da91c2c9-151d-4963-b16e-a0f5334ff4f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_perspective_limit
+    - paragraphs.paragraphs_type.dyne_perspective_list
+id: paragraph.dyne_perspective_list.field_perspective_limit
+field_name: field_perspective_limit
+entity_type: paragraph
+bundle: dyne_perspective_list
+label: 'Maximum perspectives'
+description: 'Maximum published perspectives shown, including the featured story. Older public article records remain available.'
+required: false
+translatable: true
+default_value:
+  -
+    value: 10
+default_value_callback: ''
+settings:
+  min: 1
+  max: 100
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,9 +1,10 @@
 {{ dyne_list_cache }}
 <div class="dyne-legacy-content">
   {% for policy in dyne_records %}
+    {% if not loop.first %}<hr class="container mt-5">{% endif %}
     <section id="{{ policy.anchor }}" class="container-fluid section page-intro"><div class="container">
-      {% if loop.first %}<h1 class="h2 h2-new-sm h2-new-thin">{{ policy.title }}</h1>{% else %}<h2 class="h2 h2-new-sm h2-new-thin">{{ policy.title }}</h2>{% endif %}
-      <p><i>{{ 'Last Updated:'|t }} {{ policy.date }}</i></p>{{ policy.body }}
+      {% if loop.first %}<h1 class="h2 h2-new-sm h2-new-thin mb-4 pb-xl-2">{{ policy.title }}</h1>{% else %}<h2 class="h2 h2-new-sm h2-new-thin mb-4 pb-xl-2">{{ policy.title }}</h2>{% endif %}
+      <p><i>{{ 'Last Updated:'|t }} {% if policy.date %}{{ policy.date|date('F j, Y', 'UTC') }}{% endif %}</i></p>{{ policy.body }}
     </div></section>
   {% endfor %}
 </div>

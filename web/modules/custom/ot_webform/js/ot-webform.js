@@ -36,7 +36,7 @@
       input.value = value;
       input.dispatchEvent(new Event('input', { bubbles: true }));
       input.dispatchEvent(new Event('change', { bubbles: true }));
-      const wrapper = input.closest('.ot-form-field, .ot-form-group, [class*="form-field"], [class*="form-row"]');
+      const wrapper = input.closest('.ot-el, .ot-form-field, .ot-form-group, [class*="form-field"], [class*="form-row"]');
       // Never hide unrelated required questions in a shared provider wrapper.
       if (wrapper && wrapper !== form && wrapper.querySelectorAll('input, select, textarea').length === 1) wrapper.hidden = true;
       else {
@@ -68,10 +68,10 @@
         }
         activeEmbed = marker;
         const status = message(marker, Drupal.t('Loading form…'));
+        // OneTrust's published inline definitions target these container IDs.
+        // collection_point_id is the form's GUID, not a DOM element ID.
         const container = document.getElementById(profile === 'dm1' ? 'ot-container-corpdm1' : 'ot-container') || marker;
-        const target = document.getElementById(collectionPoint) || document.createElement('div');
-        target.id = collectionPoint;
-        if (!target.isConnected) container.appendChild(target);
+        const pointId = collectionPoint.replace(/^ot-/, '');
         let loaded = false;
         let confirmed = false;
         let submitted = false;
@@ -83,7 +83,7 @@
           observer?.disconnect();
         };
         const inspect = () => {
-          const form = target.querySelector('form[data-ot-cp-id], form') || container.querySelector('form[data-ot-cp-id]') || document.querySelector(`form[data-ot-cp-id="${id}"]`);
+          const form = container.querySelector(`form[data-ot-cp-id="${pointId}"]`) || document.querySelector(`form[data-ot-cp-id="${pointId}"]`);
           if (!form || form === providerForm) return;
           providerForm = form;
           populate(form, config, marker);
@@ -111,7 +111,7 @@
         script.addEventListener('error', unavailable, { once: true });
         script.addEventListener('load', () => {
           if (window.OneTrust?.webform?.InstallCP) {
-            window.OneTrust.webform.InstallCP(collectionPoint, inspect);
+            window.OneTrust.webform.InstallCP(pointId, inspect);
           }
           inspect();
         }, { once: true });

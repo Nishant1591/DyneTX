@@ -1,0 +1,43 @@
+{
+  "verified_on": "2026-10-28",
+  "records": [
+    {
+      "node_id": 353,
+      "title": "FSHD DAY",
+      "source_id": 1124,
+      "components": [
+        {
+          "target_id": "327",
+          "target_revision_id": "641"
+        },
+        {
+          "target_id": "328",
+          "target_revision_id": "2293"
+        }
+      ],
+      "revision_id": "1945",
+      "alias": "/fshd-day",
+      "verified_live_url": "https://www.dyne-tx.com/fshd-day/",
+      "source_behavior": "Empty public page with a hero-secondary shell; recovered sections remain stored in Drupal."
+    },
+    {
+      "node_id": 354,
+      "title": "Our Focus",
+      "source_id": 1211,
+      "components": [
+        {
+          "target_id": "329",
+          "target_revision_id": "643"
+        },
+        {
+          "target_id": "330",
+          "target_revision_id": "2298"
+        }
+      ],
+      "revision_id": "1946",
+      "alias": "/our-focus",
+      "verified_live_url": "https://www.dyne-tx.com/our-focus/",
+      "source_behavior": "Empty public page with a hero-secondary shell; recovered sections remain stored in Drupal."
+    }
+  ]
+}

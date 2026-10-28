@@ -1,0 +1,19 @@
+dyne_migrate.legacy_statistics:
+  path: '/wpa-stats-type/{type}'
+  defaults:
+    _controller: '\Drupal\dyne_migrate\Controller\LegacyPublicArchiveController::statistics'
+    _title_callback: '\Drupal\dyne_migrate\Controller\LegacyPublicArchiveController::statisticsTitle'
+  requirements:
+    _access: 'TRUE'
+    type: 'android|chrome|firefox|iphone|linux|macintosh|safari|view|windows'
+  methods: [GET, HEAD]
+
+dyne_migrate.legacy_quote:
+  path: '/wb_quotes/{slug}'
+  defaults:
+    _controller: '\Drupal\dyne_migrate\Controller\LegacyPublicArchiveController::quote'
+    _title_callback: '\Drupal\dyne_migrate\Controller\LegacyPublicArchiveController::quoteTitle'
+  requirements:
+    _access: 'TRUE'
+    slug: 'oxana-beskrovnaya|deb-feldman|tim-weeden|cody-desjardins'
+  methods: [GET, HEAD]

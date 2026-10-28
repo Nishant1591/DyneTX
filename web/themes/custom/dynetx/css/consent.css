@@ -6,6 +6,37 @@
   box-shadow: 0 30px 70px rgba(0, 0, 0, .3);
   font: 15px/24px sans-serif;
   text-align: left;
+  max-height: none;
+  overflow: visible;
+}
+
+#sliding-popup .eu-cookie-compliance-banner,
+#sliding-popup .eu-cookie-withdraw-banner {
+  max-height: 85vh;
+  max-height: 85dvh;
+  overflow-y: auto;
+}
+
+#sliding-popup .eu-cookie-withdraw-tab {
+  pointer-events: auto;
+}
+
+/* Keep the closed panel's control anchored to the viewport independently of
+ * the plugin's animated pixel offset, including a resize during dismissal. */
+body:not(.eu-cookie-compliance-popup-open) #sliding-popup.sliding-popup-bottom .eu-cookie-withdraw-tab {
+  position: fixed;
+  top: auto;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Native JS hides these panels semantically and slides by the banner height.
+ * Honor that state even during viewport resizing or full-page capture. */
+#sliding-popup .eu-cookie-compliance-banner[aria-hidden="true"],
+#sliding-popup .eu-cookie-withdraw-banner[aria-hidden="true"] {
+  visibility: hidden;
+  pointer-events: none;
 }
 
 #sliding-popup .eu-cookie-compliance-content {
@@ -99,14 +130,13 @@
 }
 
 @media (max-width: 1279px) {
-  /* Keep the native animated bottom offset intact: the transparent viewport
-   * wrapper centers the card and still slides away when consent is recorded. */
+  /* Native withdrawal JS calculates its offset from the banner height. Keep
+   * the wrapper at that same height so its reopen tab stays at the viewport edge. */
   #sliding-popup.sliding-popup-bottom {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh !important;
-    height: 100dvh !important;
+    height: auto;
     max-height: none;
     background: transparent !important;
     box-shadow: none;

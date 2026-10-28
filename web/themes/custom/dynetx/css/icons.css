@@ -31,3 +31,10 @@
   font-family: 'Font Awesome 6 Free';
   font-weight: 900;
 }
+
+/* The source publication arrow uses the same public glyph in a Pro family.
+ * Resolve it from the bundled licensed Free face instead of a missing font. */
+.force-publications h3 ~ .pub-item a::before {
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+}

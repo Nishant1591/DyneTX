@@ -45,7 +45,7 @@ class OtWebformConfigForm extends ConfigFormBase {
     foreach (['contact' => $this->t('Contact form'), 'dm1' => $this->t('DM1 updates form')] as $profile => $title) {
       $prefix = $profile === 'dm1' ? 'dm1_' : '';
       $form[$profile] = ['#type' => 'details', '#title' => $title, '#open' => TRUE];
-      foreach (['prod_id' => $this->t('Production data ID'), 'staging_id' => $this->t('Test data ID'), 'collection_point_id' => $this->t('Collection point element ID')] as $key => $label) {
+      foreach (['prod_id' => $this->t('Production data ID'), 'staging_id' => $this->t('Test data ID'), 'collection_point_id' => $this->t('Collection point ID')] as $key => $label) {
         $name = $prefix . $key;
         $form[$profile][$name] = [
           '#type' => 'textfield',
@@ -74,6 +74,19 @@ class OtWebformConfigForm extends ConfigFormBase {
       '#default_value' => $config->get('thank_you_text'),
       '#required' => TRUE,
     ];
+    $form['consent'] = ['#type' => 'details', '#title' => $this->t('Cookie consent'), '#open' => FALSE];
+    $form['consent']['cookiebot_enabled'] = [
+      '#type' => 'checkbox',
+      '#title' => $this->t('Load Cookiebot consent banner'),
+      '#default_value' => (bool) $config->get('cookiebot_enabled'),
+      '#description' => $this->t('Use only after this deployment domain is approved for the configured Cookiebot domain group. Replaces the native Drupal banner while enabled.'),
+    ];
+    $form['consent']['cookiebot_id'] = [
+      '#type' => 'textfield',
+      '#title' => $this->t('Cookiebot domain group ID'),
+      '#default_value' => $config->get('cookiebot_id'),
+      '#maxlength' => 36,
+    ];
     return parent::buildForm($form, $form_state);
   }
 
@@ -99,6 +112,9 @@ class OtWebformConfigForm extends ConfigFormBase {
         }
       }
     }
+    if ($form_state->getValue('cookiebot_enabled') && !preg_match('/^[a-f0-9]{8}-(?:[a-f0-9]{4}-){3}[a-f0-9]{12}$/iD', trim((string) $form_state->getValue('cookiebot_id')))) {
+      $form_state->setErrorByName('cookiebot_id', $this->t('Provide a valid Cookiebot domain group UUID.'));
+    }
   }
 
   /**
@@ -106,10 +122,11 @@ class OtWebformConfigForm extends ConfigFormBase {
    */
   public function submitForm(array &$form, FormStateInterface $form_state): void {
     $config = $this->config('ot_webform.settings');
-    foreach (['environment', 'prod_id', 'staging_id', 'collection_point_id', 'dm1_prod_id', 'dm1_staging_id', 'dm1_collection_point_id', 'source_platform', 'data_source_prod', 'data_source_stage', 'gtm_event', 'thank_you_text'] as $key) {
+    foreach (['environment', 'prod_id', 'staging_id', 'collection_point_id', 'dm1_prod_id', 'dm1_staging_id', 'dm1_collection_point_id', 'source_platform', 'data_source_prod', 'data_source_stage', 'gtm_event', 'thank_you_text', 'cookiebot_id'] as $key) {
       $config->set($key, trim((string) $form_state->getValue($key)));
     }
-    $config->set('enabled', (bool) $form_state->getValue('enabled'))->save();
+    $config->set('enabled', (bool) $form_state->getValue('enabled'))
+      ->set('cookiebot_enabled', (bool) $form_state->getValue('cookiebot_enabled'))->save();
     parent::submitForm($form, $form_state);
   }
 

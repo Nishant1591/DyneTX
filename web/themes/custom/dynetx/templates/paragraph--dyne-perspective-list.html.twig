@@ -1,10 +1,55 @@
+{{ attach_library('dynetx/perspectives') }}
 {{ dyne_list_cache }}
+{{ dyne_perspective_list_cache }}
+{% macro card(story) %}
+  <div class="col-12 col-sm-6 col-md-4 card-wrapper">
+    <div class="pub-date">{{ story.date }} | {{ story.category }}</div>
+    <div class="card">
+      <div class="card-img-top"{% if story.photo.url %} style="background-image: url('{{ story.photo.url|escape('css') }}')"{% endif %}></div>
+      <div class="card-body">
+        <h4 class="card-title">{{ story.title }}</h4>
+        {% if story.summary %}<div class="card-text">{{ story.summary }}</div>{% endif %}
+        <div>
+          <p class="card-text">{{ story.author }}</p>
+          <a href="{{ story.url }}" class="btn btn-primary stretched-link"{% if story.external %} target="_blank" rel="noopener" title="{{ 'opens in a new window'|t }}"{% endif %}>{{ story.action }}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endmacro %}
 <div class="dyne-legacy-content">
   {{ dyne_list_intro }}
-  <section class="container-fluid section perspective-articles"><div class="container"><div class="row">
-    {% for story in dyne_records %}
-      <article class="col-12 col-md-6 card"><img src="{{ story.photo.url }}" alt="{{ story.photo.alt }}" class="card-img-top" loading="lazy"><div class="card-body"><h2 class="h3">{{ story.title }}</h2><p>{{ story.author }}</p><p>{{ story.summary }}</p><a class="btn btn-primary" href="{{ story.url }}">{{ 'Read more'|t }}</a></div></article>
-    {% endfor %}
-  </div></div></section>
+  {% if dyne_perspective_featured %}
+    {% set story = dyne_perspective_featured %}
+    <div class="container-fluid section bg-light-blue perspective-top-article">
+      <div class="bg"></div>
+      <div class="container"><div class="row">
+        <div class="col-12 col-sm-5 pub-info">
+          <div class="pub-date">{{ story.featured_date }}</div>
+          <div class="pub-announce">{{ story.title }}</div>
+          {% if story.photo.url %}<img src="{{ story.photo.url }}" alt="{{ story.photo.alt }}" class="img-fluid d-sm-none" loading="lazy">{% endif %}
+          <div class="pub-autor">{{ story.author }}</div>
+          <a href="{{ story.url }}" class="btn btn-primary"{% if story.external %} target="_blank" rel="noopener"{% endif %}>{{ story.action }}</a>
+        </div>
+        <div class="col-12 col-sm-7">
+          {% if story.photo.url %}<img src="{{ story.photo.url }}" alt="{{ story.photo.alt }}" class="img-fluid d-none d-sm-block" loading="lazy">{% endif %}
+        </div>
+      </div></div>
+    </div>
+  {% endif %}
+  <div class="container-fluid section perspective-articles"><div class="container">
+    <div class="row">
+      {% for story in dyne_perspective_visible %}{{ _self.card(story) }}{% endfor %}
+    </div>
+    {% if dyne_perspective_additional %}
+      <div class="row collapse" id="{{ dyne_perspective_collapse_id }}">
+        {% for story in dyne_perspective_additional %}{{ _self.card(story) }}{% endfor %}
+      </div>
+      <div class="collapse-hdr">
+        <div class="red-label">{{ 'Additional content'|t }}</div>
+        <button class="btn btn-primary btn-plus-collapse stretched-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#{{ dyne_perspective_collapse_id }}" aria-expanded="false" aria-controls="{{ dyne_perspective_collapse_id }}"><i></i><span class="sr-only">{{ 'More/Less content'|t }}</span></button>
+      </div>
+    {% endif %}
+  </div></div>
   {{ dyne_list_outro }}
 </div>

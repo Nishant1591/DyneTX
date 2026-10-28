@@ -15,6 +15,14 @@ from urllib.parse import quote, urljoin, urlsplit, unquote
 from urllib.request import Request, HTTPRedirectHandler, build_opener
 
 ROOT = Path(__file__).resolve().parent.parent
+TEXT_CONTENT_TYPES = {'text/html', 'application/xhtml+xml', 'text/css'}
+
+
+def read_text_response(response, parse):
+    """Never read media bodies into the HTML/CSS parser after a redirect."""
+    if not parse or response.headers.get_content_type() not in TEXT_CONTENT_TYPES:
+        return ''
+    return response.read().decode('utf-8', errors='replace')
 
 
 class Page(HTMLParser):
@@ -61,10 +69,11 @@ def main():
         url = quote(urljoin(base + '/', path), safe=':/?=&%#@+')
         try:
             with build_opener(LocalRedirects()).open(Request(url, headers={'User-Agent': 'DyneLocalMigrationQA/1.0'}), timeout=30) as response:
-                body = response.read().decode('utf-8', errors='replace') if parse else ''
+                content_type = response.headers.get_content_type()
+                body = read_text_response(response, parse)
                 page = Page()
-                if parse:
-                    if urlsplit(url).path.endswith('.css'):
+                if parse and content_type in TEXT_CONTENT_TYPES:
+                    if content_type == 'text/css':
                         for groups in re.findall(r'''url\(\s*(?:"([^"]*)"|'([^']*)'|([^)]*))\s*\)''', body):
                             value = next((part for part in groups if part), '').strip()
                             if value and not value.startswith(('data:', '#')):
@@ -72,6 +81,7 @@ def main():
                     else:
                         page.feed(body)
                 return {'path': path, 'status': response.status, 'final_url': response.url, 'h1': page.h1,
+                        'content_type': content_type,
                         'error_page': 'The website encountered an unexpected error' in body,
                         'assets': sorted(page.assets), 'links': sorted(page.links), 'ids': sorted(page.ids)}
         except (HTTPError, URLError, TimeoutError) as error:

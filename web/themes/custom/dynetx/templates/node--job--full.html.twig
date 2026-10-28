@@ -13,34 +13,33 @@
 </section>
 {% endif %}
 
-<article{{ attributes.addClass('dyne-job-detail') }}>
-  <h1 class="dyne-job-detail__title">{{ label }}</h1>
+<div class="container-fluid section dyne-job-section">
+<article{{ attributes.addClass('container', 'jobs_container', 'dyne-job-detail') }}>
+  <h1 class="h2 dyne-job-detail__title">{{ label }}</h1>
 
   {% if dyne_apply_url %}
-    <div class="dyne-job-detail__apply dyne-job-detail__apply--top">
+    <div class="jobs_button_container dyne-job-detail__apply dyne-job-detail__apply--top">
       <a class="btn btn-primary btn-lg" href="{{ dyne_apply_url }}" target="_blank" rel="noopener">{{ 'Apply for this job'|t }}</a>
+      <br><br>
     </div>
   {% endif %}
 
-  <div class="dyne-job-detail__meta">
-    {% if dyne_job_department %}
-      <p><strong>{{ 'Department:'|t }}</strong> {{ dyne_job_department }}</p>
-    {% endif %}
-    {% if dyne_job_location %}
-      <p><strong>{{ 'Location:'|t }}</strong> {{ dyne_job_location }}</p>
-    {% endif %}
-    {% if dyne_job_workplace %}
-      <p class="dyne-job-workplace"><strong>{{ 'Workplace arrangement:'|t }}</strong> {{ dyne_job_workplace }}</p>
-    {% endif %}
-  </div>
+  {% set department = node.field_department_text.value ?: dyne_job_department %}
+  {% if department %}
+    <b>{{ 'Department:'|t }} {{ department }}</b><br><br>
+  {% endif %}
+  {% if dyne_job_location %}
+    <b>{{ 'Location:'|t }} {{ dyne_job_location }}</b><br><br>
+  {% endif %}
 
   <div class="dyne-job-detail__body">
     {{ content.field_body_text }}
   </div>
 
   {% if dyne_apply_url %}
-    <div class="dyne-job-detail__apply dyne-job-detail__apply--bottom">
+    <div class="jobs_form dyne-job-detail__apply dyne-job-detail__apply--bottom">
       <a class="btn btn-primary btn-lg" href="{{ dyne_apply_url }}" target="_blank" rel="noopener">{{ 'Apply for this job'|t }}</a>
+      <br><br>
     </div>
   {% endif %}
 
@@ -56,3 +55,4 @@
     </nav>
   {% endif %}
 </article>
+</div>

@@ -1,0 +1,847 @@
+{
+  "verified_on": "2026-10-28",
+  "scope": "Exactly reviewed active native text fields and the legacy article hero selector. Preserve all old revisions, archived field_body_text values, links and unrelated fields.",
+  "records": [
+    {
+      "node_id": 120,
+      "alias": "/dmd-copy",
+      "title": "DMD Copy",
+      "bundle": "dyne_page",
+      "source_url": "https://www.dyne-tx.com/dmd-copy/",
+      "patches": [
+        {
+          "entity_type": "paragraph",
+          "id": 1547,
+          "bundle": "dyne_article_section",
+          "field": "field_section_body",
+          "format": "dyne_legacy_html",
+          "before_sha256": "7b40fc952d8f896d18c8b5813d4c96a4a1cb4ef6067b90b7550f682414682f41",
+          "after_sha256": "ab5fe1aef9cb5c0ebb06f07b3d7dba1ed6f750fa3e82e183a361192bcaff2c3c",
+          "replacements": [
+            {
+              "from": "Diana shares her family's journey",
+              "to": "Diana shares her family’s journey",
+              "occurrences": 1
+            }
+          ]
+        },
+        {
+          "entity_type": "paragraph",
+          "id": 1590,
+          "bundle": "dyne_article_section",
+          "field": "field_section_body",
+          "format": "dyne_legacy_html",
+          "before_sha256": "0a82f003e9b02f49fd0855775f511bedaa43c635bf728c3bc43b10526c60353c",
+          "after_sha256": "2782f1afaa24052d6f87945afa494bf776a032feadbc01d75d1a473c29b4be3e",
+          "replacements": [
+            {
+              "from": "Charley's Fund",
+              "to": "Charley’s Fund",
+              "occurrences": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "node_id": 12,
+      "alias": "/fshd",
+      "title": "FSHD",
+      "bundle": "dyne_page",
+      "source_url": "https://www.dyne-tx.com/fshd/",
+      "patches": [
+        {
+          "entity_type": "paragraph",
+          "id": 957,
+          "bundle": "dyne_article_section",
+          "field": "field_section_body",
+          "format": "dyne_legacy_html",
+          "before_sha256": "0635ca06865f9ab1111b35ffba829f114af910e8d698373de36c7c86aaecbf9d",
+          "after_sha256": "2518212157a164eb300a455b62c23ae096cc215da74ed39f1aa5caafc395f0d1",
+          "replacements": [
+            {
+              "from": "<p>\"If",
+              "to": "<p>“If",
+              "occurrences": 1
+            },
+            {
+              "from": "me.\"</p>",
+              "to": "me.”</p>",
+              "occurrences": 1
+            }
+          ]
+        },
+        {
+          "entity_type": "paragraph",
+          "id": 965,
+          "bundle": "dyne_article_section",
+          "field": "field_section_body",
+          "format": "dyne_legacy_html",
+          "before_sha256": "2a3e00cbb062ae30763a4d273525748bea4dfc5df4a2c7d3958ce22485d05a3b",
+          "after_sha256": "3916a32ca0b4ce2f379a511f530ef2300ff99e64a14e91c84118194708fb25b3",
+          "replacements": [
+            {
+              "from": "<p>\"So",
+              "to": "<p>“So",
+              "occurrences": 1
+            },
+            {
+              "from": "I'm very, very excited.",
+              "to": "I’m very, very excited.",
+              "occurrences": 1
+            },
+            {
+              "from": "excited.\"</p>",
+              "to": "excited.”</p>",
+              "occurrences": 1
+            }
+          ]
+        },
+        {
+          "entity_type": "paragraph",
+          "id": 973,
+          "bundle": "dyne_article_section",
+          "field": "field_section_body",
+          "format": "dyne_legacy_html",
+          "before_sha256": "0441459e1b423278b143b0c0e6f5923f15e520ec67bc8190d7c6c29c4b0175ca",
+          "after_sha256": "aaeabc73facfe953de14490e026e5a86e348a59091579eb7834307134f54c8ef",
+          "replacements": [
+            {
+              "from": "<p>\"I would",
+              "to": "<p>“I would",
+              "occurrences": 1
+            },
+            {
+              "from": "tissue.\"</p>",
+              "to": "tissue.”</p>",
+              "occurrences": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "node_id": 10,
+      "alias": "/dmd",
+      "title": "DMD",
+      "bundle": "dyne_page",
+      "source_url": "https://www.dyne-tx.com/dmd/",
+      "patches": [
+        {
+          "entity_type": "paragraph",
+          "id": 874,
+          "bundle": "dyne_article_section",
+          "field": "field_section_body",
+          "format": "dyne_legacy_html",
+          "before_sha256": "7b40fc952d8f896d18c8b5813d4c96a4a1cb4ef6067b90b7550f682414682f41",
+          "after_sha256": "ab5fe1aef9cb5c0ebb06f07b3d7dba1ed6f750fa3e82e183a361192bcaff2c3c",
+          "replacements": [
+            {
+              "from": "Diana shares her family's journey",
+              "to": "Diana shares her family’s journey",
+              "occurrences": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "node_id": 22,
+      "alias": "/terms-of-service",
+      "title": "Terms of Service",
+      "bundle": "dyne_page",
+      "source_url": "https://www.dyne-tx.com/terms-of-service/",
+      "patches": [
+        {
+          "entity_type": "paragraph",
+          "id": 1206,
+          "bundle": "dyne_article_section",
+          "field": "field_section_body",
+          "format": "dyne_legacy_html",
+          "before_sha256": "d4e8235e39225fb1b7e9e82d86f208d7a13ec55f75bfc3acc9e4e9bf1b15c036",
+          "after_sha256": "4b09e92a8e11d45d31be6e6ae59e6d25a521ba57605c38af881b51741bc98f0f",
+          "replacements": [
+            {
+              "from": "Dyne's clinical trials",
+              "to": "Dyne’s clinical trials",
+              "occurrences": 1
+            },
+            {
+              "from": "as of 2026-09-15 (the",
+              "to": "as of August 26, 2026 (the",
+              "occurrences": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "node_id": 17,
+      "alias": "/careers-culture",
+      "title": "Careers + Culture",
+      "bundle": "dyne_page",
+      "source_url": "https://www.dyne-tx.com/careers-culture/",
+      "patches": [
+        {
+          "entity_type": "paragraph",
+          "id": 1083,
+          "bundle": "dyne_article_section",
+          "field": "field_section_body",
+          "format": "dyne_legacy_html",
+          "before_sha256": "16dedc6dd51784e77e607fff1250b7188381960c079e3fa90896178a4561376f",
+          "after_sha256": "78ca35d301a408f3b112dd865df08cb8aa54d3bb9433cd4778196b8ff00ca8a3",
+          "replacements": [
+            {
+              "from": "official \"<strong",
+              "to": "official “<strong",
+              "occurrences": 1
+            },
+            {
+              "from": "</strong>\" email address.",
+              "to": "</strong>” email address.",
+              "occurrences": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "node_id": 329,
+      "alias": "/new-one-year-efficacy-data-on-z-basivarsen-dyne-101-for-dm1",
+      "title": "New One-Year Efficacy Data on Z-Basivarsen (DYNE-101) for DM1",
+      "bundle": "dyne_page",
+      "source_url": "https://www.dyne-tx.com/new-one-year-efficacy-data-on-z-basivarsen-dyne-101-for-dm1/",
+      "patches": [
+        {
+          "entity_type": "paragraph",
+          "id": 1789,
+          "bundle": "dyne_article_section",
+          "field": "field_section_body",
+          "format": "dyne_legacy_html",
+          "before_sha256": "8865ec9b8cf2a3872f52a39cc7ba17a5ad069fedde219a804876a856233e251a",
+          "after_sha256": "b9604287e57ce4ba1a074c9545a4e6a2d260dd5c32376b4b199da0ee1d39ce23",
+          "replacements": [
+            {
+              "from": "\"natural history\"",
+              "to": "“natural history”",
+              "occurrences": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "node_id": 291,
+      "alias": "/early-stage-fshd-clinical-trial",
+      "title": "Dyne Receives FDA Clearance to Start Early-Stage FSHD Clinical Trial",
+      "bundle": "dyne_page",
+      "source_url": "https://www.dyne-tx.com/early-stage-fshd-clinical-trial/",
+      "patches": [
+        {
+          "entity_type": "paragraph",
+          "id": 1722,
+          "bundle": "dyne_article_section",
+          "field": "field_section_body",
+          "format": "dyne_legacy_html",
+          "before_sha256": "5670012f42d4967b65d6a3ca05c199f8c3172a245887e6910652b9cafb99b59d",
+          "after_sha256": "178ba594cb0cb4b702b8de57f4b27476f8659a59b9945b59620199f26f3cea4d",
+          "replacements": [
+            {
+              "from": "Dyne's proprietary",
+              "to": "Dyne’s proprietary",
+              "occurrences": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "node_id": 79,
+      "alias": "/perspectives-2",
+      "title": "Perspectives Article",
+      "bundle": "dyne_page",
+      "source_id": 1692,
+      "source_url": "https://www.dyne-tx.com/perspectives-2/",
+      "patches": [
+        {
+          "entity_type": "node",
+          "id": 79,
+          "bundle": "dyne_page",
+          "field": "field_hero_classes",
+          "kind": "values",
+          "before_values": [],
+          "after_values": [
+            {
+              "value": "perspectives"
+            }
+          ]
+        },
+        {
+          "entity_type": "paragraph",
+          "id": 1250,
+          "bundle": "dyne_article_section",
+          "field": "field_section_body",
+          "format": "dyne_legacy_html",
+          "before_sha256": "5942e9bd29286edeaed9141b7c0f3e6baa7bfa74b1392bb3c4272bf711353642",
+          "after_sha256": "eb1f0bb27c53261566bb7e0a71dc7ce75ff4bbe0f97df3a25a9a0d722048aada",
+          "replacements": [
+            {
+              "from": "Q&A; with",
+              "to": "Q&A with",
+              "occurrences": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "node_id": 474,
+      "bundle": "privacy_policy",
+      "source_url": "https://www.dyne-tx.com/privacy-policy/",
+      "patches": [
+        {
+          "entity_type": "paragraph",
+          "id": 2008,
+          "bundle": "dyne_article_section",
+          "field": "field_section_body",
+          "format": "dyne_legacy_html",
+          "before_sha256": "e73dbbdb417453b351aa3fddc8b970d1d204936d2771b6475e1cc8054060e86a",
+          "after_sha256": "8ed3947739804ef5c11975755f605f34a3c2e44390f908951589f25812259abf",
+          "replacements": [
+            {
+              "from": "Geneva - SWITZERLAND",
+              "to": "Geneva – SWITZERLAND",
+              "occurrences": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "node_id": 8,
+      "alias": "/our-commitment",
+      "bundle": "dyne_page",
+      "source_id": 2009,
+      "source_url": "https://www.dyne-tx.com/our-commitment/",
+      "patches": [
+        {
+          "entity_type": "paragraph",
+          "id": 704,
+          "bundle": "dyne_article_section",
+          "field": "field_section_body",
+          "format": "dyne_legacy_html",
+          "before_sha256": "3ce61f748d68a8508f3c829d3f0e12deab5a37dd40de25d0be9c645bda2a47c3",
+          "after_sha256": "dfb5a6d1647dd6a3ed3d41704abac8ceaf26e475e5df7bb2549b137306a0888c",
+          "replacements": [
+            {
+              "from": "'More Than You Can Imagine.'",
+              "to": "‘More Than You Can Imagine.’",
+              "occurrences": 1
+            },
+            {
+              "from": "more than you can imagine.\"",
+              "to": "more than you can imagine.”",
+              "occurrences": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "node_id": 266,
+      "alias": "/jobs/director-qa-gmp-operations",
+      "bundle": "job",
+      "source_url": "https://www.dyne-tx.com/jobs/director-qa-gmp-operations/",
+      "audit_id": "AUD-065",
+      "patches": [
+        {
+          "entity_type": "node",
+          "id": 266,
+          "bundle": "job",
+          "field": "field_role_summary",
+          "format": "dyne_legacy_html",
+          "before_sha256": "fb517d4473300c09b575dd5986fac890e1b4b267b3f5c346864a15a1ff3df9c4",
+          "after_sha256": "1cfa584fd81f9be4a5bc6130463a7496a50b759f1a2233139e2491124a873171",
+          "replacements": [
+            {
+              "from": "f deliverables within the role's purview. </span><span data-c",
+              "to": "f deliverables within the role’s purview. </span><span data-c",
+              "occurrences": 1
+            }
+          ],
+          "source_text_pairs": [
+            {
+              "local": "The Director of QA GMP Operations is responsible for management of GMP quality within our external manufacturing operations globally and internal GMP operations for development and commercial programs. The Director will also work closely with internal business stakeholders as well as internal Quality function to deliver outcomes to advance programs within compliance. The Director is responsible for oversight of QA activities and ensuring the quality of deliverables within the role's purview.",
+              "source": "The Director of QA GMP Operations is responsible for management of GMP quality within our external manufacturing operations globally and internal GMP operations for development and commercial programs. The Director will also work closely with internal business stakeholders as well as internal Quality function to deliver outcomes to advance programs within compliance. The Director is responsible for oversight of QA activities and ensuring the quality of deliverables within the role’s purview."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "node_id": 330,
+      "alias": "/jobs/director-revenue",
+      "bundle": "job",
+      "source_url": "https://www.dyne-tx.com/jobs/director-revenue/",
+      "audit_id": "AUD-066",
+      "patches": [
+        {
+          "entity_type": "node",
+          "id": 330,
+          "bundle": "job",
+          "field": "field_role_summary",
+          "format": "dyne_legacy_html",
+          "before_sha256": "cbe702a75832eb3c2bb2bc41f6698248cc56d723af3a2da2f5cade6adb9173c6",
+          "after_sha256": "89449b58537b9d74d2635032612a08fcb371d5e43aab20f77327eb88dbef1180",
+          "replacements": [
+            {
+              "from": "-parastyle=\"Body\"> the company's revenue recognition function",
+              "to": "-parastyle=\"Body\"> the company’s revenue recognition function",
+              "occurrences": 1
+            }
+          ],
+          "source_text_pairs": [
+            {
+              "local": "The Director, Revenue Accounting leads the company's revenue recognition function for commercial product sales, including gross-to-net (GTN) accounting, rebate and chargeback estimation, and related revenue reporting under U.S. GAAP (ASC 606). This is a highly visible role that partners closely with Commercial, FP&A, and external auditors to ensure accurate, timely, and well-controlled revenue accounting as the company scales. The ideal candidate has deep industry revenue accounting experience, including hands-on knowledge of gross-to-net estimates unique to the specialty pharmaceutical industry.",
+              "source": "The Director, Revenue Accounting leads the company’s revenue recognition function for commercial product sales, including gross-to-net (GTN) accounting, rebate and chargeback estimation, and related revenue reporting under U.S. GAAP (ASC 606). This is a highly visible role that partners closely with Commercial, FP&A, and external auditors to ensure accurate, timely, and well-controlled revenue accounting as the company scales. The ideal candidate has deep industry revenue accounting experience, including hands-on knowledge of gross-to-net estimates unique to the specialty pharmaceutical industry."
+            }
+          ]
+        },
+        {
+          "entity_type": "node",
+          "id": 330,
+          "bundle": "job",
+          "field": "field_education_skills",
+          "format": "dyne_legacy_html",
+          "before_sha256": "d8b936a4f11ee2477413b04575f01a5582626b7285777d74555efe2f38e835a6",
+          "after_sha256": "7b83b79f57ed44ab81ac883e1f02f52dfbab02fd7fe8d2fb5e7d7244ea80309a",
+          "replacements": [
+            {
+              "from": "\"0\",268442635,\"22\"]}'>Bachelor's degree in Accounting</span><",
+              "to": "\"0\",268442635,\"22\"]}'>Bachelor’s degree in Accounting</span><",
+              "occurrences": 1
+            }
+          ],
+          "source_text_pairs": [
+            {
+              "local": "Bachelor's degree in Accounting, Finance, or related field; CPA required.",
+              "source": "Bachelor’s degree in Accounting, Finance, or related field; CPA required."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "node_id": 273,
+      "alias": "/jobs/director-medical-writing",
+      "bundle": "job",
+      "source_url": "https://www.dyne-tx.com/jobs/director-medical-writing/",
+      "audit_id": "AUD-068",
+      "patches": [
+        {
+          "entity_type": "node",
+          "id": 273,
+          "bundle": "job",
+          "field": "field_role_summary",
+          "format": "dyne_legacy_html",
+          "before_sha256": "1f493badc573b35a869a79879e34ffadf21e13df92b920d971ba9f876f9fae1d",
+          "after_sha256": "f6527b83c3c947ded6fe8d5512a22d14cbd5486b8cfb90fe6e07bab042c568fd",
+          "replacements": [
+            {
+              "from": "an><span data-contrast=\"none\">-</span><span data-contrast=\"no",
+              "to": "an><span data-contrast=\"none\">–</span><span data-contrast=\"no",
+              "occurrences": 1
+            }
+          ],
+          "source_text_pairs": [
+            {
+              "local": "The Director, Medical Writing provides strategic leadership and hands-on execution for the development of high-quality, compliant clinical and regulatory documents supporting one or more development programs. This role partners closely with Clinical Development, Clinical Operations, Clinical Pharmacology, Regulatory Affairs, Research, Preclinical, Translational Biomarkers, Program Management, and Medical Affairs to ensure clear, consistent scientific messaging across key submissions to the FDA and global health authorities. Operating with a high degree of independence, the Director drives document planning, authoring, review, and finalization in alignment with company priorities, SOPs, ICH/GCP guidance, and applicable regulatory requirements.",
+              "source": "The Director, Medical Writing provides strategic leadership and hands-on execution for the development of high–quality, compliant clinical and regulatory documents supporting one or more development programs. This role partners closely with Clinical Development, Clinical Operations, Clinical Pharmacology, Regulatory Affairs, Research, Preclinical, Translational Biomarkers, Program Management, and Medical Affairs to ensure clear, consistent scientific messaging across key submissions to the FDA and global health authorities. Operating with a high degree of independence, the Director drives document planning, authoring, review, and finalization in alignment with company priorities, SOPs, ICH/GCP guidance, and applicable regulatory requirements."
+            }
+          ]
+        },
+        {
+          "entity_type": "node",
+          "id": 273,
+          "bundle": "job",
+          "field": "field_additional_job_content",
+          "kind": "values",
+          "before_values": [],
+          "after_values": [
+            {
+              "value": "<p><em>The pay range displayed below is the range of base pay compensation within which the company expects to pay for this role at the time of this posting. Individual compensation depends on a variety of factors, including, but not limited to, prior education and experience, job-related knowledge and demonstrated skills.</em></p>",
+              "format": "dyne_legacy_html"
+            }
+          ],
+          "source_html": "<p><em>The pay range displayed below is the range of base pay compensation within which the company expects to pay for this role at the time of this posting. Individual compensation depends on a variety of factors, including, but not limited to, prior education and experience, job-related knowledge and demonstrated skills.</em></p>",
+          "purpose": "Editable live pay-transparency description placed by the native presentation scaffold."
+        },
+        {
+          "entity_type": "node",
+          "id": 273,
+          "bundle": "job",
+          "field": "field_pay_range_label",
+          "kind": "values",
+          "before_values": [
+            {
+              "value": "MA Pay Range"
+            }
+          ],
+          "after_values": [
+            {
+              "value": "Salary Range"
+            }
+          ],
+          "source_text": "Salary Range"
+        },
+        {
+          "entity_type": "node",
+          "id": 273,
+          "bundle": "job",
+          "field": "field_content_template",
+          "kind": "values",
+          "before_values": [
+            {
+              "value": "<div class=\"content-intro\"><h3>Company Overview:</h3><!--dyne:field_company_overview--><p>Learn more at <a href=\"{{dyne:field_company_website}}\">https://www.dyne-tx.com/</a>, and follow us on <a href=\"{{dyne:field_company_twitter}}\">X</a>, <a href=\"{{dyne:field_company_linkedin}}\">LinkedIn</a> and <a href=\"{{dyne:field_company_facebook}}\">Facebook</a>.</p></div><p><strong>Role Summary:</strong></p><!--dyne:field_role_summary--><p><strong>Primary Responsibilities Include:</strong></p><!--dyne:field_responsibilities--><p><strong>Education and Skills Requirements:</strong></p><!--dyne:field_education_skills--><div class=\"content-pay-transparency\"><div class=\"pay-input\"><div class=\"title\"><!--dyne:field_pay_range_label--></div><div class=\"pay-range\"><span>$<!--dyne:field_pay_range_min--></span><span class=\"divider\">—</span><span>$<!--dyne:field_pay_range_max--> <!--dyne:field_pay_range_currency--></span></div></div></div><div class=\"content-conclusion\"><p> </p>\n<!--dyne:field_compensation_notes-->\n<!--dyne:field_job_disclaimer-->\n<!--dyne:field_equal_opportunity--></div>"
+            }
+          ],
+          "after_values": [
+            {
+              "value": "<div class=\"content-intro\"><h3>Company Overview:</h3><!--dyne:field_company_overview--><p>Learn more at <a href=\"{{dyne:field_company_website}}\">https://www.dyne-tx.com/</a>, and follow us on <a href=\"{{dyne:field_company_twitter}}\">X</a>, <a href=\"{{dyne:field_company_linkedin}}\">LinkedIn</a> and <a href=\"{{dyne:field_company_facebook}}\">Facebook</a>.</p></div><p> </p>\n<p><strong>Role Summary:</strong></p><!--dyne:field_role_summary--><p><strong>Primary Responsibilities Include:</strong></p><!--dyne:field_responsibilities--><p><strong>Education and Skills Requirements:</strong></p><!--dyne:field_education_skills--><p> </p><div class=\"content-pay-transparency\"><div class=\"pay-input\"><div class=\"description\"><!--dyne:field_additional_job_content--></div><div class=\"title\"><!--dyne:field_pay_range_label--></div><div class=\"pay-range\"><span>$<!--dyne:field_pay_range_min--></span><span class=\"divider\">—</span><span>$<!--dyne:field_pay_range_max--> <!--dyne:field_pay_range_currency--></span></div></div></div><div class=\"content-conclusion\"><p> </p>\n<!--dyne:field_compensation_notes-->\n<!--dyne:field_job_disclaimer-->\n<!--dyne:field_equal_opportunity--></div>"
+            }
+          ],
+          "purpose": "Match the two live NBSP paragraph boundaries and expose the editable pay-description token in its original source wrapper; no copy stored in scaffold."
+        }
+      ]
+    },
+    {
+      "node_id": 264,
+      "alias": "/jobs/executive-director-regulatory-affairs",
+      "bundle": "job",
+      "source_url": "https://www.dyne-tx.com/jobs/executive-director-regulatory-affairs/",
+      "audit_id": "AUD-070",
+      "patches": [
+        {
+          "entity_type": "node",
+          "id": 264,
+          "bundle": "job",
+          "field": "field_role_summary",
+          "format": "dyne_legacy_html",
+          "before_sha256": "3e03ee4bef60333e09ef880b2360df0f68d15ca22a99f9f9e9a9879ea12a048f",
+          "after_sha256": "5b361a3361ea5ca8d6962544110dafe397057b73e2ccd6e4ff3ac7aabb6a7b63",
+          "replacements": [
+            {
+              "from": "anizational impact across Dyne's regulatory operations. The E",
+              "to": "anizational impact across Dyne’s regulatory operations. The E",
+              "occurrences": 1
+            },
+            {
+              "from": "hat influence the organization's direction, and ensures align",
+              "to": "hat influence the organization’s direction, and ensures align",
+              "occurrences": 1
+            },
+            {
+              "from": "ent leadership, embedding Dyne's values into long-term people",
+              "to": "ent leadership, embedding Dyne’s values into long-term people",
+              "occurrences": 1
+            }
+          ],
+          "source_text_pairs": [
+            {
+              "local": "The Executive Director, Regulatory Affairs serves as a visionary leader who shapes long-term program regulatory strategy, collaborates on regulatory functional strategy, and drives organizational impact across Dyne's regulatory operations. The Executive Director provides strategic program direction for regulatory affairs, ensuring compliance with applicable regulations and maintaining strong relationships with regulatory bodies. This position requires a leader who contributes to department-wide strategy, develops corporate policies and processes that influence the organization's direction, and ensures alignment with the mission of delivering meaningful outcomes for patients. The role demands strategic program regulatory oversight and execution of regulatory strategies that align with business objectives and support the achievement of timely regulatory interactions and filings. This role requires a leader with emotionally intelligent leadership, embedding Dyne's values into long-term people strategies while ensuring accountability, talent development, and organization-wide alignment.",
+              "source": "The Executive Director, Regulatory Affairs serves as a visionary leader who shapes long-term program regulatory strategy, collaborates on regulatory functional strategy, and drives organizational impact across Dyne’s regulatory operations. The Executive Director provides strategic program direction for regulatory affairs, ensuring compliance with applicable regulations and maintaining strong relationships with regulatory bodies. This position requires a leader who contributes to department-wide strategy, develops corporate policies and processes that influence the organization’s direction, and ensures alignment with the mission of delivering meaningful outcomes for patients. The role demands strategic program regulatory oversight and execution of regulatory strategies that align with business objectives and support the achievement of timely regulatory interactions and filings. This role requires a leader with emotionally intelligent leadership, embedding Dyne’s values into long-term people strategies while ensuring accountability, talent development, and organization-wide alignment."
+            }
+          ]
+        },
+        {
+          "entity_type": "node",
+          "id": 264,
+          "bundle": "job",
+          "field": "field_responsibilities",
+          "format": "dyne_legacy_html",
+          "before_sha256": "fac6958f6097454c2ca4b5936b5d4d99118614ffdee8956f8a777ff9de4b5980",
+          "after_sha256": "aa414bbb04a63b15e4eebfbf755658dfcb45b9df0b77f496e07d8ac992b2d059",
+          "replacements": [
+            {
+              "from": "nto operations, and model Dyne's values through leading with ",
+              "to": "nto operations, and model Dyne’s values through leading with ",
+              "occurrences": 1
+            },
+            {
+              "from": "data-ccp-parastyle=\"Body\">Dyne's values into long-term people",
+              "to": "data-ccp-parastyle=\"Body\">Dyne’s values into long-term people",
+              "occurrences": 1
+            }
+          ],
+          "source_text_pairs": [
+            {
+              "local": "Leverage deep company knowledge to foster innovation, guide functional managers and leaders in embedding purpose, accountability, and emotional intelligence into operations, and model Dyne's values through leading with commitment and resolve",
+              "source": "Leverage deep company knowledge to foster innovation, guide functional managers and leaders in embedding purpose, accountability, and emotional intelligence into operations, and model Dyne’s values through leading with commitment and resolve"
+            },
+            {
+              "local": "Embed Dyne's values into long-term people strategies, and ensure accountability, talent development, and organization-wide alignment",
+              "source": "Embed Dyne’s values into long-term people strategies, and ensure accountability, talent development, and organization-wide alignment"
+            }
+          ]
+        },
+        {
+          "entity_type": "node",
+          "id": 264,
+          "bundle": "job",
+          "field": "field_education_skills",
+          "format": "dyne_legacy_html",
+          "before_sha256": "cfbb75e10116b93007c15652d45ddc66fe3e20446434749d648ad8ba8cad5c7b",
+          "after_sha256": "f79b05f3ade4e3ffdadd49018df82f903f40366561a7d064b7bc1d8abd92c966",
+          "replacements": [
+            {
+              "from": "-ccp-parastyle=\"Body\">Bachelor's</span><span data-ccp-parasty",
+              "to": "-ccp-parastyle=\"Body\">Bachelor’s</span><span data-ccp-parasty",
+              "occurrences": 1
+            },
+            {
+              "from": "ta-ccp-parastyle=\"Body\">Master's</span><span data-ccp-parasty",
+              "to": "ta-ccp-parastyle=\"Body\">Master’s</span><span data-ccp-parasty",
+              "occurrences": 1
+            },
+            {
+              "from": "cp-parastyle=\"Body\">odels Dyne's values of purpose, commitmen",
+              "to": "cp-parastyle=\"Body\">odels Dyne’s values of purpose, commitmen",
+              "occurrences": 1
+            }
+          ],
+          "source_text_pairs": [
+            {
+              "local": "A Bachelor's degree in life sciences or related discipline is required, with a Master's degree preferred",
+              "source": "A Bachelor’s degree in life sciences or related discipline is required, with a Master’s degree preferred"
+            },
+            {
+              "local": "Models Dyne's values of purpose, commitment, vision, and resolve",
+              "source": "Models Dyne’s values of purpose, commitment, vision, and resolve"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "node_id": 285,
+      "alias": "/jobs/key-account-manager-great-lakes",
+      "bundle": "job",
+      "source_url": "https://www.dyne-tx.com/jobs/key-account-manager-great-lakes/",
+      "audit_id": "AUD-071",
+      "patches": [
+        {
+          "entity_type": "node",
+          "id": 285,
+          "bundle": "job",
+          "field": "title",
+          "kind": "values",
+          "before_values": [
+            {
+              "value": "Key Account Manager - Great Lakes"
+            }
+          ],
+          "after_values": [
+            {
+              "value": "Key Account Manager – Great Lakes"
+            }
+          ],
+          "source_text": "Key Account Manager – Great Lakes"
+        }
+      ]
+    },
+    {
+      "node_id": 321,
+      "alias": "/jobs/executive-assistant",
+      "bundle": "job",
+      "source_url": "https://www.dyne-tx.com/jobs/executive-assistant/",
+      "audit_id": "AUD-072",
+      "patches": [
+        {
+          "entity_type": "node",
+          "id": 321,
+          "bundle": "job",
+          "field": "field_education_skills",
+          "format": "dyne_legacy_html",
+          "before_sha256": "2a219acc36e07ead07bd2d24cfe47e41c8c1ed45ade349785da755d99e62b80d",
+          "after_sha256": "40292c4a85331855d530926ad3026019253413d3df3afa1af258f800ccaca0b7",
+          "replacements": [
+            {
+              "from": "ool Diploma required; Bachelor's degree preferred</li>\n<li>10",
+              "to": "ool Diploma required; Bachelor’s degree preferred</li>\n<li>10",
+              "occurrences": 1
+            },
+            {
+              "from": "ties</li>\n<li>Champion of Dyne's values, culture, and employe",
+              "to": "ties</li>\n<li>Champion of Dyne’s values, culture, and employe",
+              "occurrences": 1
+            }
+          ],
+          "source_text_pairs": [
+            {
+              "local": "High School Diploma required; Bachelor's degree preferred",
+              "source": "High School Diploma required; Bachelor’s degree preferred"
+            },
+            {
+              "local": "Champion of Dyne's values, culture, and employee experience",
+              "source": "Champion of Dyne’s values, culture, and employee experience"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "node_id": 334,
+      "alias": "/jobs/senior-director-medical-affairs-biostatistics",
+      "bundle": "job",
+      "source_url": "https://www.dyne-tx.com/jobs/senior-director-medical-affairs-biostatistics/",
+      "audit_id": "AUD-074",
+      "patches": [
+        {
+          "entity_type": "node",
+          "id": 334,
+          "bundle": "job",
+          "field": "field_role_summary",
+          "format": "dyne_legacy_html",
+          "before_sha256": "d603392e3fc1c3b9763bd5011ce9cb1ed00495be459d9b9f69013c9c1bc310e6",
+          "after_sha256": "8e8eeca22a94da30df53110e26cba4e41af04ed26df90714fc6fc5b0982735dd",
+          "replacements": [
+            {
+              "from": "ne\" data-ccp-parastyle=\"Body\">-generation</span><span data-co",
+              "to": "ne\" data-ccp-parastyle=\"Body\">–generation</span><span data-co",
+              "occurrences": 1
+            }
+          ],
+          "source_text_pairs": [
+            {
+              "local": "The Senior Director, Medical Affairs Biostatistics provides strategic, technical, and operational leadership for biostatistics across Medical Affairs evidence-generation activities. This role serves as the primary statistical partner to Medical Affairs leadership and is accountable for shaping statistically rigorous, fit-for-purpose evidence strategies that support scientific communication, external engagement, payer and access needs, and lifecycle planning. Areas of responsibility include Phase IV studies, real-world evidence, observational research, secondary and exploratory analyses of clinical development data, investigator-sponsored research, clinical outcomes assessment (PRO/HRQoL), HEOR and value evidence activities, scientific publications, congress presentations, and other Medical Affairs evidence-generation initiatives. The role requires the ability to operate with a high degree of independence, influence cross-functional and senior stakeholders, translate complex statistical concepts into actionable insights, and build scalable processes, standards, and capabilities. Experience in rare disease drug development, preferably neuromuscular disease, is preferred.",
+              "source": "The Senior Director, Medical Affairs Biostatistics provides strategic, technical, and operational leadership for biostatistics across Medical Affairs evidence–generation activities. This role serves as the primary statistical partner to Medical Affairs leadership and is accountable for shaping statistically rigorous, fit-for-purpose evidence strategies that support scientific communication, external engagement, payer and access needs, and lifecycle planning. Areas of responsibility include Phase IV studies, real-world evidence, observational research, secondary and exploratory analyses of clinical development data, investigator-sponsored research, clinical outcomes assessment (PRO/HRQoL), HEOR and value evidence activities, scientific publications, congress presentations, and other Medical Affairs evidence-generation initiatives. The role requires the ability to operate with a high degree of independence, influence cross-functional and senior stakeholders, translate complex statistical concepts into actionable insights, and build scalable processes, standards, and capabilities. Experience in rare disease drug development, preferably neuromuscular disease, is preferred."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "node_id": 314,
+      "alias": "/jobs/senior-director-medical-affairs-learning-development",
+      "bundle": "job",
+      "source_url": "https://www.dyne-tx.com/jobs/senior-director-medical-affairs-learning-development/",
+      "audit_id": "AUD-076",
+      "patches": [
+        {
+          "entity_type": "node",
+          "id": 314,
+          "bundle": "job",
+          "field": "field_responsibilities",
+          "format": "dyne_legacy_html",
+          "before_sha256": "58fdd0d09c6c28c20c4bc4620d6c51967f27a54c9ea5cee8b7e4b19bcef7ee91",
+          "after_sha256": "cc0092a6d93cdcf39a80122fcd893809f182c4c8b80e7291d5f802ff49046b56",
+          "replacements": [
+            {
+              "from": "llet\">Develop and execute Dyne's Medical Affairs training vis",
+              "to": "llet\">Develop and execute Dyne’s Medical Affairs training vis",
+              "occurrences": 1
+            }
+          ],
+          "source_text_pairs": [
+            {
+              "local": "Develop and execute Dyne's Medical Affairs training vision, strategy, and multi-year capability roadmap",
+              "source": "Develop and execute Dyne’s Medical Affairs training vision, strategy, and multi-year capability roadmap"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "node_id": 322,
+      "alias": "/jobs/senior-administrative-assistant-us-affiliate",
+      "bundle": "job",
+      "source_url": "https://www.dyne-tx.com/jobs/senior-administrative-assistant-us-affiliate/",
+      "audit_id": "AUD-077",
+      "patches": [
+        {
+          "entity_type": "node",
+          "id": 322,
+          "bundle": "job",
+          "field": "title",
+          "kind": "values",
+          "before_values": [
+            {
+              "value": "Senior Administrative Assistant - US Affiliate"
+            }
+          ],
+          "after_values": [
+            {
+              "value": "Senior Administrative Assistant – US Affiliate"
+            }
+          ],
+          "source_text": "Senior Administrative Assistant – US Affiliate"
+        }
+      ]
+    },
+    {
+      "node_id": 294,
+      "alias": "/jobs/thought-leader-liaison-northeast",
+      "bundle": "job",
+      "source_url": "https://www.dyne-tx.com/jobs/thought-leader-liaison-northeast/",
+      "audit_id": "AUD-080",
+      "patches": [
+        {
+          "entity_type": "node",
+          "id": 294,
+          "bundle": "job",
+          "field": "title",
+          "kind": "values",
+          "before_values": [
+            {
+              "value": "Thought Leader Liaison - Northeast"
+            }
+          ],
+          "after_values": [
+            {
+              "value": "Thought Leader Liaison – Northeast"
+            }
+          ],
+          "source_text": "Thought Leader Liaison – Northeast"
+        }
+      ]
+    },
+    {
+      "node_id": 331,
+      "alias": "/jobs/director-cost-accounting",
+      "bundle": "job",
+      "source_url": "https://www.dyne-tx.com/jobs/director-cost-accounting/",
+      "audit_id": "AUD-082",
+      "patches": [
+        {
+          "entity_type": "node",
+          "id": 331,
+          "bundle": "job",
+          "field": "field_education_skills",
+          "format": "dyne_legacy_html",
+          "before_sha256": "fb278e49aa5f23db6640cb790f05c1378b48abfb007dc2d2e8107817f3caaa48",
+          "after_sha256": "a8be78f032ec1e055a94ec96aa444bf4529fce033a5d22c6410508e44097e311",
+          "replacements": [
+            {
+              "from": "\n<ul>\n<li>Bachelor's degree in Accounting, Financ",
+              "to": "\n<ul>\n<li>Bachelor’s degree in Accounting, Financ",
+              "occurrences": 1
+            }
+          ],
+          "source_text_pairs": [
+            {
+              "local": "Bachelor's degree in Accounting, Finance, or related field; CPA required",
+              "source": "Bachelor’s degree in Accounting, Finance, or related field; CPA required"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Terms effective date is corrected from the migration-generated ISO 2026-09-15 to the current public-source wording August 26, 2026. This is a literal rich-text span, not an unrelated policy-date field.",
+    "The legacy Perspectives page keeps its own article date, animated-video wording, stored hero Media and all old revisions. Its existing shared Perspectives hero includes the verified source mission subtitle.",
+    "Privacy Swiss punctuation was independently inspected and checksum-guarded by the media/forms review; paragraph2008 is active under native policy node474.",
+    "No source-guard baseline is reset.",
+    "Final job punctuation/title and Medical Writing pay-description entries were independently source-verified and previewed without conflicts by the media/forms review. New content is editable native Additional Job Content; archived source bodies and history remain preserved."
+  ]
+}

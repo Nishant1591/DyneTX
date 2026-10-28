@@ -3,6 +3,9 @@
 <article{{ attributes.addClass('dyne-page', 'wrapper', dyne_is_home ? 'home' : 'pages').addClass(dyne_page_classes|default([])) }}>
   {% if dyne_legacy %}
     {% include '@dynetx/includes/legacy-hero.html.twig' %}
+    {% if not dyne_display_page_content and not dyne_hero.desktop and not dyne_hero.third_level and dyne_hero.classes != 'perspectives' %}
+      <div class="hero hero-secondary" aria-hidden="true"></div>
+    {% endif %}
   {% endif %}
-  {{ content.field_components }}
+  {% if dyne_display_page_content %}{{ content.field_components }}{% endif %}
 </article>

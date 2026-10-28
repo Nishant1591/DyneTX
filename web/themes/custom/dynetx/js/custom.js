@@ -115,9 +115,14 @@
         if (video.error || video.networkState === HTMLMediaElement.NETWORK_NO_SOURCE) failed();
       });
 
-      // The archive's cookie policy embeds a declaration on this page only.
-      // This does not install the site's old global tracking/consent scripts.
+      // The declaration shares the explicitly selected consent-provider mode.
       once('dyne-cookie-declaration', '[data-dyne-cookie-declaration]', context).forEach((marker) => {
+        if (!window.drupalSettings?.otWebform?.cookiebot_enabled) {
+          const note = document.createElement('p');
+          note.textContent = Drupal.t('Use Cookie settings to review or change your cookie preferences. You can also read our privacy policy below.');
+          marker.appendChild(note);
+          return;
+        }
         if (document.getElementById('CookieDeclaration')) return;
         const declaration = document.createElement('script');
         declaration.id = 'CookieDeclaration';

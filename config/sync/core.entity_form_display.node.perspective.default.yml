@@ -26,6 +26,7 @@ dependencies:
     - field.field.node.perspective.field_seo_description
     - field.field.node.perspective.field_seo_title
     - field.field.node.perspective.field_story_byline
+    - field.field.node.perspective.field_story_category
     - field.field.node.perspective.field_story_date
     - field.field.node.perspective.field_story_date_label
     - field.field.node.perspective.field_story_excerpt
@@ -187,6 +188,14 @@ content:
     region: content
     settings:
       rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_story_category:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
       placeholder: ''
     third_party_settings: {  }
   field_story_date:

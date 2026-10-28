@@ -1,0 +1,506 @@
+{
+  "schema_version": 1,
+  "captured_on": "2026-10-28",
+  "source_origin": "https://www.dyne-tx.com",
+  "scope": "Reviewed public content reconciliation for the supplied October 27 live/local audit; no live forms are submitted.",
+  "sources": {
+    "/jobs/associate-director-analytical-development/": {
+      "url": "https://www.dyne-tx.com/jobs/associate-director-analytical-development/",
+      "sha256": "181d8e235e70434e25bb14a4de0fdd7ed7097cc9d7f0247d923c3b4bacaae6f1",
+      "bytes": 96213
+    },
+    "/jobs/director-government-pricing-contract-operations/": {
+      "url": "https://www.dyne-tx.com/jobs/director-government-pricing-contract-operations/",
+      "sha256": "25eed806a328ccd13142054855571c73b782c800a41fd58e0bd2f13c4e38969c",
+      "bytes": 79263
+    },
+    "/jobs/director-oligonucleotide-manufacturing/": {
+      "url": "https://www.dyne-tx.com/jobs/director-oligonucleotide-manufacturing/",
+      "sha256": "fdd0f660d4ff19da52deca60fc09efedf32f39d7156a20a5af7b4b5da69638a8",
+      "bytes": 89369
+    },
+    "/about-us/": {
+      "url": "https://www.dyne-tx.com/about-us/",
+      "sha256": "be8b1ca40ccd05ebc34e85d1e7c4dfb94513dae32eecbc61db9a4d842a95d53b",
+      "bytes": 152525
+    },
+    "/": {
+      "url": "https://www.dyne-tx.com/",
+      "sha256": "dde664284287121e36c675945408ef9de909c08a5d0ead5b3dd994125fc97669",
+      "bytes": 81415
+    },
+    "/careers-culture/": {
+      "url": "https://www.dyne-tx.com/careers-culture/",
+      "sha256": "67fd51a6eb4b33921d15d809784d5ba0f44781286cecb2ac036ac9e586d8fd74",
+      "bytes": 118065
+    },
+    "/resources/": {
+      "url": "https://www.dyne-tx.com/resources/",
+      "sha256": "ac8fba27a35e9cb39df3db1cad515fe1e58a085994c7b5f441067c745d801537",
+      "bytes": 81077
+    }
+  },
+  "new_jobs": [
+    {
+      "alias": "/jobs/associate-director-analytical-development",
+      "title": "Associate Director, Analytical Development",
+      "source_id": 4097,
+      "department": "1110GL - Technical Development",
+      "location": "Waltham, MA",
+      "application_url": "https://boards.greenhouse.io/dynetherapeutics/jobs/6225554004#app",
+      "greenhouse_id": "6225554004",
+      "body_html": "<div class=\"content-intro\"><h3>Company Overview:</h3>\n<p>Dyne Therapeutics is focused on delivering functional improvement for people living with genetically driven neuromuscular diseases. We are developing therapeutics that target muscle and the central nervous system (CNS) to address the root cause of disease. The company is advancing clinical programs for Duchenne muscular dystrophy (DMD) and myotonic dystrophy type 1 (DM1) as well as preclinical programs for facioscapulohumeral muscular dystrophy (FSHD), Pompe disease and multiple DMD mutations. At Dyne, we are on a mission to deliver functional improvement for individuals, families and communities. Learn more at <a href=\"/\">https://www.dyne-tx.com/</a>, and follow us on <a href=\"https://twitter.com/dyne_tx\">X</a>, <a href=\"https://www.linkedin.com/company/dynetx\">LinkedIn</a> and <a href=\"https://www.facebook.com/DyneTherapeutic/\">Facebook</a>.</p></div>\n<p><strong>Role Summary:</strong></p>\n\n<p data-ccp-border-bottom=\"0px none #000000\" data-ccp-padding-bottom=\"0px\" data-ccp-border-between=\"0px none #000000\" data-ccp-padding-between=\"0px\"><span data-contrast=\"auto\">The Associate Director, Analytical Development, Oligonucleotides leads analytical development and supports quality control strategies for oligonucleotide and small-molecule intermediates across clinical development, registration, and commercialization. This role provides strategic and technical leadership for analytical method development, validation, technology transfer, specifications, release testing, stability programs, impurity control, and product characterization.</span></p>\n\n<p data-ccp-border-bottom=\"0px none #000000\" data-ccp-padding-bottom=\"0px\" data-ccp-border-between=\"0px none #000000\" data-ccp-padding-between=\"0px\"><span data-contrast=\"auto\">The Associate Director independently leads multiple analytical workstreams and makes decisions that influence program strategy, product quality, regulatory submissions, and clinical supply. The role provides oversight of CDMOs, contract testing laboratories, and other external partners to ensure analytical activities meet scientific, regulatory, quality, timeline, and business requirements.</span><span data-ccp-props='{\"335572071\":0,\"335572072\":0,\"335572073\":0,\"335572075\":0,\"335572076\":0,\"335572077\":0,\"335572079\":0,\"335572080\":0,\"335572081\":0,\"335572083\":0,\"335572084\":0,\"335572085\":0,\"335572087\":0,\"335572088\":0,\"335572089\":0,\"469789798\":\"none\",\"469789802\":\"none\",\"469789806\":\"none\",\"469789810\":\"none\",\"469789814\":\"none\"}'> </span></p>\n\n<p data-ccp-border-bottom=\"0px none #000000\" data-ccp-padding-bottom=\"0px\" data-ccp-border-between=\"0px none #000000\" data-ccp-padding-between=\"0px\"><span data-contrast=\"auto\">Working closely with CMC, Quality, Regulatory Affairs, Supply Chain, Research and Development, Clinical, and Project Management, this position establishes analytical priorities, resolves complex technical issues, manages program risks, and guides cross-functional decision-making. The Associate Director also serves as an analytical subject matter expert, mentors colleagues, and strengthens analytical capabilities and practices across the organization.</span><span data-ccp-props='{\"335572071\":0,\"335572072\":0,\"335572073\":0,\"335572075\":0,\"335572076\":0,\"335572077\":0,\"335572079\":0,\"335572080\":0,\"335572081\":0,\"335572083\":0,\"335572084\":0,\"335572085\":0,\"335572087\":0,\"335572088\":0,\"335572089\":0,\"469789798\":\"none\",\"469789802\":\"none\",\"469789806\":\"none\",\"469789810\":\"none\",\"469789814\":\"none\"}'> </span></p>\n\n<p data-ccp-border-between=\"0px none #000000\" data-ccp-padding-between=\"0px\"><span data-contrast=\"auto\">This is a full-time position based in Waltham, MA without the possibility of being remote. </span><span data-ccp-props='{\"335572071\":0,\"335572072\":0,\"335572073\":4278190080,\"335572075\":0,\"335572076\":0,\"335572077\":4278190080,\"335572079\":0,\"335572080\":0,\"335572081\":4278190080,\"335572083\":0,\"335572084\":0,\"335572085\":4278190080,\"335572087\":0,\"335572088\":0,\"335572089\":4278190080,\"469789798\":\"none\",\"469789802\":\"none\",\"469789806\":\"none\",\"469789810\":\"none\",\"469789814\":\"none\"}'> </span>Physical presence onsite is expected on 4-5 days/week.</p>\n\n<p><strong>Primary Responsibilities Include:</strong></p>\n\n<ul>\n<li><span data-contrast=\"auto\">Lead analytical development and quality control strategies for oligonucleotide and small-molecule intermediates from early clinical development through commercialization</span><span data-ccp-props='{\"201341983\":2,\"335559740\":300,\"335572071\":0,\"335572072\":0,\"335572073\":0,\"335572075\":0,\"335572076\":0,\"335572077\":0,\"335572079\":0,\"335572080\":0,\"335572081\":0,\"335572083\":0,\"335572084\":0,\"335572085\":0,\"335572087\":0,\"335572088\":0,\"335572089\":0,\"469789798\":\"none\",\"469789802\":\"none\",\"469789806\":\"none\",\"469789810\":\"none\",\"469789814\":\"none\"}'> </span></li>\n<li><span data-contrast=\"auto\">Serve as the analytical SME and strategic lead for internal and external activities related to analytical operations of linkers and oligonucleotide intermediates</span><span data-ccp-props='{\"335559739\":31,\"335572071\":0,\"335572072\":0,\"335572073\":0,\"335572075\":0,\"335572076\":0,\"335572077\":0,\"335572079\":0,\"335572080\":0,\"335572081\":0,\"335572083\":0,\"335572084\":0,\"335572085\":0,\"335572087\":0,\"335572088\":0,\"335572089\":0,\"469789798\":\"none\",\"469789802\":\"none\",\"469789806\":\"none\",\"469789810\":\"none\",\"469789814\":\"none\"}'> </span></li>\n<li><span data-contrast=\"auto\">Responsibilities will include aspects of analytical development of drug substance intermediates including method development, validation, characterization, tech transfer, specifications, release, and stability testing</span><span data-ccp-props='{\"335559739\":31,\"335572071\":0,\"335572072\":0,\"335572073\":0,\"335572075\":0,\"335572076\":0,\"335572077\":0,\"335572079\":0,\"335572080\":0,\"335572081\":0,\"335572083\":0,\"335572084\":0,\"335572085\":0,\"335572087\":0,\"335572088\":0,\"335572089\":0,\"469789798\":\"none\",\"469789802\":\"none\",\"469789806\":\"none\",\"469789810\":\"none\",\"469789814\":\"none\"}'> </span></li>\n<li><span data-contrast=\"auto\">Assist with developing the analytical/QC strategy for small molecules and oligonucleotides guided by ICH framework</span><span data-ccp-props='{\"335559739\":31,\"335572071\":0,\"335572072\":0,\"335572073\":0,\"335572075\":0,\"335572076\":0,\"335572077\":0,\"335572079\":0,\"335572080\":0,\"335572081\":0,\"335572083\":0,\"335572084\":0,\"335572085\":0,\"335572087\":0,\"335572088\":0,\"335572089\":0,\"469789798\":\"none\",\"469789802\":\"none\",\"469789806\":\"none\",\"469789810\":\"none\",\"469789814\":\"none\"}'> </span></li>\n<li><span data-contrast=\"auto\">Develop, review, and approve method transfer/validation protocols and validation approaches</span><span data-ccp-props='{\"335559739\":31,\"335572071\":0,\"335572072\":0,\"335572073\":0,\"335572075\":0,\"335572076\":0,\"335572077\":0,\"335572079\":0,\"335572080\":0,\"335572081\":0,\"335572083\":0,\"335572084\":0,\"335572085\":0,\"335572087\":0,\"335572088\":0,\"335572089\":0,\"469789798\":\"none\",\"469789802\":\"none\",\"469789806\":\"none\",\"469789810\":\"none\",\"469789814\":\"none\"}'> </span></li>\n<li><span data-contrast=\"auto\">Support establishment of critical quality attributes and phase-appropriate specifications</span><span data-ccp-props='{\"335559739\":31,\"335572071\":0,\"335572072\":0,\"335572073\":0,\"335572075\":0,\"335572076\":0,\"335572077\":0,\"335572079\":0,\"335572080\":0,\"335572081\":0,\"335572083\":0,\"335572084\":0,\"335572085\":0,\"335572087\":0,\"335572088\":0,\"335572089\":0,\"469789798\":\"none\",\"469789802\":\"none\",\"469789806\":\"none\",\"469789810\":\"none\",\"469789814\":\"none\"}'> </span></li>\n<li><span data-contrast=\"auto\">Advise and plan extended characterization of drug substance intermediates to expand product understanding</span><span data-ccp-props='{\"335559739\":31,\"335572071\":0,\"335572072\":0,\"335572073\":0,\"335572075\":0,\"335572076\":0,\"335572077\":0,\"335572079\":0,\"335572080\":0,\"335572081\":0,\"335572083\":0,\"335572084\":0,\"335572085\":0,\"335572087\":0,\"335572088\":0,\"335572089\":0,\"469789798\":\"none\",\"469789802\":\"none\",\"469789806\":\"none\",\"469789810\":\"none\",\"469789814\":\"none\"}'> </span></li>\n<li><span data-contrast=\"auto\">Partner with QC and QA to provide oversight of cGMP activities and documents (change controls, deviations, CAPAs, procedures, QC raw data review, batch release support, stability protocols and programs, validation protocols, etc.)</span><span data-ccp-props='{\"335559739\":31,\"335572071\":0,\"335572072\":0,\"335572073\":0,\"335572075\":0,\"335572076\":0,\"335572077\":0,\"335572079\":0,\"335572080\":0,\"335572081\":0,\"335572083\":0,\"335572084\":0,\"335572085\":0,\"335572087\":0,\"335572088\":0,\"335572089\":0,\"469789798\":\"none\",\"469789802\":\"none\",\"469789806\":\"none\",\"469789810\":\"none\",\"469789814\":\"none\"}'> </span></li>\n<li><span data-contrast=\"auto\">Oversee Reference Standard program including establishing and maintaining reference standards, approving qualification protocols and reports, and coordinating release testing at external laboratories as appropriate </span><span data-ccp-props='{\"335559739\":31,\"335572071\":0,\"335572072\":0,\"335572073\":0,\"335572075\":0,\"335572076\":0,\"335572077\":0,\"335572079\":0,\"335572080\":0,\"335572081\":0,\"335572083\":0,\"335572084\":0,\"335572085\":0,\"335572087\":0,\"335572088\":0,\"335572089\":0,\"469789798\":\"none\",\"469789802\":\"none\",\"469789806\":\"none\",\"469789810\":\"none\",\"469789814\":\"none\"}'> </span></li>\n<li><span data-contrast=\"auto\">Lead, author, approve, or provide strategic direction for CMC analytically focused documentation for biologic INDs and BLAs and support FDA and EMEA interactions</span><span data-ccp-props='{\"335559739\":31,\"335572071\":0,\"335572072\":0,\"335572073\":0,\"335572075\":0,\"335572076\":0,\"335572077\":0,\"335572079\":0,\"335572080\":0,\"335572081\":0,\"335572083\":0,\"335572084\":0,\"335572085\":0,\"335572087\":0,\"335572088\":0,\"335572089\":0,\"469789798\":\"none\",\"469789802\":\"none\",\"469789806\":\"none\",\"469789810\":\"none\",\"469789814\":\"none\"}'> </span></li>\n<li><span data-contrast=\"auto\">Work with partner organizations as necessary to ensure that timelines are met, milestones and products are delivered on schedule, and any excursions, deviations, investigations, and CAPAs are initiated, addressed, and closed within target timeframes</span><span data-ccp-props='{\"335572071\":0,\"335572072\":0,\"335572073\":0,\"335572075\":0,\"335572076\":0,\"335572077\":0,\"335572079\":0,\"335572080\":0,\"335572081\":0,\"335572083\":0,\"335572084\":0,\"335572085\":0,\"335572087\":0,\"335572088\":0,\"335572089\":0,\"469789798\":\"none\",\"469789802\":\"none\",\"469789806\":\"none\",\"469789810\":\"none\",\"469789814\":\"none\"}'> </span></li>\n</ul>\n\n<p><strong>Education and Skills Requirements:</strong></p>\n\n<ul>\n<li><span data-contrast=\"auto\">A minimum of 8 years in Analytical Development and/or Quality Control </span><span data-ccp-props='{\"335559739\":30,\"335572071\":0,\"335572072\":0,\"335572073\":4278190080,\"335572075\":0,\"335572076\":0,\"335572077\":4278190080,\"335572079\":0,\"335572080\":0,\"335572081\":4278190080,\"335572083\":0,\"335572084\":0,\"335572085\":4278190080,\"335572087\":0,\"335572088\":0,\"335572089\":4278190080,\"469789798\":\"none\",\"469789802\":\"none\",\"469789806\":\"none\",\"469789810\":\"none\",\"469789814\":\"none\"}'> </span></li>\n<li><span data-contrast=\"auto\">Bachelor’s or master’s degree in biology, biochemistry, chemistry, or similar related field required </span><span data-ccp-props='{\"335559739\":30,\"335572071\":0,\"335572072\":0,\"335572073\":4278190080,\"335572075\":0,\"335572076\":0,\"335572077\":4278190080,\"335572079\":0,\"335572080\":0,\"335572081\":4278190080,\"335572083\":0,\"335572084\":0,\"335572085\":4278190080,\"335572087\":0,\"335572088\":0,\"335572089\":4278190080,\"469789798\":\"none\",\"469789802\":\"none\",\"469789806\":\"none\",\"469789810\":\"none\",\"469789814\":\"none\"}'> </span></li>\n<li><span data-contrast=\"auto\">Knowledge of a variety of analytical techniques including liquid and gas chromatography, NMR, Karl Fischer, CD, AEX, chiral separations, RP-HPLC, and mass spectroscopy</span><span data-ccp-props='{\"335559739\":30,\"335572071\":0,\"335572072\":0,\"335572073\":4278190080,\"335572075\":0,\"335572076\":0,\"335572077\":4278190080,\"335572079\":0,\"335572080\":0,\"335572081\":4278190080,\"335572083\":0,\"335572084\":0,\"335572085\":4278190080,\"335572087\":0,\"335572088\":0,\"335572089\":4278190080,\"469789798\":\"none\",\"469789802\":\"none\",\"469789806\":\"none\",\"469789810\":\"none\",\"469789814\":\"none\"}'> </span></li>\n<li><span data-contrast=\"auto\">Strong quality and analytical background with experience in general, compendial and product-specific analytical tools and practices pertinent to small molecules and oligonucleotides.</span><span data-ccp-props='{\"335559739\":30,\"335572071\":0,\"335572072\":0,\"335572073\":4278190080,\"335572075\":0,\"335572076\":0,\"335572077\":4278190080,\"335572079\":0,\"335572080\":0,\"335572081\":4278190080,\"335572083\":0,\"335572084\":0,\"335572085\":4278190080,\"335572087\":0,\"335572088\":0,\"335572089\":4278190080,\"469789798\":\"none\",\"469789802\":\"none\",\"469789806\":\"none\",\"469789810\":\"none\",\"469789814\":\"none\"}'> </span></li>\n<li><span data-contrast=\"auto\">Experience with monoclonal antibodies or ADCs (mab-conjugates) and relevant analytical techniques a plus</span><span data-ccp-props='{\"335559739\":30,\"335572071\":0,\"335572072\":0,\"335572073\":0,\"335572075\":0,\"335572076\":0,\"335572077\":0,\"335572079\":0,\"335572080\":0,\"335572081\":0,\"335572083\":0,\"335572084\":0,\"335572085\":0,\"335572087\":0,\"335572088\":0,\"335572089\":0,\"469789798\":\"none\",\"469789802\":\"none\",\"469789806\":\"none\",\"469789810\":\"none\",\"469789814\":\"none\"}'> </span></li>\n<li><span data-contrast=\"auto\">Experience with impurity control strategy including novel approaches for impurity detection, impurity ID and characterization for oligonucleotides/ small molecules</span><span data-ccp-props='{\"335559739\":30,\"335572071\":0,\"335572072\":0,\"335572073\":0,\"335572075\":0,\"335572076\":0,\"335572077\":0,\"335572079\":0,\"335572080\":0,\"335572081\":0,\"335572083\":0,\"335572084\":0,\"335572085\":0,\"335572087\":0,\"335572088\":0,\"335572089\":0,\"469789798\":\"none\",\"469789802\":\"none\",\"469789806\":\"none\",\"469789810\":\"none\",\"469789814\":\"none\"}'> </span></li>\n<li><span data-contrast=\"auto\">Experience with managing external vendors required</span><span data-ccp-props='{\"335559739\":30,\"335572071\":0,\"335572072\":0,\"335572073\":4278190080,\"335572075\":0,\"335572076\":0,\"335572077\":4278190080,\"335572079\":0,\"335572080\":0,\"335572081\":4278190080,\"335572083\":0,\"335572084\":0,\"335572085\":4278190080,\"335572087\":0,\"335572088\":0,\"335572089\":4278190080,\"469789798\":\"none\",\"469789802\":\"none\",\"469789806\":\"none\",\"469789810\":\"none\",\"469789814\":\"none\"}'> </span></li>\n<li><span data-contrast=\"auto\">Experience in all phases of CMC regulatory submissions and interactions regarding CMC issues, ideally including post-approval experience, international experience, and negotiation experience with regulatory authorities</span><span data-ccp-props='{\"335559739\":30,\"335572071\":0,\"335572072\":0,\"335572073\":4278190080,\"335572075\":0,\"335572076\":0,\"335572077\":4278190080,\"335572079\":0,\"335572080\":0,\"335572081\":4278190080,\"335572083\":0,\"335572084\":0,\"335572085\":4278190080,\"335572087\":0,\"335572088\":0,\"335572089\":4278190080,\"469789798\":\"none\",\"469789802\":\"none\",\"469789806\":\"none\",\"469789810\":\"none\",\"469789814\":\"none\"}'> </span></li>\n<li><span data-contrast=\"auto\">Strong knowledge of cGMP/ICH/FDA/EU regulations</span><span data-ccp-props='{\"335559739\":30,\"335572071\":0,\"335572072\":0,\"335572073\":4278190080,\"335572075\":0,\"335572076\":0,\"335572077\":4278190080,\"335572079\":0,\"335572080\":0,\"335572081\":4278190080,\"335572083\":0,\"335572084\":0,\"335572085\":4278190080,\"335572087\":0,\"335572088\":0,\"335572089\":4278190080,\"469789798\":\"none\",\"469789802\":\"none\",\"469789806\":\"none\",\"469789810\":\"none\",\"469789814\":\"none\"}'> </span></li>\n<li><span data-contrast=\"auto\">Ability to challenge current processes, practices and strategy and uncover alternative approaches, solutions, or methods</span><span data-ccp-props='{\"335559739\":31,\"335572071\":0,\"335572072\":0,\"335572073\":4278190080,\"335572075\":0,\"335572076\":0,\"335572077\":4278190080,\"335572079\":0,\"335572080\":0,\"335572081\":4278190080,\"335572083\":0,\"335572084\":0,\"335572085\":4278190080,\"335572087\":0,\"335572088\":0,\"335572089\":4278190080,\"469789798\":\"none\",\"469789802\":\"none\",\"469789806\":\"none\",\"469789810\":\"none\",\"469789814\":\"none\"}'> </span></li>\n<li><span data-contrast=\"auto\">Excellent interpersonal, organizational, negotiation, and communication skills; a team member than can work collaboratively with colleagues across functions</span><span data-ccp-props='{\"335559739\":31,\"335572071\":0,\"335572072\":0,\"335572073\":4278190080,\"335572075\":0,\"335572076\":0,\"335572077\":4278190080,\"335572079\":0,\"335572080\":0,\"335572081\":4278190080,\"335572083\":0,\"335572084\":0,\"335572085\":4278190080,\"335572087\":0,\"335572088\":0,\"335572089\":4278190080,\"469789798\":\"none\",\"469789802\":\"none\",\"469789806\":\"none\",\"469789810\":\"none\",\"469789814\":\"none\"}'> </span></li>\n<li><span data-contrast=\"auto\">Ability to travel (up to ~10%)</span><span data-ccp-props='{\"335559739\":31,\"335572071\":0,\"335572072\":0,\"335572073\":4278190080,\"335572075\":0,\"335572076\":0,\"335572077\":4278190080,\"335572079\":0,\"335572080\":0,\"335572081\":4278190080,\"335572083\":0,\"335572084\":0,\"335572085\":4278190080,\"335572087\":0,\"335572088\":0,\"335572089\":4278190080,\"469789798\":\"none\",\"469789802\":\"none\",\"469789806\":\"none\",\"469789810\":\"none\",\"469789814\":\"none\"}'> </span></li>\n</ul>\n\n<p> </p>\n\n<p> </p>\n\n<p>#LI-Onsite</p>\n<div class=\"content-pay-transparency\"><div class=\"pay-input\"><div class=\"title\">MA Pay Range</div><div class=\"pay-range\"><span>$160,000</span><span class=\"divider\">—</span><span>$200,000 USD</span></div></div></div>\n<div class=\"content-conclusion\"><p> </p>\n<p>The pay range reflects the base pay range Dyne reasonably expects to pay for this role at the time of posting. Individual compensation depends on factors such as education, experience, job-related knowledge, and demonstrated skills.</p>\n<p>The statements contained herein reflect general details as necessary to describe the principles functions for this job, the level of knowledge and skill typically required, and the scope of responsibility, but should not be considered an all-inclusive listing of work requirements.  Individuals may perform other duties as assigned, including work in other functional areas to cover absences or relief, to equalize peak work periods or otherwise balance workload.</p>\n<p class=\"Body\"><em><span style=\"font-family: 'Arial',sans-serif;color: #626262\">Dyne Therapeutics is an equal opportunity employer and will not discriminate against any employee or applicant on the basis of age, color, disability, gender, national origin, race, religion, sexual orientation, veteran status, or any classification protected by federal, state, or local law.</span></em></p></div>\t\t\t\n<br>\n            ",
+      "body_sha256": "9553aee87f2d81b2109105784630af03e892abb0b448a4d877775bb10288d92c",
+      "previous_url": "/careers-culture/",
+      "next_url": "/jobs/associate-director-formulation-and-drug-product-development/",
+      "text_word_count": 830
+    },
+    {
+      "alias": "/jobs/director-government-pricing-contract-operations",
+      "title": "Director, Government Pricing & Contract Operations",
+      "source_id": 4095,
+      "department": "3100GL - Value & Access",
+      "location": "Waltham, MA",
+      "application_url": "https://boards.greenhouse.io/dynetherapeutics/jobs/6208711004#app",
+      "greenhouse_id": "6208711004",
+      "body_html": "<div class=\"content-intro\"><h3>Company Overview:</h3>\n<p>Dyne Therapeutics is focused on delivering functional improvement for people living with genetically driven neuromuscular diseases. We are developing therapeutics that target muscle and the central nervous system (CNS) to address the root cause of disease. The company is advancing clinical programs for Duchenne muscular dystrophy (DMD) and myotonic dystrophy type 1 (DM1) as well as preclinical programs for facioscapulohumeral muscular dystrophy (FSHD), Pompe disease and multiple DMD mutations. At Dyne, we are on a mission to deliver functional improvement for individuals, families and communities. Learn more at <a href=\"/\">https://www.dyne-tx.com/</a>, and follow us on <a href=\"https://twitter.com/dyne_tx\">X</a>, <a href=\"https://www.linkedin.com/company/dynetx\">LinkedIn</a> and <a href=\"https://www.facebook.com/DyneTherapeutic/\">Facebook</a>.</p></div>\n<p><strong>Role Summary:</strong></p>\n\n<p>The Director, Government Pricing &amp; Contract Operations is a key leader within U.S. Pricing &amp; Contracting responsible for ensuring the compliant execution, oversight, and continuous improvement of government pricing and contract administration processes. This role serves as the internal subject matter expert for government pricing regulations, methodologies, and reporting requirements while overseeing external vendors responsible for calculation, validation, submission, and operational support activities.</p>\n\n<p>The Director will partner closely with Market Access, Finance, Legal, Compliance, Trade, and Commercial Operations to evaluate the impact of pricing and contracting strategies on government price reporting and contractual obligations. This position is accountable for maintaining a robust compliance framework, ensuring operational excellence, and driving effective vendor governance across all government pricing and contract administration activities.</p>\n\n<p data-ccp-border-bottom=\"0px none #000000\" data-ccp-padding-bottom=\"0px\" data-ccp-border-between=\"0px none #000000\" data-ccp-padding-between=\"0px\"><span data-contrast=\"auto\"><span data-ccp-parastyle=\"Body\">This role is based in Waltham, MA without the possibility of being </span><span data-ccp-parastyle=\"Body\">fully</span><span data-ccp-parastyle=\"Body\"> remote.</span></span></p>\n\n<p><strong>Primary Responsibilities Include:<br><br></strong><em>Government Pricing &amp; Reporting</em></p>\n\n<ul>\n<li>Serve as the internal expert on U.S. Government Pricing programs, including AMP, Best Price, ASP, Medicaid Drug Rebate Program, 340B, Non-FAMP, FCP, and Federal Supply Schedule pricing.</li>\n<li>Oversee third-party vendors responsible for government pricing calculations, validations, submissions, and reporting.</li>\n<li>Review and approve pricing methodologies, assumptions, and reporting outputs to ensure compliance and accuracy.</li>\n<li>Assess the impact of pricing, contracting, distribution, and market access strategies on government price reporting.</li>\n<li>Monitor and implement regulatory and policy changes, including CMS, OIG, and Inflation Reduction Act (IRA) requirements.</li>\n<li>Maintain government pricing policies, SOPs, controls, and documentation to support compliance and audit readiness.</li>\n<li>Lead responses to audits, compliance reviews, and governmental inquiries.</li>\n<li>Partner with Finance to support rebate accruals, forecasting, and financial reporting requirements.</li>\n<li>Drive process improvements, automation, and data quality initiatives to enhance operational efficiency and compliance.</li>\n</ul>\n\n<p><em>Contract Operations &amp; Administration</em></p>\n\n<ul>\n<li>Provide leadership and oversight for contract operational processes, ensuring accurate implementation and administration of approved contract terms.</li>\n<li>Ensure accurate maintenance of contract records, documentation, eligibility files, and contract management systems.</li>\n<li>Oversee rebate administration processes, including validation, adjudication, dispute resolution, and payment activities managed through external vendors.</li>\n<li>Partner with Legal, Market Access, and Compliance to evaluate contract structures, operational feasibility, and government pricing implications.</li>\n<li>Drive continuous improvement initiatives to enhance operational efficiency, reporting and analytics capabilities, and performance measurement to support informed business decision-making and contracting strategies.</li>\n<li>Maintain contract documentation, controls, and procedures to support audit readiness and continuous improvement.</li>\n</ul>\n\n<p><em>Leadership &amp; Cross-Functional Collaboration</em></p>\n\n<ul>\n<li>Build strong partnerships across Market Access, Finance, Legal, Compliance, Trade, Commercial Operations, and external vendors.</li>\n<li>Lead cross-functional initiatives related to government pricing compliance, contract operations, and process improvements.</li>\n<li>Communicate complex pricing and contracting concepts to senior leadership and business stakeholders.</li>\n<li>Foster a culture of compliance, accountability, collaboration, and operational excellence.</li>\n</ul>\n\n<p><strong>Education and Skills Requirements:</strong></p>\n\n<ul>\n<li>Bachelor’s degree in Finance, Accounting, Economics, Business Administration, Healthcare Administration, or a related field.</li>\n<li>10+ years of experience within the pharmaceutical or biotechnology industry, including significant experience in Government Pricing and/or Contract Operations.</li>\n<li>Deep knowledge of U.S. Government Pricing regulations and reporting requirements, including AMP, Best Price, ASP, Medicaid Rebates, 340B, Non-FAMP, FCP, and Federal Supply Schedule programs.</li>\n<li>Demonstrated experience managing external vendors supporting government pricing calculations, reporting, and contract administration activities.</li>\n<li>Experience overseeing rebates, chargebacks, contract administration, and market access operational processes.</li>\n<li>Strong understanding of pharmaceutical pricing, reimbursement, distribution, and contracting dynamics.</li>\n<li>Proven ability to interpret complex regulations and implement compliant business processes and controls.</li>\n<li>Strong leadership, analytical, project management, and communication skills with the ability to influence cross-functional stakeholders.</li>\n</ul>\n\n<p><em>Preferred</em></p>\n\n<ul>\n<li>Advanced degree (MBA, MS, PharmD, JD, or equivalent).</li>\n<li>Experience in rare disease, specialty pharmaceutical, or biotechnology organizations.</li>\n<li>Experience supporting product launches and commercialization efforts.</li>\n<li>Experience with Government Pricing and Contract Management systems such as Model N, Revitas, SAP, or similar platforms.</li>\n<li>Knowledge of emerging government pricing regulations, including Inflation Reduction Act (IRA) requirements.</li>\n</ul>\n\n<p> </p>\n\n<p> </p>\n\n<p>#LI-Onsite</p>\n<div class=\"content-pay-transparency\"><div class=\"pay-input\"><div class=\"title\">MA Pay Range</div><div class=\"pay-range\"><span>$215,000</span><span class=\"divider\">—</span><span>$230,000 USD</span></div></div></div>\n<div class=\"content-conclusion\"><p> </p>\n<p>The pay range reflects the base pay range Dyne reasonably expects to pay for this role at the time of posting. Individual compensation depends on factors such as education, experience, job-related knowledge, and demonstrated skills.</p>\n<p>The statements contained herein reflect general details as necessary to describe the principles functions for this job, the level of knowledge and skill typically required, and the scope of responsibility, but should not be considered an all-inclusive listing of work requirements.  Individuals may perform other duties as assigned, including work in other functional areas to cover absences or relief, to equalize peak work periods or otherwise balance workload.</p>\n<p class=\"Body\"><em><span style=\"font-family: 'Arial',sans-serif;color: #626262\">Dyne Therapeutics is an equal opportunity employer and will not discriminate against any employee or applicant on the basis of age, color, disability, gender, national origin, race, religion, sexual orientation, veteran status, or any classification protected by federal, state, or local law.</span></em></p></div>\t\t\t\n<br>\n            ",
+      "body_sha256": "0dd4f57e4d8f2ac60f8e10dadb93964bc9b823bfebbb2bf6f2d00c31a4a2dd42",
+      "previous_url": "/careers-culture/",
+      "next_url": "/jobs/associate-director-market-research-competitive-intelligence/",
+      "text_word_count": 860
+    },
+    {
+      "alias": "/jobs/director-oligonucleotide-manufacturing",
+      "title": "Director, Oligonucleotide Manufacturing",
+      "source_id": 4101,
+      "department": "1120GL - Manufacturing",
+      "location": "Waltham, MA",
+      "application_url": "https://boards.greenhouse.io/dynetherapeutics/jobs/6232778004#app",
+      "greenhouse_id": "6232778004",
+      "body_html": "<div class=\"content-intro\"><h3>Company Overview:</h3>\n<p>Dyne Therapeutics is focused on delivering functional improvement for people living with genetically driven neuromuscular diseases. We are developing therapeutics that target muscle and the central nervous system (CNS) to address the root cause of disease. The company is advancing clinical programs for Duchenne muscular dystrophy (DMD) and myotonic dystrophy type 1 (DM1) as well as preclinical programs for facioscapulohumeral muscular dystrophy (FSHD), Pompe disease and multiple DMD mutations. At Dyne, we are on a mission to deliver functional improvement for individuals, families and communities. Learn more at <a href=\"/\">https://www.dyne-tx.com/</a>, and follow us on <a href=\"https://twitter.com/dyne_tx\">X</a>, <a href=\"https://www.linkedin.com/company/dynetx\">LinkedIn</a> and <a href=\"https://www.facebook.com/DyneTherapeutic/\">Facebook</a>.</p></div>\n<p><strong>Role Summary:</strong></p>\n\n<p data-ccp-border-bottom=\"0px none #000000\" data-ccp-padding-bottom=\"0px\" data-ccp-border-between=\"0px none #000000\" data-ccp-padding-between=\"0px\"><span data-contrast=\"auto\">The Director, Oligonucleotide Manufacturing, is accountable for translating Dyne’s CMC and program strategy into integrated manufacturing plans for oligonucleotide payloads from late-stage clinical development through commercial launch. This role leads external manufacturing strategy and execution, including CDMO selection and governance, technology transfer, scale-up, capacity planning, supply continuity, and cost management. The Director establishes operational priorities, performance expectations, and risk-mitigation plans to deliver robust, scalable, compliant, and cost-effective manufacturing. Working across Research, Regulatory, Quality, Clinical, Finance, and other functions in a matrixed environment, the Director leads cross-functional decision-making, advises senior leadership on manufacturing strategy and investment tradeoffs, and strengthens Dyne’s internal CMC capabilities.</span><span data-ccp-props='{\"201341983\":0,\"335559740\":276}'> </span></p>\n\n<p data-ccp-border-bottom=\"0px none #000000\" data-ccp-padding-bottom=\"0px\" data-ccp-border-between=\"0px none #000000\" data-ccp-padding-between=\"0px\"><span data-contrast=\"auto\">This role is based in Waltham, MA without the possibility of being a remote role. </span><span data-ccp-props=\"{}\"> </span></p>\n\n<p><strong>Primary Responsibilities Include:</strong></p>\n\n<ul>\n<li><span data-contrast=\"auto\">Translate CMC and program strategy into integrated oligonucleotide manufacturing plans, priorities, budgets, resource requirements, timelines, and risk-mitigation actions for late-stage clinical and commercial supply</span><span data-ccp-props=\"{}\"> </span></li>\n<li><span data-contrast=\"auto\">Lead oligonucleotide payload manufacturing from late-stage clinical development through commercial launch, setting and delivering against functional objectives, operational targets, and key milestones</span><span data-ccp-props=\"{}\"> </span></li>\n<li><span data-contrast=\"auto\">Select, qualify, and govern external CDMOs, establishing performance expectations, operating standards, escalation pathways, and accountability for quality, compliance, cost, service, and delivery</span><span data-ccp-props=\"{}\"> </span></li>\n<li><span data-contrast=\"auto\">Ensure uninterrupted clinical and commercial supply through long-range capacity planning, demand and supply alignment, scenario planning, and proactive mitigation of continuity risks</span><span data-ccp-props=\"{}\"> </span></li>\n<li><span data-contrast=\"auto\">Provide financial stewardship for external manufacturing activities by developing forecasts, managing spend, evaluating investment options, and recommending cost, capacity, and sourcing tradeoffs</span><span data-ccp-props=\"{}\"> </span></li>\n<li><span data-contrast=\"auto\">Lead technology transfer, scale-up, process validation, process improvements, and timely resolution of complex manufacturing issues across external partners</span><span data-ccp-props=\"{}\"> </span></li>\n<li><span data-contrast=\"auto\">Review and approve cGMP documentation, including technology transfer, process and analytical development and validation reports, qualification protocols and reports, validation master batch records, and campaign summary reports</span><span data-ccp-props=\"{}\"> </span></li>\n<li><span data-contrast=\"auto\">Prepare and review CMC sections for global regulatory submissions, including INDs, IMPDs, and BLAs, and support responses to health authority questions and inspections</span><span data-ccp-props=\"{}\"> </span></li>\n<li><span data-contrast=\"auto\">Lead cross-functional decision-making with Research, Regulatory, Quality, Clinical, Finance, and other stakeholders to define compliant, scientifically sound, and executable CMC strategies</span><span data-ccp-props=\"{}\"> </span></li>\n<li><span data-contrast=\"auto\">Advise senior leadership on manufacturing strategy, partner performance, supply risk, capacity, investment needs, and technical or business tradeoffs</span><span data-ccp-props=\"{}\"> </span></li>\n<li><span data-contrast=\"auto\">Build scalable internal CMC and manufacturing capabilities through resource planning, knowledge transfer, development of standards and processes, and coaching of employees and cross-functional partners</span><span data-ccp-props=\"{}\"> </span></li>\n<li><span data-contrast=\"auto\">Evaluate and implement emerging technologies and external capabilities that improve product quality, process performance, scalability, and cost effectiveness</span><span data-ccp-props=\"{}\"> </span></li>\n<li><span data-contrast=\"auto\">Prepare and deliver technical documentation, governance updates, publications, and presentations for internal and external audiences</span><span data-ccp-props=\"{}\"> </span></li>\n</ul>\n\n<p><strong>Education and Skills Requirements:</strong></p>\n\n<ul>\n<li><span data-contrast=\"auto\">Advanced degree in Chemistry, Biochemistry, Chemical Engineering, Pharmaceutical Sciences, or a related discipline</span></li>\n<li><span data-contrast=\"auto\">10+ years of progressive experience in oligonucleotide manufacturing and CMC, including hands-on experience with oligonucleotide payloads, oligonucleotide-based therapeutics, and conjugates</span><span data-ccp-props='{\"335557856\":16777215,\"335559685\":360,\"335572071\":0,\"335572072\":0,\"335572073\":4278190080,\"335572075\":0,\"335572076\":0,\"335572077\":4278190080,\"335572079\":0,\"335572080\":0,\"335572081\":4278190080,\"335572083\":0,\"335572084\":0,\"335572085\":4278190080,\"335572087\":0,\"335572088\":0,\"335572089\":4278190080,\"469777462\":[720,360],\"469777927\":[0,0],\"469777928\":[0,8],\"469789798\":\"none\",\"469789802\":\"none\",\"469789806\":\"none\",\"469789810\":\"none\",\"469789814\":\"none\"}'> </span></li>\n<li><span data-contrast=\"auto\">Demonstrated experience translating program or CMC strategy into functional manufacturing plans, priorities, budgets, timelines, and risk-mitigation actions</span><span data-ccp-props='{\"335557856\":16777215,\"335559685\":360,\"335572071\":0,\"335572072\":0,\"335572073\":4278190080,\"335572075\":0,\"335572076\":0,\"335572077\":4278190080,\"335572079\":0,\"335572080\":0,\"335572081\":4278190080,\"335572083\":0,\"335572084\":0,\"335572085\":4278190080,\"335572087\":0,\"335572088\":0,\"335572089\":4278190080,\"469777462\":[720,360],\"469777927\":[0,0],\"469777928\":[0,8],\"469789798\":\"none\",\"469789802\":\"none\",\"469789806\":\"none\",\"469789810\":\"none\",\"469789814\":\"none\"}'> </span></li>\n<li><span data-contrast=\"auto\">Significant experience selecting, governing, and influencing CDMOs, with accountability for cGMP performance, quality, compliance, cost, and supply outcomes</span><span data-ccp-props='{\"335557856\":16777215,\"335559685\":360,\"335572071\":0,\"335572072\":0,\"335572073\":4278190080,\"335572075\":0,\"335572076\":0,\"335572077\":4278190080,\"335572079\":0,\"335572080\":0,\"335572081\":4278190080,\"335572083\":0,\"335572084\":0,\"335572085\":4278190080,\"335572087\":0,\"335572088\":0,\"335572089\":4278190080,\"469777462\":[720,360],\"469777927\":[0,0],\"469777928\":[0,8],\"469789798\":\"none\",\"469789802\":\"none\",\"469789806\":\"none\",\"469789810\":\"none\",\"469789814\":\"none\"}'> </span></li>\n<li><span data-contrast=\"auto\">Experience leading technology transfer, scale-up, validation, and late-stage clinical manufacturing; commercial launch experience preferred</span><span data-ccp-props='{\"335557856\":16777215,\"335559685\":360,\"335572071\":0,\"335572072\":0,\"335572073\":4278190080,\"335572075\":0,\"335572076\":0,\"335572077\":4278190080,\"335572079\":0,\"335572080\":0,\"335572081\":4278190080,\"335572083\":0,\"335572084\":0,\"335572085\":4278190080,\"335572087\":0,\"335572088\":0,\"335572089\":4278190080,\"469777462\":[720,360],\"469777927\":[0,0],\"469777928\":[0,8],\"469789798\":\"none\",\"469789802\":\"none\",\"469789806\":\"none\",\"469789810\":\"none\",\"469789814\":\"none\"}'> </span></li>\n<li><span data-contrast=\"auto\">Strong business and financial acumen, including experience with forecasting, external manufacturing spend, resource planning, and investment tradeoffs</span><span data-ccp-props='{\"335557856\":16777215,\"335559685\":360,\"335572071\":0,\"335572072\":0,\"335572073\":4278190080,\"335572075\":0,\"335572076\":0,\"335572077\":4278190080,\"335572079\":0,\"335572080\":0,\"335572081\":4278190080,\"335572083\":0,\"335572084\":0,\"335572085\":4278190080,\"335572087\":0,\"335572088\":0,\"335572089\":4278190080,\"469777462\":[720,360],\"469777927\":[0,0],\"469777928\":[0,8],\"469789798\":\"none\",\"469789802\":\"none\",\"469789806\":\"none\",\"469789810\":\"none\",\"469789814\":\"none\"}'> </span></li>\n<li><span data-contrast=\"auto\">Demonstrated ability to lead complex cross-functional work, reconcile competing priorities, and influence decisions without direct authority</span><span data-ccp-props='{\"335557856\":16777215,\"335559685\":360,\"335572071\":0,\"335572072\":0,\"335572073\":4278190080,\"335572075\":0,\"335572076\":0,\"335572077\":4278190080,\"335572079\":0,\"335572080\":0,\"335572081\":4278190080,\"335572083\":0,\"335572084\":0,\"335572085\":4278190080,\"335572087\":0,\"335572088\":0,\"335572089\":4278190080,\"469777462\":[720,360],\"469777927\":[0,0],\"469777928\":[0,8],\"469789798\":\"none\",\"469789802\":\"none\",\"469789806\":\"none\",\"469789810\":\"none\",\"469789814\":\"none\"}'> </span></li>\n<li><span data-contrast=\"auto\">Experience establishing governance, operating standards, and scalable processes and building capability through coaching, knowledge transfer, or team development</span><span data-ccp-props='{\"335557856\":16777215,\"335559685\":360,\"335572071\":0,\"335572072\":0,\"335572073\":4278190080,\"335572075\":0,\"335572076\":0,\"335572077\":4278190080,\"335572079\":0,\"335572080\":0,\"335572081\":4278190080,\"335572083\":0,\"335572084\":0,\"335572085\":4278190080,\"335572087\":0,\"335572088\":0,\"335572089\":4278190080,\"469777462\":[720,360],\"469777927\":[0,0],\"469777928\":[0,8],\"469789798\":\"none\",\"469789802\":\"none\",\"469789806\":\"none\",\"469789810\":\"none\",\"469789814\":\"none\"}'> </span></li>\n<li><span data-contrast=\"auto\">Strong knowledge of pharmaceutical and biotechnology industry trends, product development and life cycle management, global regulatory requirements, and clinical-stage manufacturing</span><span data-ccp-props='{\"335557856\":16777215,\"335559685\":360,\"335572071\":0,\"335572072\":0,\"335572073\":4278190080,\"335572075\":0,\"335572076\":0,\"335572077\":4278190080,\"335572079\":0,\"335572080\":0,\"335572081\":4278190080,\"335572083\":0,\"335572084\":0,\"335572085\":4278190080,\"335572087\":0,\"335572088\":0,\"335572089\":4278190080,\"469777462\":[720,360],\"469777927\":[0,0],\"469777928\":[0,8],\"469789798\":\"none\",\"469789802\":\"none\",\"469789806\":\"none\",\"469789810\":\"none\",\"469789814\":\"none\"}'> </span></li>\n<li><span data-contrast=\"auto\">Strong judgment, facilitation, negotiation, and problem-solving skills, with the ability to make and communicate recommendations on complex technical and business matters</span><span data-ccp-props='{\"335557856\":16777215,\"335559685\":360,\"335572071\":0,\"335572072\":0,\"335572073\":4278190080,\"335572075\":0,\"335572076\":0,\"335572077\":4278190080,\"335572079\":0,\"335572080\":0,\"335572081\":4278190080,\"335572083\":0,\"335572084\":0,\"335572085\":4278190080,\"335572087\":0,\"335572088\":0,\"335572089\":4278190080,\"469777462\":[720,360],\"469777927\":[0,0],\"469777928\":[0,8],\"469789798\":\"none\",\"469789802\":\"none\",\"469789806\":\"none\",\"469789810\":\"none\",\"469789814\":\"none\"}'> </span></li>\n<li><span data-contrast=\"auto\">Excellent verbal, written, and presentation skills, including the ability to communicate effectively with senior leaders, cross-functional teams, regulators, contractors, and external partners</span><span data-ccp-props='{\"335557856\":16777215,\"335559685\":360,\"335572071\":0,\"335572072\":0,\"335572073\":4278190080,\"335572075\":0,\"335572076\":0,\"335572077\":4278190080,\"335572079\":0,\"335572080\":0,\"335572081\":4278190080,\"335572083\":0,\"335572084\":0,\"335572085\":4278190080,\"335572087\":0,\"335572088\":0,\"335572089\":4278190080,\"469777462\":[720,360],\"469777927\":[0,0],\"469777928\":[0,8],\"469789798\":\"none\",\"469789802\":\"none\",\"469789806\":\"none\",\"469789810\":\"none\",\"469789814\":\"none\"}'> </span></li>\n<li><span data-contrast=\"auto\">Ability to operate independently, lead in a matrixed environment, and adapt priorities as business and program needs evolve</span><span data-ccp-props='{\"335557856\":16777215,\"335559685\":360,\"335572071\":0,\"335572072\":0,\"335572073\":4278190080,\"335572075\":0,\"335572076\":0,\"335572077\":4278190080,\"335572079\":0,\"335572080\":0,\"335572081\":4278190080,\"335572083\":0,\"335572084\":0,\"335572085\":4278190080,\"335572087\":0,\"335572088\":0,\"335572089\":4278190080,\"469777462\":[720,360],\"469777927\":[0,0],\"469777928\":[0,8],\"469789798\":\"none\",\"469789802\":\"none\",\"469789806\":\"none\",\"469789810\":\"none\",\"469789814\":\"none\"}'> </span></li>\n</ul>\n\n<p data-ccp-border-between=\"0px none #000000\" data-ccp-padding-between=\"0px\"><span data-ccp-props='{\"335559739\":120}'> </span></p>\n\n<p> </p>\n\n<p> </p>\n\n<p>#LI-Onsite</p>\n<div class=\"content-pay-transparency\"><div class=\"pay-input\"><div class=\"title\">MA Pay Range</div><div class=\"pay-range\"><span>$200,000</span><span class=\"divider\">—</span><span>$240,000 USD</span></div></div></div>\n<div class=\"content-conclusion\"><p> </p>\n<p>The pay range reflects the base pay range Dyne reasonably expects to pay for this role at the time of posting. Individual compensation depends on factors such as education, experience, job-related knowledge, and demonstrated skills.</p>\n<p>The statements contained herein reflect general details as necessary to describe the principles functions for this job, the level of knowledge and skill typically required, and the scope of responsibility, but should not be considered an all-inclusive listing of work requirements.  Individuals may perform other duties as assigned, including work in other functional areas to cover absences or relief, to equalize peak work periods or otherwise balance workload.</p>\n<p class=\"Body\"><em><span style=\"font-family: 'Arial',sans-serif;color: #626262\">Dyne Therapeutics is an equal opportunity employer and will not discriminate against any employee or applicant on the basis of age, color, disability, gender, national origin, race, religion, sexual orientation, veteran status, or any classification protected by federal, state, or local law.</span></em></p></div>\t\t\t\n<br>\n            ",
+      "body_sha256": "d0a407542701fdf466273ad4cb33c433ae2156ebf80470fc916333d19025a316",
+      "previous_url": "/careers-culture/",
+      "next_url": "/jobs/director-drug-safety-pharmacovigilance-scientist/",
+      "text_word_count": 865
+    }
+  ],
+  "leadership_changes": [
+    {
+      "source_id": 2772,
+      "title": "Doug Kerr, M.D., Ph.D., MBA",
+      "expected_role": "Chief Medical Officer",
+      "role": "Head of Research & Development and Chief Medical Officer"
+    }
+  ],
+  "homepage_news": [
+    {
+      "title": "Dyne Therapeutics Reports Inducement Grants Under Nasdaq Listing Rule 5635(c)(4)",
+      "url": "https://investors.dyne-tx.com/news-releases/news-release-details/dyne-therapeutics-reports-inducement-grants-under-nasdaq-7",
+      "date_label": "October 22, 2026",
+      "date": "2026-10-22T00:00:00"
+    },
+    {
+      "title": "Dyne Therapeutics Announces Additional One-Year Clinical Data from Phase 1/2 ACHIEVE Trial of Z-Basivarsen (DYNE-101) for Myotonic Dystrophy Type 1 (DM1)",
+      "url": "https://investors.dyne-tx.com/news-releases/news-release-details/dyne-therapeutics-announces-additional-one-year-clinical-data-0",
+      "date_label": "September 29, 2026",
+      "date": "2026-09-29T00:00:00"
+    }
+  ],
+  "vacancy_census": [
+    {
+      "alias": "/jobs/associate-director-clinical-operations-study-lead",
+      "title": "Associate Director, Clinical Operations Study Lead",
+      "source_id": 3972,
+      "expected_published": true,
+      "current_vacancy": true
+    },
+    {
+      "alias": "/jobs/senior-director-program-management",
+      "title": "Senior Director, Program Management",
+      "source_id": 3402,
+      "expected_published": true,
+      "current_vacancy": true
+    },
+    {
+      "alias": "/jobs/executive-director-regulatory-affairs",
+      "title": "Executive Director, Regulatory Affairs",
+      "source_id": 3548,
+      "expected_published": true,
+      "current_vacancy": true
+    },
+    {
+      "alias": "/jobs/director-qa-gmp-operations",
+      "title": "Director, QA GMP Operations",
+      "source_id": 3567,
+      "expected_published": true,
+      "current_vacancy": true
+    },
+    {
+      "alias": "/jobs/vp-dm1-commercial-asset-lead",
+      "title": "VP, DM1 Commercial Asset Lead",
+      "source_id": 3573,
+      "expected_published": true,
+      "current_vacancy": true
+    },
+    {
+      "alias": "/jobs/senior-manager-us-medical-affairs",
+      "title": "Senior Manager, US Medical Affairs",
+      "source_id": 3593,
+      "expected_published": true,
+      "current_vacancy": true
+    },
+    {
+      "alias": "/jobs/director-medical-writing",
+      "title": "Director, Medical Writing",
+      "source_id": 3594,
+      "expected_published": true,
+      "current_vacancy": true
+    },
+    {
+      "alias": "/jobs/dyne-care-partner-atlanta",
+      "title": "Dyne Care Partner - Atlanta",
+      "source_id": 3596,
+      "expected_published": true,
+      "current_vacancy": false
+    },
+    {
+      "alias": "/jobs/dyne-care-partner-central",
+      "title": "Dyne Care Partner - Central",
+      "source_id": 3598,
+      "expected_published": true,
+      "current_vacancy": false
+    },
+    {
+      "alias": "/jobs/dyne-care-partner-florida",
+      "title": "Dyne Care Partner - Florida",
+      "source_id": 3599,
+      "expected_published": true,
+      "current_vacancy": false
+    },
+    {
+      "alias": "/jobs/dyne-care-partner-michigan",
+      "title": "Dyne Care Partner - Michigan",
+      "source_id": 3601,
+      "expected_published": true,
+      "current_vacancy": false
+    },
+    {
+      "alias": "/jobs/dyne-care-partner-new-england",
+      "title": "Dyne Care Partner - New England",
+      "source_id": 3602,
+      "expected_published": true,
+      "current_vacancy": false
+    },
+    {
+      "alias": "/jobs/dyne-care-partner-north-central",
+      "title": "Dyne Care Partner - North Central",
+      "source_id": 3603,
+      "expected_published": true,
+      "current_vacancy": false
+    },
+    {
+      "alias": "/jobs/dyne-care-partner-northeast-metro",
+      "title": "Dyne Care Partner - Northeast Metro",
+      "source_id": 3604,
+      "expected_published": true,
+      "current_vacancy": false
+    },
+    {
+      "alias": "/jobs/dyne-care-partner-northern-california",
+      "title": "Dyne Care Partner - Northern California",
+      "source_id": 3605,
+      "expected_published": true,
+      "current_vacancy": false
+    },
+    {
+      "alias": "/jobs/dyne-care-partner-southern-california",
+      "title": "Dyne Care Partner - Southern California",
+      "source_id": 3607,
+      "expected_published": true,
+      "current_vacancy": false
+    },
+    {
+      "alias": "/jobs/dyne-care-partner-virginia",
+      "title": "Dyne Care Partner - Virginia",
+      "source_id": 3611,
+      "expected_published": true,
+      "current_vacancy": false
+    },
+    {
+      "alias": "/jobs/key-account-manager-central-plains",
+      "title": "Key Account Manager - Central Plains",
+      "source_id": 3613,
+      "expected_published": true,
+      "current_vacancy": false
+    },
+    {
+      "alias": "/jobs/key-account-manager-great-lakes",
+      "title": "Key Account Manager - Great Lakes",
+      "source_id": 3615,
+      "expected_published": true,
+      "current_vacancy": true
+    },
+    {
+      "alias": "/jobs/key-account-manager-mid-atlantic",
+      "title": "Key Account Manager - Mid-Atlantic",
+      "source_id": 3616,
+      "expected_published": true,
+      "current_vacancy": false
+    },
+    {
+      "alias": "/jobs/key-account-manager-south",
+      "title": "Key Account Manager - South",
+      "source_id": 3621,
+      "expected_published": true,
+      "current_vacancy": false
+    },
+    {
+      "alias": "/jobs/vp-learning-leadership-development",
+      "title": "VP, Learning & Leadership Development",
+      "source_id": 3647,
+      "expected_published": true,
+      "current_vacancy": true
+    },
+    {
+      "alias": "/jobs/thought-leader-liaison-midwest",
+      "title": "Thought Leader Liaison - Midwest",
+      "source_id": 3678,
+      "expected_published": true,
+      "current_vacancy": false
+    },
+    {
+      "alias": "/jobs/thought-leader-liaison-northeast",
+      "title": "Thought Leader Liaison - Northeast",
+      "source_id": 3679,
+      "expected_published": true,
+      "current_vacancy": true
+    },
+    {
+      "alias": "/jobs/thought-leader-liaison-southeast",
+      "title": "Thought Leader Liaison - Southeast",
+      "source_id": 3680,
+      "expected_published": true,
+      "current_vacancy": false
+    },
+    {
+      "alias": "/jobs/thought-leader-liaison-west",
+      "title": "Thought Leader Liaison - West",
+      "source_id": 3681,
+      "expected_published": true,
+      "current_vacancy": false
+    },
+    {
+      "alias": "/jobs/associate-director-formulation-and-drug-product-development",
+      "title": "Associate Director, Formulation and Drug Product Development",
+      "source_id": 3776,
+      "expected_published": true,
+      "current_vacancy": true
+    },
+    {
+      "alias": "/jobs/associate-director-quality-management-systems",
+      "title": "Associate Director, Quality Management Systems",
+      "source_id": 3779,
+      "expected_published": true,
+      "current_vacancy": true
+    },
+    {
+      "alias": "/jobs/medical-director-clinical-development",
+      "title": "Medical Director, Clinical Development",
+      "source_id": 3782,
+      "expected_published": true,
+      "current_vacancy": true
+    },
+    {
+      "alias": "/jobs/director-business-strategy-operations-commercialization",
+      "title": "Senior Director, Business Strategy & Operations - Office of the CCO",
+      "source_id": 3815,
+      "expected_published": true,
+      "current_vacancy": false
+    },
+    {
+      "alias": "/jobs/associate-director-talent-acquisition-operations-programs",
+      "title": "Associate Director, Talent Acquisition Operations & Programs",
+      "source_id": 3816,
+      "expected_published": true,
+      "current_vacancy": false
+    },
+    {
+      "alias": "/jobs/director-people-operations",
+      "title": "Director, People Operations",
+      "source_id": 3839,
+      "expected_published": true,
+      "current_vacancy": false
+    },
+    {
+      "alias": "/jobs/director-drug-safety-pharmacovigilance-scientist",
+      "title": "Director, Drug Safety & Pharmacovigilance Scientist",
+      "source_id": 3858,
+      "expected_published": true,
+      "current_vacancy": true
+    },
+    {
+      "alias": "/jobs/scientist-rna-chemistry",
+      "title": "Scientist, RNA Chemistry",
+      "source_id": 3869,
+      "expected_published": true,
+      "current_vacancy": false
+    },
+    {
+      "alias": "/jobs/scientist-bioconjugation",
+      "title": "Scientist, Bioconjugation",
+      "source_id": 3875,
+      "expected_published": true,
+      "current_vacancy": false
+    },
+    {
+      "alias": "/jobs/director-clinical-scientist",
+      "title": "Director, Clinical Scientist",
+      "source_id": 3876,
+      "expected_published": true,
+      "current_vacancy": false
+    },
+    {
+      "alias": "/jobs/senior-director-medical-affairs-learning-development",
+      "title": "Senior Director, Medical Affairs Learning & Development",
+      "source_id": 3877,
+      "expected_published": true,
+      "current_vacancy": true
+    },
+    {
+      "alias": "/jobs/senior-director-quality-control",
+      "title": "Senior Director, Quality Control",
+      "source_id": 3927,
+      "expected_published": true,
+      "current_vacancy": false
+    },
+    {
+      "alias": "/jobs/executive-director-techops-alliance-and-strategic-partnerships",
+      "title": "Executive Director, TechOps Alliance and Strategic Partnerships",
+      "source_id": 3963,
+      "expected_published": true,
+      "current_vacancy": false
+    },
+    {
+      "alias": "/jobs/executive-assistant",
+      "title": "Executive Assistant",
+      "source_id": 4018,
+      "expected_published": true,
+      "current_vacancy": true
+    },
+    {
+      "alias": "/jobs/senior-administrative-assistant-us-affiliate",
+      "title": "Senior Administrative Assistant - US Affiliate",
+      "source_id": 4019,
+      "expected_published": true,
+      "current_vacancy": true
+    },
+    {
+      "alias": "/jobs/associate-director-medical-information-and-review",
+      "title": "Associate Director, Medical Information and Review",
+      "source_id": 4038,
+      "expected_published": true,
+      "current_vacancy": true
+    },
+    {
+      "alias": "/jobs/senior-director-financial-planning-analysis-rd",
+      "title": "Senior Director, Financial Planning & Analysis - R&D",
+      "source_id": 4039,
+      "expected_published": true,
+      "current_vacancy": false
+    },
+    {
+      "alias": "/jobs/associate-director-market-research-competitive-intelligence",
+      "title": "Associate Director, Market Research & Competitive Intelligence",
+      "source_id": 4040,
+      "expected_published": true,
+      "current_vacancy": true
+    },
+    {
+      "alias": "/jobs/director-revenue",
+      "title": "Director, Revenue",
+      "source_id": 4057,
+      "expected_published": true,
+      "current_vacancy": true
+    },
+    {
+      "alias": "/jobs/director-cost-accounting",
+      "title": " Director, Cost Accounting",
+      "source_id": 4059,
+      "expected_published": true,
+      "current_vacancy": true
+    },
+    {
+      "alias": "/jobs/associate-director-financial-planning-analysis-fpa",
+      "title": "Associate Director, Financial Planning & Analysis (FP&A)",
+      "source_id": 4060,
+      "expected_published": true,
+      "current_vacancy": false
+    },
+    {
+      "alias": "/jobs/associate-director-regulatory-operations-veeva-vault-rim",
+      "title": "Associate Director, Regulatory Operations - Veeva Vault RIM ",
+      "source_id": 4088,
+      "expected_published": true,
+      "current_vacancy": false
+    },
+    {
+      "alias": "/jobs/senior-director-medical-affairs-biostatistics",
+      "title": "Senior Director, Medical Affairs Biostatistics",
+      "source_id": 4090,
+      "expected_published": true,
+      "current_vacancy": true
+    }
+  ],
+  "current_vacancies": [
+    "/jobs/associate-director-analytical-development",
+    "/jobs/associate-director-clinical-operations-study-lead",
+    "/jobs/associate-director-formulation-and-drug-product-development",
+    "/jobs/associate-director-market-research-competitive-intelligence",
+    "/jobs/associate-director-medical-information-and-review",
+    "/jobs/associate-director-quality-management-systems",
+    "/jobs/director-cost-accounting",
+    "/jobs/director-drug-safety-pharmacovigilance-scientist",
+    "/jobs/director-government-pricing-contract-operations",
+    "/jobs/director-medical-writing",
+    "/jobs/director-oligonucleotide-manufacturing",
+    "/jobs/director-qa-gmp-operations",
+    "/jobs/director-revenue",
+    "/jobs/executive-assistant",
+    "/jobs/executive-director-regulatory-affairs",
+    "/jobs/key-account-manager-great-lakes",
+    "/jobs/medical-director-clinical-development",
+    "/jobs/senior-administrative-assistant-us-affiliate",
+    "/jobs/senior-director-medical-affairs-biostatistics",
+    "/jobs/senior-director-medical-affairs-learning-development",
+    "/jobs/senior-director-program-management",
+    "/jobs/senior-manager-us-medical-affairs",
+    "/jobs/thought-leader-liaison-northeast",
+    "/jobs/vp-dm1-commercial-asset-lead",
+    "/jobs/vp-learning-leadership-development"
+  ],
+  "redirects": [
+    {
+      "source": "our-commitment/new-clinical-trial-opportunity-in-dm1",
+      "target": "internal:/new-clinical-trial-opportunity-in-dm1",
+      "status": 301
+    }
+  ],
+  "reference_changes": [
+    {
+      "path": "/jobs/dyne-care-partner-northwest/",
+      "audit_live_status": 200,
+      "current_live_status": 404,
+      "action": "Retain local404; upstream source is no longer a published job. No vacancy is invented."
+    }
+  ],
+  "resources_typography": {
+    "node_alias": "/resources",
+    "from": "Charley's Fund",
+    "to": "Charley’s Fund",
+    "allowed_fields": [
+      "field_section_body",
+      "field_section_heading",
+      "field_section_link"
+    ]
+  }
+}

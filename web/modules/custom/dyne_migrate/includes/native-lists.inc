@@ -29,6 +29,8 @@ function dyne_native_lists_schema(): void {
     foreach (['dyne_policy_list', 'dyne_perspective_list'] as $id) $settings['target_bundles'][$id] = $id;
     $components->setSetting('handler_settings', $settings)->save();
   }
+  require_once __DIR__ . '/perspective-list-model.inc';
+  dyne_perspective_list_schema();
 }
 
 /** One-time conversion; subsequent runs preserve editorial changes. */

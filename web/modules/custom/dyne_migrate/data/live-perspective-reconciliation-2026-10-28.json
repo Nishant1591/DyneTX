@@ -1,0 +1,421 @@
+{
+  "schema_version": 1,
+  "captured": "2026-10-28",
+  "source": "https://www.dyne-tx.com/perspectives/",
+  "source_html_sha256": "5a601c386c3e242373b90039943acbafedf32d6e52a2b84f270ff98a3f04f272",
+  "listing": {
+    "total": 10,
+    "visible_cards": 6,
+    "featured_node": 146
+  },
+  "perspectives": [
+    {
+      "id": 74,
+      "alias": "/perspectives/scaling-culture-with-growth-how-to-maintain-your-startups-special-sauce",
+      "source_id": 1675,
+      "category_before": [],
+      "category": "BLOG",
+      "external_action": null
+    },
+    {
+      "id": 75,
+      "alias": "/perspectives/toward-a-brighter-future-targeting-the-genetic-basis-of-rare-muscle-diseases",
+      "source_id": 1681,
+      "category_before": [],
+      "category": "BLOG",
+      "external_action": null
+    },
+    {
+      "id": 76,
+      "alias": "/perspectives/the-power-of-hope-a-joint-perspective-on-finding-balance-in-the-search-for-life-changing-therapies",
+      "source_id": 1686,
+      "category_before": [],
+      "category": "BLOG",
+      "external_action": null
+    },
+    {
+      "id": 77,
+      "alias": "/perspectives/preparing-to-pitch-in-a-virtual-world",
+      "source_id": 1688,
+      "category_before": [],
+      "category": "Life Science Leader panel",
+      "external_action": {
+        "before": [
+          {
+            "uri": "https://www.lifescienceleader.com/doc/preparing-to-pitch-in-a-virtual-world-0001",
+            "title": null,
+            "options": []
+          }
+        ],
+        "after_title": "Watch"
+      }
+    },
+    {
+      "id": 78,
+      "alias": "/perspectives/beyond-the-balance-sheet-thinking-broadly-about-dilution-in-building-a-transformative-biotech",
+      "source_id": 1691,
+      "category_before": [],
+      "category": "BLOG",
+      "external_action": null
+    },
+    {
+      "id": 80,
+      "alias": "/perspectives/voice-of-the-patient-the-biopharma-perspective",
+      "source_id": 1693,
+      "category_before": [],
+      "category": "BLOG",
+      "external_action": null
+    },
+    {
+      "id": 81,
+      "alias": "/perspectives/fshd-society-radio",
+      "source_id": 1694,
+      "category_before": [],
+      "category": "PODCAST",
+      "external_action": null
+    },
+    {
+      "id": 82,
+      "alias": "/perspectives/ordinary-people-achieving-the-extraordinary-lessons-in-leadership-from-the-court-to-the-c-suite",
+      "source_id": 1696,
+      "category_before": [],
+      "category": "BLOG",
+      "external_action": null
+    },
+    {
+      "id": 91,
+      "alias": "/perspectives/playing-to-win-building-a-position-of-strength-in-biotech",
+      "source_id": 1768,
+      "category_before": [],
+      "category": "",
+      "external_action": null
+    },
+    {
+      "id": 94,
+      "alias": "/perspectives/starting-a-new-tradition-of-support",
+      "source_id": 1813,
+      "category_before": [],
+      "category": "Blog",
+      "external_action": null
+    },
+    {
+      "id": 99,
+      "alias": "/perspectives/from-the-trenches-a-lifesci-vc-blog",
+      "source_id": 1843,
+      "category_before": [],
+      "category": "",
+      "external_action": null
+    },
+    {
+      "id": 130,
+      "alias": "/perspectives/lessons-learned-on-preparing-to-weather-the-inevitable-challenges-in-biotech",
+      "source_id": 2223,
+      "category_before": [],
+      "category": "",
+      "external_action": null
+    },
+    {
+      "id": 146,
+      "alias": "/perspectives/cultivating-a-dynamic-culture-centered-around-purpose-driven-values",
+      "source_id": 2355,
+      "category_before": [],
+      "category": "",
+      "external_action": null
+    }
+  ],
+  "featured_image": {
+    "node": 146,
+    "before_uri": "public://legacy/Dyne_Perspectives_Kate-1.jpg",
+    "after_uri": "public://legacy/Dyne_Perspectives_Kate-main_400px.png",
+    "sha256": "99d05fcbb1ecbb3d4a5c749ee493c28ea5c969f74a7d9642fdc6f56fb933750d",
+    "source_url": "https://www.dyne-tx.com/wp-content/uploads/Dyne_Perspectives_Kate-main_400px.png",
+    "alt": "Kate Mitchell"
+  },
+  "stories": [
+    {
+      "alias": "/dm1-story-billydean",
+      "id": 137,
+      "patches": [
+        {
+          "entity_type": "paragraph",
+          "id": 1618,
+          "field": "field_section_body",
+          "format": "dyne_legacy_html",
+          "before_sha256": "7457acbfc636ea469b5961b24937b661e14dbed2c406f08344f19ff0acaf8cf2",
+          "after_sha256": "569c3911a85d0e6b6fc75d76327cf7c45d1a24c1529bc8167ac5db7832832f2e",
+          "replacements": [
+            {
+              "from": "diagnosis...",
+              "to": "diagnosis…",
+              "occurrences": 1
+            }
+          ]
+        },
+        {
+          "entity_type": "paragraph",
+          "id": 1631,
+          "field": "field_section_body",
+          "format": "dyne_legacy_html",
+          "before_sha256": "02fb115aba3ed216dff9407e80b1b6ac5c9b9b1b90fb2f3dc7bcbc3588afc7f8",
+          "after_sha256": "fb6d89a82d9e87b04c15f9f42b780bbdef73bdd804a0a5d4d96e5eac45ee77a0",
+          "replacements": [
+            {
+              "from": "diagnosis...",
+              "to": "diagnosis…",
+              "occurrences": 1
+            }
+          ]
+        },
+        {
+          "entity_type": "paragraph",
+          "id": 1637,
+          "field": "field_section_body",
+          "format": "dyne_legacy_html",
+          "before_sha256": "34b56d122107c9841f3b1a4bf557aa42a68359180126f53ff9f6471f8460dc62",
+          "after_sha256": "bb6a7ae75891f1aeec84bf1017a6b374d06c10d44d473c05b4faabf154fc9cdc",
+          "replacements": [
+            {
+              "from": "before...",
+              "to": "before…",
+              "occurrences": 1
+            },
+            {
+              "from": "\"You have to develop",
+              "to": "“You have to develop",
+              "occurrences": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "alias": "/dm1-story-emily",
+      "id": 320,
+      "patches": [
+        {
+          "entity_type": "paragraph",
+          "id": 1730,
+          "field": "field_section_heading",
+          "format": "dyne_legacy_html",
+          "before_sha256": "8ef9ced3e882428750f0995f73a2708768e42a6df04a02f058a9746ebbca08a5",
+          "after_sha256": "9fcced5a24bbe3c8cd16d922eafca86e512aaf724041bd7751aab1fd57ae02b6",
+          "replacements": [
+            {
+              "from": "I'm Emily",
+              "to": "I’m Emily",
+              "occurrences": 1
+            },
+            {
+              "from": "\"functional improvement\"",
+              "to": "“functional improvement”",
+              "occurrences": 1
+            },
+            {
+              "from": "I've carried",
+              "to": "I’ve carried",
+              "occurrences": 1
+            }
+          ]
+        },
+        {
+          "entity_type": "paragraph",
+          "id": 1765,
+          "field": "field_section_body",
+          "format": "dyne_legacy_html",
+          "before_sha256": "fd269fdcd723f173112c214cc6045f82e9f1dbe1a96cc8802d662448517e7a1c",
+          "after_sha256": "56e32a9ff4bc726416f7935419133e36d1f0f9a5cd935ff0c076a69da1d11ba6",
+          "replacements": [
+            {
+              "from": "We don't yet",
+              "to": "We don’t yet",
+              "occurrences": 1
+            }
+          ]
+        },
+        {
+          "entity_type": "paragraph",
+          "id": 1766,
+          "field": "field_section_body",
+          "format": "dyne_legacy_html",
+          "before_sha256": "d6ee8623ebdb2166d2d29b00eefb77596db965bffd1414801a28d3c975e0ffa6",
+          "after_sha256": "73ec17e2ac62be892a7a9165b6457d4d2b7a263fb95626813256b68e7d9f7170",
+          "replacements": [
+            {
+              "from": "walk...or",
+              "to": "walk…or",
+              "occurrences": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "alias": "/finding-strength-beyond-muscle",
+      "id": 85,
+      "patches": [
+        {
+          "entity_type": "paragraph",
+          "id": 1310,
+          "field": "field_section_body",
+          "format": "dyne_legacy_html",
+          "before_sha256": "f78b87f80e59e76ebdc14f71418872bb6d16ba9651e58d60447204e301b97cca",
+          "after_sha256": "fffca7b165c431cbc1d6175da61e83c71cfc703e95738689ce0466de1f65cabf",
+          "replacements": [
+            {
+              "from": "forms.” - Chelsea",
+              "to": "forms.” – Chelsea",
+              "occurrences": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "alias": "/fshd-story-chelsea",
+      "id": 118,
+      "patches": [
+        {
+          "entity_type": "paragraph",
+          "id": 1519,
+          "field": "field_section_body",
+          "format": "dyne_legacy_html",
+          "before_sha256": "760475d8a447a2ad4370af19c4c845d683891fb3a858022a080caf41c82b17a3",
+          "after_sha256": "236f89560eacdc790cdfdf41b44c558aa75dd51c5aa04bfc27c0f09c7709c969",
+          "replacements": [
+            {
+              "from": "Laura's experience",
+              "to": "Laura’s experience",
+              "occurrences": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "alias": "/loraines-story",
+      "id": 93,
+      "patches": [
+        {
+          "entity_type": "paragraph",
+          "id": 1340,
+          "field": "field_section_body",
+          "format": "dyne_legacy_html",
+          "before_sha256": "f980cbdce7c0d20f2c360d9837310d1602e45af73b86e294e311f115adb1b1a5",
+          "after_sha256": "0cf3e50024b78449e08d2c0c2e01f8cca77c277efd0674ae21474a29ddafebac",
+          "replacements": [
+            {
+              "from": "You've got to stay",
+              "to": "You’ve got to stay",
+              "occurrences": 1
+            }
+          ]
+        },
+        {
+          "entity_type": "paragraph",
+          "id": 1349,
+          "field": "field_section_body",
+          "format": "dyne_legacy_html",
+          "before_sha256": "ba348b0695f0f74bf0a158614d04bdfe43223bc2542d9c15332d536d452eedea",
+          "after_sha256": "3ad7b6ac340bdbd35146ff2cf6c55b652405c5a882dfe2c9b810801c88299200",
+          "replacements": [
+            {
+              "from": "Everyone's story",
+              "to": "Everyone’s story",
+              "occurrences": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "alias": "/perspectives/toward-a-brighter-future-targeting-the-genetic-basis-of-rare-muscle-diseases",
+      "id": 75,
+      "patches": [
+        {
+          "entity_type": "node",
+          "id": 75,
+          "field": "field_story_intro",
+          "format": "dyne_legacy_html",
+          "before_sha256": "36648ac2be0fb19f8bd2572c34c90d0beb038e8d4dc56f621fe62a9ef8a2ebcf",
+          "after_sha256": "aa57401d10ab816835f416c74edaec2af0d21e853489af429d79d047d179bd9d",
+          "replacements": [
+            {
+              "from": "Q&A; with",
+              "to": "Q&A with",
+              "occurrences": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "alias": "/perspectives/cultivating-a-dynamic-culture-centered-around-purpose-driven-values",
+      "id": 146,
+      "patches": [
+        {
+          "entity_type": "paragraph",
+          "id": 1653,
+          "field": "field_section_body",
+          "format": "dyne_legacy_html",
+          "before_sha256": "108423872c14cf60e41e0b9a90d88b9b7210e731672b3dd12830c403449517bc",
+          "after_sha256": "4284646cf661a4a6481ba61bffcc042192857f711a2f97c81259d0d06c02db16",
+          "replacements": [
+            {
+              "from": "Dyne's patient and people-centric",
+              "to": "Dyne’s patient and people-centric",
+              "occurrences": 1
+            }
+          ]
+        },
+        {
+          "entity_type": "paragraph",
+          "id": 1662,
+          "field": "field_section_body",
+          "format": "dyne_legacy_html",
+          "before_sha256": "32657de81327e2af89979390bba92c0310f0ae4c7f1437c3cdd10ee6697d531b",
+          "after_sha256": "b1eef0aa6acfc0017951008dd14b84592c23b076e1cd834dbd30fc661ff4838a",
+          "replacements": [
+            {
+              "from": "it's what excites",
+              "to": "it’s what excites",
+              "occurrences": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "alias": "/perspectives",
+      "id": 19,
+      "patches": [
+        {
+          "entity_type": "paragraph",
+          "id": 343,
+          "field": "field_list_outro",
+          "format": "dyne_legacy_html",
+          "before_sha256": "39ba144502137d4a0d2ede327bf6900402f538d481f4b55c319a9fb271436563",
+          "after_sha256": "a822429587beff2430c3d66b49485abe7f8a0f46abfe3049bfe172182ba0bc1b",
+          "operation": "cached_public_social_post",
+          "reviewed_after_value": "\r\n\r\n\t\t\r\n\t\t\t\t\r\n\t\t<div class=\"container-fluid section perspective-socials\">\r\n\t\t\t<div class=\"container\">\r\n\t\t\t\t<div class=\"row\">\r\n\r\n\t\t\t\t\t<div class=\"col-12 col-sm-7\">\r\n\t\t\t\t\t\tStay connected with us on <br></br>LinkedIn, X and Facebook.\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t<div class=\"col-8 col-sm-5\">\r\n\t\t\t\t\t\t<a class=\"nav-link  mr-2 mr-md-3\" target=\"_blank\" title=\"opens in a new window\" href=\"https://www.linkedin.com/company/dynetx\" rel=\"noopener\"><i class=\"ico-in-grn\"></i><span class=\"sr-only\">www.linkedin.com</span></a>\r\n\t\t\t\t\t\t<a class=\"nav-link  mr-2 mr-md-3\" target=\"_blank\" title=\"opens in a new window\" href=\"https://twitter.com/dyne_tx\" rel=\"noopener\"><i class=\"ico-tw-grn\"></i><span class=\"sr-only\">twitter.com</span></a>\r\n\t\t\t\t\t\t<a class=\"nav-link\" target=\"_blank\" title=\"opens in a new window\" href=\"https://www.facebook.com/DyneTherapeutic/\" rel=\"noopener\"><i class=\"ico-fb-grn\"></i><span class=\"sr-only\">www.facebook.com</span></a> \r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t\t\t\t\r\n\t\t<div class=\"container-fluid section twitter-feeds\">\n\t\t\t<div class=\"container\">\n\t\t\t\t<div class=\"row\">\n\n\t\t\t\t\t<div class=\"col-12 col-sm-6 mb-5 mb-sm-0\">\n\t\t\t\t\t\t<h2>Hear more from Dyne Therapeutics</h2>\n\n<!-- Custom Twitter Feeds by Smash Balloon -->\n<div id=\"dyne-cached-social-post\" role=\"region\" aria-label=\"Twitter Feed\" class=\" ctf ctf-type-usertimeline ctf-rebranded ctf-feed-933402064  ctf-styles ctf-list ctf-regular-style dyne-social-snapshot\">\n        <div class=\"ctf-tweets\" role=\"list\">\n   \t\t\n<div role=\"listitem\" class=\"ctf-item ctf-author-dyne_tx ctf-new ctf-hide-avatar\" id=\"2105027363960463397\">\n\n\t\n\t<div class=\"ctf-author-box\">\n\t\t<div class=\"ctf-author-box-link\">\n\t        \t\t\t\t\n\t\t\t\t\t\t\t\t\t<h3 class=\"ctf-author-name-heading\"><a href=\"https://twitter.com/dyne_tx\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"ctf-author-name\">Dyne Therapeutics</a></h3>\n\t\t\t\t\t\t\t\t\t\t<a href=\"https://twitter.com/dyne_tx\" class=\"ctf-author-screenname\" target=\"_blank\" rel=\"noopener noreferrer\">@dyne_tx</a>\n\t\t\t\t\t<span class=\"ctf-screename-sep\">·</span>\n\t\t\t\t\t        \n\t\t\t\t\t\t\t<div class=\"ctf-tweet-meta\">\n\t\t\t\t\t<a href=\"https://twitter.com/dyne_tx/status/2105027363960463397\" class=\"ctf-tweet-date\" target=\"_blank\" rel=\"noopener noreferrer\">29 Sep</a>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t    \n\t</div>\n\t<div class=\"ctf-tweet-content\">\n\t\t                <p class=\"ctf-tweet-text\">\n                                        Today we announced additional one-year data from the Phase 1/2 ACHIEVE trial of z-basivarsen (DYNE-101) for DM1. We're pleased to share these results at both #WMS2026 and #AANEM2026. Read more: https://bit.ly/4iQUleP                                                         </p>\n            \t</div>\n\n\t\t\n\t<div class=\"ctf-tweet-actions\">\n\t\t\n\t\t<a href=\"https://twitter.com/intent/tweet?in_reply_to=2105027363960463397&amp;related=dyne_tx\" class=\"ctf-reply\" target=\"_blank\" rel=\"noopener noreferrer\">\n\t\t\t<svg class=\"svg-inline--fa fa-w-16\" viewbox=\"0 0 24 24\" aria-hidden=\"true\" focusable=\"false\" xmlns=\"http://www.w3.org/2000/svg\"><g><path fill=\"currentColor\" d=\"M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z\"></path></g></svg>\t\t\t<span class=\"ctf-screenreader\">Reply on Twitter 2105027363960463397</span>\n\t\t</a>\n\n\t\t<a href=\"https://twitter.com/intent/retweet?tweet_id=2105027363960463397&amp;related=dyne_tx\" class=\"ctf-retweet\" target=\"_blank\" rel=\"noopener noreferrer\"><svg class=\"svg-inline--fa fa-w-16\" viewbox=\"0 0 24 24\" aria-hidden=\"true\" focusable=\"false\"><path fill=\"currentColor\" d=\"M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z\"></path></svg>\t\t\t<span class=\"ctf-screenreader\">Retweet on Twitter 2105027363960463397</span>\n\t\t\t<span class=\"ctf-action-count ctf-retweet-count\">2</span>\n\t\t</a>\n\n\t\t<a href=\"https://twitter.com/intent/like?tweet_id=2105027363960463397&amp;related=dyne_tx\" class=\"ctf-like\" target=\"_blank\" rel=\"noopener noreferrer\">\n\t\t\t<svg class=\"svg-inline--fa fa-w-16\" viewbox=\"0 0 24 24\" aria-hidden=\"true\" focusable=\"false\" xmlns=\"http://www.w3.org/2000/svg\"><g><path fill=\"currentColor\" d=\"M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z\"></path></g></svg>\t\t\t<span class=\"ctf-screenreader\">Like on Twitter 2105027363960463397</span>\n\t\t\t<span class=\"ctf-action-count ctf-favorite-count\">12</span>\n\t\t</a>\n\t\t\n\t\t\t\t\t<a href=\"https://twitter.com/dyne_tx/status/2105027363960463397\" class=\"ctf-twitterlink\" target=\"_blank\" rel=\"noopener noreferrer\">\n\t\t\t\t<span>Twitter</span>\n\t\t\t\t<span class=\"ctf-screenreader\">2105027363960463397</span>\n\t\t\t</a>\n\t\t\t</div>\n</div>    </div>\n    \n</div>\n\n\n\t\t\t\t\t</div>\n<!--\n\t\t\t\t\t<div class=\"col-12 col-sm-6\">\n\t\t\t\t\t\t<h2>Hear more from our CEO, Joshua Brumm</h2>\n[custom-twitter-feeds screenname=\"BrummJosh\" num=1]\n\t\t\t\t\t</div>\n-->\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>",
+          "replacements": []
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Only exact native punctuation spans differ; preserve all words, rich markup, links, images, publication states and previous revisions.",
+    "Story source guard baselines are not reset.",
+    "Older perspective records remain published; only the current listing limit follows the public source.",
+    "Cached source social post replaces only the generated Follow-on-X placeholder; attribution, exact public copy, date, counters and outbound links match the captured source. The separate Follow/social links above it stay intact."
+  ],
+  "cached_social_post": {
+    "source_page": "https://www.dyne-tx.com/perspectives/",
+    "permalink": "https://twitter.com/dyne_tx/status/2105027363960463397",
+    "captured": "2026-10-28",
+    "publication_date": "2026-09-29",
+    "source_fragment_sha256": "a2774dba0d078c0d32f828b7cab16aae3b668ce732585fc7b917369548018938",
+    "storage": "paragraph:343 field_list_outro",
+    "refresh": "This is an editable cached public post, matching the source capture. Editors can replace the attributed post in the Perspectives listing Outro field; no live X API integration or credentials were introduced.",
+    "archive_corroboration": "content-archive/wordpress-additional-content.json contains the same public social_post_id 2105027363960463397."
+  }
+}

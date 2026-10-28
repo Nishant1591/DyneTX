@@ -27,5 +27,32 @@ function ot_webform_page_attachments(array &$attachments): void {
   $config = \Drupal::config('ot_webform.settings');
   $attachments['#attached']['library'][] = 'ot_webform/embed';
   $attachments['#attached']['drupalSettings']['otWebform'] = $config->getRawData();
+  $cookiebot_id = (string) $config->get('cookiebot_id');
+  if ($config->get('cookiebot_enabled') && preg_match('/^[a-f0-9]{8}-(?:[a-f0-9]{4}-){3}[a-f0-9]{12}$/iD', $cookiebot_id)) {
+    $attachments['#attached']['html_head'][] = [
+      [
+        '#tag' => 'script',
+        '#attributes' => [
+          'id' => 'Cookiebot',
+          'src' => 'https://consent.cookiebot.com/uc.js',
+          'type' => 'text/javascript',
+          'data-cbid' => $cookiebot_id,
+        ],
+      ],
+      'ot_webform.cookiebot',
+    ];
+  }
   CacheableMetadata::createFromObject($config)->applyTo($attachments);
+}
+
+/**
+ * Implements hook_page_attachments_alter().
+ */
+function ot_webform_page_attachments_alter(array &$attachments): void {
+  if (!\Drupal::config('ot_webform.settings')->get('cookiebot_enabled')) {
+    return;
+  }
+  // A site uses one consent manager. Keep the native fallback module installed
+  // but do not display a second consent banner while Cookiebot is selected.
+  $attachments['#attached']['library'] = array_values(array_filter($attachments['#attached']['library'] ?? [], static fn(string $library): bool => !str_starts_with($library, 'eu_cookie_compliance/')));
 }

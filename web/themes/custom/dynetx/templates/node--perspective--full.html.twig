@@ -1,5 +1,8 @@
 {{ dyne_metadata_cache }}
+{{ dyne_perspective_presentation_cache }}
 <article{{ attributes.addClass('dyne-perspective', 'wrapper', 'pages').addClass(dyne_page_classes|default([])) }}>
   {% include '@dynetx/includes/legacy-hero.html.twig' %}
-  <div class="dyne-legacy-content">{{ content.field_body_text }}</div>
+  {% if not dyne_perspective_external_shell|default(false) %}
+    <div class="dyne-legacy-content">{{ content.field_body_text }}</div>
+  {% endif %}
 </article>

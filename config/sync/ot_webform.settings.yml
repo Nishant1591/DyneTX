@@ -1,15 +1,17 @@
 _core:
   default_config_hash: FQC_Qa6jBqcw9CxXEaESWzmw00BRhFtuIKXOYkUHCIk
-enabled: false
+enabled: true
 environment: staging
 prod_id: 5c7d29d6-5208-4f7a-b1b5-b9aae9d54670
 staging_id: 5c7d29d6-5208-4f7a-b1b5-b9aae9d54670-test
-collection_point_id: ot-f1366d23-e54d-40cb-b359-36f96ad4bc9d
-dm1_prod_id: ''
-dm1_staging_id: ''
-dm1_collection_point_id: ''
+collection_point_id: d37d89f4-02ef-4834-8033-678cd54cd22a
+dm1_prod_id: 5c7d29d6-5208-4f7a-b1b5-b9aae9d54670
+dm1_staging_id: 5c7d29d6-5208-4f7a-b1b5-b9aae9d54670-test
+dm1_collection_point_id: 7b853126-3f3e-4835-913f-06dfd33301fe
 source_platform: 'https://www.dyne-tx.com'
-data_source_prod: ''
-data_source_stage: ''
+data_source_prod: 'Production: Signup Form'
+data_source_stage: 'Staging: Signup Form test'
 gtm_event: ''
 thank_you_text: 'Thank you! Your submission has been received.'
+cookiebot_enabled: false
+cookiebot_id: 60486e5f-6638-432e-b626-4e9883af4245

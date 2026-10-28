@@ -1,0 +1,87 @@
+{
+  "verified_on": "2026-10-28",
+  "records": [
+    {
+      "alias": "/dmd-story-ravi",
+      "id": 117,
+      "source_id": 2083,
+      "revision": 1726,
+      "before": [],
+      "after": [
+        {
+          "value": "page_stories"
+        }
+      ],
+      "source_url": "https://www.dyne-tx.com/dmd-story-ravi/"
+    },
+    {
+      "alias": "/fshd-story-chelsea",
+      "id": 118,
+      "source_id": 2085,
+      "revision": 2199,
+      "before": [],
+      "after": [
+        {
+          "value": "page_stories"
+        }
+      ],
+      "source_url": "https://www.dyne-tx.com/fshd-story-chelsea/"
+    },
+    {
+      "alias": "/dm1-story-loraine",
+      "id": 116,
+      "source_id": 2081,
+      "revision": 1725,
+      "before": [],
+      "after": [
+        {
+          "value": "page_stories"
+        }
+      ],
+      "source_url": "https://www.dyne-tx.com/dm1-story-loraine/"
+    },
+    {
+      "alias": "/dm1-story-joachim",
+      "id": 115,
+      "source_id": 2058,
+      "revision": 1724,
+      "before": [],
+      "after": [
+        {
+          "value": "page_stories"
+        }
+      ],
+      "source_url": "https://www.dyne-tx.com/dm1-story-joachim/"
+    },
+    {
+      "alias": "/dm1-story-billydean",
+      "id": 137,
+      "source_id": 2276,
+      "revision": 2196,
+      "before": [
+        {
+          "value": "pages-third-level"
+        }
+      ],
+      "after": [
+        {
+          "value": "pages-third-level page_stories"
+        }
+      ],
+      "source_url": "https://www.dyne-tx.com/dm1-story-billydean/"
+    },
+    {
+      "alias": "/dm1-story-emily",
+      "id": 320,
+      "source_id": 3990,
+      "revision": 2197,
+      "before": [],
+      "after": [
+        {
+          "value": "page_stories"
+        }
+      ],
+      "source_url": "https://www.dyne-tx.com/dm1-story-emily/"
+    }
+  ]
+}

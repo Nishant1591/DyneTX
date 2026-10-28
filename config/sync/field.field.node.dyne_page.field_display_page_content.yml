@@ -1,0 +1,23 @@
+uuid: d6b3590d-5706-405e-8888-6793d82a5bea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_display_page_content
+    - node.type.dyne_page
+id: node.dyne_page.field_display_page_content
+field_name: field_display_page_content
+entity_type: node
+bundle: dyne_page
+label: 'Display page sections'
+description: 'Keep this enabled to display the page sections. Turn it off to retain the page URL and hero while preserving its sections for later editorial use.'
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'Display sections'
+  off_label: 'Preserve sections without displaying them'
+field_type: boolean

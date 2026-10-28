@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.dyne_page.field_body_class
     - field.field.node.dyne_page.field_body_text
     - field.field.node.dyne_page.field_components
+    - field.field.node.dyne_page.field_display_page_content
     - field.field.node.dyne_page.field_hero_classes
     - field.field.node.dyne_page.field_hero_first_line
     - field.field.node.dyne_page.field_hero_image
@@ -66,6 +67,13 @@ content:
       features:
         collapse_edit_all: collapse_edit_all
         duplicate: duplicate
+    third_party_settings: {  }
+  field_display_page_content:
+    type: boolean_checkbox
+    weight: -8
+    region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   field_hero_classes:
     type: string_textfield

@@ -10,6 +10,7 @@ require_once __DIR__ . '/includes/native-components.inc';
 require_once __DIR__ . '/includes/native-layouts.inc';
 require_once __DIR__ . '/includes/structured-content.inc';
 require_once __DIR__ . '/includes/structured-articles.inc';
+require_once __DIR__ . '/includes/perspective-presentation.inc';
 require_once __DIR__ . '/includes/pipeline-programs.inc';
 require_once __DIR__ . '/includes/image-library.inc';
 
@@ -38,7 +39,10 @@ function dynetx_preprocess_page(&$variables): void {
 function _dynetx_legacy_classes(array $metadata): array {
   $classes = $metadata['classes'] ?? [];
   $classes = is_array($classes) ? $classes : preg_split('/\s+/', trim($classes));
-  return array_values(array_map([\Drupal\Component\Utility\Html::class, 'getClass'], array_filter($classes)));
+  // Source selectors include valid identifiers such as page_stories. Drupal's
+  // class normalizer changes underscores to hyphens and breaks those selectors.
+  return array_values(array_map(static fn(string $class): string => preg_match('/^[a-zA-Z_][a-zA-Z0-9_-]*$/D', $class)
+    ? $class : \Drupal\Component\Utility\Html::getClass($class), array_filter($classes)));
 }
 
 /**
@@ -89,6 +93,11 @@ function dynetx_preprocess_block(&$variables): void {
     return;
   }
 
+  if (in_array(\Drupal::routeMatch()->getRouteName(), ['dyne_migrate.legacy_statistics', 'dyne_migrate.legacy_quote'], TRUE)) {
+    $variables['content']['#access'] = FALSE;
+    return;
+  }
+
   $node = \Drupal::routeMatch()->getParameter('node');
   if ($node instanceof \Drupal\node\NodeInterface && in_array($node->bundle(), ['dyne_page', 'job', 'perspective', 'leader', 'news', 'pipeline_program'], TRUE)) {
     $variables['content']['#access'] = FALSE;
@@ -100,6 +109,10 @@ function dynetx_preprocess_block(&$variables): void {
  */
 function dynetx_preprocess_node(&$variables): void {
   $node = $variables['node'];
+  $variables['dyne_display_page_content'] = $node->bundle() !== 'dyne_page'
+    || !$node->hasField('field_display_page_content')
+    || $node->get('field_display_page_content')->isEmpty()
+    || (bool) $node->get('field_display_page_content')->value;
   if ($node->hasField('field_structured_content') && $node->get('field_structured_content')->value) {
     $variables['content']['field_body_text'] = $node->bundle() === 'job' ? _dynetx_structured_job_body($node) : _dynetx_structured_article_body($node);
   }
@@ -120,6 +133,7 @@ function dynetx_preprocess_node(&$variables): void {
     $variables['#attached']['library'][] = 'dynetx/global';
     _dynetx_pipeline_program_node_preprocess($variables);
   }
+  _dynetx_perspective_preprocess($variables);
 }
 
 /**
@@ -150,13 +164,18 @@ function _dynetx_job_filter_key(string $value): string {
 function _dynetx_job_groups(): array {
   // The original careers plugin sorts visible departments and job titles alphabetically.
   $storage = \Drupal::entityTypeManager()->getStorage('node');
-  $ids = $storage->getQuery()
+  $query = $storage->getQuery()
     ->accessCheck(TRUE)
     ->condition('type', 'job')
     ->condition('status', 1)
     ->sort('field_department_group', 'ASC')
-    ->sort('title', 'ASC')
-    ->execute();
+    ->sort('title', 'ASC');
+  // Archived detail pages remain available without advertising closed roles.
+  $fields = \Drupal::service('entity_field.manager')->getFieldDefinitions('node', 'job');
+  if (isset($fields['field_current_vacancy'])) {
+    $query->condition('field_current_vacancy', 1);
+  }
+  $ids = $query->execute();
   $groups = [];
   $locations = [];
 
@@ -248,6 +267,7 @@ function dynetx_preprocess_paragraph(&$variables): void {
   }
   _dynetx_native_components($variables);
   _dynetx_native_lists_preprocess($variables);
+  _dynetx_perspective_list_preprocess($variables);
   _dynetx_native_layout_preprocess($variables);
   _dynetx_pipeline_programs_preprocess($variables);
   _dynetx_library_images_preprocess($variables);

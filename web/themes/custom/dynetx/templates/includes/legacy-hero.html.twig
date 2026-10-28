@@ -14,10 +14,12 @@
     <button class="dyne-hero-motion" type="button" data-dyne-hero-motion hidden>{{ 'Pause animation'|t }}</button>
   </section>
 {% elseif dyne_hero.classes == 'perspectives' %}
-  <div class="hero perspectives dyne-perspectives-hero">
+  <div class="container-fluid"><div class="row">
+  <div class="col-12 hero perspectives dyne-perspectives-hero">
     <div class="hero-title-2">{{ 'perspectives'|t }}</div>
     <div class="hero-subtitle">{{ 'We are passionate about using our voices to advance our mission of developing life-transforming therapies for people living with serious muscle diseases.'|t }}</div>
   </div>
+  </div></div>
 {% elseif dyne_hero.third_level %}
   <div class="hero hero-third-level" aria-hidden="true"></div>
 {% elseif dyne_hero.desktop %}

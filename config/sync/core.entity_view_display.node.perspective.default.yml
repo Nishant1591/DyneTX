@@ -26,6 +26,7 @@ dependencies:
     - field.field.node.perspective.field_seo_description
     - field.field.node.perspective.field_seo_title
     - field.field.node.perspective.field_story_byline
+    - field.field.node.perspective.field_story_category
     - field.field.node.perspective.field_story_date
     - field.field.node.perspective.field_story_date_label
     - field.field.node.perspective.field_story_excerpt
@@ -90,6 +91,7 @@ hidden:
   field_seo_description: true
   field_seo_title: true
   field_story_byline: true
+  field_story_category: true
   field_story_date: true
   field_story_date_label: true
   field_story_excerpt: true

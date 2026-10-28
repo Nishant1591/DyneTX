@@ -83,85 +83,18 @@ body.page-node-type-job .region-content { padding: 0; }
   font-size: clamp(7.1rem, 16.15vw, 14.53125rem);
   font-weight: 400;
 }
-.dyne-job-detail {
-  box-sizing: border-box;
-  width: min(1140px, calc(100% - 30px));
-  margin: 90px auto 72px;
-  color: var(--dyne-body);
-  font-size: 1.25rem;
-  line-height: 1.3;
-}
-.dyne-job-detail__title {
-  margin: 0 0 30px;
-  color: var(--dyne-mid-blue);
-  font-family: 'merriweatheritalic', Georgia, serif;
-  font-size: clamp(1.375rem, 2.2vw, 2rem);
-  font-weight: 400;
-  line-height: 1.2;
-}
-.dyne-job-detail__apply {
-  min-height: 66px;
-}
-.dyne-job-detail__apply .btn {
-  display: inline-flex;
-  align-items: center;
-  min-height: 40px;
-  border-radius: 20px;
-  font-family: 'ralewaybold', Arial, sans-serif;
-  font-size: 1rem;
-  line-height: 1.3;
-  text-decoration: none;
-}
-.dyne-job-detail__meta { margin: 0 0 42px; }
-.dyne-job-detail__meta p { margin: 0 0 10px; }
-.dyne-job-detail__meta strong { font-family: 'ralewayregular', Arial, sans-serif !important; }
-.dyne-job-detail__body h3 {
-  margin: 0 0 18px;
-  color: var(--dyne-body);
-  font-family: 'ralewaymedium', Arial, sans-serif;
-  font-size: clamp(1.15rem, 1.65vw, 1.475rem);
-  line-height: 1.2;
-}
-.dyne-job-detail__body { font-size: 1.306rem; }
-.dyne-job-detail__body .job-copy--role > h3,
-.dyne-job-detail__body .job-copy--responsibilities > h3,
-.dyne-job-detail__body .job-copy--requirements > h3 {
-  margin-bottom: 31px;
-  font-family: 'ralewaysemibold', Arial, sans-serif;
-  font-size: 1.306rem;
-  line-height: 1.3;
-}
-.dyne-job-detail__body p { margin: 0 0 31px; }
-.dyne-job-detail__body .job-copy--company p { margin-bottom: 0; }
-.dyne-job-detail__body ul {
-  margin: 0 0 30px;
-  padding: 0;
-  list-style: none;
-}
-.dyne-job-detail__body li {
-  padding: 0 10px 10px 15px;
-  font-size: 1.306rem;
-  line-height: 1.3;
-}
-.dyne-job-detail__body .job-onsite { margin: 127px 0 31px; }
-.dyne-job-detail__body .job-compensation__range {
-  display: block;
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.3;
-}
-.dyne-job-detail__body .job-compensation__range span,
-.dyne-job-detail__body .job-compensation__range strong { display: block; }
-.dyne-job-detail__body .job-compensation__range strong { font-family: 'ralewayregular', Arial, sans-serif !important; }
-.dyne-job-detail__body .job-compensation__equal { margin-bottom: 27px; }
+/* The source grid, typography, paragraph spacing and buttons already live in
+ * source-base.css/legacy.css. Keep only native Drupal layout safeguards here. */
+.dyne-job-detail { overflow-wrap: anywhere; }
+/* Older imports omit the source's final line break; newer imports retain it.
+ * Give both the same single-line gap before the application button. */
+.dyne-job-detail__body { margin-bottom: 1lh; }
+.dyne-job-detail__body > br:last-child { display: none; }
 .dyne-job-detail__pagination {
   display: flex;
-  gap: .75rem;
-  margin-top: 16px;
-  font-size: 1rem;
+  flex-wrap: wrap;
+  gap: .25em;
 }
-.dyne-job-detail__pagination a { color: var(--dyne-mid-blue); text-decoration: none; }
-.dyne-job-detail__pagination a:hover { text-decoration: underline; }
 @media (max-width: 767px) {
   .dyne-job-hero { height: 480px; }
   .dyne-job-hero__overlay { display: none; }
@@ -176,19 +109,6 @@ body.page-node-type-job .region-content { padding: 0; }
     left: -5.5%;
     font-size: 7.613rem;
   }
-  .dyne-job-detail {
-    width: calc(100% - 30px);
-    margin: 24px auto 56px;
-    font-size: 1.0125rem;
-    line-height: 1.3;
-  }
-  .dyne-job-detail__title { margin-bottom: 15px; font-size: 1.375rem; }
-  .dyne-job-detail__meta { margin-bottom: 24px; }
-  .dyne-job-detail__body { font-size: 1.0125rem; }
-  .dyne-job-detail__body .job-onsite { margin-top: 72px; }
-  .dyne-job-detail__body .job-copy--role > h3,
-  .dyne-job-detail__body .job-copy--responsibilities > h3,
-  .dyne-job-detail__body .job-copy--requirements > h3 { font-size: 1.0125rem; }
-  .dyne-job-detail__body li { font-size: 1.0125rem; }
+
 }
 

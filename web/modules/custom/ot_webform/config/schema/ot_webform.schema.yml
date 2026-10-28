@@ -16,7 +16,7 @@ ot_webform.settings:
       label: 'Contact test data ID'
     collection_point_id:
       type: string
-      label: 'Contact collection point element ID'
+      label: 'Contact collection point ID'
     dm1_prod_id:
       type: string
       label: 'DM1 production data ID'
@@ -25,7 +25,7 @@ ot_webform.settings:
       label: 'DM1 test data ID'
     dm1_collection_point_id:
       type: string
-      label: 'DM1 collection point element ID'
+      label: 'DM1 collection point ID'
     source_platform:
       type: uri
       label: 'Source platform'
@@ -41,6 +41,12 @@ ot_webform.settings:
     thank_you_text:
       type: label
       label: 'Success message'
+    cookiebot_enabled:
+      type: boolean
+      label: 'Load Cookiebot consent banner'
+    cookiebot_id:
+      type: string
+      label: 'Cookiebot domain group ID'
 block.settings.ot_webform_embed:
   type: block_settings
   label: 'OneTrust form block'

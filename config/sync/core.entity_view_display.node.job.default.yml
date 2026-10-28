@@ -16,6 +16,7 @@ dependencies:
     - field.field.node.job.field_compensation_notes
     - field.field.node.job.field_components
     - field.field.node.job.field_content_template
+    - field.field.node.job.field_current_vacancy
     - field.field.node.job.field_department
     - field.field.node.job.field_department_group
     - field.field.node.job.field_department_text
@@ -156,6 +157,7 @@ hidden:
   field_company_website: true
   field_compensation_notes: true
   field_content_template: true
+  field_current_vacancy: true
   field_department: true
   field_education_skills: true
   field_equal_opportunity: true

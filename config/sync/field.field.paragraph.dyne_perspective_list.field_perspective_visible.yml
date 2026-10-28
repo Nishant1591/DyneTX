@@ -1,0 +1,25 @@
+uuid: 5753c8d2-8a71-4783-9c5c-e27faf8184b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_perspective_visible
+    - paragraphs.paragraphs_type.dyne_perspective_list
+id: paragraph.dyne_perspective_list.field_perspective_visible
+field_name: field_perspective_visible
+entity_type: paragraph
+bundle: dyne_perspective_list
+label: 'Cards before Additional content'
+description: 'Number of cards shown before the expandable section, excluding the featured story.'
+required: false
+translatable: true
+default_value:
+  -
+    value: 6
+default_value_callback: ''
+settings:
+  min: 0
+  max: 100
+  prefix: ''
+  suffix: ''
+field_type: integer

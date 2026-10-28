@@ -41,6 +41,12 @@ function dyne_migrate_install(): void {
   dyne_image_library_schema();
   require_once __DIR__ . '/includes/sitemap.inc';
   dyne_migrate_sitemap_setup();
+  require_once __DIR__ . '/includes/live-content-reconciliation.inc';
+  dyne_live_content_vacancy_schema();
+  require_once __DIR__ . '/includes/perspective-list-model.inc';
+  dyne_perspective_list_schema();
+  require_once __DIR__ . '/includes/page-display.inc';
+  dyne_page_display_schema();
 }
 
 /**
@@ -977,4 +983,22 @@ function dyne_migrate_update_8116(): void {
 function dyne_migrate_update_8117(): void {
   require_once __DIR__ . '/includes/sitemap.inc';
   dyne_migrate_sitemap_setup();
+}
+
+/** Keep current vacancies separate from preserved public job detail records. */
+function dyne_migrate_update_8118(): void {
+  require_once __DIR__ . '/includes/live-content-reconciliation.inc';
+  dyne_live_content_vacancy_schema();
+}
+
+/** Restore native Perspectives listing layout controls and category labels. */
+function dyne_migrate_update_8119(): void {
+  require_once __DIR__ . '/includes/perspective-list-model.inc';
+  dyne_perspective_list_schema();
+}
+
+/** Preserve recovered page sections behind an explicit editorial display control. */
+function dyne_migrate_update_8120(): void {
+  require_once __DIR__ . '/includes/page-display.inc';
+  dyne_page_display_schema();
 }

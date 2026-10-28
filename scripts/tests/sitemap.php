@@ -6,6 +6,8 @@
  *
  * DYNE_SITEMAP_FINGERPRINT_ONLY=1 prints only the content fingerprint, allowing
  * the caller to capture output/sitemap/content-before.json before installation.
+ * DYNE_SITEMAP_BASELINE_FILE selects an explicitly named independent baseline;
+ * relative paths resolve from the project root. The original default is kept.
  */
 
 /** Hash existing content rows without including configuration or cache tables. */
@@ -33,6 +35,11 @@ if (getenv('DYNE_SITEMAP_FINGERPRINT_ONLY') === '1') {
 
 $directory = dirname(DRUPAL_ROOT) . '/output/sitemap';
 $report = ['passed' => FALSE, 'checks' => 0, 'failures' => [], 'modules' => [], 'counts' => [], 'policy_probes' => [], 'entity_saves' => 0, 'config_saves' => 0, 'state_writes' => 0, 'network_requests' => 0, 'cron_calls' => 0];
+$baseline_override = trim((string) getenv('DYNE_SITEMAP_BASELINE_FILE'));
+$baseline_file = $baseline_override !== '' ? $baseline_override : $directory . '/content-before.json';
+if (!str_starts_with($baseline_file, '/')) $baseline_file = dirname(DRUPAL_ROOT) . '/' . $baseline_file;
+$report['content_baseline_file'] = $baseline_file;
+$report['content_baseline_explicit'] = $baseline_override !== '';
 $assert = static function (bool $condition, string $message) use (&$report): void {
   $report['checks']++;
   if (!$condition) $report['failures'][] = $message;
@@ -267,14 +274,27 @@ finally {
   $after = dyne_sitemap_content_fingerprint();
   $assert($before === $after, 'Read-only verification leaves all node/revision/paragraph/alias rows unchanged.');
   $report['content_fingerprints'] = ['before' => hash('sha256', json_encode($before, JSON_THROW_ON_ERROR)), 'after' => hash('sha256', json_encode($after, JSON_THROW_ON_ERROR)), 'tables' => count($before)];
-  if (is_file($directory . '/content-before.json')) {
-    $baseline = json_decode(file_get_contents($directory . '/content-before.json'), TRUE, 512, JSON_THROW_ON_ERROR);
-    $assert($baseline === $after, 'Sitemap installation and indexing preserve the independently captured pre-upgrade content fingerprint.');
-    $report['pre_upgrade_content_unchanged'] = $baseline === $after;
-    if ($baseline !== $after) {
-      foreach (array_unique(array_merge(array_keys($baseline), array_keys($after))) as $table) {
-        if (($baseline[$table] ?? NULL) !== ($after[$table] ?? NULL)) $report['pre_upgrade_content_differences'][$table] = ['before' => $baseline[$table] ?? NULL, 'after' => $after[$table] ?? NULL];
+  if ($baseline_override !== '' || is_file($baseline_file)) {
+    try {
+      if (!is_file($baseline_file) || !is_readable($baseline_file)) throw new RuntimeException('Selected content baseline is missing or unreadable: ' . $baseline_file);
+      $baseline = json_decode(file_get_contents($baseline_file), TRUE, 512, JSON_THROW_ON_ERROR);
+      if (!is_array($baseline) || !$baseline) throw new RuntimeException('Selected content baseline must be a nonempty JSON table-fingerprint object.');
+      foreach ($baseline as $table => $fingerprint) {
+        if (!is_string($table) || !is_array($fingerprint) || !isset($fingerprint['rows'], $fingerprint['sha256']) || !is_int($fingerprint['rows']) || $fingerprint['rows'] < 0 || !is_string($fingerprint['sha256']) || !preg_match('/^[a-f0-9]{64}$/D', $fingerprint['sha256'])) throw new RuntimeException('Selected content baseline contains an invalid table fingerprint.');
       }
+      $report['content_baseline_sha256'] = hash('sha256', json_encode($baseline, JSON_THROW_ON_ERROR));
+      $assert($baseline === $after, $baseline_override !== '' ? 'Current content matches the selected independently captured content baseline.' : 'Sitemap installation and indexing preserve the independently captured pre-upgrade content fingerprint.');
+      $report['baseline_content_unchanged'] = $baseline === $after;
+      if ($baseline_override === '') $report['pre_upgrade_content_unchanged'] = $baseline === $after;
+      if ($baseline !== $after) {
+        $difference_key = $baseline_override !== '' ? 'baseline_content_differences' : 'pre_upgrade_content_differences';
+        foreach (array_unique(array_merge(array_keys($baseline), array_keys($after))) as $table) {
+          if (($baseline[$table] ?? NULL) !== ($after[$table] ?? NULL)) $report[$difference_key][$table] = ['before' => $baseline[$table] ?? NULL, 'after' => $after[$table] ?? NULL];
+        }
+      }
+    }
+    catch (\Throwable $error) {
+      $report['failures'][] = get_class($error) . ': ' . $error->getMessage();
     }
   }
   if ($index_before !== NULL) $assert($index_before === $table_fingerprint('xmlsitemap'), 'Read-only probes leave the sitemap link index unchanged.');
@@ -282,5 +302,5 @@ finally {
 $report['passed'] = $report['failures'] === [];
 if (!is_dir($directory)) mkdir($directory, 0775, TRUE);
 file_put_contents($directory . '/verification.json', json_encode($report, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PARTIAL_OUTPUT_ON_ERROR) . PHP_EOL);
-print json_encode(['passed' => $report['passed'], 'checks' => $report['checks'], 'counts' => $report['counts'], 'failures' => $report['failures']], JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES) . PHP_EOL;
+print json_encode(['passed' => $report['passed'], 'checks' => $report['checks'], 'counts' => $report['counts'], 'content_baseline_file' => $baseline_file, 'content_baseline_explicit' => $baseline_override !== '', 'failures' => $report['failures']], JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES) . PHP_EOL;
 if (!$report['passed']) throw new RuntimeException('Sitemap verification failed; see output/sitemap/verification.json.');

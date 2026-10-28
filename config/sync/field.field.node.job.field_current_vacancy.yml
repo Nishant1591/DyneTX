@@ -1,0 +1,23 @@
+uuid: 20dd8553-2ee5-4815-bd43-24ce9119c42e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_current_vacancy
+    - node.type.job
+id: node.job.field_current_vacancy
+field_name: field_current_vacancy
+entity_type: node
+bundle: job
+label: 'Include in current vacancies'
+description: 'Show this published job in the Careers vacancy list. Uncheck when a position is no longer listed; its public detail page and historical revisions remain available.'
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'Current vacancy'
+  off_label: 'Historical job detail'
+field_type: boolean

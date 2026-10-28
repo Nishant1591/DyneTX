@@ -7,6 +7,7 @@ const source = fs.readFileSync(`${__dirname}/../js/ot-webform.js`, 'utf8');
 function fixture(overrides = {}, profile = 'contact') {
   const scripts = [];
   const events = {};
+  const installedPoints = [];
   const marker = {
     dataset: { dyneOnetrustProfile: profile }, children: [],
     querySelector(selector) { return selector === '[data-ot-status]' ? this.children.find((child) => child.attributes['data-ot-status'] === '') : null; },
@@ -37,7 +38,7 @@ function fixture(overrides = {}, profile = 'contact') {
     location: { search: '', hostname: 'www.dyne-tx.com' },
     addEventListener(name, callback) { events[name] = callback; },
     setTimeout() { return 1; }, clearTimeout() {},
-    OneTrust: { webform: { InstallCP(id, callback) { callback(); } } }
+    OneTrust: { webform: { InstallCP(id, callback) { installedPoints.push(id); callback(); } } }
   };
   const Drupal = { behaviors: {}, t: (text) => text };
   vm.runInNewContext(source, {
@@ -48,7 +49,7 @@ function fixture(overrides = {}, profile = 'contact') {
   });
   Drupal.behaviors.otWebform.attach(document);
   return {
-    marker, scripts, window, events,
+    marker, scripts, window, events, installedPoints,
     status: () => marker.querySelector('[data-ot-status]'),
     injectForm() {
       form = { events: {}, querySelector() { return null; }, addEventListener(name, callback) { this.events[name] = callback; } };
@@ -68,6 +69,22 @@ test('explicit test environment cannot become production based on hostname', () 
   const page = fixture();
   assert.equal(page.scripts.length, 1);
   assert.equal(page.scripts[0].dataset.id, 'test-id');
+});
+
+test('the selected collection point GUID is passed separately from the tenant ID', () => {
+  const point = 'd37d89f4-02ef-4834-8033-678cd54cd22a';
+  const page = fixture({ collection_point_id: point });
+  page.injectForm();
+  assert.deepEqual(page.installedPoints, [point]);
+  assert.equal(page.scripts[0].dataset.id, 'test-id');
+});
+
+test('configured DM1 preview uses its own published collection point', () => {
+  const point = '7b853126-3f3e-4835-913f-06dfd33301fe';
+  const page = fixture({ dm1_staging_id: 'dm1-test-id', dm1_collection_point_id: point }, 'dm1');
+  page.injectForm();
+  assert.deepEqual(page.installedPoints, [point]);
+  assert.equal(page.scripts[0].dataset.id, 'dm1-test-id');
 });
 
 test('unconfigured DM1 forms do not reuse the contact collection point', () => {
