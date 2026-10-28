@@ -1,7 +1,8 @@
 name: dyne-tx-workspace
 type: drupal11
 docroot: web
-php_version: "8.3"
+php_version: "8.5"
+ddev_version_constraint: ">= 1.25.5"
 webserver_type: apache-fpm
 xdebug_enabled: false
 additional_hostnames: []

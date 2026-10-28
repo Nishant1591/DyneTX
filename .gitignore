@@ -3,6 +3,10 @@
 __pycache__/
 *.py[cod]
 
+# Workstation-specific corporate HTTPS trust for DDEV image builds.
+/.ddev/web-build/local-corporate-root.crt
+/.ddev/web-build/pre.Dockerfile.local-ca
+
 # Local database backups and the original migration archive.
 
 /dyne-tx-2026-10-01.zip

@@ -1,6 +1,6 @@
 # DyneTX Drupal application
 
-Dyne Therapeutics site built on Drupal **11.4.11**, PHP 8.3, the custom `dynetx`
+Dyne Therapeutics site built on Drupal **11.4.11**, PHP **8.5.12**, the custom `dynetx`
 Bootstrap5 theme, and native Drupal content, Paragraphs and Media. Webform is
 locked to **6.3.1**. The local preview is <https://dyne-tx-workspace.ddev.site/>.
 
@@ -11,6 +11,19 @@ ddev start
 ddev composer install
 ddev drush status
 ```
+
+DDEV 1.25.5 or newer is required and selects the PHP 8.5 series. Its official
+web image includes PHP 8.5.12; the build rejects older runtimes. Update DDEV to
+its current stable release and run `ddev utility rebuild` for newer bundled
+security patches. Composer requires 8.5.12 or a newer 8.5 patch.
+
+This corporate-network workstation also has a local DDEV pre-build file that
+imports the public corporate CA already trusted by macOS. That file and
+certificate are gitignored. Other workstations behind the proxy need their
+approved corporate CA configured before HTTPS package downloads can succeed.
+The corporate filter currently blocks DDEV's optional MariaDB client package
+refresh. The bundled client remains available, and Drupal's database connection
+has been verified; the PHP upgrade does not require that download.
 
 The existing local database already contains the site. Do not run `site:install`
 or restore a database over it to start the application. Keep public media files

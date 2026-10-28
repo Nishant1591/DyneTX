@@ -3,7 +3,7 @@
         'name' => 'dyne-tx/drupal',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'eb2dfe53824246f6808bc2f7e260da462b4a198c',
+        'reference' => '0de90f27e701094cc458b217ecd9f2ae04d48be3',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -718,7 +718,7 @@
         'dyne-tx/drupal' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'eb2dfe53824246f6808bc2f7e260da462b4a198c',
+            'reference' => '0de90f27e701094cc458b217ecd9f2ae04d48be3',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
