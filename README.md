@@ -12,10 +12,10 @@ ddev composer install
 ddev drush status
 ```
 
-DDEV 1.25.5 or newer is required and selects the PHP 8.5 series. Its official
-web image includes PHP 8.5.12; the build rejects older runtimes. Update DDEV to
-its current stable release and run `ddev utility rebuild` for newer bundled
-security patches. Composer requires 8.5.12 or a newer 8.5 patch.
+The project does not enforce a DDEV CLI version constraint. DDEV is configured
+to use the PHP 8.5 series; its web image must provide PHP 8.5.12 or a newer 8.5
+patch to satisfy Composer and the PHP runtime build check. After updating DDEV,
+run `ddev utility rebuild` to refresh its bundled runtime.
 
 This corporate-network workstation also has a local DDEV pre-build file that
 imports the public corporate CA already trusted by macOS. That file and
